@@ -1,4 +1,5 @@
 import pytest
+import stat as stat_module
 from unittest.mock import MagicMock, patch, call
 from pathlib import Path
 from valg.fetcher import (
@@ -47,6 +48,7 @@ def test_walk_remote_yields_json_files():
     attr_json.filename = "results.json"
     attr_json.st_size = 1000
     attr_json.st_mtime = 1000.0
+    attr_json.st_mode = stat_module.S_IFREG | 0o644
     mock_sftp.listdir_attr.return_value = [attr_json]
     results = list(walk_remote(mock_sftp, "/test"))
     assert len(results) == 1
@@ -56,12 +58,12 @@ def test_walk_remote_recurses_into_directories():
     mock_sftp = MagicMock()
     dir_attr = MagicMock()
     dir_attr.filename = "subdir"
-    dir_attr.st_size = 0
-    dir_attr.st_mtime = None
+    dir_attr.st_mode = stat_module.S_IFDIR | 0o755
     file_attr = MagicMock()
     file_attr.filename = "data.json"
     file_attr.st_size = 500
     file_attr.st_mtime = 2000.0
+    file_attr.st_mode = stat_module.S_IFREG | 0o644
     mock_sftp.listdir_attr.side_effect = [
         [dir_attr],
         [file_attr],
@@ -75,6 +77,7 @@ def test_walk_remote_skips_non_json():
     attr.filename = "README.txt"
     attr.st_size = 100
     attr.st_mtime = 1000.0
+    attr.st_mode = stat_module.S_IFREG | 0o644
     mock_sftp.listdir_attr.return_value = [attr]
     results = list(walk_remote(mock_sftp, "/test"))
     assert len(results) == 0

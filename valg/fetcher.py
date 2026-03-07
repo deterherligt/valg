@@ -1,5 +1,6 @@
 import logging
 import os
+import stat as stat_module
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
@@ -38,8 +39,7 @@ def walk_remote(sftp, remote_path: str):
 
     for attr in attrs:
         full_path = f"{remote_path}/{attr.filename}".replace("//", "/")
-        if attr.st_size == 0 or attr.st_size is None:
-            # Likely a directory — recurse
+        if stat_module.S_ISDIR(attr.st_mode):
             yield from walk_remote(sftp, full_path)
         elif attr.filename.endswith(".json"):
             yield (full_path, attr.st_size, attr.st_mtime)
