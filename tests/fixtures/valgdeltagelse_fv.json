@@ -1,0 +1,9 @@
+{
+  "Valg": {
+    "AfstemningsomraadeId": "AO1",
+    "Valgdeltagelse": [
+      {"StemmeberettigedeVaelgere": 2000, "AfgivneStemmer": 1500,
+       "Tidsstempel": "05-11-2024 20:00:00"}
+    ]
+  }
+}

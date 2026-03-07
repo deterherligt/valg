@@ -1,0 +1,9 @@
+{
+  "Valg": {
+    "OpstillingskredsId": "OK1",
+    "Partier": [
+      {"PartiId": "A", "Stemmer": 5000},
+      {"PartiId": "B", "Stemmer": 3000}
+    ]
+  }
+}
