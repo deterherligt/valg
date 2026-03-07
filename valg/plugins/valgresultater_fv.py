@@ -9,7 +9,11 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     vr = data.get("Valgresultater", {}) if isinstance(data, dict) else {}
     ao_id = vr.get("AfstemningsomraadeId")
     raw_type = vr.get("Optaellingstype", "")
-    count_type = "final" if "Fintaelling" in raw_type or "intaelling" in raw_type else "preliminary"
+    raw_type_lower = raw_type.lower()
+    if "fintaelling" in raw_type_lower or "final" in raw_type_lower or "endelig" in raw_type_lower:
+        count_type = "final"
+    else:
+        count_type = "preliminary"
 
     for party in vr.get("IndenforParti", []):
         party_id = party.get("PartiId")

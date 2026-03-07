@@ -118,3 +118,37 @@ def test_kandidatdata_parse_returns_candidate_rows():
     rows = plugin.parse(data, "2024-11-05T21:00:00")
     assert len(rows) >= 1
     assert any(r.get("name") == "Mette Frederiksen" for r in rows)
+
+def test_geografi_parse_includes_election_id():
+    plugin = find_plugin("Region.json")
+    data = json.loads((FIXTURES / "geografi_region.json").read_text())
+    rows = plugin.parse(data, "2024-11-05T21:00:00")
+    assert all("election_id" in r for r in rows)
+
+def test_valgresultater_party_row_has_candidate_id_none():
+    plugin = find_plugin("valgresultater-Folketingsvalg-Lyngby-Arenaskolen-190820220938.json")
+    data = json.loads((FIXTURES / "valgresultater_fv_preliminary.json").read_text())
+    rows = plugin.parse(data, "2024-11-05T21:00:00")
+    party_rows = [r for r in rows if r.get("candidate_id") is None]
+    assert len(party_rows) > 0
+
+def test_valgresultater_candidate_row_has_candidate_id_set():
+    plugin = find_plugin("valgresultater-Folketingsvalg-Lyngby-Arenaskolen-190820220938.json")
+    data = json.loads((FIXTURES / "valgresultater_fv_preliminary.json").read_text())
+    rows = plugin.parse(data, "2024-11-05T21:00:00")
+    candidate_rows = [r for r in rows if r.get("candidate_id") is not None]
+    assert len(candidate_rows) > 0
+    assert all(isinstance(r["candidate_id"], str) for r in candidate_rows)
+
+def test_kandidatdata_parse_includes_ballot_position():
+    plugin = find_plugin("kandidat-data-Folketingsvalg-Kobenhavn-2024.json")
+    data = json.loads((FIXTURES / "kandidatdata_fv.json").read_text())
+    rows = plugin.parse(data, "2024-11-05T21:00:00")
+    mette = next(r for r in rows if r.get("name") == "Mette Frederiksen")
+    assert mette["ballot_position"] == 1
+
+def test_valgdeltagelse_parse_includes_snapshot_at():
+    plugin = find_plugin("valgdeltagelse-Lyngby-ArenaskolenAfstS12-190820220938.json")
+    data = json.loads((FIXTURES / "valgdeltagelse_fv.json").read_text())
+    rows = plugin.parse(data, "2024-11-05T20:00:00")
+    assert all(r["snapshot_at"] == "2024-11-05T20:00:00" for r in rows)
