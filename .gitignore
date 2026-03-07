@@ -1,0 +1,9 @@
+valg.db
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+.env
+valg-data/
+.venv/
