@@ -88,3 +88,19 @@ def test_load_final_does_not_erase_preliminary(db_final):
         "SELECT COUNT(*) FROM results WHERE count_type = 'preliminary'"
     ).fetchone()[0]
     assert prelim > 0
+
+def test_generate_election_has_opstillingskredse(election):
+    assert len(election["opstillingskredse"]) == 3  # one per storkreds
+
+def test_load_preliminary_party_results_have_null_candidate_id(db_night):
+    conn, _ = db_night
+    count = conn.execute(
+        "SELECT COUNT(*) FROM results WHERE count_type = 'preliminary' AND candidate_id IS NOT NULL"
+    ).fetchone()[0]
+    assert count == 0, "Preliminary results should have no candidate-level rows"
+
+def test_load_final_does_not_reload_geography(db_final):
+    conn, election = db_final
+    # Geography should be loaded exactly once (from preliminary phase)
+    count = conn.execute("SELECT COUNT(*) FROM storkredse").fetchone()[0]
+    assert count == len(election["storkredse"])
