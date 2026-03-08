@@ -63,7 +63,8 @@ CREATE TABLE IF NOT EXISTS party_votes (
     opstillingskreds_id TEXT REFERENCES opstillingskredse(id),
     party_id TEXT REFERENCES parties(id),
     votes INTEGER,
-    snapshot_at TEXT
+    snapshot_at TEXT,
+    UNIQUE(opstillingskreds_id, party_id, snapshot_at)
 );
 CREATE TABLE IF NOT EXISTS events (
     id          INTEGER PRIMARY KEY AUTOINCREMENT,

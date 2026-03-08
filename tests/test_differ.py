@@ -26,7 +26,7 @@ def _insert_party_votes(conn, party_id, votes, snapshot_at):
         ("OK1", "OK1", "SK1"),
     )
     conn.execute(
-        "INSERT INTO party_votes (opstillingskreds_id, party_id, votes, snapshot_at) VALUES (?, ?, ?, ?)",
+        "INSERT OR IGNORE INTO party_votes (opstillingskreds_id, party_id, votes, snapshot_at) VALUES (?, ?, ?, ?)",
         ("OK1", party_id, votes, snapshot_at),
     )
     conn.commit()

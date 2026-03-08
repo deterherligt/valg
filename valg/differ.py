@@ -46,6 +46,6 @@ def write_events(conn, events: list[dict]) -> None:
             "VALUES (?, ?, ?, ?, ?)",
             (e["occurred_at"], e["event_type"], e["subject"], e["description"], e["data"]),
         )
-    conn.commit()
     if events:
+        conn.commit()
         log.info("Wrote %d events", len(events))
