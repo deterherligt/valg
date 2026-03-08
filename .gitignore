@@ -7,3 +7,5 @@ dist/
 .env
 valg-data/
 .venv/
+.coverage
+api-doc/
