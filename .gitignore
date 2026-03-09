@@ -9,3 +9,4 @@ valg-data/
 .venv/
 .coverage
 api-doc/
+.worktrees/
