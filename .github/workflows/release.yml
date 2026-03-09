@@ -42,7 +42,7 @@ jobs:
 
       - name: Rename artifact (Windows)
         if: runner.os == 'Windows'
-        run: Rename-Item dist\valg.exe dist\valg-windows.exe
+        run: Move-Item dist\valg.exe dist\valg-windows.exe
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
