@@ -151,8 +151,10 @@ def test_sync_fake_wave0_populates_storkredse(tmp_path):
     assert result.returncode == 0, result.stderr
     from valg.models import get_connection
     conn = get_connection(db)
-    count = conn.execute("SELECT COUNT(*) FROM storkredse").fetchone()[0]
-    assert count > 0
+    assert conn.execute("SELECT COUNT(*) FROM storkredse").fetchone()[0] > 0
+    # setup_db must run after process_directory so kandidatdata plugin doesn't wipe opstillingskreds_id
+    null_count = conn.execute("SELECT COUNT(*) FROM candidates WHERE opstillingskreds_id IS NULL").fetchone()[0]
+    assert null_count == 0
 
 
 def test_sync_fake_wave1_populates_party_votes(tmp_path):

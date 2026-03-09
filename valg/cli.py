@@ -272,17 +272,20 @@ def cmd_sync(conn, args):
 
     if getattr(args, "fake", False):
         from valg.fake_fetcher import make_election, setup_db, write_wave
+        from valg.processor import process_raw_file as _process_file
         import tempfile
 
         data_dir = args.data_dir or Path(tempfile.mkdtemp(prefix="valg-fake-"))
         election = make_election()
 
-        if args.wave == 0:
-            setup_db(conn, election)
-
         written = write_wave(data_dir, election, args.wave)
         console.print(f"[dim]Fake wave {args.wave}: {len(written)} files written to {data_dir}[/dim]")
-        total = process_directory(conn, data_dir, snapshot_at=snapshot_at)
+        # Skip kandidatdata files — candidates are fully seeded by setup_db with opstillingskreds_id
+        to_process = [p for p in written if not p.name.startswith("kandidat-data")]
+        total = sum(_process_file(conn, p, snapshot_at=snapshot_at) for p in to_process)
+
+        if args.wave == 0:
+            setup_db(conn, election)
         console.print(f"Processed {total} rows (wave {args.wave})")
         return
 

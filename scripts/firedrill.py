@@ -28,12 +28,12 @@ WAVE_LABELS = {
 }
 
 COMMANDS_AFTER_WAVE = {
-    0: [],
-    1: ["status", "flip"],
-    2: ["status", "flip"],
-    3: ["status", "flip", "party A"],
-    4: ["status", "candidate Kandidat"],
-    5: ["status", "flip", "feed"],
+    0: [["status"]],
+    1: [["status"], ["flip"]],
+    2: [["status"], ["flip"]],
+    3: [["status"], ["flip"], ["party", "A"]],
+    4: [["status"], ["candidate", "Kandidat 1"], ["kreds", "Opstillingskreds 1"], ["feed"]],
+    5: [["status"], ["flip"], ["kreds", "Opstillingskreds 1"], ["feed"]],
 }
 
 
@@ -62,9 +62,9 @@ def run_wave(wave: int, db: Path) -> None:
         return
     print(result.stdout.strip())
 
-    for cmd_str in COMMANDS_AFTER_WAVE.get(wave, []):
-        print(f"\n--- valg {cmd_str} ---")
-        print(run(cmd_str.split(), db))
+    for cmd in COMMANDS_AFTER_WAVE.get(wave, []):
+        print(f"\n--- valg {' '.join(cmd)} ---")
+        print(run(cmd, db))
 
 
 def main():
