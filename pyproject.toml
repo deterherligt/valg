@@ -14,8 +14,9 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0", "pytest-cov"]
-ai  = ["openai>=1.0"]
+dev        = ["pytest>=8.0", "pytest-cov"]
+ai         = ["openai>=1.0"]
+standalone = ["flask>=3.0"]
 
 [project.scripts]
 valg = "valg.cli:main"
