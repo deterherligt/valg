@@ -26,6 +26,17 @@ _UPSERT_KEYS: dict[str, list[str]] = {
 _REPLACE_TABLES = {"storkredse", "opstillingskredse", "afstemningsomraader", "parties", "candidates"}
 
 
+def _emit_event(conn, occurred_at: str, event_type: str, subject: str, description: str) -> None:
+    try:
+        conn.execute(
+            "INSERT INTO events (occurred_at, event_type, subject, description) VALUES (?,?,?,?)",
+            (occurred_at, event_type, subject, description),
+        )
+        conn.commit()
+    except Exception as e:
+        log.warning("Failed to emit event: %s", e)
+
+
 def _log_anomaly(conn, filename: str, anomaly_type: str, detail: str) -> None:
     now = datetime.now(timezone.utc).isoformat()
     try:
@@ -127,7 +138,14 @@ def process_raw_file(
         _log_anomaly(conn, filename, "parse_failure", str(e))
         return 0
 
-    return _insert_rows(conn, plugin.TABLE, rows)
+    inserted = _insert_rows(conn, plugin.TABLE, rows)
+
+    if plugin.TABLE == "results" and inserted > 0:
+        ao_id = rows[0].get("afstemningsomraade_id", "unknown")
+        count_type = rows[0].get("count_type", "unknown")
+        _emit_event(conn, snapshot_at, "district_reported", ao_id, f"{count_type} results")
+
+    return inserted
 
 
 def process_directory(

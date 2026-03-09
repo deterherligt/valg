@@ -91,3 +91,30 @@ def test_process_idempotent_upsert_does_not_duplicate(db, tmp_path):
     process_raw_file(db, f)  # process same file twice
     count = db.execute("SELECT COUNT(*) FROM storkredse").fetchone()[0]
     assert count == 2  # not 4
+
+
+def test_process_results_file_emits_district_event(db, tmp_path):
+    from valg.fake_fetcher import make_election, write_wave
+    election = make_election()
+    write_wave(tmp_path, election, wave=1)
+    process_directory(db, tmp_path, snapshot_at="2024-11-05T21:00:00")
+    count = db.execute("SELECT COUNT(*) FROM events WHERE event_type='district_reported'").fetchone()[0]
+    assert count > 0
+
+
+def test_preliminary_event_description(db, tmp_path):
+    from valg.fake_fetcher import make_election, write_wave
+    election = make_election()
+    write_wave(tmp_path, election, wave=1)
+    process_directory(db, tmp_path, snapshot_at="2024-11-05T21:00:00")
+    row = db.execute("SELECT description FROM events WHERE event_type='district_reported' LIMIT 1").fetchone()
+    assert "preliminary" in row["description"]
+
+
+def test_final_event_description(db, tmp_path):
+    from valg.fake_fetcher import make_election, write_wave
+    election = make_election()
+    write_wave(tmp_path, election, wave=4)
+    process_directory(db, tmp_path, snapshot_at="2024-11-06T10:00:00")
+    row = db.execute("SELECT description FROM events WHERE event_type='district_reported' LIMIT 1").fetchone()
+    assert "final" in row["description"]
