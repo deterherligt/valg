@@ -133,3 +133,42 @@ def test_kreds_shows_output(final_db):
     ok_name = election["opstillingskredse"][0]["name"]
     r = _run(["kreds", ok_name], db)
     assert r.returncode == 0
+
+
+# --- sync --fake ---
+
+def test_sync_fake_wave0_populates_storkredse(tmp_path):
+    import subprocess, sys
+    db = tmp_path / "test.db"
+    data_dir = tmp_path / "data"
+    data_dir.mkdir()
+    result = subprocess.run(
+        [sys.executable, "-m", "valg", "--db", str(db),
+         "sync", "--fake", "--wave", "0", "--data-dir", str(data_dir)],
+        capture_output=True, text=True,
+        cwd=str(Path(__file__).parent.parent),
+    )
+    assert result.returncode == 0, result.stderr
+    from valg.models import get_connection
+    conn = get_connection(db)
+    count = conn.execute("SELECT COUNT(*) FROM storkredse").fetchone()[0]
+    assert count > 0
+
+
+def test_sync_fake_wave1_populates_party_votes(tmp_path):
+    import subprocess, sys
+    db = tmp_path / "test.db"
+    data_dir = tmp_path / "data"
+    data_dir.mkdir()
+    for wave in (0, 1):
+        subprocess.run(
+            [sys.executable, "-m", "valg", "--db", str(db),
+             "sync", "--fake", "--wave", str(wave), "--data-dir", str(data_dir)],
+            capture_output=True, text=True,
+            cwd=str(Path(__file__).parent.parent),
+            check=True,
+        )
+    from valg.models import get_connection
+    conn = get_connection(db)
+    count = conn.execute("SELECT COUNT(*) FROM party_votes").fetchone()[0]
+    assert count > 0

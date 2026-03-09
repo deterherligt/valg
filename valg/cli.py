@@ -263,13 +263,32 @@ def cmd_commentary(conn, args):
 
 
 def cmd_sync(conn, args):
-    from valg.fetcher import get_sftp_client, sync_election_folder, commit_data_repo
     from valg.processor import process_directory
     from valg.plugins import load_plugins
-    import os
     from datetime import datetime, timezone
 
     load_plugins()
+    snapshot_at = datetime.now(timezone.utc).isoformat()
+
+    if getattr(args, "fake", False):
+        from valg.fake_fetcher import make_election, setup_db, write_wave
+        import tempfile
+
+        data_dir = args.data_dir or Path(tempfile.mkdtemp(prefix="valg-fake-"))
+        election = make_election()
+
+        if args.wave == 0:
+            setup_db(conn, election)
+
+        written = write_wave(data_dir, election, args.wave)
+        console.print(f"[dim]Fake wave {args.wave}: {len(written)} files written to {data_dir}[/dim]")
+        total = process_directory(conn, data_dir, snapshot_at=snapshot_at)
+        console.print(f"Processed {total} rows (wave {args.wave})")
+        return
+
+    from valg.fetcher import get_sftp_client, sync_election_folder, commit_data_repo
+    import os
+
     data_repo = Path(os.getenv("VALG_DATA_REPO", "../valg-data"))
     election_folder = args.election_folder
 
@@ -282,7 +301,6 @@ def cmd_sync(conn, args):
         sftp.close()
         ssh.close()
 
-    snapshot_at = datetime.now(timezone.utc).isoformat()
     total = process_directory(conn, data_repo, snapshot_at=snapshot_at)
     console.print(f"Processed {total} rows")
     commit_data_repo(data_repo)
@@ -304,6 +322,12 @@ def build_parser() -> argparse.ArgumentParser:
     sync_p.add_argument("--election-folder", default="/Folketingsvalg-1-2024")
     sync_p.add_argument("--interval", type=int, default=0,
                         help="Loop interval in seconds (0 = run once)")
+    sync_p.add_argument("--fake", action="store_true",
+                        help="Use fake fetcher instead of SFTP (firedrill mode)")
+    sync_p.add_argument("--wave", type=int, default=0,
+                        help="Fake fetcher wave index (0=setup, 1-3=preliminary, 4-5=final)")
+    sync_p.add_argument("--data-dir", type=Path, default=None,
+                        help="Override data directory (used with --fake)")
 
     # status
     sub.add_parser("status", help="Show election status")
