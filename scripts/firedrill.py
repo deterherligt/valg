@@ -79,9 +79,14 @@ def main():
                    help="Delete DB before starting")
     args = p.parse_args()
 
-    if args.fresh and args.db.exists():
-        args.db.unlink()
-        print(f"Deleted {args.db}")
+    if args.fresh:
+        if args.db.exists():
+            args.db.unlink()
+            print(f"Deleted {args.db}")
+        if DATA_DIR.exists():
+            import shutil
+            shutil.rmtree(DATA_DIR)
+            print(f"Deleted {DATA_DIR}")
 
     print(f"Firedrill DB: {args.db}")
     print(f"Data dir:     {DATA_DIR}")
