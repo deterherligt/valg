@@ -9,7 +9,7 @@ Fills the gap valg.dk misses: candidate/party drilldowns and seat-flip margins.
 ## Download (no Python required)
 
 Go to [Releases](https://github.com/deterherligt/valg/releases) and download:
-- **macOS:** `valg-macos` — right-click → Open on first run (Gatekeeper)
+- **macOS:** `valg-macos.zip` — unzip, then right-click → Open on first run (Gatekeeper)
 - **Windows:** `valg-windows.exe` — click "More info → Run anyway" on first run (SmartScreen)
 
 Double-click to start. Your browser opens automatically at `http://localhost:5000`.
