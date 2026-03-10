@@ -1,8 +1,12 @@
 from __future__ import annotations
 
+import logging
+import threading
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
+
+log = logging.getLogger(__name__)
 
 
 @dataclass
@@ -43,12 +47,6 @@ SCENARIOS: dict[str, Scenario] = {
 
 def get_scenario(name: str) -> Scenario:
     return SCENARIOS[name]
-
-
-import logging
-import threading
-
-log = logging.getLogger(__name__)
 
 
 class DemoRunner:
