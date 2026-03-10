@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import time
 from dataclasses import dataclass, field
+from pathlib import Path
 
 
 @dataclass
@@ -68,6 +70,93 @@ class DemoRunner:
                 raise RuntimeError("Cannot change scenario while running")
             get_scenario(name)  # raises KeyError if unknown
             self.scenario_name = name
+
+    def start(self, db_path: Path, data_repo: Path) -> None:
+        with self._lock:
+            if self.state == "running":
+                return
+            self.state = "running"
+            self.step_index = -1
+            self._db_path = Path(db_path)
+            self._data_repo = Path(data_repo)
+            self._stop_event = threading.Event()
+            self._pause_event = threading.Event()
+            self._pause_event.set()  # not paused initially
+        t = threading.Thread(target=self._run, daemon=True)
+        t.start()
+        self._thread = t
+
+    def pause(self) -> None:
+        with self._lock:
+            if self.state != "running":
+                return
+            self.state = "paused"
+            self.paused = True
+            self._pause_event.clear()
+
+    def resume(self) -> None:
+        with self._lock:
+            if self.state != "paused":
+                return
+            self.state = "running"
+            self.paused = False
+            self._pause_event.set()
+
+    def _run(self) -> None:
+        from valg.fake_fetcher import make_election, setup_db, write_wave
+        from valg.processor import process_raw_file
+        from valg.plugins import load_plugins
+        from valg.fetcher import commit_data_repo
+        from valg.models import get_connection, init_db
+        from datetime import datetime, timezone
+
+        load_plugins()
+        scenario = get_scenario(self.scenario_name)
+        election = make_election()
+        demo_dir = self._data_repo / "FV2024-demo"
+        demo_dir.mkdir(parents=True, exist_ok=True)
+
+        for i, step in enumerate(scenario.steps):
+            if self._stop_event.is_set():
+                break
+            with self._lock:
+                self.step_index = i
+            log.info("Demo step %d: %s", i, step.name)
+
+            written = []
+            if step.wave is not None:
+                written = write_wave(demo_dir, election, step.wave)
+
+            if step.setup:
+                conn = get_connection(self._db_path)
+                init_db(conn)
+                setup_db(conn, election)
+
+            if step.process and written:
+                conn = get_connection(self._db_path)
+                snapshot_at = datetime.now(timezone.utc).isoformat()
+                to_process = [p for p in written if not p.name.startswith("kandidat-data")]
+                for p in to_process:
+                    process_raw_file(conn, p, snapshot_at=snapshot_at)
+
+            if step.commit:
+                commit_data_repo(self._data_repo, message=f"demo: {step.name}")
+
+            with self._lock:
+                interval = step.base_interval_s / self.speed
+            elapsed = 0.0
+            tick = 0.1
+            while elapsed < interval:
+                if self._stop_event.is_set():
+                    break
+                self._pause_event.wait()  # blocks when paused
+                time.sleep(tick)
+                elapsed += tick
+
+        with self._lock:
+            if not self._stop_event.is_set():
+                self.state = "done"
+                self.step_index = len(scenario.steps) - 1
 
     def get_state_dict(self) -> dict:
         with self._lock:
