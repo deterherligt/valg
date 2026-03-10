@@ -62,6 +62,14 @@ _HTML = """<!DOCTYPE html>
   #csv-btn:hover { background: #2ea043; }
   #output { margin: 0; padding: 20px; white-space: pre; overflow: auto;
             font-size: 0.9em; line-height: 1.5; min-height: 400px; }
+  #demo-bar { padding: 10px 20px; background: #0d1117; border-bottom: 1px solid #30363d;
+              display: none; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 0.85em; }
+  #demo-bar.visible { display: flex; }
+  #demo-bar select { background: #21262d; color: #c9d1d9; border: 1px solid #30363d;
+                     padding: 5px 8px; font-family: monospace; font-size: 0.85em; }
+  .speed-btn { padding: 4px 10px; }
+  .speed-btn.active { background: #1f6feb; border-color: #1f6feb; color: #fff; }
+  #demo-step { color: #8b949e; font-size: 0.8em; margin-left: 8px; }
 </style>
 </head>
 <body>
@@ -86,6 +94,18 @@ _HTML = """<!DOCTYPE html>
   </span>
   <button onclick="run('feed')" data-cmd="feed">Feed</button>
   <button onclick="run('commentary')" data-cmd="commentary">Commentary</button>
+</div>
+<div id="demo-bar">
+  <span style="color:#58a6ff;font-weight:bold">DEMO</span>
+  <select id="demo-scenario-select"></select>
+  <button id="demo-start-btn" onclick="demoStartPause()">&#9654; Start</button>
+  <button onclick="demoControl('restart')">&#8635; Restart</button>
+  <span style="color:#8b949e">Speed:</span>
+  <button class="speed-btn" data-speed="1"  onclick="demoSetSpeed(1)">1&times;</button>
+  <button class="speed-btn" data-speed="2"  onclick="demoSetSpeed(2)">2&times;</button>
+  <button class="speed-btn" data-speed="5"  onclick="demoSetSpeed(5)">5&times;</button>
+  <button class="speed-btn" data-speed="60" onclick="demoSetSpeed(60)">60&times;</button>
+  <span id="demo-step"></span>
 </div>
 <div id="output-bar">
   <button id="csv-btn" onclick="downloadCsv()">Download CSV</button>
@@ -136,6 +156,78 @@ async function pollSync() {
 
 setInterval(pollSync, 10000);
 pollSync();
+
+let _demoState = null;
+let _prevStepIndex = null;
+
+async function pollDemo() {
+  try {
+    const resp = await fetch('/demo/state');
+    if (resp.status === 404) return;
+    const s = await resp.json();
+    _demoState = s;
+    document.getElementById('demo-bar').classList.add('visible');
+
+    // Populate scenario picker once
+    const sel = document.getElementById('demo-scenario-select');
+    if (sel.options.length === 0) {
+      s.scenarios.forEach(name => {
+        const opt = document.createElement('option');
+        opt.value = opt.textContent = name;
+        sel.appendChild(opt);
+      });
+      sel.onchange = () => demoControl('set_scenario', {scenario: sel.value});
+    }
+    sel.value = s.scenario;
+    sel.disabled = s.state === 'running';
+
+    // Start/Pause button label
+    const btn = document.getElementById('demo-start-btn');
+    if (s.state === 'idle' || s.state === 'done') btn.textContent = '\u25b6 Start';
+    else if (s.state === 'running') btn.textContent = '\u23f8 Pause';
+    else if (s.state === 'paused') btn.textContent = '\u25b6 Resume';
+
+    // Speed button highlight
+    document.querySelectorAll('.speed-btn').forEach(b => {
+      b.classList.toggle('active', parseFloat(b.dataset.speed) === s.speed);
+    });
+
+    // Step indicator
+    document.getElementById('demo-step').textContent =
+      s.step_index >= 0
+        ? `Step ${s.step_index + 1}/${s.steps_total}: ${s.step_name}`
+        : '';
+
+    // Auto-refresh current view when a step completes
+    if (_prevStepIndex !== null && s.step_index !== _prevStepIndex && _current) {
+      run(_current.cmd);
+    }
+    _prevStepIndex = s.step_index;
+  } catch(e) {}
+}
+
+function demoStartPause() {
+  if (!_demoState) return;
+  if (_demoState.state === 'idle' || _demoState.state === 'done') demoControl('start');
+  else if (_demoState.state === 'running') demoControl('pause');
+  else if (_demoState.state === 'paused') demoControl('resume');
+}
+
+async function demoControl(action, extra) {
+  await fetch('/demo/control', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({action, ...(extra || {})}),
+  });
+  pollDemo();
+}
+
+function demoSetSpeed(multiplier) {
+  demoControl('set_speed', {speed: multiplier});
+}
+
+setInterval(pollDemo, 3000);
+pollDemo();
 </script>
 </body>
 </html>"""
