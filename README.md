@@ -48,6 +48,52 @@ Set `VALG_AI_API_KEY` and `VALG_AI_BASE_URL` in `.env`. Any OpenAI-compatible en
 
     python -m valg commentary
 
+## Demo mode
+
+Run a simulated election night without a live SFTP connection:
+
+    python -m valg.server --demo
+
+The browser UI gains a demo control strip: pick a scenario, hit Start, adjust speed (1×–60×), pause, or restart.
+
+### Adding a new scenario
+
+Scenarios live in `valg/demo.py` in the `SCENARIOS` dict. Each scenario is a `Scenario` with a list of `Step` objects.
+
+**Step fields:**
+
+| Field | Type | Default | Meaning |
+|---|---|---|---|
+| `name` | `str` | required | Display label shown in the UI |
+| `wave` | `int \| None` | required | Which synthetic data wave to write (see `fake_fetcher.write_wave`) |
+| `setup` | `bool` | `False` | Call `setup_db` (load geography + candidates) — use for the first step only |
+| `process` | `bool` | `True` | Run `process_raw_file` on the written files (populates SQLite) |
+| `commit` | `bool` | `True` | Git-commit the wave files to the data repo |
+| `base_interval_s` | `float` | `60.0` | Seconds to wait after this step (divided by current speed multiplier) |
+
+**Wave numbering** (from `fake_fetcher.write_wave`):
+- Wave 0 — geography + candidate files only (no vote data)
+- Wave 1 — 25% foreløbig (preliminary) vote data
+- Wave 2 — 50% foreløbig
+- Wave 3 — 100% foreløbig
+- Wave 4 — 50% fintælling (final count)
+- Wave 5 — 100% fintælling
+
+**Example — a quick two-wave demo:**
+
+```python
+SCENARIOS["Quick Demo"] = Scenario(
+    name="Quick Demo",
+    description="Setup + one preliminary wave only.",
+    steps=[
+        Step(name="Setup", wave=0, setup=True, process=False, commit=True, base_interval_s=0),
+        Step(name="100% foreløbig", wave=3, base_interval_s=30.0),
+    ],
+)
+```
+
+Register it in `SCENARIOS` and it appears immediately in the UI scenario picker.
+
 ## Adding a new file format
 
 Drop a file in valg/plugins/:

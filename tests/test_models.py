@@ -1,5 +1,5 @@
 # tests/test_models.py
-from valg.models import init_db, get_connection
+from valg.models import init_db, get_connection, reset_db
 
 def test_init_db_creates_all_tables():
     conn = get_connection(":memory:")
@@ -71,3 +71,19 @@ def test_row_factory_returns_dict_like_rows():
     row = conn.execute("SELECT id, name FROM elections").fetchone()
     assert row["id"] == "E1"
     assert row["name"] == "Test"
+
+def test_reset_db_clears_all_rows():
+    conn = get_connection(":memory:")
+    init_db(conn)
+    conn.execute("INSERT INTO elections (id, name) VALUES ('X', 'Test')")
+    conn.commit()
+    assert conn.execute("SELECT COUNT(*) FROM elections").fetchone()[0] == 1
+
+    reset_db(conn)
+
+    assert conn.execute("SELECT COUNT(*) FROM elections").fetchone()[0] == 0
+    # Schema must still exist
+    tables = {r[0] for r in conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table'"
+    ).fetchall()}
+    assert "elections" in tables

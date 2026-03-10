@@ -104,3 +104,19 @@ def get_connection(path=None) -> sqlite3.Connection:
 def init_db(conn: sqlite3.Connection) -> None:
     conn.executescript(SCHEMA)
     conn.commit()
+
+
+_TRUNCATE_ORDER = [
+    "anomalies", "events", "turnout", "results", "party_votes",
+    "candidates", "parties", "afstemningsomraader", "opstillingskredse",
+    "storkredse", "elections",
+]
+
+
+def reset_db(conn: sqlite3.Connection) -> None:
+    """Delete all rows from all tables. Schema and indexes are preserved."""
+    conn.execute("PRAGMA foreign_keys=OFF")
+    for table in _TRUNCATE_ORDER:
+        conn.execute(f"DELETE FROM {table}")
+    conn.execute("PRAGMA foreign_keys=ON")
+    conn.commit()
