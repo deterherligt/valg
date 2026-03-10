@@ -102,6 +102,37 @@ class DemoRunner:
             self.paused = False
             self._pause_event.set()
 
+    def restart(self, db_path: Path, data_repo: Path) -> None:
+        # Stop the running loop
+        if hasattr(self, "_stop_event"):
+            self._stop_event.set()
+        if hasattr(self, "_pause_event"):
+            self._pause_event.set()  # unblock if paused
+        if hasattr(self, "_thread") and self._thread.is_alive():
+            self._thread.join(timeout=5.0)
+
+        # Reset DB
+        from valg.models import get_connection, reset_db
+        conn = get_connection(Path(db_path))
+        reset_db(conn)
+        conn.execute("PRAGMA wal_checkpoint(RESTART)")
+        conn.close()
+
+        # Delete demo folder and commit the deletion
+        import shutil
+        demo_dir = Path(data_repo) / "FV2024-demo"
+        if demo_dir.exists():
+            shutil.rmtree(demo_dir)
+            from valg.fetcher import commit_data_repo
+            commit_data_repo(Path(data_repo), message="demo: reset")
+
+        with self._lock:
+            self.state = "idle"
+            self.step_index = -1
+            self.paused = False
+
+        self.start(db_path=db_path, data_repo=data_repo)
+
     def _run(self) -> None:
         from valg.fake_fetcher import make_election, setup_db, write_wave
         from valg.processor import process_raw_file

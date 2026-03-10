@@ -124,3 +124,39 @@ def test_runner_runs_election_night(tmp_path):
         "SELECT COUNT(*) FROM results WHERE count_type='final'"
     ).fetchone()[0]
     assert final_results > 0, "No final results — fintælling phase didn't process"
+
+
+def test_runner_restart_clears_data(tmp_path):
+    """Restart resets DB and demo folder, then re-runs from step 0."""
+    from valg.models import get_connection, init_db
+
+    data_repo = tmp_path / "valg-data"
+    data_repo.mkdir()
+    _init_git_repo(data_repo)
+
+    db_path = tmp_path / "valg.db"
+    conn = get_connection(db_path)
+    init_db(conn)
+
+    runner = DemoRunner()
+    runner.set_speed(100.0)
+    runner.start(db_path=db_path, data_repo=data_repo)
+
+    # Let it process at least one data wave
+    deadline = time.time() + 8
+    while runner.step_index < 2 and time.time() < deadline:
+        time.sleep(0.2)
+
+    runner.restart(db_path=db_path, data_repo=data_repo)
+
+    # reset_db is synchronous inside restart(), so DB is empty right after it returns
+    conn2 = get_connection(db_path)
+    count = conn2.execute("SELECT COUNT(*) FROM party_votes").fetchone()[0]
+    assert count == 0, f"Expected empty party_votes after restart, got {count}"
+
+    # After restart the runner should be running again
+    deadline2 = time.time() + 5
+    while runner.step_index < 0 and time.time() < deadline2:
+        time.sleep(0.1)
+
+    assert runner.state in ("running", "done")
