@@ -113,7 +113,7 @@ def run(sftp) -> None:
     for fname in mf_files:
         data = _read_json(sftp, f"{base}/mandatfordeling/{fname}")
         if isinstance(data, dict) and "Kommunekode" in data:
-            # AntalMandater is not present; derive from length of PersonligeMandater
+            # AntalMandater preferred; falls back to length of PersonligeMandater if absent
             mandatfordeling[data["Kommunekode"]] = data.get("AntalMandater") or len(data.get("PersonligeMandater", []))
     log.info("  %d kommuner with mandatfordeling", len(mandatfordeling))
 
@@ -171,7 +171,7 @@ def run(sftp) -> None:
 
     # AO Dagi_id → opstillingskreds Kode (str)
     ao_to_ok: dict[str, str] = {
-        ao["Dagi_id"]: str(ao["OpstillingskredsKode"])
+        str(ao["Dagi_id"]): str(ao["OpstillingskredsKode"])
         for ao in afstemningsomraader
     }
 
