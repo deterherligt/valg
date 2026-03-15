@@ -126,6 +126,101 @@ def test_runner_runs_election_night(tmp_path):
     assert final_results > 0, "No final results — fintælling phase didn't process"
 
 
+def test_step_write_fn_default_none():
+    s = Step(name="test", wave=1)
+    assert s.write_fn is None
+
+
+def test_step_write_fn_callable():
+    called_with = []
+    def my_writer(repo):
+        called_with.append(repo)
+        return []
+    s = Step(name="test", wave=None, write_fn=my_writer)
+    assert s.write_fn is not None
+    result = s.write_fn(Path("/tmp"))
+    assert called_with == [Path("/tmp")]
+    assert result == []
+
+
+def test_runner_uses_write_fn(tmp_path):
+    """When step.write_fn is set, DemoRunner calls it instead of write_wave."""
+    db = tmp_path / "valg.db"
+    data_repo = tmp_path / "data"
+    data_repo.mkdir()
+    _init_git_repo(data_repo)
+
+    written_paths = []
+    marker = tmp_path / "write_fn_called"
+
+    def my_writer(repo):
+        marker.touch()
+        written_paths.append(repo)
+        return []
+
+    from valg.demo import DemoRunner, Scenario, SCENARIOS, Step
+
+    test_scenario = Scenario(
+        name="Test",
+        description="test",
+        steps=[
+            Step(name="custom step", wave=None, setup=False,
+                 process=False, commit=True, base_interval_s=0.0,
+                 write_fn=my_writer),
+        ],
+    )
+    original = dict(SCENARIOS)
+    SCENARIOS["Test"] = test_scenario
+    try:
+        r = DemoRunner()
+        r.set_scenario("Test")
+        r.set_speed(1000.0)
+        r.start(db_path=db, data_repo=data_repo)
+        r._thread.join(timeout=10.0)
+        assert marker.exists(), "write_fn was not called"
+    finally:
+        SCENARIOS.clear()
+        SCENARIOS.update(original)
+
+
+def test_scenario_steps_factory_default_none():
+    s = Scenario(name="x", description="y", steps=[])
+    assert s.steps_factory is None
+
+
+def test_scenario_steps_factory_called_at_start(tmp_path):
+    db = tmp_path / "valg.db"
+    data_repo = tmp_path / "data"
+    data_repo.mkdir()
+    _init_git_repo(data_repo)
+
+    factory_args = []
+
+    def my_factory(repo):
+        factory_args.append(repo)
+        return [Step(name="factory step", wave=None, process=False, commit=False, base_interval_s=0.0)]
+
+    from valg.demo import DemoRunner, Scenario, SCENARIOS, Step
+    test_scenario = Scenario(
+        name="FactoryTest",
+        description="test",
+        steps=[],
+        steps_factory=my_factory,
+    )
+    original = dict(SCENARIOS)
+    SCENARIOS["FactoryTest"] = test_scenario
+    try:
+        r = DemoRunner()
+        r.set_scenario("FactoryTest")
+        r.set_speed(1000.0)
+        r.start(db_path=db, data_repo=data_repo)
+        r._thread.join(timeout=10.0)
+        assert factory_args == [data_repo], f"factory not called with data_repo, got {factory_args}"
+    finally:
+        SCENARIOS.clear()
+        SCENARIOS.update(original)
+
+
 def test_runner_restart_clears_data(tmp_path):
     """Restart resets DB and demo folder, then re-runs from step 0."""
     from valg.models import get_connection, init_db

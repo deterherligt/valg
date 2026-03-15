@@ -5,6 +5,7 @@ import threading
 import time
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Callable
 
 log = logging.getLogger(__name__)
 
@@ -17,6 +18,7 @@ class Step:
     process: bool = True
     commit: bool = True
     base_interval_s: float = 60.0
+    write_fn: Callable[[Path], list[Path]] | None = None
 
 
 @dataclass
@@ -24,6 +26,7 @@ class Scenario:
     name: str
     description: str
     steps: list[Step]
+    steps_factory: Callable[[Path], list[Step]] | None = None
 
 
 SCENARIOS: dict[str, Scenario] = {
@@ -77,6 +80,12 @@ class DemoRunner:
             self.step_index = -1
             self._db_path = Path(db_path)
             self._data_repo = Path(data_repo)
+            scenario = get_scenario(self.scenario_name)
+            # Resolve steps — use factory if provided
+            if scenario.steps_factory is not None:
+                self._resolved_steps = scenario.steps_factory(self._data_repo)
+            else:
+                self._resolved_steps = scenario.steps
             self._stop_event = threading.Event()
             self._pause_event = threading.Event()
             self._pause_event.set()  # not paused initially
@@ -140,12 +149,11 @@ class DemoRunner:
         from datetime import datetime, timezone
 
         load_plugins()
-        scenario = get_scenario(self.scenario_name)
         election = make_election()
         demo_dir = self._data_repo / "FV2024-demo"
         demo_dir.mkdir(parents=True, exist_ok=True)
 
-        for i, step in enumerate(scenario.steps):
+        for i, step in enumerate(self._resolved_steps):
             if self._stop_event.is_set():
                 break
             with self._lock:
@@ -153,7 +161,9 @@ class DemoRunner:
             log.info("Demo step %d: %s", i, step.name)
 
             written = []
-            if step.wave is not None:
+            if step.write_fn is not None:
+                written = step.write_fn(self._data_repo)
+            elif step.wave is not None:
                 written = write_wave(demo_dir, election, step.wave)
 
             if step.setup:
@@ -185,21 +195,23 @@ class DemoRunner:
         with self._lock:
             if not self._stop_event.is_set():
                 self.state = "done"
-                self.step_index = len(scenario.steps) - 1
+                self.step_index = len(self._resolved_steps) - 1
 
     def get_state_dict(self) -> dict:
         with self._lock:
             scenario = get_scenario(self.scenario_name)
+            resolved = getattr(self, "_resolved_steps", None)
+            steps = resolved if resolved is not None else scenario.steps
             step_name = ""
-            if 0 <= self.step_index < len(scenario.steps):
-                step_name = scenario.steps[self.step_index].name
+            if 0 <= self.step_index < len(steps):
+                step_name = steps[self.step_index].name
             return {
                 "enabled": True,
                 "state": self.state,
                 "scenario": self.scenario_name,
                 "step_index": self.step_index,
                 "step_name": step_name,
-                "steps_total": len(scenario.steps),
+                "steps_total": len(steps),
                 "speed": self.speed,
                 "scenarios": list(SCENARIOS.keys()),
             }
