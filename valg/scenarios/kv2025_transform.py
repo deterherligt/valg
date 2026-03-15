@@ -45,11 +45,12 @@ def transform_storkreds_json(
     kommuner: list of Kommune dicts from SFTP geografi/Kommune-*.json
     mandatfordeling: {kommune_kode: byraadssize}
     """
+    total_seats = sum(mandatfordeling.values()) or 1
     return [
         {
             "Kode": str(k["Kode"]),
             "Navn": k["Navn"],
-            "AntalKredsmandater": mandatfordeling.get(k["Kode"], 0),
+            "AntalKredsmandater": max(1, round(mandatfordeling.get(k["Kode"], 0) / total_seats * 135)),
             "ValgId": _ELECTION_ID,
         }
         for k in kommuner

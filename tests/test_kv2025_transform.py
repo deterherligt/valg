@@ -73,15 +73,17 @@ def test_transform_storkreds_json():
     assert len(result) == 2
     kbh = next(r for r in result if r["Kode"] == "101")
     assert kbh["Navn"] == "København"
-    assert kbh["AntalKredsmandater"] == 55
+    assert kbh["AntalKredsmandater"] == 86  # max(1, round(55/86 * 135)) = 86
     assert kbh["ValgId"] == "KV2025"
+    aal = next(r for r in result if r["Kode"] == "851")
+    assert aal["AntalKredsmandater"] == 49  # max(1, round(31/86 * 135)) = 49
 
 
 def test_transform_storkreds_json_missing_mandatfordeling():
-    """Komuner without mandatfordeling entry get a default of 0."""
+    """Komuner without mandatfordeling entry get a minimum of 1."""
     kommuner = [{"Kode": 999, "Navn": "Unknown"}]
     result = transform_storkreds_json(kommuner, {})
-    assert result[0]["AntalKredsmandater"] == 0
+    assert result[0]["AntalKredsmandater"] == 1
 
 
 # ── transform_geography_files ────────────────────────────────────────────────
