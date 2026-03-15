@@ -57,7 +57,6 @@ def transform_storkreds_json(
 
 
 def transform_geography_files(
-    kommuner: list[dict],
     opstillingskredse: list[dict],
     afstemningsomraader: list[dict],
 ) -> dict[str, list[dict]]:
@@ -168,7 +167,8 @@ def transform_valgresultater_preliminary(
     ao_result: one entry from valgresultater SFTP file (has AfstemningsomraadeDagiId,
                Kandidatlister)
     """
-    ft_lists = filter_ft_lists(ao_result.get("Kandidatlister", []))
+    ft_lists = [kl for kl in filter_ft_lists(ao_result.get("Kandidatlister", []))
+                if kl["Bogstavbetegnelse"] in party_registry]
     return {
         "Valgresultater": {
             "AfstemningsomraadeId": ao_result["AfstemningsomraadeDagiId"],
@@ -193,7 +193,8 @@ def transform_valgresultater_final(
     """
     Return FV-format final valgresultater dict (Fintaelling, with candidate votes).
     """
-    ft_lists = filter_ft_lists(ao_result.get("Kandidatlister", []))
+    ft_lists = [kl for kl in filter_ft_lists(ao_result.get("Kandidatlister", []))
+                if kl["Bogstavbetegnelse"] in party_registry]
     return {
         "Valgresultater": {
             "AfstemningsomraadeId": ao_result["AfstemningsomraadeDagiId"],

@@ -91,7 +91,7 @@ def test_transform_geography_files_keys():
     opstillingskredse = [{"Kode": 10101, "Navn": "Bispebjerg", "KommuneKode": 101, "Dagi_id": "222"}]
     aos = [{"Dagi_id": "333", "Nummer": 1, "Navn": "Bispebjerg Skole",
             "OpstillingskredsKode": 10101, "StemmeberettigeteVaelgere": 2500}]
-    result = transform_geography_files(kommuner, opstillingskredse, aos)
+    result = transform_geography_files(opstillingskredse, aos)
     assert "Opstillingskreds" in result
     assert "Afstemningsomraade" in result
     ok = result["Opstillingskreds"][0]
