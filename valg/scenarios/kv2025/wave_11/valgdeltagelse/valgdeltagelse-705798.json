@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:15",
+  "Kommune": "Herlev",
+  "Kommunekode": 163,
+  "Afstemningsområde": "Herlev Medborgerhus",
+  "AfstemningsområdeDagiId": "705798",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 728,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 982,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 1312,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 1644,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 1973,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 2282,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 2687,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 3169,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 3704,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 4297,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 4952,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9831,
+      "AfgivneStemmer": 5470,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

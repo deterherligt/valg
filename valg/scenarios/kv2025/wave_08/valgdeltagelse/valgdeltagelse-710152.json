@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:26",
+  "Kommune": "Ballerup",
+  "Kommunekode": 151,
+  "Afstemningsområde": "Egebjerghallen - Skovvejens Skole Øst",
+  "AfstemningsområdeDagiId": "710152",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3871,
+      "AfgivneStemmer": 541,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3871,
+      "AfgivneStemmer": 702,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3871,
+      "AfgivneStemmer": 1132,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3871,
+      "AfgivneStemmer": 1573,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3871,
+      "AfgivneStemmer": 1899,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3871,
+      "AfgivneStemmer": 2579,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3871,
+      "AfgivneStemmer": 2806,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

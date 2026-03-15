@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:11",
+  "Kommune": "Solrød",
+  "Kommunekode": 269,
+  "Afstemningsområde": "Det Sydlige Strandområde",
+  "AfstemningsområdeDagiId": "703740",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8420,
+      "AfgivneStemmer": 1565,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8420,
+      "AfgivneStemmer": 3102,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8420,
+      "AfgivneStemmer": 5252,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8420,
+      "AfgivneStemmer": 6282,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

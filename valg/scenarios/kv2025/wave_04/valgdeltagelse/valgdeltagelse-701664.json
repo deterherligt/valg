@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:09",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Sdr. Felding",
+  "AfstemningsområdeDagiId": "701664",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 102,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 283,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 475,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 670,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 871,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 1038,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 1152,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 1202,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

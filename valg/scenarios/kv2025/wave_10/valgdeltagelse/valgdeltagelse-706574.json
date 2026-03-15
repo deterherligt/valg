@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:38",
+  "Kommune": "Kerteminde",
+  "Kommunekode": 440,
+  "Afstemningsområde": "Kerteminde",
+  "AfstemningsområdeDagiId": "706574",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 732,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 1044,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 1460,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 1850,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 2168,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 2407,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 2715,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 3072,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 3569,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 4047,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 4396,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5670,
+      "AfgivneStemmer": 4566,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

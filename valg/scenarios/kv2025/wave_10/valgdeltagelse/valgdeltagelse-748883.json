@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:47:43",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Skivehus",
+  "AfstemningsområdeDagiId": "748883",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5111,
+      "AfgivneStemmer": 1010,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5111,
+      "AfgivneStemmer": 1678,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5111,
+      "AfgivneStemmer": 2276,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5111,
+      "AfgivneStemmer": 3278,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5111,
+      "AfgivneStemmer": 3876,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

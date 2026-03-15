@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:16:10",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Fraugde Fritidscenter",
+  "AfstemningsområdeDagiId": "710386",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2889,
+      "AfgivneStemmer": 389,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2889,
+      "AfgivneStemmer": 1367,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2889,
+      "AfgivneStemmer": 1955,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

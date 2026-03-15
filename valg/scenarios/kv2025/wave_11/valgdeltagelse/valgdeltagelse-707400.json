@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:09:15",
+  "Kommune": "Billund",
+  "Kommunekode": 530,
+  "Afstemningsområde": "Grindsted",
+  "AfstemningsområdeDagiId": "707400",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8620,
+      "AfgivneStemmer": 568,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8618,
+      "AfgivneStemmer": 896,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8618,
+      "AfgivneStemmer": 1359,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8618,
+      "AfgivneStemmer": 1837,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8618,
+      "AfgivneStemmer": 2185,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8618,
+      "AfgivneStemmer": 2529,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8618,
+      "AfgivneStemmer": 2874,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8618,
+      "AfgivneStemmer": 3411,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8618,
+      "AfgivneStemmer": 4173,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8618,
+      "AfgivneStemmer": 4859,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8618,
+      "AfgivneStemmer": 5387,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8618,
+      "AfgivneStemmer": 5700,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

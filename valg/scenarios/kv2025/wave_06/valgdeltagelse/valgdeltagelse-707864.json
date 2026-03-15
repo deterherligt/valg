@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:01",
+  "Kommune": "Esbjerg",
+  "Kommunekode": 561,
+  "Afstemningsområde": "Gørding",
+  "AfstemningsområdeDagiId": "707864",
+  "AfstemningsområdeNummer": 40,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2817,
+      "AfgivneStemmer": 426,
+      "Tidspunkt": "11:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2817,
+      "AfgivneStemmer": 828,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2817,
+      "AfgivneStemmer": 1553,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2817,
+      "AfgivneStemmer": 1895,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

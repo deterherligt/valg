@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:39:57",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Højslev",
+  "AfstemningsområdeDagiId": "748881",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3098,
+      "AfgivneStemmer": 570,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3098,
+      "AfgivneStemmer": 1012,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3098,
+      "AfgivneStemmer": 1353,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3098,
+      "AfgivneStemmer": 2011,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3098,
+      "AfgivneStemmer": 2389,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

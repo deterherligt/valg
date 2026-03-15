@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:24",
+  "Kommune": "Herlev",
+  "Kommunekode": 163,
+  "Afstemningsområde": "Kildegårdhallen",
+  "AfstemningsområdeDagiId": "701152",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 559,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 829,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 1139,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 1459,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 1749,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 2002,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 2315,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 2752,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 3279,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 3879,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 4325,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7259,
+      "AfgivneStemmer": 4638,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:10:56",
+  "Kommune": "Brønderslev",
+  "Kommunekode": 810,
+  "Afstemningsområde": "Stenum",
+  "AfstemningsområdeDagiId": "702304",
+  "AfstemningsområdeNummer": 34,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 492,
+      "AfgivneStemmer": 74,
+      "Tidspunkt": "12:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 492,
+      "AfgivneStemmer": 181,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 492,
+      "AfgivneStemmer": 295,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

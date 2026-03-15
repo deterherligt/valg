@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:26",
+  "Kommune": "Bornholm",
+  "Kommunekode": 400,
+  "Afstemningsområde": "Nexø",
+  "AfstemningsområdeDagiId": "703286",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3673,
+      "AfgivneStemmer": 759,
+      "Tidspunkt": "11:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3673,
+      "AfgivneStemmer": 1981,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3673,
+      "AfgivneStemmer": 2563,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

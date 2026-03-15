@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:58",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Ørnhøj",
+  "AfstemningsområdeDagiId": "705030",
+  "AfstemningsområdeNummer": 30,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 905,
+      "AfgivneStemmer": 48,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 905,
+      "AfgivneStemmer": 115,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 905,
+      "AfgivneStemmer": 214,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 905,
+      "AfgivneStemmer": 317,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 905,
+      "AfgivneStemmer": 414,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 905,
+      "AfgivneStemmer": 520,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 905,
+      "AfgivneStemmer": 577,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 905,
+      "AfgivneStemmer": 606,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

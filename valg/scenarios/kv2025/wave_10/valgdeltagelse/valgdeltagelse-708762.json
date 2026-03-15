@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:15:27",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Fjordager-Hallen",
+  "AfstemningsområdeDagiId": "708762",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5472,
+      "AfgivneStemmer": 890,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5472,
+      "AfgivneStemmer": 2658,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5472,
+      "AfgivneStemmer": 3639,
+      "Tidspunkt": "20:02:00"
+    }
+  ]
+}

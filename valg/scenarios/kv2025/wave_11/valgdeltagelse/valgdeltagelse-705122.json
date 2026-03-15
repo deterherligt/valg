@@ -1,0 +1,62 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:15:01",
+  "Kommune": "Frederiksberg",
+  "Kommunekode": 147,
+  "Afstemningsområde": "10. Kreds, Grundtvigsvej",
+  "AfstemningsområdeDagiId": "705122",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9667,
+      "AfgivneStemmer": 2383,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9667,
+      "AfgivneStemmer": 2814,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9667,
+      "AfgivneStemmer": 3193,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9667,
+      "AfgivneStemmer": 3584,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9667,
+      "AfgivneStemmer": 3996,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9667,
+      "AfgivneStemmer": 4569,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9667,
+      "AfgivneStemmer": 5108,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9667,
+      "AfgivneStemmer": 5732,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9667,
+      "AfgivneStemmer": 6356,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9668,
+      "AfgivneStemmer": 7361,
+      "Tidspunkt": "20:37:00"
+    }
+  ]
+}

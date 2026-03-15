@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:31",
+  "Kommune": "Halsnæs",
+  "Kommunekode": 260,
+  "Afstemningsområde": "Ølsted",
+  "AfstemningsområdeDagiId": "710776",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 0,
+      "Tidspunkt": "07:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 198,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 302,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 455,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 620,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 739,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 837,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 963,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 1093,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 1286,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 1480,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 1676,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2741,
+      "AfgivneStemmer": 1793,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

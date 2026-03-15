@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:42",
+  "Kommune": "Guldborgsund",
+  "Kommunekode": 376,
+  "Afstemningsområde": "Sundby",
+  "AfstemningsområdeDagiId": "701828",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2956,
+      "AfgivneStemmer": 445,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2956,
+      "AfgivneStemmer": 455,
+      "Tidspunkt": "10:33:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2956,
+      "AfgivneStemmer": 800,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2956,
+      "AfgivneStemmer": 1079,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2956,
+      "AfgivneStemmer": 1421,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2956,
+      "AfgivneStemmer": 1964,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2956,
+      "AfgivneStemmer": 2266,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

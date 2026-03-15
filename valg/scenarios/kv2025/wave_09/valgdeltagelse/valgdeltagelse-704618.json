@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:10",
+  "Kommune": "Ringsted",
+  "Kommunekode": 329,
+  "Afstemningsområde": "Ringsted Dagmarskolen",
+  "AfstemningsområdeDagiId": "704618",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4978,
+      "AfgivneStemmer": 423,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4978,
+      "AfgivneStemmer": 947,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4978,
+      "AfgivneStemmer": 1827,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4978,
+      "AfgivneStemmer": 3139,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

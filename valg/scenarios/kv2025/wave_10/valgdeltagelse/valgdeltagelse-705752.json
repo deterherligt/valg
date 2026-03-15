@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:27",
+  "Kommune": "Helsingør",
+  "Kommunekode": 217,
+  "Afstemningsområde": "Laden, Gl. Vapnagård",
+  "AfstemningsområdeDagiId": "705752",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6303,
+      "AfgivneStemmer": 951,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6303,
+      "AfgivneStemmer": 1287,
+      "Tidspunkt": "11:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6303,
+      "AfgivneStemmer": 2506,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6303,
+      "AfgivneStemmer": 3391,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6303,
+      "AfgivneStemmer": 4026,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

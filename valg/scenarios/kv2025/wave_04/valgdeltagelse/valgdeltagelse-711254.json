@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:10:58",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Lemming",
+  "AfstemningsområdeDagiId": "711254",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1645,
+      "AfgivneStemmer": 242,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1645,
+      "AfgivneStemmer": 353,
+      "Tidspunkt": "13:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1645,
+      "AfgivneStemmer": 599,
+      "Tidspunkt": "15:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1645,
+      "AfgivneStemmer": 1213,
+      "Tidspunkt": "20:10:00"
+    }
+  ]
+}

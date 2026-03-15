@@ -1,0 +1,57 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:40",
+  "Kommune": "Ikast-Brande",
+  "Kommunekode": 756,
+  "Afstemningsområde": "Nørre Snede",
+  "AfstemningsområdeDagiId": "713298",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2776,
+      "AfgivneStemmer": 129,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2776,
+      "AfgivneStemmer": 239,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2776,
+      "AfgivneStemmer": 529,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2776,
+      "AfgivneStemmer": 753,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2776,
+      "AfgivneStemmer": 1080,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2776,
+      "AfgivneStemmer": 1306,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2776,
+      "AfgivneStemmer": 1520,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2776,
+      "AfgivneStemmer": 1684,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2776,
+      "AfgivneStemmer": 1781,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

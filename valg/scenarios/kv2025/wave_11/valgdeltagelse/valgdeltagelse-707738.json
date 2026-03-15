@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:38:42",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "6. Bispebjerg",
+  "AfstemningsområdeDagiId": "707738",
+  "AfstemningsområdeNummer": 27,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 13575,
+      "AfgivneStemmer": 2846,
+      "Tidspunkt": "12:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13575,
+      "AfgivneStemmer": 4985,
+      "Tidspunkt": "16:10:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13575,
+      "AfgivneStemmer": 6697,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13575,
+      "AfgivneStemmer": 8447,
+      "Tidspunkt": "20:09:00"
+    }
+  ]
+}

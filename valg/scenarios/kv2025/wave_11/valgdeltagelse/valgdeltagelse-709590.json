@@ -1,0 +1,67 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:33:46",
+  "Kommune": "Frederiksberg",
+  "Kommunekode": 147,
+  "Afstemningsområde": "10. Kreds, Bülowsvej",
+  "AfstemningsområdeDagiId": "709590",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 13471,
+      "AfgivneStemmer": 2933,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13471,
+      "AfgivneStemmer": 3459,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13471,
+      "AfgivneStemmer": 3978,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13471,
+      "AfgivneStemmer": 4500,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13471,
+      "AfgivneStemmer": 5052,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13471,
+      "AfgivneStemmer": 5780,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13472,
+      "AfgivneStemmer": 6642,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13472,
+      "AfgivneStemmer": 7471,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13473,
+      "AfgivneStemmer": 8358,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13473,
+      "AfgivneStemmer": 9256,
+      "Tidspunkt": "20:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13473,
+      "AfgivneStemmer": 9735,
+      "Tidspunkt": "20:43:00"
+    }
+  ]
+}

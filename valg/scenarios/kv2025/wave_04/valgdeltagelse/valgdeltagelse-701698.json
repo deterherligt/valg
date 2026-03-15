@@ -1,0 +1,67 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:26",
+  "Kommune": "Vordingborg",
+  "Kommunekode": 390,
+  "Afstemningsområde": "Vestmøn",
+  "AfstemningsområdeDagiId": "701698",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1788,
+      "AfgivneStemmer": 240,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1788,
+      "AfgivneStemmer": 346,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1788,
+      "AfgivneStemmer": 446,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1788,
+      "AfgivneStemmer": 524,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1788,
+      "AfgivneStemmer": 624,
+      "Tidspunkt": "14:05:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1788,
+      "AfgivneStemmer": 718,
+      "Tidspunkt": "15:05:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1788,
+      "AfgivneStemmer": 831,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1788,
+      "AfgivneStemmer": 1012,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1788,
+      "AfgivneStemmer": 1164,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1788,
+      "AfgivneStemmer": 1280,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1788,
+      "AfgivneStemmer": 1351,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

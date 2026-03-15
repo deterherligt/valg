@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:29",
+  "Kommune": "Gladsaxe",
+  "Kommunekode": 159,
+  "Afstemningsområde": "Stengård",
+  "AfstemningsområdeDagiId": "700934",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6589,
+      "AfgivneStemmer": 0,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6589,
+      "AfgivneStemmer": 1630,
+      "Tidspunkt": "12:09:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6589,
+      "AfgivneStemmer": 2780,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6589,
+      "AfgivneStemmer": 4968,
+      "Tidspunkt": "20:16:00"
+    }
+  ]
+}

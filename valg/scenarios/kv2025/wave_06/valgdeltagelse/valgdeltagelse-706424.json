@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:20:28",
+  "Kommune": "Egedal",
+  "Kommunekode": 240,
+  "Afstemningsområde": "Ganløse",
+  "AfstemningsområdeDagiId": "706424",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2748,
+      "AfgivneStemmer": 351,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2748,
+      "AfgivneStemmer": 488,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2748,
+      "AfgivneStemmer": 875,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2748,
+      "AfgivneStemmer": 1185,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2748,
+      "AfgivneStemmer": 1793,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2748,
+      "AfgivneStemmer": 2219,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

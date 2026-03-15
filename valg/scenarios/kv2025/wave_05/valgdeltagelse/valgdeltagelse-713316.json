@@ -1,0 +1,57 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:57",
+  "Kommune": "Ikast-Brande",
+  "Kommunekode": 756,
+  "Afstemningsområde": "Engesvang",
+  "AfstemningsområdeDagiId": "713316",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2393,
+      "AfgivneStemmer": 118,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2393,
+      "AfgivneStemmer": 222,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2393,
+      "AfgivneStemmer": 436,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2393,
+      "AfgivneStemmer": 618,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2393,
+      "AfgivneStemmer": 939,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2393,
+      "AfgivneStemmer": 1163,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2393,
+      "AfgivneStemmer": 1429,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2393,
+      "AfgivneStemmer": 1653,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2393,
+      "AfgivneStemmer": 1811,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

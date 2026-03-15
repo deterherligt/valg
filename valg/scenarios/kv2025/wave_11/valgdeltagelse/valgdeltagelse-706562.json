@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:27:11",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "2. Ørestad",
+  "AfstemningsområdeDagiId": "706562",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 10680,
+      "AfgivneStemmer": 1892,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10680,
+      "AfgivneStemmer": 3135,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10680,
+      "AfgivneStemmer": 4462,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10680,
+      "AfgivneStemmer": 5002,
+      "Tidspunkt": "20:12:00"
+    }
+  ]
+}

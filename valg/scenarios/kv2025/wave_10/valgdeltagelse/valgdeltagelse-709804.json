@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:43:43",
+  "Kommune": "Tårnby",
+  "Kommunekode": 185,
+  "Afstemningsområde": "Tårnby",
+  "AfstemningsområdeDagiId": "709804",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5338,
+      "AfgivneStemmer": 747,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5338,
+      "AfgivneStemmer": 1191,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5338,
+      "AfgivneStemmer": 2110,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5338,
+      "AfgivneStemmer": 2821,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5338,
+      "AfgivneStemmer": 3291,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

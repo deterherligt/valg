@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:26",
+  "Kommune": "Syddjurs",
+  "Kommunekode": 706,
+  "Afstemningsområde": "Ryomgård",
+  "AfstemningsområdeDagiId": "711952",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3868,
+      "AfgivneStemmer": 910,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3868,
+      "AfgivneStemmer": 1063,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3868,
+      "AfgivneStemmer": 1252,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3868,
+      "AfgivneStemmer": 1515,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3868,
+      "AfgivneStemmer": 1836,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3868,
+      "AfgivneStemmer": 2169,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3868,
+      "AfgivneStemmer": 2458,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3868,
+      "AfgivneStemmer": 2660,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

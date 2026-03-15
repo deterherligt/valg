@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:09:28",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Ulstedhallen",
+  "AfstemningsområdeDagiId": "708966",
+  "AfstemningsområdeNummer": 46,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1102,
+      "AfgivneStemmer": 197,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1102,
+      "AfgivneStemmer": 599,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

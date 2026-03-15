@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:16:11",
+  "Kommune": "Furesø",
+  "Kommunekode": 190,
+  "Afstemningsområde": "Paltholm",
+  "AfstemningsområdeDagiId": "706956",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4895,
+      "AfgivneStemmer": 745,
+      "Tidspunkt": "09:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4895,
+      "AfgivneStemmer": 862,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4895,
+      "AfgivneStemmer": 1193,
+      "Tidspunkt": "12:26:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4895,
+      "AfgivneStemmer": 1488,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4895,
+      "AfgivneStemmer": 1892,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4895,
+      "AfgivneStemmer": 2435,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4895,
+      "AfgivneStemmer": 2656,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4895,
+      "AfgivneStemmer": 2786,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

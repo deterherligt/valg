@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:42",
+  "Kommune": "Esbjerg",
+  "Kommunekode": 561,
+  "Afstemningsområde": "Hjerting",
+  "AfstemningsområdeDagiId": "712150",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6052,
+      "AfgivneStemmer": 1259,
+      "Tidspunkt": "11:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6052,
+      "AfgivneStemmer": 2236,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6052,
+      "AfgivneStemmer": 3761,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6052,
+      "AfgivneStemmer": 4438,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

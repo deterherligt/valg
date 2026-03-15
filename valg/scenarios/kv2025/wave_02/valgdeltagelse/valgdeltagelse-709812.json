@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:43",
+  "Kommune": "Nyborg",
+  "Kommunekode": 450,
+  "Afstemningsområde": "Langå, Svindinge Og Øksendrup",
+  "AfstemningsområdeDagiId": "709812",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 511,
+      "Tidspunkt": "01:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 70,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 91,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 119,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 158,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 194,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 221,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 259,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 333,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 418,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 511,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 574,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 841,
+      "AfgivneStemmer": 597,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

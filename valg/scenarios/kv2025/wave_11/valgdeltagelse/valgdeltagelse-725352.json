@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:57:31",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "5. Nørrebrohallen",
+  "AfstemningsområdeDagiId": "725352",
+  "AfstemningsområdeNummer": 58,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 12208,
+      "AfgivneStemmer": 2686,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12208,
+      "AfgivneStemmer": 4662,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12208,
+      "AfgivneStemmer": 6323,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12208,
+      "AfgivneStemmer": 7953,
+      "Tidspunkt": "20:14:00"
+    }
+  ]
+}

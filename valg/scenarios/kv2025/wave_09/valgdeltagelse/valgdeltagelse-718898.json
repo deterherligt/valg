@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:41",
+  "Kommune": "Greve",
+  "Kommunekode": 253,
+  "Afstemningsområde": "Mosedeskolen",
+  "AfstemningsområdeDagiId": "718898",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4657,
+      "AfgivneStemmer": 474,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4657,
+      "AfgivneStemmer": 1309,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4657,
+      "AfgivneStemmer": 2419,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4657,
+      "AfgivneStemmer": 3725,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

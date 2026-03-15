@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:14",
+  "Kommune": "Syddjurs",
+  "Kommunekode": 706,
+  "Afstemningsområde": "Hornslet",
+  "AfstemningsområdeDagiId": "701618",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6488,
+      "AfgivneStemmer": 1762,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6488,
+      "AfgivneStemmer": 2011,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6488,
+      "AfgivneStemmer": 2311,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6488,
+      "AfgivneStemmer": 2697,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6488,
+      "AfgivneStemmer": 3234,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6488,
+      "AfgivneStemmer": 3802,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6488,
+      "AfgivneStemmer": 4347,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6488,
+      "AfgivneStemmer": 4739,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

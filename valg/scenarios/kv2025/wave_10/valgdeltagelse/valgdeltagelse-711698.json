@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:20:28",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Tingløkkeskolen",
+  "AfstemningsområdeDagiId": "711698",
+  "AfstemningsområdeNummer": 29,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5533,
+      "AfgivneStemmer": 1027,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5533,
+      "AfgivneStemmer": 2856,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5533,
+      "AfgivneStemmer": 4191,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

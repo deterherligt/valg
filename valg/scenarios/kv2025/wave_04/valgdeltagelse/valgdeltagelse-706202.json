@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:14",
+  "Kommune": "Haderslev",
+  "Kommunekode": 510,
+  "Afstemningsområde": "Over Jerstal",
+  "AfstemningsområdeDagiId": "706202",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1566,
+      "AfgivneStemmer": 215,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1566,
+      "AfgivneStemmer": 414,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1566,
+      "AfgivneStemmer": 836,
+      "Tidspunkt": "18:10:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1566,
+      "AfgivneStemmer": 952,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

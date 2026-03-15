@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:09",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Snejbjerg",
+  "AfstemningsområdeDagiId": "707802",
+  "AfstemningsområdeNummer": 23,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4371,
+      "AfgivneStemmer": 250,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4371,
+      "AfgivneStemmer": 736,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4371,
+      "AfgivneStemmer": 1266,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4371,
+      "AfgivneStemmer": 1771,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4371,
+      "AfgivneStemmer": 2165,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4371,
+      "AfgivneStemmer": 2586,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4371,
+      "AfgivneStemmer": 2991,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4371,
+      "AfgivneStemmer": 3318,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

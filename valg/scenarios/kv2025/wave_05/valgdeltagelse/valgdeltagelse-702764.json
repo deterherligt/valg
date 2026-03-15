@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:41",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Stevnstrup Forsamlingshus",
+  "AfstemningsområdeDagiId": "702764",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 204,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 294,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 444,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 565,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 666,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 789,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 909,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 1074,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 1291,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 1523,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 1761,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2458,
+      "AfgivneStemmer": 1951,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

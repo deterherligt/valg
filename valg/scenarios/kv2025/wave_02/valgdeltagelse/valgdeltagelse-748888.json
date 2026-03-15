@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:22:17",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Lem-Vejby",
+  "AfstemningsområdeDagiId": "748888",
+  "AfstemningsområdeNummer": 19,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 685,
+      "AfgivneStemmer": 96,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 685,
+      "AfgivneStemmer": 204,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 685,
+      "AfgivneStemmer": 286,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 685,
+      "AfgivneStemmer": 431,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 685,
+      "AfgivneStemmer": 499,
+      "Tidspunkt": "20:14:00"
+    }
+  ]
+}

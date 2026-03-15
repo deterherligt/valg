@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:55",
+  "Kommune": "Struer",
+  "Kommunekode": 671,
+  "Afstemningsområde": "Hvidbjerg",
+  "AfstemningsområdeDagiId": "709888",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2355,
+      "AfgivneStemmer": 438,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2355,
+      "AfgivneStemmer": 1052,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2355,
+      "AfgivneStemmer": 1488,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2355,
+      "AfgivneStemmer": 1714,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

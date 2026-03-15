@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:10",
+  "Kommune": "Odder",
+  "Kommunekode": 727,
+  "Afstemningsområde": "Gylling",
+  "AfstemningsområdeDagiId": "704968",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 922,
+      "AfgivneStemmer": 75,
+      "Tidspunkt": "09:11:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 922,
+      "AfgivneStemmer": 160,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 922,
+      "AfgivneStemmer": 263,
+      "Tidspunkt": "14:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 922,
+      "AfgivneStemmer": 441,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 922,
+      "AfgivneStemmer": 489,
+      "Tidspunkt": "17:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 922,
+      "AfgivneStemmer": 611,
+      "Tidspunkt": "19:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 922,
+      "AfgivneStemmer": 652,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

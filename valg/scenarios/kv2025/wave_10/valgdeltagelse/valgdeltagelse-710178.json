@@ -1,0 +1,82 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:37:27",
+  "Kommune": "Lyngby-Taarbæk",
+  "Kommunekode": 173,
+  "Afstemningsområde": "Lyngby Midt",
+  "AfstemningsområdeDagiId": "710178",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 598,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 647,
+      "Tidspunkt": "09:20:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 765,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 988,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 1233,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 1481,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 1729,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 1977,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 2305,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 2683,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 3083,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 3486,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 3883,
+      "Tidspunkt": "20:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 3912,
+      "Tidspunkt": "20:30:00"
+    }
+  ]
+}

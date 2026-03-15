@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:56",
+  "Kommune": "Skanderborg",
+  "Kommunekode": 746,
+  "Afstemningsområde": "Stjær",
+  "AfstemningsområdeDagiId": "706674",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1707,
+      "AfgivneStemmer": 384,
+      "Tidspunkt": "11:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1707,
+      "AfgivneStemmer": 950,
+      "Tidspunkt": "16:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1707,
+      "AfgivneStemmer": 1380,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

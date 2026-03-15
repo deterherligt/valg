@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:57",
+  "Kommune": "Ringsted",
+  "Kommunekode": 329,
+  "Afstemningsområde": "Vetterslev",
+  "AfstemningsområdeDagiId": "706072",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1137,
+      "AfgivneStemmer": 74,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1137,
+      "AfgivneStemmer": 227,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1137,
+      "AfgivneStemmer": 428,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1137,
+      "AfgivneStemmer": 828,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

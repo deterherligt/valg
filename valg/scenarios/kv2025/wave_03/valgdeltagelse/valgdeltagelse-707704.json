@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:11",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Verninge/Nårup",
+  "AfstemningsområdeDagiId": "707704",
+  "AfstemningsområdeNummer": 18,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1283,
+      "AfgivneStemmer": 112,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1283,
+      "AfgivneStemmer": 214,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1283,
+      "AfgivneStemmer": 357,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1283,
+      "AfgivneStemmer": 653,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1283,
+      "AfgivneStemmer": 864,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1283,
+      "AfgivneStemmer": 934,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

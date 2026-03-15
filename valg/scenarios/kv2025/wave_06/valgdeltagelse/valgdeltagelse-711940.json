@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:41",
+  "Kommune": "Syddjurs",
+  "Kommunekode": 706,
+  "Afstemningsområde": "Kolind",
+  "AfstemningsområdeDagiId": "711940",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2688,
+      "AfgivneStemmer": 699,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2688,
+      "AfgivneStemmer": 820,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2688,
+      "AfgivneStemmer": 948,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2688,
+      "AfgivneStemmer": 1119,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2688,
+      "AfgivneStemmer": 1402,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2688,
+      "AfgivneStemmer": 1633,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2688,
+      "AfgivneStemmer": 1787,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2688,
+      "AfgivneStemmer": 1893,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

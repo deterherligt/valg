@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:18:26",
+  "Kommune": "Vallensbæk",
+  "Kommunekode": 187,
+  "Afstemningsområde": "Egholmskolen",
+  "AfstemningsområdeDagiId": "709762",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3616,
+      "AfgivneStemmer": 0,
+      "Tidspunkt": "05:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3615,
+      "AfgivneStemmer": 0,
+      "Tidspunkt": "05:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3615,
+      "AfgivneStemmer": 465,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3615,
+      "AfgivneStemmer": 771,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3615,
+      "AfgivneStemmer": 1415,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3615,
+      "AfgivneStemmer": 2008,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3615,
+      "AfgivneStemmer": 2690,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3615,
+      "AfgivneStemmer": 2840,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 15:04:46",
+  "Kommune": "Favrskov",
+  "Kommunekode": 710,
+  "Afstemningsområde": "Haldum-Hinnerup/Vitten",
+  "AfstemningsområdeDagiId": "709596",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4014,
+      "AfgivneStemmer": 997,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4014,
+      "AfgivneStemmer": 1842,
+      "Tidspunkt": "16:00:00"
+    }
+  ]
+}

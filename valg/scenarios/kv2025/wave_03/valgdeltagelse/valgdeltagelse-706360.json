@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 15:06:15",
+  "Kommune": "Favrskov",
+  "Kommunekode": 710,
+  "Afstemningsområde": "Voldum",
+  "AfstemningsområdeDagiId": "706360",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1003,
+      "AfgivneStemmer": 149,
+      "Tidspunkt": "12:06:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1003,
+      "AfgivneStemmer": 314,
+      "Tidspunkt": "16:00:00"
+    }
+  ]
+}

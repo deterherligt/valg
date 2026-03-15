@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:46:58",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Gjerlev Aktivitetshus",
+  "AfstemningsområdeDagiId": "701136",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 66,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 125,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 189,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 240,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 278,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 330,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 374,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 438,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 526,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 639,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 696,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1112,
+      "AfgivneStemmer": 709,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

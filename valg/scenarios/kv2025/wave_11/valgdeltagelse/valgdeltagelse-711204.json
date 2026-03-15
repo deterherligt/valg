@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:25:41",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "2. Sundbyvester",
+  "AfstemningsområdeDagiId": "711204",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 11345,
+      "AfgivneStemmer": 2270,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11345,
+      "AfgivneStemmer": 4067,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11345,
+      "AfgivneStemmer": 5727,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11345,
+      "AfgivneStemmer": 6902,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

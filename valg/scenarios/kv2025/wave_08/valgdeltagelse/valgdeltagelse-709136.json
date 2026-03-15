@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:57",
+  "Kommune": "Albertslund",
+  "Kommunekode": 165,
+  "Afstemningsområde": "Egelundskolen",
+  "AfstemningsområdeDagiId": "709136",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3860,
+      "AfgivneStemmer": 510,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3860,
+      "AfgivneStemmer": 898,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3860,
+      "AfgivneStemmer": 1187,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3860,
+      "AfgivneStemmer": 1649,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3860,
+      "AfgivneStemmer": 2296,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3860,
+      "AfgivneStemmer": 2679,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

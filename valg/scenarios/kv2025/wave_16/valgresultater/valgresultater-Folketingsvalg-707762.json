@@ -1,0 +1,429 @@
+{
+  "Valgresultater": {
+    "AfstemningsomraadeId": "707762",
+    "Optaellingstype": "Fintaelling",
+    "IndenforParti": [
+      {
+        "PartiId": "C",
+        "Partistemmer": 257,
+        "Kandidater": [
+          {
+            "KandidatId": "e00ead6e-5ae1-497c-ac43-6f7f634fd6ba",
+            "Stemmer": 44
+          },
+          {
+            "KandidatId": "83b1e31a-ac81-488a-a3ac-8270c0c30fa3",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "10912e63-aec2-44a3-bf07-8e1f6a61d61c",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "b3264494-16b4-42f3-8f07-ceee0af2f4be",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "5a05579f-5f13-42ed-8040-312f70ec4ee0",
+            "Stemmer": 145
+          },
+          {
+            "KandidatId": "9689e694-7fe0-45fb-abc2-86b4cde821eb",
+            "Stemmer": 12
+          },
+          {
+            "KandidatId": "a84056d1-61ca-44fe-a2b0-e332c44cffab",
+            "Stemmer": 7
+          },
+          {
+            "KandidatId": "90553f20-d85e-49ba-972f-6526bd39d6db",
+            "Stemmer": 1
+          }
+        ]
+      },
+      {
+        "PartiId": "F",
+        "Partistemmer": 752,
+        "Kandidater": [
+          {
+            "KandidatId": "a7b7e452-4835-4545-a378-6d7f1a1391da",
+            "Stemmer": 6
+          },
+          {
+            "KandidatId": "3c923322-96fd-4c52-81df-185153993a72",
+            "Stemmer": 159
+          },
+          {
+            "KandidatId": "93582e03-77db-44a2-84f8-9a09039dfb05",
+            "Stemmer": 32
+          },
+          {
+            "KandidatId": "311f245b-5bea-447e-85c0-a4eb18938398",
+            "Stemmer": 79
+          },
+          {
+            "KandidatId": "af1a3c95-da3c-4224-8e23-7b4332de74fb",
+            "Stemmer": 11
+          },
+          {
+            "KandidatId": "7eae7df3-4768-4713-a184-fdbc2b858727",
+            "Stemmer": 12
+          },
+          {
+            "KandidatId": "e7eed7c7-e37b-4a09-886e-80ff3de75d4d",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "44ce2f90-8e10-45ed-b1fe-0282d84f8b56",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "1d9fb724-d9df-43a1-a6a1-a423c9fd690a",
+            "Stemmer": 125
+          },
+          {
+            "KandidatId": "bb37bc2d-6793-45a8-95a8-a663e190aef6",
+            "Stemmer": 87
+          },
+          {
+            "KandidatId": "d0cdd1af-2b3f-4233-8afd-09feecf3852a",
+            "Stemmer": 7
+          }
+        ]
+      },
+      {
+        "PartiId": "V",
+        "Partistemmer": 646,
+        "Kandidater": [
+          {
+            "KandidatId": "614f1fa3-2256-4018-8896-a34c075ebf26",
+            "Stemmer": 37
+          },
+          {
+            "KandidatId": "b611b256-913c-45c5-b483-cb39c02a9419",
+            "Stemmer": 352
+          },
+          {
+            "KandidatId": "c202d09b-b49d-4017-99d3-9faadf9ead54",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "37facf4a-d653-454b-bf2f-2b0565aff876",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "296ea736-71f2-47ce-b0eb-f4894515318e",
+            "Stemmer": 12
+          },
+          {
+            "KandidatId": "4ebca8b1-b34d-4831-9f41-cadb6602aef7",
+            "Stemmer": 5
+          },
+          {
+            "KandidatId": "31675053-b9a1-4009-828e-5e67bd14390f",
+            "Stemmer": 29
+          },
+          {
+            "KandidatId": "d79783cb-2463-471c-9df9-75cdebdb18b0",
+            "Stemmer": 6
+          },
+          {
+            "KandidatId": "526467d7-1123-437d-8ffc-3f2babba4331",
+            "Stemmer": 7
+          },
+          {
+            "KandidatId": "5baa9308-ebd3-4470-9b20-244f6cf27369",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "be64e1b9-319f-49e7-b2e2-96c533e38d99",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "d1aaa97c-a1d4-48ea-88d0-d77ce75460e0",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "82a28848-e7d7-4b07-8a10-90f358cb9f90",
+            "Stemmer": 3
+          },
+          {
+            "KandidatId": "5e1dbed3-6953-4cee-a68b-f99c9c9d9120",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "39f04f2c-aa15-47ac-823f-08d62b7edbfd",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "ced3202a-2013-40fa-9272-312b9ec2d5d0",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "d8a275aa-dbcf-4026-bdd9-51c5051b30fb",
+            "Stemmer": 50
+          },
+          {
+            "KandidatId": "d0f02d20-2e8a-4c7e-a31d-f9785d3cdf08",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "a388c7fe-f426-4ddb-9318-986962a20be7",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "dad24e6c-f4af-4105-a262-3e7d784f5680",
+            "Stemmer": 10
+          },
+          {
+            "KandidatId": "84dfce5c-b388-495c-a20d-7b1260c3418a",
+            "Stemmer": 5
+          }
+        ]
+      },
+      {
+        "PartiId": "O",
+        "Partistemmer": 113,
+        "Kandidater": [
+          {
+            "KandidatId": "e6a9ce10-0377-4a8e-8a06-6dafcde7549d",
+            "Stemmer": 12
+          },
+          {
+            "KandidatId": "028ba72c-003e-4683-b0e6-6bda6040a18b",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "daaf0fce-dbb3-4255-90d0-7e31b33aa7f6",
+            "Stemmer": 5
+          },
+          {
+            "KandidatId": "ea8970b3-0761-4d12-8ce8-7b65a38904fb",
+            "Stemmer": 3
+          },
+          {
+            "KandidatId": "8e732858-7021-4a35-84ea-5dd0dc1a6888",
+            "Stemmer": 12
+          },
+          {
+            "KandidatId": "f54eaba5-79ea-4868-b5df-f350b70c7d35",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "d589d72d-0017-4795-b21b-4decdfe7796d",
+            "Stemmer": 4
+          }
+        ]
+      },
+      {
+        "PartiId": "M",
+        "Partistemmer": 21,
+        "Kandidater": [
+          {
+            "KandidatId": "394559c4-b3ca-439b-982f-b3a4917878bf",
+            "Stemmer": 9
+          },
+          {
+            "KandidatId": "092a245d-e695-4944-8d28-0e2021c6449b",
+            "Stemmer": 1
+          }
+        ]
+      },
+      {
+        "PartiId": "I",
+        "Partistemmer": 142,
+        "Kandidater": [
+          {
+            "KandidatId": "7d3ff1c0-f813-40c5-91fd-7f71aea2b1dc",
+            "Stemmer": 15
+          },
+          {
+            "KandidatId": "5534cc22-167f-4048-82f0-7a36a71b229b",
+            "Stemmer": 18
+          },
+          {
+            "KandidatId": "99c955d9-3b90-469b-927d-7eee6b3a6ef6",
+            "Stemmer": 7
+          },
+          {
+            "KandidatId": "f30332b3-3c34-4d44-b1be-c3354f96633a",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "c121e416-7fed-49f5-95c6-326aa68754d1",
+            "Stemmer": 6
+          },
+          {
+            "KandidatId": "d6ba8de7-15d1-49cc-8c2f-b9bc227357c5",
+            "Stemmer": 26
+          }
+        ]
+      },
+      {
+        "PartiId": "B",
+        "Partistemmer": 146,
+        "Kandidater": [
+          {
+            "KandidatId": "6d7cbc78-5160-4858-813d-054ddd4bf002",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "e8b5a389-02e5-4eac-ba17-03dcf8285f66",
+            "Stemmer": 8
+          },
+          {
+            "KandidatId": "c45a8df1-1d19-4a54-837d-43602e6b6ae5",
+            "Stemmer": 13
+          },
+          {
+            "KandidatId": "7759adc9-e037-4574-945a-be8d16b99807",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "7471ae1e-31e5-4a5e-a444-71d79dc231f1",
+            "Stemmer": 23
+          },
+          {
+            "KandidatId": "30233cb9-ae09-4be8-97bb-199dc29ca37f",
+            "Stemmer": 39
+          },
+          {
+            "KandidatId": "cfb9036d-447c-454c-9285-9edf4b9f7749",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "368bd4ca-fbd9-40a0-b73e-017937607af3",
+            "Stemmer": 3
+          }
+        ]
+      },
+      {
+        "PartiId": "Å",
+        "Partistemmer": 77,
+        "Kandidater": [
+          {
+            "KandidatId": "e6bf1168-64c4-47ea-8733-5a4812165437",
+            "Stemmer": 73
+          }
+        ]
+      },
+      {
+        "PartiId": "Ø",
+        "Partistemmer": 397,
+        "Kandidater": [
+          {
+            "KandidatId": "554ae5ed-9041-49c4-82eb-2ab2b2f0df35",
+            "Stemmer": 13
+          },
+          {
+            "KandidatId": "fce54f3d-658d-4e6a-a297-6b05e8918ae2",
+            "Stemmer": 53
+          },
+          {
+            "KandidatId": "648958a7-24aa-4bdb-b29c-e3cd76f59e10",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "8cea1025-edec-40f9-9ee5-dd208c1c4c46",
+            "Stemmer": 17
+          },
+          {
+            "KandidatId": "f6256139-bc08-4dab-af34-5dfa57834636",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "5dc5cb71-ae09-49a3-8338-2fd630edb958",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "6813e6c7-33a6-46cc-aec0-1f89708d1bbf",
+            "Stemmer": 29
+          },
+          {
+            "KandidatId": "afcee870-20f8-45a0-80bd-e8ff85579c31",
+            "Stemmer": 119
+          },
+          {
+            "KandidatId": "a80877ae-56fc-4c6d-9e0c-74f0c8d50c49",
+            "Stemmer": 16
+          },
+          {
+            "KandidatId": "012a426a-3eae-4040-875d-35479d9c3b7a",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "a081abb2-0989-42f0-8ab9-67aa37070735",
+            "Stemmer": 10
+          },
+          {
+            "KandidatId": "fd62a6e9-fa05-4d0f-af09-9e4ec62fe883",
+            "Stemmer": 11
+          }
+        ]
+      },
+      {
+        "PartiId": "A",
+        "Partistemmer": 477,
+        "Kandidater": [
+          {
+            "KandidatId": "59c872f6-0878-4994-9356-106edd73f984",
+            "Stemmer": 9
+          },
+          {
+            "KandidatId": "496c8b60-2431-4c00-a872-b9b02b70fd98",
+            "Stemmer": 18
+          },
+          {
+            "KandidatId": "bc099416-4d82-4cfb-8394-7d0fba5eb231",
+            "Stemmer": 8
+          },
+          {
+            "KandidatId": "c85fa202-70dc-4c06-a3fe-aa0c1ccd41bd",
+            "Stemmer": 68
+          },
+          {
+            "KandidatId": "fcce53db-957c-4700-a8c3-81beff42f6e6",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "2e2af5b1-163e-481a-81b2-a9ec52232af9",
+            "Stemmer": 15
+          },
+          {
+            "KandidatId": "c7d06798-7719-4d16-93b2-99737e4968f5",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "2702810d-324c-443e-9136-949b16606c4d",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "67f3016c-3a6c-4e61-8017-e830424599ad",
+            "Stemmer": 72
+          },
+          {
+            "KandidatId": "872c7aa8-37fa-4eaf-a1a5-7dbcc2bf055e",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "cc7f12b6-d26b-462c-be83-6412b33fcdc3",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "7277e144-fd1a-4878-9b12-ece822a3fe18",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "340bdb2d-cc29-484c-a7eb-7269a545f37e",
+            "Stemmer": 134
+          },
+          {
+            "KandidatId": "f70eac35-d9be-43d0-b0ea-08d2edd0331d",
+            "Stemmer": 2
+          }
+        ]
+      }
+    ],
+    "KandidaterUdenforParti": []
+  }
+}

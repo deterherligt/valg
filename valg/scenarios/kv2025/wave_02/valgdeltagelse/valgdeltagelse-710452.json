@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:19:47",
+  "Kommune": "Hjørring",
+  "Kommunekode": 860,
+  "Afstemningsområde": "Tolne",
+  "AfstemningsområdeDagiId": "710452",
+  "AfstemningsområdeNummer": 26,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 947,
+      "AfgivneStemmer": 45,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 947,
+      "AfgivneStemmer": 124,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 947,
+      "AfgivneStemmer": 200,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 947,
+      "AfgivneStemmer": 283,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 947,
+      "AfgivneStemmer": 453,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 947,
+      "AfgivneStemmer": 608,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:42",
+  "Kommune": "Ishøj",
+  "Kommunekode": 183,
+  "Afstemningsområde": "Strandgårdskolen",
+  "AfstemningsområdeDagiId": "700876",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 430,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 489,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 602,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 731,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 851,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 1001,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 1167,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 1372,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 1582,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 1835,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 2025,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4759,
+      "AfgivneStemmer": 2202,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

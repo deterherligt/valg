@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:41:42",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Sabro-Korsvejskolen, Sabro",
+  "AfstemningsområdeDagiId": "710034",
+  "AfstemningsområdeNummer": 33,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3296,
+      "AfgivneStemmer": 217,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3296,
+      "AfgivneStemmer": 572,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3296,
+      "AfgivneStemmer": 971,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3296,
+      "AfgivneStemmer": 1681,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3296,
+      "AfgivneStemmer": 2084,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:40",
+  "Kommune": "Sorø",
+  "Kommunekode": 340,
+  "Afstemningsområde": "Alsted Fjenneslev",
+  "AfstemningsområdeDagiId": "711404",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1489,
+      "AfgivneStemmer": 575,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1489,
+      "AfgivneStemmer": 1032,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:52:14",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Skåde Skole",
+  "AfstemningsområdeDagiId": "700902",
+  "AfstemningsområdeNummer": 66,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4873,
+      "AfgivneStemmer": 699,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4873,
+      "AfgivneStemmer": 1362,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4873,
+      "AfgivneStemmer": 2005,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4873,
+      "AfgivneStemmer": 3132,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4873,
+      "AfgivneStemmer": 3777,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

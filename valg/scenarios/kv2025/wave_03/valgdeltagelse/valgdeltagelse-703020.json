@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:40",
+  "Kommune": "Vejen",
+  "Kommunekode": 575,
+  "Afstemningsområde": "Gesten",
+  "AfstemningsområdeDagiId": "703020",
+  "AfstemningsområdeNummer": 18,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1135,
+      "AfgivneStemmer": 116,
+      "Tidspunkt": "10:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1135,
+      "AfgivneStemmer": 253,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1135,
+      "AfgivneStemmer": 406,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1135,
+      "AfgivneStemmer": 761,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

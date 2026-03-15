@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:26",
+  "Kommune": "Kerteminde",
+  "Kommunekode": 440,
+  "Afstemningsområde": "Munkebo",
+  "AfstemningsområdeDagiId": "707976",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 351,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 595,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 872,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 1124,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 1342,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 1559,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 1805,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 2123,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 2495,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 2839,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 3136,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4874,
+      "AfgivneStemmer": 3258,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

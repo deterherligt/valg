@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:39",
+  "Kommune": "Ringsted",
+  "Kommunekode": 329,
+  "Afstemningsområde": "Ringsted Nørretorv",
+  "AfstemningsområdeDagiId": "711804",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9571,
+      "AfgivneStemmer": 990,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9571,
+      "AfgivneStemmer": 1085,
+      "Tidspunkt": "09:19:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9571,
+      "AfgivneStemmer": 2379,
+      "Tidspunkt": "12:20:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9571,
+      "AfgivneStemmer": 3962,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9571,
+      "AfgivneStemmer": 6438,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

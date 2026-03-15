@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:28:27",
+  "Kommune": "Køge",
+  "Kommunekode": 259,
+  "Afstemningsområde": "Ejby",
+  "AfstemningsområdeDagiId": "700864",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3339,
+      "AfgivneStemmer": 1394,
+      "Tidspunkt": "16:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3339,
+      "AfgivneStemmer": 1394,
+      "Tidspunkt": "16:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3339,
+      "AfgivneStemmer": 2529,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

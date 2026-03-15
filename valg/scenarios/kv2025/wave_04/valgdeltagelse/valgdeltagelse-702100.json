@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:46",
+  "Kommune": "Struer",
+  "Kommunekode": 671,
+  "Afstemningsområde": "Gimsing",
+  "AfstemningsområdeDagiId": "702100",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1704,
+      "AfgivneStemmer": 302,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1704,
+      "AfgivneStemmer": 758,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1704,
+      "AfgivneStemmer": 1090,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1704,
+      "AfgivneStemmer": 1250,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:12:57",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Klaruphallen",
+  "AfstemningsområdeDagiId": "701338",
+  "AfstemningsområdeNummer": 33,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4162,
+      "AfgivneStemmer": 873,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4162,
+      "AfgivneStemmer": 2561,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

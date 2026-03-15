@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:46",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Gullestrup",
+  "AfstemningsområdeDagiId": "701676",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1540,
+      "AfgivneStemmer": 117,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1540,
+      "AfgivneStemmer": 231,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1540,
+      "AfgivneStemmer": 393,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1540,
+      "AfgivneStemmer": 533,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1540,
+      "AfgivneStemmer": 671,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1540,
+      "AfgivneStemmer": 802,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1540,
+      "AfgivneStemmer": 910,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1540,
+      "AfgivneStemmer": 983,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:26",
+  "Kommune": "Egedal",
+  "Kommunekode": 240,
+  "Afstemningsområde": "Bækkegårdsskolen",
+  "AfstemningsområdeDagiId": "705206",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4522,
+      "AfgivneStemmer": 435,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4522,
+      "AfgivneStemmer": 767,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4522,
+      "AfgivneStemmer": 1345,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4522,
+      "AfgivneStemmer": 1841,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4522,
+      "AfgivneStemmer": 2679,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4522,
+      "AfgivneStemmer": 3137,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

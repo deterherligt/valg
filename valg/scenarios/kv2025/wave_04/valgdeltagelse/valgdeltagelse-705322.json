@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:28",
+  "Kommune": "Kerteminde",
+  "Kommunekode": 440,
+  "Afstemningsområde": "Marslev",
+  "AfstemningsområdeDagiId": "705322",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 89,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 138,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 214,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 287,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 345,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 407,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 467,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 617,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 808,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 983,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 1116,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1750,
+      "AfgivneStemmer": 1203,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

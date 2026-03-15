@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:12",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Tinglev",
+  "AfstemningsområdeDagiId": "711228",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2742,
+      "AfgivneStemmer": 290,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2742,
+      "AfgivneStemmer": 573,
+      "Tidspunkt": "10:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2742,
+      "AfgivneStemmer": 782,
+      "Tidspunkt": "13:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2742,
+      "AfgivneStemmer": 1070,
+      "Tidspunkt": "15:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2742,
+      "AfgivneStemmer": 1435,
+      "Tidspunkt": "17:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2742,
+      "AfgivneStemmer": 1675,
+      "Tidspunkt": "19:55:00"
+    }
+  ]
+}

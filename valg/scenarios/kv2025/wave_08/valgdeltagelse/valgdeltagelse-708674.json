@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:23:26",
+  "Kommune": "Brøndby",
+  "Kommunekode": 153,
+  "Afstemningsområde": "Lindelundshallen",
+  "AfstemningsområdeDagiId": "708674",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3673,
+      "AfgivneStemmer": 731,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3673,
+      "AfgivneStemmer": 1130,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3673,
+      "AfgivneStemmer": 1914,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3673,
+      "AfgivneStemmer": 2213,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

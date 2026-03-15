@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:32",
+  "Kommune": "Varde",
+  "Kommunekode": 573,
+  "Afstemningsområde": "Næsbjerg",
+  "AfstemningsområdeDagiId": "707562",
+  "AfstemningsområdeNummer": 26,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1141,
+      "AfgivneStemmer": 193,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1141,
+      "AfgivneStemmer": 397,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1141,
+      "AfgivneStemmer": 703,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1141,
+      "AfgivneStemmer": 834,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

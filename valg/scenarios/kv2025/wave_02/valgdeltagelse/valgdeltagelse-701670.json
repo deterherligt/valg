@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:24",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Kølkær",
+  "AfstemningsområdeDagiId": "701670",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 736,
+      "AfgivneStemmer": 33,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 736,
+      "AfgivneStemmer": 90,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 736,
+      "AfgivneStemmer": 172,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 736,
+      "AfgivneStemmer": 261,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 736,
+      "AfgivneStemmer": 340,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 736,
+      "AfgivneStemmer": 405,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 736,
+      "AfgivneStemmer": 447,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 736,
+      "AfgivneStemmer": 479,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

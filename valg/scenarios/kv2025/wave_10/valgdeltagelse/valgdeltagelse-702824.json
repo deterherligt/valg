@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:26",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Stige Skole",
+  "AfstemningsområdeDagiId": "702824",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5309,
+      "AfgivneStemmer": 745,
+      "Tidspunkt": "09:48:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5309,
+      "AfgivneStemmer": 1081,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5309,
+      "AfgivneStemmer": 2794,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5309,
+      "AfgivneStemmer": 3867,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

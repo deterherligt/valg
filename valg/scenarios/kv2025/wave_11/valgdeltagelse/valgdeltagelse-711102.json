@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:29",
+  "Kommune": "Bornholm",
+  "Kommunekode": 400,
+  "Afstemningsområde": "Rønne",
+  "AfstemningsområdeDagiId": "711102",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 11839,
+      "AfgivneStemmer": 2588,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11839,
+      "AfgivneStemmer": 6699,
+      "Tidspunkt": "17:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11839,
+      "AfgivneStemmer": 8357,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

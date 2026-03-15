@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:04:04",
+  "Kommune": "Gribskov",
+  "Kommunekode": 270,
+  "Afstemningsområde": "Blistrup",
+  "AfstemningsområdeDagiId": "708756",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3609,
+      "AfgivneStemmer": 373,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3609,
+      "AfgivneStemmer": 904,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3609,
+      "AfgivneStemmer": 1411,
+      "Tidspunkt": "15:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3609,
+      "AfgivneStemmer": 1985,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

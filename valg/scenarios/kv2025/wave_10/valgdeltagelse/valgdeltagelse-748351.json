@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:07:15",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Generationernes Hus, Aarhus Ø",
+  "AfstemningsområdeDagiId": "748351",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5384,
+      "AfgivneStemmer": 616,
+      "Tidspunkt": "09:18:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5384,
+      "AfgivneStemmer": 1180,
+      "Tidspunkt": "12:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5384,
+      "AfgivneStemmer": 1747,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5384,
+      "AfgivneStemmer": 3223,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5384,
+      "AfgivneStemmer": 4177,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

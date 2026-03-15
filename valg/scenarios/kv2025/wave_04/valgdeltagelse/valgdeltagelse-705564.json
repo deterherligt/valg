@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:26",
+  "Kommune": "Sorø",
+  "Kommunekode": 340,
+  "Afstemningsområde": "Ruds Vedby",
+  "AfstemningsområdeDagiId": "705564",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1591,
+      "AfgivneStemmer": 269,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1591,
+      "AfgivneStemmer": 546,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1591,
+      "AfgivneStemmer": 929,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

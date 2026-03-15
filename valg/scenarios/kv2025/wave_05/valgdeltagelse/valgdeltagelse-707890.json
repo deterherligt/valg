@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:56",
+  "Kommune": "Bornholm",
+  "Kommunekode": 400,
+  "Afstemningsområde": "Hasle",
+  "AfstemningsområdeDagiId": "707890",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2339,
+      "AfgivneStemmer": 456,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2338,
+      "AfgivneStemmer": 456,
+      "Tidspunkt": "11:13:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2338,
+      "AfgivneStemmer": 1465,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2338,
+      "AfgivneStemmer": 1759,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

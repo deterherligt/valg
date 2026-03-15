@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:26:26",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "UCL Seebladsgade",
+  "AfstemningsområdeDagiId": "707300",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 12078,
+      "AfgivneStemmer": 1995,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12078,
+      "AfgivneStemmer": 5550,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12078,
+      "AfgivneStemmer": 8114,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

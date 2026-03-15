@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:20",
+  "Kommune": "Varde",
+  "Kommunekode": 573,
+  "Afstemningsområde": "Outrup",
+  "AfstemningsområdeDagiId": "710662",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1250,
+      "AfgivneStemmer": 172,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1251,
+      "AfgivneStemmer": 353,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1251,
+      "AfgivneStemmer": 673,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1251,
+      "AfgivneStemmer": 800,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:27",
+  "Kommune": "Esbjerg",
+  "Kommunekode": 561,
+  "Afstemningsområde": "Østerbyen",
+  "AfstemningsområdeDagiId": "702806",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3804,
+      "AfgivneStemmer": 580,
+      "Tidspunkt": "11:28:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3804,
+      "AfgivneStemmer": 1074,
+      "Tidspunkt": "14:56:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3804,
+      "AfgivneStemmer": 1866,
+      "Tidspunkt": "17:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3804,
+      "AfgivneStemmer": 2251,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

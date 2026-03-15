@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:25",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Skibbild/Nøvling",
+  "AfstemningsområdeDagiId": "703474",
+  "AfstemningsområdeNummer": 22,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 758,
+      "AfgivneStemmer": 64,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 758,
+      "AfgivneStemmer": 124,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 758,
+      "AfgivneStemmer": 223,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 758,
+      "AfgivneStemmer": 323,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 758,
+      "AfgivneStemmer": 420,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 758,
+      "AfgivneStemmer": 500,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 758,
+      "AfgivneStemmer": 544,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 758,
+      "AfgivneStemmer": 577,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

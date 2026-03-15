@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:00",
+  "Kommune": "Syddjurs",
+  "Kommunekode": 706,
+  "Afstemningsområde": "Tirstrup",
+  "AfstemningsområdeDagiId": "703380",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1719,
+      "AfgivneStemmer": 427,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1719,
+      "AfgivneStemmer": 505,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1719,
+      "AfgivneStemmer": 605,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1719,
+      "AfgivneStemmer": 714,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1719,
+      "AfgivneStemmer": 892,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1719,
+      "AfgivneStemmer": 1031,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1719,
+      "AfgivneStemmer": 1105,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1719,
+      "AfgivneStemmer": 1164,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

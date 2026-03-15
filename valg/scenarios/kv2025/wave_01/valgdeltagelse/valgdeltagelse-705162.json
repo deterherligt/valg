@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:16:43",
+  "Kommune": "Tønder",
+  "Kommunekode": 550,
+  "Afstemningsområde": "Vodder",
+  "AfstemningsområdeDagiId": "705162",
+  "AfstemningsområdeNummer": 71,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 463,
+      "AfgivneStemmer": 34,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 463,
+      "AfgivneStemmer": 96,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 463,
+      "AfgivneStemmer": 161,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 463,
+      "AfgivneStemmer": 267,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:46:13",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Ørslevkloster",
+  "AfstemningsområdeDagiId": "748877",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1049,
+      "AfgivneStemmer": 238,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1049,
+      "AfgivneStemmer": 365,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1049,
+      "AfgivneStemmer": 492,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1049,
+      "AfgivneStemmer": 709,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1049,
+      "AfgivneStemmer": 819,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:43",
+  "Kommune": "Ringkøbing-Skjern",
+  "Kommunekode": 760,
+  "Afstemningsområde": "Videbæk",
+  "AfstemningsområdeDagiId": "706530",
+  "AfstemningsområdeNummer": 30,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3966,
+      "AfgivneStemmer": 288,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3966,
+      "AfgivneStemmer": 965,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3966,
+      "AfgivneStemmer": 1519,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3966,
+      "AfgivneStemmer": 2564,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3966,
+      "AfgivneStemmer": 2950,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

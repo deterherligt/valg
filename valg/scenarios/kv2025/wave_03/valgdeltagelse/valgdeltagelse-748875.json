@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:54:46",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Jebjerg-Lyby",
+  "AfstemningsområdeDagiId": "748875",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1248,
+      "AfgivneStemmer": 217,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1248,
+      "AfgivneStemmer": 373,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1248,
+      "AfgivneStemmer": 532,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1248,
+      "AfgivneStemmer": 774,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1248,
+      "AfgivneStemmer": 839,
+      "Tidspunkt": "20:05:00"
+    }
+  ]
+}

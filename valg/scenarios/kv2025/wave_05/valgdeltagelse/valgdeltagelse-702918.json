@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:07:43",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Mou Hotel",
+  "AfstemningsområdeDagiId": "702918",
+  "AfstemningsområdeNummer": 58,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2068,
+      "AfgivneStemmer": 356,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2068,
+      "AfgivneStemmer": 1152,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

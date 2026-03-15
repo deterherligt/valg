@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:12:29",
+  "Kommune": "Brønderslev",
+  "Kommunekode": 810,
+  "Afstemningsområde": "Ø. Brønderslev",
+  "AfstemningsområdeDagiId": "705646",
+  "AfstemningsområdeNummer": 50,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1263,
+      "AfgivneStemmer": 259,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1265,
+      "AfgivneStemmer": 436,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1265,
+      "AfgivneStemmer": 726,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

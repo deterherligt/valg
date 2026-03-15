@@ -44,9 +44,18 @@ def _get_seat_data(conn):
 
     national = {
         r["party_id"]: r["v"]
-        for r in conn.execute(
-            "SELECT party_id, SUM(votes) as v FROM party_votes GROUP BY party_id"
-        ).fetchall()
+        for r in conn.execute("""
+            SELECT pv.party_id, SUM(pv.votes) as v
+            FROM party_votes pv
+            INNER JOIN (
+                SELECT opstillingskreds_id, party_id, MAX(snapshot_at) as latest
+                FROM party_votes
+                GROUP BY opstillingskreds_id, party_id
+            ) lat ON pv.opstillingskreds_id = lat.opstillingskreds_id
+                  AND pv.party_id = lat.party_id
+                  AND pv.snapshot_at = lat.latest
+            GROUP BY pv.party_id
+        """).fetchall()
     }
     if not national:
         national = {
@@ -57,12 +66,19 @@ def _get_seat_data(conn):
             ).fetchall()
         }
 
-    sk_rows = conn.execute(
-        "SELECT pv.party_id, ok.storkreds_id, SUM(pv.votes) as v "
-        "FROM party_votes pv "
-        "JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id "
-        "GROUP BY pv.party_id, ok.storkreds_id"
-    ).fetchall()
+    sk_rows = conn.execute("""
+        SELECT pv.party_id, ok.storkreds_id, SUM(pv.votes) as v
+        FROM party_votes pv
+        INNER JOIN (
+            SELECT opstillingskreds_id, party_id, MAX(snapshot_at) as latest
+            FROM party_votes
+            GROUP BY opstillingskreds_id, party_id
+        ) lat ON pv.opstillingskreds_id = lat.opstillingskreds_id
+              AND pv.party_id = lat.party_id
+              AND pv.snapshot_at = lat.latest
+        JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id
+        GROUP BY pv.party_id, ok.storkreds_id
+    """).fetchall()
     storkreds: dict = {}
     for r in sk_rows:
         storkreds.setdefault(r["storkreds_id"], {})[r["party_id"]] = r["v"]

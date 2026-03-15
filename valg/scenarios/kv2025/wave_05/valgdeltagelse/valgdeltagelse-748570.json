@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:07:46",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Vestbjerg Idræts- og Kulturcenter",
+  "AfstemningsområdeDagiId": "748570",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2476,
+      "AfgivneStemmer": 399,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2476,
+      "AfgivneStemmer": 1394,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

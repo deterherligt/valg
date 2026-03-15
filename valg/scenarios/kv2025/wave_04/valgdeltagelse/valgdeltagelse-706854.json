@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:28:56",
+  "Kommune": "Køge",
+  "Kommunekode": 259,
+  "Afstemningsområde": "Vemmedrup",
+  "AfstemningsområdeDagiId": "706854",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1977,
+      "AfgivneStemmer": 374,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1977,
+      "AfgivneStemmer": 888,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1977,
+      "AfgivneStemmer": 1578,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

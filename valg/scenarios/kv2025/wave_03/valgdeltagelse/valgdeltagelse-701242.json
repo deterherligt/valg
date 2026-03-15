@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:17:17",
+  "Kommune": "Hjørring",
+  "Kommunekode": 860,
+  "Afstemningsområde": "Lendum",
+  "AfstemningsområdeDagiId": "701242",
+  "AfstemningsområdeNummer": 28,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 62,
+      "Tidspunkt": "09:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 130,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 217,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 297,
+      "Tidspunkt": "15:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 535,
+      "Tidspunkt": "17:05:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 712,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

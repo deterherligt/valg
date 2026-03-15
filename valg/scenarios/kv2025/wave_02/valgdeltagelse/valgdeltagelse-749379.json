@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:22:42",
+  "Kommune": "Hedensted",
+  "Kommunekode": 766,
+  "Afstemningsområde": "As",
+  "AfstemningsområdeDagiId": "749379",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 571,
+      "AfgivneStemmer": 45,
+      "Tidspunkt": "08:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 571,
+      "AfgivneStemmer": 146,
+      "Tidspunkt": "12:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 571,
+      "AfgivneStemmer": 343,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 571,
+      "AfgivneStemmer": 437,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

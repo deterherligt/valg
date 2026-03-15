@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:10",
+  "Kommune": "Lolland",
+  "Kommunekode": 360,
+  "Afstemningsområde": "Birket",
+  "AfstemningsområdeDagiId": "706808",
+  "AfstemningsområdeNummer": 26,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 374,
+      "AfgivneStemmer": 67,
+      "Tidspunkt": "10:19:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 374,
+      "AfgivneStemmer": 108,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 374,
+      "AfgivneStemmer": 129,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 374,
+      "AfgivneStemmer": 168,
+      "Tidspunkt": "16:06:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 374,
+      "AfgivneStemmer": 216,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 374,
+      "AfgivneStemmer": 231,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

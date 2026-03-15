@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:53",
+  "Kommune": "Albertslund",
+  "Kommunekode": 165,
+  "Afstemningsområde": "Kongsholmcenteret",
+  "AfstemningsområdeDagiId": "709130",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4425,
+      "AfgivneStemmer": 593,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4425,
+      "AfgivneStemmer": 923,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4425,
+      "AfgivneStemmer": 1257,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4425,
+      "AfgivneStemmer": 1656,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4425,
+      "AfgivneStemmer": 2177,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4425,
+      "AfgivneStemmer": 2454,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

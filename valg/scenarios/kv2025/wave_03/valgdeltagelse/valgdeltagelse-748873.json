@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:42:28",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Selde",
+  "AfstemningsområdeDagiId": "748873",
+  "AfstemningsområdeNummer": 18,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1008,
+      "AfgivneStemmer": 186,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1008,
+      "AfgivneStemmer": 336,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1008,
+      "AfgivneStemmer": 436,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1008,
+      "AfgivneStemmer": 642,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1008,
+      "AfgivneStemmer": 696,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:24",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Munkebjergskolen",
+  "AfstemningsområdeDagiId": "711668",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8331,
+      "AfgivneStemmer": 1271,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8331,
+      "AfgivneStemmer": 3825,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8331,
+      "AfgivneStemmer": 5870,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

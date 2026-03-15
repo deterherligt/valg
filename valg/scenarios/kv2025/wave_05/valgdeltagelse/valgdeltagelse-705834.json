@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:18:48",
+  "Kommune": "Gribskov",
+  "Kommunekode": 270,
+  "Afstemningsområde": "Annisse",
+  "AfstemningsområdeDagiId": "705834",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2362,
+      "AfgivneStemmer": 226,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2362,
+      "AfgivneStemmer": 555,
+      "Tidspunkt": "12:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2362,
+      "AfgivneStemmer": 883,
+      "Tidspunkt": "15:07:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2362,
+      "AfgivneStemmer": 1623,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

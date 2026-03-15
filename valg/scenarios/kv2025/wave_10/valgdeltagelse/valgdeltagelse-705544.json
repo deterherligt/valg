@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:46:43",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Midtpunktet - Skødstrup Idræts- og Kulturcenter",
+  "AfstemningsområdeDagiId": "705544",
+  "AfstemningsområdeNummer": 51,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6982,
+      "AfgivneStemmer": 660,
+      "Tidspunkt": "09:10:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6982,
+      "AfgivneStemmer": 1579,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6982,
+      "AfgivneStemmer": 2461,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6982,
+      "AfgivneStemmer": 4312,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6982,
+      "AfgivneStemmer": 5040,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

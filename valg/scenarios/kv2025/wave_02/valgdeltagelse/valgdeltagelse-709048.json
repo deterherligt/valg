@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:55",
+  "Kommune": "Varde",
+  "Kommunekode": 573,
+  "Afstemningsområde": "Tinghøj",
+  "AfstemningsområdeDagiId": "709048",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 648,
+      "AfgivneStemmer": 82,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 648,
+      "AfgivneStemmer": 181,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 648,
+      "AfgivneStemmer": 372,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 648,
+      "AfgivneStemmer": 474,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

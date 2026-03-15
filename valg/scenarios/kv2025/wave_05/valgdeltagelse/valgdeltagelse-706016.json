@@ -1,0 +1,67 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:59",
+  "Kommune": "Vejen",
+  "Kommunekode": 575,
+  "Afstemningsområde": "Jels",
+  "AfstemningsområdeDagiId": "706016",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2040,
+      "AfgivneStemmer": 127,
+      "Tidspunkt": "08:44:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2040,
+      "AfgivneStemmer": 162,
+      "Tidspunkt": "09:05:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2040,
+      "AfgivneStemmer": 272,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2040,
+      "AfgivneStemmer": 390,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2040,
+      "AfgivneStemmer": 502,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2040,
+      "AfgivneStemmer": 569,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2040,
+      "AfgivneStemmer": 793,
+      "Tidspunkt": "15:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2040,
+      "AfgivneStemmer": 923,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2040,
+      "AfgivneStemmer": 1141,
+      "Tidspunkt": "17:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2040,
+      "AfgivneStemmer": 1354,
+      "Tidspunkt": "18:13:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2040,
+      "AfgivneStemmer": 1540,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

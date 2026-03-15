@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:27:11",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Tirsdalens Skole",
+  "AfstemningsområdeDagiId": "711638",
+  "AfstemningsområdeNummer": 32,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 270,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 391,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 530,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 692,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 801,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 937,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 1094,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 1313,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 1621,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 1893,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 2137,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 2237,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

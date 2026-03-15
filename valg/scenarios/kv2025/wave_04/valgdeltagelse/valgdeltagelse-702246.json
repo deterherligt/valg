@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:35:13",
+  "Kommune": "Ærø",
+  "Kommunekode": 492,
+  "Afstemningsområde": "Ærøskøbing",
+  "AfstemningsområdeDagiId": "702246",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1760,
+      "AfgivneStemmer": 326,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1760,
+      "AfgivneStemmer": 656,
+      "Tidspunkt": "13:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1760,
+      "AfgivneStemmer": 838,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1760,
+      "AfgivneStemmer": 1299,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:47:13",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Folkehuset Trige",
+  "AfstemningsområdeDagiId": "705514",
+  "AfstemningsområdeNummer": 53,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3177,
+      "AfgivneStemmer": 187,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3177,
+      "AfgivneStemmer": 554,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3177,
+      "AfgivneStemmer": 911,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3177,
+      "AfgivneStemmer": 1548,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3177,
+      "AfgivneStemmer": 1916,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

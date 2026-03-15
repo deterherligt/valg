@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:10:28",
+  "Kommune": "Stevns",
+  "Kommunekode": 336,
+  "Afstemningsområde": "Hårlevhallen",
+  "AfstemningsområdeDagiId": "706800",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4840,
+      "AfgivneStemmer": 752,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4840,
+      "AfgivneStemmer": 1410,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4840,
+      "AfgivneStemmer": 2446,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4840,
+      "AfgivneStemmer": 3384,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

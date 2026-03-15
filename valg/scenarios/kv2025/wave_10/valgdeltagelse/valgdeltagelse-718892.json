@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:17:40",
+  "Kommune": "Greve",
+  "Kommunekode": 253,
+  "Afstemningsområde": "Arenaskolen ved Greve Kultur-Base",
+  "AfstemningsområdeDagiId": "718892",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5826,
+      "AfgivneStemmer": 773,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5826,
+      "AfgivneStemmer": 1661,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5826,
+      "AfgivneStemmer": 2753,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5826,
+      "AfgivneStemmer": 3635,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

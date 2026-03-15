@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:25",
+  "Kommune": "Sønderborg",
+  "Kommunekode": 540,
+  "Afstemningsområde": "Nordborg",
+  "AfstemningsområdeDagiId": "703038",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4417,
+      "AfgivneStemmer": 298,
+      "Tidspunkt": "09:06:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4417,
+      "AfgivneStemmer": 828,
+      "Tidspunkt": "10:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4417,
+      "AfgivneStemmer": 1718,
+      "Tidspunkt": "15:06:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4417,
+      "AfgivneStemmer": 2982,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

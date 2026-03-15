@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:42",
+  "Kommune": "Dragør",
+  "Kommunekode": 155,
+  "Afstemningsområde": "Hollænderhallen",
+  "AfstemningsområdeDagiId": "701922",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 731,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 996,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 1340,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 1728,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 2095,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 2389,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 2741,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 3193,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 3773,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 4404,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 4917,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6935,
+      "AfgivneStemmer": 5245,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

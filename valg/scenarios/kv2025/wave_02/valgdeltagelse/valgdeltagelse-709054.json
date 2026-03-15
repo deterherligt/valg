@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:41",
+  "Kommune": "Varde",
+  "Kommunekode": 573,
+  "Afstemningsområde": "Skovlund",
+  "AfstemningsområdeDagiId": "709054",
+  "AfstemningsområdeNummer": 33,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 630,
+      "AfgivneStemmer": 95,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 630,
+      "AfgivneStemmer": 198,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 630,
+      "AfgivneStemmer": 384,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 630,
+      "AfgivneStemmer": 440,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,554 @@
+[
+  {
+    "Kode": "403614",
+    "Navn": "Nyborg",
+    "StorkredskodeKode": "450",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403600",
+    "Navn": "Ikast",
+    "StorkredskodeKode": "756",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403590",
+    "Navn": "Herning Syd",
+    "StorkredskodeKode": "657",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403577",
+    "Navn": "Rudersdal",
+    "StorkredskodeKode": "230",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403639",
+    "Navn": "Lolland",
+    "StorkredskodeKode": "360",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403592",
+    "Navn": "Brønderslev",
+    "StorkredskodeKode": "810",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403565",
+    "Navn": "Sundbyvester",
+    "StorkredskodeKode": "101",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403627",
+    "Navn": "Kolding Syd",
+    "StorkredskodeKode": "621",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403591",
+    "Navn": "Frederikshavn",
+    "StorkredskodeKode": "813",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403618",
+    "Navn": "Sønderborg",
+    "StorkredskodeKode": "540",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403562",
+    "Navn": "Rødovre",
+    "StorkredskodeKode": "175",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403613",
+    "Navn": "Middelfart",
+    "StorkredskodeKode": "410",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403619",
+    "Navn": "Tønder",
+    "StorkredskodeKode": "550",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403631",
+    "Navn": "Kalundborg",
+    "StorkredskodeKode": "326",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403555",
+    "Navn": "Hillerød",
+    "StorkredskodeKode": "219",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403580",
+    "Navn": "Ringkøbing",
+    "StorkredskodeKode": "760",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403576",
+    "Navn": "Valby",
+    "StorkredskodeKode": "101",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403558",
+    "Navn": "Gentofte",
+    "StorkredskodeKode": "157",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403611",
+    "Navn": "Odense Syd",
+    "StorkredskodeKode": "461",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403572",
+    "Navn": "Hvidovre",
+    "StorkredskodeKode": "167",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403571",
+    "Navn": "Gladsaxe",
+    "StorkredskodeKode": "159",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403641",
+    "Navn": "Vejle Nord",
+    "StorkredskodeKode": "630",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403566",
+    "Navn": "Sundbyøster",
+    "StorkredskodeKode": "101",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403616",
+    "Navn": "Faaborg",
+    "StorkredskodeKode": "430",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403552",
+    "Navn": "Helsingør",
+    "StorkredskodeKode": "217",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403561",
+    "Navn": "Taastrup",
+    "StorkredskodeKode": "169",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403593",
+    "Navn": "Thisted",
+    "StorkredskodeKode": "787",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403623",
+    "Navn": "Vejen",
+    "StorkredskodeKode": "575",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403604",
+    "Navn": "Aarhus Øst",
+    "StorkredskodeKode": "751",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403553",
+    "Navn": "Egedal",
+    "StorkredskodeKode": "240",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403603",
+    "Navn": "Favrskov",
+    "StorkredskodeKode": "710",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403579",
+    "Navn": "Holstebro",
+    "StorkredskodeKode": "661",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403609",
+    "Navn": "Assens",
+    "StorkredskodeKode": "420",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403557",
+    "Navn": "Lyngby",
+    "StorkredskodeKode": "173",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403554",
+    "Navn": "Fredensborg",
+    "StorkredskodeKode": "210",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403621",
+    "Navn": "Aabenraa",
+    "StorkredskodeKode": "580",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403624",
+    "Navn": "Esbjerg Omegn",
+    "StorkredskodeKode": "561",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403563",
+    "Navn": "Tårnby",
+    "StorkredskodeKode": "185",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403550",
+    "Navn": "Rønne",
+    "StorkredskodeKode": "400",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403587",
+    "Navn": "Aarhus Syd",
+    "StorkredskodeKode": "751",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403564",
+    "Navn": "Østerbro",
+    "StorkredskodeKode": "101",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403584",
+    "Navn": "Hjørring",
+    "StorkredskodeKode": "860",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403596",
+    "Navn": "Aalborg Øst",
+    "StorkredskodeKode": "851",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403551",
+    "Navn": "Aakirkeby",
+    "StorkredskodeKode": "400",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403585",
+    "Navn": "Skanderborg",
+    "StorkredskodeKode": "746",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403625",
+    "Navn": "Esbjerg By",
+    "StorkredskodeKode": "561",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403640",
+    "Navn": "Vejle Syd",
+    "StorkredskodeKode": "630",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403589",
+    "Navn": "Herning Nord",
+    "StorkredskodeKode": "657",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403583",
+    "Navn": "Mariagerfjord",
+    "StorkredskodeKode": "846",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403615",
+    "Navn": "Svendborg",
+    "StorkredskodeKode": "479",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403636",
+    "Navn": "Vordingborg",
+    "StorkredskodeKode": "390",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403632",
+    "Navn": "Ringsted",
+    "StorkredskodeKode": "329",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403602",
+    "Navn": "Djurs",
+    "StorkredskodeKode": "706",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403582",
+    "Navn": "Skive",
+    "StorkredskodeKode": "779",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403597",
+    "Navn": "Viborg Vest",
+    "StorkredskodeKode": "791",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403601",
+    "Navn": "Viborg Øst",
+    "StorkredskodeKode": "791",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403612",
+    "Navn": "Odense Vest",
+    "StorkredskodeKode": "461",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403638",
+    "Navn": "Guldborgsund",
+    "StorkredskodeKode": "376",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403578",
+    "Navn": "Horsens",
+    "StorkredskodeKode": "615",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403622",
+    "Navn": "Fredericia",
+    "StorkredskodeKode": "607",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403605",
+    "Navn": "Silkeborg Nord",
+    "StorkredskodeKode": "740",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403570",
+    "Navn": "Falkoner",
+    "StorkredskodeKode": "147",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403575",
+    "Navn": "Brønshøj",
+    "StorkredskodeKode": "101",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403617",
+    "Navn": "Haderslev",
+    "StorkredskodeKode": "510",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403586",
+    "Navn": "Randers Nord",
+    "StorkredskodeKode": "730",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403606",
+    "Navn": "Silkeborg Syd",
+    "StorkredskodeKode": "740",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403628",
+    "Navn": "Holbæk",
+    "StorkredskodeKode": "316",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403567",
+    "Navn": "Nørrebro",
+    "StorkredskodeKode": "101",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403595",
+    "Navn": "Aalborg Vest",
+    "StorkredskodeKode": "851",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403598",
+    "Navn": "Randers Syd",
+    "StorkredskodeKode": "730",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403626",
+    "Navn": "Kolding Nord",
+    "StorkredskodeKode": "621",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403560",
+    "Navn": "Brøndby",
+    "StorkredskodeKode": "153",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403574",
+    "Navn": "Vesterbro",
+    "StorkredskodeKode": "101",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403629",
+    "Navn": "Roskilde",
+    "StorkredskodeKode": "265",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403559",
+    "Navn": "Ballerup",
+    "StorkredskodeKode": "151",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403594",
+    "Navn": "Himmerland",
+    "StorkredskodeKode": "820",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403633",
+    "Navn": "Køge",
+    "StorkredskodeKode": "259",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403581",
+    "Navn": "Hedensted",
+    "StorkredskodeKode": "766",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403610",
+    "Navn": "Odense Øst",
+    "StorkredskodeKode": "461",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403588",
+    "Navn": "Struer",
+    "StorkredskodeKode": "671",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403569",
+    "Navn": "Slots",
+    "StorkredskodeKode": "147",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403608",
+    "Navn": "Aarhus Vest",
+    "StorkredskodeKode": "751",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403599",
+    "Navn": "Aalborg Nord",
+    "StorkredskodeKode": "851",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403630",
+    "Navn": "Slagelse",
+    "StorkredskodeKode": "330",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403568",
+    "Navn": "Bispebjerg",
+    "StorkredskodeKode": "101",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403556",
+    "Navn": "Frederikssund",
+    "StorkredskodeKode": "250",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403573",
+    "Navn": "Indre By",
+    "StorkredskodeKode": "101",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403635",
+    "Navn": "Næstved",
+    "StorkredskodeKode": "370",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403634",
+    "Navn": "Greve",
+    "StorkredskodeKode": "253",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403607",
+    "Navn": "Aarhus Nord",
+    "StorkredskodeKode": "751",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403637",
+    "Navn": "Faxe",
+    "StorkredskodeKode": "320",
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "403620",
+    "Navn": "Varde",
+    "StorkredskodeKode": "573",
+    "ValgId": "KV2025"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:45",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Kliplev",
+  "AfstemningsområdeDagiId": "706660",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1763,
+      "AfgivneStemmer": 184,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1763,
+      "AfgivneStemmer": 354,
+      "Tidspunkt": "11:56:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1763,
+      "AfgivneStemmer": 493,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1763,
+      "AfgivneStemmer": 677,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1763,
+      "AfgivneStemmer": 1024,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1763,
+      "AfgivneStemmer": 1215,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

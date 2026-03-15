@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:56",
+  "Kommune": "Læsø",
+  "Kommunekode": 825,
+  "Afstemningsområde": "Læsø",
+  "AfstemningsområdeDagiId": "702460",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 151,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 214,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 297,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 429,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 538,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 627,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 732,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 858,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 967,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 1097,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 1182,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 1230,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1481,
+      "AfgivneStemmer": 1269,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

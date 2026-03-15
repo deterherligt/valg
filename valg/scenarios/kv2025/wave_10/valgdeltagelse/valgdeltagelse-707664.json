@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:13",
+  "Kommune": "Hørsholm",
+  "Kommunekode": 223,
+  "Afstemningsområde": "Hørsholm",
+  "AfstemningsområdeDagiId": "707664",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 662,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 827,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 972,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 1210,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 1485,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 1687,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 1895,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 2136,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 2447,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 2807,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 3218,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 3611,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5083,
+      "AfgivneStemmer": 3820,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

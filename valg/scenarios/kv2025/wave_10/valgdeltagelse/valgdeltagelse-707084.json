@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:23:11",
+  "Kommune": "Brøndby",
+  "Kommunekode": 153,
+  "Afstemningsområde": "Tjørnehøjhallen",
+  "AfstemningsområdeDagiId": "707084",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5987,
+      "AfgivneStemmer": 914,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6001,
+      "AfgivneStemmer": 1399,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6001,
+      "AfgivneStemmer": 2472,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6001,
+      "AfgivneStemmer": 3000,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:22:12",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "1. Østerbro",
+  "AfstemningsområdeDagiId": "707732",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9254,
+      "AfgivneStemmer": 2445,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9254,
+      "AfgivneStemmer": 4108,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9254,
+      "AfgivneStemmer": 5643,
+      "Tidspunkt": "17:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9254,
+      "AfgivneStemmer": 6965,
+      "Tidspunkt": "20:06:00"
+    }
+  ]
+}

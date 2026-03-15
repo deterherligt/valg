@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:16:27",
+  "Kommune": "Tønder",
+  "Kommunekode": 550,
+  "Afstemningsområde": "Rømø",
+  "AfstemningsområdeDagiId": "705128",
+  "AfstemningsområdeNummer": 51,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 493,
+      "AfgivneStemmer": 57,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 493,
+      "AfgivneStemmer": 171,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 493,
+      "AfgivneStemmer": 235,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 493,
+      "AfgivneStemmer": 324,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

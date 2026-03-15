@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:12:41",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Gug Skole",
+  "AfstemningsområdeDagiId": "706010",
+  "AfstemningsområdeNummer": 34,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5422,
+      "AfgivneStemmer": 1221,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5422,
+      "AfgivneStemmer": 3436,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

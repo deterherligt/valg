@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:22:42",
+  "Kommune": "Haderslev",
+  "Kommunekode": 510,
+  "Afstemningsområde": "Bevtoft",
+  "AfstemningsområdeDagiId": "703080",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1025,
+      "AfgivneStemmer": 137,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1025,
+      "AfgivneStemmer": 299,
+      "Tidspunkt": "15:05:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1025,
+      "AfgivneStemmer": 570,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1025,
+      "AfgivneStemmer": 679,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

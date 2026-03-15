@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:11",
+  "Kommune": "Billund",
+  "Kommunekode": 530,
+  "Afstemningsområde": "Sdr. Omme",
+  "AfstemningsområdeDagiId": "701374",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 110,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 187,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 285,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 394,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 464,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 561,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 634,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 748,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 918,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 1069,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 1175,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1880,
+      "AfgivneStemmer": 1237,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

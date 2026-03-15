@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:18:10",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Skt. Klemensskolen",
+  "AfstemningsområdeDagiId": "708794",
+  "AfstemningsområdeNummer": 31,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2786,
+      "AfgivneStemmer": 538,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2786,
+      "AfgivneStemmer": 1481,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2786,
+      "AfgivneStemmer": 2127,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

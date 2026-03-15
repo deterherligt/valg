@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:25",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Ebberup/Helnæs",
+  "AfstemningsområdeDagiId": "709318",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1510,
+      "AfgivneStemmer": 116,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1510,
+      "AfgivneStemmer": 264,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1510,
+      "AfgivneStemmer": 458,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1510,
+      "AfgivneStemmer": 828,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1510,
+      "AfgivneStemmer": 1057,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1510,
+      "AfgivneStemmer": 1098,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

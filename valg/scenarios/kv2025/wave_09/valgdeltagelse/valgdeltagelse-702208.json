@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:45:58",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Sølystskolen, Egå",
+  "AfstemningsområdeDagiId": "702208",
+  "AfstemningsområdeNummer": 49,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4050,
+      "AfgivneStemmer": 491,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4050,
+      "AfgivneStemmer": 993,
+      "Tidspunkt": "11:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4050,
+      "AfgivneStemmer": 1611,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4050,
+      "AfgivneStemmer": 2619,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4050,
+      "AfgivneStemmer": 3118,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

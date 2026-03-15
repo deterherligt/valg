@@ -1,0 +1,82 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:56",
+  "Kommune": "Billund",
+  "Kommunekode": 530,
+  "Afstemningsområde": "Filskov",
+  "AfstemningsområdeDagiId": "702968",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 50,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 56,
+      "Tidspunkt": "09:11:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 85,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 119,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 162,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 193,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 220,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 240,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 294,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 388,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 477,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 552,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 583,
+      "Tidspunkt": "20:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 802,
+      "AfgivneStemmer": 583,
+      "Tidspunkt": "20:06:00"
+    }
+  ]
+}

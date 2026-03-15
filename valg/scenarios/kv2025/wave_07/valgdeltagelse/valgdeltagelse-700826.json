@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:16",
+  "Kommune": "Glostrup",
+  "Kommunekode": 161,
+  "Afstemningsområde": "Hvissingehallen",
+  "AfstemningsområdeDagiId": "700826",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3347,
+      "AfgivneStemmer": 593,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3347,
+      "AfgivneStemmer": 983,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3347,
+      "AfgivneStemmer": 1815,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3347,
+      "AfgivneStemmer": 2075,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3347,
+      "AfgivneStemmer": 2244,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

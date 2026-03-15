@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:41",
+  "Kommune": "Lejre",
+  "Kommunekode": 350,
+  "Afstemningsområde": "Sæby-Gershøj",
+  "AfstemningsområdeDagiId": "703454",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 108,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 169,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 260,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 334,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 397,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 444,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 512,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 617,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 752,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 863,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 961,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1327,
+      "AfgivneStemmer": 1024,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

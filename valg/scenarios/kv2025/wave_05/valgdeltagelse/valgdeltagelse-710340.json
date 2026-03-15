@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:40",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Blicherskolen",
+  "AfstemningsområdeDagiId": "710340",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 76,
+      "Tidspunkt": "09:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 227,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 373,
+      "Tidspunkt": "11:10:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 456,
+      "Tidspunkt": "11:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 530,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 602,
+      "Tidspunkt": "13:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 683,
+      "Tidspunkt": "15:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 816,
+      "Tidspunkt": "16:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 1023,
+      "Tidspunkt": "17:05:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 1218,
+      "Tidspunkt": "17:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 1388,
+      "Tidspunkt": "19:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2043,
+      "AfgivneStemmer": 1559,
+      "Tidspunkt": "20:02:00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:58:53",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Rødekro",
+  "AfstemningsområdeDagiId": "706666",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5538,
+      "AfgivneStemmer": 700,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5538,
+      "AfgivneStemmer": 1334,
+      "Tidspunkt": "11:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5538,
+      "AfgivneStemmer": 1774,
+      "Tidspunkt": "13:52:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5538,
+      "AfgivneStemmer": 2443,
+      "Tidspunkt": "16:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5538,
+      "AfgivneStemmer": 3354,
+      "Tidspunkt": "17:50:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5538,
+      "AfgivneStemmer": 3905,
+      "Tidspunkt": "19:52:00"
+    }
+  ]
+}

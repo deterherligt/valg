@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:44",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Studsgård",
+  "AfstemningsområdeDagiId": "704992",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 583,
+      "AfgivneStemmer": 30,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 583,
+      "AfgivneStemmer": 67,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 583,
+      "AfgivneStemmer": 124,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 583,
+      "AfgivneStemmer": 204,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 583,
+      "AfgivneStemmer": 299,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 583,
+      "AfgivneStemmer": 363,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 583,
+      "AfgivneStemmer": 407,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 583,
+      "AfgivneStemmer": 425,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

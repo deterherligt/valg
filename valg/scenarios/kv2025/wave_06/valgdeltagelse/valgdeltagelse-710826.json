@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:39",
+  "Kommune": "Syddjurs",
+  "Kommunekode": 706,
+  "Afstemningsområde": "Mørke",
+  "AfstemningsområdeDagiId": "710826",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2882,
+      "AfgivneStemmer": 666,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2882,
+      "AfgivneStemmer": 806,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2882,
+      "AfgivneStemmer": 939,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2882,
+      "AfgivneStemmer": 1137,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2882,
+      "AfgivneStemmer": 1419,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2882,
+      "AfgivneStemmer": 1668,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2882,
+      "AfgivneStemmer": 1887,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2882,
+      "AfgivneStemmer": 2026,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

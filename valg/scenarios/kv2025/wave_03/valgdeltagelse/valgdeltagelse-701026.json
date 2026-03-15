@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:38:00",
+  "Kommune": "Kalundborg",
+  "Kommunekode": 326,
+  "Afstemningsområde": "Buerup",
+  "AfstemningsområdeDagiId": "701026",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1418,
+      "AfgivneStemmer": 138,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1418,
+      "AfgivneStemmer": 375,
+      "Tidspunkt": "14:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1418,
+      "AfgivneStemmer": 828,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1418,
+      "AfgivneStemmer": 945,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

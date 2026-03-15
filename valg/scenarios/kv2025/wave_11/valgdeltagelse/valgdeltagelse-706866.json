@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:43:28",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Møllevangskolen, Aarhus V",
+  "AfstemningsområdeDagiId": "706866",
+  "AfstemningsområdeNummer": 43,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8025,
+      "AfgivneStemmer": 825,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8025,
+      "AfgivneStemmer": 1686,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8025,
+      "AfgivneStemmer": 2611,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8025,
+      "AfgivneStemmer": 4635,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8025,
+      "AfgivneStemmer": 5460,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:10",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Øster Tørslev Fritidslokaler",
+  "AfstemningsområdeDagiId": "705768",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 81,
+      "Tidspunkt": "09:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 131,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 187,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 245,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 302,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 343,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 398,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 481,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 592,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 702,
+      "Tidspunkt": "18:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 782,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1132,
+      "AfgivneStemmer": 837,
+      "Tidspunkt": "20:02:00"
+    }
+  ]
+}

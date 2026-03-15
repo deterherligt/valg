@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:23",
+  "Kommune": "Holbæk",
+  "Kommunekode": 316,
+  "Afstemningsområde": "Holbæk Midt",
+  "AfstemningsområdeDagiId": "702906",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 1073,
+      "Tidspunkt": "10:31:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 2493,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 3700,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6253,
+      "AfgivneStemmer": 4360,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

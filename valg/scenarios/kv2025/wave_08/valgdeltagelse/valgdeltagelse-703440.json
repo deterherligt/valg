@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:40",
+  "Kommune": "Lejre",
+  "Kommunekode": 350,
+  "Afstemningsområde": "Hyllinge-Lyndby",
+  "AfstemningsområdeDagiId": "703440",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3585,
+      "AfgivneStemmer": 293,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3585,
+      "AfgivneStemmer": 846,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3585,
+      "AfgivneStemmer": 1548,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3585,
+      "AfgivneStemmer": 2559,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

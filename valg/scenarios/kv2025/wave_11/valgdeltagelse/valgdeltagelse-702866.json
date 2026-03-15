@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:28",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Dalumskolen",
+  "AfstemningsområdeDagiId": "702866",
+  "AfstemningsområdeNummer": 30,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7656,
+      "AfgivneStemmer": 1405,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7656,
+      "AfgivneStemmer": 3730,
+      "Tidspunkt": "17:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7656,
+      "AfgivneStemmer": 5318,
+      "Tidspunkt": "20:02:00"
+    }
+  ]
+}

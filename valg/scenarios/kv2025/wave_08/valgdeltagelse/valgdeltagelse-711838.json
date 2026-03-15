@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:55",
+  "Kommune": "Viborg",
+  "Kommunekode": 791,
+  "Afstemningsområde": "Møldrup",
+  "AfstemningsområdeDagiId": "711838",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3542,
+      "AfgivneStemmer": 273,
+      "Tidspunkt": "09:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3542,
+      "AfgivneStemmer": 620,
+      "Tidspunkt": "11:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3542,
+      "AfgivneStemmer": 1036,
+      "Tidspunkt": "14:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3542,
+      "AfgivneStemmer": 1403,
+      "Tidspunkt": "16:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3542,
+      "AfgivneStemmer": 2119,
+      "Tidspunkt": "18:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3542,
+      "AfgivneStemmer": 2542,
+      "Tidspunkt": "20:02:00"
+    }
+  ]
+}

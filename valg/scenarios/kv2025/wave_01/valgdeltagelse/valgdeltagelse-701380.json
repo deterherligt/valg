@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:40",
+  "Kommune": "Vejen",
+  "Kommunekode": 575,
+  "Afstemningsområde": "Københoved",
+  "AfstemningsområdeDagiId": "701380",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 23,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 29,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 40,
+      "Tidspunkt": "10:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 54,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 72,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 86,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 101,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 116,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 150,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 202,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 242,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 272,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 380,
+      "AfgivneStemmer": 288,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

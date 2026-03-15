@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:25",
+  "Kommune": "Langeland",
+  "Kommunekode": 482,
+  "Afstemningsområde": "Bagenkop",
+  "AfstemningsområdeDagiId": "707504",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 741,
+      "AfgivneStemmer": 28,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 741,
+      "AfgivneStemmer": 239,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 741,
+      "AfgivneStemmer": 382,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 741,
+      "AfgivneStemmer": 477,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 741,
+      "AfgivneStemmer": 578,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

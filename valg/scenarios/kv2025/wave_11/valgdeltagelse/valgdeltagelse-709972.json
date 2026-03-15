@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:44:28",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Bellevuehallerne, Risskov",
+  "AfstemningsområdeDagiId": "709972",
+  "AfstemningsområdeNummer": 45,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9839,
+      "AfgivneStemmer": 1468,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9839,
+      "AfgivneStemmer": 2858,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9839,
+      "AfgivneStemmer": 4174,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9839,
+      "AfgivneStemmer": 6511,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9839,
+      "AfgivneStemmer": 8173,
+      "Tidspunkt": "20:13:00"
+    }
+  ]
+}

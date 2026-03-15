@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:58",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Kibæk",
+  "AfstemningsområdeDagiId": "703462",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2644,
+      "AfgivneStemmer": 172,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2644,
+      "AfgivneStemmer": 394,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2644,
+      "AfgivneStemmer": 702,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2644,
+      "AfgivneStemmer": 1052,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2644,
+      "AfgivneStemmer": 1323,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2644,
+      "AfgivneStemmer": 1572,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2644,
+      "AfgivneStemmer": 1771,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2644,
+      "AfgivneStemmer": 1855,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:29:26",
+  "Kommune": "Hedensted",
+  "Kommunekode": 766,
+  "Afstemningsområde": "Glud",
+  "AfstemningsområdeDagiId": "702118",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1867,
+      "AfgivneStemmer": 127,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1867,
+      "AfgivneStemmer": 432,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1867,
+      "AfgivneStemmer": 562,
+      "Tidspunkt": "13:56:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1866,
+      "AfgivneStemmer": 567,
+      "Tidspunkt": "13:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1866,
+      "AfgivneStemmer": 937,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1866,
+      "AfgivneStemmer": 1314,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

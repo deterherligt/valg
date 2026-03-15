@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:16:41",
+  "Kommune": "Tønder",
+  "Kommunekode": 550,
+  "Afstemningsområde": "Skærbæk",
+  "AfstemningsområdeDagiId": "709602",
+  "AfstemningsområdeNummer": 61,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2996,
+      "AfgivneStemmer": 245,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2996,
+      "AfgivneStemmer": 786,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2996,
+      "AfgivneStemmer": 1165,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2996,
+      "AfgivneStemmer": 1870,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

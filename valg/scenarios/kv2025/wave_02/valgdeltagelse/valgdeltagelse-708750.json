@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:56",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Asferg Træningshus",
+  "AfstemningsområdeDagiId": "708750",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 63,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 100,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 144,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 176,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 207,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 259,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 301,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 371,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 470,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 570,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 638,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 930,
+      "AfgivneStemmer": 669,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

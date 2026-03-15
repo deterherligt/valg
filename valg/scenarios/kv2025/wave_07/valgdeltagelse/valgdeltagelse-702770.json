@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:39",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Hobrovejens Skole",
+  "AfstemningsområdeDagiId": "702770",
+  "AfstemningsområdeNummer": 25,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3190,
+      "AfgivneStemmer": 140,
+      "Tidspunkt": "09:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3190,
+      "AfgivneStemmer": 224,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3190,
+      "AfgivneStemmer": 352,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3190,
+      "AfgivneStemmer": 531,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3190,
+      "AfgivneStemmer": 633,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3190,
+      "AfgivneStemmer": 727,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3190,
+      "AfgivneStemmer": 857,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3190,
+      "AfgivneStemmer": 1055,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3190,
+      "AfgivneStemmer": 1301,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3191,
+      "AfgivneStemmer": 1552,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3191,
+      "AfgivneStemmer": 1719,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3191,
+      "AfgivneStemmer": 1869,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

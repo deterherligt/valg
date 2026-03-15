@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:14",
+  "Kommune": "Ringkøbing-Skjern",
+  "Kommunekode": 760,
+  "Afstemningsområde": "Spjald",
+  "AfstemningsområdeDagiId": "703684",
+  "AfstemningsområdeNummer": 35,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 223,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 327,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 464,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 577,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 664,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 781,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 908,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 1138,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 1453,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 1779,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 2001,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2937,
+      "AfgivneStemmer": 2154,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

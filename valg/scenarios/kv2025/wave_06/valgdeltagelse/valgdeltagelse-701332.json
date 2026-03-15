@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:12",
+  "Kommune": "Viborg",
+  "Kommunekode": 791,
+  "Afstemningsområde": "Løgstrup",
+  "AfstemningsområdeDagiId": "701332",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2763,
+      "AfgivneStemmer": 252,
+      "Tidspunkt": "09:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2763,
+      "AfgivneStemmer": 541,
+      "Tidspunkt": "11:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2763,
+      "AfgivneStemmer": 961,
+      "Tidspunkt": "14:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2763,
+      "AfgivneStemmer": 1278,
+      "Tidspunkt": "16:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2763,
+      "AfgivneStemmer": 1854,
+      "Tidspunkt": "18:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2763,
+      "AfgivneStemmer": 2176,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

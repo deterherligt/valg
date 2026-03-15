@@ -152,3 +152,102 @@ def test_valgdeltagelse_parse_includes_snapshot_at():
     data = json.loads((FIXTURES / "valgdeltagelse_fv.json").read_text())
     rows = plugin.parse(data, "2024-11-05T20:00:00")
     assert all(r["snapshot_at"] == "2024-11-05T20:00:00" for r in rows)
+
+
+# --- MATCH: new KV2025 plugins ---
+
+def test_parti_matches():
+    assert find_plugin("Parti-KV2025.json") is not None
+
+def test_geografi_ao_matches():
+    assert find_plugin("Afstemningsomraade-KV2025.json") is not None
+
+def test_geografi_ok_matches():
+    assert find_plugin("Opstillingskreds-KV2025.json") is not None
+
+
+# --- parse functions: parti ---
+
+def test_parti_parse_returns_party_rows():
+    plugin = find_plugin("Parti-KV2025.json")
+    data = [
+        {"Id": "A", "Bogstav": "A", "Navn": "Socialdemokratiet"},
+        {"Id": "V", "Bogstav": "V", "Navn": "Venstre"},
+    ]
+    rows = plugin.parse(data, "2025-11-18T21:00:00")
+    assert len(rows) == 2
+    assert rows[0] == {"id": "A", "letter": "A", "name": "Socialdemokratiet"}
+    assert rows[1] == {"id": "V", "letter": "V", "name": "Venstre"}
+
+def test_parti_parse_skips_missing_id():
+    plugin = find_plugin("Parti-KV2025.json")
+    data = [
+        {"Bogstav": "A", "Navn": "Socialdemokratiet"},
+        {"Id": "V", "Bogstav": "V", "Navn": "Venstre"},
+    ]
+    rows = plugin.parse(data, "2025-11-18T21:00:00")
+    assert len(rows) == 1
+    assert rows[0]["id"] == "V"
+
+def test_parti_parse_non_list_returns_empty():
+    plugin = find_plugin("Parti-KV2025.json")
+    assert plugin.parse({}, "2025-11-18T21:00:00") == []
+
+
+# --- parse functions: geografi_ao ---
+
+def test_geografi_ao_parse_returns_rows():
+    plugin = find_plugin("Afstemningsomraade-KV2025.json")
+    data = [
+        {"Kode": "AO001", "Navn": "Valsted Skole", "OpstillingskredsKode": "OK1", "AntalStemmeberettigede": 1200},
+        {"Kode": "AO002", "Navn": "Biblioteket", "OpstillingskredsKode": "OK1", "AntalStemmeberettigede": 900},
+    ]
+    rows = plugin.parse(data, "2025-11-18T21:00:00")
+    assert len(rows) == 2
+    assert rows[0]["id"] == "AO001"
+    assert rows[0]["name"] == "Valsted Skole"
+    assert rows[0]["opstillingskreds_id"] == "OK1"
+    assert rows[0]["eligible_voters"] == 1200
+
+def test_geografi_ao_parse_skips_missing_id():
+    plugin = find_plugin("Afstemningsomraade-KV2025.json")
+    data = [
+        {"Navn": "Skole uden kode", "OpstillingskredsKode": "OK1"},
+        {"Kode": "AO002", "Navn": "OK skole", "OpstillingskredsKode": "OK1"},
+    ]
+    rows = plugin.parse(data, "2025-11-18T21:00:00")
+    assert len(rows) == 1
+    assert rows[0]["id"] == "AO002"
+
+def test_geografi_ao_parse_non_list_returns_empty():
+    plugin = find_plugin("Afstemningsomraade-KV2025.json")
+    assert plugin.parse({}, "2025-11-18T21:00:00") == []
+
+
+# --- parse functions: geografi_ok ---
+
+def test_geografi_ok_parse_returns_rows():
+    plugin = find_plugin("Opstillingskreds-KV2025.json")
+    data = [
+        {"Kode": "OK1", "Navn": "Kobenhavn", "StorkredskodeKode": "SK1"},
+        {"Kode": "OK2", "Navn": "Frederiksberg", "StorkredskodeKode": "SK1"},
+    ]
+    rows = plugin.parse(data, "2025-11-18T21:00:00")
+    assert len(rows) == 2
+    assert rows[0]["id"] == "OK1"
+    assert rows[0]["name"] == "Kobenhavn"
+    assert rows[0]["storkreds_id"] == "SK1"
+
+def test_geografi_ok_parse_skips_missing_id():
+    plugin = find_plugin("Opstillingskreds-KV2025.json")
+    data = [
+        {"Navn": "Ingen kode", "StorkredskodeKode": "SK1"},
+        {"Kode": "OK2", "Navn": "Frederiksberg", "StorkredskodeKode": "SK1"},
+    ]
+    rows = plugin.parse(data, "2025-11-18T21:00:00")
+    assert len(rows) == 1
+    assert rows[0]["id"] == "OK2"
+
+def test_geografi_ok_parse_non_list_returns_empty():
+    plugin = find_plugin("Opstillingskreds-KV2025.json")
+    assert plugin.parse({}, "2025-11-18T21:00:00") == []

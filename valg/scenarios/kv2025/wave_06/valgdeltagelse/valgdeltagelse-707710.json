@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:42",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Haarby",
+  "AfstemningsområdeDagiId": "707710",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2746,
+      "AfgivneStemmer": 205,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2746,
+      "AfgivneStemmer": 561,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2746,
+      "AfgivneStemmer": 933,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2746,
+      "AfgivneStemmer": 1517,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2746,
+      "AfgivneStemmer": 1878,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2746,
+      "AfgivneStemmer": 1970,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}
