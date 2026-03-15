@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:32:27",
+  "Kommune": "Haderslev",
+  "Kommunekode": 510,
+  "Afstemningsområde": "Vojens",
+  "AfstemningsområdeDagiId": "707620",
+  "AfstemningsområdeNummer": 17,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5890,
+      "AfgivneStemmer": 1173,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5890,
+      "AfgivneStemmer": 2157,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5890,
+      "AfgivneStemmer": 3322,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5890,
+      "AfgivneStemmer": 3724,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

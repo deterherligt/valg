@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:11",
+  "Kommune": "Skanderborg",
+  "Kommunekode": 746,
+  "Afstemningsområde": "Stilling",
+  "AfstemningsområdeDagiId": "703796",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3717,
+      "AfgivneStemmer": 831,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3717,
+      "AfgivneStemmer": 2027,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3717,
+      "AfgivneStemmer": 2982,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

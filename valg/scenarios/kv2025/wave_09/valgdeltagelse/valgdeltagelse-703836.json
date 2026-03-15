@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:58",
+  "Kommune": "Hvidovre",
+  "Kommunekode": 167,
+  "Afstemningsområde": "Holmegårdshallen",
+  "AfstemningsområdeDagiId": "703836",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4947,
+      "AfgivneStemmer": 661,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4947,
+      "AfgivneStemmer": 1049,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4947,
+      "AfgivneStemmer": 1415,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4947,
+      "AfgivneStemmer": 2143,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4947,
+      "AfgivneStemmer": 2583,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4947,
+      "AfgivneStemmer": 2989,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4947,
+      "AfgivneStemmer": 3273,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

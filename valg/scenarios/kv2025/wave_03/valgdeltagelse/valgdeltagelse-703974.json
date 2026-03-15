@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:11:02",
+  "Kommune": "Vejle",
+  "Kommunekode": 630,
+  "Afstemningsområde": "Øster Nykirke Nord",
+  "AfstemningsområdeDagiId": "703974",
+  "AfstemningsområdeNummer": 23,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1271,
+      "AfgivneStemmer": 178,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1271,
+      "AfgivneStemmer": 594,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:54",
+  "Kommune": "Viborg",
+  "Kommunekode": 791,
+  "Afstemningsområde": "Karup",
+  "AfstemningsområdeDagiId": "711744",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2695,
+      "AfgivneStemmer": 185,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2695,
+      "AfgivneStemmer": 434,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2694,
+      "AfgivneStemmer": 802,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2694,
+      "AfgivneStemmer": 1119,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2694,
+      "AfgivneStemmer": 1543,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2694,
+      "AfgivneStemmer": 1771,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

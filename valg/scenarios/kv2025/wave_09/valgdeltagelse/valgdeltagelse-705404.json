@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:13",
+  "Kommune": "Allerød",
+  "Kommunekode": 201,
+  "Afstemningsområde": "Lynge",
+  "AfstemningsområdeDagiId": "705404",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 249,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 392,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 557,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 728,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 919,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 1073,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 1212,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 1400,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 1671,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 2046,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 2469,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 2879,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4335,
+      "AfgivneStemmer": 3197,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

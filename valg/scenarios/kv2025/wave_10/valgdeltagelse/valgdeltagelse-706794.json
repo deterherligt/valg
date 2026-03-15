@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:12",
+  "Kommune": "Stevns",
+  "Kommunekode": 336,
+  "Afstemningsområde": "Strøby Idrætscenter",
+  "AfstemningsområdeDagiId": "706794",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6274,
+      "AfgivneStemmer": 1089,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6274,
+      "AfgivneStemmer": 2027,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6274,
+      "AfgivneStemmer": 3204,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6274,
+      "AfgivneStemmer": 4550,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:12",
+  "Kommune": "Vesthimmerlands",
+  "Kommunekode": 820,
+  "Afstemningsområde": "Skivum-Giver",
+  "AfstemningsområdeDagiId": "709966",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 628,
+      "AfgivneStemmer": 130,
+      "Tidspunkt": "12:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 628,
+      "AfgivneStemmer": 392,
+      "Tidspunkt": "18:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 628,
+      "AfgivneStemmer": 445,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

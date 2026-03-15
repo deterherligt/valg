@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:43:44",
+  "Kommune": "Fredensborg",
+  "Kommunekode": 210,
+  "Afstemningsområde": "Humlebæk",
+  "AfstemningsområdeDagiId": "703766",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 479,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 606,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 769,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 950,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 1095,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 1265,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 1426,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 1663,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 1993,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 2351,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 2624,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3845,
+      "AfgivneStemmer": 2835,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

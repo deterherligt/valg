@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:11:27",
+  "Kommune": "Tønder",
+  "Kommunekode": 550,
+  "Afstemningsområde": "Løgumkloster",
+  "AfstemningsområdeDagiId": "701834",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2615,
+      "AfgivneStemmer": 267,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2615,
+      "AfgivneStemmer": 734,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2615,
+      "AfgivneStemmer": 1062,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2615,
+      "AfgivneStemmer": 1649,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

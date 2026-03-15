@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:12",
+  "Kommune": "Mariagerfjord",
+  "Kommunekode": 846,
+  "Afstemningsområde": "Arden",
+  "AfstemningsområdeDagiId": "707018",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3002,
+      "AfgivneStemmer": 696,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3002,
+      "AfgivneStemmer": 1285,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3002,
+      "AfgivneStemmer": 1597,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3002,
+      "AfgivneStemmer": 1826,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3002,
+      "AfgivneStemmer": 2026,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3002,
+      "AfgivneStemmer": 2131,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

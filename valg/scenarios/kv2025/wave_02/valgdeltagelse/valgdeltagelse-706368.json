@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:10:55",
+  "Kommune": "Tønder",
+  "Kommunekode": 550,
+  "Afstemningsområde": "Møgeltønder",
+  "AfstemningsområdeDagiId": "706368",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 824,
+      "AfgivneStemmer": 76,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 824,
+      "AfgivneStemmer": 226,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 824,
+      "AfgivneStemmer": 346,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 824,
+      "AfgivneStemmer": 560,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

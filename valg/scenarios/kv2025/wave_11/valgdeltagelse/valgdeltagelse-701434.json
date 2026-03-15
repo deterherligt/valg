@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:25",
+  "Kommune": "Sønderborg",
+  "Kommunekode": 540,
+  "Afstemningsområde": "Humlehøj, Sønderborg",
+  "AfstemningsområdeDagiId": "701434",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7342,
+      "AfgivneStemmer": 572,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7342,
+      "AfgivneStemmer": 1262,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7342,
+      "AfgivneStemmer": 2536,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7341,
+      "AfgivneStemmer": 4691,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

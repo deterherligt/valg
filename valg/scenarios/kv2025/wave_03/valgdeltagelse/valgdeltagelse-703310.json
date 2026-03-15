@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:04:18",
+  "Kommune": "Jammerbugt",
+  "Kommunekode": 849,
+  "Afstemningsområde": "Saltum",
+  "AfstemningsområdeDagiId": "703310",
+  "AfstemningsområdeNummer": 21,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1054,
+      "AfgivneStemmer": 281,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1054,
+      "AfgivneStemmer": 507,
+      "Tidspunkt": "16:00:00"
+    }
+  ]
+}

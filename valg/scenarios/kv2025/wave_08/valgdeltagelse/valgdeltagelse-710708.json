@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:23",
+  "Kommune": "Albertslund",
+  "Kommunekode": 165,
+  "Afstemningsområde": "Herstedlund Skole",
+  "AfstemningsområdeDagiId": "710708",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3776,
+      "AfgivneStemmer": 501,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3776,
+      "AfgivneStemmer": 749,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3776,
+      "AfgivneStemmer": 966,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3776,
+      "AfgivneStemmer": 1288,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3776,
+      "AfgivneStemmer": 1762,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3776,
+      "AfgivneStemmer": 2121,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

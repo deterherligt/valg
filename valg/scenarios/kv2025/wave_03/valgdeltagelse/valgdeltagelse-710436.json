@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:14:16",
+  "Kommune": "Hjørring",
+  "Kommunekode": 860,
+  "Afstemningsområde": "Vrejlev-Hæstrup",
+  "AfstemningsområdeDagiId": "710436",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1329,
+      "AfgivneStemmer": 60,
+      "Tidspunkt": "09:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1329,
+      "AfgivneStemmer": 156,
+      "Tidspunkt": "11:05:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1329,
+      "AfgivneStemmer": 259,
+      "Tidspunkt": "13:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1329,
+      "AfgivneStemmer": 385,
+      "Tidspunkt": "15:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1329,
+      "AfgivneStemmer": 605,
+      "Tidspunkt": "17:06:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1329,
+      "AfgivneStemmer": 826,
+      "Tidspunkt": "19:06:00"
+    }
+  ]
+}

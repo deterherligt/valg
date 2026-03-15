@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:42",
+  "Kommune": "Svendborg",
+  "Kommunekode": 479,
+  "Afstemningsområde": "Gudbjerg",
+  "AfstemningsområdeDagiId": "705350",
+  "AfstemningsområdeNummer": 21,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 993,
+      "AfgivneStemmer": 62,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 993,
+      "AfgivneStemmer": 174,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 993,
+      "AfgivneStemmer": 240,
+      "Tidspunkt": "12:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 993,
+      "AfgivneStemmer": 328,
+      "Tidspunkt": "14:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 993,
+      "AfgivneStemmer": 511,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 993,
+      "AfgivneStemmer": 670,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 993,
+      "AfgivneStemmer": 711,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

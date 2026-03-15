@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:52:14",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "9. Vesterbro",
+  "AfstemningsområdeDagiId": "709384",
+  "AfstemningsområdeNummer": 49,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8083,
+      "AfgivneStemmer": 2300,
+      "Tidspunkt": "12:40:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8083,
+      "AfgivneStemmer": 3684,
+      "Tidspunkt": "16:09:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8083,
+      "AfgivneStemmer": 4995,
+      "Tidspunkt": "18:08:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8083,
+      "AfgivneStemmer": 6216,
+      "Tidspunkt": "20:08:00"
+    }
+  ]
+}

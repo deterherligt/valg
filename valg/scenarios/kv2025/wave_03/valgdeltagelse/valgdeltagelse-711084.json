@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:11:42",
+  "Kommune": "Tønder",
+  "Kommunekode": 550,
+  "Afstemningsområde": "Nr. Løgum",
+  "AfstemningsområdeDagiId": "711084",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1011,
+      "AfgivneStemmer": 80,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1011,
+      "AfgivneStemmer": 192,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1011,
+      "AfgivneStemmer": 316,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1011,
+      "AfgivneStemmer": 585,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

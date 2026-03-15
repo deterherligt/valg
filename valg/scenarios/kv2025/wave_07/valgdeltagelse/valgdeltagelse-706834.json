@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:18:26",
+  "Kommune": "Hedensted",
+  "Kommunekode": 766,
+  "Afstemningsområde": "Løsning Sogn",
+  "AfstemningsområdeDagiId": "706834",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3402,
+      "AfgivneStemmer": 187,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3402,
+      "AfgivneStemmer": 625,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3402,
+      "AfgivneStemmer": 1609,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3402,
+      "AfgivneStemmer": 2213,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

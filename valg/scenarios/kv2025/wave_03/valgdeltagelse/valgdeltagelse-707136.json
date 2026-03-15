@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:17:47",
+  "Kommune": "Helsingør",
+  "Kommunekode": 217,
+  "Afstemningsområde": "Nygård Skole",
+  "AfstemningsområdeDagiId": "707136",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1111,
+      "AfgivneStemmer": 108,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1111,
+      "AfgivneStemmer": 143,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1111,
+      "AfgivneStemmer": 212,
+      "Tidspunkt": "11:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1111,
+      "AfgivneStemmer": 451,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1111,
+      "AfgivneStemmer": 692,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1111,
+      "AfgivneStemmer": 858,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

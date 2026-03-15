@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:12",
+  "Kommune": "Ringkøbing-Skjern",
+  "Kommunekode": 760,
+  "Afstemningsområde": "Borris",
+  "AfstemningsområdeDagiId": "703690",
+  "AfstemningsområdeNummer": 25,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 32,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 50,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 104,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 163,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 209,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 244,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 270,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 301,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 371,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 495,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 615,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 685,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1053,
+      "AfgivneStemmer": 738,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

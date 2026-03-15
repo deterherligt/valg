@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:40",
+  "Kommune": "Norddjurs",
+  "Kommunekode": 707,
+  "Afstemningsområde": "Glesborg",
+  "AfstemningsområdeDagiId": "709072",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3120,
+      "AfgivneStemmer": 381,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3120,
+      "AfgivneStemmer": 803,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3120,
+      "AfgivneStemmer": 1300,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3120,
+      "AfgivneStemmer": 2081,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3120,
+      "AfgivneStemmer": 2280,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:25",
+  "Kommune": "Ringkøbing-Skjern",
+  "Kommunekode": 760,
+  "Afstemningsområde": "Hvide Sande",
+  "AfstemningsområdeDagiId": "712176",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 228,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 383,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 566,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 681,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 774,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 897,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 1002,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 1135,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 1378,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 1560,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 1677,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2571,
+      "AfgivneStemmer": 1760,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:18:43",
+  "Kommune": "Haderslev",
+  "Kommunekode": 510,
+  "Afstemningsområde": "Moltrup",
+  "AfstemningsområdeDagiId": "701494",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 845,
+      "AfgivneStemmer": 119,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 845,
+      "AfgivneStemmer": 250,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 845,
+      "AfgivneStemmer": 463,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 845,
+      "AfgivneStemmer": 545,
+      "Tidspunkt": "20:10:00"
+    }
+  ]
+}

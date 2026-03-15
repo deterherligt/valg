@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:28",
+  "Kommune": "Holbæk",
+  "Kommunekode": 316,
+  "Afstemningsområde": "Tuse",
+  "AfstemningsområdeDagiId": "705958",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3739,
+      "AfgivneStemmer": 625,
+      "Tidspunkt": "10:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3739,
+      "AfgivneStemmer": 1393,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3739,
+      "AfgivneStemmer": 2332,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3739,
+      "AfgivneStemmer": 2879,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

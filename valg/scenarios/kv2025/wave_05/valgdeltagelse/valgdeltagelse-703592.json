@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:10",
+  "Kommune": "Næstved",
+  "Kommunekode": 370,
+  "Afstemningsområde": "Lille Næstved Skole - Karrebæk",
+  "AfstemningsområdeDagiId": "703592",
+  "AfstemningsområdeNummer": 32,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2239,
+      "AfgivneStemmer": 253,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2239,
+      "AfgivneStemmer": 749,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2239,
+      "AfgivneStemmer": 1148,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2239,
+      "AfgivneStemmer": 1597,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2239,
+      "AfgivneStemmer": 1794,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

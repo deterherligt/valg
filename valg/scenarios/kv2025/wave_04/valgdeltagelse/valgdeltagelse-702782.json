@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:27",
+  "Kommune": "Hillerød",
+  "Kommunekode": 219,
+  "Afstemningsområde": "Alsønderup",
+  "AfstemningsområdeDagiId": "702782",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 104,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 194,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 271,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 364,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 442,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 505,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 548,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 623,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 759,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 937,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 1123,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 1297,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1909,
+      "AfgivneStemmer": 1410,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

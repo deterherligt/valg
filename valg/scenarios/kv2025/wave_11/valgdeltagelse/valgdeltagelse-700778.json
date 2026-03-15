@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:18:44",
+  "Kommune": "Skanderborg",
+  "Kommunekode": 746,
+  "Afstemningsområde": "Morten Børup",
+  "AfstemningsområdeDagiId": "700778",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8436,
+      "AfgivneStemmer": 2243,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8436,
+      "AfgivneStemmer": 4389,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8436,
+      "AfgivneStemmer": 6057,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:46:58",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Brårup",
+  "AfstemningsområdeDagiId": "748874",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5575,
+      "AfgivneStemmer": 955,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5575,
+      "AfgivneStemmer": 1749,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5575,
+      "AfgivneStemmer": 2350,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5575,
+      "AfgivneStemmer": 3364,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5575,
+      "AfgivneStemmer": 3851,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

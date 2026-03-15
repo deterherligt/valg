@@ -1,0 +1,82 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:44",
+  "Kommune": "Hørsholm",
+  "Kommunekode": 223,
+  "Afstemningsområde": "Vallerød",
+  "AfstemningsområdeDagiId": "711902",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 0,
+      "AfgivneStemmer": 0,
+      "Tidspunkt": "00:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5521,
+      "AfgivneStemmer": 711,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 887,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 1058,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 1309,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 1564,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 1790,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 1980,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 2225,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 2529,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 2926,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 3378,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 3798,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5520,
+      "AfgivneStemmer": 4088,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

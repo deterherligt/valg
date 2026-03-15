@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:13",
+  "Kommune": "Skanderborg",
+  "Kommunekode": 746,
+  "Afstemningsområde": "Virring",
+  "AfstemningsområdeDagiId": "709838",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1916,
+      "AfgivneStemmer": 343,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1912,
+      "AfgivneStemmer": 1009,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1912,
+      "AfgivneStemmer": 1491,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

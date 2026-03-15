@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:08:59",
+  "Kommune": "Brønderslev",
+  "Kommunekode": 810,
+  "Afstemningsområde": "Hjallerup",
+  "AfstemningsområdeDagiId": "700990",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3709,
+      "AfgivneStemmer": 822,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3709,
+      "AfgivneStemmer": 1673,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3709,
+      "AfgivneStemmer": 2398,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

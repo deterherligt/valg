@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:26",
+  "Kommune": "Roskilde",
+  "Kommunekode": 265,
+  "Afstemningsområde": "Gadstrup",
+  "AfstemningsområdeDagiId": "707314",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1818,
+      "AfgivneStemmer": 132,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1818,
+      "AfgivneStemmer": 295,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1818,
+      "AfgivneStemmer": 446,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1818,
+      "AfgivneStemmer": 599,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1818,
+      "AfgivneStemmer": 936,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1818,
+      "AfgivneStemmer": 1336,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1818,
+      "AfgivneStemmer": 1444,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:21:49",
+  "Kommune": "Hedensted",
+  "Kommunekode": 766,
+  "Afstemningsområde": "Ølsted Og Eriknauer-Området",
+  "AfstemningsområdeDagiId": "711322",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1060,
+      "AfgivneStemmer": 53,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1060,
+      "AfgivneStemmer": 153,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1060,
+      "AfgivneStemmer": 485,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1060,
+      "AfgivneStemmer": 719,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

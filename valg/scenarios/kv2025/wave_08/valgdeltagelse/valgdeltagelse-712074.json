@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:28",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Vildbjerg",
+  "AfstemningsområdeDagiId": "712074",
+  "AfstemningsområdeNummer": 27,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3559,
+      "AfgivneStemmer": 263,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3559,
+      "AfgivneStemmer": 644,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3559,
+      "AfgivneStemmer": 1063,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3559,
+      "AfgivneStemmer": 1446,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3559,
+      "AfgivneStemmer": 1788,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3559,
+      "AfgivneStemmer": 2163,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3559,
+      "AfgivneStemmer": 2461,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3559,
+      "AfgivneStemmer": 2624,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

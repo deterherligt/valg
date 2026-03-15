@@ -1,0 +1,82 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:18:10",
+  "Kommune": "Hillerød",
+  "Kommunekode": 219,
+  "Afstemningsområde": "Gadevang",
+  "AfstemningsområdeDagiId": "710380",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 46,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 82,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 106,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 164,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 195,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 233,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 264,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 308,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 367,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 469,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 577,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 671,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 742,
+      "Tidspunkt": "20:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 865,
+      "AfgivneStemmer": 742,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

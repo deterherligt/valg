@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:30",
+  "Kommune": "Næstved",
+  "Kommunekode": 370,
+  "Afstemningsområde": "Tybjerg",
+  "AfstemningsområdeDagiId": "703660",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 807,
+      "AfgivneStemmer": 40,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 807,
+      "AfgivneStemmer": 139,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 807,
+      "AfgivneStemmer": 238,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 807,
+      "AfgivneStemmer": 442,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 807,
+      "AfgivneStemmer": 541,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

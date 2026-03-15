@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:40",
+  "Kommune": "Norddjurs",
+  "Kommunekode": 707,
+  "Afstemningsområde": "Ørum",
+  "AfstemningsområdeDagiId": "707518",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1664,
+      "AfgivneStemmer": 169,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1664,
+      "AfgivneStemmer": 328,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1664,
+      "AfgivneStemmer": 569,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1664,
+      "AfgivneStemmer": 1023,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1664,
+      "AfgivneStemmer": 1156,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

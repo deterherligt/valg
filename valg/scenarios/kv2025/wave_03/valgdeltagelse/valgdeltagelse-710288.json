@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:45",
+  "Kommune": "Slagelse",
+  "Kommunekode": 330,
+  "Afstemningsområde": "Vestermose - Hallelev Forsamlingshus",
+  "AfstemningsområdeDagiId": "710288",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 175,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 255,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 357,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 589,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 729,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

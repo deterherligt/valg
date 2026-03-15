@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:28:26",
+  "Kommune": "Hedensted",
+  "Kommunekode": 766,
+  "Afstemningsområde": "Rårup",
+  "AfstemningsområdeDagiId": "700852",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1225,
+      "AfgivneStemmer": 74,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1225,
+      "AfgivneStemmer": 196,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1225,
+      "AfgivneStemmer": 517,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1225,
+      "AfgivneStemmer": 800,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

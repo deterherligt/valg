@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:01",
+  "Kommune": "Holstebro",
+  "Kommunekode": 661,
+  "Afstemningsområde": "Skave",
+  "AfstemningsområdeDagiId": "707720",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1696,
+      "AfgivneStemmer": 295,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1696,
+      "AfgivneStemmer": 686,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1696,
+      "AfgivneStemmer": 1083,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1696,
+      "AfgivneStemmer": 1267,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

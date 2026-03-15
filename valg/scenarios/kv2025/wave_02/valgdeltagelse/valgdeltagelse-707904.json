@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:15",
+  "Kommune": "Næstved",
+  "Kommunekode": 370,
+  "Afstemningsområde": "Everdrup",
+  "AfstemningsområdeDagiId": "707904",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 832,
+      "AfgivneStemmer": 57,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 832,
+      "AfgivneStemmer": 149,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 832,
+      "AfgivneStemmer": 265,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 832,
+      "AfgivneStemmer": 500,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 832,
+      "AfgivneStemmer": 575,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

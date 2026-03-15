@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:10:40",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Skipperens Idrætshus",
+  "AfstemningsområdeDagiId": "710526",
+  "AfstemningsområdeNummer": 17,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6605,
+      "AfgivneStemmer": 1422,
+      "Tidspunkt": "11:56:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6605,
+      "AfgivneStemmer": 3127,
+      "Tidspunkt": "17:58:00"
+    }
+  ]
+}

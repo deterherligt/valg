@@ -1,0 +1,590 @@
+[
+  {
+    "Kode": "851",
+    "Navn": "Aalborg",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "846",
+    "Navn": "Mariagerfjord",
+    "AntalKredsmandater": 29,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "849",
+    "Navn": "Jammerbugt",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "825",
+    "Navn": "Læsø",
+    "AntalKredsmandater": 9,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "860",
+    "Navn": "Hjørring",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "820",
+    "Navn": "Vesthimmerlands",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "813",
+    "Navn": "Frederikshavn",
+    "AntalKredsmandater": 29,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "840",
+    "Navn": "Rebild",
+    "AntalKredsmandater": 23,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "787",
+    "Navn": "Thisted",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "773",
+    "Navn": "Morsø",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "810",
+    "Navn": "Brønderslev",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "791",
+    "Navn": "Viborg",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "779",
+    "Navn": "Skive",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "707",
+    "Navn": "Norddjurs",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "741",
+    "Navn": "Samsø",
+    "AntalKredsmandater": 11,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "661",
+    "Navn": "Holstebro",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "615",
+    "Navn": "Horsens",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "710",
+    "Navn": "Favrskov",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "657",
+    "Navn": "Herning",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "665",
+    "Navn": "Lemvig",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "727",
+    "Navn": "Odder",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "746",
+    "Navn": "Skanderborg",
+    "AntalKredsmandater": 29,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "730",
+    "Navn": "Randers",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "751",
+    "Navn": "Aarhus",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "760",
+    "Navn": "Ringkøbing-Skjern",
+    "AntalKredsmandater": 29,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "756",
+    "Navn": "Ikast-Brande",
+    "AntalKredsmandater": 23,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "766",
+    "Navn": "Hedensted",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "740",
+    "Navn": "Silkeborg",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "706",
+    "Navn": "Syddjurs",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "671",
+    "Navn": "Struer",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "621",
+    "Navn": "Kolding",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "479",
+    "Navn": "Svendborg",
+    "AntalKredsmandater": 29,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "482",
+    "Navn": "Langeland",
+    "AntalKredsmandater": 15,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "561",
+    "Navn": "Esbjerg",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "575",
+    "Navn": "Vejen",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "580",
+    "Navn": "Aabenraa",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "530",
+    "Navn": "Billund",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "450",
+    "Navn": "Nyborg",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "630",
+    "Navn": "Vejle",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "550",
+    "Navn": "Tønder",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "492",
+    "Navn": "Ærø",
+    "AntalKredsmandater": 15,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "461",
+    "Navn": "Odense",
+    "AntalKredsmandater": 29,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "410",
+    "Navn": "Middelfart",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "420",
+    "Navn": "Assens",
+    "AntalKredsmandater": 29,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "607",
+    "Navn": "Fredericia",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "540",
+    "Navn": "Sønderborg",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "430",
+    "Navn": "Faaborg-Midtfyn",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "440",
+    "Navn": "Kerteminde",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "480",
+    "Navn": "Nordfyns",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "510",
+    "Navn": "Haderslev",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "563",
+    "Navn": "Fanø",
+    "AntalKredsmandater": 11,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "573",
+    "Navn": "Varde",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "155",
+    "Navn": "Dragør",
+    "AntalKredsmandater": 15,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "376",
+    "Navn": "Guldborgsund",
+    "AntalKredsmandater": 29,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "153",
+    "Navn": "Brøndby",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "306",
+    "Navn": "Odsherred",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "250",
+    "Navn": "Frederikssund",
+    "AntalKredsmandater": 23,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "165",
+    "Navn": "Albertslund",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "147",
+    "Navn": "Frederiksberg",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "390",
+    "Navn": "Vordingborg",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "157",
+    "Navn": "Gentofte",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "185",
+    "Navn": "Tårnby",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "151",
+    "Navn": "Ballerup",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "201",
+    "Navn": "Allerød",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "329",
+    "Navn": "Ringsted",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "336",
+    "Navn": "Stevns",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "370",
+    "Navn": "Næstved",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "167",
+    "Navn": "Hvidovre",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "265",
+    "Navn": "Roskilde",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "101",
+    "Navn": "København",
+    "AntalKredsmandater": 55,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "230",
+    "Navn": "Rudersdal",
+    "AntalKredsmandater": 23,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "253",
+    "Navn": "Greve",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "173",
+    "Navn": "Lyngby-Taarbæk",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "269",
+    "Navn": "Solrød",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "330",
+    "Navn": "Slagelse",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "259",
+    "Navn": "Køge",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "219",
+    "Navn": "Hillerød",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "326",
+    "Navn": "Kalundborg",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "187",
+    "Navn": "Vallensbæk",
+    "AntalKredsmandater": 15,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "210",
+    "Navn": "Fredensborg",
+    "AntalKredsmandater": 27,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "260",
+    "Navn": "Halsnæs",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "270",
+    "Navn": "Gribskov",
+    "AntalKredsmandater": 23,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "190",
+    "Navn": "Furesø",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "161",
+    "Navn": "Glostrup",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "183",
+    "Navn": "Ishøj",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "316",
+    "Navn": "Holbæk",
+    "AntalKredsmandater": 31,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "175",
+    "Navn": "Rødovre",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "350",
+    "Navn": "Lejre",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "400",
+    "Navn": "Bornholm",
+    "AntalKredsmandater": 23,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "163",
+    "Navn": "Herlev",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "320",
+    "Navn": "Faxe",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "360",
+    "Navn": "Lolland",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "217",
+    "Navn": "Helsingør",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "340",
+    "Navn": "Sorø",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "223",
+    "Navn": "Hørsholm",
+    "AntalKredsmandater": 19,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "169",
+    "Navn": "Høje-Taastrup",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "240",
+    "Navn": "Egedal",
+    "AntalKredsmandater": 21,
+    "ValgId": "KV2025"
+  },
+  {
+    "Kode": "159",
+    "Navn": "Gladsaxe",
+    "AntalKredsmandater": 25,
+    "ValgId": "KV2025"
+  }
+]

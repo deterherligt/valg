@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:11:26",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Ferslev Skole",
+  "AfstemningsområdeDagiId": "705970",
+  "AfstemningsområdeNummer": 38,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2431,
+      "AfgivneStemmer": 406,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2431,
+      "AfgivneStemmer": 1303,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

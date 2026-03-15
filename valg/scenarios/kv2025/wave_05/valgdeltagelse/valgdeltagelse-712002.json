@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:13",
+  "Kommune": "Bornholm",
+  "Kommunekode": 400,
+  "Afstemningsområde": "Klemensker",
+  "AfstemningsområdeDagiId": "712002",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2050,
+      "AfgivneStemmer": 415,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2050,
+      "AfgivneStemmer": 1179,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2050,
+      "AfgivneStemmer": 1488,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

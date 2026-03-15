@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:53:14",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Vestergadehallen",
+  "AfstemningsområdeDagiId": "711242",
+  "AfstemningsområdeNummer": 31,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 11972,
+      "AfgivneStemmer": 2116,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11969,
+      "AfgivneStemmer": 3147,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11969,
+      "AfgivneStemmer": 4905,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11969,
+      "AfgivneStemmer": 8473,
+      "Tidspunkt": "20:05:00"
+    }
+  ]
+}

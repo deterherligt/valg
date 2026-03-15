@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:08",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Flemløse",
+  "AfstemningsområdeDagiId": "701534",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 803,
+      "AfgivneStemmer": 64,
+      "Tidspunkt": "09:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 803,
+      "AfgivneStemmer": 133,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 803,
+      "AfgivneStemmer": 236,
+      "Tidspunkt": "14:09:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 803,
+      "AfgivneStemmer": 411,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 803,
+      "AfgivneStemmer": 523,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 803,
+      "AfgivneStemmer": 536,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

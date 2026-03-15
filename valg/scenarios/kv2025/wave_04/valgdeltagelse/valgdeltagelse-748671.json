@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:10",
+  "Kommune": "Ringkøbing-Skjern",
+  "Kommunekode": 760,
+  "Afstemningsområde": "Hemmet",
+  "AfstemningsområdeDagiId": "748671",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 61,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 116,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 183,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 267,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 355,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 413,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 480,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 557,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 665,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 822,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 996,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 1095,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1753,
+      "AfgivneStemmer": 1151,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

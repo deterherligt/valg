@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:46",
+  "Kommune": "Roskilde",
+  "Kommunekode": 265,
+  "Afstemningsområde": "Roskilde Bymidte",
+  "AfstemningsområdeDagiId": "707284",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4804,
+      "AfgivneStemmer": 730,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4804,
+      "AfgivneStemmer": 1066,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4804,
+      "AfgivneStemmer": 1477,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4804,
+      "AfgivneStemmer": 1872,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4804,
+      "AfgivneStemmer": 2505,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4804,
+      "AfgivneStemmer": 3193,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4804,
+      "AfgivneStemmer": 3469,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

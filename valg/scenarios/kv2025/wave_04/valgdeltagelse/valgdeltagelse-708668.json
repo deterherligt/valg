@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:02",
+  "Kommune": "Mariagerfjord",
+  "Kommunekode": 846,
+  "Afstemningsområde": "Assens",
+  "AfstemningsområdeDagiId": "708668",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 381,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 729,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 924,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 1061,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 1170,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1804,
+      "AfgivneStemmer": 1216,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

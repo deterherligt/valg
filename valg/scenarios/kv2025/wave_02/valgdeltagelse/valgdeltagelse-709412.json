@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:16",
+  "Kommune": "Haderslev",
+  "Kommunekode": 510,
+  "Afstemningsområde": "Hoptrup",
+  "AfstemningsområdeDagiId": "709412",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 74,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 118,
+      "Tidspunkt": "10:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 171,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 223,
+      "Tidspunkt": "12:12:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 249,
+      "Tidspunkt": "13:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 288,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 338,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 398,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 479,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 566,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 630,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 974,
+      "AfgivneStemmer": 659,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

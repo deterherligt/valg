@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:54:45",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Folkehuset Ankersgade",
+  "AfstemningsområdeDagiId": "706884",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6841,
+      "AfgivneStemmer": 748,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6841,
+      "AfgivneStemmer": 2393,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6841,
+      "AfgivneStemmer": 4082,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6841,
+      "AfgivneStemmer": 5033,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:16:19",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Korup Skole",
+  "AfstemningsområdeDagiId": "710430",
+  "AfstemningsområdeNummer": 20,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3646,
+      "AfgivneStemmer": 677,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3646,
+      "AfgivneStemmer": 2029,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3646,
+      "AfgivneStemmer": 2749,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

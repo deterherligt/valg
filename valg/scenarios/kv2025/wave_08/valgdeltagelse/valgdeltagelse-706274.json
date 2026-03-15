@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:55",
+  "Kommune": "Horsens",
+  "Kommunekode": 615,
+  "Afstemningsområde": "Egebjerg",
+  "AfstemningsområdeDagiId": "706274",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 264,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 411,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 578,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 729,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 856,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 1002,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 1171,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 1418,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 1691,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 1996,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 2280,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3598,
+      "AfgivneStemmer": 2474,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:30",
+  "Kommune": "Guldborgsund",
+  "Kommunekode": 376,
+  "Afstemningsområde": "Stubbekøbing",
+  "AfstemningsområdeDagiId": "703496",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3006,
+      "AfgivneStemmer": 435,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3006,
+      "AfgivneStemmer": 769,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3006,
+      "AfgivneStemmer": 1040,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3006,
+      "AfgivneStemmer": 1383,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3006,
+      "AfgivneStemmer": 1833,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3006,
+      "AfgivneStemmer": 2067,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

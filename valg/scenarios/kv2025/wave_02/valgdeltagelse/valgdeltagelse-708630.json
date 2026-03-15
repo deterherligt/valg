@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:15:15",
+  "Kommune": "Brønderslev",
+  "Kommunekode": 810,
+  "Afstemningsområde": "Serritslev",
+  "AfstemningsområdeDagiId": "708630",
+  "AfstemningsområdeNummer": 80,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 667,
+      "AfgivneStemmer": 113,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 667,
+      "AfgivneStemmer": 165,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 667,
+      "AfgivneStemmer": 260,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 667,
+      "AfgivneStemmer": 411,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

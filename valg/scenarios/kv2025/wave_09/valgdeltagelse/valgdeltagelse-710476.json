@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:29",
+  "Kommune": "Roskilde",
+  "Kommunekode": 265,
+  "Afstemningsområde": "Hedegårdene",
+  "AfstemningsområdeDagiId": "710476",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4079,
+      "AfgivneStemmer": 481,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4079,
+      "AfgivneStemmer": 751,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4079,
+      "AfgivneStemmer": 1029,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4079,
+      "AfgivneStemmer": 1331,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4079,
+      "AfgivneStemmer": 1904,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4079,
+      "AfgivneStemmer": 2536,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4079,
+      "AfgivneStemmer": 2705,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

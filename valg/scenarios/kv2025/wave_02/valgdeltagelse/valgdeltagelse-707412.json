@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:41",
+  "Kommune": "Vejen",
+  "Kommunekode": 575,
+  "Afstemningsområde": "Glejbjerg",
+  "AfstemningsområdeDagiId": "707412",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 19,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 45,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 87,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 109,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 144,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 183,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 213,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 255,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 298,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 428,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 536,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 614,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 935,
+      "AfgivneStemmer": 655,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

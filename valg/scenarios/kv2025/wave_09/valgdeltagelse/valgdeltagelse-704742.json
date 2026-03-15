@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:55",
+  "Kommune": "Bornholm",
+  "Kommunekode": 400,
+  "Afstemningsområde": "Aakirkeby",
+  "AfstemningsområdeDagiId": "704742",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4282,
+      "AfgivneStemmer": 850,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4282,
+      "AfgivneStemmer": 2428,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4282,
+      "AfgivneStemmer": 3058,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

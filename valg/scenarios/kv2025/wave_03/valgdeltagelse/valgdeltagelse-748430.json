@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:29",
+  "Kommune": "Slagelse",
+  "Kommunekode": 330,
+  "Afstemningsområde": "Slots Bjergby - Hashøjskolen",
+  "AfstemningsområdeDagiId": "748430",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1454,
+      "AfgivneStemmer": 0,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1454,
+      "AfgivneStemmer": 293,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1454,
+      "AfgivneStemmer": 402,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1454,
+      "AfgivneStemmer": 595,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1454,
+      "AfgivneStemmer": 868,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1454,
+      "AfgivneStemmer": 1058,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

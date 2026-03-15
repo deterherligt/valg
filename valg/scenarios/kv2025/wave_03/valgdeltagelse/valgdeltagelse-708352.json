@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:40",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Varnæs",
+  "AfstemningsområdeDagiId": "708352",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1012,
+      "AfgivneStemmer": 94,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1012,
+      "AfgivneStemmer": 174,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1012,
+      "AfgivneStemmer": 223,
+      "Tidspunkt": "13:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1012,
+      "AfgivneStemmer": 319,
+      "Tidspunkt": "15:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1012,
+      "AfgivneStemmer": 521,
+      "Tidspunkt": "17:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1012,
+      "AfgivneStemmer": 638,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:48:28",
+  "Kommune": "Gentofte",
+  "Kommunekode": 157,
+  "Afstemningsområde": "Skovgård",
+  "AfstemningsområdeDagiId": "708814",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 624,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 818,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 949,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 1145,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 1397,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 1616,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 1791,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 2018,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 2268,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 2625,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 3141,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 3548,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5282,
+      "AfgivneStemmer": 3823,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

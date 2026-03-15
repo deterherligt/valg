@@ -1,0 +1,67 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:41",
+  "Kommune": "Ringkøbing-Skjern",
+  "Kommunekode": 760,
+  "Afstemningsområde": "Vorgod-Barde",
+  "AfstemningsområdeDagiId": "711210",
+  "AfstemningsområdeNummer": 33,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1850,
+      "AfgivneStemmer": 62,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1850,
+      "AfgivneStemmer": 216,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1850,
+      "AfgivneStemmer": 297,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1850,
+      "AfgivneStemmer": 372,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1850,
+      "AfgivneStemmer": 426,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1850,
+      "AfgivneStemmer": 534,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1850,
+      "AfgivneStemmer": 718,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1850,
+      "AfgivneStemmer": 859,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1850,
+      "AfgivneStemmer": 1084,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1850,
+      "AfgivneStemmer": 1236,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1850,
+      "AfgivneStemmer": 1321,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

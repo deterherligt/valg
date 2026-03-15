@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:23:56",
+  "Kommune": "Rebild",
+  "Kommunekode": 840,
+  "Afstemningsområde": "Suldrup",
+  "AfstemningsområdeDagiId": "712170",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2102,
+      "AfgivneStemmer": 232,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2102,
+      "AfgivneStemmer": 449,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2102,
+      "AfgivneStemmer": 700,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2102,
+      "AfgivneStemmer": 1344,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2102,
+      "AfgivneStemmer": 1587,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

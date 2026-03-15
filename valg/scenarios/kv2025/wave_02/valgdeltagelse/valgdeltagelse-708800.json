@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:58",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Fangel Forsamlingshus",
+  "AfstemningsområdeDagiId": "708800",
+  "AfstemningsområdeNummer": 32,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 751,
+      "AfgivneStemmer": 121,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 751,
+      "AfgivneStemmer": 366,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 751,
+      "AfgivneStemmer": 535,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

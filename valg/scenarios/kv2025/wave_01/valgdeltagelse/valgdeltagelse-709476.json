@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:17:40",
+  "Kommune": "Horsens",
+  "Kommunekode": 615,
+  "Afstemningsområde": "Sejet",
+  "AfstemningsområdeDagiId": "709476",
+  "AfstemningsområdeNummer": 22,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 21,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 30,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 48,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 70,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 88,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 100,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 119,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 156,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 211,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 256,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 284,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 447,
+      "AfgivneStemmer": 295,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

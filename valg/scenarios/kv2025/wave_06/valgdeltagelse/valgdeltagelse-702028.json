@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:12",
+  "Kommune": "Skanderborg",
+  "Kommunekode": 746,
+  "Afstemningsområde": "Låsby",
+  "AfstemningsområdeDagiId": "702028",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2822,
+      "AfgivneStemmer": 572,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2822,
+      "AfgivneStemmer": 1423,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2822,
+      "AfgivneStemmer": 2057,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

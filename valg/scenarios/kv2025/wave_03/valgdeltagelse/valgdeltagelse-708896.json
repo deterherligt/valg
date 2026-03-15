@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:41",
+  "Kommune": "Odsherred",
+  "Kommunekode": 306,
+  "Afstemningsområde": "Egebjerg",
+  "AfstemningsområdeDagiId": "708896",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 115,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 165,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 218,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 271,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 323,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 379,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 432,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 542,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 665,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 769,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 841,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1193,
+      "AfgivneStemmer": 884,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

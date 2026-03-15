@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:11",
+  "Kommune": "Viborg",
+  "Kommunekode": 791,
+  "Afstemningsområde": "Ørum",
+  "AfstemningsområdeDagiId": "709106",
+  "AfstemningsområdeNummer": 17,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2506,
+      "AfgivneStemmer": 180,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2506,
+      "AfgivneStemmer": 445,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2506,
+      "AfgivneStemmer": 807,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2506,
+      "AfgivneStemmer": 1093,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2506,
+      "AfgivneStemmer": 1600,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2506,
+      "AfgivneStemmer": 1920,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

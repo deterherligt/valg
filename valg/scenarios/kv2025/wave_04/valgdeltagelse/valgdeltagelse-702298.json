@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:06:33",
+  "Kommune": "Vejle",
+  "Kommunekode": 630,
+  "Afstemningsområde": "Smidstrup Syd",
+  "AfstemningsområdeDagiId": "702298",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1918,
+      "AfgivneStemmer": 268,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1918,
+      "AfgivneStemmer": 852,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

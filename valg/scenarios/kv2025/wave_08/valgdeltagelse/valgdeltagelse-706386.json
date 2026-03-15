@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:25",
+  "Kommune": "Guldborgsund",
+  "Kommunekode": 376,
+  "Afstemningsområde": "Ejegod",
+  "AfstemningsområdeDagiId": "706386",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3656,
+      "AfgivneStemmer": 505,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3656,
+      "AfgivneStemmer": 968,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3656,
+      "AfgivneStemmer": 1262,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3656,
+      "AfgivneStemmer": 1652,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3656,
+      "AfgivneStemmer": 2168,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3656,
+      "AfgivneStemmer": 2503,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

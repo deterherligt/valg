@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:10:11",
+  "Kommune": "Tønder",
+  "Kommunekode": 550,
+  "Afstemningsområde": "Ballum",
+  "AfstemningsområdeDagiId": "703560",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 543,
+      "AfgivneStemmer": 45,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 543,
+      "AfgivneStemmer": 115,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 543,
+      "AfgivneStemmer": 191,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 543,
+      "AfgivneStemmer": 319,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

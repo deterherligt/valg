@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:31",
+  "Kommune": "Vordingborg",
+  "Kommunekode": 390,
+  "Afstemningsområde": "Stege",
+  "AfstemningsområdeDagiId": "707768",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 528,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 743,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 1038,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 1329,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 1565,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 1808,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 2073,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 2334,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 2685,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 2974,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 3199,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4549,
+      "AfgivneStemmer": 3327,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

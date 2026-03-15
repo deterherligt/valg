@@ -1,0 +1,82 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:15:25",
+  "Kommune": "Helsingør",
+  "Kommunekode": 217,
+  "Afstemningsområde": "Bølgen",
+  "AfstemningsområdeDagiId": "707098",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 562,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 758,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 1032,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 1191,
+      "Tidspunkt": "11:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 1305,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 1440,
+      "Tidspunkt": "12:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 1550,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 1732,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 1973,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 2311,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 2739,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 3108,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 3469,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4782,
+      "AfgivneStemmer": 3686,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

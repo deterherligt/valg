@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:24:26",
+  "Kommune": "Kalundborg",
+  "Kommunekode": 326,
+  "Afstemningsområde": "Kr. Helsinge",
+  "AfstemningsområdeDagiId": "704036",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1463,
+      "AfgivneStemmer": 178,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1463,
+      "AfgivneStemmer": 494,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1463,
+      "AfgivneStemmer": 892,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1463,
+      "AfgivneStemmer": 1004,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

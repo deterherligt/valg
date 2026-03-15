@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:09",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Salbrovad",
+  "AfstemningsområdeDagiId": "709286",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 690,
+      "AfgivneStemmer": 56,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 690,
+      "AfgivneStemmer": 120,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 690,
+      "AfgivneStemmer": 193,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 690,
+      "AfgivneStemmer": 315,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 690,
+      "AfgivneStemmer": 425,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 690,
+      "AfgivneStemmer": 452,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:23",
+  "Kommune": "Odder",
+  "Kommunekode": 727,
+  "Afstemningsområde": "Alrø",
+  "AfstemningsområdeDagiId": "711964",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 114,
+      "AfgivneStemmer": 11,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 114,
+      "AfgivneStemmer": 14,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 114,
+      "AfgivneStemmer": 35,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 114,
+      "AfgivneStemmer": 35,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 114,
+      "AfgivneStemmer": 73,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 114,
+      "AfgivneStemmer": 94,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 114,
+      "AfgivneStemmer": 98,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

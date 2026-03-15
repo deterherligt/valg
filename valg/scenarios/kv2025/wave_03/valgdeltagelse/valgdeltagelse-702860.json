@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:05:17",
+  "Kommune": "Hjørring",
+  "Kommunekode": 860,
+  "Afstemningsområde": "Horne",
+  "AfstemningsområdeDagiId": "702860",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1337,
+      "AfgivneStemmer": 104,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1337,
+      "AfgivneStemmer": 247,
+      "Tidspunkt": "11:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1337,
+      "AfgivneStemmer": 367,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1337,
+      "AfgivneStemmer": 500,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1337,
+      "AfgivneStemmer": 715,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1337,
+      "AfgivneStemmer": 905,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

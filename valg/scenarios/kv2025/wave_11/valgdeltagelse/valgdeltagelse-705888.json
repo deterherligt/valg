@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:17:57",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Rådhuset",
+  "AfstemningsområdeDagiId": "705888",
+  "AfstemningsområdeNummer": 23,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 11140,
+      "AfgivneStemmer": 1985,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11140,
+      "AfgivneStemmer": 5694,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11140,
+      "AfgivneStemmer": 8186,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

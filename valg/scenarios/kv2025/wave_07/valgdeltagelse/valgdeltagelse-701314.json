@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:56",
+  "Kommune": "Holbæk",
+  "Kommunekode": 316,
+  "Afstemningsområde": "Mørkøv",
+  "AfstemningsområdeDagiId": "701314",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3446,
+      "AfgivneStemmer": 436,
+      "Tidspunkt": "10:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3446,
+      "AfgivneStemmer": 1058,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3446,
+      "AfgivneStemmer": 1830,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3446,
+      "AfgivneStemmer": 2257,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

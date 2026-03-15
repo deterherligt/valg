@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:46:29",
+  "Kommune": "Kalundborg",
+  "Kommunekode": 326,
+  "Afstemningsområde": "Raklev",
+  "AfstemningsområdeDagiId": "711460",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3436,
+      "AfgivneStemmer": 474,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3436,
+      "AfgivneStemmer": 1110,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3436,
+      "AfgivneStemmer": 2152,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3436,
+      "AfgivneStemmer": 2510,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

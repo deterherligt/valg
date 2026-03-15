@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:47:28",
+  "Kommune": "Gentofte",
+  "Kommunekode": 157,
+  "Afstemningsområde": "Maglegård",
+  "AfstemningsområdeDagiId": "702890",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 950,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 1197,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 1406,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 1682,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 1968,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 2228,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 2452,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 2692,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 3020,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 3451,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 3923,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 4468,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6148,
+      "AfgivneStemmer": 4835,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

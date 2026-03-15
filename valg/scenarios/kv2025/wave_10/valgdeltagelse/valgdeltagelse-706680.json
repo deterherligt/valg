@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:44:43",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Jysk Arena",
+  "AfstemningsområdeDagiId": "706680",
+  "AfstemningsområdeNummer": 29,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6206,
+      "AfgivneStemmer": 967,
+      "Tidspunkt": "10:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6206,
+      "AfgivneStemmer": 1536,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6206,
+      "AfgivneStemmer": 2396,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6206,
+      "AfgivneStemmer": 4020,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

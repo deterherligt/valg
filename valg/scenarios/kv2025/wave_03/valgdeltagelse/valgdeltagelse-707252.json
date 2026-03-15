@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:29",
+  "Kommune": "Hillerød",
+  "Kommunekode": 219,
+  "Afstemningsområde": "Hammersholt",
+  "AfstemningsområdeDagiId": "707252",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 85,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 149,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 197,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 272,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 332,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 384,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 431,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 494,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 578,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 706,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 867,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 976,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1221,
+      "AfgivneStemmer": 1035,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

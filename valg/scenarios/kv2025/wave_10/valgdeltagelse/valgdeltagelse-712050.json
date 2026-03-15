@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:40",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Lind",
+  "AfstemningsområdeDagiId": "712050",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5277,
+      "AfgivneStemmer": 364,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5277,
+      "AfgivneStemmer": 858,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5277,
+      "AfgivneStemmer": 1573,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5277,
+      "AfgivneStemmer": 2210,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5277,
+      "AfgivneStemmer": 2711,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5277,
+      "AfgivneStemmer": 3320,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5277,
+      "AfgivneStemmer": 3807,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5277,
+      "AfgivneStemmer": 4111,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

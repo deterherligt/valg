@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:12:57",
+  "Kommune": "Tønder",
+  "Kommunekode": 550,
+  "Afstemningsområde": "Agerskov",
+  "AfstemningsområdeDagiId": "701806",
+  "AfstemningsområdeNummer": 17,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1626,
+      "AfgivneStemmer": 101,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1626,
+      "AfgivneStemmer": 323,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1626,
+      "AfgivneStemmer": 497,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1626,
+      "AfgivneStemmer": 943,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

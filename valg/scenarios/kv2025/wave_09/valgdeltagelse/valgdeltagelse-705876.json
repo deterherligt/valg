@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:18:42",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Sct. Knuds Gymnasium",
+  "AfstemningsområdeDagiId": "705876",
+  "AfstemningsområdeNummer": 24,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4314,
+      "AfgivneStemmer": 840,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4314,
+      "AfgivneStemmer": 2340,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4314,
+      "AfgivneStemmer": 3624,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

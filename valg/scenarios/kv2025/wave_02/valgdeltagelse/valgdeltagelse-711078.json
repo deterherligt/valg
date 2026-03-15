@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:15:26",
+  "Kommune": "Tønder",
+  "Kommunekode": 550,
+  "Afstemningsområde": "Brøns",
+  "AfstemningsområdeDagiId": "711078",
+  "AfstemningsområdeNummer": 24,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 781,
+      "AfgivneStemmer": 48,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 781,
+      "AfgivneStemmer": 134,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 781,
+      "AfgivneStemmer": 245,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 781,
+      "AfgivneStemmer": 443,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:41",
+  "Kommune": "Odder",
+  "Kommunekode": 727,
+  "Afstemningsområde": "Odder",
+  "AfstemningsområdeDagiId": "709406",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 11270,
+      "AfgivneStemmer": 1877,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11270,
+      "AfgivneStemmer": 2485,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11270,
+      "AfgivneStemmer": 3587,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11269,
+      "AfgivneStemmer": 4032,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11269,
+      "AfgivneStemmer": 5901,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11269,
+      "AfgivneStemmer": 7369,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11270,
+      "AfgivneStemmer": 8319,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

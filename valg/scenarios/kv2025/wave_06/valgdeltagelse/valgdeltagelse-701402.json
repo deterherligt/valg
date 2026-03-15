@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:08:11",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Sulsted Skolehal",
+  "AfstemningsområdeDagiId": "701402",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2960,
+      "AfgivneStemmer": 553,
+      "Tidspunkt": "11:47:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2960,
+      "AfgivneStemmer": 1643,
+      "Tidspunkt": "17:53:00"
+    }
+  ]
+}

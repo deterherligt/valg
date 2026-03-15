@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:29",
+  "Kommune": "Egedal",
+  "Kommunekode": 240,
+  "Afstemningsområde": "Ølstykke",
+  "AfstemningsområdeDagiId": "703648",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5795,
+      "AfgivneStemmer": 603,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5795,
+      "AfgivneStemmer": 1031,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5795,
+      "AfgivneStemmer": 1739,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5795,
+      "AfgivneStemmer": 2324,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5795,
+      "AfgivneStemmer": 3435,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5795,
+      "AfgivneStemmer": 4158,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

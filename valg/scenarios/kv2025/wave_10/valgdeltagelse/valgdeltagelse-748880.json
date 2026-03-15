@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:58",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Aakjær",
+  "AfstemningsområdeDagiId": "748880",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6404,
+      "AfgivneStemmer": 1093,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6404,
+      "AfgivneStemmer": 1910,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6404,
+      "AfgivneStemmer": 2540,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6406,
+      "AfgivneStemmer": 3508,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6406,
+      "AfgivneStemmer": 4069,
+      "Tidspunkt": "20:08:00"
+    }
+  ]
+}

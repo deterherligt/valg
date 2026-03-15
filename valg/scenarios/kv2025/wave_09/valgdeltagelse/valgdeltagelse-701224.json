@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:13",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Tarup Skole",
+  "AfstemningsområdeDagiId": "701224",
+  "AfstemningsområdeNummer": 18,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4638,
+      "AfgivneStemmer": 1019,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4638,
+      "AfgivneStemmer": 2637,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4638,
+      "AfgivneStemmer": 3646,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:59",
+  "Kommune": "Fredensborg",
+  "Kommunekode": 210,
+  "Afstemningsområde": "Fredensborg",
+  "AfstemningsområdeDagiId": "709824",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 450,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 600,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 763,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 954,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 1126,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 1271,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 1423,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 1653,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 1969,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 2323,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 2613,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3617,
+      "AfgivneStemmer": 2841,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

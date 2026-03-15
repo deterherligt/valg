@@ -1,0 +1,57 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:17:11",
+  "Kommune": "Ballerup",
+  "Kommunekode": 151,
+  "Afstemningsområde": "Tapeten",
+  "AfstemningsområdeDagiId": "701002",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4698,
+      "AfgivneStemmer": 0,
+      "Tidspunkt": "07:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4698,
+      "AfgivneStemmer": 411,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4698,
+      "AfgivneStemmer": 565,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4698,
+      "AfgivneStemmer": 759,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4698,
+      "AfgivneStemmer": 1286,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4698,
+      "AfgivneStemmer": 1775,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4698,
+      "AfgivneStemmer": 2102,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4698,
+      "AfgivneStemmer": 2641,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4698,
+      "AfgivneStemmer": 2801,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

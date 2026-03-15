@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:41",
+  "Kommune": "Frederikshavn",
+  "Kommunekode": 813,
+  "Afstemningsområde": "Skagen",
+  "AfstemningsområdeDagiId": "705148",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6210,
+      "AfgivneStemmer": 552,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6210,
+      "AfgivneStemmer": 817,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6210,
+      "AfgivneStemmer": 1640,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6210,
+      "AfgivneStemmer": 2214,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6210,
+      "AfgivneStemmer": 2918,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6210,
+      "AfgivneStemmer": 3726,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6210,
+      "AfgivneStemmer": 4102,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

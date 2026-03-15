@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:10",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Skarrild",
+  "AfstemningsområdeDagiId": "710918",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 738,
+      "AfgivneStemmer": 42,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 738,
+      "AfgivneStemmer": 120,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 738,
+      "AfgivneStemmer": 308,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 738,
+      "AfgivneStemmer": 393,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 738,
+      "AfgivneStemmer": 463,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 738,
+      "AfgivneStemmer": 510,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 738,
+      "AfgivneStemmer": 540,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

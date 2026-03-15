@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:12",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Spurvelundskolen",
+  "AfstemningsområdeDagiId": "701218",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3258,
+      "AfgivneStemmer": 649,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3258,
+      "AfgivneStemmer": 1718,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3258,
+      "AfgivneStemmer": 2406,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

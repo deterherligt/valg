@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:51:13",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Åby Hallen",
+  "AfstemningsområdeDagiId": "710028",
+  "AfstemningsområdeNummer": 64,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7814,
+      "AfgivneStemmer": 793,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7812,
+      "AfgivneStemmer": 1568,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7812,
+      "AfgivneStemmer": 2493,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7812,
+      "AfgivneStemmer": 4622,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7812,
+      "AfgivneStemmer": 5667,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

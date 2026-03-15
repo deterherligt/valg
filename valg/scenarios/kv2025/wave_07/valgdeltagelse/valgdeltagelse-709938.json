@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:15",
+  "Kommune": "Ishøj",
+  "Kommunekode": 183,
+  "Afstemningsområde": "Vibeholmskolen",
+  "AfstemningsområdeDagiId": "709938",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 302,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 378,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 490,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 619,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 720,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 841,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 998,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 1209,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 1471,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 1749,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 1945,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3137,
+      "AfgivneStemmer": 2070,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

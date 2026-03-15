@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:13:43",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Vejgaard Østre Skole",
+  "AfstemningsområdeDagiId": "708918",
+  "AfstemningsområdeNummer": 31,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6073,
+      "AfgivneStemmer": 788,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6073,
+      "AfgivneStemmer": 3318,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

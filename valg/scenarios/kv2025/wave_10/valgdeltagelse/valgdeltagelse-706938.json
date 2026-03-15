@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:37:59",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Brabrand Hallen",
+  "AfstemningsområdeDagiId": "706938",
+  "AfstemningsområdeNummer": 24,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6718,
+      "AfgivneStemmer": 853,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6718,
+      "AfgivneStemmer": 1736,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6718,
+      "AfgivneStemmer": 2638,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6718,
+      "AfgivneStemmer": 4263,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6718,
+      "AfgivneStemmer": 5186,
+      "Tidspunkt": "20:10:00"
+    }
+  ]
+}

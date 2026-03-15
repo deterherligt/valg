@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:21:28",
+  "Kommune": "Greve",
+  "Kommunekode": 253,
+  "Afstemningsområde": "Tunehallerne",
+  "AfstemningsområdeDagiId": "718910",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5290,
+      "AfgivneStemmer": 409,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5290,
+      "AfgivneStemmer": 886,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5290,
+      "AfgivneStemmer": 1413,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5290,
+      "AfgivneStemmer": 1865,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5290,
+      "AfgivneStemmer": 2782,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5290,
+      "AfgivneStemmer": 3659,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5290,
+      "AfgivneStemmer": 3925,
+      "Tidspunkt": "20:05:00"
+    }
+  ]
+}

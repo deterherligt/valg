@@ -1,0 +1,67 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:57",
+  "Kommune": "Vordingborg",
+  "Kommunekode": 390,
+  "Afstemningsområde": "Mern",
+  "AfstemningsområdeDagiId": "707828",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1477,
+      "AfgivneStemmer": 163,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1477,
+      "AfgivneStemmer": 230,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1477,
+      "AfgivneStemmer": 313,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1477,
+      "AfgivneStemmer": 370,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1477,
+      "AfgivneStemmer": 430,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1477,
+      "AfgivneStemmer": 501,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1477,
+      "AfgivneStemmer": 600,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1477,
+      "AfgivneStemmer": 721,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1477,
+      "AfgivneStemmer": 852,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1477,
+      "AfgivneStemmer": 938,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1477,
+      "AfgivneStemmer": 992,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:13:26",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Mellervangskolens Idrætshal",
+  "AfstemningsområdeDagiId": "711750",
+  "AfstemningsområdeNummer": 32,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3337,
+      "AfgivneStemmer": 511,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3337,
+      "AfgivneStemmer": 1648,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

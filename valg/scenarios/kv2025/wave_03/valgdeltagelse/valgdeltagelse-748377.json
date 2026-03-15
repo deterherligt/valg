@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:43",
+  "Kommune": "Thisted",
+  "Kommunekode": 787,
+  "Afstemningsområde": "Sennels",
+  "AfstemningsområdeDagiId": "748377",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1004,
+      "AfgivneStemmer": 212,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1004,
+      "AfgivneStemmer": 634,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1004,
+      "AfgivneStemmer": 851,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

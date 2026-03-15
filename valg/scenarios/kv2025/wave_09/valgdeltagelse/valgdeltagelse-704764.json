@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:03:34",
+  "Kommune": "Jammerbugt",
+  "Kommunekode": 849,
+  "Afstemningsområde": "Jetsmark",
+  "AfstemningsområdeDagiId": "704764",
+  "AfstemningsområdeNummer": 18,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4770,
+      "AfgivneStemmer": 1145,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4770,
+      "AfgivneStemmer": 2142,
+      "Tidspunkt": "16:00:00"
+    }
+  ]
+}

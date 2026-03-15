@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:26",
+  "Kommune": "Norddjurs",
+  "Kommunekode": 707,
+  "Afstemningsområde": "Allingåbro",
+  "AfstemningsområdeDagiId": "710680",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2070,
+      "AfgivneStemmer": 180,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2070,
+      "AfgivneStemmer": 385,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2070,
+      "AfgivneStemmer": 655,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2070,
+      "AfgivneStemmer": 1168,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2070,
+      "AfgivneStemmer": 1355,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:23:15",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Sanderumhallen",
+  "AfstemningsområdeDagiId": "711692",
+  "AfstemningsområdeNummer": 26,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8547,
+      "AfgivneStemmer": 1878,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8547,
+      "AfgivneStemmer": 4822,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8547,
+      "AfgivneStemmer": 6624,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

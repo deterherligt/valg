@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:14",
+  "Kommune": "Ballerup",
+  "Kommunekode": 151,
+  "Afstemningsområde": "Skovlunde Skole - Lundebjerg",
+  "AfstemningsområdeDagiId": "704024",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6961,
+      "AfgivneStemmer": 789,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6961,
+      "AfgivneStemmer": 1061,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6961,
+      "AfgivneStemmer": 1798,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6961,
+      "AfgivneStemmer": 2434,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6961,
+      "AfgivneStemmer": 2910,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6961,
+      "AfgivneStemmer": 3796,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6961,
+      "AfgivneStemmer": 4085,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

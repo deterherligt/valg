@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:56",
+  "Kommune": "Slagelse",
+  "Kommunekode": 330,
+  "Afstemningsområde": "Korsør - Storebæltshallen",
+  "AfstemningsområdeDagiId": "711630",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6227,
+      "AfgivneStemmer": 1572,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6227,
+      "AfgivneStemmer": 2077,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6227,
+      "AfgivneStemmer": 2745,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6227,
+      "AfgivneStemmer": 3706,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6227,
+      "AfgivneStemmer": 4180,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

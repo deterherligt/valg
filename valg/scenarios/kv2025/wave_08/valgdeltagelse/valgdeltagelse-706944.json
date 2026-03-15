@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:54",
+  "Kommune": "Gladsaxe",
+  "Kommunekode": 159,
+  "Afstemningsområde": "Værebro",
+  "AfstemningsområdeDagiId": "706944",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3862,
+      "AfgivneStemmer": 676,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3862,
+      "AfgivneStemmer": 1165,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3862,
+      "AfgivneStemmer": 2120,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

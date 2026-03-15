@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:55",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Tranbjerg Skole",
+  "AfstemningsområdeDagiId": "702228",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7642,
+      "AfgivneStemmer": 629,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7642,
+      "AfgivneStemmer": 1769,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7642,
+      "AfgivneStemmer": 2914,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7642,
+      "AfgivneStemmer": 4911,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7642,
+      "AfgivneStemmer": 5738,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

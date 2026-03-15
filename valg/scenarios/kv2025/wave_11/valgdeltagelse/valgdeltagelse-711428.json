@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:10",
+  "Kommune": "Gladsaxe",
+  "Kommunekode": 159,
+  "Afstemningsområde": "Hovedbiblioteket",
+  "AfstemningsområdeDagiId": "711428",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7427,
+      "AfgivneStemmer": 1588,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7427,
+      "AfgivneStemmer": 2732,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7427,
+      "AfgivneStemmer": 4698,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

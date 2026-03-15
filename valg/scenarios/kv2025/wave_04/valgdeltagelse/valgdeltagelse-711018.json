@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:42",
+  "Kommune": "Guldborgsund",
+  "Kommunekode": 376,
+  "Afstemningsområde": "Nørre Vedby",
+  "AfstemningsområdeDagiId": "711018",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1800,
+      "AfgivneStemmer": 202,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1800,
+      "AfgivneStemmer": 359,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1800,
+      "AfgivneStemmer": 509,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1800,
+      "AfgivneStemmer": 685,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1800,
+      "AfgivneStemmer": 1045,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1800,
+      "AfgivneStemmer": 1209,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

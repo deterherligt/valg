@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:43",
+  "Kommune": "Ringkøbing-Skjern",
+  "Kommunekode": 760,
+  "Afstemningsområde": "Velling",
+  "AfstemningsområdeDagiId": "706556",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 95,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 144,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 226,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 293,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 333,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 377,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 435,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 514,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 663,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 789,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 868,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1115,
+      "AfgivneStemmer": 912,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

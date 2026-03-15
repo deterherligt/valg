@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:08:51",
+  "Kommune": "Vejle",
+  "Kommunekode": 630,
+  "Afstemningsområde": "Mølholmhallen Syd",
+  "AfstemningsområdeDagiId": "705630",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3086,
+      "AfgivneStemmer": 563,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3086,
+      "AfgivneStemmer": 1640,
+      "Tidspunkt": "17:01:00"
+    }
+  ]
+}

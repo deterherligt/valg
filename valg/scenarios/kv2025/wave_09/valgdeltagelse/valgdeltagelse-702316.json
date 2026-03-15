@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:37:14",
+  "Kommune": "Kalundborg",
+  "Kommunekode": 326,
+  "Afstemningsområde": "Høng",
+  "AfstemningsområdeDagiId": "702316",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4045,
+      "AfgivneStemmer": 502,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4045,
+      "AfgivneStemmer": 1228,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4045,
+      "AfgivneStemmer": 2273,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4045,
+      "AfgivneStemmer": 2634,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

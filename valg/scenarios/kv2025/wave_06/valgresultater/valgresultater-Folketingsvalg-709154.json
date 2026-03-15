@@ -1,0 +1,29 @@
+{
+  "Valgresultater": {
+    "AfstemningsomraadeId": "709154",
+    "Optaellingstype": "Foreløbig",
+    "IndenforParti": [
+      {
+        "PartiId": "V",
+        "Partistemmer": 408,
+        "Kandidater": []
+      },
+      {
+        "PartiId": "A",
+        "Partistemmer": 524,
+        "Kandidater": []
+      },
+      {
+        "PartiId": "C",
+        "Partistemmer": 809,
+        "Kandidater": []
+      },
+      {
+        "PartiId": "F",
+        "Partistemmer": 406,
+        "Kandidater": []
+      }
+    ],
+    "KandidaterUdenforParti": []
+  }
+}

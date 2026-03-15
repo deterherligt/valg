@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:02:35",
+  "Kommune": "Jammerbugt",
+  "Kommunekode": 849,
+  "Afstemningsområde": "Thorup",
+  "AfstemningsområdeDagiId": "704750",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 982,
+      "AfgivneStemmer": 212,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 982,
+      "AfgivneStemmer": 403,
+      "Tidspunkt": "16:00:00"
+    }
+  ]
+}

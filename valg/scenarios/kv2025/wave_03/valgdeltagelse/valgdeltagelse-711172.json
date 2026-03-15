@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:36:12",
+  "Kommune": "Lemvig",
+  "Kommunekode": 665,
+  "Afstemningsområde": "Ramme",
+  "AfstemningsområdeDagiId": "711172",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 116,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 186,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 278,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 378,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 427,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 489,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 540,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 659,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 810,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 975,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 1067,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1457,
+      "AfgivneStemmer": 1115,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

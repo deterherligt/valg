@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:40:59",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Borum Forsamlingshus",
+  "AfstemningsområdeDagiId": "705576",
+  "AfstemningsområdeNummer": 31,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 549,
+      "AfgivneStemmer": 38,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 549,
+      "AfgivneStemmer": 108,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 549,
+      "AfgivneStemmer": 173,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 549,
+      "AfgivneStemmer": 352,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 549,
+      "AfgivneStemmer": 449,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

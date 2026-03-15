@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:48:43",
+  "Kommune": "Roskilde",
+  "Kommunekode": 265,
+  "Afstemningsområde": "Gundsølille",
+  "AfstemningsområdeDagiId": "704320",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2889,
+      "AfgivneStemmer": 255,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2889,
+      "AfgivneStemmer": 514,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2889,
+      "AfgivneStemmer": 755,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2889,
+      "AfgivneStemmer": 1017,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2889,
+      "AfgivneStemmer": 1411,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2889,
+      "AfgivneStemmer": 1922,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2889,
+      "AfgivneStemmer": 2143,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

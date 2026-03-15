@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:30",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Råby Forsamlingshus",
+  "AfstemningsområdeDagiId": "704222",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 48,
+      "Tidspunkt": "09:06:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 93,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 150,
+      "Tidspunkt": "11:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 207,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 250,
+      "Tidspunkt": "13:05:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 289,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 332,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 391,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 480,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 541,
+      "Tidspunkt": "17:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 576,
+      "Tidspunkt": "19:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 906,
+      "AfgivneStemmer": 603,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

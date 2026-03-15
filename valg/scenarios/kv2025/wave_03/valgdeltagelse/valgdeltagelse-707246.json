@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:10:31",
+  "Kommune": "Gribskov",
+  "Kommunekode": 270,
+  "Afstemningsområde": "Søborg",
+  "AfstemningsområdeDagiId": "707246",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1236,
+      "AfgivneStemmer": 141,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1236,
+      "AfgivneStemmer": 305,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1236,
+      "AfgivneStemmer": 479,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1236,
+      "AfgivneStemmer": 761,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1236,
+      "AfgivneStemmer": 801,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

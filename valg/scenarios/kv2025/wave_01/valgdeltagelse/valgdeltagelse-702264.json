@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:11:34",
+  "Kommune": "Vejle",
+  "Kommunekode": 630,
+  "Afstemningsområde": "Lindeballe Nord",
+  "AfstemningsområdeDagiId": "702264",
+  "AfstemningsområdeNummer": 22,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 395,
+      "AfgivneStemmer": 66,
+      "Tidspunkt": "11:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 395,
+      "AfgivneStemmer": 176,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

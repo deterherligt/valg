@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:23",
+  "Kommune": "Odder",
+  "Kommunekode": 727,
+  "Afstemningsområde": "Torrild",
+  "AfstemningsområdeDagiId": "701640",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 366,
+      "AfgivneStemmer": 20,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 366,
+      "AfgivneStemmer": 50,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 366,
+      "AfgivneStemmer": 99,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 366,
+      "AfgivneStemmer": 194,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 366,
+      "AfgivneStemmer": 296,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 366,
+      "AfgivneStemmer": 313,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

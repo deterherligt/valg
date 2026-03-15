@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:40:44",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Fritidscentret",
+  "AfstemningsområdeDagiId": "711624",
+  "AfstemningsområdeNummer": 28,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 394,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 498,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 614,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 758,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 903,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 1049,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 1206,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 1413,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 1682,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 1949,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 2157,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4151,
+      "AfgivneStemmer": 2303,
+      "Tidspunkt": "20:40:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:17:41",
+  "Kommune": "Horsens",
+  "Kommunekode": 615,
+  "Afstemningsområde": "Lund",
+  "AfstemningsområdeDagiId": "710912",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 277,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 397,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 546,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 680,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 799,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 931,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 1114,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 1321,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 1620,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 1991,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 2325,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3786,
+      "AfgivneStemmer": 2573,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

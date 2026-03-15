@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:25",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Thorning",
+  "AfstemningsområdeDagiId": "703820",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2265,
+      "AfgivneStemmer": 315,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2265,
+      "AfgivneStemmer": 473,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2265,
+      "AfgivneStemmer": 806,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2265,
+      "AfgivneStemmer": 1528,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

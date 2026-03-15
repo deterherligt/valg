@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:32",
+  "Kommune": "Vordingborg",
+  "Kommunekode": 390,
+  "Afstemningsområde": "Lundby",
+  "AfstemningsområdeDagiId": "705010",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 192,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 300,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 447,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 620,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 757,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 913,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 1038,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 1233,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 1468,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 1734,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 1942,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3110,
+      "AfgivneStemmer": 2041,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

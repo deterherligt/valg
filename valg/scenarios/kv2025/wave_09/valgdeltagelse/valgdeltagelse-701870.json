@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:20:55",
+  "Kommune": "Næstved",
+  "Kommunekode": 370,
+  "Afstemningsområde": "Lille Næstved Skole - Digtervej",
+  "AfstemningsområdeDagiId": "701870",
+  "AfstemningsområdeNummer": 20,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4116,
+      "AfgivneStemmer": 533,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4116,
+      "AfgivneStemmer": 1106,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4116,
+      "AfgivneStemmer": 1645,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4116,
+      "AfgivneStemmer": 2612,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4116,
+      "AfgivneStemmer": 3055,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

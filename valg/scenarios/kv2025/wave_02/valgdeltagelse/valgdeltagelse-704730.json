@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:30:41",
+  "Kommune": "Haderslev",
+  "Kommunekode": 510,
+  "Afstemningsområde": "Skrydstrup",
+  "AfstemningsområdeDagiId": "704730",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 827,
+      "AfgivneStemmer": 109,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 827,
+      "AfgivneStemmer": 222,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 827,
+      "AfgivneStemmer": 416,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 827,
+      "AfgivneStemmer": 493,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

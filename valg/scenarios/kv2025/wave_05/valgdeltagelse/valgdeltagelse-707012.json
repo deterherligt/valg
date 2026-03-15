@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:22:56",
+  "Kommune": "Kalundborg",
+  "Kommunekode": 326,
+  "Afstemningsområde": "Gørlev",
+  "AfstemningsområdeDagiId": "707012",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2471,
+      "AfgivneStemmer": 291,
+      "Tidspunkt": "10:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2471,
+      "AfgivneStemmer": 800,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2471,
+      "AfgivneStemmer": 1475,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2471,
+      "AfgivneStemmer": 1654,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

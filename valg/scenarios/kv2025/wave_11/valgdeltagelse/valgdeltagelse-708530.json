@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:54:00",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Skovvangskolen, Aarhus N",
+  "AfstemningsområdeDagiId": "708530",
+  "AfstemningsområdeNummer": 42,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 11879,
+      "AfgivneStemmer": 1309,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11879,
+      "AfgivneStemmer": 2656,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11879,
+      "AfgivneStemmer": 4210,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11879,
+      "AfgivneStemmer": 7266,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11879,
+      "AfgivneStemmer": 9126,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

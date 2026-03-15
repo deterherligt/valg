@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:57",
+  "Kommune": "Nordfyns",
+  "Kommunekode": 480,
+  "Afstemningsområde": "Morud",
+  "AfstemningsområdeDagiId": "748633",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2266,
+      "AfgivneStemmer": 414,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2266,
+      "AfgivneStemmer": 1250,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2266,
+      "AfgivneStemmer": 1787,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:25",
+  "Kommune": "Horsens",
+  "Kommunekode": 615,
+  "Afstemningsområde": "Sønderbro",
+  "AfstemningsområdeDagiId": "710898",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 417,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 588,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 854,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 1074,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 1283,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 1464,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 1677,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 1960,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 2343,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 2625,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 2835,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5527,
+      "AfgivneStemmer": 2974,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

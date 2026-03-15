@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:16:40",
+  "Kommune": "Vesthimmerlands",
+  "Kommunekode": 820,
+  "Afstemningsområde": "Gislum-Vognsild",
+  "AfstemningsområdeDagiId": "710016",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 830,
+      "AfgivneStemmer": 140,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 830,
+      "AfgivneStemmer": 459,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 830,
+      "AfgivneStemmer": 574,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:00",
+  "Kommune": "Ikast-Brande",
+  "Kommunekode": 756,
+  "Afstemningsområde": "Bording",
+  "AfstemningsområdeDagiId": "705552",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2852,
+      "AfgivneStemmer": 201,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2852,
+      "AfgivneStemmer": 326,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2852,
+      "AfgivneStemmer": 604,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2852,
+      "AfgivneStemmer": 810,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2852,
+      "AfgivneStemmer": 1137,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2852,
+      "AfgivneStemmer": 1391,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2852,
+      "AfgivneStemmer": 1660,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2852,
+      "AfgivneStemmer": 1876,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2852,
+      "AfgivneStemmer": 1993,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

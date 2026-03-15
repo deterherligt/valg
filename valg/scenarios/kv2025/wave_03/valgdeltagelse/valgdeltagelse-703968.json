@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:10:02",
+  "Kommune": "Vejle",
+  "Kommunekode": 630,
+  "Afstemningsområde": "Kollerup-Sandvad Nord",
+  "AfstemningsområdeDagiId": "703968",
+  "AfstemningsområdeNummer": 25,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1329,
+      "AfgivneStemmer": 151,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1329,
+      "AfgivneStemmer": 614,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

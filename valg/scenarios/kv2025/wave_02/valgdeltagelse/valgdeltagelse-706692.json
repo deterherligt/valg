@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:43:28",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Gjessø",
+  "AfstemningsområdeDagiId": "706692",
+  "AfstemningsområdeNummer": 24,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 972,
+      "AfgivneStemmer": 133,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 972,
+      "AfgivneStemmer": 215,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 972,
+      "AfgivneStemmer": 390,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 972,
+      "AfgivneStemmer": 807,
+      "Tidspunkt": "20:05:00"
+    }
+  ]
+}

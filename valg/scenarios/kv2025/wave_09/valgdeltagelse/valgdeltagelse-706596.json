@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:10",
+  "Kommune": "Dragør",
+  "Kommunekode": 155,
+  "Afstemningsområde": "Dragør Skole",
+  "AfstemningsområdeDagiId": "706596",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 454,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 594,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 819,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 1075,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 1306,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 1483,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 1670,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 1937,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 2335,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 2774,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 3104,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4144,
+      "AfgivneStemmer": 3323,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

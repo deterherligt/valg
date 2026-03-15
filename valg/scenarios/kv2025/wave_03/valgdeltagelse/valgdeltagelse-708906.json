@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:25:11",
+  "Kommune": "Odsherred",
+  "Kommunekode": 306,
+  "Afstemningsområde": "Odden",
+  "AfstemningsområdeDagiId": "708906",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 98,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 166,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 210,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 280,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 351,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 414,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 468,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 547,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 610,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 668,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 717,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1033,
+      "AfgivneStemmer": 734,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

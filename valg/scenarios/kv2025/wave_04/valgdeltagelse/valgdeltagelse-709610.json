@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 15:06:58",
+  "Kommune": "Favrskov",
+  "Kommunekode": 710,
+  "Afstemningsområde": "Hadbjerg",
+  "AfstemningsområdeDagiId": "709610",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1755,
+      "AfgivneStemmer": 315,
+      "Tidspunkt": "11:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1755,
+      "AfgivneStemmer": 621,
+      "Tidspunkt": "16:01:00"
+    }
+  ]
+}

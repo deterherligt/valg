@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:10:55",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Tornhøjhallen",
+  "AfstemningsområdeDagiId": "704494",
+  "AfstemningsområdeNummer": 40,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7104,
+      "AfgivneStemmer": 1144,
+      "Tidspunkt": "11:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7104,
+      "AfgivneStemmer": 3112,
+      "Tidspunkt": "17:57:00"
+    }
+  ]
+}

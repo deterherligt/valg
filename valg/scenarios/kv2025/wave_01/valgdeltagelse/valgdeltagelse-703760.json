@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:10:24",
+  "Kommune": "Nyborg",
+  "Kommunekode": 450,
+  "Afstemningsområde": "Skellerup",
+  "AfstemningsområdeDagiId": "703760",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 31,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 49,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 70,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 90,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 108,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 128,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 153,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 174,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 227,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 274,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 298,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 449,
+      "AfgivneStemmer": 319,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

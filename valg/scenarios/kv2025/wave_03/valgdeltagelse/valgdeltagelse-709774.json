@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:11",
+  "Kommune": "Svendborg",
+  "Kommunekode": 479,
+  "Afstemningsområde": "Kirkeby",
+  "AfstemningsområdeDagiId": "709774",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 77,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 163,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 229,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 334,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 579,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 744,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1065,
+      "AfgivneStemmer": 777,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

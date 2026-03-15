@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:27",
+  "Kommune": "Lyngby-Taarbæk",
+  "Kommunekode": 173,
+  "Afstemningsområde": "Hummeltofte",
+  "AfstemningsområdeDagiId": "710170",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 433,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 557,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 733,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 941,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 1110,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 1250,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 1443,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 1713,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 2097,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 2496,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 2904,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3957,
+      "AfgivneStemmer": 3245,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

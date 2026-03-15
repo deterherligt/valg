@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:32",
+  "Kommune": "Vesthimmerlands",
+  "Kommunekode": 820,
+  "Afstemningsområde": "Hvalpsund",
+  "AfstemningsområdeDagiId": "711328",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1309,
+      "AfgivneStemmer": 330,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1309,
+      "AfgivneStemmer": 826,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1309,
+      "AfgivneStemmer": 979,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

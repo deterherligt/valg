@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:10:13",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Kroggårdsskolen",
+  "AfstemningsområdeDagiId": "702818",
+  "AfstemningsområdeNummer": 17,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5134,
+      "AfgivneStemmer": 930,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5134,
+      "AfgivneStemmer": 2669,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5134,
+      "AfgivneStemmer": 3779,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:45",
+  "Kommune": "Vesthimmerlands",
+  "Kommunekode": 820,
+  "Afstemningsområde": "Gedsted",
+  "AfstemningsområdeDagiId": "710008",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1448,
+      "AfgivneStemmer": 308,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1448,
+      "AfgivneStemmer": 870,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1448,
+      "AfgivneStemmer": 1015,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

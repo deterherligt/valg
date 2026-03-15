@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:28",
+  "Kommune": "Kolding",
+  "Kommunekode": 621,
+  "Afstemningsområde": "Lunderskov/Jordrup",
+  "AfstemningsområdeDagiId": "708000",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4537,
+      "AfgivneStemmer": 702,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4537,
+      "AfgivneStemmer": 1238,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4537,
+      "AfgivneStemmer": 2730,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4537,
+      "AfgivneStemmer": 3229,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:21:32",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Rønbjerg",
+  "AfstemningsområdeDagiId": "748876",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 603,
+      "AfgivneStemmer": 109,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 603,
+      "AfgivneStemmer": 174,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 603,
+      "AfgivneStemmer": 238,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 603,
+      "AfgivneStemmer": 392,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 603,
+      "AfgivneStemmer": 457,
+      "Tidspunkt": "20:13:00"
+    }
+  ]
+}

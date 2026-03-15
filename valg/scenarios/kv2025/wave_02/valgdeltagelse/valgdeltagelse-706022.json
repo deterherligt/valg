@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:55",
+  "Kommune": "Vejen",
+  "Kommunekode": 575,
+  "Afstemningsområde": "Lindknud",
+  "AfstemningsområdeDagiId": "706022",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 33,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 55,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 84,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 99,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 119,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 131,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 174,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 209,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 302,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 373,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 424,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 627,
+      "AfgivneStemmer": 437,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:14",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "7. Kirkebjerg",
+  "AfstemningsområdeDagiId": "703374",
+  "AfstemningsområdeNummer": 40,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9448,
+      "AfgivneStemmer": 2141,
+      "Tidspunkt": "12:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9448,
+      "AfgivneStemmer": 3565,
+      "Tidspunkt": "16:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9448,
+      "AfgivneStemmer": 5183,
+      "Tidspunkt": "18:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9448,
+      "AfgivneStemmer": 6608,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:55",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Resenbro",
+  "AfstemningsområdeDagiId": "700766",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1544,
+      "AfgivneStemmer": 262,
+      "Tidspunkt": "11:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1544,
+      "AfgivneStemmer": 400,
+      "Tidspunkt": "12:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1544,
+      "AfgivneStemmer": 646,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1544,
+      "AfgivneStemmer": 1235,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

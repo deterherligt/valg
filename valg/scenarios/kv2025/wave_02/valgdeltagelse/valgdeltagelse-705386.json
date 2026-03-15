@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:57:53",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Hovslund",
+  "AfstemningsområdeDagiId": "705386",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 677,
+      "AfgivneStemmer": 42,
+      "Tidspunkt": "09:56:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 677,
+      "AfgivneStemmer": 98,
+      "Tidspunkt": "11:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 677,
+      "AfgivneStemmer": 140,
+      "Tidspunkt": "13:56:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 677,
+      "AfgivneStemmer": 218,
+      "Tidspunkt": "15:57:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 677,
+      "AfgivneStemmer": 357,
+      "Tidspunkt": "17:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 677,
+      "AfgivneStemmer": 425,
+      "Tidspunkt": "19:55:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:40",
+  "Kommune": "Varde",
+  "Kommunekode": 573,
+  "Afstemningsområde": "Nørre Nebel",
+  "AfstemningsområdeDagiId": "707430",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1798,
+      "AfgivneStemmer": 319,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1798,
+      "AfgivneStemmer": 674,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1798,
+      "AfgivneStemmer": 1088,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1798,
+      "AfgivneStemmer": 1236,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

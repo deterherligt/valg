@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:40",
+  "Kommune": "Fredericia",
+  "Kommunekode": 607,
+  "Afstemningsområde": "Taulov",
+  "AfstemningsområdeDagiId": "705216",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4981,
+      "AfgivneStemmer": 1085,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4981,
+      "AfgivneStemmer": 2925,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4981,
+      "AfgivneStemmer": 3522,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

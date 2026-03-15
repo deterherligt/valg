@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:55",
+  "Kommune": "Holstebro",
+  "Kommunekode": 661,
+  "Afstemningsområde": "Nørre Boulevard Skolen",
+  "AfstemningsområdeDagiId": "711920",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 10638,
+      "AfgivneStemmer": 1962,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10638,
+      "AfgivneStemmer": 4506,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10638,
+      "AfgivneStemmer": 6143,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10638,
+      "AfgivneStemmer": 7262,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:25",
+  "Kommune": "Struer",
+  "Kommunekode": 671,
+  "Afstemningsområde": "Bremdal",
+  "AfstemningsområdeDagiId": "706786",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1573,
+      "AfgivneStemmer": 346,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1573,
+      "AfgivneStemmer": 809,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1573,
+      "AfgivneStemmer": 1131,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1573,
+      "AfgivneStemmer": 1319,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

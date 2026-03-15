@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:48:43",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Vejlby-Risskov Hallen",
+  "AfstemningsområdeDagiId": "711368",
+  "AfstemningsområdeNummer": 61,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 13533,
+      "AfgivneStemmer": 1308,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13533,
+      "AfgivneStemmer": 2708,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13533,
+      "AfgivneStemmer": 4319,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13533,
+      "AfgivneStemmer": 7154,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13533,
+      "AfgivneStemmer": 8891,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

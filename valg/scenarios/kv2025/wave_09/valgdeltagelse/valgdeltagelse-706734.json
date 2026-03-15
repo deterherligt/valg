@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:58",
+  "Kommune": "Hvidovre",
+  "Kommunekode": 167,
+  "Afstemningsområde": "Kometen",
+  "AfstemningsområdeDagiId": "706734",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4862,
+      "AfgivneStemmer": 781,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4862,
+      "AfgivneStemmer": 1195,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4862,
+      "AfgivneStemmer": 1618,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4862,
+      "AfgivneStemmer": 2350,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4862,
+      "AfgivneStemmer": 2813,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4862,
+      "AfgivneStemmer": 3106,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4862,
+      "AfgivneStemmer": 3334,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

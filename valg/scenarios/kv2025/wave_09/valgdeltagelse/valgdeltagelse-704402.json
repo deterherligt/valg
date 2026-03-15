@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:22:57",
+  "Kommune": "Roskilde",
+  "Kommunekode": 265,
+  "Afstemningsområde": "Trekroner",
+  "AfstemningsområdeDagiId": "704402",
+  "AfstemningsområdeNummer": 21,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4750,
+      "AfgivneStemmer": 568,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4750,
+      "AfgivneStemmer": 889,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4750,
+      "AfgivneStemmer": 1259,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4750,
+      "AfgivneStemmer": 1643,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4750,
+      "AfgivneStemmer": 2336,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4750,
+      "AfgivneStemmer": 3174,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4750,
+      "AfgivneStemmer": 3440,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:16:44",
+  "Kommune": "Frederikssund",
+  "Kommunekode": 250,
+  "Afstemningsområde": "Skibby",
+  "AfstemningsområdeDagiId": "702366",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6886,
+      "AfgivneStemmer": 1013,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6886,
+      "AfgivneStemmer": 1711,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6886,
+      "AfgivneStemmer": 2406,
+      "Tidspunkt": "14:13:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6886,
+      "AfgivneStemmer": 3118,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6886,
+      "AfgivneStemmer": 4224,
+      "Tidspunkt": "18:12:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6886,
+      "AfgivneStemmer": 4836,
+      "Tidspunkt": "20:13:00"
+    }
+  ]
+}

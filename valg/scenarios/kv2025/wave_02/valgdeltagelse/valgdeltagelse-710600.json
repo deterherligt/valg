@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:26:42",
+  "Kommune": "Vejen",
+  "Kommunekode": 575,
+  "Afstemningsområde": "Øster Lindet",
+  "AfstemningsområdeDagiId": "710600",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 594,
+      "AfgivneStemmer": 38,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 594,
+      "AfgivneStemmer": 131,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 594,
+      "AfgivneStemmer": 220,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 594,
+      "AfgivneStemmer": 394,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

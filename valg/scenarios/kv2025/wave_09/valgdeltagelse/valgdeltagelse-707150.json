@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:45",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Rismølleskolen",
+  "AfstemningsområdeDagiId": "707150",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 384,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 572,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 804,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 1020,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 1186,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 1379,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 1587,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 1889,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 2247,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 2599,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 2971,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4486,
+      "AfgivneStemmer": 3237,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

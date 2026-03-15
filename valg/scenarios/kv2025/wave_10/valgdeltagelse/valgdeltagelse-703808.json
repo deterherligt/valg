@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:30",
+  "Kommune": "Fredensborg",
+  "Kommunekode": 210,
+  "Afstemningsområde": "Asminderød",
+  "AfstemningsområdeDagiId": "703808",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 633,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 814,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 1106,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 1390,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 1649,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 1876,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 2145,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 2437,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 2820,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 3271,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 3666,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5425,
+      "AfgivneStemmer": 3924,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

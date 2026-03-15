@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:00",
+  "Kommune": "Holbæk",
+  "Kommunekode": 316,
+  "Afstemningsområde": "St. Merløse",
+  "AfstemningsområdeDagiId": "701294",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2812,
+      "AfgivneStemmer": 359,
+      "Tidspunkt": "10:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2812,
+      "AfgivneStemmer": 857,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2812,
+      "AfgivneStemmer": 1568,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2812,
+      "AfgivneStemmer": 1936,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

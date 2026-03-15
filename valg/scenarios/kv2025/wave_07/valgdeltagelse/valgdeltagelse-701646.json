@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:18:26",
+  "Kommune": "Horsens",
+  "Kommunekode": 615,
+  "Afstemningsområde": "Østbirk",
+  "AfstemningsområdeDagiId": "701646",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 199,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 318,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 450,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 551,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 653,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 774,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 916,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 1106,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 1402,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 1923,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 1994,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3065,
+      "AfgivneStemmer": 2145,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

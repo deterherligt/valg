@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:21:10",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "7. Rødkilde",
+  "AfstemningsområdeDagiId": "701626",
+  "AfstemningsområdeNummer": 33,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 10785,
+      "AfgivneStemmer": 2503,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10785,
+      "AfgivneStemmer": 4314,
+      "Tidspunkt": "16:05:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10786,
+      "AfgivneStemmer": 5985,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10786,
+      "AfgivneStemmer": 7510,
+      "Tidspunkt": "20:06:00"
+    }
+  ]
+}

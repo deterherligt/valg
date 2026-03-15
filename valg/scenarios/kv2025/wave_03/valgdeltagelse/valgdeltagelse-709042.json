@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:09",
+  "Kommune": "Ringsted",
+  "Kommunekode": 329,
+  "Afstemningsområde": "Kværkeby",
+  "AfstemningsområdeDagiId": "709042",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 0,
+      "AfgivneStemmer": 0,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1013,
+      "AfgivneStemmer": 25,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1013,
+      "AfgivneStemmer": 87,
+      "Tidspunkt": "09:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1013,
+      "AfgivneStemmer": 190,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1013,
+      "AfgivneStemmer": 414,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1013,
+      "AfgivneStemmer": 606,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1013,
+      "AfgivneStemmer": 717,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

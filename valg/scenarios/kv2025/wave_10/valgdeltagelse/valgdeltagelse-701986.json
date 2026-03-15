@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:45:13",
+  "Kommune": "Tårnby",
+  "Kommunekode": 185,
+  "Afstemningsområde": "Pilegården",
+  "AfstemningsområdeDagiId": "701986",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5571,
+      "AfgivneStemmer": 901,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5571,
+      "AfgivneStemmer": 1394,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5571,
+      "AfgivneStemmer": 2420,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5571,
+      "AfgivneStemmer": 3316,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5571,
+      "AfgivneStemmer": 4175,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

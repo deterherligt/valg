@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:04:17",
+  "Kommune": "Hjørring",
+  "Kommunekode": 860,
+  "Afstemningsområde": "Taars",
+  "AfstemningsområdeDagiId": "701230",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2572,
+      "AfgivneStemmer": 150,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2572,
+      "AfgivneStemmer": 396,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2572,
+      "AfgivneStemmer": 632,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2572,
+      "AfgivneStemmer": 824,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2572,
+      "AfgivneStemmer": 1258,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2572,
+      "AfgivneStemmer": 1695,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

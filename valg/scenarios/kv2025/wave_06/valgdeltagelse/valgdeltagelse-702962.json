@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:44",
+  "Kommune": "Fanø",
+  "Kommunekode": 563,
+  "Afstemningsområde": "Nordby",
+  "AfstemningsområdeDagiId": "702962",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2502,
+      "AfgivneStemmer": 358,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2502,
+      "AfgivneStemmer": 491,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2502,
+      "AfgivneStemmer": 988,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2502,
+      "AfgivneStemmer": 1145,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2502,
+      "AfgivneStemmer": 1493,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2502,
+      "AfgivneStemmer": 1728,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2502,
+      "AfgivneStemmer": 2083,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2502,
+      "AfgivneStemmer": 2142,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

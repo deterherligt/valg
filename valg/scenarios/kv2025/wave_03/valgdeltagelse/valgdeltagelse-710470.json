@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:03:34",
+  "Kommune": "Hjørring",
+  "Kommunekode": 860,
+  "Afstemningsområde": "Tversted",
+  "AfstemningsområdeDagiId": "710470",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1269,
+      "AfgivneStemmer": 77,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1269,
+      "AfgivneStemmer": 201,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1269,
+      "AfgivneStemmer": 335,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1269,
+      "AfgivneStemmer": 460,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1269,
+      "AfgivneStemmer": 666,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1269,
+      "AfgivneStemmer": 843,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

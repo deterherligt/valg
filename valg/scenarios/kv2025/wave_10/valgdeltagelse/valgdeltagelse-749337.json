@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:23:57",
+  "Kommune": "Greve",
+  "Kommunekode": 253,
+  "Afstemningsområde": "Sundhedshuset",
+  "AfstemningsområdeDagiId": "749337",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5864,
+      "AfgivneStemmer": 651,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5864,
+      "AfgivneStemmer": 1275,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5864,
+      "AfgivneStemmer": 2248,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5864,
+      "AfgivneStemmer": 3002,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

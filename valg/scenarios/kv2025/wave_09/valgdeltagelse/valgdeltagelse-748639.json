@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:00",
+  "Kommune": "Nordfyns",
+  "Kommunekode": 480,
+  "Afstemningsområde": "Bogense",
+  "AfstemningsområdeDagiId": "748639",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4723,
+      "AfgivneStemmer": 1102,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4723,
+      "AfgivneStemmer": 2750,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4723,
+      "AfgivneStemmer": 3493,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:59:53",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Hjordkær",
+  "AfstemningsområdeDagiId": "705392",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1496,
+      "AfgivneStemmer": 121,
+      "Tidspunkt": "09:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1496,
+      "AfgivneStemmer": 287,
+      "Tidspunkt": "11:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1496,
+      "AfgivneStemmer": 402,
+      "Tidspunkt": "13:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1496,
+      "AfgivneStemmer": 561,
+      "Tidspunkt": "15:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1496,
+      "AfgivneStemmer": 923,
+      "Tidspunkt": "17:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1496,
+      "AfgivneStemmer": 1076,
+      "Tidspunkt": "19:55:00"
+    }
+  ]
+}

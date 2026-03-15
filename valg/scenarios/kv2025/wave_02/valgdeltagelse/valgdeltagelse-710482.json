@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:21:47",
+  "Kommune": "Hjørring",
+  "Kommunekode": 860,
+  "Afstemningsområde": "Hundelev",
+  "AfstemningsområdeDagiId": "710482",
+  "AfstemningsområdeNummer": 20,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 846,
+      "AfgivneStemmer": 53,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 846,
+      "AfgivneStemmer": 136,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 846,
+      "AfgivneStemmer": 222,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 846,
+      "AfgivneStemmer": 315,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 846,
+      "AfgivneStemmer": 489,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 846,
+      "AfgivneStemmer": 605,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

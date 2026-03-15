@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:13",
+  "Kommune": "Slagelse",
+  "Kommunekode": 330,
+  "Afstemningsområde": "Agersø - Agersøhallen",
+  "AfstemningsområdeDagiId": "701108",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 154,
+      "AfgivneStemmer": 50,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 154,
+      "AfgivneStemmer": 62,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 154,
+      "AfgivneStemmer": 91,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 154,
+      "AfgivneStemmer": 109,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 154,
+      "AfgivneStemmer": 119,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

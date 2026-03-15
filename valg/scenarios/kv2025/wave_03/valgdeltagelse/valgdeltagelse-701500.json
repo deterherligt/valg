@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 15:58:45",
+  "Kommune": "Jammerbugt",
+  "Kommunekode": 849,
+  "Afstemningsområde": "Biersted",
+  "AfstemningsområdeDagiId": "701500",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1493,
+      "AfgivneStemmer": 305,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1493,
+      "AfgivneStemmer": 632,
+      "Tidspunkt": "16:00:00"
+    }
+  ]
+}

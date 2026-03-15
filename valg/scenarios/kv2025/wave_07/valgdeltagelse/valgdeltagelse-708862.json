@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:30",
+  "Kommune": "Holbæk",
+  "Kommunekode": 316,
+  "Afstemningsområde": "Svinninge",
+  "AfstemningsområdeDagiId": "708862",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3027,
+      "AfgivneStemmer": 391,
+      "Tidspunkt": "10:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3027,
+      "AfgivneStemmer": 982,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3027,
+      "AfgivneStemmer": 1672,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3027,
+      "AfgivneStemmer": 1964,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

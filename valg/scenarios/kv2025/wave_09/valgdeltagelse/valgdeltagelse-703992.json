@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:08:35",
+  "Kommune": "Vejle",
+  "Kommunekode": 630,
+  "Afstemningsområde": "Vinding Idræts Center Syd",
+  "AfstemningsområdeDagiId": "703992",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4013,
+      "AfgivneStemmer": 772,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4013,
+      "AfgivneStemmer": 2140,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

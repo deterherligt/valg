@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:07:48",
+  "Kommune": "Vejle",
+  "Kommunekode": 630,
+  "Afstemningsområde": "Nørremarkshallen Nord",
+  "AfstemningsområdeDagiId": "705588",
+  "AfstemningsområdeNummer": 30,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6357,
+      "AfgivneStemmer": 841,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6358,
+      "AfgivneStemmer": 2621,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

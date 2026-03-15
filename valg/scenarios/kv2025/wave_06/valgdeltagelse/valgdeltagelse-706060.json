@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:14",
+  "Kommune": "Sønderborg",
+  "Kommunekode": 540,
+  "Afstemningsområde": "Vester Sottrup",
+  "AfstemningsområdeDagiId": "706060",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2597,
+      "AfgivneStemmer": 162,
+      "Tidspunkt": "09:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2597,
+      "AfgivneStemmer": 427,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2597,
+      "AfgivneStemmer": 864,
+      "Tidspunkt": "15:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2597,
+      "AfgivneStemmer": 1921,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

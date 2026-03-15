@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:10",
+  "Kommune": "Billund",
+  "Kommunekode": 530,
+  "Afstemningsområde": "Hejnsvig",
+  "AfstemningsområdeDagiId": "708930",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 108,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 167,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 238,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 312,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 368,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 412,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 480,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 571,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 722,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 878,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 1000,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1527,
+      "AfgivneStemmer": 1066,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

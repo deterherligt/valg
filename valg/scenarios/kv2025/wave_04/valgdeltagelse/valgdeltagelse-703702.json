@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:44",
+  "Kommune": "Ringkøbing-Skjern",
+  "Kommunekode": 760,
+  "Afstemningsområde": "Rækker Mølle",
+  "AfstemningsområdeDagiId": "703702",
+  "AfstemningsområdeNummer": 27,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 127,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 178,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 261,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 319,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 377,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 437,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 499,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 644,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 885,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 1097,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 1236,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1929,
+      "AfgivneStemmer": 1339,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

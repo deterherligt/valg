@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:43:43",
+  "Kommune": "Faxe",
+  "Kommunekode": 320,
+  "Afstemningsområde": "Sofiendal",
+  "AfstemningsområdeDagiId": "704216",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6985,
+      "AfgivneStemmer": 954,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6985,
+      "AfgivneStemmer": 1614,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6985,
+      "AfgivneStemmer": 2209,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6985,
+      "AfgivneStemmer": 2885,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6985,
+      "AfgivneStemmer": 3834,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6985,
+      "AfgivneStemmer": 4449,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

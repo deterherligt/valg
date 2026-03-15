@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:36:12",
+  "Kommune": "Fredericia",
+  "Kommunekode": 607,
+  "Afstemningsområde": "Søndermarken",
+  "AfstemningsområdeDagiId": "707944",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9066,
+      "AfgivneStemmer": 2092,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9066,
+      "AfgivneStemmer": 4895,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9066,
+      "AfgivneStemmer": 5651,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

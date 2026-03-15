@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:17:41",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Aabenraa Midt",
+  "AfstemningsområdeDagiId": "702016",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7937,
+      "AfgivneStemmer": 939,
+      "Tidspunkt": "09:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7937,
+      "AfgivneStemmer": 1741,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7937,
+      "AfgivneStemmer": 2416,
+      "Tidspunkt": "13:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7937,
+      "AfgivneStemmer": 3295,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7937,
+      "AfgivneStemmer": 4529,
+      "Tidspunkt": "17:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7937,
+      "AfgivneStemmer": 5277,
+      "Tidspunkt": "19:55:00"
+    }
+  ]
+}

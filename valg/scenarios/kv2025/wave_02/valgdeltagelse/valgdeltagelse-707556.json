@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:45",
+  "Kommune": "Varde",
+  "Kommunekode": 573,
+  "Afstemningsområde": "Horne",
+  "AfstemningsområdeDagiId": "707556",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 822,
+      "AfgivneStemmer": 116,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 822,
+      "AfgivneStemmer": 258,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 822,
+      "AfgivneStemmer": 515,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 822,
+      "AfgivneStemmer": 597,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

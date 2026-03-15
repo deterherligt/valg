@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:09:00",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "HF og VUC Nord, Godsbanen",
+  "AfstemningsområdeDagiId": "748033",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4686,
+      "AfgivneStemmer": 758,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4686,
+      "AfgivneStemmer": 2418,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

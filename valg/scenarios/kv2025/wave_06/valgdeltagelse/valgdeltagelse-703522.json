@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:24",
+  "Kommune": "Esbjerg",
+  "Kommunekode": 561,
+  "Afstemningsområde": "Tjæreborg",
+  "AfstemningsområdeDagiId": "703522",
+  "AfstemningsområdeNummer": 20,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2752,
+      "AfgivneStemmer": 470,
+      "Tidspunkt": "11:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2752,
+      "AfgivneStemmer": 891,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2752,
+      "AfgivneStemmer": 1704,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2752,
+      "AfgivneStemmer": 2048,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

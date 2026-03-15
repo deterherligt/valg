@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:24",
+  "Kommune": "Ringsted",
+  "Kommunekode": 329,
+  "Afstemningsområde": "Nordrup",
+  "AfstemningsområdeDagiId": "711810",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 958,
+      "AfgivneStemmer": 66,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 958,
+      "AfgivneStemmer": 186,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 958,
+      "AfgivneStemmer": 356,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 958,
+      "AfgivneStemmer": 568,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 958,
+      "AfgivneStemmer": 660,
+      "Tidspunkt": "19:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 958,
+      "AfgivneStemmer": 672,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

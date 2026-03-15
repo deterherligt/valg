@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:41:42",
+  "Kommune": "Samsø",
+  "Kommunekode": 741,
+  "Afstemningsområde": "Nordby",
+  "AfstemningsområdeDagiId": "704790",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 359,
+      "AfgivneStemmer": 78,
+      "Tidspunkt": "10:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 359,
+      "AfgivneStemmer": 121,
+      "Tidspunkt": "12:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 359,
+      "AfgivneStemmer": 160,
+      "Tidspunkt": "14:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 359,
+      "AfgivneStemmer": 209,
+      "Tidspunkt": "16:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 359,
+      "AfgivneStemmer": 270,
+      "Tidspunkt": "18:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 359,
+      "AfgivneStemmer": 287,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

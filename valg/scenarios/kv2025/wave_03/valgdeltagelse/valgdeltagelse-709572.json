@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:59",
+  "Kommune": "Guldborgsund",
+  "Kommunekode": 376,
+  "Afstemningsområde": "Majbølle",
+  "AfstemningsområdeDagiId": "709572",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1243,
+      "AfgivneStemmer": 170,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1243,
+      "AfgivneStemmer": 319,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1243,
+      "AfgivneStemmer": 431,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1243,
+      "AfgivneStemmer": 563,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1243,
+      "AfgivneStemmer": 764,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1243,
+      "AfgivneStemmer": 873,
+      "Tidspunkt": "20:05:00"
+    }
+  ]
+}

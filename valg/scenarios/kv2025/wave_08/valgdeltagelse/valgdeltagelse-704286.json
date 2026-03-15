@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:08:32",
+  "Kommune": "Gribskov",
+  "Kommunekode": 270,
+  "Afstemningsområde": "Græsted",
+  "AfstemningsområdeDagiId": "704286",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3995,
+      "AfgivneStemmer": 334,
+      "Tidspunkt": "08:57:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3995,
+      "AfgivneStemmer": 853,
+      "Tidspunkt": "12:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3995,
+      "AfgivneStemmer": 1346,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3995,
+      "AfgivneStemmer": 2506,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

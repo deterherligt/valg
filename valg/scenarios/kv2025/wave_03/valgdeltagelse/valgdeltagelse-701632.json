@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:47",
+  "Kommune": "Odder",
+  "Kommunekode": 727,
+  "Afstemningsområde": "Saksild - Nølev",
+  "AfstemningsområdeDagiId": "701632",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1491,
+      "AfgivneStemmer": 171,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1491,
+      "AfgivneStemmer": 320,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1491,
+      "AfgivneStemmer": 582,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1491,
+      "AfgivneStemmer": 937,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1491,
+      "AfgivneStemmer": 1146,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1491,
+      "AfgivneStemmer": 1213,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

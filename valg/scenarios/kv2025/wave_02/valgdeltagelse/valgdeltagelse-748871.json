@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:00:15",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Hem",
+  "AfstemningsområdeDagiId": "748871",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 715,
+      "AfgivneStemmer": 113,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 715,
+      "AfgivneStemmer": 203,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 715,
+      "AfgivneStemmer": 281,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 715,
+      "AfgivneStemmer": 467,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 715,
+      "AfgivneStemmer": 538,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

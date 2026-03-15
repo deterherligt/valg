@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:10:39",
+  "Kommune": "Lyngby-Taarbæk",
+  "Kommunekode": 173,
+  "Afstemningsområde": "Virum",
+  "AfstemningsområdeDagiId": "704050",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 621,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 784,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 1001,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 1217,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 1404,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 1613,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 1867,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 2225,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 2673,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 3242,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 3768,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5154,
+      "AfgivneStemmer": 4311,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

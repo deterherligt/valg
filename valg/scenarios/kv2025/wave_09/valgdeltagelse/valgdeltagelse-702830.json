@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:55",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Paarup Hallen",
+  "AfstemningsområdeDagiId": "702830",
+  "AfstemningsområdeNummer": 19,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4115,
+      "AfgivneStemmer": 888,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4115,
+      "AfgivneStemmer": 2272,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4115,
+      "AfgivneStemmer": 3072,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

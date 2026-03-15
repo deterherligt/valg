@@ -1,0 +1,54 @@
+{
+  "Valgresultater": {
+    "AfstemningsomraadeId": "701254",
+    "Optaellingstype": "Foreløbig",
+    "IndenforParti": [
+      {
+        "PartiId": "F",
+        "Partistemmer": 357,
+        "Kandidater": []
+      },
+      {
+        "PartiId": "M",
+        "Partistemmer": 103,
+        "Kandidater": []
+      },
+      {
+        "PartiId": "C",
+        "Partistemmer": 1923,
+        "Kandidater": []
+      },
+      {
+        "PartiId": "V",
+        "Partistemmer": 645,
+        "Kandidater": []
+      },
+      {
+        "PartiId": "O",
+        "Partistemmer": 119,
+        "Kandidater": []
+      },
+      {
+        "PartiId": "A",
+        "Partistemmer": 275,
+        "Kandidater": []
+      },
+      {
+        "PartiId": "I",
+        "Partistemmer": 241,
+        "Kandidater": []
+      },
+      {
+        "PartiId": "Ø",
+        "Partistemmer": 268,
+        "Kandidater": []
+      },
+      {
+        "PartiId": "B",
+        "Partistemmer": 379,
+        "Kandidater": []
+      }
+    ],
+    "KandidaterUdenforParti": []
+  }
+}

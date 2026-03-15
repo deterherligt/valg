@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:38:12",
+  "Kommune": "Lemvig",
+  "Kommunekode": 665,
+  "Afstemningsområde": "Harboøre",
+  "AfstemningsområdeDagiId": "701882",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 100,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 160,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 263,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 341,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 376,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 455,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 532,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 623,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 755,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 874,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 961,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1287,
+      "AfgivneStemmer": 1001,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

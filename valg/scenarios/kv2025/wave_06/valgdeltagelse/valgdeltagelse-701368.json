@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:15:40",
+  "Kommune": "Vejen",
+  "Kommunekode": 575,
+  "Afstemningsområde": "Holsted",
+  "AfstemningsområdeDagiId": "701368",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2901,
+      "AfgivneStemmer": 264,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2901,
+      "AfgivneStemmer": 670,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2901,
+      "AfgivneStemmer": 1046,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2901,
+      "AfgivneStemmer": 1784,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

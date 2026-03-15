@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:28",
+  "Kommune": "Esbjerg",
+  "Kommunekode": 561,
+  "Afstemningsområde": "Bramming",
+  "AfstemningsområdeDagiId": "703542",
+  "AfstemningsområdeNummer": 25,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8349,
+      "AfgivneStemmer": 1505,
+      "Tidspunkt": "11:32:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8349,
+      "AfgivneStemmer": 2676,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8349,
+      "AfgivneStemmer": 4716,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8349,
+      "AfgivneStemmer": 5602,
+      "Tidspunkt": "20:06:00"
+    }
+  ]
+}

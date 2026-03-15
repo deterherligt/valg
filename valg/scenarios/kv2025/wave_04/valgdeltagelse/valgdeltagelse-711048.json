@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 15:02:47",
+  "Kommune": "Favrskov",
+  "Kommunekode": 710,
+  "Afstemningsområde": "Laurbjerg/Houlbjerg",
+  "AfstemningsområdeDagiId": "711048",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1541,
+      "AfgivneStemmer": 269,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1541,
+      "AfgivneStemmer": 591,
+      "Tidspunkt": "16:00:00"
+    }
+  ]
+}

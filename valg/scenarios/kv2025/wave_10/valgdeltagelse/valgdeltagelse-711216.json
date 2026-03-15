@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:44:43",
+  "Kommune": "Tårnby",
+  "Kommunekode": 185,
+  "Afstemningsområde": "Vestamager",
+  "AfstemningsområdeDagiId": "711216",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5220,
+      "AfgivneStemmer": 644,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5220,
+      "AfgivneStemmer": 1069,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5220,
+      "AfgivneStemmer": 1981,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5220,
+      "AfgivneStemmer": 2914,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5220,
+      "AfgivneStemmer": 3573,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

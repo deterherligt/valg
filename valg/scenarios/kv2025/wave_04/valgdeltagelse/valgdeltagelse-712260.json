@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:56",
+  "Kommune": "Kerteminde",
+  "Kommunekode": 440,
+  "Afstemningsområde": "Hindsholm",
+  "AfstemningsområdeDagiId": "712260",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 128,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 225,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 314,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 385,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 462,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 547,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 645,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 769,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 941,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 1091,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 1198,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1619,
+      "AfgivneStemmer": 1254,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

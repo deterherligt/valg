@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:17:58",
+  "Kommune": "Furesø",
+  "Kommunekode": 190,
+  "Afstemningsområde": "Jonstrup",
+  "AfstemningsområdeDagiId": "710104",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1758,
+      "AfgivneStemmer": 214,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1758,
+      "AfgivneStemmer": 293,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1758,
+      "AfgivneStemmer": 461,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1758,
+      "AfgivneStemmer": 638,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1758,
+      "AfgivneStemmer": 868,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1758,
+      "AfgivneStemmer": 1196,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1758,
+      "AfgivneStemmer": 1363,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1758,
+      "AfgivneStemmer": 1490,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

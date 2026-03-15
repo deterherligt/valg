@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:29",
+  "Kommune": "Skanderborg",
+  "Kommunekode": 746,
+  "Afstemningsområde": "Ejer Bavnehøj",
+  "AfstemningsområdeDagiId": "700784",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1806,
+      "AfgivneStemmer": 403,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1806,
+      "AfgivneStemmer": 628,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1806,
+      "AfgivneStemmer": 964,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1806,
+      "AfgivneStemmer": 1228,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

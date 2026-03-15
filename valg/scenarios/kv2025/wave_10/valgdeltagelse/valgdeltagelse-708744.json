@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:20:58",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Søndermarkskolen",
+  "AfstemningsområdeDagiId": "708744",
+  "AfstemningsområdeNummer": 31,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 579,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 852,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 1197,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 1481,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 1747,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 1994,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 2298,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 2718,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 3278,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 3885,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 4364,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6747,
+      "AfgivneStemmer": 4703,
+      "Tidspunkt": "20:15:00"
+    }
+  ]
+}

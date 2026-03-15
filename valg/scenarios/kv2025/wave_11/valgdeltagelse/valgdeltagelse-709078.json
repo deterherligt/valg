@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:44",
+  "Kommune": "Norddjurs",
+  "Kommunekode": 707,
+  "Afstemningsområde": "Kulturhuset Pavillonen",
+  "AfstemningsområdeDagiId": "709078",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7752,
+      "AfgivneStemmer": 880,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7752,
+      "AfgivneStemmer": 1657,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7752,
+      "AfgivneStemmer": 2798,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7752,
+      "AfgivneStemmer": 4646,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7752,
+      "AfgivneStemmer": 5320,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:26",
+  "Kommune": "Nyborg",
+  "Kommunekode": 450,
+  "Afstemningsområde": "Ellinge",
+  "AfstemningsområdeDagiId": "701998",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 8,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 25,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 41,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 66,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 79,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 90,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 107,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 136,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 202,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 231,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 251,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 379,
+      "AfgivneStemmer": 275,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

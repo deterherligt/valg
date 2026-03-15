@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:24",
+  "Kommune": "Nordfyns",
+  "Kommunekode": 480,
+  "Afstemningsområde": "Otterup",
+  "AfstemningsområdeDagiId": "748636",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5362,
+      "AfgivneStemmer": 1108,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5362,
+      "AfgivneStemmer": 2879,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5362,
+      "AfgivneStemmer": 3736,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:26",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Assentofthallen",
+  "AfstemningsområdeDagiId": "710392",
+  "AfstemningsområdeNummer": 36,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 294,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 441,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 639,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 823,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 976,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 1132,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 1273,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 1484,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 1759,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 2024,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 2298,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3531,
+      "AfgivneStemmer": 2565,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

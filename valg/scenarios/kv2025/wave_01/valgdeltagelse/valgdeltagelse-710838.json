@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:10",
+  "Kommune": "Odder",
+  "Kommunekode": 727,
+  "Afstemningsområde": "Tunø",
+  "AfstemningsområdeDagiId": "710838",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 63,
+      "AfgivneStemmer": 29,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 63,
+      "AfgivneStemmer": 46,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 63,
+      "AfgivneStemmer": 52,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 63,
+      "AfgivneStemmer": 53,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 63,
+      "AfgivneStemmer": 53,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

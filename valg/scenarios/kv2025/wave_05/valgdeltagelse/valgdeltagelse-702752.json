@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:12:32",
+  "Kommune": "Gribskov",
+  "Kommunekode": 270,
+  "Afstemningsområde": "Ramløse",
+  "AfstemningsområdeDagiId": "702752",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2474,
+      "AfgivneStemmer": 215,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2474,
+      "AfgivneStemmer": 560,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2474,
+      "AfgivneStemmer": 868,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2474,
+      "AfgivneStemmer": 1731,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:29",
+  "Kommune": "Vesthimmerlands",
+  "Kommunekode": 820,
+  "Afstemningsområde": "Overlade",
+  "AfstemningsområdeDagiId": "700908",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 750,
+      "AfgivneStemmer": 173,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 750,
+      "AfgivneStemmer": 416,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 750,
+      "AfgivneStemmer": 490,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

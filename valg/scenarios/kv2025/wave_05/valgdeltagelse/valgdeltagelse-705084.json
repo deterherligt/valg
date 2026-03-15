@@ -1,0 +1,67 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:58",
+  "Kommune": "Vordingborg",
+  "Kommunekode": 390,
+  "Afstemningsområde": "Nyråd",
+  "AfstemningsområdeDagiId": "705084",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2461,
+      "AfgivneStemmer": 409,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2461,
+      "AfgivneStemmer": 541,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2461,
+      "AfgivneStemmer": 676,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2461,
+      "AfgivneStemmer": 807,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2461,
+      "AfgivneStemmer": 920,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2461,
+      "AfgivneStemmer": 1058,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2461,
+      "AfgivneStemmer": 1207,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2461,
+      "AfgivneStemmer": 1411,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2461,
+      "AfgivneStemmer": 1638,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2461,
+      "AfgivneStemmer": 1829,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2461,
+      "AfgivneStemmer": 1903,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

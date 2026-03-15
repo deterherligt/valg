@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:47",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Romalt Aktivitetshal",
+  "AfstemningsområdeDagiId": "702716",
+  "AfstemningsområdeNummer": 34,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 233,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 358,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 502,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 622,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 725,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 848,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 1005,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 1251,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 1579,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 1950,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 2208,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2959,
+      "AfgivneStemmer": 2390,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

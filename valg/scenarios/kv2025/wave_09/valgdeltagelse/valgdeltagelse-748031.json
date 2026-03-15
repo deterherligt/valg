@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:11:43",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Hasseris Gymnasium",
+  "AfstemningsområdeDagiId": "748031",
+  "AfstemningsområdeNummer": 20,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4494,
+      "AfgivneStemmer": 1166,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4494,
+      "AfgivneStemmer": 2655,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

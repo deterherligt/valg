@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:30:26",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Ø. Bjerregrav Forsamlingshus",
+  "AfstemningsområdeDagiId": "702776",
+  "AfstemningsområdeNummer": 21,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 122,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 209,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 309,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 402,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 482,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 555,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 630,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 758,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 973,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 1181,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 1339,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1913,
+      "AfgivneStemmer": 1420,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

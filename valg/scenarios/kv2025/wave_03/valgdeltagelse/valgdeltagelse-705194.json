@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:12",
+  "Kommune": "Egedal",
+  "Kommunekode": 240,
+  "Afstemningsområde": "Slagslunde",
+  "AfstemningsområdeDagiId": "705194",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1229,
+      "AfgivneStemmer": 77,
+      "Tidspunkt": "09:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1229,
+      "AfgivneStemmer": 208,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1229,
+      "AfgivneStemmer": 401,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1229,
+      "AfgivneStemmer": 592,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1229,
+      "AfgivneStemmer": 848,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1229,
+      "AfgivneStemmer": 1000,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

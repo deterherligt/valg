@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:58",
+  "Kommune": "Hvidovre",
+  "Kommunekode": 167,
+  "Afstemningsområde": "Avedøre Skole",
+  "AfstemningsområdeDagiId": "702080",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6470,
+      "AfgivneStemmer": 1046,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6470,
+      "AfgivneStemmer": 1512,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6470,
+      "AfgivneStemmer": 1929,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6470,
+      "AfgivneStemmer": 2760,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6470,
+      "AfgivneStemmer": 3235,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6470,
+      "AfgivneStemmer": 3647,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6470,
+      "AfgivneStemmer": 4013,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

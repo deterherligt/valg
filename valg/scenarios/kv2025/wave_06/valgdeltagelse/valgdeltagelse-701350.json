@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:16:11",
+  "Kommune": "Vejen",
+  "Kommunekode": 575,
+  "Afstemningsområde": "Rødding",
+  "AfstemningsområdeDagiId": "701350",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 182,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 300,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 459,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 625,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 734,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 858,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 966,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 1126,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 1367,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 1585,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 1786,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2759,
+      "AfgivneStemmer": 1880,
+      "Tidspunkt": "20:13:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:31",
+  "Kommune": "Varde",
+  "Kommunekode": 573,
+  "Afstemningsområde": "Nordenskov",
+  "AfstemningsområdeDagiId": "706078",
+  "AfstemningsområdeNummer": 28,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1079,
+      "AfgivneStemmer": 156,
+      "Tidspunkt": "11:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1079,
+      "AfgivneStemmer": 335,
+      "Tidspunkt": "15:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1079,
+      "AfgivneStemmer": 646,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1079,
+      "AfgivneStemmer": 756,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

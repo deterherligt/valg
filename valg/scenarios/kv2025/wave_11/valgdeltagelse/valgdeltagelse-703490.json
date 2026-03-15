@@ -1,0 +1,62 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:21:47",
+  "Kommune": "Frederiksberg",
+  "Kommunekode": 147,
+  "Afstemningsområde": "11. Kreds, Frederiksberghallerne",
+  "AfstemningsområdeDagiId": "703490",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 10476,
+      "AfgivneStemmer": 2636,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10476,
+      "AfgivneStemmer": 3088,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10476,
+      "AfgivneStemmer": 3472,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10476,
+      "AfgivneStemmer": 3805,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10476,
+      "AfgivneStemmer": 4193,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10476,
+      "AfgivneStemmer": 4715,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10476,
+      "AfgivneStemmer": 5387,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10476,
+      "AfgivneStemmer": 6134,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10476,
+      "AfgivneStemmer": 6852,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10476,
+      "AfgivneStemmer": 7386,
+      "Tidspunkt": "20:05:00"
+    }
+  ]
+}

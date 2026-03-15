@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:48:58",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Breum",
+  "AfstemningsområdeDagiId": "748882",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1394,
+      "AfgivneStemmer": 291,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1394,
+      "AfgivneStemmer": 490,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1394,
+      "AfgivneStemmer": 674,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1394,
+      "AfgivneStemmer": 960,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1394,
+      "AfgivneStemmer": 1071,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

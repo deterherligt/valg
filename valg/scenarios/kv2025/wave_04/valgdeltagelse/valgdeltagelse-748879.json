@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:19:47",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Roslev",
+  "AfstemningsområdeDagiId": "748879",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1727,
+      "AfgivneStemmer": 326,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1727,
+      "AfgivneStemmer": 561,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1727,
+      "AfgivneStemmer": 754,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1727,
+      "AfgivneStemmer": 1084,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1727,
+      "AfgivneStemmer": 1237,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

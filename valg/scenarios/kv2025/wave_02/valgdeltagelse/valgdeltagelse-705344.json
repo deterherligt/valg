@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:31",
+  "Kommune": "Svendborg",
+  "Kommunekode": 479,
+  "Afstemningsområde": "Landet",
+  "AfstemningsområdeDagiId": "705344",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 835,
+      "AfgivneStemmer": 77,
+      "Tidspunkt": "09:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 835,
+      "AfgivneStemmer": 164,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 835,
+      "AfgivneStemmer": 237,
+      "Tidspunkt": "13:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 835,
+      "AfgivneStemmer": 320,
+      "Tidspunkt": "15:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 835,
+      "AfgivneStemmer": 484,
+      "Tidspunkt": "17:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 835,
+      "AfgivneStemmer": 625,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 835,
+      "AfgivneStemmer": 642,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

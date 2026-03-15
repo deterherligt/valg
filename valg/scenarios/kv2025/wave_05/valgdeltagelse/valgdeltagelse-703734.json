@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:56",
+  "Kommune": "Svendborg",
+  "Kommunekode": 479,
+  "Afstemningsområde": "Skårup",
+  "AfstemningsområdeDagiId": "703734",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2255,
+      "AfgivneStemmer": 234,
+      "Tidspunkt": "09:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2255,
+      "AfgivneStemmer": 499,
+      "Tidspunkt": "11:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2255,
+      "AfgivneStemmer": 721,
+      "Tidspunkt": "13:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2255,
+      "AfgivneStemmer": 976,
+      "Tidspunkt": "15:18:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2255,
+      "AfgivneStemmer": 1340,
+      "Tidspunkt": "17:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2255,
+      "AfgivneStemmer": 1688,
+      "Tidspunkt": "19:07:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2255,
+      "AfgivneStemmer": 1773,
+      "Tidspunkt": "20:07:00"
+    }
+  ]
+}

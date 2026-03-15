@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:17:27",
+  "Kommune": "Furesø",
+  "Kommunekode": 190,
+  "Afstemningsområde": "Stavnsholt",
+  "AfstemningsområdeDagiId": "708606",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4247,
+      "AfgivneStemmer": 648,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4247,
+      "AfgivneStemmer": 814,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4247,
+      "AfgivneStemmer": 1204,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4247,
+      "AfgivneStemmer": 1603,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4247,
+      "AfgivneStemmer": 2085,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4247,
+      "AfgivneStemmer": 2877,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4247,
+      "AfgivneStemmer": 3213,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4247,
+      "AfgivneStemmer": 3458,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

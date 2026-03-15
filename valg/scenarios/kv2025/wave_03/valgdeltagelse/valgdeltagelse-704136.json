@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:12",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Havndalhallen",
+  "AfstemningsområdeDagiId": "704136",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 82,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 131,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 197,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 248,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 304,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 355,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 393,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 498,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 591,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 691,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 737,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1172,
+      "AfgivneStemmer": 770,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:32",
+  "Kommune": "Sønderborg",
+  "Kommunekode": 540,
+  "Afstemningsområde": "Dybbøl",
+  "AfstemningsområdeDagiId": "701416",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4757,
+      "AfgivneStemmer": 407,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4757,
+      "AfgivneStemmer": 886,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4757,
+      "AfgivneStemmer": 1750,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4757,
+      "AfgivneStemmer": 3687,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

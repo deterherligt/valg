@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:57",
+  "Kommune": "Nyborg",
+  "Kommunekode": 450,
+  "Afstemningsområde": "Nyborghallen",
+  "AfstemningsområdeDagiId": "703754",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 952,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 1316,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 1748,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 2190,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 2560,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 2906,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 3283,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 3836,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 4465,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 5085,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 5599,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8211,
+      "AfgivneStemmer": 5885,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

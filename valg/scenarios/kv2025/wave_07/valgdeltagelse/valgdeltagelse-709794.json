@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:24",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Kruså",
+  "AfstemningsområdeDagiId": "709794",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3471,
+      "AfgivneStemmer": 371,
+      "Tidspunkt": "09:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3471,
+      "AfgivneStemmer": 681,
+      "Tidspunkt": "11:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3471,
+      "AfgivneStemmer": 957,
+      "Tidspunkt": "13:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3471,
+      "AfgivneStemmer": 1324,
+      "Tidspunkt": "15:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3471,
+      "AfgivneStemmer": 1841,
+      "Tidspunkt": "17:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3471,
+      "AfgivneStemmer": 2115,
+      "Tidspunkt": "19:55:00"
+    }
+  ]
+}

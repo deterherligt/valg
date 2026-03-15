@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:27",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Tommerup St",
+  "AfstemningsområdeDagiId": "704924",
+  "AfstemningsområdeNummer": 17,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2054,
+      "AfgivneStemmer": 169,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2054,
+      "AfgivneStemmer": 367,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2054,
+      "AfgivneStemmer": 637,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2054,
+      "AfgivneStemmer": 1145,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2054,
+      "AfgivneStemmer": 1496,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2054,
+      "AfgivneStemmer": 1577,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

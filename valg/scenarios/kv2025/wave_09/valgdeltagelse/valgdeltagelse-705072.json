@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:10",
+  "Kommune": "Rødovre",
+  "Kommunekode": 175,
+  "Afstemningsområde": "Tinderhøj",
+  "AfstemningsområdeDagiId": "705072",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 398,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 531,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 708,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 902,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 1073,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 1236,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 1392,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 1693,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 2051,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 2409,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 2686,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4542,
+      "AfgivneStemmer": 2885,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

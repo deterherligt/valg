@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:47:59",
+  "Kommune": "Gentofte",
+  "Kommunekode": 157,
+  "Afstemningsområde": "Skovshoved",
+  "AfstemningsområdeDagiId": "704424",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 572,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 869,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 1064,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 1305,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 1546,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 1761,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 1960,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 2228,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 2557,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 2997,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 3497,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 4009,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5654,
+      "AfgivneStemmer": 4314,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

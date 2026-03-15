@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:21:42",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Rasmus Rask-Skolen",
+  "AfstemningsområdeDagiId": "705882",
+  "AfstemningsområdeNummer": 28,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4812,
+      "AfgivneStemmer": 916,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4812,
+      "AfgivneStemmer": 2581,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4812,
+      "AfgivneStemmer": 3711,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

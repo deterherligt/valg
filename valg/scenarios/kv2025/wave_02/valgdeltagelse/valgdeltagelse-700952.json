@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:35:59",
+  "Kommune": "Ærø",
+  "Kommunekode": 492,
+  "Afstemningsområde": "Søby",
+  "AfstemningsområdeDagiId": "700952",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 911,
+      "AfgivneStemmer": 367,
+      "Tidspunkt": "13:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 911,
+      "AfgivneStemmer": 448,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 911,
+      "AfgivneStemmer": 599,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 911,
+      "AfgivneStemmer": 683,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

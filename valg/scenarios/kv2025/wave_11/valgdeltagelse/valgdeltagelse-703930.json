@@ -1,0 +1,57 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:11",
+  "Kommune": "Ikast-Brande",
+  "Kommunekode": 756,
+  "Afstemningsområde": "Brande",
+  "AfstemningsområdeDagiId": "703930",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7485,
+      "AfgivneStemmer": 542,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7485,
+      "AfgivneStemmer": 858,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7485,
+      "AfgivneStemmer": 1628,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7485,
+      "AfgivneStemmer": 2221,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7485,
+      "AfgivneStemmer": 2943,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7485,
+      "AfgivneStemmer": 3493,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7485,
+      "AfgivneStemmer": 4073,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7485,
+      "AfgivneStemmer": 4633,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7485,
+      "AfgivneStemmer": 5014,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

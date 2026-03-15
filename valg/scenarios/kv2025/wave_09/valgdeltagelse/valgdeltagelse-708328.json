@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:45:44",
+  "Kommune": "Tårnby",
+  "Kommunekode": 185,
+  "Afstemningsområde": "Korsvejen",
+  "AfstemningsområdeDagiId": "708328",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4494,
+      "AfgivneStemmer": 661,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4494,
+      "AfgivneStemmer": 1037,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4494,
+      "AfgivneStemmer": 1863,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4494,
+      "AfgivneStemmer": 2505,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4494,
+      "AfgivneStemmer": 2999,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

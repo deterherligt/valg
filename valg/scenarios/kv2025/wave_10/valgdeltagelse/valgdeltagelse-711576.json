@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:27",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Vestervangsskolen",
+  "AfstemningsområdeDagiId": "711576",
+  "AfstemningsområdeNummer": 29,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5772,
+      "AfgivneStemmer": 631,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5772,
+      "AfgivneStemmer": 810,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5772,
+      "AfgivneStemmer": 1049,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5772,
+      "AfgivneStemmer": 1288,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5772,
+      "AfgivneStemmer": 1488,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5772,
+      "AfgivneStemmer": 1682,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5772,
+      "AfgivneStemmer": 1915,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5772,
+      "AfgivneStemmer": 2290,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5772,
+      "AfgivneStemmer": 2738,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5773,
+      "AfgivneStemmer": 3190,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5773,
+      "AfgivneStemmer": 3585,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5773,
+      "AfgivneStemmer": 3794,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

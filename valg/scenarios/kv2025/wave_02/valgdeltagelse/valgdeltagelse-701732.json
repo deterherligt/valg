@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:16:55",
+  "Kommune": "Vordingborg",
+  "Kommunekode": 390,
+  "Afstemningsområde": "Allerslev",
+  "AfstemningsområdeDagiId": "701732",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 91,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 134,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 181,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 225,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 249,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 282,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 331,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 389,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 498,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 589,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 680,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 962,
+      "AfgivneStemmer": 715,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

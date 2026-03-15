@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:55",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Vissenbjerg",
+  "AfstemningsområdeDagiId": "748070",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4711,
+      "AfgivneStemmer": 317,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4711,
+      "AfgivneStemmer": 773,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4711,
+      "AfgivneStemmer": 1381,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4711,
+      "AfgivneStemmer": 2425,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4711,
+      "AfgivneStemmer": 3208,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4711,
+      "AfgivneStemmer": 3396,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

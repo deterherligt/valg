@@ -1,0 +1,67 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:56",
+  "Kommune": "Nordfyns",
+  "Kommunekode": 480,
+  "Afstemningsområde": "Krogsbølle",
+  "AfstemningsområdeDagiId": "748632",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2598,
+      "AfgivneStemmer": 258,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2598,
+      "AfgivneStemmer": 355,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2598,
+      "AfgivneStemmer": 485,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2598,
+      "AfgivneStemmer": 593,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2598,
+      "AfgivneStemmer": 707,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2598,
+      "AfgivneStemmer": 812,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2598,
+      "AfgivneStemmer": 924,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2598,
+      "AfgivneStemmer": 1092,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2598,
+      "AfgivneStemmer": 1350,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2598,
+      "AfgivneStemmer": 1584,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2598,
+      "AfgivneStemmer": 1767,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

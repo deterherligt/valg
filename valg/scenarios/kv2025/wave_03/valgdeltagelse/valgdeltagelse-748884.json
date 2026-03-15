@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:19:02",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Rødding",
+  "AfstemningsområdeDagiId": "748884",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1097,
+      "AfgivneStemmer": 199,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1097,
+      "AfgivneStemmer": 349,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1097,
+      "AfgivneStemmer": 496,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1097,
+      "AfgivneStemmer": 703,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1097,
+      "AfgivneStemmer": 797,
+      "Tidspunkt": "20:06:00"
+    }
+  ]
+}

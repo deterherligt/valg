@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:23:41",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "9. Sluseholmen",
+  "AfstemningsområdeDagiId": "749403",
+  "AfstemningsområdeNummer": 66,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6155,
+      "AfgivneStemmer": 1201,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6155,
+      "AfgivneStemmer": 2140,
+      "Tidspunkt": "16:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6155,
+      "AfgivneStemmer": 3119,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6155,
+      "AfgivneStemmer": 4008,
+      "Tidspunkt": "20:06:00"
+    }
+  ]
+}

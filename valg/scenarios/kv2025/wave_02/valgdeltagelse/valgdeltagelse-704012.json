@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:11:42",
+  "Kommune": "Brønderslev",
+  "Kommunekode": 810,
+  "Afstemningsområde": "Thise",
+  "AfstemningsområdeDagiId": "704012",
+  "AfstemningsområdeNummer": 40,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 938,
+      "AfgivneStemmer": 179,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 938,
+      "AfgivneStemmer": 365,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 938,
+      "AfgivneStemmer": 615,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

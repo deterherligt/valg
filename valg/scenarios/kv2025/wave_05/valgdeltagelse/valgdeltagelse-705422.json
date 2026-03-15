@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:35:42",
+  "Kommune": "Middelfart",
+  "Kommunekode": 410,
+  "Afstemningsområde": "Ejby",
+  "AfstemningsområdeDagiId": "705422",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2473,
+      "AfgivneStemmer": 286,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2473,
+      "AfgivneStemmer": 623,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2473,
+      "AfgivneStemmer": 851,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2473,
+      "AfgivneStemmer": 1262,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2473,
+      "AfgivneStemmer": 1692,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

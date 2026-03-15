@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:09",
+  "Kommune": "Sønderborg",
+  "Kommunekode": 540,
+  "Afstemningsområde": "Broager",
+  "AfstemningsområdeDagiId": "706048",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3576,
+      "AfgivneStemmer": 272,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3576,
+      "AfgivneStemmer": 660,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3576,
+      "AfgivneStemmer": 1357,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3574,
+      "AfgivneStemmer": 2680,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

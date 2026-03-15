@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:10:25",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Vester Hassing Hallen",
+  "AfstemningsområdeDagiId": "710544",
+  "AfstemningsområdeNummer": 43,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4521,
+      "AfgivneStemmer": 948,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4521,
+      "AfgivneStemmer": 2470,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4521,
+      "AfgivneStemmer": 2620,
+      "Tidspunkt": "18:01:00"
+    }
+  ]
+}

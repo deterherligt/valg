@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:56",
+  "Kommune": "Odsherred",
+  "Kommunekode": 306,
+  "Afstemningsområde": "Nr. Asmindrup",
+  "AfstemningsområdeDagiId": "707376",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 56,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 99,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 143,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 179,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 207,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 227,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 271,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 343,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 410,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 484,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 541,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 871,
+      "AfgivneStemmer": 554,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

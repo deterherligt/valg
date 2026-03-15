@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:55",
+  "Kommune": "Rebild",
+  "Kommunekode": 840,
+  "Afstemningsområde": "Bælum",
+  "AfstemningsområdeDagiId": "711096",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1232,
+      "AfgivneStemmer": 118,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1232,
+      "AfgivneStemmer": 260,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1232,
+      "AfgivneStemmer": 401,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1232,
+      "AfgivneStemmer": 759,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1232,
+      "AfgivneStemmer": 918,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

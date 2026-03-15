@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:11:03",
+  "Kommune": "Vejle",
+  "Kommunekode": 630,
+  "Afstemningsområde": "Thyregod Nord",
+  "AfstemningsområdeDagiId": "700940",
+  "AfstemningsområdeNummer": 18,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1833,
+      "AfgivneStemmer": 254,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1833,
+      "AfgivneStemmer": 874,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

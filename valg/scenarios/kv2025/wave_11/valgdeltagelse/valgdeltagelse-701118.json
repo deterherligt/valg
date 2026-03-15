@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:57",
+  "Kommune": "Helsingør",
+  "Kommunekode": 217,
+  "Afstemningsområde": "Helsingør Hallen",
+  "AfstemningsområdeDagiId": "701118",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8567,
+      "AfgivneStemmer": 1526,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8567,
+      "AfgivneStemmer": 2103,
+      "Tidspunkt": "11:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8567,
+      "AfgivneStemmer": 3756,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8567,
+      "AfgivneStemmer": 4875,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8567,
+      "AfgivneStemmer": 5669,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

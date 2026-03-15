@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:12",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Simmelkær",
+  "AfstemningsområdeDagiId": "701684",
+  "AfstemningsområdeNummer": 20,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 351,
+      "AfgivneStemmer": 8,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 352,
+      "AfgivneStemmer": 24,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 352,
+      "AfgivneStemmer": 70,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 352,
+      "AfgivneStemmer": 91,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 352,
+      "AfgivneStemmer": 125,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 352,
+      "AfgivneStemmer": 164,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 352,
+      "AfgivneStemmer": 184,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 352,
+      "AfgivneStemmer": 199,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

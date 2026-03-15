@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:25",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Kultur-Aktivitetshuset Gassum",
+  "AfstemningsområdeDagiId": "705778",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 10,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 25,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 58,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 74,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 108,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 127,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 151,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 196,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 249,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 325,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 367,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 416,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 681,
+      "AfgivneStemmer": 441,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

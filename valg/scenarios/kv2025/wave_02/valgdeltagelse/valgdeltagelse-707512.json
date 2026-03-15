@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:44",
+  "Kommune": "Varde",
+  "Kommunekode": 573,
+  "Afstemningsområde": "Sig",
+  "AfstemningsområdeDagiId": "707512",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 847,
+      "AfgivneStemmer": 138,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 847,
+      "AfgivneStemmer": 278,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 847,
+      "AfgivneStemmer": 575,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 847,
+      "AfgivneStemmer": 662,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

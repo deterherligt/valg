@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:36:57",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Bryrup",
+  "AfstemningsområdeDagiId": "700802",
+  "AfstemningsområdeNummer": 22,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1756,
+      "AfgivneStemmer": 247,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1756,
+      "AfgivneStemmer": 319,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1756,
+      "AfgivneStemmer": 659,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1756,
+      "AfgivneStemmer": 1301,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:17:12",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Lihme",
+  "AfstemningsområdeDagiId": "748885",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 532,
+      "AfgivneStemmer": 94,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 532,
+      "AfgivneStemmer": 174,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 532,
+      "AfgivneStemmer": 268,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 532,
+      "AfgivneStemmer": 358,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

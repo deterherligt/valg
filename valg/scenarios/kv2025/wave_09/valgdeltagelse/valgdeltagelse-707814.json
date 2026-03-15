@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:27",
+  "Kommune": "Rødovre",
+  "Kommunekode": 175,
+  "Afstemningsområde": "Valhøj",
+  "AfstemningsområdeDagiId": "707814",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 330,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 458,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 641,
+      "Tidspunkt": "11:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 806,
+      "Tidspunkt": "11:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 981,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 1146,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 1314,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 1541,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 1850,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 2177,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 2393,
+      "Tidspunkt": "19:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4490,
+      "AfgivneStemmer": 2530,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

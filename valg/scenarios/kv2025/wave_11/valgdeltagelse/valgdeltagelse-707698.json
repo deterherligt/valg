@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:09",
+  "Kommune": "Halsnæs",
+  "Kommunekode": 260,
+  "Afstemningsområde": "Frederiksværk",
+  "AfstemningsområdeDagiId": "707698",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 815,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 1094,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 1538,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 1895,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 2241,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 2565,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 2953,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 3425,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 3966,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 4521,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 5007,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8868,
+      "AfgivneStemmer": 5253,
+      "Tidspunkt": "20:02:00"
+    }
+  ]
+}

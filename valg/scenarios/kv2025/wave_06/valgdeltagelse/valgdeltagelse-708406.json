@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:59",
+  "Kommune": "Glostrup",
+  "Kommunekode": 161,
+  "Afstemningsområde": "Sognegården",
+  "AfstemningsområdeDagiId": "708406",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2951,
+      "AfgivneStemmer": 492,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2951,
+      "AfgivneStemmer": 799,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2951,
+      "AfgivneStemmer": 1407,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2951,
+      "AfgivneStemmer": 1617,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2951,
+      "AfgivneStemmer": 1748,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:13",
+  "Kommune": "Nyborg",
+  "Kommunekode": 450,
+  "Afstemningsområde": "Ullerslev",
+  "AfstemningsområdeDagiId": "708334",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 197,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 333,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 475,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 603,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 702,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 794,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 900,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 1033,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 1243,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 1472,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 1619,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2396,
+      "AfgivneStemmer": 1709,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

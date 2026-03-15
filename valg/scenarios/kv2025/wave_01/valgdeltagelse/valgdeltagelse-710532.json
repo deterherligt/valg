@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:28",
+  "Kommune": "Fanø",
+  "Kommunekode": 563,
+  "Afstemningsområde": "Sønderho",
+  "AfstemningsområdeDagiId": "710532",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 283,
+      "AfgivneStemmer": 52,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 283,
+      "AfgivneStemmer": 75,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 283,
+      "AfgivneStemmer": 144,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 283,
+      "AfgivneStemmer": 194,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 283,
+      "AfgivneStemmer": 214,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 283,
+      "AfgivneStemmer": 236,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 283,
+      "AfgivneStemmer": 245,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

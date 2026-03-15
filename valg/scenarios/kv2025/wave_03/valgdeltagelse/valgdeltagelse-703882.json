@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:58",
+  "Kommune": "Lolland",
+  "Kommunekode": 360,
+  "Afstemningsområde": "Rødbyhavn",
+  "AfstemningsområdeDagiId": "703882",
+  "AfstemningsområdeNummer": 37,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1335,
+      "AfgivneStemmer": 173,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1335,
+      "AfgivneStemmer": 308,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1335,
+      "AfgivneStemmer": 404,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1335,
+      "AfgivneStemmer": 522,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1335,
+      "AfgivneStemmer": 639,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1335,
+      "AfgivneStemmer": 699,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

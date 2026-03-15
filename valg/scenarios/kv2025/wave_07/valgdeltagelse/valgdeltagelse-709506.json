@@ -1,0 +1,57 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:10:57",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Aulum",
+  "AfstemningsområdeDagiId": "709506",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3169,
+      "AfgivneStemmer": 266,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3169,
+      "AfgivneStemmer": 582,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3169,
+      "AfgivneStemmer": 1017,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3169,
+      "AfgivneStemmer": 1161,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3169,
+      "AfgivneStemmer": 1375,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3169,
+      "AfgivneStemmer": 1677,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3169,
+      "AfgivneStemmer": 1985,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3169,
+      "AfgivneStemmer": 2210,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3169,
+      "AfgivneStemmer": 2383,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

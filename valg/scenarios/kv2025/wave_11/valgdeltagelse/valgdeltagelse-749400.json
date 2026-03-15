@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:58:46",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "2. Kalvebod Fælled",
+  "AfstemningsområdeDagiId": "749400",
+  "AfstemningsområdeNummer": 61,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 10688,
+      "AfgivneStemmer": 1719,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10688,
+      "AfgivneStemmer": 2947,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10688,
+      "AfgivneStemmer": 4275,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10688,
+      "AfgivneStemmer": 5582,
+      "Tidspunkt": "20:08:00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:41",
+  "Kommune": "Lolland",
+  "Kommunekode": 360,
+  "Afstemningsområde": "Errindlev",
+  "AfstemningsområdeDagiId": "708426",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 582,
+      "AfgivneStemmer": 97,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 582,
+      "AfgivneStemmer": 173,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 582,
+      "AfgivneStemmer": 246,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 582,
+      "AfgivneStemmer": 322,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 582,
+      "AfgivneStemmer": 404,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 582,
+      "AfgivneStemmer": 432,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

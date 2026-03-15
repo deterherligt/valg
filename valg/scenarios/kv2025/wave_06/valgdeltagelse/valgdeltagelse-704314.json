@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:27",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Kulturhuset Langå",
+  "AfstemningsområdeDagiId": "704314",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 173,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 294,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 490,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 635,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 747,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 854,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 972,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 1130,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 1363,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 1612,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 1814,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2585,
+      "AfgivneStemmer": 1918,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

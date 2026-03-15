@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:14",
+  "Kommune": "Frederikshavn",
+  "Kommunekode": 813,
+  "Afstemningsområde": "Dybvad",
+  "AfstemningsområdeDagiId": "709628",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 851,
+      "AfgivneStemmer": 38,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 851,
+      "AfgivneStemmer": 76,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 851,
+      "AfgivneStemmer": 146,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 851,
+      "AfgivneStemmer": 209,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 851,
+      "AfgivneStemmer": 297,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 851,
+      "AfgivneStemmer": 450,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 851,
+      "AfgivneStemmer": 510,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

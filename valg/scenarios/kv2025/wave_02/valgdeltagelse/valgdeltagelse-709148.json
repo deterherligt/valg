@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:36:13",
+  "Kommune": "Haderslev",
+  "Kommunekode": 510,
+  "Afstemningsområde": "Arnum",
+  "AfstemningsområdeDagiId": "709148",
+  "AfstemningsområdeNummer": 21,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 634,
+      "AfgivneStemmer": 85,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 634,
+      "AfgivneStemmer": 180,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 634,
+      "AfgivneStemmer": 334,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 634,
+      "AfgivneStemmer": 378,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

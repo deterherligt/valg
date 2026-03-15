@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:10",
+  "Kommune": "Lejre",
+  "Kommunekode": 350,
+  "Afstemningsområde": "Rye",
+  "AfstemningsområdeDagiId": "707756",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2076,
+      "AfgivneStemmer": 172,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2076,
+      "AfgivneStemmer": 469,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2076,
+      "AfgivneStemmer": 876,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2076,
+      "AfgivneStemmer": 1523,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

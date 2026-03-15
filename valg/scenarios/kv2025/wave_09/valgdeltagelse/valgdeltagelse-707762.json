@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:11",
+  "Kommune": "Lejre",
+  "Kommunekode": 350,
+  "Afstemningsområde": "Hvalsø",
+  "AfstemningsområdeDagiId": "707762",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4243,
+      "AfgivneStemmer": 424,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4243,
+      "AfgivneStemmer": 1089,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4243,
+      "AfgivneStemmer": 2026,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4243,
+      "AfgivneStemmer": 3323,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

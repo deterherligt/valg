@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:33",
+  "Kommune": "Odsherred",
+  "Kommunekode": 306,
+  "Afstemningsområde": "Rørvig",
+  "AfstemningsområdeDagiId": "701300",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 163,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 241,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 345,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 445,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 508,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 586,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 658,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 739,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 864,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 959,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 1014,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1304,
+      "AfgivneStemmer": 1039,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

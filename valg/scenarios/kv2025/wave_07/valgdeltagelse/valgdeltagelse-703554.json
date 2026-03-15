@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:57",
+  "Kommune": "Guldborgsund",
+  "Kommunekode": 376,
+  "Afstemningsområde": "Østerbro",
+  "AfstemningsområdeDagiId": "703554",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3331,
+      "AfgivneStemmer": 429,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3331,
+      "AfgivneStemmer": 739,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3331,
+      "AfgivneStemmer": 983,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3331,
+      "AfgivneStemmer": 1380,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3331,
+      "AfgivneStemmer": 1927,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3331,
+      "AfgivneStemmer": 2268,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

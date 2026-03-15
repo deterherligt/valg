@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:14",
+  "Kommune": "Lolland",
+  "Kommunekode": 360,
+  "Afstemningsområde": "Dannemare",
+  "AfstemningsområdeDagiId": "706746",
+  "AfstemningsområdeNummer": 35,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1940,
+      "AfgivneStemmer": 299,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1940,
+      "AfgivneStemmer": 554,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1940,
+      "AfgivneStemmer": 722,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1940,
+      "AfgivneStemmer": 939,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1940,
+      "AfgivneStemmer": 1237,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1940,
+      "AfgivneStemmer": 1361,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

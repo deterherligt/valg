@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:43",
+  "Kommune": "Nyborg",
+  "Kommunekode": 450,
+  "Afstemningsområde": "Ellested Og Herrested",
+  "AfstemningsområdeDagiId": "702004",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 43,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 102,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 172,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 204,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 237,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 280,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 334,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 394,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 507,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 567,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 673,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 949,
+      "AfgivneStemmer": 707,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:26",
+  "Kommune": "Kolding",
+  "Kommunekode": 621,
+  "Afstemningsområde": "Vonsild",
+  "AfstemningsområdeDagiId": "707970",
+  "AfstemningsområdeNummer": 13,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3370,
+      "AfgivneStemmer": 563,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3370,
+      "AfgivneStemmer": 921,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3370,
+      "AfgivneStemmer": 2064,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3370,
+      "AfgivneStemmer": 2434,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:26",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Haderup",
+  "AfstemningsområdeDagiId": "701720",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 889,
+      "AfgivneStemmer": 63,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 889,
+      "AfgivneStemmer": 144,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 889,
+      "AfgivneStemmer": 276,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 889,
+      "AfgivneStemmer": 409,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 889,
+      "AfgivneStemmer": 501,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 889,
+      "AfgivneStemmer": 572,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 889,
+      "AfgivneStemmer": 634,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 889,
+      "AfgivneStemmer": 672,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

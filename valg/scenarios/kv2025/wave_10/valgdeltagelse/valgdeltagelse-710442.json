@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:01:48",
+  "Kommune": "Hjørring",
+  "Kommunekode": 860,
+  "Afstemningsområde": "Hjørring - Centrum",
+  "AfstemningsområdeDagiId": "710442",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5894,
+      "AfgivneStemmer": 475,
+      "Tidspunkt": "09:14:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5893,
+      "AfgivneStemmer": 981,
+      "Tidspunkt": "11:13:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5893,
+      "AfgivneStemmer": 1470,
+      "Tidspunkt": "13:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5893,
+      "AfgivneStemmer": 2003,
+      "Tidspunkt": "15:09:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5893,
+      "AfgivneStemmer": 2723,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5893,
+      "AfgivneStemmer": 3382,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

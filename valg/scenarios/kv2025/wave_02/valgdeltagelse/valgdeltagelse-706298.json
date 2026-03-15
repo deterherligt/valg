@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:21:40",
+  "Kommune": "Horsens",
+  "Kommunekode": 615,
+  "Afstemningsområde": "Sdr.Vissing",
+  "AfstemningsområdeDagiId": "706298",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 84,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 118,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 159,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 198,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 241,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 272,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 310,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 357,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 455,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 550,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 619,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 888,
+      "AfgivneStemmer": 667,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

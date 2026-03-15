@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:55:31",
+  "Kommune": "Faxe",
+  "Kommunekode": 320,
+  "Afstemningsområde": "Nordskov",
+  "AfstemningsområdeDagiId": "702698",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6651,
+      "AfgivneStemmer": 821,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6651,
+      "AfgivneStemmer": 1394,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6651,
+      "AfgivneStemmer": 1959,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6651,
+      "AfgivneStemmer": 2670,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6651,
+      "AfgivneStemmer": 3816,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6651,
+      "AfgivneStemmer": 4656,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

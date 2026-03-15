@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:10:13",
+  "Kommune": "Frederikshavn",
+  "Kommunekode": 813,
+  "Afstemningsområde": "Strandby",
+  "AfstemningsområdeDagiId": "712132",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2003,
+      "AfgivneStemmer": 204,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2003,
+      "AfgivneStemmer": 204,
+      "Tidspunkt": "09:10:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2003,
+      "AfgivneStemmer": 295,
+      "Tidspunkt": "10:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2003,
+      "AfgivneStemmer": 462,
+      "Tidspunkt": "12:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2003,
+      "AfgivneStemmer": 652,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2003,
+      "AfgivneStemmer": 898,
+      "Tidspunkt": "16:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2003,
+      "AfgivneStemmer": 1264,
+      "Tidspunkt": "18:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2003,
+      "AfgivneStemmer": 1463,
+      "Tidspunkt": "20:05:00"
+    }
+  ]
+}

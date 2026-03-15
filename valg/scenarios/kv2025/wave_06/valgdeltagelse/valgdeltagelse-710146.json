@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:11",
+  "Kommune": "Ballerup",
+  "Kommunekode": 151,
+  "Afstemningsområde": "Højagerhallen - Skovvejens Skole Vest",
+  "AfstemningsområdeDagiId": "710146",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2670,
+      "AfgivneStemmer": 383,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2670,
+      "AfgivneStemmer": 525,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2670,
+      "AfgivneStemmer": 851,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2670,
+      "AfgivneStemmer": 1125,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2670,
+      "AfgivneStemmer": 1369,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2670,
+      "AfgivneStemmer": 1886,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2670,
+      "AfgivneStemmer": 2012,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

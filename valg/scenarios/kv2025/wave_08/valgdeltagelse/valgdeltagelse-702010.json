@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:20:40",
+  "Kommune": "Fredensborg",
+  "Kommunekode": 210,
+  "Afstemningsområde": "Niverød",
+  "AfstemningsområdeDagiId": "702010",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 473,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 569,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 732,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 878,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 1043,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 1215,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 1368,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 1582,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 1871,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 2167,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 2463,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3750,
+      "AfgivneStemmer": 2693,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

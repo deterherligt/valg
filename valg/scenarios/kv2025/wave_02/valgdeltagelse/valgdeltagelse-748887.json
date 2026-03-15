@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:23:02",
+  "Kommune": "Skive",
+  "Kommunekode": 779,
+  "Afstemningsområde": "Håsum-Ramsing",
+  "AfstemningsområdeDagiId": "748887",
+  "AfstemningsområdeNummer": 17,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 560,
+      "AfgivneStemmer": 110,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 560,
+      "AfgivneStemmer": 191,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 560,
+      "AfgivneStemmer": 270,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 560,
+      "AfgivneStemmer": 368,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 560,
+      "AfgivneStemmer": 423,
+      "Tidspunkt": "20:23:00"
+    }
+  ]
+}

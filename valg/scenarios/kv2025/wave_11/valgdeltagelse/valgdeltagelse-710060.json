@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:15:10",
+  "Kommune": "Gladsaxe",
+  "Kommunekode": 159,
+  "Afstemningsområde": "Grønnemose",
+  "AfstemningsområdeDagiId": "710060",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7370,
+      "AfgivneStemmer": 1579,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7370,
+      "AfgivneStemmer": 2816,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7370,
+      "AfgivneStemmer": 4818,
+      "Tidspunkt": "20:12:00"
+    }
+  ]
+}

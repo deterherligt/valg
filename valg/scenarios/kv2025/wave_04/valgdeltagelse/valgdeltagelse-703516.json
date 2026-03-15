@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:29",
+  "Kommune": "Frederikshavn",
+  "Kommunekode": 813,
+  "Afstemningsområde": "Østervrå",
+  "AfstemningsområdeDagiId": "703516",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1736,
+      "AfgivneStemmer": 106,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1736,
+      "AfgivneStemmer": 193,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1736,
+      "AfgivneStemmer": 353,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1736,
+      "AfgivneStemmer": 471,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1736,
+      "AfgivneStemmer": 692,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1736,
+      "AfgivneStemmer": 1033,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1736,
+      "AfgivneStemmer": 1212,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

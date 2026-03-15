@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:27",
+  "Kommune": "Næstved",
+  "Kommunekode": 370,
+  "Afstemningsområde": "Sandby",
+  "AfstemningsområdeDagiId": "707930",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 457,
+      "AfgivneStemmer": 20,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 457,
+      "AfgivneStemmer": 66,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 457,
+      "AfgivneStemmer": 109,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 457,
+      "AfgivneStemmer": 237,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 457,
+      "AfgivneStemmer": 296,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

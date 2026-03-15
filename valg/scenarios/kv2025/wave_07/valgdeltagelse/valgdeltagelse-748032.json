@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:06:27",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "PFA Kollegiet i Nørresundby",
+  "AfstemningsområdeDagiId": "748032",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3352,
+      "AfgivneStemmer": 800,
+      "Tidspunkt": "11:56:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3352,
+      "AfgivneStemmer": 1863,
+      "Tidspunkt": "17:54:00"
+    }
+  ]
+}

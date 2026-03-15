@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:17:26",
+  "Kommune": "Solrød",
+  "Kommunekode": 269,
+  "Afstemningsområde": "Havdrup",
+  "AfstemningsområdeDagiId": "705362",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4050,
+      "AfgivneStemmer": 592,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4050,
+      "AfgivneStemmer": 1280,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4050,
+      "AfgivneStemmer": 2431,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4050,
+      "AfgivneStemmer": 2931,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

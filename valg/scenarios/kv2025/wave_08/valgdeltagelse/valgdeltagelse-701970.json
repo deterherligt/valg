@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:11",
+  "Kommune": "Høje-Taastrup",
+  "Kommunekode": 169,
+  "Afstemningsområde": "Charlotteskolen",
+  "AfstemningsområdeDagiId": "701970",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3665,
+      "AfgivneStemmer": 268,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3665,
+      "AfgivneStemmer": 500,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3665,
+      "AfgivneStemmer": 859,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3665,
+      "AfgivneStemmer": 1182,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3665,
+      "AfgivneStemmer": 1711,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3665,
+      "AfgivneStemmer": 2061,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}
