@@ -173,7 +173,7 @@ class DemoRunner:
             elif step.wave is not None:
                 written = write_wave(demo_dir, election, step.wave)
 
-            if step.setup:
+            if step.setup and step.write_fn is None:
                 conn = get_connection(self._db_path)
                 init_db(conn)
                 setup_db(conn, election)
