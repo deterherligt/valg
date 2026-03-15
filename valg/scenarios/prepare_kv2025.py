@@ -42,7 +42,7 @@ ELECTION_ID = "KV2025"
 PRELIMINARY_THRESHOLDS = [500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 5000, 7000]
 
 # base_interval_s per preliminary bucket (index 0..10)
-PRELIMINARY_INTERVALS = [90, 75, 60, 55, 50, 45, 40, 40, 45, 55, 70, 90]
+PRELIMINARY_INTERVALS = [90, 75, 60, 55, 50, 45, 40, 40, 45, 55, 70]
 
 # Fintælling groups: each is a list of preliminary bucket indices to merge
 FINAL_GROUPS = [[0, 1], [2, 3], [4, 5], [6, 7], [8, 9], [10]]
@@ -54,13 +54,6 @@ def _read_json(sftp, path: str) -> dict | list:
     sftp.getfo(path, buf)
     return json.loads(buf.getvalue())
 
-
-def _list_json(sftp, folder: str) -> list[str]:
-    return [
-        f"{folder}/{f}"
-        for f in sftp.listdir(folder)
-        if f.endswith(".json") and not f.endswith(".hash")
-    ]
 
 
 def _write(path: Path, data) -> None:
@@ -121,7 +114,7 @@ def run(sftp) -> None:
         data = _read_json(sftp, f"{base}/mandatfordeling/{fname}")
         if isinstance(data, dict) and "Kommunekode" in data:
             # AntalMandater is not present; derive from length of PersonligeMandater
-            mandatfordeling[data["Kommunekode"]] = len(data.get("PersonligeMandater", []))
+            mandatfordeling[data["Kommunekode"]] = data.get("AntalMandater") or len(data.get("PersonligeMandater", []))
     log.info("  %d kommuner with mandatfordeling", len(mandatfordeling))
 
     log.info("Downloading kandidat-data...")
@@ -130,8 +123,8 @@ def run(sftp) -> None:
     kd_by_kommune: dict[str, dict] = {}
     for fname in kd_files:
         data = _read_json(sftp, f"{base}/kandidat-data/{fname}")
-        if isinstance(data, dict):
-            kd_by_kommune[data.get("Kommune", fname)] = data
+        if isinstance(data, dict) and data.get("Kommune"):
+            kd_by_kommune[data["Kommune"]] = data
     log.info("  %d kommuner with kandidat-data", len(kd_by_kommune))
 
     log.info("Downloading valgresultater...")
@@ -170,7 +163,7 @@ def run(sftp) -> None:
     # Back-fill voter counts from valgresultater into afstemningsomraader
     # (geografi files don't carry StemmeberettigeteVaelgere for KV2025)
     for ao in afstemningsomraader:
-        result = ao_results.get(ao["Dagi_id"])
+        result = ao_results.get(str(ao["Dagi_id"]))
         if result:
             ao["StemmeberettigeteVaelgere"] = result.get("AntalStemmeberettigedeVælgere", 0)
 
@@ -227,9 +220,9 @@ def run(sftp) -> None:
     # ── 5. Sort and bucket AOs ─────────────────────────────────────────────
 
     aos_with_voters = [
-        {"id": ao["Dagi_id"], "eligible_voters": ao.get("StemmeberettigeteVaelgere", 0)}
+        {"id": str(ao["Dagi_id"]), "eligible_voters": ao.get("StemmeberettigeteVaelgere", 0)}
         for ao in afstemningsomraader
-        if ao["Dagi_id"] in ao_results  # only AOs with result data
+        if str(ao["Dagi_id"]) in ao_results  # only AOs with result data
     ]
     prelim_buckets = bucket_aos(aos_with_voters, PRELIMINARY_THRESHOLDS)
     log.info("Preliminary buckets: %s", [len(b) for b in prelim_buckets])
