@@ -47,7 +47,13 @@ def test_index_returns_html(client):
     resp = client.get("/")
     assert resp.status_code == 200
     assert b"valg" in resp.data
-    assert b"<pre" in resp.data
+
+
+def test_index_serves_alpine_app(client):
+    resp = client.get("/")
+    assert resp.status_code == 200
+    assert b"x-data" in resp.data  # Alpine.js component marker
+    assert b"alpine" in resp.data.lower()
 
 
 def test_sync_status_returns_json(client):

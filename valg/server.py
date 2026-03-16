@@ -14,7 +14,7 @@ import webbrowser
 from datetime import datetime, timezone
 from pathlib import Path
 
-from flask import Flask, Response, jsonify, request
+from flask import Flask, Response, jsonify, render_template, request
 
 log = logging.getLogger(__name__)
 
@@ -34,110 +34,6 @@ _last_sync = "never"
 _just_synced = False
 _sync_lock = threading.Lock()
 
-# ── Embedded HTML ─────────────────────────────────────────────────────────────
-
-_HTML = """<!DOCTYPE html>
-<html lang="da">
-<head>
-<meta charset="utf-8">
-<title>valg</title>
-<style>
-  body { font-family: monospace; margin: 0; background: #0d1117; color: #c9d1d9; }
-  header { padding: 12px 20px; background: #161b22; border-bottom: 1px solid #30363d;
-           display: flex; align-items: center; gap: 20px; }
-  header h1 { margin: 0; font-size: 1.2em; color: #58a6ff; }
-  #sync-info { font-size: 0.85em; color: #8b949e; }
-  #controls { padding: 12px 20px; background: #161b22; border-bottom: 1px solid #30363d;
-              display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  button { background: #21262d; color: #c9d1d9; border: 1px solid #30363d;
-           padding: 6px 14px; cursor: pointer; font-family: monospace; font-size: 0.9em; }
-  button:hover { background: #30363d; }
-  button.active { background: #1f6feb; border-color: #1f6feb; color: #fff; }
-  input[type=text] { background: #0d1117; color: #c9d1d9; border: 1px solid #30363d;
-                     padding: 5px 10px; font-family: monospace; font-size: 0.9em; width: 120px; }
-  #output-bar { padding: 8px 20px; background: #161b22; border-bottom: 1px solid #30363d;
-                display: flex; align-items: center; gap: 10px; min-height: 36px; }
-  #csv-btn { display: none; background: #238636; border-color: #2ea043; color: #fff; }
-  #csv-btn:hover { background: #2ea043; }
-  #output { margin: 0; padding: 20px; white-space: pre; overflow: auto;
-            font-size: 0.9em; line-height: 1.5; min-height: 400px; }
-</style>
-</head>
-<body>
-<header>
-  <h1>valg</h1>
-  <span id="sync-info">Syncing every 60s &bull; Last sync: <span id="last-sync">–</span></span>
-</header>
-<div id="controls">
-  <button onclick="run('status')" data-cmd="status">Status</button>
-  <button onclick="run('flip')" data-cmd="flip">Flip</button>
-  <span>
-    <input type="text" id="party-input" placeholder="Party letter" maxlength="1">
-    <button onclick="run('party')" data-cmd="party">Party</button>
-  </span>
-  <span>
-    <input type="text" id="candidate-input" placeholder="Name">
-    <button onclick="run('candidate')" data-cmd="candidate">Candidate</button>
-  </span>
-  <span>
-    <input type="text" id="kreds-input" placeholder="Kreds name">
-    <button onclick="run('kreds')" data-cmd="kreds">Kreds</button>
-  </span>
-  <button onclick="run('feed')" data-cmd="feed">Feed</button>
-  <button onclick="run('commentary')" data-cmd="commentary">Commentary</button>
-</div>
-<div id="output-bar">
-  <button id="csv-btn" onclick="downloadCsv()">Download CSV</button>
-</div>
-<pre id="output">Click a button to load data.</pre>
-<script>
-const CSV_COMMANDS = ['status', 'flip', 'party', 'kreds'];
-let _current = null;
-
-async function run(cmd) {
-  const params = {cmd};
-  if (cmd === 'party') params.letter = document.getElementById('party-input').value || 'A';
-  if (cmd === 'candidate') params.name = document.getElementById('candidate-input').value;
-  if (cmd === 'kreds') params.name = document.getElementById('kreds-input').value;
-
-  document.querySelectorAll('button[data-cmd]').forEach(b => b.classList.remove('active'));
-  document.querySelector(`button[data-cmd="${cmd}"]`).classList.add('active');
-  document.getElementById('output').textContent = 'Loading...';
-  document.getElementById('csv-btn').style.display = 'none';
-
-  const resp = await fetch('/run', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(params),
-  });
-  document.getElementById('output').textContent = await resp.text();
-
-  if (CSV_COMMANDS.includes(cmd)) {
-    document.getElementById('csv-btn').style.display = 'inline';
-  }
-  _current = params;
-}
-
-function downloadCsv() {
-  if (!_current) return;
-  const params = new URLSearchParams(_current);
-  window.location = '/csv/' + _current.cmd + '?' + params.toString();
-}
-
-async function pollSync() {
-  try {
-    const resp = await fetch('/sync-status');
-    const data = await resp.json();
-    document.getElementById('last-sync').textContent = data.last_sync;
-    if (data.just_synced && _current) run(_current.cmd);
-  } catch(e) {}
-}
-
-setInterval(pollSync, 10000);
-pollSync();
-</script>
-</body>
-</html>"""
 
 # ── App factory ───────────────────────────────────────────────────────────────
 
@@ -193,7 +89,7 @@ def create_app(db_path: Path = _DEFAULT_DB, data_dir: Path = _DEFAULT_DATA) -> F
 
     @app.get("/")
     def index():
-        return _HTML, 200, {"Content-Type": "text/html; charset=utf-8"}
+        return render_template("index.html")
 
     @app.get("/sync-status")
     def sync_status():
