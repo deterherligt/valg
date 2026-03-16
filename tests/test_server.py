@@ -2,11 +2,27 @@ import json
 import pytest
 from unittest.mock import patch, MagicMock
 from valg.server import create_app
+from tests.synthetic.generator import generate_election, load_into_db
+from valg.models import get_connection, init_db
 
 
 @pytest.fixture
 def client(tmp_path):
     app = create_app(db_path=tmp_path / "test.db", data_dir=tmp_path / "data")
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        yield c
+
+
+@pytest.fixture
+def client_with_data(tmp_path):
+    db = tmp_path / "test.db"
+    conn = get_connection(str(db))
+    init_db(conn)
+    e = generate_election(seed=42)
+    load_into_db(conn, e, phase="preliminary")
+    conn.close()
+    app = create_app(db_path=db, data_dir=tmp_path / "data")
     app.config["TESTING"] = True
     with app.test_client() as c:
         yield c
@@ -78,3 +94,24 @@ def test_api_status_districts_reported_is_int(client):
     data = resp.get_json()
     assert isinstance(data["districts_reported"], int)
     assert isinstance(data["districts_total"], int)
+
+
+def test_api_parties_returns_list(client):
+    resp = client.get("/api/parties")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert isinstance(data, list)
+
+
+def test_api_parties_empty_db_returns_empty_list(client):
+    resp = client.get("/api/parties")
+    assert resp.get_json() == []
+
+
+def test_api_parties_shape_when_data_present(client_with_data):
+    resp = client_with_data.get("/api/parties")
+    data = resp.get_json()
+    assert len(data) > 0
+    party = data[0]
+    assert all(k in party for k in ["id", "letter", "name", "votes", "seats", "pct", "gain", "lose"])
+    assert data == sorted(data, key=lambda p: -p["votes"])

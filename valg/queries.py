@@ -142,3 +142,35 @@ def query_api_status(conn) -> dict:
         "districts_reported": districts_reported,
         "districts_total": districts_total,
     }
+
+
+def query_api_parties(conn) -> list[dict]:
+    national, storkreds, kredsmandater = get_seat_data(conn)
+    if not national:
+        return []
+
+    seats = calculator.allocate_seats_total(national, storkreds, kredsmandater)
+    total_votes = sum(national.values()) or 1
+
+    party_rows = {
+        r["id"]: {"id": r["id"], "letter": r["letter"], "name": r["name"]}
+        for r in conn.execute("SELECT id, letter, name FROM parties").fetchall()
+    }
+
+    result = []
+    for party_id, votes in sorted(national.items(), key=lambda x: -x[1]):
+        info = party_rows.get(party_id, {"id": party_id, "letter": None, "name": party_id})
+        seat_count = seats.get(party_id, 0)
+        gain = calculator.votes_to_gain_seat(party_id, national, storkreds, kredsmandater)
+        lose = calculator.votes_to_lose_seat(party_id, national, storkreds, kredsmandater)
+        result.append({
+            "id": party_id,
+            "letter": info["letter"],
+            "name": info["name"],
+            "votes": votes,
+            "seats": seat_count,
+            "pct": round(votes / total_votes * 100, 1),
+            "gain": gain,
+            "lose": lose,
+        })
+    return result
