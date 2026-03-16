@@ -15,7 +15,7 @@ import webbrowser
 from datetime import datetime, timezone
 from pathlib import Path
 
-from flask import Flask, Response, jsonify, request
+from flask import Flask, Response, jsonify, render_template, request
 
 log = logging.getLogger(__name__)
 
@@ -35,202 +35,6 @@ _last_sync = "never"
 _just_synced = False
 _sync_lock = threading.Lock()
 
-# ── Embedded HTML ─────────────────────────────────────────────────────────────
-
-_HTML = """<!DOCTYPE html>
-<html lang="da">
-<head>
-<meta charset="utf-8">
-<title>valg</title>
-<style>
-  body { font-family: monospace; margin: 0; background: #0d1117; color: #c9d1d9; }
-  header { padding: 12px 20px; background: #161b22; border-bottom: 1px solid #30363d;
-           display: flex; align-items: center; gap: 20px; }
-  header h1 { margin: 0; font-size: 1.2em; color: #58a6ff; }
-  #sync-info { font-size: 0.85em; color: #8b949e; }
-  #controls { padding: 12px 20px; background: #161b22; border-bottom: 1px solid #30363d;
-              display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  button { background: #21262d; color: #c9d1d9; border: 1px solid #30363d;
-           padding: 6px 14px; cursor: pointer; font-family: monospace; font-size: 0.9em; }
-  button:hover { background: #30363d; }
-  button.active { background: #1f6feb; border-color: #1f6feb; color: #fff; }
-  input[type=text] { background: #0d1117; color: #c9d1d9; border: 1px solid #30363d;
-                     padding: 5px 10px; font-family: monospace; font-size: 0.9em; width: 120px; }
-  #output-bar { padding: 8px 20px; background: #161b22; border-bottom: 1px solid #30363d;
-                display: flex; align-items: center; gap: 10px; min-height: 36px; }
-  #csv-btn { display: none; background: #238636; border-color: #2ea043; color: #fff; }
-  #csv-btn:hover { background: #2ea043; }
-  #output { margin: 0; padding: 20px; white-space: pre; overflow: auto;
-            font-size: 0.9em; line-height: 1.5; min-height: 400px; }
-  #demo-bar { padding: 10px 20px; background: #0d1117; border-bottom: 1px solid #30363d;
-              display: none; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 0.85em; }
-  #demo-bar.visible { display: flex; }
-  #demo-bar select { background: #21262d; color: #c9d1d9; border: 1px solid #30363d;
-                     padding: 5px 8px; font-family: monospace; font-size: 0.85em; }
-  .speed-btn { padding: 4px 10px; }
-  .speed-btn.active { background: #1f6feb; border-color: #1f6feb; color: #fff; }
-  #demo-step { color: #8b949e; font-size: 0.8em; margin-left: 8px; }
-</style>
-</head>
-<body>
-<header>
-  <h1>valg</h1>
-  <span id="sync-info">Syncing every 60s &bull; Last sync: <span id="last-sync">–</span></span>
-</header>
-<div id="controls">
-  <button onclick="run('status')" data-cmd="status">Status</button>
-  <button onclick="run('flip')" data-cmd="flip">Flip</button>
-  <span>
-    <input type="text" id="party-input" placeholder="Party letter" maxlength="1">
-    <button onclick="run('party')" data-cmd="party">Party</button>
-  </span>
-  <span>
-    <input type="text" id="candidate-input" placeholder="Name">
-    <button onclick="run('candidate')" data-cmd="candidate">Candidate</button>
-  </span>
-  <span>
-    <input type="text" id="kreds-input" placeholder="Kreds name">
-    <button onclick="run('kreds')" data-cmd="kreds">Kreds</button>
-  </span>
-  <button onclick="run('feed')" data-cmd="feed">Feed</button>
-  <button onclick="run('commentary')" data-cmd="commentary">Commentary</button>
-</div>
-<div id="demo-bar">
-  <span style="color:#58a6ff;font-weight:bold">DEMO</span>
-  <select id="demo-scenario-select"></select>
-  <button id="demo-start-btn" onclick="demoStartPause()">&#9654; Start</button>
-  <button onclick="demoControl('restart')">&#8635; Restart</button>
-  <span style="color:#8b949e">Speed:</span>
-  <button class="speed-btn" data-speed="1"  onclick="demoSetSpeed(1)">1&times;</button>
-  <button class="speed-btn" data-speed="2"  onclick="demoSetSpeed(2)">2&times;</button>
-  <button class="speed-btn" data-speed="5"  onclick="demoSetSpeed(5)">5&times;</button>
-  <button class="speed-btn" data-speed="60" onclick="demoSetSpeed(60)">60&times;</button>
-  <span id="demo-step"></span>
-</div>
-<div id="output-bar">
-  <button id="csv-btn" onclick="downloadCsv()">Download CSV</button>
-</div>
-<pre id="output">Click a button to load data.</pre>
-<script>
-const CSV_COMMANDS = ['status', 'flip', 'party', 'kreds'];
-let _current = null;
-
-async function run(cmd) {
-  const params = {cmd};
-  if (cmd === 'party') params.letter = document.getElementById('party-input').value || 'A';
-  if (cmd === 'candidate') params.name = document.getElementById('candidate-input').value;
-  if (cmd === 'kreds') params.name = document.getElementById('kreds-input').value;
-
-  document.querySelectorAll('button[data-cmd]').forEach(b => b.classList.remove('active'));
-  document.querySelector(`button[data-cmd="${cmd}"]`).classList.add('active');
-  document.getElementById('output').textContent = 'Loading...';
-  document.getElementById('csv-btn').style.display = 'none';
-
-  const resp = await fetch('/run', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(params),
-  });
-  document.getElementById('output').textContent = await resp.text();
-
-  if (CSV_COMMANDS.includes(cmd)) {
-    document.getElementById('csv-btn').style.display = 'inline';
-  }
-  _current = params;
-}
-
-function downloadCsv() {
-  if (!_current) return;
-  const params = new URLSearchParams(_current);
-  window.location = '/csv/' + _current.cmd + '?' + params.toString();
-}
-
-async function pollSync() {
-  try {
-    const resp = await fetch('/sync-status');
-    const data = await resp.json();
-    document.getElementById('last-sync').textContent = data.last_sync;
-    if (data.just_synced && _current) run(_current.cmd);
-  } catch(e) {}
-}
-
-setInterval(pollSync, 10000);
-pollSync();
-
-let _demoState = null;
-let _prevStepIndex = null;
-
-async function pollDemo() {
-  try {
-    const resp = await fetch('/demo/state');
-    if (resp.status === 404) return;
-    const s = await resp.json();
-    _demoState = s;
-    document.getElementById('demo-bar').classList.add('visible');
-
-    // Populate scenario picker once
-    const sel = document.getElementById('demo-scenario-select');
-    if (sel.options.length === 0) {
-      s.scenarios.forEach(name => {
-        const opt = document.createElement('option');
-        opt.value = opt.textContent = name;
-        sel.appendChild(opt);
-      });
-      sel.onchange = () => demoControl('set_scenario', {scenario: sel.value});
-    }
-    sel.value = s.scenario;
-    sel.disabled = s.state === 'running';
-
-    // Start/Pause button label
-    const btn = document.getElementById('demo-start-btn');
-    if (s.state === 'idle' || s.state === 'done') btn.textContent = '\u25b6 Start';
-    else if (s.state === 'running') btn.textContent = '\u23f8 Pause';
-    else if (s.state === 'paused') btn.textContent = '\u25b6 Resume';
-
-    // Speed button highlight
-    document.querySelectorAll('.speed-btn').forEach(b => {
-      b.classList.toggle('active', parseFloat(b.dataset.speed) === s.speed);
-    });
-
-    // Step indicator
-    document.getElementById('demo-step').textContent =
-      s.step_index >= 0
-        ? `Step ${s.step_index + 1}/${s.steps_total}: ${s.step_name}`
-        : '';
-
-    // Auto-refresh current view when a step completes
-    if (_prevStepIndex !== null && s.step_index !== _prevStepIndex && _current) {
-      run(_current.cmd);
-    }
-    _prevStepIndex = s.step_index;
-  } catch(e) {}
-}
-
-function demoStartPause() {
-  if (!_demoState) return;
-  if (_demoState.state === 'idle' || _demoState.state === 'done') demoControl('start');
-  else if (_demoState.state === 'running') demoControl('pause');
-  else if (_demoState.state === 'paused') demoControl('resume');
-}
-
-async function demoControl(action, extra) {
-  await fetch('/demo/control', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({action, ...(extra || {})}),
-  });
-  pollDemo();
-}
-
-function demoSetSpeed(multiplier) {
-  demoControl('set_speed', {speed: multiplier});
-}
-
-setInterval(pollDemo, 3000);
-pollDemo();
-</script>
-</body>
-</html>"""
 
 # ── App factory ───────────────────────────────────────────────────────────────
 
@@ -291,7 +95,7 @@ def create_app(
 
     @app.get("/")
     def index():
-        return _HTML, 200, {"Content-Type": "text/html; charset=utf-8"}
+        return render_template("index.html")
 
     @app.get("/sync-status")
     def sync_status():
@@ -300,6 +104,59 @@ def create_app(
             just = _just_synced
             _just_synced = False
         return jsonify({"last_sync": _last_sync, "just_synced": just})
+
+    @app.get("/api/status")
+    def api_status():
+        global _just_synced
+        with _sync_lock:
+            just = _just_synced
+            _just_synced = False
+        from valg.queries import query_api_status
+        meta = query_api_status(_get_conn())
+        return jsonify({
+            "last_sync": _last_sync,
+            "just_synced": just,
+            **meta,
+        })
+
+    @app.get("/api/parties")
+    def api_parties():
+        from valg.queries import query_api_parties
+        return jsonify(query_api_parties(_get_conn()))
+
+    @app.get("/api/candidates")
+    def api_candidates():
+        raw = request.args.get("party_ids", "")
+        party_ids = [p.strip() for p in raw.split(",") if p.strip()]
+        from valg.queries import query_api_candidates
+        return jsonify(query_api_candidates(_get_conn(), party_ids))
+
+    @app.get("/api/party-detail")
+    def api_party_detail():
+        raw = request.args.get("party_ids", "")
+        party_ids = [p.strip() for p in raw.split(",") if p.strip()]
+        from valg.queries import query_api_party_detail
+        return jsonify(query_api_party_detail(_get_conn(), party_ids))
+
+    @app.get("/api/candidate/<candidate_id>")
+    def api_candidate(candidate_id):
+        from valg.queries import query_api_candidate
+        data = query_api_candidate(_get_conn(), candidate_id)
+        if data is None:
+            return jsonify({"error": "not found"}), 404
+        return jsonify(data)
+
+    @app.get("/api/feed")
+    def api_feed():
+        limit = min(int(request.args.get("limit", 50)), 200)
+        from valg.queries import query_api_feed
+        return jsonify(query_api_feed(_get_conn(), limit))
+
+    @app.get("/api/candidate-feed/<candidate_id>")
+    def api_candidate_feed(candidate_id):
+        limit = min(int(request.args.get("limit", 20)), 100)
+        from valg.queries import query_api_candidate_feed
+        return jsonify(query_api_candidate_feed(_get_conn(), candidate_id, limit))
 
     @app.post("/run")
     def run_command():

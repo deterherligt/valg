@@ -65,3 +65,7 @@ def test_query_kreds_returns_candidates_after_final(db_final):
 
 def test_query_kreds_returns_empty_for_unknown(db_final):
     assert query_kreds(db_final, "nonexistent") == []
+
+
+def test_get_seat_data_importable_from_queries():
+    from valg.queries import get_seat_data  # noqa: F401 — just checking it exists here

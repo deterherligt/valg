@@ -27,6 +27,8 @@ from rich.table import Table
 
 load_dotenv()
 
+from valg.queries import get_seat_data as _get_seat_data
+
 console = Console()
 
 # ── DB helper ────────────────────────────────────────────────────────────────
@@ -36,58 +38,6 @@ def _get_conn(db_path: Path):
     conn = get_connection(db_path)
     init_db(conn)
     return conn
-
-
-def _get_seat_data(conn):
-    """Return (national_votes, storkreds_votes, kredsmandater) for the calculator."""
-    from valg import calculator
-
-    national = {
-        r["party_id"]: r["v"]
-        for r in conn.execute("""
-            SELECT pv.party_id, SUM(pv.votes) as v
-            FROM party_votes pv
-            INNER JOIN (
-                SELECT opstillingskreds_id, party_id, MAX(snapshot_at) as latest
-                FROM party_votes
-                GROUP BY opstillingskreds_id, party_id
-            ) lat ON pv.opstillingskreds_id = lat.opstillingskreds_id
-                  AND pv.party_id = lat.party_id
-                  AND pv.snapshot_at = lat.latest
-            GROUP BY pv.party_id
-        """).fetchall()
-    }
-    if not national:
-        national = {
-            r["party_id"]: r["v"]
-            for r in conn.execute(
-                "SELECT party_id, SUM(votes) as v FROM results "
-                "WHERE candidate_id IS NULL GROUP BY party_id"
-            ).fetchall()
-        }
-
-    sk_rows = conn.execute("""
-        SELECT pv.party_id, ok.storkreds_id, SUM(pv.votes) as v
-        FROM party_votes pv
-        INNER JOIN (
-            SELECT opstillingskreds_id, party_id, MAX(snapshot_at) as latest
-            FROM party_votes
-            GROUP BY opstillingskreds_id, party_id
-        ) lat ON pv.opstillingskreds_id = lat.opstillingskreds_id
-              AND pv.party_id = lat.party_id
-              AND pv.snapshot_at = lat.latest
-        JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id
-        GROUP BY pv.party_id, ok.storkreds_id
-    """).fetchall()
-    storkreds: dict = {}
-    for r in sk_rows:
-        storkreds.setdefault(r["storkreds_id"], {})[r["party_id"]] = r["v"]
-
-    kredsmandater = {
-        r["id"]: (r["n_kredsmandater"] or 0)
-        for r in conn.execute("SELECT id, n_kredsmandater FROM storkredse").fetchall()
-    }
-    return national, storkreds, kredsmandater
 
 
 # ── Commands ─────────────────────────────────────────────────────────────────
