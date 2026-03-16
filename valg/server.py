@@ -203,6 +203,20 @@ def create_app(db_path: Path = _DEFAULT_DB, data_dir: Path = _DEFAULT_DATA) -> F
             _just_synced = False
         return jsonify({"last_sync": _last_sync, "just_synced": just})
 
+    @app.get("/api/status")
+    def api_status():
+        global _just_synced
+        with _sync_lock:
+            just = _just_synced
+            _just_synced = False
+        from valg.queries import query_api_status
+        meta = query_api_status(_get_conn())
+        return jsonify({
+            "last_sync": _last_sync,
+            "just_synced": just,
+            **meta,
+        })
+
     @app.post("/run")
     def run_command():
         data = request.get_json(force=True)

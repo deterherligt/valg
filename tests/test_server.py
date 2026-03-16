@@ -61,3 +61,20 @@ def test_run_candidate_with_name(client):
 def test_run_kreds_with_name(client):
     resp = client.post("/run", json={"cmd": "kreds", "name": "Test"})
     assert resp.status_code == 200
+
+
+def test_api_status_returns_json(client):
+    resp = client.get("/api/status")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert "districts_reported" in data
+    assert "districts_total" in data
+    assert "last_sync" in data
+    assert "just_synced" in data
+
+
+def test_api_status_districts_reported_is_int(client):
+    resp = client.get("/api/status")
+    data = resp.get_json()
+    assert isinstance(data["districts_reported"], int)
+    assert isinstance(data["districts_total"], int)

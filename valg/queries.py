@@ -129,3 +129,16 @@ def query_kreds(conn, name: str) -> list[dict]:
         (ok["id"],),
     ).fetchall()
     return [{"candidate": r["name"], "party": r["party_id"], "votes": r["total"]} for r in rows]
+
+
+def query_api_status(conn) -> dict:
+    districts_reported = conn.execute(
+        "SELECT COUNT(DISTINCT opstillingskreds_id) FROM party_votes"
+    ).fetchone()[0]
+    districts_total = conn.execute(
+        "SELECT COUNT(*) FROM opstillingskredse"
+    ).fetchone()[0]
+    return {
+        "districts_reported": districts_reported,
+        "districts_total": districts_total,
+    }
