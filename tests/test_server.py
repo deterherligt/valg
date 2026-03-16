@@ -47,6 +47,7 @@ def test_index_returns_html(client):
     resp = client.get("/")
     assert resp.status_code == 200
     assert b"valg" in resp.data
+    assert b"alpine" in resp.data.lower()
 
 
 def test_index_serves_alpine_app(client):

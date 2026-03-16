@@ -1,8 +1,206 @@
 <!DOCTYPE html>
 <html lang="da">
-<head><meta charset="utf-8"><title>valg</title></head>
-<body x-data="dashboard()" x-init="init()">
-  <p>Loading…</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>valg</title>
+  <link rel="stylesheet" href="/static/app.css">
   <script src="//cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="/static/app.js"></script>
+</head>
+<body x-data="dashboard()" x-init="init()">
+
+  <!-- Header -->
+  <header class="header">
+    <h1>valg</h1>
+    <span class="meta" :class="{'pulsing': syncing}">
+      <span x-text="lastSynced ? 'Synced ' + lastSynced : 'Waiting for sync…'"></span>
+      <span x-show="districtsTotal > 0">
+        &bull;
+        <span x-text="(districtsReported || 0) + '/' + (districtsTotal || 0) + ' districts'"></span>
+      </span>
+    </span>
+  </header>
+
+  <!-- Three columns -->
+  <div class="columns">
+
+    <!-- Parties -->
+    <div class="col col-parties">
+      <div class="col-header">Parties</div>
+      <div class="col-body">
+        <template x-if="parties.length === 0">
+          <div class="detail-placeholder">Waiting for data…</div>
+        </template>
+        <template x-for="p in parties" :key="p.id">
+          <div class="party-row" :class="{selected: selectedPartyIds.includes(p.id)}"
+               @click="toggleParty(p.id)">
+            <input type="checkbox" :checked="selectedPartyIds.includes(p.id)"
+                   @click.stop="toggleParty(p.id)">
+            <div>
+              <div class="party-name" x-text="(p.letter || p.id) + ' — ' + p.name"></div>
+              <div class="party-sub">
+                <span x-text="formatNum(p.votes) + ' votes · ' + p.seats + ' seats'"></span>
+              </div>
+              <div class="party-sub">
+                <span class="flip-gain" x-text="'+' + formatNum(p.gain) + ' to gain'"></span>
+                <span style="color:#8b949e"> · </span>
+                <span class="flip-lose" x-text="'−' + formatNum(p.lose) + ' to lose'"></span>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+
+    <!-- Candidates -->
+    <div class="col col-candidates">
+      <div class="col-header">
+        <span x-show="selectedPartyIds.length === 0">Candidates</span>
+        <span x-show="selectedPartyIds.length > 0"
+              x-text="'Candidates — ' + selectedPartyLetters"></span>
+      </div>
+      <div class="col-body">
+        <template x-if="selectedPartyIds.length === 0">
+          <div class="detail-placeholder" style="padding:16px 12px;color:#8b949e">
+            Select a party
+          </div>
+        </template>
+        <template x-for="group in candidatesByParty" :key="group.party_id">
+          <div>
+            <div class="party-group-label" x-text="group.letter"></div>
+            <template x-for="c in group.candidates" :key="c.id">
+              <div class="candidate-row"
+                   :class="{focused: focusedCandidateId === c.id}"
+                   @click="focusCandidate(c.id)">
+                <input type="checkbox" :checked="selectedCandidateIds.includes(c.id)"
+                       @click.stop="toggleCandidateCheck(c.id)">
+                <div>
+                  <div class="cand-name" x-text="c.name"></div>
+                  <div class="cand-sub"
+                       x-text="c.opstillingskreds + ' · #' + c.ballot_position"></div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </template>
+      </div>
+    </div>
+
+    <!-- Right panel -->
+    <div class="col col-detail">
+      <div class="col-header">
+        <span x-show="!focusedCandidateId">Details</span>
+        <span x-show="focusedCandidateId && candidateDetail"
+              x-text="candidateDetail ? candidateDetail.name + ' (' + candidateDetail.party_letter + ')' : ''">
+        </span>
+      </div>
+      <div class="detail-body">
+
+        <!-- Party detail mode -->
+        <template x-if="!focusedCandidateId">
+          <div>
+            <template x-if="!selectedPartyIds.length">
+              <div class="detail-placeholder">Select a party to see details</div>
+            </template>
+            <template x-if="selectedPartyIds.length && !partyDetail">
+              <div class="detail-placeholder">Loading…</div>
+            </template>
+            <template x-if="partyDetail">
+              <div>
+                <template x-for="p in partyDetail" :key="p.id">
+                  <div class="party-detail-block">
+                    <div class="party-detail-name"
+                         x-text="(p.letter || p.id) + ' — ' + p.name"></div>
+                    <div class="party-detail-meta"
+                         x-text="formatNum(p.votes) + ' votes (' + p.pct + '%) · ' + p.seats_total + ' seats'">
+                    </div>
+                    <template x-if="p.seats_by_storkreds.length > 0">
+                      <table class="data-table">
+                        <thead>
+                          <tr><th>Storkreds</th><th>Kredsmandater</th></tr>
+                        </thead>
+                        <tbody>
+                          <template x-for="sk in p.seats_by_storkreds" :key="sk.name">
+                            <tr>
+                              <td x-text="sk.name"></td>
+                              <td x-text="sk.seats"></td>
+                            </tr>
+                          </template>
+                        </tbody>
+                      </table>
+                    </template>
+                  </div>
+                </template>
+              </div>
+            </template>
+          </div>
+        </template>
+
+        <!-- Candidate detail mode -->
+        <template x-if="focusedCandidateId">
+          <div>
+            <template x-if="!candidateDetail">
+              <div class="detail-placeholder">Loading…</div>
+            </template>
+            <template x-if="candidateDetail && !candidateDetail.available">
+              <div class="detail-placeholder">
+                Candidate votes available after fintælling begins
+              </div>
+            </template>
+            <template x-if="candidateDetail && candidateDetail.available">
+              <div>
+                <div class="party-detail-meta"
+                     x-text="formatNum(candidateDetail.total_votes) + ' votes total · '
+                            + candidateDetail.polling_districts_reported + '/'
+                            + candidateDetail.polling_districts_total + ' districts'">
+                </div>
+                <table class="data-table">
+                  <thead>
+                    <tr><th>District</th><th>Votes</th></tr>
+                  </thead>
+                  <tbody>
+                    <template x-for="d in candidateDetail.by_district" :key="d.name">
+                      <tr>
+                        <td x-text="d.name"></td>
+                        <td :class="{'null-votes': d.votes === null}"
+                            x-text="d.votes !== null ? formatNum(d.votes) : '—'"></td>
+                      </tr>
+                    </template>
+                  </tbody>
+                </table>
+                <div class="detail-section-label">Candidate feed</div>
+                <template x-if="candidateFeed.length === 0">
+                  <div style="color:#8b949e;font-size:0.9em">No updates yet</div>
+                </template>
+                <template x-for="item in candidateFeed" :key="item.occurred_at + item.district">
+                  <div class="feed-item-cand"
+                       x-text="'+' + formatNum(item.delta) + ' · ' + item.district
+                              + ' · ' + formatTime(item.occurred_at)">
+                  </div>
+                </template>
+              </div>
+            </template>
+          </div>
+        </template>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Feed strip -->
+  <div class="feed-strip">
+    <span class="feed-strip-label">Feed</span>
+    <template x-if="feed.length === 0">
+      <span class="feed-strip-empty">No events yet</span>
+    </template>
+    <template x-for="item in feed" :key="item.occurred_at + item.description">
+      <span class="feed-strip-item"
+            x-text="formatTime(item.occurred_at) + ' · ' + item.description">
+      </span>
+    </template>
+  </div>
+
 </body>
 </html>
