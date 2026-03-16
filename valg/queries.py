@@ -3,8 +3,41 @@
 Pure query functions returning list[dict] for CSV export and web display.
 No Rich, no console output.
 """
-from valg.cli import _get_seat_data
 from valg import calculator
+
+
+def get_seat_data(conn):
+    """Return (national_votes, storkreds_votes, kredsmandater) for the calculator."""
+    national = {
+        r["party_id"]: r["v"]
+        for r in conn.execute(
+            "SELECT party_id, SUM(votes) as v FROM party_votes GROUP BY party_id"
+        ).fetchall()
+    }
+    if not national:
+        national = {
+            r["party_id"]: r["v"]
+            for r in conn.execute(
+                "SELECT party_id, SUM(votes) as v FROM results "
+                "WHERE candidate_id IS NULL GROUP BY party_id"
+            ).fetchall()
+        }
+
+    sk_rows = conn.execute(
+        "SELECT pv.party_id, ok.storkreds_id, SUM(pv.votes) as v "
+        "FROM party_votes pv "
+        "JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id "
+        "GROUP BY pv.party_id, ok.storkreds_id"
+    ).fetchall()
+    storkreds: dict = {}
+    for r in sk_rows:
+        storkreds.setdefault(r["storkreds_id"], {})[r["party_id"]] = r["v"]
+
+    kredsmandater = {
+        r["id"]: (r["n_kredsmandater"] or 0)
+        for r in conn.execute("SELECT id, n_kredsmandater FROM storkredse").fetchall()
+    }
+    return national, storkreds, kredsmandater
 
 
 def query_status(conn) -> list[dict]:
@@ -16,7 +49,7 @@ def query_status(conn) -> list[dict]:
         "SELECT COUNT(DISTINCT afstemningsomraade_id) FROM results WHERE count_type='final'"
     ).fetchone()[0]
 
-    national, storkreds, kredsmandater = _get_seat_data(conn)
+    national, storkreds, kredsmandater = get_seat_data(conn)
     if not national:
         return []
 
@@ -38,7 +71,7 @@ def query_status(conn) -> list[dict]:
 
 
 def query_flip(conn) -> list[dict]:
-    national, storkreds, kredsmandater = _get_seat_data(conn)
+    national, storkreds, kredsmandater = get_seat_data(conn)
     if not national:
         return []
 
@@ -66,7 +99,7 @@ def query_party(conn, letter: str) -> list[dict]:
     if not row:
         return []
 
-    national, storkreds, kredsmandater = _get_seat_data(conn)
+    national, storkreds, kredsmandater = get_seat_data(conn)
     votes = national.get(row["id"], 0)
     seats = calculator.allocate_seats_total(national, storkreds, kredsmandater)
     gain = calculator.votes_to_gain_seat(row["id"], national, storkreds, kredsmandater)
