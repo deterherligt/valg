@@ -222,6 +222,13 @@ def create_app(db_path: Path = _DEFAULT_DB, data_dir: Path = _DEFAULT_DATA) -> F
         from valg.queries import query_api_parties
         return jsonify(query_api_parties(_get_conn()))
 
+    @app.get("/api/candidates")
+    def api_candidates():
+        raw = request.args.get("party_ids", "")
+        party_ids = [p.strip() for p in raw.split(",") if p.strip()]
+        from valg.queries import query_api_candidates
+        return jsonify(query_api_candidates(_get_conn(), party_ids))
+
     @app.post("/run")
     def run_command():
         data = request.get_json(force=True)

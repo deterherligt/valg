@@ -174,3 +174,20 @@ def query_api_parties(conn) -> list[dict]:
             "lose": lose,
         })
     return result
+
+
+def query_api_candidates(conn, party_ids: list[str]) -> list[dict]:
+    if not party_ids:
+        return []
+    placeholders = ",".join("?" * len(party_ids))
+    rows = conn.execute(
+        f"SELECT c.id, c.name, c.party_id, p.letter as party_letter, "
+        f"ok.name as opstillingskreds, c.ballot_position "
+        f"FROM candidates c "
+        f"JOIN parties p ON c.party_id = p.id "
+        f"JOIN opstillingskredse ok ON c.opstillingskreds_id = ok.id "
+        f"WHERE c.party_id IN ({placeholders}) "
+        f"ORDER BY c.party_id, c.ballot_position",
+        party_ids,
+    ).fetchall()
+    return [dict(r) for r in rows]

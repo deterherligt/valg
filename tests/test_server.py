@@ -115,3 +115,32 @@ def test_api_parties_shape_when_data_present(client_with_data):
     party = data[0]
     assert all(k in party for k in ["id", "letter", "name", "votes", "seats", "pct", "gain", "lose"])
     assert data == sorted(data, key=lambda p: -p["votes"])
+
+
+def test_api_candidates_returns_list(client):
+    resp = client.get("/api/candidates?party_ids=")
+    assert resp.status_code == 200
+    assert resp.get_json() == []
+
+
+def test_api_candidates_shape(client_with_data):
+    # Get a valid party id first
+    parties = client_with_data.get("/api/parties").get_json()
+    assert len(parties) > 0
+    party_id = parties[0]["id"]
+
+    resp = client_with_data.get(f"/api/candidates?party_ids={party_id}")
+    data = resp.get_json()
+    assert len(data) > 0
+    c = data[0]
+    assert all(k in c for k in ["id", "name", "party_id", "party_letter", "opstillingskreds", "ballot_position"])
+    assert all(r["party_id"] == party_id for r in data)
+
+
+def test_api_candidates_grouped_by_party(client_with_data):
+    parties = client_with_data.get("/api/parties").get_json()
+    ids = ",".join(p["id"] for p in parties[:2])
+    data = client_with_data.get(f"/api/candidates?party_ids={ids}").get_json()
+    party_ids_seen = [r["party_id"] for r in data]
+    # Rows should be grouped (all of party 1 before all of party 2)
+    assert party_ids_seen == sorted(party_ids_seen)
