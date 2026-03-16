@@ -236,3 +236,55 @@ def test_api_feed_shape_when_events_exist(client_with_data):
 def test_api_feed_respects_limit(client):
     resp = client.get("/api/feed?limit=5")
     assert resp.status_code == 200
+
+
+def test_api_candidate_feed_returns_list(client):
+    resp = client.get("/api/candidate-feed/nonexistent")
+    assert resp.status_code == 200
+    assert resp.get_json() == []
+
+
+def test_api_candidate_feed_shape_after_multiple_snapshots(tmp_path):
+    """Feed requires >=2 snapshots to produce deltas."""
+    from valg.models import get_connection, init_db
+    from tests.synthetic.generator import generate_election, load_into_db
+
+    db = tmp_path / "test.db"
+    conn = get_connection(str(db))
+    init_db(conn)
+    e = generate_election(seed=42)
+    load_into_db(conn, e, phase="preliminary")
+    load_into_db(conn, e, phase="final")  # snapshot 2
+
+    # Load a second final snapshot with different snapshot_at to get deltas
+    import random
+    rng = random.Random(99)
+    snapshot2 = "2024-11-06T12:00:00"
+    for ao in e["afstemningsomraader"]:
+        for party in e["parties"]:
+            for c in [c for c in e["candidates"]
+                      if c["opstillingskreds_id"] == ao["opstillingskreds_id"]
+                      and c["party_id"] == party["id"]]:
+                votes = rng.randint(10, 600)
+                conn.execute(
+                    "INSERT OR IGNORE INTO results "
+                    "(afstemningsomraade_id, party_id, candidate_id, votes, count_type, snapshot_at) "
+                    "VALUES (?,?,?,?,?,?)",
+                    (ao["id"], party["id"], c["id"], votes, "final", snapshot2),
+                )
+    conn.commit()
+
+    candidate_id = e["candidates"][0]["id"]
+
+    from valg.server import create_app
+    app = create_app(db_path=db, data_dir=tmp_path / "data")
+    app.config["TESTING"] = True
+    with app.test_client() as client:
+        resp = client.get(f"/api/candidate-feed/{candidate_id}")
+        data = resp.get_json()
+        assert isinstance(data, list)
+        for item in data:
+            assert "occurred_at" in item
+            assert "district" in item
+            assert "delta" in item
+            assert item["delta"] > 0

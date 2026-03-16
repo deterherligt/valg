@@ -304,3 +304,37 @@ def query_api_feed(conn, limit: int = 50) -> list[dict]:
         (limit,),
     ).fetchall()
     return [{"occurred_at": r["occurred_at"], "description": r["description"]} for r in rows]
+
+
+def query_api_candidate_feed(conn, candidate_id: str, limit: int = 20) -> list[dict]:
+    rows = conn.execute(
+        """
+        WITH ordered AS (
+            SELECT r.afstemningsomraade_id,
+                   r.votes,
+                   r.snapshot_at,
+                   ao.name AS district_name
+            FROM results r
+            JOIN afstemningsomraader ao ON ao.id = r.afstemningsomraade_id
+            WHERE r.candidate_id = ?
+        ),
+        deltas AS (
+            SELECT district_name,
+                   snapshot_at,
+                   votes - LAG(votes, 1, 0) OVER (
+                       PARTITION BY afstemningsomraade_id ORDER BY snapshot_at
+                   ) AS delta
+            FROM ordered
+        )
+        SELECT district_name, snapshot_at AS occurred_at, delta
+        FROM deltas
+        WHERE delta > 0
+        ORDER BY occurred_at DESC
+        LIMIT ?
+        """,
+        (candidate_id, limit),
+    ).fetchall()
+    return [
+        {"occurred_at": r["occurred_at"], "district": r["district_name"], "delta": r["delta"]}
+        for r in rows
+    ]

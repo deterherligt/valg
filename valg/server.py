@@ -250,6 +250,12 @@ def create_app(db_path: Path = _DEFAULT_DB, data_dir: Path = _DEFAULT_DATA) -> F
         from valg.queries import query_api_feed
         return jsonify(query_api_feed(_get_conn(), limit))
 
+    @app.get("/api/candidate-feed/<candidate_id>")
+    def api_candidate_feed(candidate_id):
+        limit = min(int(request.args.get("limit", 20)), 100)
+        from valg.queries import query_api_candidate_feed
+        return jsonify(query_api_candidate_feed(_get_conn(), candidate_id, limit))
+
     @app.post("/run")
     def run_command():
         data = request.get_json(force=True)
