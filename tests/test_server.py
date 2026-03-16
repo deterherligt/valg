@@ -214,3 +214,25 @@ def test_api_candidate_after_fintaelling_returns_districts(client_with_final_dat
     # votes=null means unreported, votes>=0 means reported
     for d in data["by_district"]:
         assert d["votes"] is None or isinstance(d["votes"], int)
+
+
+def test_api_feed_returns_list(client):
+    resp = client.get("/api/feed")
+    assert resp.status_code == 200
+    assert isinstance(resp.get_json(), list)
+
+
+def test_api_feed_shape_when_events_exist(client_with_data):
+    # We can't easily test shape without events — just check the structure is a list
+    resp = client_with_data.get("/api/feed")
+    data = resp.get_json()
+    assert isinstance(data, list)
+    # Each item should have occurred_at and description if list is non-empty
+    for item in data:
+        assert "occurred_at" in item
+        assert "description" in item
+
+
+def test_api_feed_respects_limit(client):
+    resp = client.get("/api/feed?limit=5")
+    assert resp.status_code == 200

@@ -244,6 +244,12 @@ def create_app(db_path: Path = _DEFAULT_DB, data_dir: Path = _DEFAULT_DATA) -> F
             return jsonify({"error": "not found"}), 404
         return jsonify(data)
 
+    @app.get("/api/feed")
+    def api_feed():
+        limit = min(int(request.args.get("limit", 50)), 200)
+        from valg.queries import query_api_feed
+        return jsonify(query_api_feed(_get_conn(), limit))
+
     @app.post("/run")
     def run_command():
         data = request.get_json(force=True)

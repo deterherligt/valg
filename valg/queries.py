@@ -296,3 +296,11 @@ def query_api_candidate(conn, candidate_id: str) -> dict | None:
         "polling_districts_total": len(by_district),
         "by_district": by_district,
     }
+
+
+def query_api_feed(conn, limit: int = 50) -> list[dict]:
+    rows = conn.execute(
+        "SELECT occurred_at, description FROM events ORDER BY occurred_at DESC LIMIT ?",
+        (limit,),
+    ).fetchall()
+    return [{"occurred_at": r["occurred_at"], "description": r["description"]} for r in rows]
