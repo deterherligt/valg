@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:42",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Rørup",
+  "AfstemningsområdeDagiId": "748071",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 589,
+      "AfgivneStemmer": 32,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 589,
+      "AfgivneStemmer": 85,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 589,
+      "AfgivneStemmer": 157,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 589,
+      "AfgivneStemmer": 279,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 589,
+      "AfgivneStemmer": 378,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 589,
+      "AfgivneStemmer": 402,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:23:02",
+  "Kommune": "Furesø",
+  "Kommunekode": 190,
+  "Afstemningsområde": "Hareskov",
+  "AfstemningsområdeDagiId": "710110",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2720,
+      "AfgivneStemmer": 340,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2720,
+      "AfgivneStemmer": 420,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2720,
+      "AfgivneStemmer": 650,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2720,
+      "AfgivneStemmer": 883,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2720,
+      "AfgivneStemmer": 1144,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2720,
+      "AfgivneStemmer": 1684,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2720,
+      "AfgivneStemmer": 1954,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2720,
+      "AfgivneStemmer": 2352,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

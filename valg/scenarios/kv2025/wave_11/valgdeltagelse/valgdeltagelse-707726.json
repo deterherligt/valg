@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:03:00",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "4. Sundbyøster",
+  "AfstemningsområdeDagiId": "707726",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9055,
+      "AfgivneStemmer": 1958,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9055,
+      "AfgivneStemmer": 3417,
+      "Tidspunkt": "15:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9055,
+      "AfgivneStemmer": 4792,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9055,
+      "AfgivneStemmer": 5727,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

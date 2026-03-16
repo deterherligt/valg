@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:54",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Ilskov",
+  "AfstemningsområdeDagiId": "705024",
+  "AfstemningsområdeNummer": 19,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 729,
+      "AfgivneStemmer": 34,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 729,
+      "AfgivneStemmer": 108,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 729,
+      "AfgivneStemmer": 178,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 729,
+      "AfgivneStemmer": 264,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 729,
+      "AfgivneStemmer": 331,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 729,
+      "AfgivneStemmer": 408,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 729,
+      "AfgivneStemmer": 462,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 729,
+      "AfgivneStemmer": 491,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

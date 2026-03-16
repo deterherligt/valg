@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:41",
+  "Kommune": "Frederikshavn",
+  "Kommunekode": 813,
+  "Afstemningsområde": "Jerup",
+  "AfstemningsområdeDagiId": "705156",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 727,
+      "AfgivneStemmer": 50,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 727,
+      "AfgivneStemmer": 84,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 727,
+      "AfgivneStemmer": 172,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 727,
+      "AfgivneStemmer": 251,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 727,
+      "AfgivneStemmer": 353,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 727,
+      "AfgivneStemmer": 449,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 727,
+      "AfgivneStemmer": 518,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

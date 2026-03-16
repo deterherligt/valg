@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:36:12",
+  "Kommune": "Hedensted",
+  "Kommunekode": 766,
+  "Afstemningsområde": "Tørring",
+  "AfstemningsområdeDagiId": "703894",
+  "AfstemningsområdeNummer": 21,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2638,
+      "AfgivneStemmer": 144,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2638,
+      "AfgivneStemmer": 550,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2638,
+      "AfgivneStemmer": 1301,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2638,
+      "AfgivneStemmer": 1769,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

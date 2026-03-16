@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:55",
+  "Kommune": "Gentofte",
+  "Kommunekode": 157,
+  "Afstemningsområde": "Rådhuset",
+  "AfstemningsområdeDagiId": "702884",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 1090,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 1366,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 1539,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 1717,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 1924,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 2111,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 2330,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 2547,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 2892,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 3338,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 3884,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 4430,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6528,
+      "AfgivneStemmer": 4810,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:12",
+  "Kommune": "Lolland",
+  "Kommunekode": 360,
+  "Afstemningsområde": "Femø",
+  "AfstemningsområdeDagiId": "706816",
+  "AfstemningsområdeNummer": 28,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 103,
+      "AfgivneStemmer": 12,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 103,
+      "AfgivneStemmer": 27,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 103,
+      "AfgivneStemmer": 39,
+      "Tidspunkt": "14:10:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 103,
+      "AfgivneStemmer": 50,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 103,
+      "AfgivneStemmer": 71,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 103,
+      "AfgivneStemmer": 84,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

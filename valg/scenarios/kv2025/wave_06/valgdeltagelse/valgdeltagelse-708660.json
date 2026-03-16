@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:26",
+  "Kommune": "Mariagerfjord",
+  "Kommunekode": 846,
+  "Afstemningsområde": "Hørby",
+  "AfstemningsområdeDagiId": "708660",
+  "AfstemningsområdeNummer": 20,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2823,
+      "AfgivneStemmer": 527,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2823,
+      "AfgivneStemmer": 1070,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2823,
+      "AfgivneStemmer": 1337,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2823,
+      "AfgivneStemmer": 1655,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2823,
+      "AfgivneStemmer": 1886,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2823,
+      "AfgivneStemmer": 2076,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

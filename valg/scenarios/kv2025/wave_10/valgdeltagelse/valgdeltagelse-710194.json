@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:31:56",
+  "Kommune": "Lyngby-Taarbæk",
+  "Kommunekode": 173,
+  "Afstemningsområde": "Lundtofte",
+  "AfstemningsområdeDagiId": "710194",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 567,
+      "Tidspunkt": "08:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 567,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 710,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 907,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 1133,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 1347,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 1543,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 1755,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 2047,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 2442,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 2897,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 3349,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5411,
+      "AfgivneStemmer": 3609,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

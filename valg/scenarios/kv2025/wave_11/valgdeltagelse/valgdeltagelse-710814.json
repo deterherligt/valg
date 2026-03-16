@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:40",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "7. Vanløse",
+  "AfstemningsområdeDagiId": "710814",
+  "AfstemningsområdeNummer": 41,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 11458,
+      "AfgivneStemmer": 2627,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11458,
+      "AfgivneStemmer": 4436,
+      "Tidspunkt": "15:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11458,
+      "AfgivneStemmer": 6028,
+      "Tidspunkt": "17:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 11458,
+      "AfgivneStemmer": 7652,
+      "Tidspunkt": "20:15:00"
+    }
+  ]
+}

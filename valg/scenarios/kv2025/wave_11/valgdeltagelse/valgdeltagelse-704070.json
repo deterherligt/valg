@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:29",
+  "Kommune": "Frederikssund",
+  "Kommunekode": 250,
+  "Afstemningsområde": "Jægerspris",
+  "AfstemningsområdeDagiId": "704070",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7149,
+      "AfgivneStemmer": 1234,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7149,
+      "AfgivneStemmer": 2020,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7149,
+      "AfgivneStemmer": 2667,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7149,
+      "AfgivneStemmer": 3416,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7149,
+      "AfgivneStemmer": 4432,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7149,
+      "AfgivneStemmer": 5088,
+      "Tidspunkt": "20:06:00"
+    }
+  ]
+}

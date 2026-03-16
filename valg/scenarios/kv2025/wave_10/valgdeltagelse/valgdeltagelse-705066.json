@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:57",
+  "Kommune": "Rødovre",
+  "Kommunekode": 175,
+  "Afstemningsområde": "Rødovre",
+  "AfstemningsområdeDagiId": "705066",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6495,
+      "AfgivneStemmer": 565,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6495,
+      "AfgivneStemmer": 759,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6495,
+      "AfgivneStemmer": 1047,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6490,
+      "AfgivneStemmer": 1351,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6490,
+      "AfgivneStemmer": 1647,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6490,
+      "AfgivneStemmer": 1900,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6490,
+      "AfgivneStemmer": 2191,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6490,
+      "AfgivneStemmer": 2597,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6490,
+      "AfgivneStemmer": 3103,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6490,
+      "AfgivneStemmer": 3668,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6490,
+      "AfgivneStemmer": 4116,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6490,
+      "AfgivneStemmer": 4390,
+      "Tidspunkt": "20:12:00"
+    }
+  ]
+}

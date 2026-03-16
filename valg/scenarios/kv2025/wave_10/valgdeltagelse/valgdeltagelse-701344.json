@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:11:12",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "KFUM Hallen",
+  "AfstemningsområdeDagiId": "701344",
+  "AfstemningsområdeNummer": 19,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6569,
+      "AfgivneStemmer": 1860,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6569,
+      "AfgivneStemmer": 4169,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

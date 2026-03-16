@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:57",
+  "Kommune": "Rebild",
+  "Kommunekode": 840,
+  "Afstemningsområde": "Haverslev",
+  "AfstemningsområdeDagiId": "709652",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1017,
+      "AfgivneStemmer": 90,
+      "Tidspunkt": "10:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1017,
+      "AfgivneStemmer": 169,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1017,
+      "AfgivneStemmer": 271,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1017,
+      "AfgivneStemmer": 615,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1017,
+      "AfgivneStemmer": 746,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

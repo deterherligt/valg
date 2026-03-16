@@ -1,0 +1,31 @@
+{
+  "Valg": {
+    "OpstillingskredsId": "403600",
+    "Partier": [
+      {
+        "PartiId": "F",
+        "Stemmer": 369
+      },
+      {
+        "PartiId": "V",
+        "Stemmer": 2400
+      },
+      {
+        "PartiId": "A",
+        "Stemmer": 1518
+      },
+      {
+        "PartiId": "O",
+        "Stemmer": 1308
+      },
+      {
+        "PartiId": "C",
+        "Stemmer": 709
+      },
+      {
+        "PartiId": "I",
+        "Stemmer": 242
+      }
+    ]
+  }
+}

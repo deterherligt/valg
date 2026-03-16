@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:26",
+  "Kommune": "Thisted",
+  "Kommunekode": 787,
+  "Afstemningsområde": "Vesløs",
+  "AfstemningsområdeDagiId": "709112",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 851,
+      "AfgivneStemmer": 118,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 851,
+      "AfgivneStemmer": 468,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 851,
+      "AfgivneStemmer": 602,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

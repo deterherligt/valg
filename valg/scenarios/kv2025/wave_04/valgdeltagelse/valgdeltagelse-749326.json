@@ -1,0 +1,82 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:24:33",
+  "Kommune": "Hillerød",
+  "Kommunekode": 219,
+  "Afstemningsområde": "Lille Lyngby",
+  "AfstemningsområdeDagiId": "749326",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 80,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 132,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 191,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 266,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 341,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 405,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 462,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 529,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 615,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 725,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 898,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 1029,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 1114,
+      "Tidspunkt": "20:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1667,
+      "AfgivneStemmer": 1114,
+      "Tidspunkt": "20:24:00"
+    }
+  ]
+}

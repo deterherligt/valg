@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:43:59",
+  "Kommune": "Tårnby",
+  "Kommunekode": 185,
+  "Afstemningsområde": "Kastrup",
+  "AfstemningsområdeDagiId": "708012",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9162,
+      "AfgivneStemmer": 1256,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9162,
+      "AfgivneStemmer": 1978,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9162,
+      "AfgivneStemmer": 3620,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9162,
+      "AfgivneStemmer": 4878,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9162,
+      "AfgivneStemmer": 5626,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

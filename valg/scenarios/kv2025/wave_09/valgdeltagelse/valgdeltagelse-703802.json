@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:41",
+  "Kommune": "Allerød",
+  "Kommunekode": 201,
+  "Afstemningsområde": "Skovvang",
+  "AfstemningsområdeDagiId": "703802",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 370,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 536,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 673,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 866,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 1065,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 1221,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 1370,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 1580,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 1866,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 2244,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 2605,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 2875,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4066,
+      "AfgivneStemmer": 3061,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

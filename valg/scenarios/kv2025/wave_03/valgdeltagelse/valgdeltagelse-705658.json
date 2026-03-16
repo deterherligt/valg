@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:44:58",
+  "Kommune": "Kalundborg",
+  "Kommunekode": 326,
+  "Afstemningsområde": "Tømmerup",
+  "AfstemningsområdeDagiId": "705658",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1319,
+      "AfgivneStemmer": 159,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1319,
+      "AfgivneStemmer": 353,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1319,
+      "AfgivneStemmer": 759,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1319,
+      "AfgivneStemmer": 924,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:37:42",
+  "Kommune": "Haderslev",
+  "Kommunekode": 510,
+  "Afstemningsområde": "Gram",
+  "AfstemningsområdeDagiId": "703400",
+  "AfstemningsområdeNummer": 20,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2562,
+      "AfgivneStemmer": 356,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2562,
+      "AfgivneStemmer": 470,
+      "Tidspunkt": "11:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2562,
+      "AfgivneStemmer": 895,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2562,
+      "AfgivneStemmer": 1428,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2562,
+      "AfgivneStemmer": 1639,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

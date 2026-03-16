@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:23",
+  "Kommune": "Svendborg",
+  "Kommunekode": 479,
+  "Afstemningsområde": "V.Skerninge",
+  "AfstemningsområdeDagiId": "708006",
+  "AfstemningsområdeNummer": 19,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2206,
+      "AfgivneStemmer": 198,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2206,
+      "AfgivneStemmer": 447,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2206,
+      "AfgivneStemmer": 673,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2206,
+      "AfgivneStemmer": 905,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2206,
+      "AfgivneStemmer": 1275,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2206,
+      "AfgivneStemmer": 1637,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2206,
+      "AfgivneStemmer": 1724,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

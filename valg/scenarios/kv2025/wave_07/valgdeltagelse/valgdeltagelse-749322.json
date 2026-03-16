@@ -1,0 +1,82 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:20:42",
+  "Kommune": "Hillerød",
+  "Kommunekode": 219,
+  "Afstemningsområde": "Skævinge, Harløse, Strø",
+  "AfstemningsområdeDagiId": "749322",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 180,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 325,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 438,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 551,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 684,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 792,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 906,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 1070,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 1279,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 1611,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 1923,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 2198,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 2388,
+      "Tidspunkt": "20:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3443,
+      "AfgivneStemmer": 2388,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

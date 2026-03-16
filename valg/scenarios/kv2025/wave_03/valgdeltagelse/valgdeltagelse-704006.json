@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:09:55",
+  "Kommune": "Brønderslev",
+  "Kommunekode": 810,
+  "Afstemningsområde": "Klokkerholm",
+  "AfstemningsområdeDagiId": "704006",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1462,
+      "AfgivneStemmer": 291,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1462,
+      "AfgivneStemmer": 571,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1462,
+      "AfgivneStemmer": 905,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

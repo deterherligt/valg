@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:32:27",
+  "Kommune": "Odsherred",
+  "Kommunekode": 306,
+  "Afstemningsområde": "Nykøbing",
+  "AfstemningsområdeDagiId": "710514",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 156,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 390,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 722,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 1057,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 1321,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 1584,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 1893,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 2195,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 2548,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 2836,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 3099,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5251,
+      "AfgivneStemmer": 3678,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

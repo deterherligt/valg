@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:28:12",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Marienlystcentret",
+  "AfstemningsområdeDagiId": "707258",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9189,
+      "AfgivneStemmer": 1681,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9189,
+      "AfgivneStemmer": 4357,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9189,
+      "AfgivneStemmer": 6413,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

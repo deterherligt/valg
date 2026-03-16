@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:38:44",
+  "Kommune": "Lemvig",
+  "Kommunekode": 665,
+  "Afstemningsområde": "Klinkby",
+  "AfstemningsområdeDagiId": "711178",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 167,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 238,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 342,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 442,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 511,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 592,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 688,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 801,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 1018,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 1198,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 1295,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1691,
+      "AfgivneStemmer": 1344,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

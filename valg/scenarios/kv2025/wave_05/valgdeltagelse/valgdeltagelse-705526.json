@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:43:58",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Lisbjergskolen",
+  "AfstemningsområdeDagiId": "705526",
+  "AfstemningsområdeNummer": 44,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2052,
+      "AfgivneStemmer": 190,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2052,
+      "AfgivneStemmer": 380,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2052,
+      "AfgivneStemmer": 574,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2052,
+      "AfgivneStemmer": 1116,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2052,
+      "AfgivneStemmer": 1395,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

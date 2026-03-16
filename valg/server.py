@@ -8,6 +8,7 @@ Opens browser at http://localhost:5000 automatically.
 import csv
 import io
 import logging
+import os
 import sys
 import threading
 import webbrowser
@@ -37,7 +38,12 @@ _sync_lock = threading.Lock()
 
 # ── App factory ───────────────────────────────────────────────────────────────
 
-def create_app(db_path: Path = _DEFAULT_DB, data_dir: Path = _DEFAULT_DATA) -> Flask:
+def create_app(
+    db_path: Path = _DEFAULT_DB,
+    data_dir: Path = _DEFAULT_DATA,
+    demo_runner=None,
+    data_repo: Path | None = None,
+) -> Flask:
     app = Flask(__name__)
     db_path = Path(db_path)
 
@@ -192,6 +198,45 @@ def create_app(db_path: Path = _DEFAULT_DB, data_dir: Path = _DEFAULT_DATA) -> F
             headers={"Content-Disposition": f"attachment; filename=valg-{cmd}.csv"},
         )
 
+    _demo_repo = data_repo
+
+    if demo_runner is not None:
+        @app.get("/demo/state")
+        def demo_state():
+            return jsonify(demo_runner.get_state_dict())
+
+        @app.post("/demo/control")
+        def demo_control():
+            data = request.get_json(force=True)
+            action = data.get("action", "")
+            repo = _demo_repo or Path(os.environ.get("VALG_DATA_REPO", "../valg-data"))
+            try:
+                if action == "start":
+                    demo_runner.start(db_path=db_path, data_repo=repo)
+                elif action == "pause":
+                    demo_runner.pause()
+                elif action == "resume":
+                    demo_runner.resume()
+                elif action == "restart":
+                    demo_runner.restart(db_path=db_path, data_repo=repo)
+                elif action == "set_speed":
+                    demo_runner.set_speed(float(data["speed"]))
+                elif action == "set_scenario":
+                    demo_runner.set_scenario(data["scenario"])
+                else:
+                    return f"Unknown action: {action}", 400
+            except (KeyError, ValueError, RuntimeError) as e:
+                return str(e), 400
+            return "ok", 200
+    else:
+        @app.get("/demo/state")
+        def demo_state_disabled():
+            return "Demo mode not enabled", 404
+
+        @app.post("/demo/control")
+        def demo_control_disabled():
+            return "Demo mode not enabled", 404
+
     return app
 
 
@@ -223,19 +268,39 @@ def _sync_loop(data_dir: Path, db_path: Path, interval: int = 60) -> None:
 
 # ── Entry point ───────────────────────────────────────────────────────────────
 
-def main(port: int = 5000) -> None:
+def main() -> None:
+    import argparse
+    import os
+
+    parser = argparse.ArgumentParser(prog="valg-server")
+    parser.add_argument("--demo", action="store_true", help="Enable demo mode")
+    parser.add_argument("--db", type=Path, default=_DEFAULT_DB)
+    parser.add_argument("--port", type=int, default=5000)
+    args = parser.parse_args()
+
     from valg.plugins import load_plugins
     load_plugins()
 
-    db_path = _DEFAULT_DB
+    db_path = args.db
     data_dir = _DEFAULT_DATA
+    data_repo = Path(os.environ.get("VALG_DATA_REPO", "../valg-data"))
+
+    demo_runner = None
+    if args.demo:
+        from valg.demo import DemoRunner
+        demo_runner = DemoRunner()
 
     t = threading.Thread(target=_sync_loop, args=(data_dir, db_path), daemon=True)
     t.start()
 
-    threading.Timer(1.0, lambda: webbrowser.open(f"http://localhost:{port}")).start()
-    app = create_app(db_path=db_path, data_dir=data_dir)
-    app.run(host="127.0.0.1", port=port)
+    threading.Timer(1.0, lambda: webbrowser.open(f"http://localhost:{args.port}")).start()
+    app = create_app(
+        db_path=db_path,
+        data_dir=data_dir,
+        demo_runner=demo_runner,
+        data_repo=data_repo,
+    )
+    app.run(host="127.0.0.1", port=args.port)
 
 
 if __name__ == "__main__":

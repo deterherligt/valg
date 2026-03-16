@@ -1,0 +1,57 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:06:00",
+  "Kommune": "Herning",
+  "Kommunekode": 657,
+  "Afstemningsområde": "Feldborg",
+  "AfstemningsområdeDagiId": "709514",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 602,
+      "AfgivneStemmer": 17,
+      "Tidspunkt": "08:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 602,
+      "AfgivneStemmer": 17,
+      "Tidspunkt": "09:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 602,
+      "AfgivneStemmer": 81,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 602,
+      "AfgivneStemmer": 134,
+      "Tidspunkt": "13:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 602,
+      "AfgivneStemmer": 199,
+      "Tidspunkt": "15:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 602,
+      "AfgivneStemmer": 278,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 602,
+      "AfgivneStemmer": 359,
+      "Tidspunkt": "17:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 602,
+      "AfgivneStemmer": 401,
+      "Tidspunkt": "19:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 602,
+      "AfgivneStemmer": 431,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

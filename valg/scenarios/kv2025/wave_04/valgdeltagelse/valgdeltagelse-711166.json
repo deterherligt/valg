@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:39:12",
+  "Kommune": "Lemvig",
+  "Kommunekode": 665,
+  "Afstemningsområde": "Nørre Nissum",
+  "AfstemningsområdeDagiId": "711166",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 170,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 235,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 339,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 427,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 511,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 573,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 658,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 786,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 978,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 1203,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 1332,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1873,
+      "AfgivneStemmer": 1413,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

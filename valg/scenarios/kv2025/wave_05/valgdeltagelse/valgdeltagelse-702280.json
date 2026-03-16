@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:10:33",
+  "Kommune": "Vejle",
+  "Kommunekode": 630,
+  "Afstemningsområde": "Skibet Hallen",
+  "AfstemningsområdeDagiId": "702280",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2104,
+      "AfgivneStemmer": 399,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2104,
+      "AfgivneStemmer": 320,
+      "Tidspunkt": "11:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2104,
+      "AfgivneStemmer": 1163,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

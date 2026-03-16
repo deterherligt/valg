@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:28:11",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Rosengårdskolen",
+  "AfstemningsområdeDagiId": "705894",
+  "AfstemningsområdeNummer": 25,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8591,
+      "AfgivneStemmer": 1342,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8591,
+      "AfgivneStemmer": 3933,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8591,
+      "AfgivneStemmer": 5631,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

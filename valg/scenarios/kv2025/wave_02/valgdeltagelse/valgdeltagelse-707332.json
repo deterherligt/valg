@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:58",
+  "Kommune": "Roskilde",
+  "Kommunekode": 265,
+  "Afstemningsområde": "Snoldelev",
+  "AfstemningsområdeDagiId": "707332",
+  "AfstemningsområdeNummer": 18,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 925,
+      "AfgivneStemmer": 61,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 925,
+      "AfgivneStemmer": 121,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 925,
+      "AfgivneStemmer": 176,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 925,
+      "AfgivneStemmer": 237,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 925,
+      "AfgivneStemmer": 366,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 925,
+      "AfgivneStemmer": 561,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 925,
+      "AfgivneStemmer": 596,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

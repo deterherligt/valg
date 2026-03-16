@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:28",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Turup",
+  "AfstemningsområdeDagiId": "711914",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 635,
+      "AfgivneStemmer": 45,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 635,
+      "AfgivneStemmer": 117,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 635,
+      "AfgivneStemmer": 188,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 635,
+      "AfgivneStemmer": 343,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 635,
+      "AfgivneStemmer": 447,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 635,
+      "AfgivneStemmer": 465,
+      "Tidspunkt": "20:04:00"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 15:03:30",
+  "Kommune": "Favrskov",
+  "Kommunekode": 710,
+  "Afstemningsområde": "Lading",
+  "AfstemningsområdeDagiId": "707272",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1017,
+      "AfgivneStemmer": 123,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1017,
+      "AfgivneStemmer": 328,
+      "Tidspunkt": "16:00:00"
+    }
+  ]
+}

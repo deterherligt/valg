@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:15:48",
+  "Kommune": "Hjørring",
+  "Kommunekode": 860,
+  "Afstemningsområde": "Tornby",
+  "AfstemningsområdeDagiId": "710458",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1479,
+      "AfgivneStemmer": 143,
+      "Tidspunkt": "09:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1479,
+      "AfgivneStemmer": 305,
+      "Tidspunkt": "11:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1479,
+      "AfgivneStemmer": 441,
+      "Tidspunkt": "13:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1479,
+      "AfgivneStemmer": 598,
+      "Tidspunkt": "15:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1479,
+      "AfgivneStemmer": 875,
+      "Tidspunkt": "17:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1479,
+      "AfgivneStemmer": 1053,
+      "Tidspunkt": "19:02:00"
+    }
+  ]
+}

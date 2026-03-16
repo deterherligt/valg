@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:57",
+  "Kommune": "Hørsholm",
+  "Kommunekode": 223,
+  "Afstemningsområde": "Grønnegade",
+  "AfstemningsområdeDagiId": "707682",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 17,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 44,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 55,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 72,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 91,
+      "Tidspunkt": "12:05:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 109,
+      "Tidspunkt": "13:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 122,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 134,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 159,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 189,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 219,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 239,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 331,
+      "AfgivneStemmer": 254,
+      "Tidspunkt": "20:02:00"
+    }
+  ]
+}

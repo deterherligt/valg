@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:56",
+  "Kommune": "Rebild",
+  "Kommunekode": 840,
+  "Afstemningsområde": "Veggerby",
+  "AfstemningsområdeDagiId": "705168",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 529,
+      "AfgivneStemmer": 59,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 529,
+      "AfgivneStemmer": 117,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 529,
+      "AfgivneStemmer": 158,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 529,
+      "AfgivneStemmer": 174,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 529,
+      "AfgivneStemmer": 343,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 529,
+      "AfgivneStemmer": 400,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

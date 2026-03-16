@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 15:00:27",
+  "Kommune": "Favrskov",
+  "Kommunekode": 710,
+  "Afstemningsområde": "Rønbæk/Grundfør",
+  "AfstemningsområdeDagiId": "705102",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3318,
+      "AfgivneStemmer": 824,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3318,
+      "AfgivneStemmer": 1507,
+      "Tidspunkt": "16:00:00"
+    }
+  ]
+}

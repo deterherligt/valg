@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:56",
+  "Kommune": "Gladsaxe",
+  "Kommunekode": 159,
+  "Afstemningsområde": "Egegård",
+  "AfstemningsområdeDagiId": "702286",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6231,
+      "AfgivneStemmer": 1170,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6231,
+      "AfgivneStemmer": 2116,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6231,
+      "AfgivneStemmer": 3818,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

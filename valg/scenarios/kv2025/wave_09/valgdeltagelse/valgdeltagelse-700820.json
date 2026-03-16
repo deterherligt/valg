@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:16:26",
+  "Kommune": "Glostrup",
+  "Kommunekode": 161,
+  "Afstemningsområde": "Vestervangskolen",
+  "AfstemningsområdeDagiId": "700820",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4405,
+      "AfgivneStemmer": 745,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4405,
+      "AfgivneStemmer": 1203,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4405,
+      "AfgivneStemmer": 1909,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4405,
+      "AfgivneStemmer": 2086,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4406,
+      "AfgivneStemmer": 2198,
+      "Tidspunkt": "20:11:00"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:28:15",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "FrydenlundHUSET, Aarhus V",
+  "AfstemningsområdeDagiId": "709952",
+  "AfstemningsområdeNummer": 63,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 10222,
+      "AfgivneStemmer": 770,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10222,
+      "AfgivneStemmer": 1781,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10222,
+      "AfgivneStemmer": 2924,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10222,
+      "AfgivneStemmer": 5136,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10222,
+      "AfgivneStemmer": 6206,
+      "Tidspunkt": "20:20:00"
+    }
+  ]
+}

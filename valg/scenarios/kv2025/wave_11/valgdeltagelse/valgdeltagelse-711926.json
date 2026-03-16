@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:24",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "3. Indre By",
+  "AfstemningsområdeDagiId": "711926",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 13206,
+      "AfgivneStemmer": 2610,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13207,
+      "AfgivneStemmer": 3335,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13207,
+      "AfgivneStemmer": 4288,
+      "Tidspunkt": "15:56:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13207,
+      "AfgivneStemmer": 6233,
+      "Tidspunkt": "17:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13207,
+      "AfgivneStemmer": 7465,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

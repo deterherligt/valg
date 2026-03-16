@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:46:29",
+  "Kommune": "Gentofte",
+  "Kommunekode": 157,
+  "Afstemningsområde": "Bakkegård",
+  "AfstemningsområdeDagiId": "702878",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 708,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 909,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 1041,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 1200,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 1366,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 1547,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 1725,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 1959,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 2275,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 2653,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 3043,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 3415,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6290,
+      "AfgivneStemmer": 3879,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

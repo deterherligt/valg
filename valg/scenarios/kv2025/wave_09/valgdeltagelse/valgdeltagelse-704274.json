@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:41",
+  "Kommune": "Rudersdal",
+  "Kommunekode": 230,
+  "Afstemningsområde": "Nærum",
+  "AfstemningsområdeDagiId": "704274",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 450,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 592,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 799,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 1024,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 1230,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 1420,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 1606,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 1857,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 2191,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 2542,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 2830,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4416,
+      "AfgivneStemmer": 3017,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

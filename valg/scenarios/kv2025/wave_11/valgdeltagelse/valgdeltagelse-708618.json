@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:08:03",
+  "Kommune": "Vejle",
+  "Kommunekode": 630,
+  "Afstemningsområde": "DGI-Huset Syd",
+  "AfstemningsområdeDagiId": "708618",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 13604,
+      "AfgivneStemmer": 1921,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 13604,
+      "AfgivneStemmer": 5381,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

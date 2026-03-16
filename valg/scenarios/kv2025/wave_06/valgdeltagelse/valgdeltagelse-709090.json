@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:25",
+  "Kommune": "Viborg",
+  "Kommunekode": 791,
+  "Afstemningsområde": "Skals",
+  "AfstemningsområdeDagiId": "709090",
+  "AfstemningsområdeNummer": 16,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2840,
+      "AfgivneStemmer": 204,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2840,
+      "AfgivneStemmer": 496,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2840,
+      "AfgivneStemmer": 897,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2840,
+      "AfgivneStemmer": 1250,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2840,
+      "AfgivneStemmer": 1942,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2840,
+      "AfgivneStemmer": 2122,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

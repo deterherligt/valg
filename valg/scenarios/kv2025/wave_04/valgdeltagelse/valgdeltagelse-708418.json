@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:59",
+  "Kommune": "Struer",
+  "Kommunekode": 671,
+  "Afstemningsområde": "Langhøj",
+  "AfstemningsområdeDagiId": "708418",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1618,
+      "AfgivneStemmer": 281,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1618,
+      "AfgivneStemmer": 681,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1618,
+      "AfgivneStemmer": 1055,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1618,
+      "AfgivneStemmer": 1252,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

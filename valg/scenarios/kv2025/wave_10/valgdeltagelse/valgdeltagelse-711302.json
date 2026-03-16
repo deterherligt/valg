@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:02",
+  "Kommune": "Struer",
+  "Kommunekode": 671,
+  "Afstemningsområde": "Struer",
+  "AfstemningsområdeDagiId": "711302",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6506,
+      "AfgivneStemmer": 1250,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6506,
+      "AfgivneStemmer": 2906,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6506,
+      "AfgivneStemmer": 3991,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6506,
+      "AfgivneStemmer": 4434,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

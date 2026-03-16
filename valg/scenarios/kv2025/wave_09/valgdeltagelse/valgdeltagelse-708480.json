@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:26:57",
+  "Kommune": "Køge",
+  "Kommunekode": 259,
+  "Afstemningsområde": "Ølsemagle",
+  "AfstemningsområdeDagiId": "708480",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4011,
+      "AfgivneStemmer": 587,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4011,
+      "AfgivneStemmer": 1566,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4011,
+      "AfgivneStemmer": 2814,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

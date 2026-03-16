@@ -1,0 +1,13 @@
+[
+  {"Id": "A", "Bogstav": "A", "Navn": "Socialdemokratiet"},
+  {"Id": "B", "Bogstav": "B", "Navn": "Radikale Venstre"},
+  {"Id": "C", "Bogstav": "C", "Navn": "Det Konservative Folkeparti"},
+  {"Id": "D", "Bogstav": "D", "Navn": "Nye Borgerlige"},
+  {"Id": "F", "Bogstav": "F", "Navn": "Socialistisk Folkeparti"},
+  {"Id": "I", "Bogstav": "I", "Navn": "Liberal Alliance"},
+  {"Id": "M", "Bogstav": "M", "Navn": "Moderaterne"},
+  {"Id": "O", "Bogstav": "O", "Navn": "Dansk Folkeparti"},
+  {"Id": "V", "Bogstav": "V", "Navn": "Venstre"},
+  {"Id": "\u00d8", "Bogstav": "\u00d8", "Navn": "Enhedslisten"},
+  {"Id": "\u00c5", "Bogstav": "\u00c5", "Navn": "Alternativet"}
+]

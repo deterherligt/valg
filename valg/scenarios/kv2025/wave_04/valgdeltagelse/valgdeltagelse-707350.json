@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:08:40",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Farstruphallen",
+  "AfstemningsområdeDagiId": "707350",
+  "AfstemningsområdeNummer": 52,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1612,
+      "AfgivneStemmer": 314,
+      "Tidspunkt": "12:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1612,
+      "AfgivneStemmer": 910,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

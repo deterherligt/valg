@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:08",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Assens",
+  "AfstemningsområdeDagiId": "710764",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5661,
+      "AfgivneStemmer": 462,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5661,
+      "AfgivneStemmer": 1151,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5661,
+      "AfgivneStemmer": 1999,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5661,
+      "AfgivneStemmer": 3193,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5661,
+      "AfgivneStemmer": 3814,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5661,
+      "AfgivneStemmer": 3958,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

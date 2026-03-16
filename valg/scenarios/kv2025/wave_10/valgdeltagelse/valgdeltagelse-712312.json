@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:36:57",
+  "Kommune": "Kolding",
+  "Kommunekode": 621,
+  "Afstemningsområde": "Chr.Feld/Stepping/Taps/Hejls",
+  "AfstemningsområdeDagiId": "712312",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5510,
+      "AfgivneStemmer": 854,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5510,
+      "AfgivneStemmer": 1553,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5510,
+      "AfgivneStemmer": 3238,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5510,
+      "AfgivneStemmer": 3793,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

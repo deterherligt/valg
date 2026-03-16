@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:34:42",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Hellevad",
+  "AfstemningsområdeDagiId": "703772",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 702,
+      "AfgivneStemmer": 59,
+      "Tidspunkt": "09:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 702,
+      "AfgivneStemmer": 121,
+      "Tidspunkt": "11:57:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 702,
+      "AfgivneStemmer": 165,
+      "Tidspunkt": "13:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 702,
+      "AfgivneStemmer": 248,
+      "Tidspunkt": "15:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 702,
+      "AfgivneStemmer": 378,
+      "Tidspunkt": "17:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 702,
+      "AfgivneStemmer": 479,
+      "Tidspunkt": "19:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 702,
+      "AfgivneStemmer": 479,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

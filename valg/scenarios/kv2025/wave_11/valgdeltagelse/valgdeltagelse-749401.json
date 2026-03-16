@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:45:15",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "2. Peder Lykke",
+  "AfstemningsområdeDagiId": "749401",
+  "AfstemningsområdeNummer": 62,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8541,
+      "AfgivneStemmer": 1732,
+      "Tidspunkt": "12:07:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8541,
+      "AfgivneStemmer": 2981,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8541,
+      "AfgivneStemmer": 4286,
+      "Tidspunkt": "18:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8541,
+      "AfgivneStemmer": 5157,
+      "Tidspunkt": "20:11:00"
+    }
+  ]
+}

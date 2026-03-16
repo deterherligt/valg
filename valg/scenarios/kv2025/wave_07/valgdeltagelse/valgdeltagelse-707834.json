@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 15:05:14",
+  "Kommune": "Favrskov",
+  "Kommunekode": 710,
+  "Afstemningsområde": "Ulstrup",
+  "AfstemningsområdeDagiId": "707834",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3140,
+      "AfgivneStemmer": 649,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3140,
+      "AfgivneStemmer": 1231,
+      "Tidspunkt": "16:00:00"
+    }
+  ]
+}

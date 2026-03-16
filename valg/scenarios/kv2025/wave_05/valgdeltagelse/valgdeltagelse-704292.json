@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:13:01",
+  "Kommune": "Gribskov",
+  "Kommunekode": 270,
+  "Afstemningsområde": "Vejby",
+  "AfstemningsområdeDagiId": "704292",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2245,
+      "AfgivneStemmer": 205,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2245,
+      "AfgivneStemmer": 562,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2245,
+      "AfgivneStemmer": 866,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2245,
+      "AfgivneStemmer": 1505,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

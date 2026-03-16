@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:30",
+  "Kommune": "Mariagerfjord",
+  "Kommunekode": 846,
+  "Afstemningsområde": "Hobro",
+  "AfstemningsområdeDagiId": "702292",
+  "AfstemningsområdeNummer": 27,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9028,
+      "AfgivneStemmer": 2255,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9028,
+      "AfgivneStemmer": 3874,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9028,
+      "AfgivneStemmer": 4441,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9028,
+      "AfgivneStemmer": 5004,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9028,
+      "AfgivneStemmer": 5553,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9028,
+      "AfgivneStemmer": 6038,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

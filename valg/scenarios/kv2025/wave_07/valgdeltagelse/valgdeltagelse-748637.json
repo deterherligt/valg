@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:43",
+  "Kommune": "Nordfyns",
+  "Kommunekode": 480,
+  "Afstemningsområde": "Søndersø",
+  "AfstemningsområdeDagiId": "748637",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3492,
+      "AfgivneStemmer": 627,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3492,
+      "AfgivneStemmer": 1767,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3492,
+      "AfgivneStemmer": 2412,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:55",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Aarup/Kerte",
+  "AfstemningsområdeDagiId": "748073",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3359,
+      "AfgivneStemmer": 269,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3359,
+      "AfgivneStemmer": 604,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3359,
+      "AfgivneStemmer": 1039,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3359,
+      "AfgivneStemmer": 1723,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3359,
+      "AfgivneStemmer": 2313,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3359,
+      "AfgivneStemmer": 2454,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

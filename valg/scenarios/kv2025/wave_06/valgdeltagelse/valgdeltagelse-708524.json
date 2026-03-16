@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:53:14",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Vorrevangskolen, Aarhus N",
+  "AfstemningsområdeDagiId": "708524",
+  "AfstemningsområdeNummer": 68,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2687,
+      "AfgivneStemmer": 258,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2687,
+      "AfgivneStemmer": 590,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2687,
+      "AfgivneStemmer": 958,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2687,
+      "AfgivneStemmer": 1598,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2687,
+      "AfgivneStemmer": 1843,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

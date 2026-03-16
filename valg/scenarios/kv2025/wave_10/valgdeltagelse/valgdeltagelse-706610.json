@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:54",
+  "Kommune": "Kolding",
+  "Kommunekode": 621,
+  "Afstemningsområde": "Centrum Nord",
+  "AfstemningsområdeDagiId": "706610",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6556,
+      "AfgivneStemmer": 615,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6556,
+      "AfgivneStemmer": 1263,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6556,
+      "AfgivneStemmer": 2889,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6556,
+      "AfgivneStemmer": 3464,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

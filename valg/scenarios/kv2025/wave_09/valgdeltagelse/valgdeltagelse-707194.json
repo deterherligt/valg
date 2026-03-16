@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:46",
+  "Kommune": "Rudersdal",
+  "Kommunekode": 230,
+  "Afstemningsområde": "Trørød",
+  "AfstemningsområdeDagiId": "707194",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 423,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 558,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 708,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 930,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 1171,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 1342,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 1526,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 1722,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 1996,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 2326,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 2728,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 3082,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4460,
+      "AfgivneStemmer": 3371,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

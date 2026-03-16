@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:51:44",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Ellevangskolen, Risskov",
+  "AfstemningsområdeDagiId": "711392",
+  "AfstemningsområdeNummer": 65,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8845,
+      "AfgivneStemmer": 983,
+      "Tidspunkt": "09:09:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8845,
+      "AfgivneStemmer": 1867,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8845,
+      "AfgivneStemmer": 3079,
+      "Tidspunkt": "15:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8845,
+      "AfgivneStemmer": 4960,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8845,
+      "AfgivneStemmer": 6281,
+      "Tidspunkt": "20:05:00"
+    }
+  ]
+}

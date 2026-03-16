@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:55",
+  "Kommune": "Slagelse",
+  "Kommunekode": 330,
+  "Afstemningsområde": "Dalmose - Dalmosehallen",
+  "AfstemningsområdeDagiId": "705710",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2561,
+      "AfgivneStemmer": 455,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2561,
+      "AfgivneStemmer": 618,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2561,
+      "AfgivneStemmer": 900,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2561,
+      "AfgivneStemmer": 1386,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2561,
+      "AfgivneStemmer": 1658,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

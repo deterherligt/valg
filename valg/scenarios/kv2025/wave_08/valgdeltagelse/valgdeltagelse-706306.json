@@ -1,0 +1,67 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:55",
+  "Kommune": "Vordingborg",
+  "Kommunekode": 390,
+  "Afstemningsområde": "Præstø",
+  "AfstemningsområdeDagiId": "706306",
+  "AfstemningsområdeNummer": 12,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3695,
+      "AfgivneStemmer": 593,
+      "Tidspunkt": "10:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3695,
+      "AfgivneStemmer": 854,
+      "Tidspunkt": "11:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3695,
+      "AfgivneStemmer": 1082,
+      "Tidspunkt": "12:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3695,
+      "AfgivneStemmer": 1272,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3695,
+      "AfgivneStemmer": 1468,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3695,
+      "AfgivneStemmer": 1678,
+      "Tidspunkt": "15:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3695,
+      "AfgivneStemmer": 1883,
+      "Tidspunkt": "16:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3695,
+      "AfgivneStemmer": 2205,
+      "Tidspunkt": "17:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3695,
+      "AfgivneStemmer": 2458,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3695,
+      "AfgivneStemmer": 2654,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3695,
+      "AfgivneStemmer": 2775,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

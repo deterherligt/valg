@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:56",
+  "Kommune": "Esbjerg",
+  "Kommunekode": 561,
+  "Afstemningsområde": "Ribe",
+  "AfstemningsområdeDagiId": "703580",
+  "AfstemningsområdeNummer": 28,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9090,
+      "AfgivneStemmer": 2000,
+      "Tidspunkt": "11:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9090,
+      "AfgivneStemmer": 3653,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9090,
+      "AfgivneStemmer": 5655,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9090,
+      "AfgivneStemmer": 6642,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

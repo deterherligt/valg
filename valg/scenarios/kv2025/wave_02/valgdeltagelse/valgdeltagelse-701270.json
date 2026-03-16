@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:10:41",
+  "Kommune": "Thisted",
+  "Kommunekode": 787,
+  "Afstemningsområde": "Klitmøller",
+  "AfstemningsområdeDagiId": "701270",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 982,
+      "AfgivneStemmer": 198,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 982,
+      "AfgivneStemmer": 591,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 982,
+      "AfgivneStemmer": 800,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

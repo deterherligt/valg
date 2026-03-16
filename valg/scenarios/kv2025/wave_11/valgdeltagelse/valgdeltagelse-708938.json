@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:12:58",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Sønderbroskolen",
+  "AfstemningsområdeDagiId": "708938",
+  "AfstemningsområdeNummer": 27,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7118,
+      "AfgivneStemmer": 1194,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7118,
+      "AfgivneStemmer": 3748,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

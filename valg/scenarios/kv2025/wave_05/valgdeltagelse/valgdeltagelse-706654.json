@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:09",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Bylderup",
+  "AfstemningsområdeDagiId": "706654",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2000,
+      "AfgivneStemmer": 214,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2000,
+      "AfgivneStemmer": 378,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2000,
+      "AfgivneStemmer": 503,
+      "Tidspunkt": "13:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2000,
+      "AfgivneStemmer": 719,
+      "Tidspunkt": "15:56:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2000,
+      "AfgivneStemmer": 1085,
+      "Tidspunkt": "17:52:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2000,
+      "AfgivneStemmer": 1271,
+      "Tidspunkt": "19:56:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2000,
+      "AfgivneStemmer": 1271,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

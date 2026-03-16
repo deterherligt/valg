@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:00",
+  "Kommune": "Rudersdal",
+  "Kommunekode": 230,
+  "Afstemningsområde": "Grünersvej",
+  "AfstemningsområdeDagiId": "748890",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 663,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 908,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 1068,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 1310,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 1550,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 1772,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 1939,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 2170,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 2472,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 2872,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 3340,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 3802,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5316,
+      "AfgivneStemmer": 4198,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

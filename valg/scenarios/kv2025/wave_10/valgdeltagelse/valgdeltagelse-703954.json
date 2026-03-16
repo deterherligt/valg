@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:28:41",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Hasselager Hallen",
+  "AfstemningsområdeDagiId": "703954",
+  "AfstemningsområdeNummer": 18,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5868,
+      "AfgivneStemmer": 442,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5868,
+      "AfgivneStemmer": 1166,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5868,
+      "AfgivneStemmer": 1930,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5868,
+      "AfgivneStemmer": 3382,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5868,
+      "AfgivneStemmer": 4097,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

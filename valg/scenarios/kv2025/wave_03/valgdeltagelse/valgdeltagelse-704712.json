@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:10",
+  "Kommune": "Thisted",
+  "Kommunekode": 787,
+  "Afstemningsområde": "Bedsted",
+  "AfstemningsområdeDagiId": "704712",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1438,
+      "AfgivneStemmer": 257,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1438,
+      "AfgivneStemmer": 783,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1438,
+      "AfgivneStemmer": 1058,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:44:58",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Lystrup Idrætscenter",
+  "AfstemningsområdeDagiId": "705532",
+  "AfstemningsområdeNummer": 47,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9142,
+      "AfgivneStemmer": 908,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9142,
+      "AfgivneStemmer": 2240,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9142,
+      "AfgivneStemmer": 3508,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9142,
+      "AfgivneStemmer": 5819,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9142,
+      "AfgivneStemmer": 6974,
+      "Tidspunkt": "20:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9142,
+      "AfgivneStemmer": 6994,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

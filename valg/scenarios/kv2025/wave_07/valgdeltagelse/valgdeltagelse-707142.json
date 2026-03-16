@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:09:00",
+  "Kommune": "Faxe",
+  "Kommunekode": 320,
+  "Afstemningsområde": "Dalby",
+  "AfstemningsområdeDagiId": "707142",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3184,
+      "AfgivneStemmer": 323,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3184,
+      "AfgivneStemmer": 619,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3184,
+      "AfgivneStemmer": 832,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3184,
+      "AfgivneStemmer": 1146,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3184,
+      "AfgivneStemmer": 1746,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3184,
+      "AfgivneStemmer": 2135,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

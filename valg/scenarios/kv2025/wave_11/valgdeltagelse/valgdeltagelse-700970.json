@@ -1,0 +1,52 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:25",
+  "Kommune": "Furesø",
+  "Kommunekode": 190,
+  "Afstemningsområde": "Værløse",
+  "AfstemningsområdeDagiId": "700970",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7726,
+      "AfgivneStemmer": 991,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7726,
+      "AfgivneStemmer": 1238,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7726,
+      "AfgivneStemmer": 1986,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7726,
+      "AfgivneStemmer": 2713,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7726,
+      "AfgivneStemmer": 3480,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7726,
+      "AfgivneStemmer": 4492,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7726,
+      "AfgivneStemmer": 5150,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7726,
+      "AfgivneStemmer": 5816,
+      "Tidspunkt": "20:11:00"
+    }
+  ]
+}

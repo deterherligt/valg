@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:20:42",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Hald Forsamlingshus",
+  "AfstemningsområdeDagiId": "702710",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 73,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 124,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 184,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 258,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 300,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 334,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 377,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 450,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 565,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 679,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 777,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1211,
+      "AfgivneStemmer": 832,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

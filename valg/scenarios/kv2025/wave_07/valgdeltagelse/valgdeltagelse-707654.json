@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:29",
+  "Kommune": "Halsnæs",
+  "Kommunekode": 260,
+  "Afstemningsområde": "Enghaven",
+  "AfstemningsområdeDagiId": "707654",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 293,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 404,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 522,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 671,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 794,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 923,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 1076,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 1306,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 1571,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 1839,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 2029,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3218,
+      "AfgivneStemmer": 2153,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:29:28",
+  "Kommune": "Køge",
+  "Kommunekode": 259,
+  "Afstemningsområde": "Bjæverskov",
+  "AfstemningsområdeDagiId": "711350",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2990,
+      "AfgivneStemmer": 541,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2990,
+      "AfgivneStemmer": 1265,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2990,
+      "AfgivneStemmer": 2215,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

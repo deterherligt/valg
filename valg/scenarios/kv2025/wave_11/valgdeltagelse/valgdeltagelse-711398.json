@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:42:28",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Samsøgades Skole, Aarhus C",
+  "AfstemningsområdeDagiId": "711398",
+  "AfstemningsområdeNummer": 41,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7607,
+      "AfgivneStemmer": 878,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7607,
+      "AfgivneStemmer": 1760,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7607,
+      "AfgivneStemmer": 2793,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7607,
+      "AfgivneStemmer": 4911,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7607,
+      "AfgivneStemmer": 6178,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

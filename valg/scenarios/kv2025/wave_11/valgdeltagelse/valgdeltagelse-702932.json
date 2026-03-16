@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:13",
+  "Kommune": "Viborg",
+  "Kommunekode": 791,
+  "Afstemningsområde": "Viborg",
+  "AfstemningsområdeDagiId": "702932",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 24886,
+      "AfgivneStemmer": 2727,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 24886,
+      "AfgivneStemmer": 4794,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 24886,
+      "AfgivneStemmer": 7907,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 24886,
+      "AfgivneStemmer": 10288,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 24886,
+      "AfgivneStemmer": 14171,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 24886,
+      "AfgivneStemmer": 16778,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

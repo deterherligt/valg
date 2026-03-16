@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:29",
+  "Kommune": "Slagelse",
+  "Kommunekode": 330,
+  "Afstemningsområde": "Boeslunde - Boeslunde Hallen",
+  "AfstemningsområdeDagiId": "701098",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1133,
+      "AfgivneStemmer": 224,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1133,
+      "AfgivneStemmer": 303,
+      "Tidspunkt": "13:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1133,
+      "AfgivneStemmer": 303,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1133,
+      "AfgivneStemmer": 440,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1133,
+      "AfgivneStemmer": 679,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1133,
+      "AfgivneStemmer": 821,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:46",
+  "Kommune": "Kerteminde",
+  "Kommunekode": 440,
+  "Afstemningsområde": "Langeskov",
+  "AfstemningsområdeDagiId": "705316",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 256,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 432,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 722,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 934,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 1122,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 1289,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 1489,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 1816,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 2239,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 2556,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 2833,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3888,
+      "AfgivneStemmer": 2964,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

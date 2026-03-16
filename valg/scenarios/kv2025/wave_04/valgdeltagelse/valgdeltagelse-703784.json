@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:10",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Ensted",
+  "AfstemningsområdeDagiId": "703784",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1891,
+      "AfgivneStemmer": 188,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1891,
+      "AfgivneStemmer": 363,
+      "Tidspunkt": "11:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1891,
+      "AfgivneStemmer": 514,
+      "Tidspunkt": "13:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1891,
+      "AfgivneStemmer": 734,
+      "Tidspunkt": "15:54:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1891,
+      "AfgivneStemmer": 1180,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1891,
+      "AfgivneStemmer": 1367,
+      "Tidspunkt": "19:55:00"
+    }
+  ]
+}

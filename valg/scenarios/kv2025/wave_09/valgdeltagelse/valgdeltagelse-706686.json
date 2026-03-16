@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:43:59",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Buskelund",
+  "AfstemningsområdeDagiId": "706686",
+  "AfstemningsområdeNummer": 23,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4007,
+      "AfgivneStemmer": 629,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4007,
+      "AfgivneStemmer": 901,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4007,
+      "AfgivneStemmer": 1540,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4007,
+      "AfgivneStemmer": 3269,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:24",
+  "Kommune": "Rødovre",
+  "Kommunekode": 175,
+  "Afstemningsområde": "Islev",
+  "AfstemningsområdeDagiId": "706324",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 326,
+      "Tidspunkt": "09:08:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 443,
+      "Tidspunkt": "09:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 597,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 897,
+      "Tidspunkt": "12:32:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 985,
+      "Tidspunkt": "13:06:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 1125,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 1350,
+      "Tidspunkt": "15:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 1628,
+      "Tidspunkt": "15:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 2141,
+      "Tidspunkt": "17:12:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 2490,
+      "Tidspunkt": "18:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 2879,
+      "Tidspunkt": "19:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5286,
+      "AfgivneStemmer": 3138,
+      "Tidspunkt": "20:05:00"
+    }
+  ]
+}

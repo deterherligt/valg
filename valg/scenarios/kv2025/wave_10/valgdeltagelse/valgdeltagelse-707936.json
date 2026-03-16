@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:58",
+  "Kommune": "Fredericia",
+  "Kommunekode": 607,
+  "Afstemningsområde": "Gymnasiet 1",
+  "AfstemningsområdeDagiId": "707936",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5914,
+      "AfgivneStemmer": 1186,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5914,
+      "AfgivneStemmer": 2932,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5914,
+      "AfgivneStemmer": 3448,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

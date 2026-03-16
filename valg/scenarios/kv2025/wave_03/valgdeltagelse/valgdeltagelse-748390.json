@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:18",
+  "Kommune": "Frederikshavn",
+  "Kommunekode": 813,
+  "Afstemningsområde": "Ravnshøj",
+  "AfstemningsområdeDagiId": "748390",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1365,
+      "AfgivneStemmer": 67,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1365,
+      "AfgivneStemmer": 119,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1365,
+      "AfgivneStemmer": 272,
+      "Tidspunkt": "12:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1365,
+      "AfgivneStemmer": 357,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1365,
+      "AfgivneStemmer": 542,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1365,
+      "AfgivneStemmer": 807,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1365,
+      "AfgivneStemmer": 928,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

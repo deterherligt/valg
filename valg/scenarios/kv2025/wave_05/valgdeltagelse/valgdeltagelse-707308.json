@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:16:55",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Ubberud Kultur og Bevægelseshus",
+  "AfstemningsområdeDagiId": "707308",
+  "AfstemningsområdeNummer": 21,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2405,
+      "AfgivneStemmer": 410,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2405,
+      "AfgivneStemmer": 1168,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2405,
+      "AfgivneStemmer": 1681,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

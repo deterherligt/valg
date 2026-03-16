@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:43:28",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Sorring",
+  "AfstemningsområdeDagiId": "702058",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1337,
+      "AfgivneStemmer": 182,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1337,
+      "AfgivneStemmer": 290,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1337,
+      "AfgivneStemmer": 512,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1337,
+      "AfgivneStemmer": 992,
+      "Tidspunkt": "20:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1337,
+      "AfgivneStemmer": 1017,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

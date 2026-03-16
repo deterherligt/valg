@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:42",
+  "Kommune": "Holbæk",
+  "Kommunekode": 316,
+  "Afstemningsområde": "Vipperød",
+  "AfstemningsområdeDagiId": "705924",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3784,
+      "AfgivneStemmer": 526,
+      "Tidspunkt": "10:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3784,
+      "AfgivneStemmer": 1284,
+      "Tidspunkt": "14:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3784,
+      "AfgivneStemmer": 2216,
+      "Tidspunkt": "17:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3784,
+      "AfgivneStemmer": 2806,
+      "Tidspunkt": "20:10:00"
+    }
+  ]
+}

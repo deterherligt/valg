@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:14",
+  "Kommune": "Norddjurs",
+  "Kommunekode": 707,
+  "Afstemningsområde": "Kulturhuset Stationen",
+  "AfstemningsområdeDagiId": "709066",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1977,
+      "AfgivneStemmer": 237,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1977,
+      "AfgivneStemmer": 465,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1977,
+      "AfgivneStemmer": 721,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1977,
+      "AfgivneStemmer": 1176,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1977,
+      "AfgivneStemmer": 1355,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

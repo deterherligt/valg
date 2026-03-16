@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:16:12",
+  "Kommune": "Tønder",
+  "Kommunekode": 550,
+  "Afstemningsområde": "Hostrup",
+  "AfstemningsområdeDagiId": "707840",
+  "AfstemningsområdeNummer": 29,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 760,
+      "AfgivneStemmer": 62,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 760,
+      "AfgivneStemmer": 171,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 760,
+      "AfgivneStemmer": 264,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 760,
+      "AfgivneStemmer": 428,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

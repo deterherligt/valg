@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:27",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Felsted",
+  "AfstemningsområdeDagiId": "708358",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1733,
+      "AfgivneStemmer": 183,
+      "Tidspunkt": "09:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1733,
+      "AfgivneStemmer": 326,
+      "Tidspunkt": "11:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1733,
+      "AfgivneStemmer": 460,
+      "Tidspunkt": "13:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1733,
+      "AfgivneStemmer": 668,
+      "Tidspunkt": "15:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1733,
+      "AfgivneStemmer": 1003,
+      "Tidspunkt": "17:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1733,
+      "AfgivneStemmer": 1190,
+      "Tidspunkt": "19:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1733,
+      "AfgivneStemmer": 1193,
+      "Tidspunkt": "20:02:00"
+    }
+  ]
+}

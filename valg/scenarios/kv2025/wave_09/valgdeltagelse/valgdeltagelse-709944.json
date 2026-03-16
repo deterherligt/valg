@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:57",
+  "Kommune": "Ishøj",
+  "Kommunekode": 183,
+  "Afstemningsområde": "Ishøj Bycenter",
+  "AfstemningsområdeDagiId": "709944",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 498,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 621,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 819,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 1013,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 1159,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 1315,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 1502,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 1705,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 1985,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 2268,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 2461,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4189,
+      "AfgivneStemmer": 2603,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

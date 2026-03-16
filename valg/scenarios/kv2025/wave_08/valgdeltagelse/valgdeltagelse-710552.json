@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:09:57",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Hals Skole",
+  "AfstemningsområdeDagiId": "710552",
+  "AfstemningsområdeNummer": 44,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3903,
+      "AfgivneStemmer": 1084,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3903,
+      "AfgivneStemmer": 2529,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

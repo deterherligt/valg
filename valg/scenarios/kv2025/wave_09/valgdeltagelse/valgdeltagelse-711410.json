@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:48:13",
+  "Kommune": "Sorø",
+  "Kommunekode": 340,
+  "Afstemningsområde": "Frederiksberg",
+  "AfstemningsområdeDagiId": "711410",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4229,
+      "AfgivneStemmer": 1118,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4228,
+      "AfgivneStemmer": 2091,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4228,
+      "AfgivneStemmer": 3493,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

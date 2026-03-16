@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:55",
+  "Kommune": "Lyngby-Taarbæk",
+  "Kommunekode": 173,
+  "Afstemningsområde": "Engelsborg",
+  "AfstemningsområdeDagiId": "706998",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 644,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 844,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 1046,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 1303,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 1529,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 1746,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 2000,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 2317,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 2781,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 3302,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 3855,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5496,
+      "AfgivneStemmer": 4171,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

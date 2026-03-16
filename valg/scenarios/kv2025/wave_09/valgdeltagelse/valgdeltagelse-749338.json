@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:22:25",
+  "Kommune": "Greve",
+  "Kommunekode": 253,
+  "Afstemningsområde": "Holmeagerskolen",
+  "AfstemningsområdeDagiId": "749338",
+  "AfstemningsområdeNummer": 6,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4201,
+      "AfgivneStemmer": 473,
+      "Tidspunkt": "09:09:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4201,
+      "AfgivneStemmer": 1188,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4201,
+      "AfgivneStemmer": 2161,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4201,
+      "AfgivneStemmer": 2914,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

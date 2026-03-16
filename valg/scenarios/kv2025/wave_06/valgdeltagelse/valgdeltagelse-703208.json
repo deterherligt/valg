@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:39",
+  "Kommune": "Bornholm",
+  "Kommunekode": 400,
+  "Afstemningsområde": "Allinge",
+  "AfstemningsområdeDagiId": "703208",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2590,
+      "AfgivneStemmer": 618,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2590,
+      "AfgivneStemmer": 1659,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2590,
+      "AfgivneStemmer": 1927,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

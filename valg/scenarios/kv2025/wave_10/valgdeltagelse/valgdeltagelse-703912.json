@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:31:11",
+  "Kommune": "Køge",
+  "Kommunekode": 259,
+  "Afstemningsområde": "Borup",
+  "AfstemningsområdeDagiId": "703912",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5238,
+      "AfgivneStemmer": 916,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5238,
+      "AfgivneStemmer": 2231,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5238,
+      "AfgivneStemmer": 3821,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

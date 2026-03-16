@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:20:40",
+  "Kommune": "Greve",
+  "Kommunekode": 253,
+  "Afstemningsområde": "Karlslundehallerne",
+  "AfstemningsområdeDagiId": "718922",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7437,
+      "AfgivneStemmer": 768,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7437,
+      "AfgivneStemmer": 1887,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7437,
+      "AfgivneStemmer": 2203,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7437,
+      "AfgivneStemmer": 3768,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7437,
+      "AfgivneStemmer": 5436,
+      "Tidspunkt": "20:08:00"
+    }
+  ]
+}

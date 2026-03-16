@@ -295,3 +295,64 @@ def test_api_candidate_feed_shape_after_multiple_snapshots(tmp_path):
             assert "district" in item
             assert "delta" in item
             assert item["delta"] > 0
+
+
+def test_demo_state_not_enabled(client):
+    """Without demo_runner, /demo/state returns 404."""
+    resp = client.get("/demo/state")
+    assert resp.status_code == 404
+
+
+def test_demo_control_not_enabled(client):
+    resp = client.post("/demo/control", json={"action": "pause"})
+    assert resp.status_code == 404
+
+
+def test_demo_state_enabled(tmp_path):
+    from valg.demo import DemoRunner
+    runner = DemoRunner()
+    app = create_app(
+        db_path=tmp_path / "v.db",
+        data_dir=tmp_path / "data",
+        demo_runner=runner,
+        data_repo=tmp_path / "repo",
+    )
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        resp = c.get("/demo/state")
+        assert resp.status_code == 200
+        data = json.loads(resp.data)
+        assert data["enabled"] is True
+        assert data["state"] == "idle"
+        assert "Election Night" in data["scenarios"]
+
+
+def test_demo_control_set_speed(tmp_path):
+    from valg.demo import DemoRunner
+    runner = DemoRunner()
+    app = create_app(
+        db_path=tmp_path / "v.db",
+        data_dir=tmp_path / "data",
+        demo_runner=runner,
+        data_repo=tmp_path / "repo",
+    )
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        resp = c.post("/demo/control", json={"action": "set_speed", "speed": 5.0})
+        assert resp.status_code == 200
+        assert runner.speed == 5.0
+
+
+def test_demo_control_unknown_action(tmp_path):
+    from valg.demo import DemoRunner
+    runner = DemoRunner()
+    app = create_app(
+        db_path=tmp_path / "v.db",
+        data_dir=tmp_path / "data",
+        demo_runner=runner,
+        data_repo=tmp_path / "repo",
+    )
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        resp = c.post("/demo/control", json={"action": "explode"})
+        assert resp.status_code == 400

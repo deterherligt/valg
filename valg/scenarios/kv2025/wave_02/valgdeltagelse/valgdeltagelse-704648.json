@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:09",
+  "Kommune": "Varde",
+  "Kommunekode": 573,
+  "Afstemningsområde": "Starup",
+  "AfstemningsområdeDagiId": "704648",
+  "AfstemningsområdeNummer": 27,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 868,
+      "AfgivneStemmer": 125,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 868,
+      "AfgivneStemmer": 240,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 868,
+      "AfgivneStemmer": 501,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 868,
+      "AfgivneStemmer": 569,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

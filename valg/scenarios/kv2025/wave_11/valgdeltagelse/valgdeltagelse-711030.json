@@ -1,0 +1,62 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:18:55",
+  "Kommune": "Frederiksberg",
+  "Kommunekode": 147,
+  "Afstemningsområde": "10. Kreds, Duevej",
+  "AfstemningsområdeDagiId": "711030",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 12031,
+      "AfgivneStemmer": 2548,
+      "Tidspunkt": "11:05:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12031,
+      "AfgivneStemmer": 2990,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12031,
+      "AfgivneStemmer": 3446,
+      "Tidspunkt": "13:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12031,
+      "AfgivneStemmer": 3892,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12031,
+      "AfgivneStemmer": 4393,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12031,
+      "AfgivneStemmer": 5354,
+      "Tidspunkt": "16:10:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12031,
+      "AfgivneStemmer": 6132,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12031,
+      "AfgivneStemmer": 7097,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12031,
+      "AfgivneStemmer": 8056,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 12031,
+      "AfgivneStemmer": 8978,
+      "Tidspunkt": "20:10:00"
+    }
+  ]
+}

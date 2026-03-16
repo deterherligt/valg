@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:24",
+  "Kommune": "Ringkøbing-Skjern",
+  "Kommunekode": 760,
+  "Afstemningsområde": "Troldhede",
+  "AfstemningsområdeDagiId": "707950",
+  "AfstemningsområdeNummer": 32,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 41,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 63,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 96,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 134,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 162,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 200,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 248,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 295,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 421,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 522,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 593,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1044,
+      "AfgivneStemmer": 631,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

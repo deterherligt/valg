@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:40:14",
+  "Kommune": "Hedensted",
+  "Kommunekode": 766,
+  "Afstemningsområde": "Hjortsvang",
+  "AfstemningsområdeDagiId": "749378",
+  "AfstemningsområdeNummer": 25,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 383,
+      "AfgivneStemmer": 20,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 383,
+      "AfgivneStemmer": 60,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 383,
+      "AfgivneStemmer": 169,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 383,
+      "AfgivneStemmer": 263,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

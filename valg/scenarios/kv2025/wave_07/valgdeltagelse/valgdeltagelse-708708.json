@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:57",
+  "Kommune": "Rudersdal",
+  "Kommunekode": 230,
+  "Afstemningsområde": "Vangebo",
+  "AfstemningsområdeDagiId": "708708",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 321,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 484,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 599,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 756,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 896,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 1023,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 1170,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 1320,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 1534,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 1767,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 2040,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 2332,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3128,
+      "AfgivneStemmer": 2533,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

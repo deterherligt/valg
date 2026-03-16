@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:09:01",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Nibe Hallen",
+  "AfstemningsområdeDagiId": "705942",
+  "AfstemningsområdeNummer": 47,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5492,
+      "AfgivneStemmer": 1245,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5492,
+      "AfgivneStemmer": 3440,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

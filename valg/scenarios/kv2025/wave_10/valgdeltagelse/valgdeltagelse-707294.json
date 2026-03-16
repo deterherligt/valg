@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:44",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Ejerslykkeskolen",
+  "AfstemningsområdeDagiId": "707294",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6762,
+      "AfgivneStemmer": 1064,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6762,
+      "AfgivneStemmer": 2924,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6762,
+      "AfgivneStemmer": 3973,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:00",
+  "Kommune": "Halsnæs",
+  "Kommunekode": 260,
+  "Afstemningsområde": "Melby",
+  "AfstemningsområdeDagiId": "704906",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 340,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 464,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 682,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 847,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 1005,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 1145,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 1317,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 1547,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 1793,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 2079,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 2275,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3357,
+      "AfgivneStemmer": 2397,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

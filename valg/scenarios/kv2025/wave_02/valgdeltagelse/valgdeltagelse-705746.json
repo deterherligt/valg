@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:41",
+  "Kommune": "Helsingør",
+  "Kommunekode": 217,
+  "Afstemningsområde": "Kvistgård Idrætsanlæg",
+  "AfstemningsområdeDagiId": "705746",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 978,
+      "AfgivneStemmer": 110,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 978,
+      "AfgivneStemmer": 172,
+      "Tidspunkt": "11:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 978,
+      "AfgivneStemmer": 331,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 978,
+      "AfgivneStemmer": 509,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 978,
+      "AfgivneStemmer": 612,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

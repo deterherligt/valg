@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:00:38",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Bolderslev",
+  "AfstemningsområdeDagiId": "708364",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1699,
+      "AfgivneStemmer": 172,
+      "Tidspunkt": "09:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1699,
+      "AfgivneStemmer": 305,
+      "Tidspunkt": "11:57:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1699,
+      "AfgivneStemmer": 419,
+      "Tidspunkt": "13:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1699,
+      "AfgivneStemmer": 606,
+      "Tidspunkt": "15:57:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1699,
+      "AfgivneStemmer": 895,
+      "Tidspunkt": "17:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1699,
+      "AfgivneStemmer": 1055,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

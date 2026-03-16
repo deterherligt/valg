@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:45",
+  "Kommune": "Ringkøbing-Skjern",
+  "Kommunekode": 760,
+  "Afstemningsområde": "Stauning",
+  "AfstemningsområdeDagiId": "709682",
+  "AfstemningsområdeNummer": 28,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 83,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 121,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 156,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 198,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 238,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 277,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 320,
+      "Tidspunkt": "15:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 396,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 506,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 591,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 644,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 897,
+      "AfgivneStemmer": 682,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

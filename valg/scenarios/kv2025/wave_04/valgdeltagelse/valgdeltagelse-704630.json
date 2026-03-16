@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:30",
+  "Kommune": "Langeland",
+  "Kommunekode": 482,
+  "Afstemningsområde": "Humble",
+  "AfstemningsområdeDagiId": "704630",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1897,
+      "AfgivneStemmer": 71,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1897,
+      "AfgivneStemmer": 470,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1897,
+      "AfgivneStemmer": 791,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1897,
+      "AfgivneStemmer": 1103,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1897,
+      "AfgivneStemmer": 1356,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

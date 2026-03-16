@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:55",
+  "Kommune": "Langeland",
+  "Kommunekode": 482,
+  "Afstemningsområde": "Snøde",
+  "AfstemningsområdeDagiId": "748510",
+  "AfstemningsområdeNummer": 11,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1240,
+      "AfgivneStemmer": 68,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1240,
+      "AfgivneStemmer": 381,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1240,
+      "AfgivneStemmer": 590,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1240,
+      "AfgivneStemmer": 750,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1240,
+      "AfgivneStemmer": 904,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

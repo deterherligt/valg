@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:43:43",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Linå",
+  "AfstemningsområdeDagiId": "711272",
+  "AfstemningsområdeNummer": 10,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 0,
+      "AfgivneStemmer": 0,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1201,
+      "AfgivneStemmer": 176,
+      "Tidspunkt": "11:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1201,
+      "AfgivneStemmer": 275,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1201,
+      "AfgivneStemmer": 497,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1201,
+      "AfgivneStemmer": 896,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

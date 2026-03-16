@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:13",
+  "Kommune": "Allerød",
+  "Kommunekode": 201,
+  "Afstemningsområde": "Lillerød",
+  "AfstemningsområdeDagiId": "706698",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 544,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 700,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 858,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 1074,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 1309,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 1519,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 1710,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 1965,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 2230,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 2642,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 3112,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 3469,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4422,
+      "AfgivneStemmer": 3679,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:15:13",
+  "Kommune": "Tønder",
+  "Kommunekode": 550,
+  "Afstemningsområde": "Toftlund",
+  "AfstemningsområdeDagiId": "701800",
+  "AfstemningsområdeNummer": 23,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3214,
+      "AfgivneStemmer": 246,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3214,
+      "AfgivneStemmer": 812,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3214,
+      "AfgivneStemmer": 1233,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3214,
+      "AfgivneStemmer": 1979,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

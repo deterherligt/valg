@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:58:16",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "1. Nordhavn",
+  "AfstemningsområdeDagiId": "749398",
+  "AfstemningsområdeNummer": 60,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9286,
+      "AfgivneStemmer": 2059,
+      "Tidspunkt": "12:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9286,
+      "AfgivneStemmer": 3537,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9286,
+      "AfgivneStemmer": 5052,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9286,
+      "AfgivneStemmer": 6490,
+      "Tidspunkt": "20:12:00"
+    }
+  ]
+}

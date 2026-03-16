@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:21:17",
+  "Kommune": "Hjørring",
+  "Kommunekode": 860,
+  "Afstemningsområde": "Løkken",
+  "AfstemningsområdeDagiId": "702848",
+  "AfstemningsområdeNummer": 21,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2435,
+      "AfgivneStemmer": 196,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2435,
+      "AfgivneStemmer": 528,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2435,
+      "AfgivneStemmer": 800,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2435,
+      "AfgivneStemmer": 1003,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2435,
+      "AfgivneStemmer": 1466,
+      "Tidspunkt": "17:14:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2435,
+      "AfgivneStemmer": 1701,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

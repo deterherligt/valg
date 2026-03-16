@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:38:57",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Skjoldhøjskolen, Tilst",
+  "AfstemningsområdeDagiId": "710040",
+  "AfstemningsområdeNummer": 26,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4863,
+      "AfgivneStemmer": 321,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4863,
+      "AfgivneStemmer": 976,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4863,
+      "AfgivneStemmer": 1559,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4863,
+      "AfgivneStemmer": 2619,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4863,
+      "AfgivneStemmer": 3078,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

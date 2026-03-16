@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:41",
+  "Kommune": "Nordfyns",
+  "Kommunekode": 480,
+  "Afstemningsområde": "Hårslev",
+  "AfstemningsområdeDagiId": "748635",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1070,
+      "AfgivneStemmer": 177,
+      "Tidspunkt": "10:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1070,
+      "AfgivneStemmer": 496,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1070,
+      "AfgivneStemmer": 686,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

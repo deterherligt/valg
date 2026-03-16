@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:52:44",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Katrinebjergskolen, Aarhus N",
+  "AfstemningsområdeDagiId": "703918",
+  "AfstemningsområdeNummer": 67,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7499,
+      "AfgivneStemmer": 638,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7499,
+      "AfgivneStemmer": 1411,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7499,
+      "AfgivneStemmer": 2333,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7499,
+      "AfgivneStemmer": 4338,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7499,
+      "AfgivneStemmer": 5270,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

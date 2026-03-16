@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:54:15",
+  "Kommune": "Sorø",
+  "Kommunekode": 340,
+  "Afstemningsområde": "Pedersborg",
+  "AfstemningsområdeDagiId": "700914",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3446,
+      "AfgivneStemmer": 767,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3446,
+      "AfgivneStemmer": 1467,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3446,
+      "AfgivneStemmer": 2480,
+      "Tidspunkt": "20:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3446,
+      "AfgivneStemmer": 2480,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

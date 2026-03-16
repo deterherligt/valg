@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:41",
+  "Kommune": "Høje-Taastrup",
+  "Kommunekode": 169,
+  "Afstemningsområde": "Taastrup Kulturcenter",
+  "AfstemningsområdeDagiId": "703720",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4502,
+      "AfgivneStemmer": 435,
+      "Tidspunkt": "09:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4502,
+      "AfgivneStemmer": 810,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4502,
+      "AfgivneStemmer": 1482,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4502,
+      "AfgivneStemmer": 2038,
+      "Tidspunkt": "16:12:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4502,
+      "AfgivneStemmer": 2780,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4502,
+      "AfgivneStemmer": 3299,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

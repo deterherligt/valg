@@ -1,0 +1,43 @@
+{
+  "Valg": {
+    "OpstillingskredsId": "403584",
+    "Partier": [
+      {
+        "PartiId": "M",
+        "Stemmer": 28
+      },
+      {
+        "PartiId": "O",
+        "Stemmer": 149
+      },
+      {
+        "PartiId": "I",
+        "Stemmer": 104
+      },
+      {
+        "PartiId": "B",
+        "Stemmer": 41
+      },
+      {
+        "PartiId": "V",
+        "Stemmer": 668
+      },
+      {
+        "PartiId": "A",
+        "Stemmer": 508
+      },
+      {
+        "PartiId": "Ø",
+        "Stemmer": 63
+      },
+      {
+        "PartiId": "C",
+        "Stemmer": 355
+      },
+      {
+        "PartiId": "F",
+        "Stemmer": 136
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:07:43",
+  "Kommune": "Langeland",
+  "Kommunekode": 482,
+  "Afstemningsområde": "Rudkøbing",
+  "AfstemningsområdeDagiId": "704594",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4813,
+      "AfgivneStemmer": 352,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4813,
+      "AfgivneStemmer": 1471,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4813,
+      "AfgivneStemmer": 2224,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4813,
+      "AfgivneStemmer": 2928,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4813,
+      "AfgivneStemmer": 3605,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

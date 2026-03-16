@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:29",
+  "Kommune": "Allerød",
+  "Kommunekode": 201,
+  "Afstemningsområde": "Ravnsholt",
+  "AfstemningsområdeDagiId": "705398",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 489,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 700,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 894,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 1099,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 1302,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 1470,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 1656,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 1878,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 2165,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 2622,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 3126,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 3528,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4500,
+      "AfgivneStemmer": 3841,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

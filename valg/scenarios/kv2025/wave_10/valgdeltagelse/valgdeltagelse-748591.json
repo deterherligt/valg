@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:29",
+  "Kommune": "Høje-Taastrup",
+  "Kommunekode": 169,
+  "Afstemningsområde": "Springcenter Nærheden",
+  "AfstemningsområdeDagiId": "748591",
+  "AfstemningsområdeNummer": 14,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5652,
+      "AfgivneStemmer": 435,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5652,
+      "AfgivneStemmer": 711,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5652,
+      "AfgivneStemmer": 1231,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5652,
+      "AfgivneStemmer": 1714,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5652,
+      "AfgivneStemmer": 2593,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5652,
+      "AfgivneStemmer": 3155,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

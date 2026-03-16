@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:13",
+  "Kommune": "Lyngby-Taarbæk",
+  "Kommunekode": 173,
+  "Afstemningsområde": "Trongård",
+  "AfstemningsområdeDagiId": "704030",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5785,
+      "AfgivneStemmer": 191,
+      "Tidspunkt": "08:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5785,
+      "AfgivneStemmer": 545,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5785,
+      "AfgivneStemmer": 713,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5786,
+      "AfgivneStemmer": 952,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5786,
+      "AfgivneStemmer": 1197,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5786,
+      "AfgivneStemmer": 1413,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5786,
+      "AfgivneStemmer": 1638,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5786,
+      "AfgivneStemmer": 1875,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5786,
+      "AfgivneStemmer": 2181,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5786,
+      "AfgivneStemmer": 2536,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5786,
+      "AfgivneStemmer": 2935,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5786,
+      "AfgivneStemmer": 3369,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5786,
+      "AfgivneStemmer": 3785,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

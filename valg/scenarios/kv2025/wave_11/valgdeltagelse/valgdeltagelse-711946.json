@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:15:56",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "7. Vest",
+  "AfstemningsområdeDagiId": "711946",
+  "AfstemningsområdeNummer": 35,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8085,
+      "AfgivneStemmer": 1472,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8085,
+      "AfgivneStemmer": 2630,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8085,
+      "AfgivneStemmer": 3621,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8085,
+      "AfgivneStemmer": 4426,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

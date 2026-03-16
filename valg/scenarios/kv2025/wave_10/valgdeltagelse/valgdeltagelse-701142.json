@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:38:29",
+  "Kommune": "Rudersdal",
+  "Kommunekode": 230,
+  "Afstemningsområde": "Vedbæk",
+  "AfstemningsområdeDagiId": "701142",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 514,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 795,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 1011,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 1302,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 1688,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 1996,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 2297,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 2584,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 2932,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 3405,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 3923,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 4447,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6193,
+      "AfgivneStemmer": 4837,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

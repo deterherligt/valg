@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:55",
+  "Kommune": "Struer",
+  "Kommunekode": 671,
+  "Afstemningsområde": "Humlum",
+  "AfstemningsområdeDagiId": "700832",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1383,
+      "AfgivneStemmer": 270,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1383,
+      "AfgivneStemmer": 693,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1383,
+      "AfgivneStemmer": 938,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1383,
+      "AfgivneStemmer": 1063,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

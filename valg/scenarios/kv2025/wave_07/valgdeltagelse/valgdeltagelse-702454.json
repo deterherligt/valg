@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:01:17",
+  "Kommune": "Morsø",
+  "Kommunekode": 773,
+  "Afstemningsområde": "Midtmors",
+  "AfstemningsområdeDagiId": "702454",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3299,
+      "AfgivneStemmer": 463,
+      "Tidspunkt": "11:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3299,
+      "AfgivneStemmer": 1016,
+      "Tidspunkt": "13:34:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3299,
+      "AfgivneStemmer": 1874,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

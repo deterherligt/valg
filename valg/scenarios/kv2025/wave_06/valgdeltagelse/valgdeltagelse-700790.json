@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:16:40",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Them",
+  "AfstemningsområdeDagiId": "700790",
+  "AfstemningsområdeNummer": 30,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3000,
+      "AfgivneStemmer": 467,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3000,
+      "AfgivneStemmer": 726,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2999,
+      "AfgivneStemmer": 1204,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2999,
+      "AfgivneStemmer": 2196,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

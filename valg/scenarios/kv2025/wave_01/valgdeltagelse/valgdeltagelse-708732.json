@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 18:08:00",
+  "Kommune": "Gribskov",
+  "Kommunekode": 270,
+  "Afstemningsområde": "Valby",
+  "AfstemningsområdeDagiId": "708732",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 434,
+      "AfgivneStemmer": 33,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 434,
+      "AfgivneStemmer": 83,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 434,
+      "AfgivneStemmer": 141,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 434,
+      "AfgivneStemmer": 308,
+      "Tidspunkt": "19:00:00"
+    }
+  ]
+}

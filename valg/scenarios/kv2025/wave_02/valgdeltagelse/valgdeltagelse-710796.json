@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:01:25",
+  "Kommune": "Assens",
+  "Kommunekode": 420,
+  "Afstemningsområde": "Orte/Ørsted",
+  "AfstemningsområdeDagiId": "710796",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 998,
+      "AfgivneStemmer": 77,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 998,
+      "AfgivneStemmer": 165,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 998,
+      "AfgivneStemmer": 254,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 998,
+      "AfgivneStemmer": 525,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 998,
+      "AfgivneStemmer": 712,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 998,
+      "AfgivneStemmer": 749,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

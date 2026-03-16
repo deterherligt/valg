@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:12:11",
+  "Kommune": "Holbæk",
+  "Kommunekode": 316,
+  "Afstemningsområde": "Orø",
+  "AfstemningsområdeDagiId": "707528",
+  "AfstemningsområdeNummer": 15,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 867,
+      "AfgivneStemmer": 133,
+      "Tidspunkt": "10:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 867,
+      "AfgivneStemmer": 421,
+      "Tidspunkt": "15:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 867,
+      "AfgivneStemmer": 614,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 867,
+      "AfgivneStemmer": 679,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

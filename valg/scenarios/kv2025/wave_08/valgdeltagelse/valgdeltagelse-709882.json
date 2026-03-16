@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:16",
+  "Kommune": "Hvidovre",
+  "Kommunekode": 167,
+  "Afstemningsområde": "Præstemoseskolen",
+  "AfstemningsområdeDagiId": "709882",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3529,
+      "AfgivneStemmer": 518,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3529,
+      "AfgivneStemmer": 773,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3529,
+      "AfgivneStemmer": 1054,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3529,
+      "AfgivneStemmer": 1532,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3529,
+      "AfgivneStemmer": 1862,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3529,
+      "AfgivneStemmer": 2115,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3529,
+      "AfgivneStemmer": 2256,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

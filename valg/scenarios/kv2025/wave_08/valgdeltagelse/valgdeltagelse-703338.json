@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:09:54",
+  "Kommune": "Holstebro",
+  "Kommunekode": 661,
+  "Afstemningsområde": "Mejrup",
+  "AfstemningsområdeDagiId": "703338",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3980,
+      "AfgivneStemmer": 753,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3980,
+      "AfgivneStemmer": 1745,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3980,
+      "AfgivneStemmer": 2674,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3980,
+      "AfgivneStemmer": 3236,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

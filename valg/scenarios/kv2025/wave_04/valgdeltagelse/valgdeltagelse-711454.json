@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:14:12",
+  "Kommune": "Brønderslev",
+  "Kommunekode": 810,
+  "Afstemningsområde": "Jerslev",
+  "AfstemningsområdeDagiId": "711454",
+  "AfstemningsområdeNummer": 70,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1833,
+      "AfgivneStemmer": 53,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1833,
+      "AfgivneStemmer": 303,
+      "Tidspunkt": "12:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1833,
+      "AfgivneStemmer": 615,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1833,
+      "AfgivneStemmer": 1011,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

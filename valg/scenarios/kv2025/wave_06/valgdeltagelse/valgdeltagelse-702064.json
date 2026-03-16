@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:03:28",
+  "Kommune": "Glostrup",
+  "Kommunekode": 161,
+  "Afstemningsområde": "Nordvanghallen",
+  "AfstemningsområdeDagiId": "702064",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2606,
+      "AfgivneStemmer": 574,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2606,
+      "AfgivneStemmer": 864,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2606,
+      "AfgivneStemmer": 1589,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2606,
+      "AfgivneStemmer": 1820,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2606,
+      "AfgivneStemmer": 1992,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

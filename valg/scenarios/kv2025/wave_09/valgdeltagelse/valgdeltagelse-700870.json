@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:31",
+  "Kommune": "Ishøj",
+  "Kommunekode": 183,
+  "Afstemningsområde": "Gildbroskolen",
+  "AfstemningsområdeDagiId": "700870",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 453,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 533,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 659,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 811,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 956,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 1099,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 1283,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 1500,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 1806,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 2111,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 2339,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4546,
+      "AfgivneStemmer": 2473,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

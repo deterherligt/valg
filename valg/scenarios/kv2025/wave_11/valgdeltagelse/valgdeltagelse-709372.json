@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:28",
+  "Kommune": "Holstebro",
+  "Kommunekode": 661,
+  "Afstemningsområde": "Musikteatret",
+  "AfstemningsområdeDagiId": "709372",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 14819,
+      "AfgivneStemmer": 2600,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 14819,
+      "AfgivneStemmer": 6326,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 14819,
+      "AfgivneStemmer": 8892,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 14819,
+      "AfgivneStemmer": 10466,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

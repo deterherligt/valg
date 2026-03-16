@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:59:16",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Folkestedet, Aarhus C",
+  "AfstemningsområdeDagiId": "748350",
+  "AfstemningsområdeNummer": 20,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8210,
+      "AfgivneStemmer": 880,
+      "Tidspunkt": "09:38:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8210,
+      "AfgivneStemmer": 1579,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8210,
+      "AfgivneStemmer": 2677,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8210,
+      "AfgivneStemmer": 4271,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8210,
+      "AfgivneStemmer": 5355,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

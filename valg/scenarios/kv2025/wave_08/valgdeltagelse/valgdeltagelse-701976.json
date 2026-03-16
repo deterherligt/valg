@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:36:27",
+  "Kommune": "Aabenraa",
+  "Kommunekode": 580,
+  "Afstemningsområde": "Løjt",
+  "AfstemningsområdeDagiId": "701976",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3535,
+      "AfgivneStemmer": 473,
+      "Tidspunkt": "09:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3535,
+      "AfgivneStemmer": 847,
+      "Tidspunkt": "11:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3535,
+      "AfgivneStemmer": 1177,
+      "Tidspunkt": "13:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3535,
+      "AfgivneStemmer": 1571,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3535,
+      "AfgivneStemmer": 2275,
+      "Tidspunkt": "17:59:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3535,
+      "AfgivneStemmer": 2678,
+      "Tidspunkt": "19:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3535,
+      "AfgivneStemmer": 2683,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:13:40",
+  "Kommune": "Svendborg",
+  "Kommunekode": 479,
+  "Afstemningsområde": "Bjerreby",
+  "AfstemningsområdeDagiId": "748110",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 870,
+      "AfgivneStemmer": 74,
+      "Tidspunkt": "09:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 870,
+      "AfgivneStemmer": 140,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 870,
+      "AfgivneStemmer": 206,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 870,
+      "AfgivneStemmer": 280,
+      "Tidspunkt": "14:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 870,
+      "AfgivneStemmer": 454,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 870,
+      "AfgivneStemmer": 640,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 870,
+      "AfgivneStemmer": 668,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

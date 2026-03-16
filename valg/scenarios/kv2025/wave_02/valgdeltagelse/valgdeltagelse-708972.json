@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:02:41",
+  "Kommune": "Varde",
+  "Kommunekode": 573,
+  "Afstemningsområde": "Blåvand",
+  "AfstemningsområdeDagiId": "708972",
+  "AfstemningsområdeNummer": 19,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 508,
+      "AfgivneStemmer": 84,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 508,
+      "AfgivneStemmer": 195,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 508,
+      "AfgivneStemmer": 303,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 508,
+      "AfgivneStemmer": 322,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

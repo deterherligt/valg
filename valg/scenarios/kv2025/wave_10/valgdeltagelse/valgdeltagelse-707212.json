@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:10:25",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Huset Tværs",
+  "AfstemningsområdeDagiId": "707212",
+  "AfstemningsområdeNummer": 24,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5032,
+      "AfgivneStemmer": 575,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5033,
+      "AfgivneStemmer": 575,
+      "Tidspunkt": "09:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5033,
+      "AfgivneStemmer": 743,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5033,
+      "AfgivneStemmer": 960,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5033,
+      "AfgivneStemmer": 1167,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5032,
+      "AfgivneStemmer": 1358,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5032,
+      "AfgivneStemmer": 1563,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5032,
+      "AfgivneStemmer": 1761,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5032,
+      "AfgivneStemmer": 1979,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5032,
+      "AfgivneStemmer": 2270,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5033,
+      "AfgivneStemmer": 2582,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5032,
+      "AfgivneStemmer": 2835,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5033,
+      "AfgivneStemmer": 3028,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

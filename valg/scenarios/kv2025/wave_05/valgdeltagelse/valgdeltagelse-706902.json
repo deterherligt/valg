@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:34:58",
+  "Kommune": "Ærø",
+  "Kommunekode": 492,
+  "Afstemningsområde": "Marstal",
+  "AfstemningsområdeDagiId": "706902",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2264,
+      "AfgivneStemmer": 921,
+      "Tidspunkt": "13:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2264,
+      "AfgivneStemmer": 1640,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

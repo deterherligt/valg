@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:01",
+  "Kommune": "Fredensborg",
+  "Kommunekode": 210,
+  "Afstemningsområde": "Karlebo",
+  "AfstemningsområdeDagiId": "700760",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 82,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 133,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 164,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 213,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 248,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 285,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 344,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 403,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 501,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 620,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 719,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1035,
+      "AfgivneStemmer": 769,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

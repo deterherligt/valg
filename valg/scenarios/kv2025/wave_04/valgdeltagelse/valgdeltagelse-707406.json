@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:08:12",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Idrætscentret Kongerslev",
+  "AfstemningsområdeDagiId": "707406",
+  "AfstemningsområdeNummer": 56,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1567,
+      "AfgivneStemmer": 285,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1567,
+      "AfgivneStemmer": 846,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

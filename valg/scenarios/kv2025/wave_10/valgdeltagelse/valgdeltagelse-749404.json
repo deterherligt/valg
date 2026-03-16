@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:17:27",
+  "Kommune": "København",
+  "Kommunekode": 101,
+  "Afstemningsområde": "3. Sølvgade",
+  "AfstemningsområdeDagiId": "749404",
+  "AfstemningsområdeNummer": 64,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6190,
+      "AfgivneStemmer": 1495,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6190,
+      "AfgivneStemmer": 2508,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6191,
+      "AfgivneStemmer": 3563,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6191,
+      "AfgivneStemmer": 4267,
+      "Tidspunkt": "20:08:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 16:01:01",
+  "Kommune": "Morsø",
+  "Kommunekode": 773,
+  "Afstemningsområde": "Nykøbing",
+  "AfstemningsområdeDagiId": "710282",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8000,
+      "AfgivneStemmer": 896,
+      "Tidspunkt": "09:20:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8000,
+      "AfgivneStemmer": 1652,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8000,
+      "AfgivneStemmer": 2727,
+      "Tidspunkt": "13:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8000,
+      "AfgivneStemmer": 4560,
+      "Tidspunkt": "17:00:00"
+    }
+  ]
+}

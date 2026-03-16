@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:37:27",
+  "Kommune": "Aarhus",
+  "Kommunekode": 751,
+  "Afstemningsområde": "Hasle Skole",
+  "AfstemningsområdeDagiId": "706860",
+  "AfstemningsområdeNummer": 23,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 7324,
+      "AfgivneStemmer": 737,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7324,
+      "AfgivneStemmer": 1380,
+      "Tidspunkt": "11:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7324,
+      "AfgivneStemmer": 2306,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7324,
+      "AfgivneStemmer": 4108,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 7324,
+      "AfgivneStemmer": 4877,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

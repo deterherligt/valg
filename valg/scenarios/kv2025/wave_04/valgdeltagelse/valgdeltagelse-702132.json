@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:19:10",
+  "Kommune": "Hedensted",
+  "Kommunekode": 766,
+  "Afstemningsområde": "Ø. Snede Sogn",
+  "AfstemningsområdeDagiId": "702132",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1660,
+      "AfgivneStemmer": 119,
+      "Tidspunkt": "09:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1660,
+      "AfgivneStemmer": 269,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1660,
+      "AfgivneStemmer": 755,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1660,
+      "AfgivneStemmer": 1153,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

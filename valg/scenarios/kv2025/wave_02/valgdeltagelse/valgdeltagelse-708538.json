@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:08:54",
+  "Kommune": "Vesthimmerlands",
+  "Kommunekode": 820,
+  "Afstemningsområde": "Strandby",
+  "AfstemningsområdeDagiId": "708538",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 637,
+      "AfgivneStemmer": 145,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 637,
+      "AfgivneStemmer": 383,
+      "Tidspunkt": "18:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 637,
+      "AfgivneStemmer": 443,
+      "Tidspunkt": "20:02:00"
+    }
+  ]
+}

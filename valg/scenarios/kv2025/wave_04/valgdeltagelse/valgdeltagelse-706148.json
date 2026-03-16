@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:14:25",
+  "Kommune": "Holstebro",
+  "Kommunekode": 661,
+  "Afstemningsområde": "Sevel",
+  "AfstemningsområdeDagiId": "706148",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1545,
+      "AfgivneStemmer": 257,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1545,
+      "AfgivneStemmer": 583,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1545,
+      "AfgivneStemmer": 932,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1545,
+      "AfgivneStemmer": 1115,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

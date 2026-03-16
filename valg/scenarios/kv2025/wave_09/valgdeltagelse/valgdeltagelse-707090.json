@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:22:56",
+  "Kommune": "Brøndby",
+  "Kommunekode": 153,
+  "Afstemningsområde": "Brøndbyvester Skole",
+  "AfstemningsområdeDagiId": "707090",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4035,
+      "AfgivneStemmer": 716,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4035,
+      "AfgivneStemmer": 1119,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4035,
+      "AfgivneStemmer": 2076,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4035,
+      "AfgivneStemmer": 2593,
+      "Tidspunkt": "20:01:00"
+    }
+  ]
+}

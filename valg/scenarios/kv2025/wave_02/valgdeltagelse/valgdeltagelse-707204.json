@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:26:41",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Uggelhuse Forsamlingshus",
+  "AfstemningsområdeDagiId": "707204",
+  "AfstemningsområdeNummer": 37,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 44,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 85,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 124,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 165,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 208,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 241,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 278,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 320,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 410,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 472,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 525,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 774,
+      "AfgivneStemmer": 556,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

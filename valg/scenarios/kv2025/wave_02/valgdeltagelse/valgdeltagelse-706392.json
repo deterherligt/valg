@@ -1,0 +1,37 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:39",
+  "Kommune": "Rebild",
+  "Kommunekode": 840,
+  "Afstemningsområde": "Ravnkilde",
+  "AfstemningsområdeDagiId": "706392",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 677,
+      "AfgivneStemmer": 78,
+      "Tidspunkt": "09:56:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 677,
+      "AfgivneStemmer": 133,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 677,
+      "AfgivneStemmer": 205,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 677,
+      "AfgivneStemmer": 405,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 677,
+      "AfgivneStemmer": 488,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

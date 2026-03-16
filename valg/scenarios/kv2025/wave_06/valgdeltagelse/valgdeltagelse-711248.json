@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:16:56",
+  "Kommune": "Allerød",
+  "Kommunekode": 201,
+  "Afstemningsområde": "Blovstrød",
+  "AfstemningsområdeDagiId": "711248",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 166,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 315,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 389,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 510,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 627,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 739,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 857,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 989,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 1160,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 1458,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 1756,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 2009,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2698,
+      "AfgivneStemmer": 2172,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

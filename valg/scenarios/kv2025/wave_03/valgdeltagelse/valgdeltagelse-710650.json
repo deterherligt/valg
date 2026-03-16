@@ -1,0 +1,57 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:09",
+  "Kommune": "Ringsted",
+  "Kommunekode": 329,
+  "Afstemningsområde": "Jystrup",
+  "AfstemningsområdeDagiId": "710650",
+  "AfstemningsområdeNummer": 8,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1259,
+      "AfgivneStemmer": 133,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1259,
+      "AfgivneStemmer": 297,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1259,
+      "AfgivneStemmer": 336,
+      "Tidspunkt": "12:30:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1259,
+      "AfgivneStemmer": 392,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1259,
+      "AfgivneStemmer": 600,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1259,
+      "AfgivneStemmer": 730,
+      "Tidspunkt": "17:10:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1259,
+      "AfgivneStemmer": 820,
+      "Tidspunkt": "17:55:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1259,
+      "AfgivneStemmer": 920,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1259,
+      "AfgivneStemmer": 968,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

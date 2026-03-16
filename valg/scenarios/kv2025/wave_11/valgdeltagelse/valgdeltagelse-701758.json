@@ -1,0 +1,62 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:14:16",
+  "Kommune": "Frederiksberg",
+  "Kommunekode": 147,
+  "Afstemningsområde": "10. Kreds, Søerne",
+  "AfstemningsområdeDagiId": "701758",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 9429,
+      "AfgivneStemmer": 2195,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9429,
+      "AfgivneStemmer": 2596,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9429,
+      "AfgivneStemmer": 3002,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9429,
+      "AfgivneStemmer": 3364,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9429,
+      "AfgivneStemmer": 3765,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9429,
+      "AfgivneStemmer": 4372,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9429,
+      "AfgivneStemmer": 5110,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9429,
+      "AfgivneStemmer": 5907,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9429,
+      "AfgivneStemmer": 6653,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 9429,
+      "AfgivneStemmer": 7356,
+      "Tidspunkt": "20:14:00"
+    }
+  ]
+}

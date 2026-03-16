@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:15:10",
+  "Kommune": "Odense",
+  "Kommunekode": 461,
+  "Afstemningsområde": "Højby Skole",
+  "AfstemningsområdeDagiId": "711704",
+  "AfstemningsområdeNummer": 33,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4194,
+      "AfgivneStemmer": 750,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4194,
+      "AfgivneStemmer": 2203,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4194,
+      "AfgivneStemmer": 3066,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

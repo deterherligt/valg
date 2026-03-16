@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:28",
+  "Kommune": "Halsnæs",
+  "Kommunekode": 260,
+  "Afstemningsområde": "Hundested",
+  "AfstemningsområdeDagiId": "704878",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 1062,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 1390,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 1817,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 2294,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 2690,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 3016,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 3407,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 3873,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 4490,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 5110,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 5657,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8012,
+      "AfgivneStemmer": 5941,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

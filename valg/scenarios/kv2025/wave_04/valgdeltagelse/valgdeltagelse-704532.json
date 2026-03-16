@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:05:39",
+  "Kommune": "Billund",
+  "Kommunekode": 530,
+  "Afstemningsområde": "Vorbasse",
+  "AfstemningsområdeDagiId": "704532",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 118,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 186,
+      "Tidspunkt": "10:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 284,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 343,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 405,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 463,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 533,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 669,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 814,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 963,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 1115,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1662,
+      "AfgivneStemmer": 1199,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

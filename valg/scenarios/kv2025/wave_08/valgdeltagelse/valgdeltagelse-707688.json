@@ -1,0 +1,77 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:29",
+  "Kommune": "Hørsholm",
+  "Kommunekode": 223,
+  "Afstemningsområde": "Rungsted",
+  "AfstemningsområdeDagiId": "707688",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 359,
+      "Tidspunkt": "08:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 521,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 637,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 821,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 1009,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 1166,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 1338,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 1515,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 1735,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 2006,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 2344,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 2708,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3584,
+      "AfgivneStemmer": 2951,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:12:01",
+  "Kommune": "Faxe",
+  "Kommunekode": 320,
+  "Afstemningsområde": "Karise",
+  "AfstemningsområdeDagiId": "710310",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3422,
+      "AfgivneStemmer": 2334,
+      "Tidspunkt": "20:28:00"
+    }
+  ]
+}

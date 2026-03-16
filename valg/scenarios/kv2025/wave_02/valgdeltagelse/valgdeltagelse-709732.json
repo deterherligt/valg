@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:32:57",
+  "Kommune": "Fredericia",
+  "Kommunekode": 607,
+  "Afstemningsområde": "Herslev",
+  "AfstemningsområdeDagiId": "709732",
+  "AfstemningsområdeNummer": 4,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 640,
+      "AfgivneStemmer": 101,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 640,
+      "AfgivneStemmer": 367,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 640,
+      "AfgivneStemmer": 454,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

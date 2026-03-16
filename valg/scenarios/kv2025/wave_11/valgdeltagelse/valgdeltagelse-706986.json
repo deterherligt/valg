@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:27",
+  "Kommune": "Ballerup",
+  "Kommunekode": 151,
+  "Afstemningsområde": "Balleruphallen - Rugvænget",
+  "AfstemningsområdeDagiId": "706986",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 8117,
+      "AfgivneStemmer": 1059,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8117,
+      "AfgivneStemmer": 1358,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8117,
+      "AfgivneStemmer": 2213,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8117,
+      "AfgivneStemmer": 2894,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8117,
+      "AfgivneStemmer": 3427,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8117,
+      "AfgivneStemmer": 4317,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 8117,
+      "AfgivneStemmer": 4539,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

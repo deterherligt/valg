@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:11:10",
+  "Kommune": "Haderslev",
+  "Kommunekode": 510,
+  "Afstemningsområde": "Starup",
+  "AfstemningsområdeDagiId": "710846",
+  "AfstemningsområdeNummer": 9,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2287,
+      "AfgivneStemmer": 435,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2287,
+      "AfgivneStemmer": 796,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2287,
+      "AfgivneStemmer": 1444,
+      "Tidspunkt": "18:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2287,
+      "AfgivneStemmer": 1736,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

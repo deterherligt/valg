@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:28:26",
+  "Kommune": "Billund",
+  "Kommunekode": 530,
+  "Afstemningsområde": "Billund",
+  "AfstemningsområdeDagiId": "704500",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 416,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 639,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 989,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 1307,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 1548,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 1801,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 2083,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 2460,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 2931,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 3408,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 3760,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5813,
+      "AfgivneStemmer": 4006,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

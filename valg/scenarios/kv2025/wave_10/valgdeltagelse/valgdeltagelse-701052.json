@@ -1,0 +1,57 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:08:00",
+  "Kommune": "Frederikssund",
+  "Kommunekode": 250,
+  "Afstemningsområde": "Frederikssund Nord",
+  "AfstemningsområdeDagiId": "701052",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5004,
+      "AfgivneStemmer": 1282,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5004,
+      "AfgivneStemmer": 370,
+      "Tidspunkt": "10:03:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5004,
+      "AfgivneStemmer": 819,
+      "Tidspunkt": "10:13:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5004,
+      "AfgivneStemmer": 1282,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5004,
+      "AfgivneStemmer": 1682,
+      "Tidspunkt": "14:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5004,
+      "AfgivneStemmer": 2212,
+      "Tidspunkt": "16:04:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5004,
+      "AfgivneStemmer": 2984,
+      "Tidspunkt": "18:01:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5004,
+      "AfgivneStemmer": 3667,
+      "Tidspunkt": "20:02:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5004,
+      "AfgivneStemmer": 3667,
+      "Tidspunkt": "20:03:00"
+    }
+  ]
+}

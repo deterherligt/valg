@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:04:45",
+  "Kommune": "Herlev",
+  "Kommunekode": 163,
+  "Afstemningsområde": "Herlev Hallerne",
+  "AfstemningsområdeDagiId": "710346",
+  "AfstemningsområdeNummer": 2,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 612,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 870,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 1231,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 1593,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 1909,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 2177,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 2490,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 3006,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 3661,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 4367,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 4928,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 6836,
+      "AfgivneStemmer": 5258,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

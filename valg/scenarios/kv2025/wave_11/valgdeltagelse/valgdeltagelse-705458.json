@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:06:42",
+  "Kommune": "Lolland",
+  "Kommunekode": 360,
+  "Afstemningsområde": "Nakskov",
+  "AfstemningsområdeDagiId": "705458",
+  "AfstemningsområdeNummer": 20,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 10671,
+      "AfgivneStemmer": 1562,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10671,
+      "AfgivneStemmer": 2739,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10671,
+      "AfgivneStemmer": 3719,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10671,
+      "AfgivneStemmer": 4754,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10671,
+      "AfgivneStemmer": 6129,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 10671,
+      "AfgivneStemmer": 6923,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

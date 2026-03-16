@@ -1,0 +1,47 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:18:56",
+  "Kommune": "Vallensbæk",
+  "Kommunekode": 187,
+  "Afstemningsområde": "Pilehaveskolen",
+  "AfstemningsområdeDagiId": "701896",
+  "AfstemningsområdeNummer": 3,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4472,
+      "AfgivneStemmer": 0,
+      "Tidspunkt": "05:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4472,
+      "AfgivneStemmer": 433,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4472,
+      "AfgivneStemmer": 773,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4472,
+      "AfgivneStemmer": 1573,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4472,
+      "AfgivneStemmer": 2230,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4472,
+      "AfgivneStemmer": 2922,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4472,
+      "AfgivneStemmer": 3121,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

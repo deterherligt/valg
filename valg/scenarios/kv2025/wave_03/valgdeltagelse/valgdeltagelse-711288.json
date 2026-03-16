@@ -1,0 +1,32 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:18:40",
+  "Kommune": "Silkeborg",
+  "Kommunekode": 740,
+  "Afstemningsområde": "Grauballe",
+  "AfstemningsområdeDagiId": "711288",
+  "AfstemningsområdeNummer": 5,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1235,
+      "AfgivneStemmer": 175,
+      "Tidspunkt": "10:46:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1235,
+      "AfgivneStemmer": 267,
+      "Tidspunkt": "12:50:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1235,
+      "AfgivneStemmer": 444,
+      "Tidspunkt": "15:42:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1235,
+      "AfgivneStemmer": 917,
+      "Tidspunkt": "20:02:00"
+    }
+  ]
+}

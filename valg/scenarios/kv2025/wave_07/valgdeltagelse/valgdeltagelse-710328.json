@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 20:12:16",
+  "Kommune": "Faxe",
+  "Kommunekode": 320,
+  "Afstemningsområde": "Rønnede",
+  "AfstemningsområdeDagiId": "710328",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 349,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 696,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 942,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 1275,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 1824,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 3330,
+      "AfgivneStemmer": 2183,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

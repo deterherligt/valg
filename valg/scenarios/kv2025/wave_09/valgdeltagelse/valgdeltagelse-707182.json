@@ -1,0 +1,72 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:48:58",
+  "Kommune": "Randers",
+  "Kommunekode": 730,
+  "Afstemningsområde": "Randers Badmintonhaller",
+  "AfstemningsområdeDagiId": "707182",
+  "AfstemningsområdeNummer": 26,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 310,
+      "Tidspunkt": "09:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 477,
+      "Tidspunkt": "10:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 687,
+      "Tidspunkt": "11:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 878,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 1074,
+      "Tidspunkt": "13:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 1254,
+      "Tidspunkt": "14:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 1422,
+      "Tidspunkt": "15:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 1689,
+      "Tidspunkt": "16:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 2020,
+      "Tidspunkt": "17:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 2295,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 2502,
+      "Tidspunkt": "19:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 4508,
+      "AfgivneStemmer": 2653,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

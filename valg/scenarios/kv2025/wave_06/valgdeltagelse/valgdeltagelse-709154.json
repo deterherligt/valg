@@ -1,0 +1,42 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:41:58",
+  "Kommune": "Samsø",
+  "Kommunekode": 741,
+  "Afstemningsområde": "Tranebjerg",
+  "AfstemningsområdeDagiId": "709154",
+  "AfstemningsområdeNummer": 1,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 2716,
+      "AfgivneStemmer": 566,
+      "Tidspunkt": "10:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2716,
+      "AfgivneStemmer": 908,
+      "Tidspunkt": "12:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2716,
+      "AfgivneStemmer": 1219,
+      "Tidspunkt": "14:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2716,
+      "AfgivneStemmer": 1645,
+      "Tidspunkt": "16:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2716,
+      "AfgivneStemmer": 2065,
+      "Tidspunkt": "18:15:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 2716,
+      "AfgivneStemmer": 2200,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}

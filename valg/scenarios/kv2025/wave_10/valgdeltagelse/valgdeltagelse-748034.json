@@ -1,0 +1,22 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 17:11:43",
+  "Kommune": "Aalborg",
+  "Kommunekode": 851,
+  "Afstemningsområde": "Aalborghus Gymnasium",
+  "AfstemningsområdeDagiId": "748034",
+  "AfstemningsområdeNummer": 36,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 5272,
+      "AfgivneStemmer": 1036,
+      "Tidspunkt": "11:58:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 5272,
+      "AfgivneStemmer": 2247,
+      "Tidspunkt": "18:00:00"
+    }
+  ]
+}

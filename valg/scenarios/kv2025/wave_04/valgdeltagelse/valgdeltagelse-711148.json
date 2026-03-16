@@ -1,0 +1,27 @@
+{
+  "Valgart": "Kommunal- og regionsrådsvalg",
+  "Valgdag": "18-11-2025",
+  "FrigivelsesTidspunktUTC": "18-11-2025 19:37:14",
+  "Kommune": "Fredericia",
+  "Kommunekode": 607,
+  "Afstemningsområde": "Bøgeskov",
+  "AfstemningsområdeDagiId": "711148",
+  "AfstemningsområdeNummer": 7,
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberretigedeVælgere": 1519,
+      "AfgivneStemmer": 382,
+      "Tidspunkt": "12:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1519,
+      "AfgivneStemmer": 1030,
+      "Tidspunkt": "18:00:00"
+    },
+    {
+      "AntalStemmeberretigedeVælgere": 1519,
+      "AfgivneStemmer": 1194,
+      "Tidspunkt": "20:00:00"
+    }
+  ]
+}
