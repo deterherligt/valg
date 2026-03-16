@@ -191,3 +191,60 @@ def query_api_candidates(conn, party_ids: list[str]) -> list[dict]:
         party_ids,
     ).fetchall()
     return [dict(r) for r in rows]
+
+
+def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
+    if not party_ids:
+        return []
+
+    national, storkreds_votes, kredsmandater = get_seat_data(conn)
+    if not national:
+        return []
+
+    seats = calculator.allocate_seats_total(national, storkreds_votes, kredsmandater)
+    total_votes = sum(national.values()) or 1
+
+    storkreds_names = {
+        r["id"]: r["name"]
+        for r in conn.execute("SELECT id, name FROM storkredse").fetchall()
+    }
+
+    placeholders = ",".join("?" * len(party_ids))
+    party_rows = {
+        r["id"]: r
+        for r in conn.execute(
+            f"SELECT id, letter, name FROM parties WHERE id IN ({placeholders})",
+            party_ids,
+        ).fetchall()
+    }
+
+    result = []
+    for party_id in party_ids:
+        if party_id not in national:
+            continue
+
+        # Kredsmandater breakdown per storkreds (D'Hondt per storkreds)
+        seats_breakdown = []
+        for sk_id, sk_votes in storkreds_votes.items():
+            n = kredsmandater.get(sk_id, 0)
+            if n <= 0:
+                continue
+            sk_seats = calculator.dhondt(sk_votes, n)
+            s = sk_seats.get(party_id, 0)
+            if s > 0:
+                seats_breakdown.append({
+                    "name": storkreds_names.get(sk_id, sk_id),
+                    "seats": s,
+                })
+
+        info = party_rows.get(party_id, {"id": party_id, "letter": None, "name": party_id})
+        result.append({
+            "id": party_id,
+            "letter": info["letter"],
+            "name": info["name"],
+            "votes": national[party_id],
+            "pct": round(national[party_id] / total_votes * 100, 1),
+            "seats_total": seats.get(party_id, 0),
+            "seats_by_storkreds": seats_breakdown,
+        })
+    return result
