@@ -236,6 +236,14 @@ def create_app(db_path: Path = _DEFAULT_DB, data_dir: Path = _DEFAULT_DATA) -> F
         from valg.queries import query_api_party_detail
         return jsonify(query_api_party_detail(_get_conn(), party_ids))
 
+    @app.get("/api/candidate/<candidate_id>")
+    def api_candidate(candidate_id):
+        from valg.queries import query_api_candidate
+        data = query_api_candidate(_get_conn(), candidate_id)
+        if data is None:
+            return jsonify({"error": "not found"}), 404
+        return jsonify(data)
+
     @app.post("/run")
     def run_command():
         data = request.get_json(force=True)

@@ -28,6 +28,21 @@ def client_with_data(tmp_path):
         yield c
 
 
+@pytest.fixture
+def client_with_final_data(tmp_path):
+    db = tmp_path / "test.db"
+    conn = get_connection(str(db))
+    init_db(conn)
+    e = generate_election(seed=42)
+    load_into_db(conn, e, phase="preliminary")
+    load_into_db(conn, e, phase="final")
+    conn.close()
+    app = create_app(db_path=db, data_dir=tmp_path / "data")
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        yield c
+
+
 def test_index_returns_html(client):
     resp = client.get("/")
     assert resp.status_code == 200
@@ -161,3 +176,41 @@ def test_api_party_detail_shape(client_with_data):
     p = data[0]
     assert all(k in p for k in ["id", "letter", "name", "votes", "pct", "seats_total", "seats_by_storkreds"])
     assert isinstance(p["seats_by_storkreds"], list)
+
+
+def test_api_candidate_unknown_returns_404(client):
+    resp = client.get("/api/candidate/nonexistent")
+    assert resp.status_code == 404
+
+
+def test_api_candidate_before_fintaelling_returns_unavailable(client_with_data):
+    # preliminary phase only — no candidate results
+    parties = client_with_data.get("/api/parties").get_json()
+    candidates = client_with_data.get(
+        f"/api/candidates?party_ids={parties[0]['id']}"
+    ).get_json()
+    cid = candidates[0]["id"]
+    resp = client_with_data.get(f"/api/candidate/{cid}")
+    data = resp.get_json()
+    assert data["available"] is False
+    assert "name" in data
+    assert "party_letter" in data
+    assert "by_district" not in data
+
+
+def test_api_candidate_after_fintaelling_returns_districts(client_with_final_data):
+    parties = client_with_final_data.get("/api/parties").get_json()
+    candidates = client_with_final_data.get(
+        f"/api/candidates?party_ids={parties[0]['id']}"
+    ).get_json()
+    cid = candidates[0]["id"]
+    resp = client_with_final_data.get(f"/api/candidate/{cid}")
+    data = resp.get_json()
+    assert data["available"] is True
+    assert "total_votes" in data
+    assert "by_district" in data
+    assert "polling_districts_reported" in data
+    assert "polling_districts_total" in data
+    # votes=null means unreported, votes>=0 means reported
+    for d in data["by_district"]:
+        assert d["votes"] is None or isinstance(d["votes"], int)

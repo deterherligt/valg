@@ -248,3 +248,51 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
             "seats_by_storkreds": seats_breakdown,
         })
     return result
+
+
+def query_api_candidate(conn, candidate_id: str) -> dict | None:
+    row = conn.execute(
+        "SELECT c.id, c.name, c.opstillingskreds_id, p.letter as party_letter "
+        "FROM candidates c JOIN parties p ON c.party_id = p.id WHERE c.id = ?",
+        (candidate_id,),
+    ).fetchone()
+    if not row:
+        return None
+
+    has_data = conn.execute(
+        "SELECT 1 FROM results WHERE candidate_id = ? LIMIT 1", (candidate_id,)
+    ).fetchone()
+    if not has_data:
+        return {"name": row["name"], "party_letter": row["party_letter"], "available": False}
+
+    latest = conn.execute(
+        "SELECT MAX(snapshot_at) FROM results WHERE candidate_id = ?", (candidate_id,)
+    ).fetchone()[0]
+
+    districts = conn.execute(
+        """
+        SELECT ao.name, r.votes
+        FROM afstemningsomraader ao
+        LEFT JOIN results r
+            ON r.afstemningsomraade_id = ao.id
+            AND r.candidate_id = ?
+            AND r.snapshot_at = ?
+        WHERE ao.opstillingskreds_id = ?
+        ORDER BY COALESCE(r.votes, -1) DESC
+        """,
+        (candidate_id, latest, row["opstillingskreds_id"]),
+    ).fetchall()
+
+    by_district = [{"name": d["name"], "votes": d["votes"]} for d in districts]
+    reported = sum(1 for d in by_district if d["votes"] is not None)
+    total_votes = sum(d["votes"] for d in by_district if d["votes"] is not None)
+
+    return {
+        "name": row["name"],
+        "party_letter": row["party_letter"],
+        "available": True,
+        "total_votes": total_votes,
+        "polling_districts_reported": reported,
+        "polling_districts_total": len(by_district),
+        "by_district": by_district,
+    }
