@@ -9,7 +9,12 @@ document.addEventListener('alpine:init', () => {
     partyDetail: null,
     candidateDetail: null,
     candidateFeed: [],
-    feed: [],
+    feedItems: [],
+    feedExhausted: false,
+    selectedPlaceId: null,
+    placeDetail: null,
+    activeTab: 'detail',  // 'detail' | 'sted'
+    feedPanelHeight: 120,
 
     lastSynced: null,
     districtsReported: null,
@@ -25,7 +30,7 @@ document.addEventListener('alpine:init', () => {
     },
 
     async _fetchAll() {
-      await Promise.all([this._fetchStatus(), this._fetchParties(), this._fetchFeed()])
+      await Promise.all([this._fetchStatus(), this._fetchParties(), this._fetchFeedPlaces()])
       if (this.selectedPartyIds.length) {
         await Promise.all([this._fetchCandidates(), this._fetchPartyDetail()])
       }
@@ -47,7 +52,7 @@ document.addEventListener('alpine:init', () => {
         this.syncing = false
         return
       }
-      await Promise.all([this._fetchParties(), this._fetchFeed()])
+      await Promise.all([this._fetchParties(), this._fetchFeedPlaces()])
       if (this.selectedPartyIds.length) {
         await Promise.all([this._fetchCandidates(), this._fetchPartyDetail()])
       }
@@ -71,10 +76,36 @@ document.addEventListener('alpine:init', () => {
       this.parties = await resp.json()
     },
 
-    async _fetchFeed() {
-      const resp = await fetch('/api/feed?limit=50').catch(() => null)
+    async _fetchFeedPlaces() {
+      const resp = await fetch('/api/feed/places?limit=50').catch(() => null)
       if (!resp) return
-      this.feed = await resp.json()
+      const data = await resp.json()
+      this.feedItems = data
+      this.feedExhausted = data.length < 50
+      if (!this.selectedPlaceId) {
+        this.$nextTick(() => {
+          const body = this.$refs.feedBody
+          if (body) body.scrollTop = 0
+        })
+      }
+    },
+
+    async _loadMorePlaces() {
+      if (!this.feedItems.length) return
+      const minId = Math.min(...this.feedItems.map(x => x.event_id))
+      const resp = await fetch(`/api/feed/places?before_id=${minId}&limit=50`).catch(() => null)
+      if (!resp) return
+      const data = await resp.json()
+      this.feedItems = [...this.feedItems, ...data]
+      this.feedExhausted = data.length < 50
+    },
+
+    async selectPlace(item) {
+      this.selectedPlaceId = String(item.event_id)
+      this.activeTab = 'sted'
+      const resp = await fetch('/api/place/' + item.place_id).catch(() => null)
+      if (!resp) return
+      this.placeDetail = await resp.json()
     },
 
     async _fetchCandidates() {
