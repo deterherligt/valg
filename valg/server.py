@@ -11,7 +11,6 @@ import logging
 import os
 import sys
 import threading
-import webbrowser
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -285,22 +284,19 @@ def main() -> None:
     data_dir = _DEFAULT_DATA
     data_repo = Path(os.environ.get("VALG_DATA_REPO", "../valg-data"))
 
-    demo_runner = None
-    if args.demo:
-        from valg.demo import DemoRunner
-        demo_runner = DemoRunner()
+    from valg.demo import DemoRunner
+    demo_runner = DemoRunner()
 
     t = threading.Thread(target=_sync_loop, args=(data_dir, db_path), daemon=True)
     t.start()
 
-    threading.Timer(1.0, lambda: webbrowser.open(f"http://localhost:{args.port}")).start()
     app = create_app(
         db_path=db_path,
         data_dir=data_dir,
         demo_runner=demo_runner,
         data_repo=data_repo,
     )
-    app.run(host="127.0.0.1", port=args.port)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", args.port)))
 
 
 if __name__ == "__main__":

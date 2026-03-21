@@ -343,6 +343,22 @@ def test_demo_control_set_speed(tmp_path):
         assert runner.speed == 5.0
 
 
+def test_demo_state_accessible_without_demo_flag(tmp_path):
+    """DemoRunner is always created; /demo/state must be reachable."""
+    from valg.demo import DemoRunner
+    app = create_app(
+        db_path=tmp_path / "test.db",
+        data_dir=tmp_path / "data",
+        demo_runner=DemoRunner(),
+    )
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        resp = c.get("/demo/state")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert data["state"] == "idle"
+
+
 def test_demo_control_unknown_action(tmp_path):
     from valg.demo import DemoRunner
     runner = DemoRunner()
