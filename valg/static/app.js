@@ -15,6 +15,10 @@ document.addEventListener('alpine:init', () => {
     placeDetail: null,
     activeTab: 'detail',  // 'detail' | 'sted'
     feedPanelHeight: 120,
+    _feedResizing: false,
+    _feedResizeStartY: 0,
+    _feedResizeStartH: 0,
+    colWidths: {parties: 220, candidates: 220},
 
     lastSynced: null,
     districtsReported: null,
@@ -23,6 +27,15 @@ document.addEventListener('alpine:init', () => {
     demo: { enabled: false, state: 'idle', scenario: '', scenarios: [], speed: 1 },
 
     async init() {
+      const savedH = localStorage.getItem('valg_feed_height')
+      if (savedH) this.feedPanelHeight = parseInt(savedH, 10)
+      const savedCols = localStorage.getItem('valg_col_widths')
+      if (savedCols) {
+        try {
+          const w = JSON.parse(savedCols)
+          this.colWidths = w
+        } catch (_) {}
+      }
       await this._fetchAll()
       await this._fetchDemoState()
       setInterval(() => this._poll(), 10000)
@@ -106,6 +119,41 @@ document.addEventListener('alpine:init', () => {
       const resp = await fetch('/api/place/' + item.place_id).catch(() => null)
       if (!resp) return
       this.placeDetail = await resp.json()
+    },
+
+    startFeedResize(e) {
+      this._feedResizing = true
+      this._feedResizeStartY = e.clientY
+      this._feedResizeStartH = this.feedPanelHeight
+      const onMove = (ev) => {
+        if (!this._feedResizing) return
+        const delta = this._feedResizeStartY - ev.clientY
+        this.feedPanelHeight = Math.max(52, this._feedResizeStartH + delta)
+      }
+      const onUp = () => {
+        this._feedResizing = false
+        localStorage.setItem('valg_feed_height', this.feedPanelHeight)
+        document.removeEventListener('mousemove', onMove)
+        document.removeEventListener('mouseup', onUp)
+      }
+      document.addEventListener('mousemove', onMove)
+      document.addEventListener('mouseup', onUp)
+    },
+
+    startColResize(e, col) {
+      const startX = e.clientX
+      const startW = this.colWidths[col]
+      const onMove = (ev) => {
+        const delta = ev.clientX - startX
+        this.colWidths[col] = Math.max(120, startW + delta)
+      }
+      const onUp = () => {
+        localStorage.setItem('valg_col_widths', JSON.stringify(this.colWidths))
+        document.removeEventListener('mousemove', onMove)
+        document.removeEventListener('mouseup', onUp)
+      }
+      document.addEventListener('mousemove', onMove)
+      document.addEventListener('mouseup', onUp)
     },
 
     async _fetchCandidates() {

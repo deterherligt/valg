@@ -47,7 +47,7 @@
   <div class="columns">
 
     <!-- Parties -->
-    <div class="col col-parties">
+    <div class="col col-parties" :style="'width:' + colWidths.parties + 'px; flex-shrink:0'">
       <div class="col-header">Parties</div>
       <div class="col-body">
         <template x-if="parties.length === 0">
@@ -73,9 +73,10 @@
         </template>
       </div>
     </div>
+    <div class="col-resize-handle" @mousedown="startColResize($event, 'parties')"></div>
 
     <!-- Candidates -->
-    <div class="col col-candidates">
+    <div class="col col-candidates" :style="'width:' + colWidths.candidates + 'px; flex-shrink:0'">
       <div class="col-header">
         <span x-show="selectedPartyIds.length === 0">Candidates</span>
         <span x-show="selectedPartyIds.length > 0"
@@ -107,6 +108,7 @@
         </template>
       </div>
     </div>
+    <div class="col-resize-handle" @mousedown="startColResize($event, 'candidates')"></div>
 
     <!-- Right panel -->
     <div class="col col-detail">

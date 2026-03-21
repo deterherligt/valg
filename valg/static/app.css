@@ -75,8 +75,8 @@ body {
   overflow: hidden;
 }
 .col:last-child { border-right: none; flex: 1; }
-.col-parties  { width: 220px; flex-shrink: 0; }
-.col-candidates { width: 220px; flex-shrink: 0; }
+.col-parties  {}
+.col-candidates {}
 .col-detail { flex: 1; }
 
 .col-header {
@@ -273,6 +273,16 @@ body {
 .sted-name { color: #e6edf3; font-weight: bold; margin-bottom: 2px; }
 .sted-meta { color: #8b949e; font-size: 0.85em; margin-bottom: 8px; }
 .delta-pos { color: #3fb950; text-align: right; }
+
+/* ── Column resize handles ───────────────────────────────────────── */
+.col-resize-handle {
+  width: 4px;
+  background: transparent;
+  cursor: col-resize;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+.col-resize-handle:hover { background: #58a6ff44; }
 
 /* ── Scrollbar ───────────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 4px; height: 4px; }
