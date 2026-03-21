@@ -276,12 +276,32 @@ def main() -> None:
     parser.add_argument("--port", type=int, default=5000)
     args = parser.parse_args()
 
+    import subprocess as _sp
+
     from valg.plugins import load_plugins
     load_plugins()
 
     db_path = args.db
     data_dir = _DEFAULT_DATA
     data_repo = Path(os.environ.get("VALG_DATA_REPO", "../valg-data"))
+
+    data_repo.mkdir(parents=True, exist_ok=True)
+    if not (data_repo / ".git").exists():
+        _sp.run(["git", "init"], cwd=str(data_repo), check=True)
+        _sp.run(["git", "config", "user.email", "valg@localhost"], cwd=str(data_repo), check=True)
+        _sp.run(["git", "config", "user.name", "valg"], cwd=str(data_repo), check=True)
+
+    log.info("Running initial sync from GitHub...")
+    from valg.http_fetcher import sync_from_github
+    from valg.models import get_connection, init_db
+    from valg.processor import process_directory
+
+    sync_from_github(data_dir)
+    _init_conn = get_connection(db_path)
+    init_db(_init_conn)
+    process_directory(_init_conn, data_dir)
+    _init_conn.close()
+    log.info("Initial sync complete.")
 
     from valg.demo import DemoRunner
     demo_runner = DemoRunner()
