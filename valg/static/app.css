@@ -254,6 +254,26 @@ body {
 }
 .feed-load-more:hover { color: #c9d1d9; }
 
+/* ── Detail tabs ─────────────────────────────────────────────────── */
+.detail-tabs { display: flex; border-bottom: 1px solid #21262d; }
+.detail-tab {
+  padding: 6px 12px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #8b949e;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+.detail-tab.active { color: #c9d1d9; border-bottom-color: #58a6ff; }
+.detail-tab:hover { color: #c9d1d9; }
+
+/* ── Sted detail ─────────────────────────────────────────────────── */
+.sted-detail { padding: 8px 12px; }
+.sted-name { color: #e6edf3; font-weight: bold; margin-bottom: 2px; }
+.sted-meta { color: #8b949e; font-size: 0.85em; margin-bottom: 8px; }
+.delta-pos { color: #3fb950; text-align: right; }
+
 /* ── Scrollbar ───────────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }

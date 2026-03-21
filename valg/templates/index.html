@@ -110,97 +110,159 @@
 
     <!-- Right panel -->
     <div class="col col-detail">
-      <div class="col-header">
-        <span x-show="!focusedCandidateId">Details</span>
-        <span x-show="focusedCandidateId && candidateDetail"
-              x-text="candidateDetail ? candidateDetail.name + ' (' + candidateDetail.party_letter + ')' : ''">
-        </span>
+      <div class="col-header" style="padding:0">
+        <div class="detail-tabs">
+          <button class="detail-tab"
+                  :class="{active: activeTab !== 'sted'}"
+                  @click="activeTab = 'detail'">
+            <span x-show="!focusedCandidateId">Detaljer</span>
+            <span x-show="focusedCandidateId && candidateDetail"
+                  x-text="candidateDetail ? candidateDetail.name + ' (' + candidateDetail.party_letter + ')' : 'Detaljer'">
+            </span>
+          </button>
+          <template x-if="placeDetail">
+            <button class="detail-tab"
+                    :class="{active: activeTab === 'sted'}"
+                    @click="activeTab = 'sted'">
+              Sted
+            </button>
+          </template>
+        </div>
       </div>
       <div class="detail-body">
 
-        <!-- Party detail mode -->
-        <template x-if="!focusedCandidateId">
-          <div>
-            <template x-if="!selectedPartyIds.length">
-              <div class="detail-placeholder">Select a party to see details</div>
-            </template>
-            <template x-if="selectedPartyIds.length && !partyDetail">
-              <div class="detail-placeholder">Loading…</div>
-            </template>
-            <template x-if="partyDetail">
-              <div>
-                <template x-for="p in partyDetail" :key="p.id">
-                  <div class="party-detail-block">
-                    <div class="party-detail-name"
-                         x-text="(p.letter || p.id) + ' — ' + p.name"></div>
-                    <div class="party-detail-meta"
-                         x-text="formatNum(p.votes) + ' votes (' + p.pct + '%) · ' + p.seats_total + ' seats'">
+        <div x-show="activeTab !== 'sted'">
+          <!-- Party detail mode -->
+          <template x-if="!focusedCandidateId">
+            <div>
+              <template x-if="!selectedPartyIds.length">
+                <div class="detail-placeholder">Select a party to see details</div>
+              </template>
+              <template x-if="selectedPartyIds.length && !partyDetail">
+                <div class="detail-placeholder">Loading…</div>
+              </template>
+              <template x-if="partyDetail">
+                <div>
+                  <template x-for="p in partyDetail" :key="p.id">
+                    <div class="party-detail-block">
+                      <div class="party-detail-name"
+                           x-text="(p.letter || p.id) + ' — ' + p.name"></div>
+                      <div class="party-detail-meta"
+                           x-text="formatNum(p.votes) + ' votes (' + p.pct + '%) · ' + p.seats_total + ' seats'">
+                      </div>
+                      <template x-if="p.seats_by_storkreds.length > 0">
+                        <table class="data-table">
+                          <thead>
+                            <tr><th>Storkreds</th><th>Kredsmandater</th></tr>
+                          </thead>
+                          <tbody>
+                            <template x-for="sk in p.seats_by_storkreds" :key="sk.name">
+                              <tr>
+                                <td x-text="sk.name"></td>
+                                <td x-text="sk.seats"></td>
+                              </tr>
+                            </template>
+                          </tbody>
+                        </table>
+                      </template>
                     </div>
-                    <template x-if="p.seats_by_storkreds.length > 0">
-                      <table class="data-table">
-                        <thead>
-                          <tr><th>Storkreds</th><th>Kredsmandater</th></tr>
-                        </thead>
-                        <tbody>
-                          <template x-for="sk in p.seats_by_storkreds" :key="sk.name">
-                            <tr>
-                              <td x-text="sk.name"></td>
-                              <td x-text="sk.seats"></td>
-                            </tr>
-                          </template>
-                        </tbody>
-                      </table>
-                    </template>
-                  </div>
-                </template>
-              </div>
-            </template>
-          </div>
-        </template>
-
-        <!-- Candidate detail mode -->
-        <template x-if="focusedCandidateId">
-          <div>
-            <template x-if="!candidateDetail">
-              <div class="detail-placeholder">Loading…</div>
-            </template>
-            <template x-if="candidateDetail && !candidateDetail.available">
-              <div class="detail-placeholder">
-                Candidate votes available after fintælling begins
-              </div>
-            </template>
-            <template x-if="candidateDetail && candidateDetail.available">
-              <div>
-                <div class="party-detail-meta"
-                     x-text="formatNum(candidateDetail.total_votes) + ' votes total · '
-                            + candidateDetail.polling_districts_reported + '/'
-                            + candidateDetail.polling_districts_total + ' districts'">
+                  </template>
                 </div>
-                <table class="data-table">
-                  <thead>
-                    <tr><th>District</th><th>Votes</th></tr>
-                  </thead>
-                  <tbody>
-                    <template x-for="d in candidateDetail.by_district" :key="d.name">
-                      <tr>
-                        <td x-text="d.name"></td>
-                        <td :class="{'null-votes': d.votes === null}"
-                            x-text="d.votes !== null ? formatNum(d.votes) : '—'"></td>
-                      </tr>
-                    </template>
-                  </tbody>
-                </table>
-                <div class="detail-section-label">Candidate feed</div>
-                <template x-if="candidateFeed.length === 0">
-                  <div style="color:#8b949e;font-size:0.9em">No updates yet</div>
-                </template>
-                <template x-for="item in candidateFeed" :key="item.occurred_at + item.district">
-                  <div class="feed-item-cand"
-                       x-text="'+' + formatNum(item.delta) + ' · ' + item.district
-                              + ' · ' + formatTime(item.occurred_at)">
+              </template>
+            </div>
+          </template>
+
+          <!-- Candidate detail mode -->
+          <template x-if="focusedCandidateId">
+            <div>
+              <template x-if="!candidateDetail">
+                <div class="detail-placeholder">Loading…</div>
+              </template>
+              <template x-if="candidateDetail && !candidateDetail.available">
+                <div class="detail-placeholder">
+                  Candidate votes available after fintælling begins
+                </div>
+              </template>
+              <template x-if="candidateDetail && candidateDetail.available">
+                <div>
+                  <div class="party-detail-meta"
+                       x-text="formatNum(candidateDetail.total_votes) + ' votes total · '
+                              + candidateDetail.polling_districts_reported + '/'
+                              + candidateDetail.polling_districts_total + ' districts'">
                   </div>
-                </template>
+                  <table class="data-table">
+                    <thead>
+                      <tr><th>District</th><th>Votes</th></tr>
+                    </thead>
+                    <tbody>
+                      <template x-for="d in candidateDetail.by_district" :key="d.name">
+                        <tr>
+                          <td x-text="d.name"></td>
+                          <td :class="{'null-votes': d.votes === null}"
+                              x-text="d.votes !== null ? formatNum(d.votes) : '—'"></td>
+                        </tr>
+                      </template>
+                    </tbody>
+                  </table>
+                  <div class="detail-section-label">Candidate feed</div>
+                  <template x-if="candidateFeed.length === 0">
+                    <div style="color:#8b949e;font-size:0.9em">No updates yet</div>
+                  </template>
+                  <template x-for="item in candidateFeed" :key="item.occurred_at + item.district">
+                    <div class="feed-item-cand"
+                         x-text="'+' + formatNum(item.delta) + ' · ' + item.district
+                                + ' · ' + formatTime(item.occurred_at)">
+                    </div>
+                  </template>
+                </div>
+              </template>
+            </div>
+          </template>
+        </div><!-- /activeTab !== sted -->
+
+        <!-- Sted tab -->
+        <template x-if="activeTab === 'sted' && placeDetail">
+          <div class="sted-detail">
+            <div class="sted-header">
+              <div class="sted-name" x-text="placeDetail.name"></div>
+              <div class="sted-meta"
+                   x-text="placeDetail.opstillingskreds + ' · ' + placeDetail.count_type + ' · ' + formatTime(placeDetail.occurred_at)">
               </div>
+            </div>
+            <div class="detail-section-label">Partistemmer</div>
+            <table class="data-table">
+              <thead><tr><th>Parti</th><th>Stemmer</th><th>Δ</th></tr></thead>
+              <tbody>
+                <template x-for="p in placeDetail.parties" :key="p.party_id">
+                  <tr>
+                    <td x-text="(p.letter || p.party_id) + ' ' + p.name"></td>
+                    <td x-text="formatNum(p.votes)"></td>
+                    <td :class="p.delta > 0 ? 'delta-pos' : 'null-votes'"
+                        x-text="p.delta !== null ? (p.delta > 0 ? '+' : '') + formatNum(p.delta) : '—'">
+                    </td>
+                  </tr>
+                </template>
+              </tbody>
+            </table>
+            <div class="detail-section-label">Kandidatstemmer</div>
+            <template x-if="placeDetail.candidates.length === 0">
+              <div style="color:#8b949e;font-size:0.9em;padding:4px 0">
+                Kandidatstemmer ikke tilgængeligt ved foreløbig optælling
+              </div>
+            </template>
+            <template x-if="placeDetail.candidates.length > 0">
+              <table class="data-table">
+                <thead><tr><th>Kandidat</th><th>Parti</th><th>Stemmer</th></tr></thead>
+                <tbody>
+                  <template x-for="c in placeDetail.candidates" :key="c.name">
+                    <tr>
+                      <td x-text="c.name"></td>
+                      <td x-text="c.party_letter"></td>
+                      <td x-text="formatNum(c.votes)"></td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
             </template>
           </div>
         </template>
