@@ -152,9 +152,12 @@ def create_app(
 
     @app.get("/api/feed/places")
     def api_feed_places():
-        limit = min(int(request.args.get("limit", 50)), 200)
+        limit = max(1, min(int(request.args.get("limit", 50)), 200))
         before_id_raw = request.args.get("before_id")
-        before_id = int(before_id_raw) if before_id_raw else None
+        try:
+            before_id = int(before_id_raw) if before_id_raw else None
+        except (ValueError, TypeError):
+            before_id = None
         from valg.queries import query_feed_places
         return jsonify(query_feed_places(_get_conn(), before_id=before_id, limit=limit))
 
