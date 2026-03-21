@@ -50,13 +50,38 @@ Add to Alpine data object:
 demo: { enabled: false, state: 'idle', scenario: '', scenarios: [], speed: 1 },
 ```
 
-Add to `init()`: call `this._fetchDemoState()` and `setInterval(() => this._fetchDemoState(), 5000)`.
+Add to `init()`:
+```js
+await this._fetchDemoState()
+setInterval(() => this._fetchDemoState(), 5000)
+```
 
 Add methods:
-- `_fetchDemoState()` — fetch `/demo/state`, update `this.demo`
-- `demoControl(action, extra)` — POST `/demo/control {action, ...extra}`
-- `demoSetScenario(name)` — calls `demoControl('set_scenario', {scenario:name})` then `demoControl('restart')`
-- `demoSetSpeed(speed)` — calls `demoControl('set_speed', {speed: parseFloat(speed)})`
+```js
+async _fetchDemoState() {
+  const resp = await fetch('/demo/state').catch(() => null)
+  if (!resp || !resp.ok) return
+  this.demo = await resp.json()
+},
+
+async demoControl(action, extra = {}) {
+  await fetch('/demo/control', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({action, ...extra}),
+  }).catch(() => null)
+  await this._fetchDemoState()
+},
+
+async demoSetScenario(name) {
+  await this.demoControl('set_scenario', {scenario: name})
+  await this.demoControl('restart')
+},
+
+async demoSetSpeed(speed) {
+  await this.demoControl('set_speed', {speed: parseFloat(speed)})
+},
+```
 
 ### `valg/templates/index.html`
 
@@ -65,25 +90,42 @@ Add demo bar between `</header>` and `<div class="columns">`:
 ```html
 <div class="demo-bar" x-show="demo.enabled">
   <span class="demo-badge" :class="'demo-badge--' + demo.state" x-text="demo.state"></span>
-  <select x-model="demo.scenario" @change="demoSetScenario($event.target.value)">
+  <select @change="demoSetScenario($event.target.value)">
     <template x-for="s in demo.scenarios" :key="s">
-      <option :value="s" x-text="s"></option>
+      <option :value="s" :selected="s === demo.scenario" x-text="s"></option>
     </template>
   </select>
-  <button @click="demoControl(demo.state === 'running' ? 'pause' : 'resume')"
-          x-text="demo.state === 'running' ? '⏸ Pause' : '▶ Resume'"></button>
+  <button
+    x-show="demo.state === 'running' || demo.state === 'paused'"
+    @click="demoControl(demo.state === 'running' ? 'pause' : 'resume')"
+    x-text="demo.state === 'running' ? '⏸ Pause' : '▶ Resume'">
+  </button>
   <button @click="demoControl('restart')">↺ Restart</button>
   <select @change="demoSetSpeed($event.target.value)">
     <template x-for="s in [1,2,5,10,60]" :key="s">
-      <option :value="s" :selected="demo.speed === s" x-text="s + '×'"></option>
+      <option :value="s" :selected="parseFloat(demo.speed) === s" x-text="s + '×'"></option>
     </template>
   </select>
 </div>
 ```
 
+Notes:
+- No `x-model` on scenario select — `@change` drives the action directly, avoiding double-fire
+- Pause/Resume button hidden when `demo.state === 'idle'` or `'done'` (only valid in running/paused states)
+- Speed `:selected` uses `parseFloat(demo.speed) === s` to handle float/int comparison
+
 ### `valg/static/app.css`
 
-Add styles for `.demo-bar`, `.demo-badge`, `.demo-badge--running`, `.demo-badge--paused`, `.demo-badge--done`. Match the existing dark theme (`#1c2128` background, `#30363d` borders, `#c9d1d9` text).
+Add styles for `.demo-bar`, `.demo-badge` and state variants:
+
+| Class | Colour |
+|-------|--------|
+| `.demo-badge--running` | Blue (`#1f6feb`) |
+| `.demo-badge--paused` | Amber (`#9e6a03` bg, `#e3b341` text) |
+| `.demo-badge--done` | Grey (`#30363d` bg, `#8b949e` text) |
+| `.demo-badge--idle` | Grey (same as done) |
+
+Bar background: `#1c2128`, border-bottom: `1px solid #30363d`, padding: `6px 14px`.
 
 ## What Does Not Change
 
