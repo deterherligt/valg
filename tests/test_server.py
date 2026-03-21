@@ -486,3 +486,26 @@ def test_admin_demo_stop_wrong_token_returns_401(admin_client):
         headers={"Authorization": "Bearer wrong-token"},
     )
     assert resp.status_code == 401
+
+
+def test_demo_state_has_scenario_and_scenarios_fields(tmp_path):
+    """Frontend demo bar needs scenario (current) and scenarios (list) fields."""
+    from valg.demo import DemoRunner
+    app = create_app(
+        db_path=tmp_path / "v.db",
+        data_dir=tmp_path / "data",
+        demo_runner=DemoRunner(),
+        data_repo=tmp_path / "repo",
+    )
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        resp = c.get("/demo/state")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert "scenario" in data
+    assert "scenarios" in data
+    assert isinstance(data["scenarios"], list)
+    assert len(data["scenarios"]) > 0
+    assert "speed" in data
+    assert "enabled" in data
+    assert "state" in data

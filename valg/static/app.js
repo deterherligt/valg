@@ -15,10 +15,13 @@ document.addEventListener('alpine:init', () => {
     districtsReported: null,
     districtsTotal: null,
     syncing: false,  // true during just_synced refresh — drives pulsing header
+    demo: { enabled: false, state: 'idle', scenario: '', scenarios: [], speed: 1 },
 
     async init() {
       await this._fetchAll()
+      await this._fetchDemoState()
       setInterval(() => this._poll(), 10000)
+      setInterval(() => this._fetchDemoState(), 5000)
     },
 
     async _fetchAll() {
@@ -167,6 +170,30 @@ document.addEventListener('alpine:init', () => {
     formatTime(isoStr) {
       if (!isoStr) return ''
       return isoStr.slice(11, 16)
+    },
+
+    async _fetchDemoState() {
+      const resp = await fetch('/demo/state').catch(() => null)
+      if (!resp || !resp.ok) return
+      this.demo = await resp.json()
+    },
+
+    async demoControl(action, extra = {}) {
+      await fetch('/demo/control', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({action, ...extra}),
+      }).catch(() => null)
+      await this._fetchDemoState()
+    },
+
+    async demoSetScenario(name) {
+      await this.demoControl('set_scenario', {scenario: name})
+      await this.demoControl('restart')
+    },
+
+    async demoSetSpeed(speed) {
+      await this.demoControl('set_speed', {speed: parseFloat(speed)})
     },
   }))
 })
