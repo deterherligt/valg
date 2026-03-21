@@ -27,6 +27,40 @@ body {
 .header .meta.pulsing { animation: pulse 1s ease-in-out infinite; }
 @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
 
+/* ── Demo control bar ────────────────────────────────────────────── */
+.demo-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #1c2128;
+  border-bottom: 1px solid #30363d;
+  flex-shrink: 0;
+  font-size: 0.85em;
+}
+.demo-bar select,
+.demo-bar button {
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  color: #c9d1d9;
+  font-size: 0.85em;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+.demo-bar button:hover { background: #30363d; }
+
+.demo-badge {
+  border-radius: 10px;
+  padding: 1px 8px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.demo-badge--running { background: #1f6feb; color: #fff; }
+.demo-badge--paused  { background: #9e6a03; color: #e3b341; }
+.demo-badge--done    { background: #30363d; color: #8b949e; }
+.demo-badge--idle    { background: #30363d; color: #8b949e; }
+
 /* ── Three columns ───────────────────────────────────────────────── */
 .columns {
   display: flex;
