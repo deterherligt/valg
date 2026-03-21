@@ -113,20 +113,19 @@
       <div class="col-header" style="padding:0">
         <div class="detail-tabs">
           <button class="detail-tab"
-                  :class="{active: activeTab !== 'sted'}"
+                  :class="{active: activeTab === 'detail'}"
                   @click="activeTab = 'detail'">
             <span x-show="!focusedCandidateId">Detaljer</span>
             <span x-show="focusedCandidateId && candidateDetail"
                   x-text="candidateDetail ? candidateDetail.name + ' (' + candidateDetail.party_letter + ')' : 'Detaljer'">
             </span>
           </button>
-          <template x-if="placeDetail">
-            <button class="detail-tab"
-                    :class="{active: activeTab === 'sted'}"
-                    @click="activeTab = 'sted'">
-              Sted
-            </button>
-          </template>
+          <button class="detail-tab"
+                  x-show="placeDetail"
+                  :class="{active: activeTab === 'sted'}"
+                  @click="activeTab = 'sted'">
+            Sted
+          </button>
         </div>
       </div>
       <div class="detail-body">
@@ -237,7 +236,7 @@
                   <tr>
                     <td x-text="(p.letter || p.party_id) + ' ' + p.name"></td>
                     <td x-text="formatNum(p.votes)"></td>
-                    <td :class="p.delta > 0 ? 'delta-pos' : 'null-votes'"
+                    <td :class="p.delta === null ? 'null-votes' : (p.delta > 0 ? 'delta-pos' : '')"
                         x-text="p.delta !== null ? (p.delta > 0 ? '+' : '') + formatNum(p.delta) : '—'">
                     </td>
                   </tr>
@@ -254,7 +253,7 @@
               <table class="data-table">
                 <thead><tr><th>Kandidat</th><th>Parti</th><th>Stemmer</th></tr></thead>
                 <tbody>
-                  <template x-for="c in placeDetail.candidates" :key="c.name">
+                  <template x-for="c in placeDetail.candidates" :key="c.name + c.party_letter">
                     <tr>
                       <td x-text="c.name"></td>
                       <td x-text="c.party_letter"></td>
