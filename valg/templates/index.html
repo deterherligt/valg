@@ -22,6 +22,27 @@
     </span>
   </header>
 
+  <!-- Demo control bar (only shown when demo mode is active) -->
+  <div class="demo-bar" x-show="demo.enabled">
+    <span class="demo-badge" :class="'demo-badge--' + demo.state" x-text="demo.state"></span>
+    <select @change="demoSetScenario($event.target.value)">
+      <template x-for="s in demo.scenarios" :key="s">
+        <option :value="s" :selected="s === demo.scenario" x-text="s"></option>
+      </template>
+    </select>
+    <button
+      x-show="demo.state === 'running' || demo.state === 'paused'"
+      @click="demoControl(demo.state === 'running' ? 'pause' : 'resume')"
+      x-text="demo.state === 'running' ? '⏸ Pause' : '▶ Resume'">
+    </button>
+    <button @click="demoControl('restart')">↺ Restart</button>
+    <select @change="demoSetSpeed($event.target.value)">
+      <template x-for="s in [1,2,5,10,60]" :key="s">
+        <option :value="s" :selected="parseFloat(demo.speed) === s" x-text="s + '×'"></option>
+      </template>
+    </select>
+  </div>
+
   <!-- Three columns -->
   <div class="columns">
 
