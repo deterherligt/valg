@@ -11,7 +11,7 @@ from pathlib import Path
 log = logging.getLogger(__name__)
 
 REPO = "deterherligt/valg-data"
-BRANCH = "main"
+BRANCH = "master"
 _CACHE = ".sha_cache.json"
 
 
