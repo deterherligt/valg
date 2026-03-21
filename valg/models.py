@@ -88,6 +88,7 @@ CREATE INDEX IF NOT EXISTS idx_results_candidate_snap    ON results(candidate_id
 CREATE INDEX IF NOT EXISTS idx_party_votes_party_snap    ON party_votes(party_id, snapshot_at);
 CREATE INDEX IF NOT EXISTS idx_turnout_ao_snapshot       ON turnout(afstemningsomraade_id, snapshot_at);
 CREATE INDEX IF NOT EXISTS idx_events_type_time          ON events(event_type, occurred_at);
+CREATE INDEX IF NOT EXISTS idx_events_type_id            ON events(event_type, id);
 CREATE INDEX IF NOT EXISTS idx_anomalies_time            ON anomalies(detected_at);
 """
 
