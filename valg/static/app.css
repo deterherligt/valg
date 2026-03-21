@@ -192,33 +192,67 @@ body {
 .party-detail-name  { color: #e6edf3; font-weight: bold; margin-bottom: 4px; }
 .party-detail-meta  { color: #8b949e; font-size: 0.9em; margin-bottom: 6px; }
 
-/* ── Feed strip ──────────────────────────────────────────────────── */
-.feed-strip {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  padding: 5px 12px;
-  border-top: 1px solid #30363d;
-  background: #0d1117;
-  overflow-x: auto;
-  white-space: nowrap;
+/* ── Feed panel ──────────────────────────────────────────────────── */
+.feed-panel {
   flex-shrink: 0;
+  border-top: 2px solid #58a6ff;
+  background: #0d1117;
+  display: flex;
+  flex-direction: column;
+  min-height: 52px;
+  position: relative;
+}
+.feed-panel-resize {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  cursor: ns-resize;
+  z-index: 10;
+}
+.feed-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 12px;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+  flex-shrink: 0;
+}
+.feed-panel-label { color: #8b949e; font-size: 0.8em; text-transform: uppercase; }
+.feed-panel-count { color: #58a6ff; font-size: 0.8em; }
+.feed-panel-body {
+  flex: 1;
+  overflow-y: auto;
   scrollbar-width: thin;
 }
-.feed-strip-label {
+.feed-panel-empty { color: #8b949e; font-size: 0.85em; padding: 8px 12px; }
+.feed-place-row {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-size: 0.88em;
+  border-bottom: 1px solid #21262d;
+}
+.feed-place-row:hover { background: #161b22; }
+.feed-place-row.selected { background: #1f2937; border-left: 2px solid #58a6ff; padding-left: 10px; }
+.feed-place-name { color: #58a6ff; flex: 1; }
+.feed-place-type { color: #8b949e; font-size: 0.85em; }
+.feed-place-time { color: #484f58; font-size: 0.85em; }
+.feed-load-more {
+  width: 100%;
+  padding: 6px;
+  background: #161b22;
+  border: none;
+  border-top: 1px solid #30363d;
   color: #8b949e;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  margin-right: 16px;
-  flex-shrink: 0;
-}
-.feed-strip-item {
-  color: #58a6ff;
+  cursor: pointer;
   font-size: 0.85em;
-  margin-right: 24px;
-  flex-shrink: 0;
 }
-.feed-strip-empty { color: #8b949e; font-size: 0.85em; }
+.feed-load-more:hover { color: #c9d1d9; }
 
 /* ── Scrollbar ───────────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 4px; height: 4px; }

@@ -210,17 +210,32 @@
 
   </div>
 
-  <!-- Feed strip -->
-  <div class="feed-strip">
-    <span class="feed-strip-label">Feed</span>
-    <template x-if="feed.length === 0">
-      <span class="feed-strip-empty">No events yet</span>
-    </template>
-    <template x-for="item in feed" :key="item.occurred_at + item.description">
-      <span class="feed-strip-item"
-            x-text="formatTime(item.occurred_at) + ' · ' + item.description">
+  <!-- Feed panel -->
+  <div class="feed-panel" :style="'height:' + feedPanelHeight + 'px'">
+    <div class="feed-panel-resize" @mousedown="startFeedResize($event)"></div>
+    <div class="feed-panel-header">
+      <span class="feed-panel-label">Indberetninger</span>
+      <span class="feed-panel-count"
+            x-text="(districtsReported || 0) + ' / ' + (districtsTotal || 0) + ' steder'">
       </span>
-    </template>
+    </div>
+    <div class="feed-panel-body" x-ref="feedBody">
+      <template x-if="feedItems.length === 0">
+        <div class="feed-panel-empty">Ingen indberetninger endnu</div>
+      </template>
+      <template x-for="item in feedItems" :key="item.event_id">
+        <div class="feed-place-row"
+             :class="{selected: selectedPlaceId === String(item.event_id)}"
+             @click="selectPlace(item)">
+          <span class="feed-place-name" x-text="item.name"></span>
+          <span class="feed-place-type" x-text="item.count_type"></span>
+          <span class="feed-place-time" x-text="formatTime(item.occurred_at)"></span>
+        </div>
+      </template>
+      <template x-if="feedItems.length > 0 && !feedExhausted">
+        <button class="feed-load-more" @click="_loadMorePlaces()">Vis ældre</button>
+      </template>
+    </div>
   </div>
 
 </body>
