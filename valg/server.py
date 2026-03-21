@@ -144,12 +144,6 @@ def create_app(
             return jsonify({"error": "not found"}), 404
         return jsonify(data)
 
-    @app.get("/api/feed")
-    def api_feed():
-        limit = min(int(request.args.get("limit", 50)), 200)
-        from valg.queries import query_api_feed
-        return jsonify(query_api_feed(_get_conn(), limit))
-
     @app.get("/api/feed/places")
     def api_feed_places():
         limit = max(1, min(int(request.args.get("limit", 50)), 200))

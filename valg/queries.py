@@ -450,14 +450,6 @@ def query_feed_places(conn, before_id=None, limit: int = 50) -> list[dict]:
     ]
 
 
-def query_api_feed(conn, limit: int = 50) -> list[dict]:
-    rows = conn.execute(
-        "SELECT occurred_at, description FROM events ORDER BY occurred_at DESC LIMIT ?",
-        (limit,),
-    ).fetchall()
-    return [{"occurred_at": r["occurred_at"], "description": r["description"]} for r in rows]
-
-
 def query_api_candidate_feed(conn, candidate_id: str, limit: int = 20) -> list[dict]:
     rows = conn.execute(
         """
