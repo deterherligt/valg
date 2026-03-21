@@ -1,9 +1,8 @@
 # valg/server.py
 """
-Standalone web dashboard for valg election results.
+Web dashboard for valg election results.
 
 Run:  python -m valg.server
-Opens browser at http://localhost:5000 automatically.
 """
 import csv
 import io
