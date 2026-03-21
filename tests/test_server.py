@@ -556,6 +556,74 @@ def test_feed_places_returns_newest_first(client_with_events):
     assert item["count_type"] == "foreløbig"
 
 
+def test_place_detail_one_snapshot_no_delta(client_with_data):
+    # client_with_data has preliminary results loaded
+    # Find an afstemningsomraade that has results
+    e = generate_election(seed=42)
+    ao_id = e["afstemningsomraader"][0]["id"]
+    resp = client_with_data.get(f"/api/place/{ao_id}")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert "parties" in data
+    assert "candidates" in data
+    assert "name" in data
+    assert "opstillingskreds" in data
+    assert "count_type" in data
+    assert "occurred_at" in data
+    assert len(data["parties"]) > 0
+    assert data["candidates"] == []  # no final data
+    # Delta must be null for all parties (only one snapshot)
+    for p in data["parties"]:
+        assert p["delta"] is None
+
+
+def test_place_detail_two_snapshots_has_delta(tmp_path):
+    from valg.models import get_connection, init_db
+    db = tmp_path / "test.db"
+    conn = get_connection(str(db))
+    init_db(conn)
+    e = generate_election(seed=42)
+    load_into_db(conn, e, phase="preliminary")
+    # Insert a second preliminary snapshot with different snapshot_at
+    ao = e["afstemningsomraader"][0]
+    party_id = e["parties"][0]["id"]
+    conn.execute(
+        "INSERT OR IGNORE INTO results "
+        "(afstemningsomraade_id, party_id, candidate_id, votes, count_type, snapshot_at) "
+        "VALUES (?,?,NULL,999,'preliminary','2024-11-05T23:00:00')",
+        (ao["id"], party_id),
+    )
+    conn.commit()
+    conn.close()
+
+    from valg.server import create_app
+    app = create_app(db_path=db, data_dir=tmp_path / "data")
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        resp = c.get(f"/api/place/{ao['id']}")
+        data = resp.get_json()
+    # At least one party should have a non-null delta
+    deltas = [p["delta"] for p in data["parties"]]
+    assert any(d is not None for d in deltas)
+
+
+def test_place_detail_with_final_has_candidates(client_with_final_data):
+    e = generate_election(seed=42)
+    ao_id = e["afstemningsomraader"][0]["id"]
+    resp = client_with_final_data.get(f"/api/place/{ao_id}")
+    data = resp.get_json()
+    assert len(data["candidates"]) > 0
+    for c in data["candidates"]:
+        assert "name" in c
+        assert "party_letter" in c
+        assert "votes" in c
+
+
+def test_place_detail_not_found(client):
+    resp = client.get("/api/place/nonexistent-id")
+    assert resp.status_code == 404
+
+
 def test_feed_places_cursor_pagination(client_with_events):
     # Get all 3, then fetch with before_id of the second item
     all_resp = client_with_events.get("/api/feed/places")
