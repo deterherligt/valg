@@ -226,6 +226,40 @@ def create_app(
             except (KeyError, ValueError, RuntimeError) as e:
                 return str(e), 400
             return "ok", 200
+
+        # ── Admin API ─────────────────────────────────────────────────────────────────
+
+        def _check_admin_auth():
+            token = os.environ.get("VALG_ADMIN_TOKEN")
+            if not token:
+                return jsonify({"error": "admin not configured"}), 503
+            auth = request.headers.get("Authorization", "")
+            if not auth.startswith("Bearer ") or auth[len("Bearer "):] != token:
+                return jsonify({"error": "unauthorized"}), 401
+            return None
+
+        @app.post("/admin/demo")
+        def admin_demo_start():
+            err = _check_admin_auth()
+            if err is not None:
+                return err
+            body = request.get_json(silent=True) or {}
+            scenario = body.get("scenario", "")
+            from valg.demo import SCENARIOS
+            if scenario not in SCENARIOS:
+                return jsonify({"error": f"unknown scenario: {scenario!r}"}), 400
+            demo_runner.set_scenario(scenario)
+            demo_runner.start(db_path=db_path, data_repo=data_repo or Path(os.environ.get("VALG_DATA_REPO", "../valg-data")))
+            return jsonify({"status": "started", "scenario": scenario}), 200
+
+        @app.post("/admin/demo/stop")
+        def admin_demo_stop():
+            err = _check_admin_auth()
+            if err is not None:
+                return err
+            demo_runner.pause()
+            return jsonify({"status": "stopped"}), 200
+
     else:
         @app.get("/demo/state")
         def demo_state_disabled():

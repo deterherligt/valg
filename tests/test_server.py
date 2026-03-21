@@ -372,3 +372,117 @@ def test_demo_control_unknown_action(tmp_path):
     with app.test_client() as c:
         resp = c.post("/demo/control", json={"action": "explode"})
         assert resp.status_code == 400
+
+
+@pytest.fixture
+def admin_client(tmp_path, monkeypatch):
+    monkeypatch.setenv("VALG_ADMIN_TOKEN", "test-secret")
+    from valg.demo import DemoRunner
+    runner = DemoRunner()
+    app = create_app(
+        db_path=tmp_path / "test.db",
+        data_dir=tmp_path / "data",
+        demo_runner=runner,
+        data_repo=tmp_path / "data-repo",
+    )
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        yield c, runner
+
+
+def test_admin_demo_no_token_configured_returns_503(tmp_path, monkeypatch):
+    monkeypatch.delenv("VALG_ADMIN_TOKEN", raising=False)
+    from valg.demo import DemoRunner
+    app = create_app(
+        db_path=tmp_path / "test.db",
+        data_dir=tmp_path / "data",
+        demo_runner=DemoRunner(),
+    )
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        resp = c.post("/admin/demo", json={"scenario": "kv2025"})
+    assert resp.status_code == 503
+
+
+def test_admin_demo_wrong_token_returns_401(admin_client):
+    c, _ = admin_client
+    resp = c.post(
+        "/admin/demo",
+        json={"scenario": "kv2025"},
+        headers={"Authorization": "Bearer wrong-token"},
+    )
+    assert resp.status_code == 401
+
+
+def test_admin_demo_missing_token_returns_401(admin_client):
+    c, _ = admin_client
+    resp = c.post("/admin/demo", json={"scenario": "kv2025"})
+    assert resp.status_code == 401
+
+
+def test_admin_demo_unknown_scenario_returns_400(admin_client):
+    c, _ = admin_client
+    resp = c.post(
+        "/admin/demo",
+        json={"scenario": "nonexistent"},
+        headers={"Authorization": "Bearer test-secret"},
+    )
+    assert resp.status_code == 400
+
+
+def test_admin_demo_valid_starts_demo(tmp_path, monkeypatch):
+    monkeypatch.setenv("VALG_ADMIN_TOKEN", "test-secret")
+    from valg.demo import DemoRunner, SCENARIOS
+    from unittest.mock import patch
+    runner = DemoRunner()
+    scenario_name = next(iter(SCENARIOS))
+    db = tmp_path / "test.db"
+    data_repo = tmp_path / "data-repo"
+    app = create_app(
+        db_path=db,
+        data_dir=tmp_path / "data",
+        demo_runner=runner,
+        data_repo=data_repo,
+    )
+    app.config["TESTING"] = True
+    with patch.object(runner, "set_scenario") as mock_set, \
+         patch.object(runner, "start") as mock_start:
+        with app.test_client() as c:
+            resp = c.post(
+                "/admin/demo",
+                json={"scenario": scenario_name},
+                headers={"Authorization": "Bearer test-secret"},
+            )
+        assert resp.status_code == 200
+        mock_set.assert_called_once_with(scenario_name)
+        mock_start.assert_called_once_with(db_path=db, data_repo=data_repo)
+
+
+def test_admin_demo_stop_valid_pauses_demo(tmp_path, monkeypatch):
+    monkeypatch.setenv("VALG_ADMIN_TOKEN", "test-secret")
+    from valg.demo import DemoRunner
+    from unittest.mock import patch
+    runner = DemoRunner()
+    app = create_app(
+        db_path=tmp_path / "test.db",
+        data_dir=tmp_path / "data",
+        demo_runner=runner,
+    )
+    app.config["TESTING"] = True
+    with patch.object(runner, "pause") as mock_pause:
+        with app.test_client() as c:
+            resp = c.post(
+                "/admin/demo/stop",
+                headers={"Authorization": "Bearer test-secret"},
+            )
+        assert resp.status_code == 200
+        mock_pause.assert_called_once()
+
+
+def test_admin_demo_stop_wrong_token_returns_401(admin_client):
+    c, _ = admin_client
+    resp = c.post(
+        "/admin/demo/stop",
+        headers={"Authorization": "Bearer wrong-token"},
+    )
+    assert resp.status_code == 401
