@@ -1,9 +1,8 @@
 # valg/server.py
 """
-Standalone web dashboard for valg election results.
+Web dashboard for valg election results.
 
 Run:  python -m valg.server
-Opens browser at http://localhost:5000 automatically.
 """
 import csv
 import io
@@ -11,7 +10,6 @@ import logging
 import os
 import sys
 import threading
-import webbrowser
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -228,6 +226,40 @@ def create_app(
             except (KeyError, ValueError, RuntimeError) as e:
                 return str(e), 400
             return "ok", 200
+
+        # ── Admin API ─────────────────────────────────────────────────────────────────
+
+        def _check_admin_auth():
+            token = os.environ.get("VALG_ADMIN_TOKEN")
+            if not token:
+                return jsonify({"error": "admin not configured"}), 503
+            auth = request.headers.get("Authorization", "")
+            if not auth.startswith("Bearer ") or auth[len("Bearer "):] != token:
+                return jsonify({"error": "unauthorized"}), 401
+            return None
+
+        @app.post("/admin/demo")
+        def admin_demo_start():
+            err = _check_admin_auth()
+            if err is not None:
+                return err
+            body = request.get_json(silent=True) or {}
+            scenario = body.get("scenario", "")
+            from valg.demo import SCENARIOS
+            if scenario not in SCENARIOS:
+                return jsonify({"error": f"unknown scenario: {scenario!r}"}), 400
+            demo_runner.set_scenario(scenario)
+            demo_runner.start(db_path=db_path, data_repo=data_repo or Path(os.environ.get("VALG_DATA_REPO", "../valg-data")))
+            return jsonify({"status": "started", "scenario": scenario}), 200
+
+        @app.post("/admin/demo/stop")
+        def admin_demo_stop():
+            err = _check_admin_auth()
+            if err is not None:
+                return err
+            demo_runner.pause()
+            return jsonify({"status": "stopped"}), 200
+
     else:
         @app.get("/demo/state")
         def demo_state_disabled():
@@ -278,6 +310,8 @@ def main() -> None:
     parser.add_argument("--port", type=int, default=5000)
     args = parser.parse_args()
 
+    import subprocess as _sp
+
     from valg.plugins import load_plugins
     load_plugins()
 
@@ -285,22 +319,37 @@ def main() -> None:
     data_dir = _DEFAULT_DATA
     data_repo = Path(os.environ.get("VALG_DATA_REPO", "../valg-data"))
 
-    demo_runner = None
-    if args.demo:
-        from valg.demo import DemoRunner
-        demo_runner = DemoRunner()
+    data_repo.mkdir(parents=True, exist_ok=True)
+    if not (data_repo / ".git").exists():
+        _sp.run(["git", "init"], cwd=str(data_repo), check=True)
+        _sp.run(["git", "config", "user.email", "valg@localhost"], cwd=str(data_repo), check=True)
+        _sp.run(["git", "config", "user.name", "valg"], cwd=str(data_repo), check=True)
+
+    log.info("Running initial sync from GitHub...")
+    from valg.http_fetcher import sync_from_github
+    from valg.models import get_connection, init_db
+    from valg.processor import process_directory
+
+    sync_from_github(data_dir)
+    _init_conn = get_connection(db_path)
+    init_db(_init_conn)
+    process_directory(_init_conn, data_dir)
+    _init_conn.close()
+    log.info("Initial sync complete.")
+
+    from valg.demo import DemoRunner
+    demo_runner = DemoRunner()
 
     t = threading.Thread(target=_sync_loop, args=(data_dir, db_path), daemon=True)
     t.start()
 
-    threading.Timer(1.0, lambda: webbrowser.open(f"http://localhost:{args.port}")).start()
     app = create_app(
         db_path=db_path,
         data_dir=data_dir,
         demo_runner=demo_runner,
         data_repo=data_repo,
     )
-    app.run(host="127.0.0.1", port=args.port)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", args.port)))
 
 
 if __name__ == "__main__":
