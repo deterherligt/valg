@@ -509,3 +509,61 @@ def test_demo_state_has_scenario_and_scenarios_fields(tmp_path):
     assert "speed" in data
     assert "enabled" in data
     assert "state" in data
+
+
+@pytest.fixture
+def client_with_events(tmp_path):
+    db = tmp_path / "test.db"
+    conn = get_connection(str(db))
+    init_db(conn)
+    e = generate_election(seed=42)
+    load_into_db(conn, e, phase="preliminary")
+    # Manually insert district_reported events
+    ao_ids = [ao["id"] for ao in e["afstemningsomraader"]]
+    for i, ao_id in enumerate(ao_ids[:3]):
+        conn.execute(
+            "INSERT INTO events (occurred_at, event_type, subject, description) "
+            "VALUES (?,?,?,?)",
+            (f"2024-11-05T21:0{i}:00", "district_reported", ao_id, "preliminary results"),
+        )
+    conn.commit()
+    conn.close()
+    app = create_app(db_path=db, data_dir=tmp_path / "data")
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        yield c
+
+
+def test_feed_places_empty(client):
+    resp = client.get("/api/feed/places")
+    assert resp.status_code == 200
+    assert resp.get_json() == []
+
+
+def test_feed_places_returns_newest_first(client_with_events):
+    resp = client_with_events.get("/api/feed/places")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert len(data) == 3
+    # newest first (highest event id first)
+    assert data[0]["occurred_at"] > data[-1]["occurred_at"]
+    item = data[0]
+    assert "event_id" in item
+    assert "place_id" in item      # afstemningsomraade id for /api/place/<id>
+    assert "name" in item          # place name from afstemningsomraader
+    assert "count_type" in item    # "foreløbig" or "fintælling"
+    assert "occurred_at" in item
+    assert item["count_type"] == "foreløbig"
+
+
+def test_feed_places_cursor_pagination(client_with_events):
+    # Get all 3, then fetch with before_id of the second item
+    all_resp = client_with_events.get("/api/feed/places")
+    all_data = all_resp.get_json()
+    assert len(all_data) == 3
+    second_id = all_data[1]["event_id"]
+    page2 = client_with_events.get(f"/api/feed/places?before_id={second_id}")
+    page2_data = page2.get_json()
+    # Only entries older than second_id (id < second_id)
+    assert len(page2_data) == 1
+    assert all(item["event_id"] < second_id for item in page2_data)

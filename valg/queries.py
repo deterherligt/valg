@@ -314,6 +314,36 @@ def query_api_candidate(conn, candidate_id: str) -> dict | None:
     }
 
 
+def query_feed_places(conn, before_id=None, limit: int = 50) -> list[dict]:
+    params: list = ["district_reported"]
+    where = "WHERE e.event_type = ?"
+    if before_id is not None:
+        where += " AND e.id < ?"
+        params.append(before_id)
+    params.append(limit)
+    rows = conn.execute(
+        f"""
+        SELECT e.id AS event_id, e.subject, ao.name, e.occurred_at, e.description
+        FROM events e
+        JOIN afstemningsomraader ao ON ao.id = e.subject
+        {where}
+        ORDER BY e.id DESC
+        LIMIT ?
+        """,
+        params,
+    ).fetchall()
+    return [
+        {
+            "event_id": r["event_id"],
+            "place_id": r["subject"],
+            "name": r["name"],
+            "occurred_at": r["occurred_at"],
+            "count_type": "fintælling" if "final" in r["description"] else "foreløbig",
+        }
+        for r in rows
+    ]
+
+
 def query_api_feed(conn, limit: int = 50) -> list[dict]:
     rows = conn.execute(
         "SELECT occurred_at, description FROM events ORDER BY occurred_at DESC LIMIT ?",

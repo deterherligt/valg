@@ -150,6 +150,14 @@ def create_app(
         from valg.queries import query_api_feed
         return jsonify(query_api_feed(_get_conn(), limit))
 
+    @app.get("/api/feed/places")
+    def api_feed_places():
+        limit = min(int(request.args.get("limit", 50)), 200)
+        before_id_raw = request.args.get("before_id")
+        before_id = int(before_id_raw) if before_id_raw else None
+        from valg.queries import query_feed_places
+        return jsonify(query_feed_places(_get_conn(), before_id=before_id, limit=limit))
+
     @app.get("/api/candidate-feed/<candidate_id>")
     def api_candidate_feed(candidate_id):
         limit = min(int(request.args.get("limit", 20)), 100)
