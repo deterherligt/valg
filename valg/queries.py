@@ -333,7 +333,15 @@ def query_place_detail(conn, place_id: str) -> dict | None:
         (place_id,),
     ).fetchall()
     if not snaps:
-        return None
+        return {
+            "id": ao["id"],
+            "name": ao["name"],
+            "opstillingskreds": ao["opstillingskreds"],
+            "count_type": "foreløbig",
+            "occurred_at": None,
+            "parties": [],
+            "candidates": [],
+        }
 
     latest_snap = snaps[0]["snapshot_at"]
     prev_snap = snaps[1]["snapshot_at"] if len(snaps) > 1 else None
