@@ -241,7 +241,9 @@ document.addEventListener('alpine:init', () => {
 
     formatTime(isoStr) {
       if (!isoStr) return ''
-      return isoStr.slice(11, 16)
+      return new Date(isoStr).toLocaleTimeString('da-DK', {
+        hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Copenhagen'
+      })
     },
 
     async _fetchDemoState() {
