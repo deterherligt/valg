@@ -229,7 +229,7 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
     if not national:
         return []
 
-    seats = calculator.allocate_seats_total(national, storkreds_votes, kredsmandater)
+    seats_alloc = calculator.allocate_seats_total(national, storkreds_votes, kredsmandater)
     total_votes = sum(national.values()) or 1
 
     storkreds_names = {
@@ -245,6 +245,13 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
             party_ids,
         ).fetchall()
     }
+
+    # Check if fintælling candidate data exists (global for this election)
+    has_votes = bool(
+        conn.execute(
+            "SELECT 1 FROM results WHERE candidate_id IS NOT NULL AND count_type = 'final' LIMIT 1"
+        ).fetchone()
+    )
 
     result = []
     for party_id in party_ids:
@@ -265,6 +272,54 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
                     "seats": s,
                 })
 
+        # Candidate breakdown
+        if has_votes:
+            cand_rows = conn.execute(
+                """
+                SELECT c.id, c.name, ok.name AS opstillingskreds, c.ballot_position,
+                       SUM(r.votes) AS votes
+                FROM candidates c
+                JOIN opstillingskredse ok ON ok.id = c.opstillingskreds_id
+                JOIN results r ON r.candidate_id = c.id
+                WHERE c.party_id = ? AND r.count_type = 'final'
+                GROUP BY c.id
+                ORDER BY votes DESC
+                """,
+                (party_id,),
+            ).fetchall()
+        else:
+            cand_rows = conn.execute(
+                """
+                SELECT c.id, c.name, ok.name AS opstillingskreds, c.ballot_position,
+                       NULL AS votes
+                FROM candidates c
+                JOIN opstillingskredse ok ON ok.id = c.opstillingskreds_id
+                WHERE c.party_id = ?
+                ORDER BY c.ballot_position
+                """,
+                (party_id,),
+            ).fetchall()
+
+        candidates = [
+            {
+                "id": r["id"],
+                "name": r["name"],
+                "opstillingskreds": r["opstillingskreds"],
+                "ballot_position": r["ballot_position"],
+                "votes": r["votes"],
+            }
+            for r in cand_rows
+        ]
+
+        # Cutoff margin: difference between last candidate in and first candidate out
+        party_seats = seats_alloc.get(party_id, 0)
+        cutoff_margin = None
+        if has_votes and party_seats >= 1 and len(candidates) > party_seats:
+            last_in = candidates[party_seats - 1]["votes"]
+            first_out = candidates[party_seats]["votes"]
+            if last_in is not None and first_out is not None:
+                cutoff_margin = last_in - first_out
+
         info = party_rows.get(party_id, {"id": party_id, "letter": None, "name": party_id})
         result.append({
             "id": party_id,
@@ -272,8 +327,11 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
             "name": info["name"],
             "votes": national[party_id],
             "pct": round(national[party_id] / total_votes * 100, 1),
-            "seats_total": seats.get(party_id, 0),
+            "seats_total": party_seats,
             "seats_by_storkreds": seats_breakdown,
+            "candidates": candidates,
+            "has_votes": has_votes,
+            "cutoff_margin": cutoff_margin,
         })
     return result
 
