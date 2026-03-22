@@ -602,14 +602,7 @@ def test_place_detail_not_found(client):
     assert resp.status_code == 404
 
 
-def test_feed_places_cursor_pagination(client_with_events):
-    # Get all 3, then fetch with before_id of the second item
-    all_resp = client_with_events.get("/api/feed/places")
-    all_data = all_resp.get_json()
-    assert len(all_data) == 3
-    second_id = all_data[1]["event_id"]
-    page2 = client_with_events.get(f"/api/feed/places?before_id={second_id}")
-    page2_data = page2.get_json()
-    # Only entries older than second_id (id < second_id)
-    assert len(page2_data) == 1
-    assert all(item["event_id"] < second_id for item in page2_data)
+def test_feed_places_returns_all(client_with_events):
+    resp = client_with_events.get("/api/feed/places")
+    data = resp.get_json()
+    assert len(data) == 3

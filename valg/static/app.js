@@ -10,7 +10,6 @@ document.addEventListener('alpine:init', () => {
     candidateDetail: null,
     candidateFeed: [],
     feedItems: [],
-    feedExhausted: false,
     selectedPlaceId: null,
     placeDetail: null,
     activeTab: 'detail',  // 'detail' | 'sted'
@@ -23,6 +22,9 @@ document.addEventListener('alpine:init', () => {
     lastSynced: null,
     districtsReported: null,
     districtsTotal: null,
+    preliminaryPlaces: null,
+    finalPlaces: null,
+    totalPlaces: null,
     syncing: false,  // true during just_synced refresh — drives pulsing header
     demo: { enabled: false, state: 'idle', scenario: '', scenarios: [], speed: 1 },
     showAbout: false,
@@ -62,6 +64,9 @@ document.addEventListener('alpine:init', () => {
       this.lastSynced = data.last_sync
       this.districtsReported = data.districts_reported
       this.districtsTotal = data.districts_total
+      this.preliminaryPlaces = data.preliminary_places
+      this.finalPlaces = data.final_places
+      this.totalPlaces = data.total_places
       if (data.just_synced) {
         this.syncing = true
         await this._fetchAll()
@@ -84,6 +89,9 @@ document.addEventListener('alpine:init', () => {
       this.lastSynced = data.last_sync
       this.districtsReported = data.districts_reported
       this.districtsTotal = data.districts_total
+      this.preliminaryPlaces = data.preliminary_places
+      this.finalPlaces = data.final_places
+      this.totalPlaces = data.total_places
     },
 
     async _fetchParties() {
@@ -93,27 +101,9 @@ document.addEventListener('alpine:init', () => {
     },
 
     async _fetchFeedPlaces() {
-      const resp = await fetch('/api/feed/places?limit=50').catch(() => null)
+      const resp = await fetch('/api/feed/places').catch(() => null)
       if (!resp) return
-      const data = await resp.json()
-      this.feedItems = data
-      this.feedExhausted = data.length < 50
-      if (!this.selectedPlaceId) {
-        this.$nextTick(() => {
-          const body = this.$refs.feedBody
-          if (body) body.scrollTop = 0
-        })
-      }
-    },
-
-    async _loadMorePlaces() {
-      if (!this.feedItems.length) return
-      const minId = Math.min(...this.feedItems.map(x => x.event_id))
-      const resp = await fetch(`/api/feed/places?before_id=${minId}&limit=50`).catch(() => null)
-      if (!resp) return
-      const data = await resp.json()
-      this.feedItems = [...this.feedItems, ...data]
-      this.feedExhausted = data.length < 50
+      this.feedItems = await resp.json()
     },
 
     async selectPlace(item) {

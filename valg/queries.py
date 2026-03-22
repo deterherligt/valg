@@ -154,9 +154,21 @@ def query_api_status(conn) -> dict:
     districts_total = conn.execute(
         "SELECT COUNT(*) FROM opstillingskredse"
     ).fetchone()[0]
+    preliminary_places = conn.execute(
+        "SELECT COUNT(DISTINCT afstemningsomraade_id) FROM turnout"
+    ).fetchone()[0]
+    final_places = conn.execute(
+        "SELECT COUNT(DISTINCT afstemningsomraade_id) FROM results WHERE count_type = 'final'"
+    ).fetchone()[0]
+    total_places = conn.execute(
+        "SELECT COUNT(*) FROM afstemningsomraader"
+    ).fetchone()[0]
     return {
         "districts_reported": districts_reported,
         "districts_total": districts_total,
+        "preliminary_places": preliminary_places,
+        "final_places": final_places,
+        "total_places": total_places,
     }
 
 
@@ -446,23 +458,19 @@ def query_place_detail(conn, place_id: str) -> dict | None:
     }
 
 
-def query_feed_places(conn, before_id=None, limit: int = 50) -> list[dict]:
-    params: list = ["district_reported"]
-    where = "WHERE e.event_type = ?"
-    if before_id is not None:
-        where += " AND e.id < ?"
-        params.append(before_id)
-    params.append(limit)
+def query_feed_places(conn) -> list[dict]:
     rows = conn.execute(
-        f"""
-        SELECT e.id AS event_id, e.subject, ao.name, e.occurred_at, e.description
+        """
+        SELECT e.id AS event_id, e.subject, ao.name, e.occurred_at, e.description,
+               sk.name AS storkreds
         FROM events e
         JOIN afstemningsomraader ao ON ao.id = e.subject
-        {where}
+        JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
+        JOIN storkredse sk ON sk.id = ok.storkreds_id
+        WHERE e.event_type = 'district_reported'
         ORDER BY e.id DESC
-        LIMIT ?
         """,
-        params,
+        [],
     ).fetchall()
     return [
         {
@@ -471,6 +479,7 @@ def query_feed_places(conn, before_id=None, limit: int = 50) -> list[dict]:
             "name": r["name"],
             "occurred_at": r["occurred_at"],
             "count_type": "fintælling" if "final" in r["description"] else "foreløbig",
+            "storkreds": r["storkreds"],
         }
         for r in rows
     ]
