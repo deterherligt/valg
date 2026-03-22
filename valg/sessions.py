@@ -99,10 +99,14 @@ class SessionManager:
             self._stop_and_delete(s)
 
     def _stop_and_delete(self, session: SessionState) -> None:
+        runner = session.runner
         try:
-            session.runner.pause()
-            if hasattr(session.runner, "_thread") and session.runner._thread.is_alive():
-                session.runner._thread.join(timeout=5.0)
+            if hasattr(runner, "_stop_event"):
+                runner._stop_event.set()
+            if hasattr(runner, "_pause_event"):
+                runner._pause_event.set()  # unblock if paused
+            if hasattr(runner, "_thread") and runner._thread.is_alive():
+                runner._thread.join(timeout=5.0)
         except Exception:
             pass
         shutil.rmtree(session.db_path.parent, ignore_errors=True)

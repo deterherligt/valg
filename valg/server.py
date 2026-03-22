@@ -401,8 +401,8 @@ def main() -> None:
     _init_conn.close()
     log.info("Initial sync complete.")
 
-    from valg.demo import DemoRunner
-    demo_runner = DemoRunner()
+    from valg.sessions import SessionManager
+    session_manager = SessionManager(base_dir=_APP_DIR / "sessions")
 
     t = threading.Thread(target=_sync_loop, args=(data_dir, db_path), daemon=True)
     t.start()
@@ -410,7 +410,7 @@ def main() -> None:
     app = create_app(
         db_path=db_path,
         data_dir=data_dir,
-        demo_runner=demo_runner,
+        session_manager=session_manager,
         data_repo=data_repo,
     )
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", args.port)))
