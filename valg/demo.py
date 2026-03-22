@@ -55,6 +55,13 @@ try:
 except Exception:
     pass  # wave data not generated yet — scenario unavailable
 
+# Register FV2022 scenario if wave data is available
+try:
+    from valg.scenarios.fv2022 import FV2022_SCENARIO
+    SCENARIOS["fv2022"] = FV2022_SCENARIO
+except Exception:
+    pass  # wave data not generated yet — scenario unavailable
+
 
 def get_scenario(name: str) -> Scenario:
     return SCENARIOS[name]
