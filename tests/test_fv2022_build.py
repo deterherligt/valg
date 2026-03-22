@@ -189,26 +189,26 @@ def test_parse_fv2022_personal_votes_extracts_candidate_rows(tmp_path):
     assert result[key]["V"][normalize_name("Jakob Ellemann-Jensen")] == 55
 
 
-def test_parse_fv2022_personal_votes_skips_partiliste():
-    """parse_fv2022_personal_votes never includes Partiliste rows."""
+def test_parse_fv2022_personal_votes_skips_partiliste(tmp_path):
+    """parse_fv2022_personal_votes excludes Partiliste rows but includes candidate rows."""
     import sys
-    from pathlib import Path
     sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
-    from build_fv2022_scenario import parse_fv2022_personal_votes
-    import tempfile, os
+    from build_fv2022_scenario import parse_fv2022_personal_votes, normalize_ok_name, normalize_ao_name, normalize_name
 
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".csv", delete=False, encoding="utf-8-sig") as f:
-        f.write("Opstillingskreds;Afstemningsområde;Partibogstav;Partinavn;Navn;Stemmetal\n")
-        f.write("Kreds1;AO1;A;SD;Partiliste;100\n")
-        fname = f.name
+    csv_file = tmp_path / "results.csv"
+    csv_file.write_text(
+        "Opstillingskreds;Afstemningsområde;Partibogstav;Partinavn;Navn;Stemmetal\n"
+        "Kreds1;AO1;A;SD;Partiliste;100\n"
+        "Kreds1;AO1;A;SD;Anders And;42\n",
+        encoding="utf-8-sig",
+    )
 
-    try:
-        result = parse_fv2022_personal_votes(Path(fname))
-        for ao_parties in result.values():
-            for party_votes in ao_parties.values():
-                assert "partiliste" not in party_votes
-    finally:
-        os.unlink(fname)
+    result = parse_fv2022_personal_votes(csv_file)
+    key = (normalize_ok_name("Kreds1"), normalize_ao_name("AO1"))
+    assert key in result
+    party_a = result[key]["A"]
+    assert "partiliste" not in party_a
+    assert party_a[normalize_name("Anders And")] == 42
 
 
 def test_build_fv2022_kandidatdata_from_csv_creates_json(tmp_path):

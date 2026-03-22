@@ -392,6 +392,8 @@ def parse_fv2022_personal_votes(
             navn = row.get("Navn", "").strip()
             if navn == "Partiliste":
                 continue
+            if not navn:
+                continue
             ok_norm = normalize_ok_name(row.get("Opstillingskreds", ""))
             ao_norm = normalize_ao_name(row.get("Afstemningsområde", ""))
             party_id = row.get("Partibogstav", "").strip()
