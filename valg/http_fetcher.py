@@ -5,6 +5,7 @@ No SFTP, no git, no credentials required.
 """
 import json
 import logging
+import os
 import urllib.request
 from pathlib import Path
 
@@ -15,10 +16,19 @@ BRANCH = "master"
 _CACHE = ".sha_cache.json"
 
 
+def _make_request(url: str) -> urllib.request.Request:
+    req = urllib.request.Request(url)
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        req.add_header("Authorization", f"Bearer {token}")
+    req.add_header("Accept", "application/vnd.github+json")
+    return req
+
+
 def fetch_tree(repo: str = REPO, branch: str = BRANCH) -> list[dict]:
     """Return list of {path, sha} for all .json blobs in the repo."""
     url = f"https://api.github.com/repos/{repo}/git/trees/{branch}?recursive=1"
-    with urllib.request.urlopen(url, timeout=10) as resp:
+    with urllib.request.urlopen(_make_request(url), timeout=10) as resp:
         data = json.loads(resp.read())
     return [
         f for f in data.get("tree", [])
@@ -30,7 +40,7 @@ def download_file(path: str, dest: Path, repo: str = REPO, branch: str = BRANCH)
     """Download a single file from GitHub raw."""
     url = f"https://raw.githubusercontent.com/{repo}/{branch}/{path}"
     dest.parent.mkdir(parents=True, exist_ok=True)
-    with urllib.request.urlopen(url, timeout=10) as resp:
+    with urllib.request.urlopen(_make_request(url), timeout=10) as resp:
         dest.write_bytes(resp.read())
     log.debug("Downloaded %s", path)
 
