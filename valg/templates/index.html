@@ -96,8 +96,6 @@
               <div class="candidate-row"
                    :class="{focused: focusedCandidateId === c.id}"
                    @click="focusCandidate(c.id)">
-                <input type="checkbox" :checked="selectedCandidateIds.includes(c.id)"
-                       @click.stop="toggleCandidateCheck(c.id)">
                 <div>
                   <div class="cand-name" x-text="c.name"></div>
                   <div class="cand-sub"

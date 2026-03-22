@@ -136,7 +136,6 @@ body {
   background: #1c2128;
   border-left: 2px solid #388bfd;
 }
-.candidate-row input[type=checkbox] { margin-top: 2px; flex-shrink: 0; accent-color: #388bfd; }
 .cand-name { color: #e6edf3; }
 .cand-sub  { color: #8b949e; font-size: 0.85em; margin-top: 1px; }
 
