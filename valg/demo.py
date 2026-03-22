@@ -181,8 +181,11 @@ class DemoRunner:
             if step.process and written:
                 conn = get_connection(self._db_path)
                 snapshot_at = datetime.now(timezone.utc).isoformat()
-                to_process = [p for p in written if not p.name.startswith("kandidat-data")]
-                for p in to_process:
+                kandidat_files = [p for p in written if p.name.startswith("kandidat-data")]
+                other_files = [p for p in written if not p.name.startswith("kandidat-data")]
+                for p in kandidat_files:
+                    process_raw_file(conn, p, snapshot_at=snapshot_at)
+                for p in other_files:
                     process_raw_file(conn, p, snapshot_at=snapshot_at)
 
             if step.commit:

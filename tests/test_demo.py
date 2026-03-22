@@ -255,3 +255,61 @@ def test_runner_restart_clears_data(tmp_path):
         time.sleep(0.1)
 
     assert runner.state in ("running", "done")
+
+
+def test_kandidat_data_files_are_processed(tmp_path):
+    """kandidat-data files written by a step's write_fn must be processed into candidates table."""
+    import json
+    from pathlib import Path
+    from valg.demo import DemoRunner, Scenario, Step
+    from valg.models import get_connection, init_db
+
+    db_path = tmp_path / "test.db"
+    data_repo = tmp_path / "data"
+    data_repo.mkdir()
+
+    kandidat_file = tmp_path / "kandidat-data-Folketingsvalg-test.json"
+    kandidat_file.write_text(json.dumps({
+        "Valg": {
+            "Id": "TEST",
+            "IndenforParti": [
+                {"Id": "A", "Kandidater": [
+                    {"Id": "cand-uuid-1", "Navn": "Test Kandidat", "Stemmeseddelplacering": 1}
+                ]}
+            ],
+            "UdenforParti": {"Kandidater": []}
+        }
+    }))
+
+    def write_fn(data_repo):
+        dest = data_repo / "kandidat-data-Folketingsvalg-test.json"
+        import shutil
+        shutil.copy2(kandidat_file, dest)
+        return [dest]
+
+    scenario = Scenario(
+        name="test", description="test",
+        steps=[Step(name="setup", wave=None, setup=True, process=True, commit=False,
+                    base_interval_s=0, write_fn=write_fn)],
+    )
+
+    conn = get_connection(db_path)
+    init_db(conn)
+    conn.close()
+
+    # Temporarily register test scenario
+    from valg import demo as demo_module
+    demo_module.SCENARIOS["test"] = scenario
+
+    runner = DemoRunner()
+    runner.set_scenario("test")
+
+    runner.start(db_path=db_path, data_repo=data_repo)
+    import time; time.sleep(0.5)
+
+    conn = get_connection(db_path)
+    count = conn.execute("SELECT COUNT(*) FROM candidates").fetchone()[0]
+    conn.close()
+
+    demo_module.SCENARIOS.pop("test", None)
+    assert count == 1, f"Expected 1 candidate in DB, got {count}"
