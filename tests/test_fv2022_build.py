@@ -159,20 +159,57 @@ def test_assign_waves_forces_islands_to_wave_01():
     assert assignment["island1"] == 1
 
 
-def test_download_fv2022_kandidatdata_creates_cache_dir(tmp_path, monkeypatch):
-    """download_fv2022_kandidatdata creates target dir and calls sftp download."""
-    import sys
+def test_build_fv2022_kandidatdata_from_csv_creates_json(tmp_path):
+    """build_fv2022_kandidatdata_from_csv writes kandidat-data JSON from CSV candidate rows."""
+    import sys, json
     sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
-    from build_fv2022_scenario import download_fv2022_kandidatdata
-    import build_fv2022_scenario as script
+    from build_fv2022_scenario import build_fv2022_kandidatdata_from_csv, normalize_ok_name
 
-    calls = []
-    def fake_download(force=False):
-        calls.append(force)
-        (script.CACHE_DIR / "fv2022" / "kandidat-data").mkdir(parents=True, exist_ok=True)
+    # Minimal CSV with two candidates in two parties
+    csv_file = tmp_path / "results.csv"
+    csv_file.write_text(
+        "Opstillingskreds;Afstemningsområde;Partibogstav;Partinavn;Navn;Stemmetal\n"
+        "Frederikshavnkredsen;1. Skagen;A;Socialdemokratiet;Partiliste;409\n"
+        "Frederikshavnkredsen;1. Skagen;A;Socialdemokratiet;Mette Frederiksen;926\n"
+        "Frederikshavnkredsen;1. Skagen;V;Venstre;Partiliste;281\n"
+        "Frederikshavnkredsen;1. Skagen;V;Venstre;Jakob Ellemann-Jensen;55\n",
+        encoding="utf-8-sig",
+    )
 
-    monkeypatch.setattr(script, "CACHE_DIR", tmp_path / ".cache")
-    monkeypatch.setattr(script, "_do_sftp_download_fv2022_kd", fake_download)
-    download_fv2022_kandidatdata(force=False)
-    assert (tmp_path / ".cache" / "fv2022" / "kandidat-data").exists()
-    assert calls == [False]
+    # Minimal geografi with one opstillingskreds
+    geo_dir = tmp_path / "geografi"
+    geo_dir.mkdir()
+    ok_name_norm = normalize_ok_name("Frederikshavnkredsen")
+    (geo_dir / "ok.json").write_text(json.dumps([{
+        "Type": "Opstillingskreds",
+        "Dagi_id": 100101,
+        "Navn": "Frederikshavnkredsen",
+        "Storkredskode": 10,
+        "Nummer": 1,
+    }]))
+
+    output_dir = tmp_path / "kandidat-data"
+    build_fv2022_kandidatdata_from_csv(csv_file, geo_dir, output_dir)
+
+    # One JSON file written
+    files = list(output_dir.glob("*.json"))
+    assert len(files) == 1
+
+    data = json.loads(files[0].read_text())
+    parties = {p["Partibogstav"]: p["Kandidater"] for p in data["IndenforParti"]}
+
+    # Both parties present
+    assert "A" in parties
+    assert "V" in parties
+
+    # Candidate names preserved
+    a_names = {k["Navn"] for k in parties["A"]}
+    assert "Mette Frederiksen" in a_names
+
+    # Each candidate has an Id and an Opstillingskredse entry
+    for party_id, kands in parties.items():
+        for k in kands:
+            assert isinstance(k["Id"], int)
+            assert len(k["Opstillingskredse"]) == 1
+            assert k["Opstillingskredse"][0]["OpstilletIKreds"] is True
+            assert k["Opstillingskredse"][0]["OpstillingskredsDagiId"] == "100101"

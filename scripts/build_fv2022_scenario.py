@@ -28,7 +28,6 @@ CACHE_DIR = Path(__file__).parent / ".cache"
 OUTPUT_DIR = REPO_ROOT / "valg" / "scenarios" / "fv2022"
 
 FV2026_SFTP_PATH = "/data/folketingsvalg-135-24-03-2026"
-FV2022_SFTP_PATH = "/data/arkiv/FV2022"
 FV2022_CSV_URL = (
     "https://valg.dk/api/export-data/export-fv-data-csv"
     "?electionId=987875fe-0dae-42ac-be5b-62cf0bd5d65e"
@@ -459,36 +458,89 @@ def download_fv2026_kandidatdata(force: bool = False) -> None:
         transport.close()
 
 
-def _do_sftp_download_fv2022_kd(force: bool = False) -> None:
-    """Internal: SFTP download of FV2022 kandidat-data into cache."""
-    import paramiko
-    local_kd = CACHE_DIR / "fv2022" / "kandidat-data"
-    local_kd.mkdir(parents=True, exist_ok=True)
+def build_fv2022_kandidatdata_from_csv(
+    csv_path: Path,
+    geo_dir: Path,
+    output_dir: Path,
+    force: bool = False,
+) -> None:
+    """Build FV2022 kandidat-data JSON from CSV personal vote rows + FV2026 geografi.
 
-    if not force and any(local_kd.glob("*.json")):
-        print(f"  using cached fv2022/kandidat-data/ ({len(list(local_kd.glob('*.json')))} files)")
+    Reads candidate names from the CSV (non-Partiliste rows), maps opstillingskreds
+    names to Dagi IDs via the geografi files, assigns sequential integer IDs, and
+    writes a single kandidat-data JSON file to output_dir.
+
+    Skips if output_dir already contains JSON files (unless force=True).
+    """
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    if not force and any(output_dir.glob("*.json")):
+        print(f"  using cached fv2022/kandidat-data/ ({len(list(output_dir.glob('*.json')))} files)")
         return
 
-    print("  downloading fv2022/kandidat-data from SFTP …")
-    transport = paramiko.Transport(("data.valg.dk", 22))
-    transport.connect(username="Valg", password="Valg")
-    sftp = paramiko.SFTPClient.from_transport(transport)
-    try:
-        count = download_sftp_dir(sftp, f"{FV2022_SFTP_PATH}/kandidat-data", local_kd, force=force)
-        if count == 0 and not any(local_kd.glob("*.json")):
-            raise RuntimeError(
-                f"No kandidat-data files found at {FV2022_SFTP_PATH}/kandidat-data — "
-                "check FV2022_SFTP_PATH in the build script."
-            )
-        print(f"  downloaded {count} fv2022 kandidat-data files")
-    finally:
-        sftp.close()
-        transport.close()
+    print("  building fv2022/kandidat-data from CSV …")
 
+    # Build ok_name_norm -> ok_dagi_id mapping from FV2026 geografi
+    ok_name_to_id: dict[str, str] = {}
+    for f in geo_dir.glob("*.json"):
+        if f.name.endswith(".hash"):
+            continue
+        data = json.loads(f.read_text())
+        if not isinstance(data, list) or not data:
+            continue
+        if data[0].get("Type") == "Opstillingskreds":
+            for item in data:
+                name_norm = normalize_ok_name(item.get("Navn", ""))
+                ok_name_to_id[name_norm] = str(item.get("Dagi_id", ""))
 
-def download_fv2022_kandidatdata(force: bool = False) -> None:
-    """Download FV2022 kandidat-data from SFTP into cache."""
-    _do_sftp_download_fv2022_kd(force=force)
+    # Collect candidates: {party_id: {ok_name_norm: set of candidate names}}
+    candidates_by_party_ok: dict[str, dict[str, list[str]]] = {}
+    with csv_path.open(encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f, delimiter=";")
+        for row in reader:
+            if row.get("Navn", "").strip() == "Partiliste":
+                continue
+            party_id = row.get("Partibogstav", "").strip()
+            ok_norm = normalize_ok_name(row.get("Opstillingskreds", ""))
+            name = row.get("Navn", "").strip()
+            if not party_id or not name or not ok_norm:
+                continue
+            candidates_by_party_ok.setdefault(party_id, {}).setdefault(ok_norm, [])
+            if name not in candidates_by_party_ok[party_id][ok_norm]:
+                candidates_by_party_ok[party_id][ok_norm].append(name)
+
+    # Build the JSON structure
+    next_id = 1
+    inden_for_parti = []
+
+    for party_id in sorted(candidates_by_party_ok):
+        party_kandidater = []
+        for ok_norm, names in candidates_by_party_ok[party_id].items():
+            ok_dagi_id = ok_name_to_id.get(ok_norm, "")
+            if not ok_dagi_id:
+                continue
+            for pos, name in enumerate(sorted(names), start=1):
+                party_kandidater.append({
+                    "Id": next_id,
+                    "Navn": name,
+                    "Opstillingskredse": [{
+                        "OpstillingskredsDagiId": ok_dagi_id,
+                        "OpstilletIKreds": True,
+                        "KandidatsPlacering": pos,
+                    }],
+                })
+                next_id += 1
+        inden_for_parti.append({
+            "Partibogstav": party_id,
+            "Kandidater": party_kandidater,
+        })
+
+    out = {"IndenforParti": inden_for_parti}
+    (output_dir / "kandidat-data-fv2022.json").write_text(
+        json.dumps(out, ensure_ascii=False, indent=2)
+    )
+    n = sum(len(p["Kandidater"]) for p in inden_for_parti)
+    print(f"  built kandidat-data-fv2022.json ({n} candidates)")
 
 
 def download_fv2022_csv(force: bool = False) -> None:
@@ -514,8 +566,13 @@ def download_all(force: bool = False) -> None:
     print("Phase 1: Downloading data …")
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     download_fv2026_geografi(force=force)
-    download_fv2022_kandidatdata(force=force)
     download_fv2022_csv(force=force)
+    build_fv2022_kandidatdata_from_csv(
+        csv_path=CACHE_DIR / "fv2022_results.csv",
+        geo_dir=CACHE_DIR / "fv2026" / "geografi",
+        output_dir=CACHE_DIR / "fv2022" / "kandidat-data",
+        force=force,
+    )
     print()
 
 
