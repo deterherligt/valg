@@ -46,7 +46,7 @@ From `data.valg.dk:/data/folketingsvalg-135-24-03-2026/`:
 | File(s) | Used for |
 |---|---|
 | `geografi/Region-*.json` | → `storkredse` table (10 storkredse, integer IDs, `AntalKredsmandater`) |
-| `geografi/Afstemningsomraade-*.json` | AO → opstillingskreds → storkreds hierarchy, `AntalStemmeberettigedeVælgere` for wave ordering |
+| `geografi/Afstemningsomraade-*.json` | AO → opstillingskreds → storkreds hierarchy, `AntalStemmeberettigede` for wave ordering (plugin key — build script uses this exact name in output JSON) |
 | `geografi/Opstillingskreds-FV*.json` (inferred from geografi) | opstillingskredse integer IDs and names |
 | `kandidat-data/kandidat-data-Folketingsvalg-{storkreds}-*.json` | Real FV2026 candidate UUIDs, names, ballot positions |
 | `geografi/Parti-*.json` (if present) or derived | Party list |
@@ -90,7 +90,7 @@ The build script prints a summary of matched vs unmatched AOs before writing out
 
 ## Wave Structure
 
-### Overview (~34 waves)
+### Overview (33 waves)
 
 | Wave | Time | Phase | Content | Description |
 |---|---|---|---|---|
@@ -158,7 +158,29 @@ AOs are sorted by `AntalStemmeberettigedeVælgere` ascending. The build script:
 
 ---
 
+## ID Stringification
+
+All IDs written by the build script into JSON files must be JSON **strings**, not integers — even though FV2026 SFTP uses integer codes. The pipeline stores IDs in `TEXT` columns; mixing integer JSON values with string lookups causes silent mismatches.
+
+Rule: whenever the build script writes an AO ID, opstillingskreds ID, or storkreds ID into a JSON file, stringify it: `str(int_id)`.
+
+---
+
 ## File Formats Per Wave
+
+### Parti-FV2022.json structure
+
+Written to `wave_00/`. Matches the format expected by `parti.py`:
+
+```json
+[
+  {"Id": "A", "Bogstav": "A", "Navn": "Socialdemokratiet"},
+  {"Id": "B", "Bogstav": "B", "Navn": "Radikale Venstre"},
+  ...
+]
+```
+
+Build script derives party names from the first occurrence in the FV2022 CSV grouped by `Partibogstav`.
 
 ### wave_00 (setup)
 
@@ -285,6 +307,32 @@ Registration in `valg/demo.py`:
 from valg.scenarios.fv2022 import FV2022_SCENARIO
 SCENARIOS["fv2022"] = FV2022_SCENARIO
 ```
+
+### Required fix to `demo.py` — kandidat-data processing
+
+The current `_run` loop filters out kandidat-data files before processing:
+
+```python
+to_process = [p for p in written if not p.name.startswith("kandidat-data")]
+```
+
+This means the `candidates` table is never populated for any `write_fn`-based scenario (including kv2025), so the candidate detail view is always empty.
+
+The fix: process kandidat-data files during setup steps, separately from the normal snapshot loop:
+
+```python
+if step.process and written:
+    conn = get_connection(self._db_path)
+    snapshot_at = datetime.now(timezone.utc).isoformat()
+    kandidat_files = [p for p in written if p.name.startswith("kandidat-data")]
+    other_files = [p for p in written if not p.name.startswith("kandidat-data")]
+    for p in kandidat_files:
+        process_raw_file(conn, p, snapshot_at=snapshot_at)
+    for p in other_files:
+        process_raw_file(conn, p, snapshot_at=snapshot_at)
+```
+
+This removes the filter entirely while preserving the processing order (candidates inserted before results). It also fixes kv2025.
 
 ---
 
