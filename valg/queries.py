@@ -259,13 +259,15 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
             continue
 
         # Kredsmandater breakdown per storkreds (D'Hondt per storkreds)
+        sk_seats_for_party: dict[str, int] = {}  # sk_id → kredsmandat seats for this party
         seats_breakdown = []
         for sk_id, sk_votes in storkreds_votes.items():
             n = kredsmandater.get(sk_id, 0)
             if n <= 0:
                 continue
-            sk_seats = calculator.dhondt(sk_votes, n)
-            s = sk_seats.get(party_id, 0)
+            sk_seats_map = calculator.dhondt(sk_votes, n)
+            s = sk_seats_map.get(party_id, 0)
+            sk_seats_for_party[sk_id] = s
             if s > 0:
                 seats_breakdown.append({
                     "name": storkreds_names.get(sk_id, sk_id),
@@ -277,9 +279,10 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
             cand_rows = conn.execute(
                 """
                 SELECT c.id, c.name, ok.name AS opstillingskreds, c.ballot_position,
-                       SUM(r.votes) AS votes
+                       SUM(r.votes) AS votes, ok.storkreds_id, sk.name AS storkreds_name
                 FROM candidates c
                 JOIN opstillingskredse ok ON ok.id = c.opstillingskreds_id
+                JOIN storkredse sk ON sk.id = ok.storkreds_id
                 JOIN results r ON r.candidate_id = c.id
                 WHERE c.party_id = ? AND r.count_type = 'final'
                 GROUP BY c.id
@@ -291,9 +294,10 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
             cand_rows = conn.execute(
                 """
                 SELECT c.id, c.name, ok.name AS opstillingskreds, c.ballot_position,
-                       NULL AS votes
+                       NULL AS votes, ok.storkreds_id, sk.name AS storkreds_name
                 FROM candidates c
                 JOIN opstillingskredse ok ON ok.id = c.opstillingskreds_id
+                JOIN storkredse sk ON sk.id = ok.storkreds_id
                 WHERE c.party_id = ?
                 ORDER BY c.ballot_position
                 """,
@@ -307,9 +311,33 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
                 "opstillingskreds": r["opstillingskreds"],
                 "ballot_position": r["ballot_position"],
                 "votes": r["votes"],
+                "storkreds": r["storkreds_name"],
+                "_sk_id": r["storkreds_id"],
             }
             for r in cand_rows
         ]
+
+        # Annotate each candidate with per-storkreds rank and election status.
+        # Candidates are already in national order (votes DESC or ballot_position ASC).
+        # Ranks are computed within each storkreds independently.
+        from collections import defaultdict
+        sk_groups: dict = defaultdict(list)
+        for c in candidates:
+            sk_groups[c["_sk_id"]].append(c)
+
+        for sk_id, group in sk_groups.items():
+            sk_party_seats = sk_seats_for_party.get(sk_id, 0)
+            if has_votes:
+                ranked = sorted(group, key=lambda c: (c["votes"] or 0), reverse=True)
+            else:
+                ranked = sorted(group, key=lambda c: c["ballot_position"])
+            for rank, c in enumerate(ranked, 1):
+                c["sk_rank"] = rank
+                c["sk_seats"] = sk_party_seats
+                c["elected"] = has_votes and rank <= sk_party_seats
+
+        for c in candidates:
+            del c["_sk_id"]
 
         # Cutoff margin: difference between last candidate in and first candidate out
         party_seats = seats_alloc.get(party_id, 0)
