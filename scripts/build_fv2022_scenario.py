@@ -217,10 +217,105 @@ def build_valgresultater(
     }
 
 
-# ── Download (stub — implemented in Task 5) ──────────────────────────────────
+# ── Download ──────────────────────────────────────────────────────────────────
+
+def download_sftp_dir(
+    sftp,
+    remote_dir: str,
+    local_dir: Path,
+    force: bool = False,
+) -> int:
+    """Recursively download all files from remote_dir to local_dir.
+
+    Returns count of files downloaded (skipped cached files not counted).
+    """
+    local_dir.mkdir(parents=True, exist_ok=True)
+    downloaded = 0
+    for entry in sftp.listdir_attr(remote_dir):
+        remote_path = f"{remote_dir}/{entry.filename}"
+        local_path = local_dir / entry.filename
+        import stat as stat_module
+        if stat_module.S_ISDIR(entry.st_mode):
+            downloaded += download_sftp_dir(sftp, remote_path, local_path, force=force)
+        else:
+            if not force and local_path.exists():
+                continue
+            sftp.get(remote_path, str(local_path))
+            downloaded += 1
+    return downloaded
+
+
+def download_fv2026_geografi(force: bool = False) -> None:
+    """Download FV2026 geografi files from SFTP into cache."""
+    import paramiko
+    local_geo = CACHE_DIR / "fv2026" / "geografi"
+    local_geo.mkdir(parents=True, exist_ok=True)
+
+    # Check if already cached
+    if not force and any(local_geo.glob("*.json")):
+        print(f"  using cached fv2026/geografi/ ({len(list(local_geo.glob('*.json')))} files)")
+        return
+
+    print("  downloading fv2026/geografi from SFTP …")
+    transport = paramiko.Transport(("data.valg.dk", 22))
+    transport.connect(username="Valg", password="Valg")
+    sftp = paramiko.SFTPClient.from_transport(transport)
+    try:
+        count = download_sftp_dir(sftp, f"{FV2026_SFTP_PATH}/geografi", local_geo, force=force)
+        print(f"  downloaded {count} geografi files")
+    finally:
+        sftp.close()
+        transport.close()
+
+
+def download_fv2026_kandidatdata(force: bool = False) -> None:
+    """Download FV2026 kandidat-data files from SFTP into cache."""
+    import paramiko
+    local_kd = CACHE_DIR / "fv2026" / "kandidat-data"
+    local_kd.mkdir(parents=True, exist_ok=True)
+
+    if not force and any(local_kd.glob("*.json")):
+        print(f"  using cached fv2026/kandidat-data/ ({len(list(local_kd.glob('*.json')))} files)")
+        return
+
+    print("  downloading fv2026/kandidat-data from SFTP …")
+    transport = paramiko.Transport(("data.valg.dk", 22))
+    transport.connect(username="Valg", password="Valg")
+    sftp = paramiko.SFTPClient.from_transport(transport)
+    try:
+        count = download_sftp_dir(sftp, f"{FV2026_SFTP_PATH}/kandidat-data", local_kd, force=force)
+        print(f"  downloaded {count} kandidat-data files")
+    finally:
+        sftp.close()
+        transport.close()
+
+
+def download_fv2022_csv(force: bool = False) -> None:
+    """Download FV2022 results CSV from valg.dk API into cache."""
+    import urllib.request
+    csv_path = CACHE_DIR / "fv2022_results.csv"
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+    if not force and csv_path.exists():
+        size_kb = csv_path.stat().st_size // 1024
+        print(f"  using cached fv2022_results.csv ({size_kb} KB)")
+        return
+
+    print("  downloading fv2022_results.csv from valg.dk …")
+    with urllib.request.urlopen(FV2022_CSV_URL, timeout=60) as resp:
+        data = resp.read()
+    csv_path.write_bytes(data)
+    print(f"  downloaded fv2022_results.csv ({len(data) // 1024} KB)")
+
 
 def download_all(force: bool = False) -> None:
-    raise NotImplementedError("Download phase not yet implemented")
+    """Download all required data into cache. Skip if already cached (unless force=True)."""
+    print("Phase 1: Downloading data …")
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    download_fv2026_geografi(force=force)
+    download_fv2026_kandidatdata(force=force)
+    download_fv2022_csv(force=force)
+    print()
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
