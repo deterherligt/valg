@@ -118,6 +118,21 @@ ISLAND_OK_NAMES = {
     "anholtkredsen", "anholt",
 }
 
+# FV2022 Folketing kredsmandater per storkreds (by Nummer, proportional to opstillingskredse)
+# Total: 135 kredsmandater across 10 storkredse
+STORKREDS_KREDSMANDATER = {
+    1: 18,   # København
+    2: 12,   # Københavns Omegn
+    3: 9,    # Nordsjælland
+    4: 2,    # Bornholm
+    5: 18,   # Sjælland
+    6: 12,   # Fyn
+    7: 19,   # Sydjylland
+    8: 16,   # Østjylland
+    9: 16,   # Vestjylland
+    10: 13,  # Nordjylland
+}
+
 
 # ── Pure helper functions ─────────────────────────────────────────────────────
 
@@ -690,10 +705,11 @@ def build_storkredse_list(geografi_dir: Path) -> list[dict]:
         data = json.loads(f.read_text())
         if isinstance(data, list) and data and data[0].get("Type") == "Storkreds":
             for item in data:
+                nummer = item.get("Nummer", item.get("Kode"))
                 result.append({
-                    "Kode": str(item.get("Nummer", "")),
+                    "Kode": str(nummer),
                     "Navn": item.get("Navn", ""),
-                    "AntalKredsmandater": 0,
+                    "AntalKredsmandater": STORKREDS_KREDSMANDATER.get(nummer, 0),
                     "ValgId": "FV2022",
                 })
     return result
