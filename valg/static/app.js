@@ -9,7 +9,16 @@ document.addEventListener('alpine:init', () => {
     partyDetail: null,
     candidateDetail: null,
     candidateFeed: [],
-    feed: [],
+    feedItems: [],
+    feedExhausted: false,
+    selectedPlaceId: null,
+    placeDetail: null,
+    activeTab: 'detail',  // 'detail' | 'sted'
+    feedPanelHeight: 120,
+    _feedResizing: false,
+    _feedResizeStartY: 0,
+    _feedResizeStartH: 0,
+    colWidths: {parties: 220, candidates: 220},
 
     lastSynced: null,
     districtsReported: null,
@@ -18,6 +27,17 @@ document.addEventListener('alpine:init', () => {
     demo: { enabled: false, state: 'idle', scenario: '', scenarios: [], speed: 1 },
 
     async init() {
+      const savedH = localStorage.getItem('valg_feed_height')
+      if (savedH) this.feedPanelHeight = parseInt(savedH, 10)
+      const savedCols = localStorage.getItem('valg_col_widths')
+      if (savedCols) {
+        try {
+          const w = JSON.parse(savedCols)
+          if (w && typeof w.parties === 'number' && typeof w.candidates === 'number') {
+            this.colWidths = w
+          }
+        } catch (_) {}
+      }
       await this._fetchAll()
       await this._fetchDemoState()
       setInterval(() => this._poll(), 10000)
@@ -25,7 +45,7 @@ document.addEventListener('alpine:init', () => {
     },
 
     async _fetchAll() {
-      await Promise.all([this._fetchStatus(), this._fetchParties(), this._fetchFeed()])
+      await Promise.all([this._fetchStatus(), this._fetchParties(), this._fetchFeedPlaces()])
       if (this.selectedPartyIds.length) {
         await Promise.all([this._fetchCandidates(), this._fetchPartyDetail()])
       }
@@ -47,7 +67,7 @@ document.addEventListener('alpine:init', () => {
         this.syncing = false
         return
       }
-      await Promise.all([this._fetchParties(), this._fetchFeed()])
+      await Promise.all([this._fetchParties(), this._fetchFeedPlaces()])
       if (this.selectedPartyIds.length) {
         await Promise.all([this._fetchCandidates(), this._fetchPartyDetail()])
       }
@@ -71,10 +91,71 @@ document.addEventListener('alpine:init', () => {
       this.parties = await resp.json()
     },
 
-    async _fetchFeed() {
-      const resp = await fetch('/api/feed?limit=50').catch(() => null)
+    async _fetchFeedPlaces() {
+      const resp = await fetch('/api/feed/places?limit=50').catch(() => null)
       if (!resp) return
-      this.feed = await resp.json()
+      const data = await resp.json()
+      this.feedItems = data
+      this.feedExhausted = data.length < 50
+      if (!this.selectedPlaceId) {
+        this.$nextTick(() => {
+          const body = this.$refs.feedBody
+          if (body) body.scrollTop = 0
+        })
+      }
+    },
+
+    async _loadMorePlaces() {
+      if (!this.feedItems.length) return
+      const minId = Math.min(...this.feedItems.map(x => x.event_id))
+      const resp = await fetch(`/api/feed/places?before_id=${minId}&limit=50`).catch(() => null)
+      if (!resp) return
+      const data = await resp.json()
+      this.feedItems = [...this.feedItems, ...data]
+      this.feedExhausted = data.length < 50
+    },
+
+    async selectPlace(item) {
+      this.selectedPlaceId = String(item.event_id)
+      this.activeTab = 'sted'
+      const resp = await fetch('/api/place/' + item.place_id).catch(() => null)
+      if (!resp) return
+      this.placeDetail = await resp.json()
+    },
+
+    startFeedResize(e) {
+      this._feedResizing = true
+      this._feedResizeStartY = e.clientY
+      this._feedResizeStartH = this.feedPanelHeight
+      const onMove = (ev) => {
+        if (!this._feedResizing) return
+        const delta = this._feedResizeStartY - ev.clientY
+        this.feedPanelHeight = Math.max(52, this._feedResizeStartH + delta)
+      }
+      const onUp = () => {
+        this._feedResizing = false
+        localStorage.setItem('valg_feed_height', this.feedPanelHeight)
+        document.removeEventListener('mousemove', onMove)
+        document.removeEventListener('mouseup', onUp)
+      }
+      document.addEventListener('mousemove', onMove)
+      document.addEventListener('mouseup', onUp)
+    },
+
+    startColResize(e, col) {
+      const startX = e.clientX
+      const startW = this.colWidths[col]
+      const onMove = (ev) => {
+        const delta = ev.clientX - startX
+        this.colWidths[col] = Math.max(120, startW + delta)
+      }
+      const onUp = () => {
+        localStorage.setItem('valg_col_widths', JSON.stringify(this.colWidths))
+        document.removeEventListener('mousemove', onMove)
+        document.removeEventListener('mouseup', onUp)
+      }
+      document.addEventListener('mousemove', onMove)
+      document.addEventListener('mouseup', onUp)
     },
 
     async _fetchCandidates() {

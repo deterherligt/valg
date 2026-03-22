@@ -223,28 +223,6 @@ def test_api_candidate_after_fintaelling_returns_districts(client_with_final_dat
         assert d["votes"] is None or isinstance(d["votes"], int)
 
 
-def test_api_feed_returns_list(client):
-    resp = client.get("/api/feed")
-    assert resp.status_code == 200
-    assert isinstance(resp.get_json(), list)
-
-
-def test_api_feed_shape_when_events_exist(client_with_data):
-    # We can't easily test shape without events — just check the structure is a list
-    resp = client_with_data.get("/api/feed")
-    data = resp.get_json()
-    assert isinstance(data, list)
-    # Each item should have occurred_at and description if list is non-empty
-    for item in data:
-        assert "occurred_at" in item
-        assert "description" in item
-
-
-def test_api_feed_respects_limit(client):
-    resp = client.get("/api/feed?limit=5")
-    assert resp.status_code == 200
-
-
 def test_api_candidate_feed_returns_list(client):
     resp = client.get("/api/candidate-feed/nonexistent")
     assert resp.status_code == 200
@@ -509,3 +487,129 @@ def test_demo_state_has_scenario_and_scenarios_fields(tmp_path):
     assert "speed" in data
     assert "enabled" in data
     assert "state" in data
+
+
+@pytest.fixture
+def client_with_events(tmp_path):
+    db = tmp_path / "test.db"
+    conn = get_connection(str(db))
+    init_db(conn)
+    e = generate_election(seed=42)
+    load_into_db(conn, e, phase="preliminary")
+    # Manually insert district_reported events
+    ao_ids = [ao["id"] for ao in e["afstemningsomraader"]]
+    for i, ao_id in enumerate(ao_ids[:3]):
+        conn.execute(
+            "INSERT INTO events (occurred_at, event_type, subject, description) "
+            "VALUES (?,?,?,?)",
+            (f"2024-11-05T21:0{i}:00", "district_reported", ao_id, "preliminary results"),
+        )
+    conn.commit()
+    conn.close()
+    app = create_app(db_path=db, data_dir=tmp_path / "data")
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        yield c
+
+
+def test_feed_places_empty(client):
+    resp = client.get("/api/feed/places")
+    assert resp.status_code == 200
+    assert resp.get_json() == []
+
+
+def test_feed_places_returns_newest_first(client_with_events):
+    resp = client_with_events.get("/api/feed/places")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert len(data) == 3
+    # newest first (highest event id first)
+    assert data[0]["occurred_at"] > data[-1]["occurred_at"]
+    item = data[0]
+    assert "event_id" in item
+    assert "place_id" in item      # afstemningsomraade id for /api/place/<id>
+    assert "name" in item          # place name from afstemningsomraader
+    assert "count_type" in item    # "foreløbig" or "fintælling"
+    assert "occurred_at" in item
+    assert item["count_type"] == "foreløbig"
+
+
+def test_place_detail_one_snapshot_no_delta(client_with_data):
+    # client_with_data has preliminary results loaded
+    # Find an afstemningsomraade that has results
+    e = generate_election(seed=42)
+    ao_id = e["afstemningsomraader"][0]["id"]
+    resp = client_with_data.get(f"/api/place/{ao_id}")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert "parties" in data
+    assert "candidates" in data
+    assert "name" in data
+    assert "opstillingskreds" in data
+    assert "count_type" in data
+    assert "occurred_at" in data
+    assert len(data["parties"]) > 0
+    assert data["candidates"] == []  # no final data
+    # Delta must be null for all parties (only one snapshot)
+    for p in data["parties"]:
+        assert p["delta"] is None
+
+
+def test_place_detail_two_snapshots_has_delta(tmp_path):
+    from valg.models import get_connection, init_db
+    db = tmp_path / "test.db"
+    conn = get_connection(str(db))
+    init_db(conn)
+    e = generate_election(seed=42)
+    load_into_db(conn, e, phase="preliminary")
+    # Insert a second preliminary snapshot with different snapshot_at
+    ao = e["afstemningsomraader"][0]
+    party_id = e["parties"][0]["id"]
+    conn.execute(
+        "INSERT OR IGNORE INTO results "
+        "(afstemningsomraade_id, party_id, candidate_id, votes, count_type, snapshot_at) "
+        "VALUES (?,?,NULL,999,'preliminary','2024-11-05T23:00:00')",
+        (ao["id"], party_id),
+    )
+    conn.commit()
+    conn.close()
+
+    from valg.server import create_app
+    app = create_app(db_path=db, data_dir=tmp_path / "data")
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        resp = c.get(f"/api/place/{ao['id']}")
+        data = resp.get_json()
+    # At least one party should have a non-null delta
+    deltas = [p["delta"] for p in data["parties"]]
+    assert any(d is not None for d in deltas)
+
+
+def test_place_detail_with_final_has_candidates(client_with_final_data):
+    e = generate_election(seed=42)
+    ao_id = e["afstemningsomraader"][0]["id"]
+    resp = client_with_final_data.get(f"/api/place/{ao_id}")
+    data = resp.get_json()
+    assert len(data["candidates"]) > 0
+    for c in data["candidates"]:
+        assert "name" in c
+        assert "party_letter" in c
+        assert "votes" in c
+
+
+def test_place_detail_not_found(client):
+    resp = client.get("/api/place/nonexistent-id")
+    assert resp.status_code == 404
+
+
+def test_feed_places_cursor_pagination(client_with_events):
+    # Get all 3, then fetch with before_id of the second item
+    all_resp = client_with_events.get("/api/feed/places")
+    all_data = all_resp.get_json()
+    assert len(all_data) == 3
+    second_id = all_data[1]["event_id"]
+    page2 = client_with_events.get(f"/api/feed/places?before_id={second_id}")
+    page2_data = page2.get_json()
+    # Only entries older than second_id (id < second_id)
+    assert len(page2_data) == 1
+    assert all(item["event_id"] < second_id for item in page2_data)

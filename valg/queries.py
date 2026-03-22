@@ -314,12 +314,140 @@ def query_api_candidate(conn, candidate_id: str) -> dict | None:
     }
 
 
-def query_api_feed(conn, limit: int = 50) -> list[dict]:
-    rows = conn.execute(
-        "SELECT occurred_at, description FROM events ORDER BY occurred_at DESC LIMIT ?",
-        (limit,),
+def query_place_detail(conn, place_id: str) -> dict | None:
+    ao = conn.execute(
+        "SELECT ao.id, ao.name, ok.name AS opstillingskreds "
+        "FROM afstemningsomraader ao "
+        "JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id "
+        "WHERE ao.id = ?",
+        (place_id,),
+    ).fetchone()
+    if not ao:
+        return None
+
+    # Two most recent distinct snapshot_at values for this place
+    snaps = conn.execute(
+        "SELECT DISTINCT snapshot_at FROM results "
+        "WHERE afstemningsomraade_id = ? AND candidate_id IS NULL "
+        "ORDER BY snapshot_at DESC LIMIT 2",
+        (place_id,),
     ).fetchall()
-    return [{"occurred_at": r["occurred_at"], "description": r["description"]} for r in rows]
+    if not snaps:
+        return None
+
+    latest_snap = snaps[0]["snapshot_at"]
+    prev_snap = snaps[1]["snapshot_at"] if len(snaps) > 1 else None
+
+    def _party_votes_at(snap_at: str) -> dict:
+        """Return {party_id: row} preferring 'final' over 'preliminary'."""
+        rows = conn.execute(
+            "WITH ranked AS ("
+            "  SELECT party_id, votes, count_type, "
+            "  ROW_NUMBER() OVER (PARTITION BY party_id ORDER BY count_type ASC) AS rn "
+            "  FROM results "
+            "  WHERE afstemningsomraade_id = ? AND snapshot_at = ? AND candidate_id IS NULL"
+            ") SELECT party_id, votes, count_type FROM ranked WHERE rn = 1",
+            (place_id, snap_at),
+        ).fetchall()
+        return {r["party_id"]: r for r in rows}
+
+    latest_rows = _party_votes_at(latest_snap)
+    prev_rows = _party_votes_at(prev_snap) if prev_snap else {}
+
+    # Dominant count_type for header (prefer 'final')
+    count_types = {r["count_type"] for r in latest_rows.values()}
+    count_type_db = "final" if "final" in count_types else "preliminary"
+    count_type_display = "fintælling" if count_type_db == "final" else "foreløbig"
+
+    # Build party list with deltas
+    party_meta = {
+        r["id"]: r
+        for r in conn.execute(
+            "SELECT id, letter, name FROM parties WHERE id IN ("
+            + ",".join("?" * len(latest_rows)) + ")",
+            list(latest_rows.keys()),
+        ).fetchall()
+    } if latest_rows else {}
+
+    parties = []
+    for party_id, row in sorted(latest_rows.items(), key=lambda x: -x[1]["votes"]):
+        meta = party_meta.get(party_id, {"letter": party_id, "name": party_id})
+        prev = prev_rows.get(party_id)
+        delta = (row["votes"] - prev["votes"]) if prev else None
+        parties.append({
+            "party_id": party_id,
+            "letter": meta["letter"],
+            "name": meta["name"],
+            "votes": row["votes"],
+            "delta": delta,
+        })
+
+    # Candidate votes (only present for 'final' count) — use latest snapshot that has candidates
+    latest_cand_snap = conn.execute(
+        "SELECT MAX(snapshot_at) FROM results "
+        "WHERE afstemningsomraade_id = ? AND candidate_id IS NOT NULL",
+        (place_id,),
+    ).fetchone()[0]
+
+    cand_rows = []
+    if latest_cand_snap:
+        cand_rows = conn.execute(
+            "WITH ranked AS ("
+            "  SELECT r.candidate_id, r.votes, c.name AS cand_name, p.letter AS party_letter, "
+            "  ROW_NUMBER() OVER (PARTITION BY r.candidate_id ORDER BY r.count_type ASC) AS rn "
+            "  FROM results r "
+            "  JOIN candidates c ON c.id = r.candidate_id "
+            "  JOIN parties p ON p.id = c.party_id "
+            "  WHERE r.afstemningsomraade_id = ? AND r.snapshot_at = ? "
+            "    AND r.candidate_id IS NOT NULL"
+            ") SELECT candidate_id, votes, cand_name, party_letter FROM ranked WHERE rn = 1 "
+            "ORDER BY votes DESC",
+            (place_id, latest_cand_snap),
+        ).fetchall()
+
+    candidates = [
+        {"name": r["cand_name"], "party_letter": r["party_letter"], "votes": r["votes"]}
+        for r in cand_rows
+    ]
+
+    return {
+        "name": ao["name"],
+        "opstillingskreds": ao["opstillingskreds"],
+        "count_type": count_type_display,
+        "occurred_at": latest_snap,
+        "parties": parties,
+        "candidates": candidates,
+    }
+
+
+def query_feed_places(conn, before_id=None, limit: int = 50) -> list[dict]:
+    params: list = ["district_reported"]
+    where = "WHERE e.event_type = ?"
+    if before_id is not None:
+        where += " AND e.id < ?"
+        params.append(before_id)
+    params.append(limit)
+    rows = conn.execute(
+        f"""
+        SELECT e.id AS event_id, e.subject, ao.name, e.occurred_at, e.description
+        FROM events e
+        JOIN afstemningsomraader ao ON ao.id = e.subject
+        {where}
+        ORDER BY e.id DESC
+        LIMIT ?
+        """,
+        params,
+    ).fetchall()
+    return [
+        {
+            "event_id": r["event_id"],
+            "place_id": r["subject"],
+            "name": r["name"],
+            "occurred_at": r["occurred_at"],
+            "count_type": "fintælling" if "final" in r["description"] else "foreløbig",
+        }
+        for r in rows
+    ]
 
 
 def query_api_candidate_feed(conn, candidate_id: str, limit: int = 20) -> list[dict]:
