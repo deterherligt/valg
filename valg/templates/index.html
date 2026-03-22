@@ -344,33 +344,5 @@
     </div>
   </div>
 
-  <!-- SVG annotation arrows (shown with about modal) -->
-  <svg class="about-arrows" x-show="showAbout"
-       viewBox="0 0 100 100" preserveAspectRatio="none"
-       xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <marker id="arrowhead" markerWidth="6" markerHeight="6"
-              refX="3" refY="3" orient="auto">
-        <path d="M0,0 L0,6 L6,3 Z" fill="#58a6ff" opacity="0.55"/>
-      </marker>
-    </defs>
-    <!-- Datakilder → header sync status (top-right area) -->
-    <path d="M 35,28 C 35,15 70,8 82,5"
-          stroke="#58a6ff" stroke-width="0.5" stroke-dasharray="1.5,1"
-          fill="none" marker-end="url(#arrowhead)" opacity="0.45"/>
-    <!-- Mandatberegning → parties col (left side) -->
-    <path d="M 22,42 C 10,42 6,52 5,62"
-          stroke="#58a6ff" stroke-width="0.5" stroke-dasharray="1.5,1"
-          fill="none" marker-end="url(#arrowhead)" opacity="0.45"/>
-    <!-- Kandidatoversigt → candidates col (centre) -->
-    <path d="M 40,50 C 30,58 30,68 32,72"
-          stroke="#58a6ff" stroke-width="0.5" stroke-dasharray="1.5,1"
-          fill="none" marker-end="url(#arrowhead)" opacity="0.45"/>
-    <!-- D'Hondt / detaljer → detail col (right) -->
-    <path d="M 62,42 C 72,42 78,52 80,62"
-          stroke="#58a6ff" stroke-width="0.5" stroke-dasharray="1.5,1"
-          fill="none" marker-end="url(#arrowhead)" opacity="0.45"/>
-  </svg>
-
 </body>
 </html>
