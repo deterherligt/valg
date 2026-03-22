@@ -471,8 +471,378 @@ def download_all(force: bool = False) -> None:
     print()
 
 
+# ── Wave assignment ────────────────────────────────────────────────────────────
+
+N_PRELIM_WAVES = 25   # wave_01 ... wave_25
+N_FINAL_WAVES = 7     # wave_26 ... wave_32
+
+
+def assign_preliminary_waves(
+    matched_aos: dict[str, dict],
+    n_waves: int,
+    island_ao_ids: set[str],
+) -> dict[str, int]:
+    """Assign each AO an integer wave number (1-indexed).
+
+    Island AOs are forced to wave 1. Remaining AOs are sorted by eligible_voters
+    ascending and distributed evenly across waves 2..n_waves.
+    Returns {ao_id: wave_number}.
+    """
+    assignment: dict[str, int] = {}
+
+    island = {k for k in matched_aos if k in island_ao_ids}
+    non_island = {k: v for k, v in matched_aos.items() if k not in island_ao_ids}
+
+    for ao_id in island:
+        assignment[ao_id] = 1
+
+    sorted_aos = sorted(non_island, key=lambda k: non_island[k].get("eligible_voters", 0))
+    bucket_size = max(1, math.ceil(len(sorted_aos) / (n_waves - 1)))
+
+    for i, ao_id in enumerate(sorted_aos):
+        wave = min(2 + i // bucket_size, n_waves)
+        assignment[ao_id] = wave
+
+    return assignment
+
+
+def detect_island_ao_ids(hierarchy: dict[str, dict]) -> set[str]:
+    """Return AO IDs that belong to island opstillingskredse or storkredse."""
+    island_ids: set[str] = set()
+    for ao_id, info in hierarchy.items():
+        ok_norm = normalize_ok_name(info.get("ok_name", ""))
+        sk_id = info.get("sk_id", "")
+        if ok_norm in ISLAND_OK_NAMES or sk_id in ISLAND_STORKREDS_CODES:
+            island_ids.add(ao_id)
+    return island_ids
+
+
+# ── File generation ────────────────────────────────────────────────────────────
+
+def write_wave_00(
+    output_dir: Path,
+    geografi_dir: Path,
+    kandidat_dir: Path,
+    storkredse: list[dict],
+    opstillingskredse: list[dict],
+    all_aos: list[dict],
+    parties: list[dict],
+) -> None:
+    """Write wave_00 setup files: Parti, Storkreds, geografi, kandidat-data."""
+    wave_dir = output_dir / "wave_00"
+    wave_dir.mkdir(parents=True, exist_ok=True)
+
+    (wave_dir / "_meta.json").write_text(json.dumps({
+        "label": "20:00 — Opstilling & geografi",
+        "time": "20:00",
+        "interval_s": 0.0,
+        "phase": "setup",
+    }, ensure_ascii=False, indent=2))
+
+    (wave_dir / "Parti-FV2022.json").write_text(
+        json.dumps(parties, ensure_ascii=False, indent=2)
+    )
+
+    (wave_dir / "Storkreds.json").write_text(
+        json.dumps(storkredse, ensure_ascii=False, indent=2)
+    )
+
+    geo_out = wave_dir / "geografi"
+    geo_out.mkdir(exist_ok=True)
+    (geo_out / "Opstillingskreds-FV2022.json").write_text(
+        json.dumps(opstillingskredse, ensure_ascii=False, indent=2)
+    )
+    (geo_out / "Afstemningsomraade-FV2022.json").write_text(
+        json.dumps(all_aos, ensure_ascii=False, indent=2)
+    )
+
+    kd_out = wave_dir / "kandidat-data"
+    kd_out.mkdir(exist_ok=True)
+    for src in kandidat_dir.glob("*.json"):
+        if not src.name.endswith(".hash"):
+            shutil.copy2(src, kd_out / src.name)
+
+
+def write_preliminary_wave(
+    wave_dir: Path,
+    wave_index: int,
+    ao_ids_in_wave: list[str],
+    hierarchy: dict[str, dict],
+    cumulative_ok_votes: dict[str, dict[str, int]],
+    fv2022_votes: dict[tuple[str, str], dict[str, int]],
+) -> None:
+    """Write one preliminary wave: partistemmefordeling (cumulative) + valgdeltagelse."""
+    wave_dir.mkdir(parents=True, exist_ok=True)
+    t = WAVE_TIMES[wave_index]
+
+    description = wave_description(wave_index, ao_ids_in_wave, hierarchy)
+    (wave_dir / "_meta.json").write_text(json.dumps({
+        "label": f"{t} — {description}",
+        "time": t,
+        "interval_s": float(WAVE_INTERVALS[wave_index]),
+        "phase": "preliminary",
+    }, ensure_ascii=False, indent=2))
+
+    pf_dir = wave_dir / "partistemmefordeling"
+    pf_dir.mkdir(exist_ok=True)
+    vd_dir = wave_dir / "valgdeltagelse"
+    vd_dir.mkdir(exist_ok=True)
+
+    affected_ok_ids: set[str] = set()
+
+    for ao_id in ao_ids_in_wave:
+        info = hierarchy[ao_id]
+        ok_id = info["ok_id"]
+        ok_name = info["ok_name"]
+        ao_name = info["ao_name"]
+        # Use same normalization as parse_fv2022_csv / build_id_mapping
+        key = (normalize_ok_name(ok_name), normalize_ao_name(ao_name))
+        ao_party_votes = fv2022_votes.get(key, {})
+
+        ok_votes = cumulative_ok_votes.setdefault(ok_id, {})
+        for party_id, votes in ao_party_votes.items():
+            ok_votes[party_id] = ok_votes.get(party_id, 0) + votes
+        affected_ok_ids.add(ok_id)
+
+        eligible = info.get("eligible_voters", 0)
+        total_party_votes = sum(ao_party_votes.values())
+        vd_data = {
+            "Valgart": "Folketingsvalg",
+            "AfstemningsomraadeDagiId": str(ao_id),
+            "Valgdeltagelse": [{
+                "AntalStemmeberettigede": eligible,
+                "AfgivneStemmer": total_party_votes,
+                "Tidspunkt": f"{t}:00",
+            }],
+        }
+        (vd_dir / f"valgdeltagelse-{ao_id}.json").write_text(
+            json.dumps(vd_data, ensure_ascii=False, indent=2)
+        )
+
+    for ok_id in affected_ok_ids:
+        pf = build_partistemmefordeling(ok_id, cumulative_ok_votes[ok_id])
+        (pf_dir / f"partistemmefordeling-{ok_id}.json").write_text(
+            json.dumps(pf, ensure_ascii=False, indent=2)
+        )
+
+
+def write_fintaelling_wave(
+    wave_dir: Path,
+    wave_index: int,
+    ao_ids_in_wave: list[str],
+    hierarchy: dict[str, dict],
+    fv2022_votes: dict[tuple[str, str], dict[str, int]],
+    kandidatdata: dict[str, dict[str, list[dict]]],
+) -> None:
+    """Write one fintaelling wave: valgresultater with synthetic candidate votes."""
+    wave_dir.mkdir(parents=True, exist_ok=True)
+    t = WAVE_TIMES[wave_index]
+
+    description = "Fintaelling — " + wave_description(wave_index, ao_ids_in_wave, hierarchy)
+    (wave_dir / "_meta.json").write_text(json.dumps({
+        "label": f"{t} — {description}",
+        "time": t,
+        "interval_s": float(WAVE_INTERVALS[wave_index]),
+        "phase": "final",
+    }, ensure_ascii=False, indent=2))
+
+    vr_dir = wave_dir / "valgresultater"
+    vr_dir.mkdir(exist_ok=True)
+
+    for ao_id in ao_ids_in_wave:
+        info = hierarchy[ao_id]
+        ok_id = info["ok_id"]
+        ok_name = info["ok_name"]
+        ao_name = info["ao_name"]
+        key = (normalize_ok_name(ok_name), normalize_ao_name(ao_name))
+        ao_party_votes = fv2022_votes.get(key, {})
+
+        party_data: dict[str, dict] = {}
+        for party_id, total in ao_party_votes.items():
+            candidates = kandidatdata.get(ok_id, {}).get(party_id, [])
+            party_data[party_id] = {
+                "total": total,
+                "candidates_by_ok": {ok_id: candidates},
+            }
+
+        vr = build_valgresultater(
+            ao_id=str(ao_id),
+            optaellingstype="Fintaelling",
+            party_data=party_data,
+            ao_ok_id=ok_id,
+        )
+        safe_ao_name = ao_name.replace("/", "-").replace(" ", "_")[:40]
+        filename = f"valgresultater-Folketingsvalg-{safe_ao_name}-{ao_id}.json"
+        (vr_dir / filename).write_text(json.dumps(vr, ensure_ascii=False, indent=2))
+
+
+# ── Main helper functions ──────────────────────────────────────────────────────
+
+def build_storkredse_list(geografi_dir: Path) -> list[dict]:
+    """Extract storkredse from geografi files, formatted for Storkreds.json.
+
+    Actual schema: {Nummer, Navn, Valglandsdelkode, Type} — no AntalKredsmandater.
+    """
+    result = []
+    for f in geografi_dir.glob("*.json"):
+        if f.name.endswith(".hash"):
+            continue
+        data = json.loads(f.read_text())
+        if isinstance(data, list) and data and data[0].get("Type") == "Storkreds":
+            for item in data:
+                result.append({
+                    "Kode": str(item.get("Nummer", "")),
+                    "Navn": item.get("Navn", ""),
+                    "AntalKredsmandater": 0,
+                    "ValgId": "FV2022",
+                })
+    return result
+
+
+def build_opstillingskredse_list(geografi_dir: Path) -> list[dict]:
+    """Extract opstillingskredse formatted for Opstillingskreds-FV2022.json.
+
+    Actual schema: {Dagi_id, Nummer, Navn, Storkredskode, Type}.
+    """
+    result = []
+    for f in geografi_dir.glob("*.json"):
+        if f.name.endswith(".hash"):
+            continue
+        data = json.loads(f.read_text())
+        if isinstance(data, list) and data and data[0].get("Type") == "Opstillingskreds":
+            for item in data:
+                result.append({
+                    "Kode": str(item.get("Dagi_id", "")),
+                    "Navn": item.get("Navn", ""),
+                    "StorkredskodeKode": str(item.get("Storkredskode", "")),
+                    "ValgId": "FV2022",
+                })
+    return result
+
+
+def build_aos_list(hierarchy: dict[str, dict]) -> list[dict]:
+    """Build Afstemningsomraade-FV2022.json list from hierarchy."""
+    return [
+        {
+            "Kode": str(ao_id),
+            "Navn": info["ao_name"],
+            "OpstillingskredsKode": str(info["ok_id"]),
+            "AntalStemmeberettigede": info["eligible_voters"],
+            "ValgId": "FV2022",
+        }
+        for ao_id, info in hierarchy.items()
+    ]
+
+
+def build_parties_list() -> list[dict]:
+    """Return hardcoded FV2022 party list."""
+    return [
+        {"Id": "A", "Bogstav": "A", "Navn": "Socialdemokratiet"},
+        {"Id": "B", "Bogstav": "B", "Navn": "Radikale Venstre"},
+        {"Id": "C", "Bogstav": "C", "Navn": "Det Konservative Folkeparti"},
+        {"Id": "D", "Bogstav": "D", "Navn": "Nye Borgerlige"},
+        {"Id": "F", "Bogstav": "F", "Navn": "SF — Socialistisk Folkeparti"},
+        {"Id": "I", "Bogstav": "I", "Navn": "Liberal Alliance"},
+        {"Id": "K", "Bogstav": "K", "Navn": "Kristendemokraterne"},
+        {"Id": "M", "Bogstav": "M", "Navn": "Moderaterne"},
+        {"Id": "O", "Bogstav": "O", "Navn": "Dansk Folkeparti"},
+        {"Id": "Q", "Bogstav": "Q", "Navn": "Frie Gronne"},
+        {"Id": "V", "Bogstav": "V", "Navn": "Venstre"},
+        {"Id": "Aa", "Bogstav": "Aa", "Navn": "Alternativet"},
+        {"Id": "Ae", "Bogstav": "Ae", "Navn": "Danmarksdemokraterne"},
+        {"Id": "Oe", "Bogstav": "Oe", "Navn": "Enhedslisten"},
+    ]
+
+
+def wave_description(wave_index: int, ao_ids: list[str], hierarchy: dict[str, dict]) -> str:
+    """Generate a human-readable description for a wave's AOs."""
+    if wave_index == 1:
+        sk_names = list(dict.fromkeys(hierarchy[a]["sk_name"] for a in ao_ids if a in hierarchy))
+        return "Oeer — " + ", ".join(sk_names[:4])
+    sk_names = list(dict.fromkeys(hierarchy[a]["sk_name"] for a in ao_ids if a in hierarchy))
+    return ", ".join(sk_names[:3]) + (f" +{len(sk_names)-3} mere" if len(sk_names) > 3 else "")
+
+
+def run(force: bool = False) -> None:
+    print(f"Building FV2022 scenario -> {OUTPUT_DIR}\n")
+
+    # Phase 1: Download
+    download_all(force=force)
+
+    # Phase 2: Parse
+    print("Phase 2: Parsing ...")
+    geo_dir = CACHE_DIR / "fv2026" / "geografi"
+    kd_dir = CACHE_DIR / "fv2026" / "kandidat-data"
+    csv_path = CACHE_DIR / "fv2022_results.csv"
+
+    hierarchy = parse_geografi(geo_dir)
+    kandidatdata = parse_kandidatdata(kd_dir)
+    fv2022_votes = parse_fv2022_csv(csv_path)
+    id_mapping = build_id_mapping(hierarchy)
+
+    matched_ao_ids = {id_mapping[k]: hierarchy[id_mapping[k]] for k in fv2022_votes if k in id_mapping}
+    unmatched = [k for k in fv2022_votes if k not in id_mapping]
+    print(f"  Matched {len(matched_ao_ids)}/{len(fv2022_votes)} AOs "
+          f"({100*len(matched_ao_ids)//max(1,len(fv2022_votes))}%)")
+    if unmatched:
+        print(f"  Unmatched ({len(unmatched)}): {unmatched[:5]} ...")
+    print()
+
+    # Phase 3: Wave assignment
+    print("Phase 3: Assigning waves ...")
+    island_ao_ids = detect_island_ao_ids(matched_ao_ids)
+    print(f"  Island AOs -> wave_01: {len(island_ao_ids)}")
+    prelim_assignment = assign_preliminary_waves(matched_ao_ids, N_PRELIM_WAVES, island_ao_ids)
+
+    prelim_by_wave: dict[int, list[str]] = {}
+    for ao_id, wave_num in prelim_assignment.items():
+        prelim_by_wave.setdefault(wave_num, []).append(ao_id)
+
+    # Assign fintaelling waves: spread prelim waves evenly across final wave slots
+    final_by_wave: dict[int, list[str]] = {}
+    for prelim_wave in sorted(prelim_by_wave.keys()):
+        final_wave = N_PRELIM_WAVES + 1 + ((prelim_wave - 1) * N_FINAL_WAVES // N_PRELIM_WAVES)
+        final_wave = min(final_wave, 32)
+        final_by_wave.setdefault(final_wave, []).extend(prelim_by_wave[prelim_wave])
+    print(f"  Preliminary waves: {len(prelim_by_wave)}, Fintaelling waves: {len(final_by_wave)}")
+    print()
+
+    # Phase 4: Write output
+    print("Phase 4: Writing wave files ...")
+    if OUTPUT_DIR.exists():
+        shutil.rmtree(OUTPUT_DIR)
+    OUTPUT_DIR.mkdir(parents=True)
+
+    storkredse = build_storkredse_list(geo_dir)
+    opstillingskredse = build_opstillingskredse_list(geo_dir)
+    all_aos = build_aos_list(matched_ao_ids)
+    parties = build_parties_list()
+
+    write_wave_00(OUTPUT_DIR, geo_dir, kd_dir, storkredse, opstillingskredse, all_aos, parties)
+    print(f"  wave_00: setup ({len(storkredse)} storkredse, {len(opstillingskredse)} ok, {len(all_aos)} AOs)")
+
+    cumulative_ok_votes: dict[str, dict[str, int]] = {}
+    for wave_num in range(1, N_PRELIM_WAVES + 1):
+        ao_ids = prelim_by_wave.get(wave_num, [])
+        if not ao_ids:
+            continue
+        wave_dir = OUTPUT_DIR / f"wave_{wave_num:02d}"
+        write_preliminary_wave(wave_dir, wave_num, ao_ids, matched_ao_ids, cumulative_ok_votes, fv2022_votes)
+        print(f"  wave_{wave_num:02d}: {len(ao_ids)} AOs")
+
+    for wave_num in range(N_PRELIM_WAVES + 1, 33):
+        ao_ids = final_by_wave.get(wave_num, [])
+        if not ao_ids:
+            continue
+        wave_dir = OUTPUT_DIR / f"wave_{wave_num:02d}"
+        write_fintaelling_wave(wave_dir, wave_num, ao_ids, matched_ao_ids, fv2022_votes, kandidatdata)
+        print(f"  wave_{wave_num:02d}: fintaelling {len(ao_ids)} AOs")
+
+    print(f"\nDone. {len(list(OUTPUT_DIR.glob('wave_*')))} waves written to {OUTPUT_DIR}")
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     force = "--force" in sys.argv
-    print("Build script not yet complete — run after all tasks are implemented.")
+    run(force=force)

@@ -125,3 +125,35 @@ def test_build_id_mapping_joins_by_name(tmp_path):
     mapping = build_id_mapping(hierarchy)
     key = (normalize_ok_name("Frederikshavnkredsen"), normalize_ao_name("1. Skagen"))
     assert mapping[key] == "100101"
+
+
+def test_assign_waves_puts_small_aos_first():
+    """assign_preliminary_waves assigns small AOs to early waves."""
+    import sys
+    sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
+    from build_fv2022_scenario import assign_preliminary_waves
+
+    aos = {str(i): {"eligible_voters": i * 100, "ok_id": "ok1", "sk_id": "1"} for i in range(1, 101)}
+    assignment = assign_preliminary_waves(aos, n_waves=5, island_ao_ids=set())
+
+    # AO with fewest voters should be in wave 1 or 2
+    smallest_ao = "1"
+    assert assignment[smallest_ao] <= 2
+
+    # AO with most voters should be in late wave
+    largest_ao = "100"
+    assert assignment[largest_ao] >= 4
+
+
+def test_assign_waves_forces_islands_to_wave_01():
+    """assign_preliminary_waves forces island AOs into wave 1."""
+    import sys
+    sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
+    from build_fv2022_scenario import assign_preliminary_waves
+
+    aos = {
+        "island1": {"eligible_voters": 5000, "ok_id": "ok1", "sk_id": "1"},
+        "small1": {"eligible_voters": 100, "ok_id": "ok2", "sk_id": "2"},
+    }
+    assignment = assign_preliminary_waves(aos, n_waves=5, island_ao_ids={"island1"})
+    assert assignment["island1"] == 1
