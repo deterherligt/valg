@@ -118,3 +118,16 @@ def test_final_event_description(db, tmp_path):
     process_directory(db, tmp_path, snapshot_at="2024-11-06T10:00:00")
     row = db.execute("SELECT description FROM events WHERE event_type='district_reported' LIMIT 1").fetchone()
     assert "final" in row["description"]
+
+
+def test_turnout_file_emits_preliminary_event(db, tmp_path):
+    # valgdeltagelse (turnout) files should emit district_reported events
+    # even when there are no valgresultater — this covers preliminary-only waves
+    f = tmp_path / "valgdeltagelse-AO1.json"
+    f.write_text((FIXTURES / "valgdeltagelse_fv.json").read_text())
+    db.execute("INSERT OR REPLACE INTO afstemningsomraader (id, name) VALUES ('AO1', 'Test AO')")
+    db.commit()
+    process_raw_file(db, f, snapshot_at="2024-11-05T20:00:00")
+    row = db.execute("SELECT description FROM events WHERE event_type='district_reported'").fetchone()
+    assert row is not None
+    assert "preliminary" in row["description"]
