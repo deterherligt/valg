@@ -238,20 +238,10 @@ body {
 }
 .feed-place-row:hover { background: #161b22; }
 .feed-place-row.selected { background: #1f2937; border-left: 2px solid #58a6ff; padding-left: 10px; }
+.feed-place-time { color: #484f58; font-size: 0.85em; min-width: 36px; }
 .feed-place-name { color: #58a6ff; flex: 1; }
 .feed-place-type { color: #8b949e; font-size: 0.85em; }
-.feed-place-time { color: #484f58; font-size: 0.85em; }
-.feed-load-more {
-  width: 100%;
-  padding: 6px;
-  background: #161b22;
-  border: none;
-  border-top: 1px solid #30363d;
-  color: #8b949e;
-  cursor: pointer;
-  font-size: 0.85em;
-}
-.feed-load-more:hover { color: #c9d1d9; }
+.feed-place-region { color: #484f58; font-size: 0.85em; }
 
 /* ── Detail tabs ─────────────────────────────────────────────────── */
 .detail-tabs { display: flex; border-bottom: 1px solid #21262d; }

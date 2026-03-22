@@ -231,7 +231,9 @@
                    x-text="placeDetail.opstillingskreds + ' · ' + placeDetail.count_type + ' · ' + formatTime(placeDetail.occurred_at)">
               </div>
             </div>
-            <div class="detail-section-label">Partistemmer</div>
+            <div class="detail-section-label"
+                 x-text="placeDetail.count_type === 'foreløbig' && placeDetail.parties.length > 0 ? 'Opstillingskredsstemmer (foreløbig)' : 'Partistemmer'">
+            </div>
             <table class="data-table">
               <thead><tr><th>Parti</th><th>Stemmer</th><th>Δ</th></tr></thead>
               <tbody>
@@ -280,7 +282,7 @@
     <div class="feed-panel-header">
       <span class="feed-panel-label">Indberetninger</span>
       <span class="feed-panel-count"
-            x-text="(districtsReported || 0) + ' / ' + (districtsTotal || 0) + ' steder'">
+            x-text="(preliminaryPlaces || 0) + ' foreløbig · ' + (finalPlaces || 0) + ' fintælling · ' + (totalPlaces || 0) + ' total'">
       </span>
     </div>
     <div class="feed-panel-body" x-ref="feedBody">
@@ -291,13 +293,11 @@
         <div class="feed-place-row"
              :class="{selected: selectedPlaceId === String(item.event_id)}"
              @click="selectPlace(item)">
+          <span class="feed-place-time" x-text="formatTime(item.occurred_at)"></span>
           <span class="feed-place-name" x-text="item.name"></span>
           <span class="feed-place-type" x-text="item.count_type"></span>
-          <span class="feed-place-time" x-text="formatTime(item.occurred_at)"></span>
+          <span class="feed-place-region" x-text="item.storkreds"></span>
         </div>
-      </template>
-      <template x-if="feedItems.length > 0 && !feedExhausted">
-        <button class="feed-load-more" @click="_loadMorePlaces()">Vis ældre</button>
       </template>
     </div>
   </div>
