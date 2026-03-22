@@ -24,12 +24,12 @@ class SessionState:
 
 `SessionManager` is a thread-safe dict of `session_id → SessionState`:
 
-- `get_or_create(session_id) -> SessionState | None` — returns existing session (updating `last_seen`) or creates a new one. Returns `None` when at cap.
-- `get(session_id) -> SessionState | None` — looks up without creating.
-- Background cleanup thread runs every 5 minutes, removes sessions where `time.time() - last_seen > TIMEOUT_SECONDS` (default 1800 = 30 min). On removal: stops runner, deletes session directory.
+- `get_or_create(session_id) -> SessionState | None` — if session already exists, updates `last_seen` and returns it (existing sessions always bypass the cap check). If new, creates one unless `len(sessions) >= MAX_SESSIONS`, in which case returns `None`.
+- `get(session_id) -> SessionState | None` — looks up without creating, updates `last_seen` if found.
+- Background cleanup thread runs every 5 minutes, removes sessions where `time.time() - last_seen > TIMEOUT_SECONDS` (default 1800 = 30 min). On removal: calls `runner.pause()` then joins the thread (synchronous stop), then deletes the session directory, then removes from map.
 - `MAX_SESSIONS = 5` (configurable via constructor).
 
-Session files live under `{base_dir}/sessions/{session_id}/`:
+Session files live under `base_dir/{session_id}/` where `base_dir` defaults to `_APP_DIR / "sessions"`:
 - `valg.db` — the session's SQLite database
 - `data/` — temporary data directory for the runner (no git repo)
 
@@ -39,14 +39,16 @@ Session files live under `{base_dir}/sessions/{session_id}/`:
 
 ### `valg/server.py`
 
-`create_app` gains `session_manager: SessionManager | None = None`. When provided:
+`create_app` signature becomes `create_app(db_path, data_dir, demo_runner=None, data_repo=None, session_manager=None)`. When `session_manager` is provided, `demo_runner` is passed as `None` — the two are mutually exclusive. The existing `if demo_runner is not None` block that registers demo endpoints is replaced by a new block: `if session_manager is not None` registers session-aware demo endpoints, `elif demo_runner is not None` registers the existing shared endpoints. This replaces both existing demo registration blocks.
 
-- `GET /` reads `valg_session` cookie; if absent or unknown, calls `session_manager.get_or_create()` and sets the cookie on the response.
-- `_get_conn()` looks up the session cookie, finds the session's `db_path`, returns a connection to it.
-- Demo endpoints (`/demo/state`, `/demo/control`) look up the session's `runner` instead of the shared `demo_runner`.
-- When `get_or_create` returns `None` (cap reached): `GET /` still loads the page (visitor sees empty dashboard), `/demo/state` returns `{"enabled": false, "state": "unavailable", "scenarios": [], "speed": 1}`.
+When `session_manager` is provided:
 
-`main()` creates a `SessionManager` and passes it to `create_app`. The existing `demo_runner` argument is removed from `create_app` when `session_manager` is provided — each session brings its own runner.
+- `GET /` reads `valg_session` cookie; if absent or unknown, calls `session_manager.get_or_create()` and sets the cookie on the response. If `get_or_create` returns `None` (cap reached), the cookie is still set but no session state exists.
+- `_get_conn()` is redefined to call `flask.request.cookies.get('valg_session')` directly, look up the session via `session_manager.get(session_id)`, and return a connection to `session.db_path`. Falls back to the shared `db_path` if no session found.
+- `/demo/state` looks up the session's `runner`; if no session exists (cap exceeded), returns `{"enabled": false, "state": "unavailable", "scenarios": [], "speed": 1}`.
+- `/demo/control` looks up the session's `runner` and dispatches the action to it.
+
+`main()` creates a `SessionManager(base_dir=_APP_DIR / "sessions")` and passes it to `create_app` with `demo_runner=None`.
 
 Cookie properties: name `valg_session`, `HttpOnly`, `SameSite=Lax`, no explicit expiry (browser session lifetime).
 
