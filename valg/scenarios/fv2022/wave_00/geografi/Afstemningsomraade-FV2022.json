@@ -1,0 +1,8465 @@
+[
+  {
+    "Kode": "705148",
+    "Navn": "Skagen",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748530",
+    "Navn": "Ålbæk",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705156",
+    "Navn": "Jerup",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709634",
+    "Navn": "Elling",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712132",
+    "Navn": "Strandby",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711060",
+    "Navn": "Frederikshavn",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748390",
+    "Navn": "Ravnshøj",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710978",
+    "Navn": "Gærum",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748391",
+    "Navn": "Sæby",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709628",
+    "Navn": "Dybvad",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703530",
+    "Navn": "Hørby",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705142",
+    "Navn": "Thorshøj",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748393",
+    "Navn": "Voerså",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712112",
+    "Navn": "Volstrup",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702460",
+    "Navn": "Læsø",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703516",
+    "Navn": "Østervrå",
+    "OpstillingskredsKode": "403591",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707338",
+    "Navn": "Jægersborg",
+    "OpstillingskredsKode": "403558",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704436",
+    "Navn": "Munkegård",
+    "OpstillingskredsKode": "403558",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702884",
+    "Navn": "Rådhuset",
+    "OpstillingskredsKode": "403558",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702878",
+    "Navn": "Bakkegård",
+    "OpstillingskredsKode": "403558",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711716",
+    "Navn": "Dyssegård",
+    "OpstillingskredsKode": "403558",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702890",
+    "Navn": "Maglegård",
+    "OpstillingskredsKode": "403558",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701254",
+    "Navn": "Hellerup",
+    "OpstillingskredsKode": "403558",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702872",
+    "Navn": "Ordrup",
+    "OpstillingskredsKode": "403558",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704424",
+    "Navn": "Skovshoved",
+    "OpstillingskredsKode": "403558",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708814",
+    "Navn": "Skovgård",
+    "OpstillingskredsKode": "403558",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701118",
+    "Navn": "Helsingør Hallen",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710298",
+    "Navn": "Skolen ved Gurrevej",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705752",
+    "Navn": "Laden, Gl. Vapnagård",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707098",
+    "Navn": "Bølgen",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708702",
+    "Navn": "Hornbæk Skole",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707136",
+    "Navn": "Nygård Skole",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708696",
+    "Navn": "Tikøb Skole",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705746",
+    "Navn": "Kvistgård Idrætsanlæg",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702682",
+    "Navn": "Snekkersten Hallen",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702690",
+    "Navn": "Espergærde Bibliotek",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710304",
+    "Navn": "Mørdrupskolen",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748170",
+    "Navn": "Toldkammeret",
+    "OpstillingskredsKode": "403552",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708426",
+    "Navn": "Errindlev",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700840",
+    "Navn": "Holeby",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706762",
+    "Navn": "Sandby",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706822",
+    "Navn": "Søllested",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705484",
+    "Navn": "Maribo",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709912",
+    "Navn": "Askø",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708456",
+    "Navn": "Østofte",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706808",
+    "Navn": "Birket",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709900",
+    "Navn": "Fejø",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706816",
+    "Navn": "Femø",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703864",
+    "Navn": "Horslunde",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706746",
+    "Navn": "Dannemare",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702106",
+    "Navn": "Rødby",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703882",
+    "Navn": "Rødbyhavn",
+    "OpstillingskredsKode": "403639",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "746369",
+    "Navn": "Skt. Jørgens Hallen",
+    "OpstillingskredsKode": "403610",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705850",
+    "Navn": "Risingskolen",
+    "OpstillingskredsKode": "403610",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711668",
+    "Navn": "Munkebjergskolen",
+    "OpstillingskredsKode": "403610",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707294",
+    "Navn": "Ejerslykkeskolen",
+    "OpstillingskredsKode": "403610",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705856",
+    "Navn": "Agedrup Skole",
+    "OpstillingskredsKode": "403610",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708762",
+    "Navn": "Fjordager-Hallen",
+    "OpstillingskredsKode": "403610",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710386",
+    "Navn": "Fraugde Fritidscenter",
+    "OpstillingskredsKode": "403610",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711662",
+    "Navn": "Camp U",
+    "OpstillingskredsKode": "403610",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705862",
+    "Navn": "UngOdense (Tidl.Bækholmskolen)",
+    "OpstillingskredsKode": "403610",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712002",
+    "Navn": "Klemensker",
+    "OpstillingskredsKode": "403550",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711102",
+    "Navn": "Rønne",
+    "OpstillingskredsKode": "403550",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707890",
+    "Navn": "Hasle",
+    "OpstillingskredsKode": "403550",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706536",
+    "Navn": "Lemvig",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711302",
+    "Navn": "Struer",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702100",
+    "Navn": "Gimsing",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711166",
+    "Navn": "Nørre Nissum",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703842",
+    "Navn": "Hjerm",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711178",
+    "Navn": "Klinkby",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700832",
+    "Navn": "Humlum",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711172",
+    "Navn": "Ramme",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706786",
+    "Navn": "Bremdal",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712242",
+    "Navn": "Bøvling",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708418",
+    "Navn": "Langhøj",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709888",
+    "Navn": "Hvidbjerg",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706550",
+    "Navn": "Thyborøn",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701882",
+    "Navn": "Harboøre",
+    "OpstillingskredsKode": "403588",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703038",
+    "Navn": "Nordborg",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710634",
+    "Navn": "Havnbjerg",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701408",
+    "Navn": "Egen",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701428",
+    "Navn": "Fynshav",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710642",
+    "Navn": "Augustenborg",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707448",
+    "Navn": "Hørup",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703032",
+    "Navn": "Sydals",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707466",
+    "Navn": "Kegnæs",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701434",
+    "Navn": "Humlehøj, Sønderborg",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704588",
+    "Navn": "Sønderskov, Sønderborg",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710622",
+    "Navn": "Kongevej, Sønderborg",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701416",
+    "Navn": "Dybbøl",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706060",
+    "Navn": "Vester Sottrup",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706040",
+    "Navn": "Ullerup",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706048",
+    "Navn": "Broager",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704566",
+    "Navn": "Gråsten",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706066",
+    "Navn": "Kværs",
+    "OpstillingskredsKode": "403618",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707732",
+    "Navn": "1. Østerbro",
+    "OpstillingskredsKode": "403564",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711932",
+    "Navn": "1. Nord",
+    "OpstillingskredsKode": "403564",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704936",
+    "Navn": "1. Syd",
+    "OpstillingskredsKode": "403564",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706160",
+    "Navn": "1. Vest",
+    "OpstillingskredsKode": "403564",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710802",
+    "Navn": "1. Nordvest",
+    "OpstillingskredsKode": "403564",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "725338",
+    "Navn": "1. Øst",
+    "OpstillingskredsKode": "403564",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702188",
+    "Navn": "Frederiksbjerghallerne",
+    "OpstillingskredsKode": "403587",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706890",
+    "Navn": "Rundhøjhallen, Holme",
+    "OpstillingskredsKode": "403587",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703936",
+    "Navn": "Kragelundskolen, Højbjerg",
+    "OpstillingskredsKode": "403587",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702228",
+    "Navn": "Tranbjerg Skole",
+    "OpstillingskredsKode": "403587",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709990",
+    "Navn": "Beder Skole",
+    "OpstillingskredsKode": "403587",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711386",
+    "Navn": "Malling Skole",
+    "OpstillingskredsKode": "403587",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709996",
+    "Navn": "Solbjergskolen",
+    "OpstillingskredsKode": "403587",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700902",
+    "Navn": "Skåde Skole",
+    "OpstillingskredsKode": "403587",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703808",
+    "Navn": "Asminderød",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707664",
+    "Navn": "Hørsholm",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709824",
+    "Navn": "Fredensborg",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709324",
+    "Navn": "Usserød",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703766",
+    "Navn": "Humlebæk",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707688",
+    "Navn": "Rungsted",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703814",
+    "Navn": "Baunebjerg",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707682",
+    "Navn": "Grønnegade",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709818",
+    "Navn": "Kokkedal",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711902",
+    "Navn": "Vallerød",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700760",
+    "Navn": "Karlebo",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702010",
+    "Navn": "Nivå",
+    "OpstillingskredsKode": "403554",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709646",
+    "Navn": "Byen",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703554",
+    "Navn": "Østerbro",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706380",
+    "Navn": "Lindeskov",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706386",
+    "Navn": "Ejegod",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712124",
+    "Navn": "Kraghave",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701778",
+    "Navn": "Toreby",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701828",
+    "Navn": "Sundby",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712080",
+    "Navn": "Nysted",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705042",
+    "Navn": "Øster Ulslev",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701748",
+    "Navn": "Nørre Alslev",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711018",
+    "Navn": "Nørre Vedby",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712156",
+    "Navn": "Eskilstrup",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707852",
+    "Navn": "Sakskøbing",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709572",
+    "Navn": "Majbølle",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709670",
+    "Navn": "Våbensted",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703496",
+    "Navn": "Stubbekøbing",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709640",
+    "Navn": "Horreby",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703548",
+    "Navn": "Idestrup",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701764",
+    "Navn": "Væggerløse",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705108",
+    "Navn": "Gedser",
+    "OpstillingskredsKode": "403638",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702860",
+    "Navn": "Horne",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710464",
+    "Navn": "Hirtshals",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710442",
+    "Navn": "Hjørring - Centrum",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710458",
+    "Navn": "Tornby",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708788",
+    "Navn": "Bindslev",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710470",
+    "Navn": "Tversted",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701230",
+    "Navn": "Taars",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710436",
+    "Navn": "Vrejlev-Hæstrup",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710488",
+    "Navn": "Bjergby-Mygdal",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701236",
+    "Navn": "Skallerup",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704384",
+    "Navn": "Hjørring - Nord",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702842",
+    "Navn": "Hjørring - Syd",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702836",
+    "Navn": "Hjørring - Vest",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702854",
+    "Navn": "Vrå",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710482",
+    "Navn": "Hundelev",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702848",
+    "Navn": "Løkken",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707320",
+    "Navn": "Sindal",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704372",
+    "Navn": "Astrup",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710452",
+    "Navn": "Tolne",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701248",
+    "Navn": "Ugilt",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701242",
+    "Navn": "Lendum",
+    "OpstillingskredsKode": "403584",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710178",
+    "Navn": "Lyngby Midt",
+    "OpstillingskredsKode": "403557",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708642",
+    "Navn": "Lyngby Idrætsby",
+    "OpstillingskredsKode": "403557",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704030",
+    "Navn": "Trongård",
+    "OpstillingskredsKode": "403557",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706998",
+    "Navn": "Engelsborg",
+    "OpstillingskredsKode": "403557",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711474",
+    "Navn": "Taarbæk",
+    "OpstillingskredsKode": "403557",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704050",
+    "Navn": "Virum",
+    "OpstillingskredsKode": "403557",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710170",
+    "Navn": "Hummeltofte",
+    "OpstillingskredsKode": "403557",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702310",
+    "Navn": "Virumhallerne",
+    "OpstillingskredsKode": "403557",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710194",
+    "Navn": "Lundtofte",
+    "OpstillingskredsKode": "403557",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708782",
+    "Navn": "CSV-Skolen",
+    "OpstillingskredsKode": "403612",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702812",
+    "Navn": "Lumby Skole",
+    "OpstillingskredsKode": "403612",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702824",
+    "Navn": "Stige Skole",
+    "OpstillingskredsKode": "403612",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701218",
+    "Navn": "Spurvelundskolen",
+    "OpstillingskredsKode": "403612",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702818",
+    "Navn": "Kroggårdsskolen",
+    "OpstillingskredsKode": "403612",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701224",
+    "Navn": "Tarup Skole",
+    "OpstillingskredsKode": "403612",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702830",
+    "Navn": "Paarup Hallen",
+    "OpstillingskredsKode": "403612",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710430",
+    "Navn": "Korup Skole",
+    "OpstillingskredsKode": "403612",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748880",
+    "Navn": "Aakjær",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748883",
+    "Navn": "Skivehus",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748874",
+    "Navn": "Brårup",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748881",
+    "Navn": "Højslev",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748877",
+    "Navn": "Ørslevkloster",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748876",
+    "Navn": "Rønbjerg",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748871",
+    "Navn": "Hem",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748885",
+    "Navn": "Lihme",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748870",
+    "Navn": "Oddense - Otting",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748884",
+    "Navn": "Rødding",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748872",
+    "Navn": "Glyngøre",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748886",
+    "Navn": "Durup",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748879",
+    "Navn": "Roslev",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748875",
+    "Navn": "Jebjerg-Lyby",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748878",
+    "Navn": "Balling",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748882",
+    "Navn": "Breum",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748887",
+    "Navn": "Håsum-Ramsing",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748873",
+    "Navn": "Selde",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748888",
+    "Navn": "Lem-Vejby",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701060",
+    "Navn": "Fur",
+    "OpstillingskredsKode": "403582",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711204",
+    "Navn": "2. Sundbyvester",
+    "OpstillingskredsKode": "403565",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706166",
+    "Navn": "2. Nord",
+    "OpstillingskredsKode": "403565",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712286",
+    "Navn": "2. Vest",
+    "OpstillingskredsKode": "403565",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "725346",
+    "Navn": "2. Øst",
+    "OpstillingskredsKode": "403565",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705386",
+    "Navn": "Hovslund",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703772",
+    "Navn": "Hellevad",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706666",
+    "Navn": "Rødekro",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701976",
+    "Navn": "Løjt",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705392",
+    "Navn": "Hjordkær",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706648",
+    "Navn": "Ravsted",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708364",
+    "Navn": "Bolderslev",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703784",
+    "Navn": "Ensted",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708358",
+    "Navn": "Felsted",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708352",
+    "Navn": "Varnæs",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706654",
+    "Navn": "Bylderup",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711228",
+    "Navn": "Tinglev",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706660",
+    "Navn": "Kliplev",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709794",
+    "Navn": "Kruså",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709832",
+    "Navn": "Padborg",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702016",
+    "Navn": "Aabenraa Midt",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703778",
+    "Navn": "Aabenraa Syd",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700772",
+    "Navn": "Aabenraa Nord",
+    "OpstillingskredsKode": "403621",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702974",
+    "Navn": "Christiansø",
+    "OpstillingskredsKode": "403551",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703208",
+    "Navn": "Allinge",
+    "OpstillingskredsKode": "403551",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703086",
+    "Navn": "Svaneke",
+    "OpstillingskredsKode": "403551",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703286",
+    "Navn": "Nexø",
+    "OpstillingskredsKode": "403551",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709262",
+    "Navn": "Pedersker",
+    "OpstillingskredsKode": "403551",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704742",
+    "Navn": "Aakirkeby",
+    "OpstillingskredsKode": "403551",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700922",
+    "Navn": "Rosenvangskolen, Viby J",
+    "OpstillingskredsKode": "403608",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700928",
+    "Navn": "Viby Hallen",
+    "OpstillingskredsKode": "403608",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705582",
+    "Navn": "Ormslev Præstegård",
+    "OpstillingskredsKode": "403608",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703954",
+    "Navn": "Hasselager Hallen",
+    "OpstillingskredsKode": "403608",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702240",
+    "Navn": "Højvangskolen, Stavtrup",
+    "OpstillingskredsKode": "403608",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706938",
+    "Navn": "Brabrand Hallen",
+    "OpstillingskredsKode": "403608",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703948",
+    "Navn": "TST Aktiv-Center, Tilst",
+    "OpstillingskredsKode": "403608",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705576",
+    "Navn": "Borum Forsamlingshus",
+    "OpstillingskredsKode": "403608",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710034",
+    "Navn": "Sabro-Korsvejskolen, Sabro",
+    "OpstillingskredsKode": "403608",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711416",
+    "Navn": "Søndervangskolen, Viby J",
+    "OpstillingskredsKode": "403608",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710028",
+    "Navn": "Åby Hallen",
+    "OpstillingskredsKode": "403608",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708624",
+    "Navn": "Agersted",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709280",
+    "Navn": "Aabybro",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708636",
+    "Navn": "Asaa",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701500",
+    "Navn": "Biersted",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705640",
+    "Navn": "Dronninglund",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701540",
+    "Navn": "Nørhalne",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700996",
+    "Navn": "Flauenskjold",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711896",
+    "Navn": "Vedsted",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710716",
+    "Navn": "Gjøl",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700990",
+    "Navn": "Hjallerup",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749359",
+    "Navn": "Ingstrup",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704006",
+    "Navn": "Klokkerholm",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749357",
+    "Navn": "V. Hjermitslev",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711858",
+    "Navn": "Brovst",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706102",
+    "Navn": "Halvrimmen",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703190",
+    "Navn": "Arentsminde",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710140",
+    "Navn": "Brønderslev",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709250",
+    "Navn": "Tranum",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707638",
+    "Navn": "Skovsgård",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707632",
+    "Navn": "Fjerritslev",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704750",
+    "Navn": "Thorup",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749358",
+    "Navn": "Ørebro",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703196",
+    "Navn": "Trekroner",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701514",
+    "Navn": "Hune",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703310",
+    "Navn": "Saltum",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702304",
+    "Navn": "Stenum",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704012",
+    "Navn": "Thise",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705646",
+    "Navn": "Ø. Brønderslev",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704018",
+    "Navn": "Hallund",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711454",
+    "Navn": "Jerslev",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708630",
+    "Navn": "Serritslev",
+    "OpstillingskredsKode": "403592",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708600",
+    "Navn": "Bagsværd",
+    "OpstillingskredsKode": "403571",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711428",
+    "Navn": "Hovedbiblioteket",
+    "OpstillingskredsKode": "403571",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702286",
+    "Navn": "Egegård",
+    "OpstillingskredsKode": "403571",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710060",
+    "Navn": "Grønnemose",
+    "OpstillingskredsKode": "403571",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700958",
+    "Navn": "Mørkhøj",
+    "OpstillingskredsKode": "403571",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700934",
+    "Navn": "Stengård",
+    "OpstillingskredsKode": "403571",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706974",
+    "Navn": "Søborg",
+    "OpstillingskredsKode": "403571",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708592",
+    "Navn": "Vadgård",
+    "OpstillingskredsKode": "403571",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706944",
+    "Navn": "Værebro",
+    "OpstillingskredsKode": "403571",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708756",
+    "Navn": "Blistrup",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708774",
+    "Navn": "Royal Stage",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701158",
+    "Navn": "Esbønderup",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704344",
+    "Navn": "Hillerødsholmsskolen",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701190",
+    "Navn": "Brødeskov",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708732",
+    "Navn": "Valby",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704286",
+    "Navn": "Græsted",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707252",
+    "Navn": "Hammersholt",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702782",
+    "Navn": "Alsønderup",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705834",
+    "Navn": "Annisse",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711598",
+    "Navn": "Gilleleje",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701196",
+    "Navn": "Ullerød",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707266",
+    "Navn": "Nødebo",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707246",
+    "Navn": "Søborg",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710380",
+    "Navn": "Gadevang",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704298",
+    "Navn": "Helsinge",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705812",
+    "Navn": "Mårum",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749324",
+    "Navn": "Grønnevang Skole, Østervang",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702752",
+    "Navn": "Ramløse",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749326",
+    "Navn": "Lille Lyngby",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704292",
+    "Navn": "Vejby",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749322",
+    "Navn": "Skævinge, Harløse, Strø",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701184",
+    "Navn": "Tibirke",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749323",
+    "Navn": "Gørløse",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749325",
+    "Navn": "Uvelse",
+    "OpstillingskredsKode": "403555",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711926",
+    "Navn": "3. Indre By",
+    "OpstillingskredsKode": "403573",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709378",
+    "Navn": "3. Nord",
+    "OpstillingskredsKode": "403573",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704846",
+    "Navn": "3. Syd",
+    "OpstillingskredsKode": "403573",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707672",
+    "Navn": "3. Øst",
+    "OpstillingskredsKode": "403573",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705888",
+    "Navn": "Rådhuset",
+    "OpstillingskredsKode": "403611",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705876",
+    "Navn": "Sct. Knuds Gymnasium",
+    "OpstillingskredsKode": "403611",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705894",
+    "Navn": "Rosengårdskolen",
+    "OpstillingskredsKode": "403611",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711692",
+    "Navn": "Sanderumhallen",
+    "OpstillingskredsKode": "403611",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705882",
+    "Navn": "Rasmus Rask-Skolen",
+    "OpstillingskredsKode": "403611",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711698",
+    "Navn": "Tingløkkeskolen",
+    "OpstillingskredsKode": "403611",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702866",
+    "Navn": "Dalumskolen",
+    "OpstillingskredsKode": "403611",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708794",
+    "Navn": "Skt. Klemensskolen",
+    "OpstillingskredsKode": "403611",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708800",
+    "Navn": "Fangel Forsamlingshus",
+    "OpstillingskredsKode": "403611",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711704",
+    "Navn": "Højby Skole",
+    "OpstillingskredsKode": "403611",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712106",
+    "Navn": "Bredebro",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703560",
+    "Navn": "Ballum",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711072",
+    "Navn": "Visby",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706374",
+    "Navn": "Højer",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707858",
+    "Navn": "Sdr. Sejerslev",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706368",
+    "Navn": "Møgeltønder",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701834",
+    "Navn": "Løgumkloster",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711084",
+    "Navn": "Nr. Løgum",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703566",
+    "Navn": "Bedsted",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709676",
+    "Navn": "Øster Højst",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701806",
+    "Navn": "Agerskov",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711066",
+    "Navn": "Arrild",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709622",
+    "Navn": "Branderup",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709616",
+    "Navn": "Døstrup",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701800",
+    "Navn": "Toftlund",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711078",
+    "Navn": "Brøns",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705136",
+    "Navn": "Tønder",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701794",
+    "Navn": "Abild",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707840",
+    "Navn": "Hostrup",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705128",
+    "Navn": "Rømø",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709602",
+    "Navn": "Skærbæk",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705162",
+    "Navn": "Vodder",
+    "OpstillingskredsKode": "403619",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708912",
+    "Navn": "Frederiks",
+    "OpstillingskredsKode": "403597",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702938",
+    "Navn": "Hald Ege",
+    "OpstillingskredsKode": "403597",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711744",
+    "Navn": "Karup",
+    "OpstillingskredsKode": "403597",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701332",
+    "Navn": "Løgstrup",
+    "OpstillingskredsKode": "403597",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702956",
+    "Navn": "Mønsted",
+    "OpstillingskredsKode": "403597",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704488",
+    "Navn": "Stoholm",
+    "OpstillingskredsKode": "403597",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704480",
+    "Navn": "Vridsted",
+    "OpstillingskredsKode": "403597",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702932",
+    "Navn": "Viborg",
+    "OpstillingskredsKode": "403597",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711010",
+    "Navn": "Vordingborg",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705084",
+    "Navn": "Nyråd",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705078",
+    "Navn": "Kastrup",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709558",
+    "Navn": "Bårse",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705010",
+    "Navn": "Lundby",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709584",
+    "Navn": "Ørslev",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707768",
+    "Navn": "Stege",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712094",
+    "Navn": "Østmøn",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701698",
+    "Navn": "Vestmøn",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701742",
+    "Navn": "Bogø",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706306",
+    "Navn": "Præstø",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701732",
+    "Navn": "Allerslev",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703480",
+    "Navn": "Jungshoved",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707828",
+    "Navn": "Mern",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705054",
+    "Navn": "Kalvehave",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706330",
+    "Navn": "Stensved",
+    "OpstillingskredsKode": "403636",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706860",
+    "Navn": "Hasle Skole",
+    "OpstillingskredsKode": "403607",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705526",
+    "Navn": "Lisbjergskolen",
+    "OpstillingskredsKode": "403607",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705520",
+    "Navn": "Spørring Fælleshus",
+    "OpstillingskredsKode": "403607",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711356",
+    "Navn": "Hårup Hallen",
+    "OpstillingskredsKode": "403607",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710764",
+    "Navn": "Assens",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711914",
+    "Navn": "Turup",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709286",
+    "Navn": "Salbrovad",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748073",
+    "Navn": "Aarup/Kerte",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748071",
+    "Navn": "Rørup",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710796",
+    "Navn": "Orte/Ørsted",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704912",
+    "Navn": "Glamsbjerg/Søllested",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701534",
+    "Navn": "Flemløse",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748072",
+    "Navn": "Køng",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748070",
+    "Navn": "Vissenbjerg",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707710",
+    "Navn": "Haarby",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711908",
+    "Navn": "Jordløse",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701552",
+    "Navn": "Brylle",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710784",
+    "Navn": "Tommerup",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704924",
+    "Navn": "Tommerup St",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707704",
+    "Navn": "Verninge/Nårup",
+    "OpstillingskredsKode": "403609",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702962",
+    "Navn": "Nordby",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705826",
+    "Navn": "Esbjerg Rådhus",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710532",
+    "Navn": "Sønderho",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708726",
+    "Navn": "Skovbo",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701204",
+    "Navn": "Rørkjær",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710374",
+    "Navn": "Jerne",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702746",
+    "Navn": "Boldesager",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702806",
+    "Navn": "Østerbyen",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708768",
+    "Navn": "Gjesing",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704330",
+    "Navn": "Sædding",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702740",
+    "Navn": "Kvaglund",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710368",
+    "Navn": "Ådalen",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710398",
+    "Navn": "Grønlandsparken",
+    "OpstillingskredsKode": "403625",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710206",
+    "Navn": "Frederikssund Midt",
+    "OpstillingskredsKode": "403556",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704878",
+    "Navn": "Hundested",
+    "OpstillingskredsKode": "403556",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701052",
+    "Navn": "Frederikssund Nord",
+    "OpstillingskredsKode": "403556",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704906",
+    "Navn": "Melby",
+    "OpstillingskredsKode": "403556",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707654",
+    "Navn": "Enghaven",
+    "OpstillingskredsKode": "403556",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704056",
+    "Navn": "Frederikssund Syd",
+    "OpstillingskredsKode": "403556",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707698",
+    "Navn": "Frederiksværk",
+    "OpstillingskredsKode": "403556",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702366",
+    "Navn": "Skibby",
+    "OpstillingskredsKode": "403556",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704070",
+    "Navn": "Jægerspris",
+    "OpstillingskredsKode": "403556",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710776",
+    "Navn": "Ølsted",
+    "OpstillingskredsKode": "403556",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707024",
+    "Navn": "Slangerup",
+    "OpstillingskredsKode": "403556",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711122",
+    "Navn": "Fuglebjerg",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707904",
+    "Navn": "Everdrup",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712210",
+    "Navn": "Grønbro Hallen",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707910",
+    "Navn": "Fladså Hallen",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703660",
+    "Navn": "Tybjerg",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707924",
+    "Navn": "Tappernøje",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711128",
+    "Navn": "Hammer - Vester Egesborg",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707918",
+    "Navn": "Fensmark",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709726",
+    "Navn": "Holme-Olstrup",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712222",
+    "Navn": "Toksværd",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703666",
+    "Navn": "Glumsø",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707930",
+    "Navn": "Sandby",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749297",
+    "Navn": "Skelby",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705200",
+    "Navn": "Herlufmagle",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703592",
+    "Navn": "Lille Næstved Skole - Karrebæk",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703654",
+    "Navn": "Grønnegades Kaserne",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701858",
+    "Navn": "Arena Næstved",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711136",
+    "Navn": "Herlufsholmhallen",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711142",
+    "Navn": "Kobberbakkeskolen - Sydby",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706418",
+    "Navn": "Kobberbakkeskolen - Rønnebæk",
+    "OpstillingskredsKode": "403635",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705798",
+    "Navn": "Herlev Medborgerhus",
+    "OpstillingskredsKode": "403562",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707822",
+    "Navn": "Ørbygård",
+    "OpstillingskredsKode": "403562",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710346",
+    "Navn": "Herlev Hallerne",
+    "OpstillingskredsKode": "403562",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705072",
+    "Navn": "Tinderhøj",
+    "OpstillingskredsKode": "403562",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701152",
+    "Navn": "Kildegårdhallen",
+    "OpstillingskredsKode": "403562",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705066",
+    "Navn": "Rødovre",
+    "OpstillingskredsKode": "403562",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707814",
+    "Navn": "Valhøj",
+    "OpstillingskredsKode": "403562",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709566",
+    "Navn": "Rødovrehallen",
+    "OpstillingskredsKode": "403562",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706324",
+    "Navn": "Islev",
+    "OpstillingskredsKode": "403562",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "724738",
+    "Navn": "Milestedet",
+    "OpstillingskredsKode": "403562",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707726",
+    "Navn": "4. Sundbyøster",
+    "OpstillingskredsKode": "403566",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704930",
+    "Navn": "4. Nord",
+    "OpstillingskredsKode": "403566",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706154",
+    "Navn": "4. Syd",
+    "OpstillingskredsKode": "403566",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701580",
+    "Navn": "4. Øst",
+    "OpstillingskredsKode": "403566",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705682",
+    "Navn": "Nordmors",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705918",
+    "Navn": "Thisted",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702454",
+    "Navn": "Midtmors",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748371",
+    "Navn": "Snedsted",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748374",
+    "Navn": "Hurup",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711508",
+    "Navn": "Sydmors",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748376",
+    "Navn": "Hanstholm",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711514",
+    "Navn": "Sydvestmors",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710282",
+    "Navn": "Nykøbing",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702944",
+    "Navn": "Sjørring",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709112",
+    "Navn": "Vesløs",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705906",
+    "Navn": "Vestervig",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704712",
+    "Navn": "Bedsted",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748375",
+    "Navn": "Nors",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708884",
+    "Navn": "Frøstrup",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748372",
+    "Navn": "Vorupør",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748370",
+    "Navn": "Koldby",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748373",
+    "Navn": "Østerild",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748377",
+    "Navn": "Sennels",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701270",
+    "Navn": "Klitmøller",
+    "OpstillingskredsKode": "403593",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701488",
+    "Navn": "Hammershøj",
+    "OpstillingskredsKode": "403601",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711838",
+    "Navn": "Møldrup",
+    "OpstillingskredsKode": "403601",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709100",
+    "Navn": "Rødding",
+    "OpstillingskredsKode": "403601",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710696",
+    "Navn": "Rødkærsbro",
+    "OpstillingskredsKode": "403601",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709090",
+    "Navn": "Skals",
+    "OpstillingskredsKode": "403601",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709106",
+    "Navn": "Ørum",
+    "OpstillingskredsKode": "403601",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748351",
+    "Navn": "Generationernes Hus, Aarhus Ø",
+    "OpstillingskredsKode": "403604",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702208",
+    "Navn": "Sølystskolen, Egå",
+    "OpstillingskredsKode": "403604",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708574",
+    "Navn": "Skæring Skole",
+    "OpstillingskredsKode": "403604",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711368",
+    "Navn": "Vejlby-Risskov Hallen",
+    "OpstillingskredsKode": "403604",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711392",
+    "Navn": "Ellevangskolen, Risskov",
+    "OpstillingskredsKode": "403604",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701596",
+    "Navn": "Ebeltoft",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709078",
+    "Navn": "Kulturhuset Pavillonen",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711832",
+    "Navn": "Anholt Skole",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703350",
+    "Navn": "Mols",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709066",
+    "Navn": "Kulturhuset Stationen",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703380",
+    "Navn": "Tirstrup",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707484",
+    "Navn": "Grenaa Idrætscenter",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711940",
+    "Navn": "Kolind",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709072",
+    "Navn": "Glesborg",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711952",
+    "Navn": "Ryomgård",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701618",
+    "Navn": "Hornslet",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707518",
+    "Navn": "Ørum",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710826",
+    "Navn": "Mørke",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704660",
+    "Navn": "Ørsted",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710680",
+    "Navn": "Allingåbro",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711958",
+    "Navn": "Rønde",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709084",
+    "Navn": "Auning",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701476",
+    "Navn": "Vivild",
+    "OpstillingskredsKode": "403602",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703642",
+    "Navn": "Ledøje Forsamlingshus",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700970",
+    "Navn": "Værløse",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710110",
+    "Navn": "Hareskov",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711116",
+    "Navn": "Smørum Idrætscenter",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709714",
+    "Navn": "Stenløse",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703986",
+    "Navn": "Søndersø",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710104",
+    "Navn": "Jonstrup",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712198",
+    "Navn": "Veksø",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706424",
+    "Navn": "Ganløse",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708606",
+    "Navn": "Stavnsholt",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705194",
+    "Navn": "Slagslunde",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705614",
+    "Navn": "Solvang",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706956",
+    "Navn": "Paltholm",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703648",
+    "Navn": "Ølstykke",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701864",
+    "Navn": "Stengårdsskolen",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705206",
+    "Navn": "Bækkegårdsskolen",
+    "OpstillingskredsKode": "403553",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705174",
+    "Navn": "Skads",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701840",
+    "Navn": "Bryndum",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712150",
+    "Navn": "Hjerting",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709664",
+    "Navn": "Guldager",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703522",
+    "Navn": "Tjæreborg",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711090",
+    "Navn": "Sønderris",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703542",
+    "Navn": "Bramming",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703580",
+    "Navn": "Ribe",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707870",
+    "Navn": "Egebæk-Hviding",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701812",
+    "Navn": "Gredstedbro",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703586",
+    "Navn": "Mandø",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707876",
+    "Navn": "Høm",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707864",
+    "Navn": "Gørding",
+    "OpstillingskredsKode": "403624",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706800",
+    "Navn": "Hårlevhallen",
+    "OpstillingskredsKode": "403637",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706794",
+    "Navn": "Strøby Idrætscenter",
+    "OpstillingskredsKode": "403637",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701130",
+    "Navn": "Faxe",
+    "OpstillingskredsKode": "403637",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703848",
+    "Navn": "Stevnshallen",
+    "OpstillingskredsKode": "403637",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701124",
+    "Navn": "Hylleholt",
+    "OpstillingskredsKode": "403637",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705452",
+    "Navn": "Sydstevnshallen",
+    "OpstillingskredsKode": "403637",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710310",
+    "Navn": "Karise",
+    "OpstillingskredsKode": "403637",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707142",
+    "Navn": "Dalby",
+    "OpstillingskredsKode": "403637",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710328",
+    "Navn": "Rønnede",
+    "OpstillingskredsKode": "403637",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707882",
+    "Navn": "Støvring",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708562",
+    "Navn": "Aalestrup",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705538",
+    "Navn": "Farsø",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709658",
+    "Navn": "Skørping",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708538",
+    "Navn": "Strandby",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703572",
+    "Navn": "Terndrup",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712170",
+    "Navn": "Suldrup",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700858",
+    "Navn": "Aars",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711328",
+    "Navn": "Hvalpsund",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712164",
+    "Navn": "Nørager",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710016",
+    "Navn": "Gislum-Vognsild",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709652",
+    "Navn": "Haverslev",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710008",
+    "Navn": "Gedsted",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701822",
+    "Navn": "Øster Hornum",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711096",
+    "Navn": "Bælum",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705558",
+    "Navn": "Hornum-Ulstrup",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706392",
+    "Navn": "Ravnkilde",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710002",
+    "Navn": "Vester Hornum",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712144",
+    "Navn": "Blenstrup",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702144",
+    "Navn": "Løgstør",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709958",
+    "Navn": "Ranum",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705168",
+    "Navn": "Veggerby",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706876",
+    "Navn": "Salling",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700908",
+    "Navn": "Overlade",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709966",
+    "Navn": "Skivum-Giver",
+    "OpstillingskredsKode": "403594",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703836",
+    "Navn": "Holmegårdshallen",
+    "OpstillingskredsKode": "403572",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709882",
+    "Navn": "Præstemoseskolen",
+    "OpstillingskredsKode": "403572",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702088",
+    "Navn": "Sønderkærskolen",
+    "OpstillingskredsKode": "403572",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706734",
+    "Navn": "Kometen",
+    "OpstillingskredsKode": "403572",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702094",
+    "Navn": "Dansborghallen",
+    "OpstillingskredsKode": "403572",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702070",
+    "Navn": "Frihedens Idrætscenter",
+    "OpstillingskredsKode": "403572",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702080",
+    "Navn": "Avedøre Skole",
+    "OpstillingskredsKode": "403572",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706740",
+    "Navn": "Avedøre Idrætscenter",
+    "OpstillingskredsKode": "403572",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748639",
+    "Navn": "Bogense",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706714",
+    "Navn": "Middelfart V",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748634",
+    "Navn": "Klinte",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708394",
+    "Navn": "Middelfart Ø",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703828",
+    "Navn": "Strib",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705440",
+    "Navn": "Hyllehøj",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706728",
+    "Navn": "Aulby",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748632",
+    "Navn": "Krogsbølle",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709862",
+    "Navn": "Nørre Aaby",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748636",
+    "Navn": "Otterup",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711266",
+    "Navn": "Baaring",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705422",
+    "Navn": "Ejby",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708388",
+    "Navn": "Gelsted",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748631",
+    "Navn": "Veflinge",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700808",
+    "Navn": "Brenderup",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748635",
+    "Navn": "Hårslev",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705434",
+    "Navn": "Fjelsted/Harndrup",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748633",
+    "Navn": "Morud",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748638",
+    "Navn": "Særslev",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748637",
+    "Navn": "Søndersø",
+    "OpstillingskredsKode": "403613",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706196",
+    "Navn": "5. Nørrebro",
+    "OpstillingskredsKode": "403567",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706184",
+    "Navn": "5. Nord",
+    "OpstillingskredsKode": "403567",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703386",
+    "Navn": "5. Syd",
+    "OpstillingskredsKode": "403567",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704962",
+    "Navn": "5. Øst",
+    "OpstillingskredsKode": "403567",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710832",
+    "Navn": "5. Vest",
+    "OpstillingskredsKode": "403567",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704956",
+    "Navn": "5. Nordvest",
+    "OpstillingskredsKode": "403567",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "725352",
+    "Navn": "5. Nørrebrohallen",
+    "OpstillingskredsKode": "403567",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708400",
+    "Navn": "Ans",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700814",
+    "Navn": "Funder",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705416",
+    "Navn": "Fårvang",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709876",
+    "Navn": "Gjern",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711288",
+    "Navn": "Grauballe",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711296",
+    "Navn": "Gødvad",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711260",
+    "Navn": "Kjellerup",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711222",
+    "Navn": "Kragelund",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711254",
+    "Navn": "Lemming",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711272",
+    "Navn": "Linå",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700766",
+    "Navn": "Resenbro",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705410",
+    "Navn": "Sejs",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709870",
+    "Navn": "Sjørslev",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702058",
+    "Navn": "Sorring",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703820",
+    "Navn": "Thorning",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708382",
+    "Navn": "Vinderslev",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705446",
+    "Navn": "Voel",
+    "OpstillingskredsKode": "403605",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707738",
+    "Navn": "6. Bispebjerg",
+    "OpstillingskredsKode": "403568",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701606",
+    "Navn": "6. Nord",
+    "OpstillingskredsKode": "403568",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706172",
+    "Navn": "6. Øst",
+    "OpstillingskredsKode": "403568",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710808",
+    "Navn": "6. Syd",
+    "OpstillingskredsKode": "403568",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "725358",
+    "Navn": "6. Vest",
+    "OpstillingskredsKode": "403568",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707090",
+    "Navn": "Brøndbyvester Skole",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708518",
+    "Navn": "Ishøj Landsby",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707962",
+    "Navn": "Vallensbæk Skole, Multisalen",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709762",
+    "Navn": "Egholmskolen",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707084",
+    "Navn": "Tjørnehøjhallen",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709938",
+    "Navn": "Vibeholmskolen",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700870",
+    "Navn": "Gildbroskolen",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708674",
+    "Navn": "Lindelundshallen",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701896",
+    "Navn": "Pilehaveskolen",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702442",
+    "Navn": "Nørregård",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700876",
+    "Navn": "Strandgårdskolen",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702448",
+    "Navn": "Kulturhuset Brønden",
+    "OpstillingskredsKode": "403560",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703440",
+    "Navn": "Hyllinge-Lyndby",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709930",
+    "Navn": "Køge By - Vest",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707756",
+    "Navn": "Rye",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703454",
+    "Navn": "Sæby-Gershøj",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706260",
+    "Navn": "Sonnerup",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712044",
+    "Navn": "Glim",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705508",
+    "Navn": "Ølby",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707762",
+    "Navn": "Hvalsø",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708480",
+    "Navn": "Ølsemagle",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705496",
+    "Navn": "Herfølge",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712008",
+    "Navn": "Kr.Såby",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706216",
+    "Navn": "Gevninge",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705502",
+    "Navn": "Hastrup",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710890",
+    "Navn": "Lejre",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703912",
+    "Navn": "Borup",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703434",
+    "Navn": "Osted",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700864",
+    "Navn": "Ejby",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702164",
+    "Navn": "Gørslev",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711350",
+    "Navn": "Bjæverskov",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706854",
+    "Navn": "Vemmedrup",
+    "OpstillingskredsKode": "403633",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708668",
+    "Navn": "Assens",
+    "OpstillingskredsKode": "403583",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700964",
+    "Navn": "Mariager",
+    "OpstillingskredsKode": "403583",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707018",
+    "Navn": "Arden",
+    "OpstillingskredsKode": "403583",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702354",
+    "Navn": "Valsgård",
+    "OpstillingskredsKode": "403583",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701046",
+    "Navn": "Vebbestrup",
+    "OpstillingskredsKode": "403583",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705600",
+    "Navn": "Hadsund",
+    "OpstillingskredsKode": "403583",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702360",
+    "Navn": "Veddum-Skelund",
+    "OpstillingskredsKode": "403583",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710066",
+    "Navn": "Als",
+    "OpstillingskredsKode": "403583",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708660",
+    "Navn": "Hørby",
+    "OpstillingskredsKode": "403583",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706980",
+    "Navn": "Onsild",
+    "OpstillingskredsKode": "403583",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702292",
+    "Navn": "Hobro",
+    "OpstillingskredsKode": "403583",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705368",
+    "Navn": "Aunslevhallen",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703754",
+    "Navn": "Nyborghallen",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706634",
+    "Navn": "Bastionen",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748590",
+    "Navn": "Nymarken",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705374",
+    "Navn": "Vindinge Forsamlingshus",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709812",
+    "Navn": "Langå, Svindinge Og Øksendrup",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705322",
+    "Navn": "Marslev",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705316",
+    "Navn": "Langeskov",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708334",
+    "Navn": "Ullerslev",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701998",
+    "Navn": "Ellinge",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707976",
+    "Navn": "Munkebo",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703760",
+    "Navn": "Skellerup",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708340",
+    "Navn": "Langtved",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708346",
+    "Navn": "Ørbæk",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705380",
+    "Navn": "Frørup Og Tårup",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702004",
+    "Navn": "Ellested Og Herrested",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706642",
+    "Navn": "Kullerup Og Refsvindinge",
+    "OpstillingskredsKode": "403614",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704136",
+    "Navn": "Havndalhallen",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704222",
+    "Navn": "Råby Forsamlingshus",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705768",
+    "Navn": "Øster Tørslev Fritidslokaler",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710316",
+    "Navn": "Korshøjskolen",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702710",
+    "Navn": "Hald Forsamlingshus",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701136",
+    "Navn": "Gjerlev Aktivitetshus",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707150",
+    "Navn": "Rismølleskolen",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707188",
+    "Navn": "Hornbækhallen",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710340",
+    "Navn": "Blicherskolen",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705778",
+    "Navn": "Kultur-Aktivitetshuset Gassum",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707182",
+    "Navn": "Randers Badmintonhaller",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710322",
+    "Navn": "Nørrevangsskolen",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711576",
+    "Navn": "Vestervangsskolen",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711582",
+    "Navn": "Østervangsskolen",
+    "OpstillingskredsKode": "403586",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711588",
+    "Navn": "Birkerød",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711248",
+    "Navn": "Blovstrød",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703802",
+    "Navn": "Skovvang",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748890",
+    "Navn": "Grünersvej",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706698",
+    "Navn": "Lillerød",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705404",
+    "Navn": "Lynge",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704274",
+    "Navn": "Nærum",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705398",
+    "Navn": "Ravnsholt",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702734",
+    "Navn": "Sjælsø",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702728",
+    "Navn": "Skovly",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705784",
+    "Navn": "Toftevang",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707194",
+    "Navn": "Trørød",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708708",
+    "Navn": "Vangebo",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701142",
+    "Navn": "Vedbæk",
+    "OpstillingskredsKode": "403577",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709850",
+    "Navn": "Balle",
+    "OpstillingskredsKode": "403606",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700802",
+    "Navn": "Bryrup",
+    "OpstillingskredsKode": "403606",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706686",
+    "Navn": "Buskelund",
+    "OpstillingskredsKode": "403606",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706692",
+    "Navn": "Gjessø",
+    "OpstillingskredsKode": "403606",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702052",
+    "Navn": "Hjøllund",
+    "OpstillingskredsKode": "403606",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709856",
+    "Navn": "Langsøskolen",
+    "OpstillingskredsKode": "403606",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702046",
+    "Navn": "Alderslyst",
+    "OpstillingskredsKode": "403606",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706680",
+    "Navn": "Jysk Arena",
+    "OpstillingskredsKode": "403606",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700790",
+    "Navn": "Them",
+    "OpstillingskredsKode": "403606",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711242",
+    "Navn": "Vestergadehallen",
+    "OpstillingskredsKode": "403606",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700796",
+    "Navn": "Virklund",
+    "OpstillingskredsKode": "403606",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701470",
+    "Navn": "Varde By",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707512",
+    "Navn": "Sig",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709030",
+    "Navn": "Billum",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709048",
+    "Navn": "Tinghøj",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704642",
+    "Navn": "Alslev",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707556",
+    "Navn": "Horne",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706084",
+    "Navn": "Janderup",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710668",
+    "Navn": "Lunde",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707430",
+    "Navn": "Nørre Nebel",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703068",
+    "Navn": "Henne",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710662",
+    "Navn": "Outrup",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707498",
+    "Navn": "Oksbøl",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708972",
+    "Navn": "Blåvand",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709060",
+    "Navn": "Årre",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704694",
+    "Navn": "Agerbæk",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704654",
+    "Navn": "Fåborg",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707562",
+    "Navn": "Næsbjerg",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704648",
+    "Navn": "Starup",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706078",
+    "Navn": "Nordenskov",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710690",
+    "Navn": "Ølgod",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704624",
+    "Navn": "Tistrup",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701482",
+    "Navn": "Ansager",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709054",
+    "Navn": "Skovlund",
+    "OpstillingskredsKode": "403620",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710820",
+    "Navn": "7. Nord",
+    "OpstillingskredsKode": "403575",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701626",
+    "Navn": "7. Rødkilde",
+    "OpstillingskredsKode": "403575",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706178",
+    "Navn": "7. Øst",
+    "OpstillingskredsKode": "403575",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711946",
+    "Navn": "7. Vest",
+    "OpstillingskredsKode": "403575",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707744",
+    "Navn": "7. Nordvest",
+    "OpstillingskredsKode": "403575",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703374",
+    "Navn": "7. Kirkebjerg",
+    "OpstillingskredsKode": "403575",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710814",
+    "Navn": "7. Vanløse",
+    "OpstillingskredsKode": "403575",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705362",
+    "Navn": "Havdrup",
+    "OpstillingskredsKode": "403634",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "718916",
+    "Navn": "Greve Idrætscenter",
+    "OpstillingskredsKode": "403634",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "718898",
+    "Navn": "Mosedeskolen",
+    "OpstillingskredsKode": "403634",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703748",
+    "Navn": "Det Nordlige Strandområde",
+    "OpstillingskredsKode": "403634",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "718922",
+    "Navn": "Karlslundehallerne",
+    "OpstillingskredsKode": "403634",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703740",
+    "Navn": "Det Sydlige Strandområde",
+    "OpstillingskredsKode": "403634",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "718910",
+    "Navn": "Tunehallerne",
+    "OpstillingskredsKode": "403634",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "713298",
+    "Navn": "Nørre Snede",
+    "OpstillingskredsKode": "403600",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703930",
+    "Navn": "Brande",
+    "OpstillingskredsKode": "403600",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702176",
+    "Navn": "Ikast",
+    "OpstillingskredsKode": "403600",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705552",
+    "Navn": "Bording",
+    "OpstillingskredsKode": "403600",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "713316",
+    "Navn": "Engesvang",
+    "OpstillingskredsKode": "403600",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704314",
+    "Navn": "Kulturhuset Langå",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702764",
+    "Navn": "Stevnstrup Forsamlingshus",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701178",
+    "Navn": "Jebjerg Forsamlingshus",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708750",
+    "Navn": "Asferg Træningshus",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708738",
+    "Navn": "Purhushallen",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702776",
+    "Navn": "Ø. Bjerregrav Forsamlingshus",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702770",
+    "Navn": "Hobrovejens Skole",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711624",
+    "Navn": "Fritidscentret",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708744",
+    "Navn": "Søndermarkskolen",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711638",
+    "Navn": "Tirsdalens Skole",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704280",
+    "Navn": "Paderup Gymnasium",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702716",
+    "Navn": "Romalt Aktivitetshal",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710392",
+    "Navn": "Assentofthallen",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707204",
+    "Navn": "Uggelhuse Forsamlingshus",
+    "OpstillingskredsKode": "403598",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707504",
+    "Navn": "Bagenkop",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705276",
+    "Navn": "Byen",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704630",
+    "Navn": "Humble",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701944",
+    "Navn": "Nordre",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705356",
+    "Navn": "Østre",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748110",
+    "Navn": "Bjerreby",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707990",
+    "Navn": "Bregninge",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704594",
+    "Navn": "Rudkøbing",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703708",
+    "Navn": "Drejø",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705328",
+    "Navn": "Egense",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701464",
+    "Navn": "Tullebølle",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705344",
+    "Navn": "Landet",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703734",
+    "Navn": "Skårup",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709768",
+    "Navn": "Thurø",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703728",
+    "Navn": "Tved",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709774",
+    "Navn": "Kirkeby",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706616",
+    "Navn": "Ollerup",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701964",
+    "Navn": "Stenstrup",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708006",
+    "Navn": "V.Skerninge",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705350",
+    "Navn": "Gudbjerg",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709786",
+    "Navn": "Gudme",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712298",
+    "Navn": "Hesselager",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707982",
+    "Navn": "Oure",
+    "OpstillingskredsKode": "403615",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704718",
+    "Navn": "Herstedøster Skole",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709136",
+    "Navn": "Egelundskolen",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701958",
+    "Navn": "Parkskolen",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710708",
+    "Navn": "Herstedlund Skole",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709130",
+    "Navn": "Kongsholmcenteret",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703720",
+    "Navn": "Taastrup Kulturcenter",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706090",
+    "Navn": "Herstedvester Skole",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707896",
+    "Navn": "Rådhuset",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706412",
+    "Navn": "Hallen ved Rønnevangsstrøget",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703634",
+    "Navn": "Torstorp Skole",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701952",
+    "Navn": "Sengeløse",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701970",
+    "Navn": "Charlotteskolen",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709780",
+    "Navn": "Fløng Hallen",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711110",
+    "Navn": "Reerslev Skole",
+    "OpstillingskredsKode": "403561",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704500",
+    "Navn": "Billund",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703026",
+    "Navn": "Brørup",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706022",
+    "Navn": "Lindknud",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701374",
+    "Navn": "Sdr. Omme",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701368",
+    "Navn": "Holsted",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704532",
+    "Navn": "Vorbasse",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702968",
+    "Navn": "Filskov",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706028",
+    "Navn": "Føvling",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707412",
+    "Navn": "Glejbjerg",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710594",
+    "Navn": "St./Krogager",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707400",
+    "Navn": "Grindsted",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707418",
+    "Navn": "Hovborg",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708930",
+    "Navn": "Hejnsvig",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701350",
+    "Navn": "Rødding",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704526",
+    "Navn": "Sdr. Hygum",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706016",
+    "Navn": "Jels",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710606",
+    "Navn": "Lintrup",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704538",
+    "Navn": "Skodborg",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701380",
+    "Navn": "Københoved",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710600",
+    "Navn": "Øster Lindet",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704514",
+    "Navn": "Vejen",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703014",
+    "Navn": "Læborg",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701362",
+    "Navn": "Askov-Malt",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704520",
+    "Navn": "Andst",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703020",
+    "Navn": "Gesten",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701386",
+    "Navn": "Bække",
+    "OpstillingskredsKode": "403623",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708938",
+    "Navn": "Sønderbroskolen",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748030",
+    "Navn": "Nordkraft",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704506",
+    "Navn": "Gigantium",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707394",
+    "Navn": "Vejgaardhallen",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708918",
+    "Navn": "Vejgaard Østre Skole",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711750",
+    "Navn": "Mellervangskolens Idrætshal",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701338",
+    "Navn": "Klaruphallen",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706010",
+    "Navn": "Gug Skole",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702950",
+    "Navn": "Gistrup Skoles Idrætshal",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748034",
+    "Navn": "Aalborghus Gymnasium",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707406",
+    "Navn": "Idrætscentret Kongerslev",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702918",
+    "Navn": "Mou Hotel",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701356",
+    "Navn": "Båndby - Hallen",
+    "OpstillingskredsKode": "403596",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702064",
+    "Navn": "Nordvanghallen",
+    "OpstillingskredsKode": "403559",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701002",
+    "Navn": "Tapeten",
+    "OpstillingskredsKode": "403559",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708412",
+    "Navn": "Søndervanghallen",
+    "OpstillingskredsKode": "403559",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710158",
+    "Navn": "Grantoftehallen",
+    "OpstillingskredsKode": "403559",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711278",
+    "Navn": "Ejbyhallen",
+    "OpstillingskredsKode": "403559",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700826",
+    "Navn": "Hvissingehallen",
+    "OpstillingskredsKode": "403559",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704024",
+    "Navn": "Skovlunde Skole - Lundebjerg",
+    "OpstillingskredsKode": "403559",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712100",
+    "Navn": "Hadsten Nord",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711042",
+    "Navn": "Hadsten Syd",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709610",
+    "Navn": "Hadbjerg",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706354",
+    "Navn": "Hammel Nord",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706342",
+    "Navn": "Hammel Syd",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709596",
+    "Navn": "Haldum-Hinnerup/Vitten",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705102",
+    "Navn": "Rønbæk/Grundfør",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704336",
+    "Navn": "Foldby",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707834",
+    "Navn": "Ulstrup",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707278",
+    "Navn": "Thorsø/Haurum/Sall",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711048",
+    "Navn": "Laurbjerg/Houlbjerg",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711674",
+    "Navn": "Søften",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706360",
+    "Navn": "Voldum",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707272",
+    "Navn": "Lading",
+    "OpstillingskredsKode": "403603",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709036",
+    "Navn": "Allested-Vejle",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706902",
+    "Navn": "Marstal",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707478",
+    "Navn": "Brobyværk",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702246",
+    "Navn": "Ærøskøbing",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707442",
+    "Navn": "Nørre Broby",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700952",
+    "Navn": "Søby",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704606",
+    "Navn": "Vester Hæsinge",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711756",
+    "Navn": "Avernakø",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701392",
+    "Navn": "Faaborg",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710612",
+    "Navn": "Horne",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709008",
+    "Navn": "Korinth",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704544",
+    "Navn": "Lyø",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704554",
+    "Navn": "Svanninge",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708944",
+    "Navn": "Vester Aaby",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709014",
+    "Navn": "Espe",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703044",
+    "Navn": "Hillerslev",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711798",
+    "Navn": "Ringe",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710674",
+    "Navn": "Søllinge",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704576",
+    "Navn": "Gislev",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704582",
+    "Navn": "Kværndrup",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701422",
+    "Navn": "Ryslinge",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707460",
+    "Navn": "Nr. Lyndelse",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707454",
+    "Navn": "Ferritslev",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706054",
+    "Navn": "Årslev",
+    "OpstillingskredsKode": "403616",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712062",
+    "Navn": "Herning",
+    "OpstillingskredsKode": "403590",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706292",
+    "Navn": "Arnborg",
+    "OpstillingskredsKode": "403590",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703462",
+    "Navn": "Kibæk",
+    "OpstillingskredsKode": "403590",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701670",
+    "Navn": "Kølkær",
+    "OpstillingskredsKode": "403590",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712050",
+    "Navn": "Lind",
+    "OpstillingskredsKode": "403590",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701664",
+    "Navn": "Sdr. Felding",
+    "OpstillingskredsKode": "403590",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710918",
+    "Navn": "Skarrild",
+    "OpstillingskredsKode": "403590",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704992",
+    "Navn": "Studsgård",
+    "OpstillingskredsKode": "403590",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707284",
+    "Navn": "Roskilde Bymidte",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708806",
+    "Navn": "Klostermarken",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704350",
+    "Navn": "Sankt Jørgen",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710476",
+    "Navn": "Hedegårdene",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704378",
+    "Navn": "Østervang",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702794",
+    "Navn": "Himmelev",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705900",
+    "Navn": "Svogerslev",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704396",
+    "Navn": "Vindinge",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711680",
+    "Navn": "Vor Frue",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711710",
+    "Navn": "Tjørnegård",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704320",
+    "Navn": "Gundsølille",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704358",
+    "Navn": "Jyllinge",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711686",
+    "Navn": "Gundsømagle",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710404",
+    "Navn": "Baunehøj",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707314",
+    "Navn": "Gadstrup",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707326",
+    "Navn": "Viby",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707332",
+    "Navn": "Snoldelev",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704402",
+    "Navn": "Trekroner",
+    "OpstillingskredsKode": "403629",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707648",
+    "Navn": "8. Valby",
+    "OpstillingskredsKode": "403576",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709306",
+    "Navn": "8. Nord",
+    "OpstillingskredsKode": "403576",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704776",
+    "Navn": "8. Syd",
+    "OpstillingskredsKode": "403576",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711890",
+    "Navn": "8. Vest",
+    "OpstillingskredsKode": "403576",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701520",
+    "Navn": "8. Sydøst",
+    "OpstillingskredsKode": "403576",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704784",
+    "Navn": "8. Midt",
+    "OpstillingskredsKode": "403576",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700940",
+    "Navn": "Thyregod Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706950",
+    "Navn": "Gadbjerg Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700946",
+    "Navn": "Givskud Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706962",
+    "Navn": "Grønbjerg Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702264",
+    "Navn": "Lindeballe Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703974",
+    "Navn": "Øster Nykirke Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708586",
+    "Navn": "Jelling Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703968",
+    "Navn": "Kollerup-Sandvad Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710054",
+    "Navn": "Grejs Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702272",
+    "Navn": "Bredsten Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708580",
+    "Navn": "Nørup Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702258",
+    "Navn": "Vandel Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705588",
+    "Navn": "Nørremarkshallen Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703960",
+    "Navn": "Engum Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706968",
+    "Navn": "Hældagerhallen Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705594",
+    "Navn": "Grejsdalen Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703980",
+    "Navn": "Petersmindehallen Nord",
+    "OpstillingskredsKode": "403641",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705992",
+    "Navn": "Vesterkærets Skole",
+    "OpstillingskredsKode": "403595",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704474",
+    "Navn": "Haraldslund",
+    "OpstillingskredsKode": "403595",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710526",
+    "Navn": "Skipperens Idrætshus",
+    "OpstillingskredsKode": "403595",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704462",
+    "Navn": "Hallen Ved Skalborggård",
+    "OpstillingskredsKode": "403595",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748031",
+    "Navn": "Hasseris Gymnasium",
+    "OpstillingskredsKode": "403595",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705964",
+    "Navn": "Frejlev Skoles Idrætshal",
+    "OpstillingskredsKode": "403595",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708924",
+    "Navn": "Svenstruphallen",
+    "OpstillingskredsKode": "403595",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705942",
+    "Navn": "Nibe Hallen",
+    "OpstillingskredsKode": "403595",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707350",
+    "Navn": "Farstruphallen",
+    "OpstillingskredsKode": "403595",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709506",
+    "Navn": "Aulum",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709514",
+    "Navn": "Feldborg",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701676",
+    "Navn": "Gullestrup",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701720",
+    "Navn": "Haderup",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703468",
+    "Navn": "Hammerum",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705004",
+    "Navn": "Hodsager",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705024",
+    "Navn": "Ilskov",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701684",
+    "Navn": "Simmelkær",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701714",
+    "Navn": "Sinding",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703474",
+    "Navn": "Skibbild/Nøvling",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707802",
+    "Navn": "Snejbjerg",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712068",
+    "Navn": "Sunds",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710958",
+    "Navn": "Timring",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709528",
+    "Navn": "Tjørring",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712074",
+    "Navn": "Vildbjerg",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709520",
+    "Navn": "Vind",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701690",
+    "Navn": "Vinding",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705030",
+    "Navn": "Ørnhøj",
+    "OpstillingskredsKode": "403589",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708890",
+    "Navn": "Holbæk Øst",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705950",
+    "Navn": "Holbæk Vest",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702906",
+    "Navn": "Holbæk Midt",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705924",
+    "Navn": "Vipperød",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705958",
+    "Navn": "Tuse",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708868",
+    "Navn": "Udby",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708878",
+    "Navn": "Tølløse",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701294",
+    "Navn": "St. Merløse",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707370",
+    "Navn": "Regstrup",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704456",
+    "Navn": "Undløse",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704450",
+    "Navn": "Jyderup",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701314",
+    "Navn": "Mørkøv",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708862",
+    "Navn": "Svinninge",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710502",
+    "Navn": "Gislinge",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707528",
+    "Navn": "Orø",
+    "OpstillingskredsKode": "403628",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700784",
+    "Navn": "Ejer Bavnehøj",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709406",
+    "Navn": "Odder",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709154",
+    "Navn": "Tranebjerg",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702022",
+    "Navn": "Galten",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704790",
+    "Navn": "Nordby",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701640",
+    "Navn": "Torrild",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702034",
+    "Navn": "Gl. Rye",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701632",
+    "Navn": "Saksild - Nølev",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709844",
+    "Navn": "Hørning",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709400",
+    "Navn": "Randlev - Bjerager",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703392",
+    "Navn": "Hou, Gosmer - Halling",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702028",
+    "Navn": "Låsby",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704968",
+    "Navn": "Gylling",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700778",
+    "Navn": "Morten Børup",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711236",
+    "Navn": "Niels Ebbesen",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706210",
+    "Navn": "Ørting-Falling",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704986",
+    "Navn": "Hundslund",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703790",
+    "Navn": "Ry",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711964",
+    "Navn": "Alrø",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708370",
+    "Navn": "Skovby",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703796",
+    "Navn": "Stilling",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710838",
+    "Navn": "Tunø",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706674",
+    "Navn": "Stjær",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709838",
+    "Navn": "Virring",
+    "OpstillingskredsKode": "403585",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708612",
+    "Navn": "Brejning Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711442",
+    "Navn": "Børkop Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700976",
+    "Navn": "Gårslev Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702298",
+    "Navn": "Smidstrup Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710116",
+    "Navn": "Ødsted Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710134",
+    "Navn": "Egtved Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711448",
+    "Navn": "Jerlev Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710122",
+    "Navn": "Øster Starup Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708618",
+    "Navn": "DGI-Huset Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710128",
+    "Navn": "Multihuset Højen Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703992",
+    "Navn": "Vinding Idræts Center Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705630",
+    "Navn": "Mølholmhallen Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700984",
+    "Navn": "Kvartershuset Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705620",
+    "Navn": "CSV - Vejle Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703998",
+    "Navn": "Rødkilde Gymnasium Syd",
+    "OpstillingskredsKode": "403640",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709384",
+    "Navn": "9. Vesterbro",
+    "OpstillingskredsKode": "403574",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701612",
+    "Navn": "9. Nord",
+    "OpstillingskredsKode": "403574",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706112",
+    "Navn": "9. Syd",
+    "OpstillingskredsKode": "403574",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709330",
+    "Navn": "9. Øst",
+    "OpstillingskredsKode": "403574",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709338",
+    "Navn": "9. Vest",
+    "OpstillingskredsKode": "403574",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704918",
+    "Navn": "9. Midt",
+    "OpstillingskredsKode": "403574",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706120",
+    "Navn": "9. Sydhavn",
+    "OpstillingskredsKode": "403574",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748032",
+    "Navn": "PFA Kollegiet i Nørresundby",
+    "OpstillingskredsKode": "403599",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707424",
+    "Navn": "Løvvanghallen",
+    "OpstillingskredsKode": "403599",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706034",
+    "Navn": "Multihallen Ved Vadumhallen",
+    "OpstillingskredsKode": "403599",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701402",
+    "Navn": "Sulsted Skolehal",
+    "OpstillingskredsKode": "403599",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711774",
+    "Navn": "Aalborghallen",
+    "OpstillingskredsKode": "403599",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710544",
+    "Navn": "Vester Hassing Hallen",
+    "OpstillingskredsKode": "403599",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710552",
+    "Navn": "Hals Skole",
+    "OpstillingskredsKode": "403599",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708966",
+    "Navn": "Ulstedhallen",
+    "OpstillingskredsKode": "403599",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701758",
+    "Navn": "10. Kreds, Søerne",
+    "OpstillingskredsKode": "403570",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705122",
+    "Navn": "10. Kreds, Grundtvigsvej",
+    "OpstillingskredsKode": "403570",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709590",
+    "Navn": "10. Kreds, Bülowsvej",
+    "OpstillingskredsKode": "403570",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711030",
+    "Navn": "10. Kreds, Duevej",
+    "OpstillingskredsKode": "403570",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709738",
+    "Navn": "Bredstrup-Pjedsted",
+    "OpstillingskredsKode": "403622",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701876",
+    "Navn": "Erritsø",
+    "OpstillingskredsKode": "403622",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709732",
+    "Navn": "Herslev",
+    "OpstillingskredsKode": "403622",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705216",
+    "Navn": "Taulov",
+    "OpstillingskredsKode": "403622",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707944",
+    "Navn": "Søndermarken",
+    "OpstillingskredsKode": "403622",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711148",
+    "Navn": "Bøgeskov",
+    "OpstillingskredsKode": "403622",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712216",
+    "Navn": "Indre By",
+    "OpstillingskredsKode": "403622",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709372",
+    "Navn": "Musikteatret",
+    "OpstillingskredsKode": "403579",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703344",
+    "Navn": "Mejdal",
+    "OpstillingskredsKode": "403579",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707720",
+    "Navn": "Skave",
+    "OpstillingskredsKode": "403579",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703338",
+    "Navn": "Mejrup",
+    "OpstillingskredsKode": "403579",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701564",
+    "Navn": "Vinderup",
+    "OpstillingskredsKode": "403579",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706148",
+    "Navn": "Sevel",
+    "OpstillingskredsKode": "403579",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706142",
+    "Navn": "Ulfborg",
+    "OpstillingskredsKode": "403579",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703316",
+    "Navn": "Vemb",
+    "OpstillingskredsKode": "403579",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709344",
+    "Navn": "Sdr. Nissum",
+    "OpstillingskredsKode": "403579",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710898",
+    "Navn": "Sønderbro",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704998",
+    "Navn": "Vestbyen",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706286",
+    "Navn": "Midtbyen",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706240",
+    "Navn": "Endelave",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706268",
+    "Navn": "Forum",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701652",
+    "Navn": "Dagnæs",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707750",
+    "Navn": "Torsted",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706280",
+    "Navn": "Hatting",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710912",
+    "Navn": "Lund",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706274",
+    "Navn": "Egebjerg",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710904",
+    "Navn": "Stensballe",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709464",
+    "Navn": "Højvangen",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701658",
+    "Navn": "Brædstrup",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706254",
+    "Navn": "Nim",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706298",
+    "Navn": "Sdr.Vissing",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701646",
+    "Navn": "Østbirk",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712014",
+    "Navn": "Gedved",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709470",
+    "Navn": "Hovedgård",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712020",
+    "Navn": "Søvind",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712056",
+    "Navn": "Tønning-Træden",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703428",
+    "Navn": "Sundparken",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709476",
+    "Navn": "Sejet",
+    "OpstillingskredsKode": "403578",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701320",
+    "Navn": "Asnæs",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705664",
+    "Navn": "Snertinge",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704442",
+    "Navn": "Fårevejle",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708648",
+    "Navn": "Sejerø",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710508",
+    "Navn": "Grevinge",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701040",
+    "Navn": "Svebølle",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707012",
+    "Navn": "Gørlev",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711730",
+    "Navn": "Hørve",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704036",
+    "Navn": "Kr. Helsinge",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708906",
+    "Navn": "Odden",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702334",
+    "Navn": "Reersø",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704468",
+    "Navn": "Vig",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710514",
+    "Navn": "Nykøbing",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707004",
+    "Navn": "Svallerup",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701300",
+    "Navn": "Rørvig",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708654",
+    "Navn": "Ubby",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702316",
+    "Navn": "Høng",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701026",
+    "Navn": "Buerup",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708896",
+    "Navn": "Egebjerg",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702322",
+    "Navn": "Gierslev",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708820",
+    "Navn": "Højby",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701032",
+    "Navn": "Kalundborghallen",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701326",
+    "Navn": "Lumsås",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707376",
+    "Navn": "Nr. Asmindrup",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711468",
+    "Navn": "Rynkevang",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705658",
+    "Navn": "Tømmerup",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701008",
+    "Navn": "Årby-Rørby",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711460",
+    "Navn": "Raklev",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710188",
+    "Navn": "Røsnæs",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702328",
+    "Navn": "Ulshøj",
+    "OpstillingskredsKode": "403631",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702112",
+    "Navn": "Hedensted, St.Dalby Og Urlev",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706834",
+    "Navn": "Løsning Sogn",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702132",
+    "Navn": "Ø. Snede Sogn",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705478",
+    "Navn": "Daugård Og Ørum Sogne",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703888",
+    "Navn": "Korning Sogn",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711322",
+    "Navn": "Ølsted Og Eriknauer-Området",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705470",
+    "Navn": "Juelsminde/Klakring",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749379",
+    "Navn": "As",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706828",
+    "Navn": "Barrit",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703906",
+    "Navn": "Bjerre",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711310",
+    "Navn": "Hornsyld",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709924",
+    "Navn": "Stouby",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700852",
+    "Navn": "Rårup",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702118",
+    "Navn": "Glud",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749381",
+    "Navn": "Hjarnø",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703900",
+    "Navn": "Rask Mølle",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749380",
+    "Navn": "Hvirring",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749382",
+    "Navn": "Hornborg",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700846",
+    "Navn": "Lindved",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703894",
+    "Navn": "Tørring",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706840",
+    "Navn": "Uldum",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709918",
+    "Navn": "Aale",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711316",
+    "Navn": "Ølholm",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "749378",
+    "Navn": "Hjortsvang",
+    "OpstillingskredsKode": "403581",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706610",
+    "Navn": "Centrum Nord",
+    "OpstillingskredsKode": "403626",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701938",
+    "Navn": "Nordbyen",
+    "OpstillingskredsKode": "403626",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706604",
+    "Navn": "Vestbyen",
+    "OpstillingskredsKode": "403626",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705338",
+    "Navn": "Strandhuse/Nr. Bjert/ Eltang",
+    "OpstillingskredsKode": "403626",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706622",
+    "Navn": "Bramdrupdam",
+    "OpstillingskredsKode": "403626",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701932",
+    "Navn": "Alminde-Viuf/Vester Nebel",
+    "OpstillingskredsKode": "403626",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708000",
+    "Navn": "Lunderskov/Jordrup",
+    "OpstillingskredsKode": "403626",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707956",
+    "Navn": "Tarm",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706404",
+    "Navn": "Holmsland",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712176",
+    "Navn": "Hvide Sande",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706556",
+    "Navn": "Velling",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705180",
+    "Navn": "Ringkøbing",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712306",
+    "Navn": "Hee",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711192",
+    "Navn": "Lem",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706568",
+    "Navn": "Tim",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711186",
+    "Navn": "Skjern",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703690",
+    "Navn": "Borris",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703702",
+    "Navn": "Rækker Mølle",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709682",
+    "Navn": "Stauning",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706530",
+    "Navn": "Videbæk",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707950",
+    "Navn": "Troldhede",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711210",
+    "Navn": "Vorgod-Barde",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703684",
+    "Navn": "Spjald",
+    "OpstillingskredsKode": "403580",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705570",
+    "Navn": "Dianalund",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703062",
+    "Navn": "Bringstrup",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705564",
+    "Navn": "Ruds Vedby",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710656",
+    "Navn": "Gyrstinge",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711404",
+    "Navn": "Alsted Fjenneslev",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703050",
+    "Navn": "Benløse",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711816",
+    "Navn": "Haraldsted",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702234",
+    "Navn": "Sorø",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711410",
+    "Navn": "Frederiksberg",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704618",
+    "Navn": "Ringsted Dagmarskolen",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710650",
+    "Navn": "Jystrup",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "700914",
+    "Navn": "Pedersborg",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709042",
+    "Navn": "Kværkeby",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710022",
+    "Navn": "Stenlille",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706072",
+    "Navn": "Vetterslev",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707472",
+    "Navn": "Sneslev",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711810",
+    "Navn": "Nordrup",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704612",
+    "Navn": "Vigersted",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703056",
+    "Navn": "Ørslev",
+    "OpstillingskredsKode": "403632",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709552",
+    "Navn": "11. Kreds, Lindevang",
+    "OpstillingskredsKode": "403569",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701726",
+    "Navn": "11. Kreds, Rådhuset",
+    "OpstillingskredsKode": "403569",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710972",
+    "Navn": "11. Kreds, Nyelandsvej",
+    "OpstillingskredsKode": "403569",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701902",
+    "Navn": "Centrum Syd",
+    "OpstillingskredsKode": "403627",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701916",
+    "Navn": "Sydbyen",
+    "OpstillingskredsKode": "403627",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712320",
+    "Navn": "Seest",
+    "OpstillingskredsKode": "403627",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701908",
+    "Navn": "Dalby/Tved/Rebæk",
+    "OpstillingskredsKode": "403627",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705308",
+    "Navn": "S Bjert/S Stenderup/Vejstrup",
+    "OpstillingskredsKode": "403627",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707970",
+    "Navn": "Vonsild",
+    "OpstillingskredsKode": "403627",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712326",
+    "Navn": "Vamdrup/Hjarup/Ødis",
+    "OpstillingskredsKode": "403627",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "712312",
+    "Navn": "Chr.Feld/Stepping/Taps/Hejls",
+    "OpstillingskredsKode": "403627",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706596",
+    "Navn": "Dragør Skole",
+    "OpstillingskredsKode": "403563",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711216",
+    "Navn": "Vestamager",
+    "OpstillingskredsKode": "403563",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701986",
+    "Navn": "Pilegården",
+    "OpstillingskredsKode": "403563",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709804",
+    "Navn": "Tårnby",
+    "OpstillingskredsKode": "403563",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701922",
+    "Navn": "Hollænderhallen",
+    "OpstillingskredsKode": "403563",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708328",
+    "Navn": "Korsvejen",
+    "OpstillingskredsKode": "403563",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701992",
+    "Navn": "Løjtegården",
+    "OpstillingskredsKode": "403563",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "708012",
+    "Navn": "Kastrup",
+    "OpstillingskredsKode": "403563",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703400",
+    "Navn": "Gram",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709148",
+    "Navn": "Arnum",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709390",
+    "Navn": "Fole",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707626",
+    "Navn": "Haderslev Syd",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704724",
+    "Navn": "Haderslev Vest",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "707612",
+    "Navn": "Sommersted",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706096",
+    "Navn": "Haderslev Nord",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701494",
+    "Navn": "Moltrup",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709412",
+    "Navn": "Hoptrup",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710846",
+    "Navn": "Starup",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711872",
+    "Navn": "Kelstrup",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709256",
+    "Navn": "Aastrup",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711866",
+    "Navn": "Øsby",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "709300",
+    "Navn": "Aarø",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703422",
+    "Navn": "Marstrup",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704736",
+    "Navn": "Fjelstrup",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703080",
+    "Navn": "Bevtoft",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704730",
+    "Navn": "Skrydstrup",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "703202",
+    "Navn": "Hammelev",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710748",
+    "Navn": "Nustrup",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "706202",
+    "Navn": "Over Jerstal",
+    "OpstillingskredsKode": "403617",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  }
+]

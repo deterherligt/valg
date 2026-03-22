@@ -1,0 +1,11 @@
+{
+  "Valgart": "Folketingsvalg",
+  "AfstemningsomraadeDagiId": "706096",
+  "Valgdeltagelse": [
+    {
+      "AntalStemmeberettigede": 0,
+      "AfgivneStemmer": 1000,
+      "Tidspunkt": "00:12:00"
+    }
+  ]
+}
