@@ -18,6 +18,7 @@ class SessionState:
     data_dir: Path
     runner: object  # DemoRunner — avoid circular import
     last_seen: float = field(default_factory=time.time)
+    live: bool = False
 
 
 class SessionManager:
@@ -65,6 +66,28 @@ class SessionManager:
             if session is not None:
                 session.last_seen = time.time()
             return session
+
+    def switch_all_to_live(self) -> None:
+        """Mark all active sessions as live and stop their demo runners.
+
+        Sessions are kept alive (directories preserved) so cookies remain valid.
+        """
+        with self._lock:
+            runners = []
+            for session in self._sessions.values():
+                if not session.live:
+                    session.live = True
+                    runners.append(session.runner)
+        for runner in runners:
+            try:
+                if hasattr(runner, "_stop_event"):
+                    runner._stop_event.set()
+                if hasattr(runner, "_pause_event"):
+                    runner._pause_event.set()
+                if hasattr(runner, "_thread") and runner._thread is not None and runner._thread.is_alive():
+                    runner._thread.join(timeout=5.0)
+            except Exception:
+                pass
 
     def _create_session(self, session_id: str) -> SessionState:
         from valg.demo import DemoRunner

@@ -69,6 +69,10 @@ class DemoRunner:
         self.scenario_name: str = "Election Night"
         self.commit_enabled: bool = commit_enabled
         self._lock = threading.Lock()
+        self._stop_event = threading.Event()
+        self._pause_event = threading.Event()
+        self._pause_event.set()  # not paused initially
+        self._thread = None
 
     def set_speed(self, multiplier: float) -> None:
         with self._lock:
@@ -94,8 +98,7 @@ class DemoRunner:
                 self._resolved_steps = scenario.steps_factory(self._data_repo)
             else:
                 self._resolved_steps = scenario.steps
-            self._stop_event = threading.Event()
-            self._pause_event = threading.Event()
+            self._stop_event.clear()
             self._pause_event.set()  # not paused initially
         t = threading.Thread(target=self._run, daemon=True)
         t.start()
