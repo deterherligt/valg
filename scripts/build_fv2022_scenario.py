@@ -376,6 +376,34 @@ def parse_fv2022_csv(csv_path: Path) -> dict[tuple[str, str], dict[str, int]]:
     return result
 
 
+def parse_fv2022_personal_votes(
+    csv_path: Path,
+) -> dict[tuple[str, str], dict[str, dict[str, int]]]:
+    """
+    Parse FV2022 personal vote rows from the CSV.
+
+    Returns {(ok_norm, ao_norm): {party_id: {name_norm: votes}}}
+    Skips Partiliste rows (those are party-list votes, not personal votes).
+    """
+    result: dict[tuple[str, str], dict[str, dict[str, int]]] = {}
+    with csv_path.open(encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f, delimiter=";")
+        for row in reader:
+            navn = row.get("Navn", "").strip()
+            if navn == "Partiliste":
+                continue
+            ok_norm = normalize_ok_name(row.get("Opstillingskreds", ""))
+            ao_norm = normalize_ao_name(row.get("Afstemningsområde", ""))
+            party_id = row.get("Partibogstav", "").strip()
+            name_norm = normalize_name(navn)
+            try:
+                votes = int(row.get("Stemmetal", 0))
+            except (ValueError, TypeError):
+                continue
+            result.setdefault((ok_norm, ao_norm), {}).setdefault(party_id, {})[name_norm] = votes
+    return result
+
+
 def build_id_mapping(hierarchy: dict[str, dict]) -> dict[tuple[str, str], str]:
     """Build {(ok_name_norm, ao_name_norm): ao_id} from the geografi hierarchy."""
     mapping: dict[tuple[str, str], str] = {}
