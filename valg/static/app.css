@@ -74,10 +74,9 @@ body {
   border-right: 1px solid #30363d;
   overflow: hidden;
 }
-.col:last-child { border-right: none; flex: 1; }
 .col-parties  {}
 .col-candidates {}
-.col-detail { flex: 1; }
+.col-detail { flex: 1; border-right: none; }
 
 .col-header {
   padding: 6px 12px;

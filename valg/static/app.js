@@ -33,7 +33,9 @@ document.addEventListener('alpine:init', () => {
       if (savedCols) {
         try {
           const w = JSON.parse(savedCols)
-          this.colWidths = w
+          if (w && typeof w.parties === 'number' && typeof w.candidates === 'number') {
+            this.colWidths = w
+          }
         } catch (_) {}
       }
       await this._fetchAll()
