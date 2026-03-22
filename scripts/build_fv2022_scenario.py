@@ -17,6 +17,7 @@ from __future__ import annotations
 import csv
 import json
 import math
+import re
 import shutil
 import sys
 import unicodedata
@@ -161,7 +162,6 @@ def normalize_ao_name(s: str) -> str:
 
     Handles formats like '1. Skagen', '31. 7. Brønshøj' (global + local numbering).
     """
-    import re
     n = normalize_name(s)
     # Strip all leading '<digits>. ' prefixes (some AOs have two levels)
     while re.match(r"^\d+\.\s+\S", n):

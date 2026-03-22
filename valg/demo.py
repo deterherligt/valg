@@ -143,6 +143,7 @@ class DemoRunner:
 
         # Delete demo folder(s) and commit the deletion
         import shutil
+        # FV2024-demo: legacy path from the synthetic election-night scenario
         to_clean = [Path(data_repo) / "FV2024-demo"]
         if getattr(self, "_output_dir", None) is not None:
             to_clean.append(Path(data_repo) / self._output_dir)
