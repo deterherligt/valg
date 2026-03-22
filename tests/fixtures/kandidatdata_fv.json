@@ -1,12 +1,21 @@
 {
-  "Valg": {
-    "Id": "FV2024", "Navn": "Folketingsvalg 2024",
-    "IndenforParti": [
-      {"Id": "A", "Bogstav": "A", "Navn": "Socialdemokratiet",
-       "Kandidater": [{"Id": "K1", "Navn": "Mette Frederiksen", "Stemmeseddelplacering": 1}]}
-    ],
-    "UdenforParti": {"Kandidater": [
-      {"Id": "K99", "Navn": "Uafhængig Kandidat"}
-    ]}
-  }
+  "Storkreds": "København",
+  "Storkredsnummer": "1",
+  "IndenforParti": [
+    {
+      "PartiId": "some-uuid",
+      "Partibogstav": "A",
+      "Partinavn": "Socialdemokratiet",
+      "PersonligeStemmer": true,
+      "Kandidater": [
+        {
+          "Id": "K1",
+          "Navn": "Mette Frederiksen",
+          "Opstillingskredse": [
+            {"Opstillingskreds": "Brønshøj", "OpstillingskredsDagiId": "OK1", "OpstilletIKreds": true, "KandidatsPlacering": 1}
+          ]
+        }
+      ]
+    }
+  ]
 }

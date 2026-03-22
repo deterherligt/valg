@@ -51,8 +51,8 @@ def test_download_file_creates_parent_dirs(tmp_path):
 def test_sync_downloads_new_files(tmp_path):
     tree = {"tree": [{"path": "Storkreds.json", "sha": "abc123", "type": "blob"}]}
 
-    def fake_urlopen(url, timeout=10):
-        if "api.github.com" in url:
+    def fake_urlopen(req, timeout=10):
+        if "api.github.com" in req.full_url:
             return _mock_response(tree)
         return _mock_response(b'[{"Kode":"SK1","Navn":"Test","AntalKredsmandater":10,"ValgId":"FV"}]')
 
@@ -74,8 +74,8 @@ def test_sync_downloads_when_sha_changed(tmp_path):
     (tmp_path / ".sha_cache.json").write_text(json.dumps({"Storkreds.json": "old_sha"}))
     tree = {"tree": [{"path": "Storkreds.json", "sha": "new_sha", "type": "blob"}]}
 
-    def fake_urlopen(url, timeout=10):
-        if "api.github.com" in url:
+    def fake_urlopen(req, timeout=10):
+        if "api.github.com" in req.full_url:
             return _mock_response(tree)
         return _mock_response(b'[]')
 
