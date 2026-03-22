@@ -10,6 +10,7 @@ import logging
 import os
 import sys
 import threading
+import uuid as _uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -41,13 +42,20 @@ def create_app(
     data_dir: Path = _DEFAULT_DATA,
     demo_runner=None,
     data_repo: Path | None = None,
+    session_manager=None,
 ) -> Flask:
     app = Flask(__name__)
     db_path = Path(db_path)
 
     def _get_conn():
         from valg.models import get_connection, init_db
-        conn = get_connection(db_path)
+        if session_manager is not None:
+            sid = request.cookies.get("valg_session")
+            session = session_manager.get(sid) if sid else None
+            conn_path = session.db_path if session is not None else db_path
+        else:
+            conn_path = db_path
+        conn = get_connection(conn_path)
         init_db(conn)
         return conn
 
@@ -93,7 +101,14 @@ def create_app(
 
     @app.get("/")
     def index():
-        return render_template("index.html")
+        from flask import make_response
+        resp = make_response(render_template("index.html"))
+        if session_manager is not None:
+            sid = request.cookies.get("valg_session") or str(_uuid.uuid4())
+            session_manager.get_or_create(sid)
+            # Always set cookie — even if cap exceeded so visitor retains same ID
+            resp.set_cookie("valg_session", sid, httponly=True, samesite="Lax")
+        return resp
 
     @app.get("/sync-status")
     def sync_status():
@@ -205,7 +220,47 @@ def create_app(
 
     _demo_repo = data_repo
 
-    if demo_runner is not None:
+    if session_manager is not None:
+        @app.get("/demo/state")
+        def demo_state():
+            sid = request.cookies.get("valg_session")
+            session = session_manager.get(sid) if sid else None
+            if session is None:
+                return jsonify({
+                    "enabled": False, "state": "unavailable",
+                    "scenarios": [], "speed": 1,
+                    "step_index": -1, "step_name": "", "steps_total": 0,
+                })
+            return jsonify(session.runner.get_state_dict())
+
+        @app.post("/demo/control")
+        def demo_control():
+            sid = request.cookies.get("valg_session")
+            session = session_manager.get(sid) if sid else None
+            if session is None:
+                return "No active session", 404
+            data = request.get_json(force=True)
+            action = data.get("action", "")
+            try:
+                if action == "start":
+                    session.runner.start(db_path=session.db_path, data_repo=session.data_dir)
+                elif action == "pause":
+                    session.runner.pause()
+                elif action == "resume":
+                    session.runner.resume()
+                elif action == "restart":
+                    session.runner.restart(db_path=session.db_path, data_repo=session.data_dir)
+                elif action == "set_speed":
+                    session.runner.set_speed(float(data["speed"]))
+                elif action == "set_scenario":
+                    session.runner.set_scenario(data["scenario"])
+                else:
+                    return f"Unknown action: {action}", 400
+            except (KeyError, ValueError, RuntimeError) as e:
+                return str(e), 400
+            return "ok", 200
+
+    elif demo_runner is not None:
         @app.get("/demo/state")
         def demo_state():
             return jsonify(demo_runner.get_state_dict())
@@ -234,7 +289,7 @@ def create_app(
                 return str(e), 400
             return "ok", 200
 
-        # ── Admin API ─────────────────────────────────────────────────────────────────
+        # ── Admin API ────────────────────────────────────────────────────────────
 
         def _check_admin_auth():
             token = os.environ.get("VALG_ADMIN_TOKEN")
@@ -346,8 +401,8 @@ def main() -> None:
     _init_conn.close()
     log.info("Initial sync complete.")
 
-    from valg.demo import DemoRunner
-    demo_runner = DemoRunner()
+    from valg.sessions import SessionManager
+    session_manager = SessionManager(base_dir=_APP_DIR / "sessions")
 
     t = threading.Thread(target=_sync_loop, args=(data_dir, db_path), daemon=True)
     t.start()
@@ -355,7 +410,7 @@ def main() -> None:
     app = create_app(
         db_path=db_path,
         data_dir=data_dir,
-        demo_runner=demo_runner,
+        session_manager=session_manager,
         data_repo=data_repo,
     )
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", args.port)))

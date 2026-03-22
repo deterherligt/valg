@@ -388,3 +388,13 @@ def test_restart_cleans_scenario_output_dir(tmp_path):
     assert not (stale_dir / "stale.json").exists(), "stale.json should be cleaned by restart()"
 
     demo_module.SCENARIOS.pop("fv2022_test", None)
+
+
+def test_runner_commit_enabled_default_true():
+    r = DemoRunner()
+    assert r.commit_enabled is True
+
+
+def test_runner_commit_enabled_false():
+    r = DemoRunner(commit_enabled=False)
+    assert r.commit_enabled is False

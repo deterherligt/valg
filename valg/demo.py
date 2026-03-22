@@ -61,12 +61,13 @@ def get_scenario(name: str) -> Scenario:
 
 
 class DemoRunner:
-    def __init__(self) -> None:
+    def __init__(self, commit_enabled: bool = True) -> None:
         self.state: str = "idle"   # idle | running | paused | done
         self.speed: float = 1.0
         self.step_index: int = -1  # -1 = not started
         self.paused: bool = False
         self.scenario_name: str = "Election Night"
+        self.commit_enabled: bool = commit_enabled
         self._lock = threading.Lock()
 
     def set_speed(self, multiplier: float) -> None:
@@ -143,7 +144,7 @@ class DemoRunner:
             if d.exists():
                 shutil.rmtree(d)
                 cleaned = True
-        if cleaned:
+        if cleaned and self.commit_enabled:
             from valg.fetcher import commit_data_repo
             commit_data_repo(Path(data_repo), message="demo: reset")
 
@@ -191,7 +192,7 @@ class DemoRunner:
                 for p in written:
                     process_raw_file(conn, p, snapshot_at=snapshot_at)
 
-            if step.commit:
+            if step.commit and self.commit_enabled:
                 commit_data_repo(self._data_repo, message=f"demo: {step.name}")
 
             with self._lock:
