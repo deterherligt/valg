@@ -135,7 +135,7 @@ Total: 33 waves (wave_00 through wave_32). Extendable later by splitting any wav
 AOs are sorted by `AntalStemmeberettigedeVælgere` ascending. The build script:
 
 1. Loads all AOs with their eligible voter counts from FV2026 SFTP
-2. Sorts ascending
+2. Sorts ascending by `eligible_voters` (the DB column populated from `AntalStemmeberettigede` in the output JSON — the SFTP raw field is `AntalStemmeberettigedeVælgere`, but the build script must write `AntalStemmeberettigede` to match `geografi_ao.py:16`)
 3. Splits into ~25 equal-count buckets for preliminary reporting
 4. First buckets go to early waves; last buckets go to late waves
 5. Tiny-island AOs (Bornholm storkreds, Samsø, Læsø) are manually placed in wave_01 regardless of size to mirror the known real-election pattern
@@ -367,6 +367,14 @@ This removes the filter entirely while preserving the processing order (candidat
 - For each preliminary wave: write `partistemmefordeling/` (cumulative) and `valgdeltagelse/`
 - For each fintælling wave: write `valgresultater/` with synthetic candidate votes
 - Write `_meta.json` for every wave
+
+---
+
+## Required fix to `demo.py` — restart cleanup
+
+`DemoRunner.restart()` currently only cleans up `data_repo / "FV2024-demo"`. The fv2022 scenario writes to `data_repo / "demo" / "fv2022"`, which is never removed on restart — leaving stale data that persists across restarts.
+
+Fix: pass the scenario's output directory to `DemoRunner.start()` and store it. `restart()` clears that directory before re-running. The output dir for fv2022 is `data_repo / "demo" / "fv2022"`; for kv2025 it is `data_repo / "demo" / "kv2025"`.
 
 ---
 
