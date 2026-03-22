@@ -1,6 +1,6 @@
 import pytest
 from valg.models import get_connection, init_db
-from valg.queries import query_status, query_flip, query_party, query_kreds
+from valg.queries import query_status, query_flip, query_party, query_kreds, query_api_party_detail
 from tests.synthetic.generator import generate_election, load_into_db
 
 
@@ -69,3 +69,35 @@ def test_query_kreds_returns_empty_for_unknown(db_final):
 
 def test_get_seat_data_importable_from_queries():
     from valg.queries import get_seat_data  # noqa: F401 — just checking it exists here
+
+
+def test_api_party_detail_candidates_preliminary(db_night):
+    """During preliminary, candidates are sorted by ballot_position with has_votes=False."""
+    party_id = db_night.execute("SELECT id FROM parties LIMIT 1").fetchone()[0]
+    result = query_api_party_detail(db_night, [party_id])
+    assert len(result) == 1
+    p = result[0]
+    assert "candidates" in p
+    assert "has_votes" in p
+    assert "cutoff_margin" in p
+    assert p["has_votes"] is False
+    assert p["cutoff_margin"] is None
+    positions = [c["ballot_position"] for c in p["candidates"]]
+    assert positions == sorted(positions)
+    assert all(c["votes"] is None for c in p["candidates"])
+
+
+def test_api_party_detail_candidates_final(db_final):
+    """During fintælling, candidates sorted by votes DESC with cutoff_margin computed."""
+    party_id = db_final.execute("SELECT id FROM parties LIMIT 1").fetchone()[0]
+    result = query_api_party_detail(db_final, [party_id])
+    assert len(result) == 1
+    p = result[0]
+    assert p["has_votes"] is True
+    assert all(c["votes"] is not None for c in p["candidates"])
+    votes = [c["votes"] for c in p["candidates"]]
+    assert votes == sorted(votes, reverse=True)
+    seats = p["seats_total"]
+    if seats >= 1 and len(p["candidates"]) > seats:
+        assert p["cutoff_margin"] is not None
+        assert p["cutoff_margin"] >= 0

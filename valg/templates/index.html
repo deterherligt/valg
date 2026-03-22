@@ -96,8 +96,6 @@
               <div class="candidate-row"
                    :class="{focused: focusedCandidateId === c.id}"
                    @click="focusCandidate(c.id)">
-                <input type="checkbox" :checked="selectedCandidateIds.includes(c.id)"
-                       @click.stop="toggleCandidateCheck(c.id)">
                 <div>
                   <div class="cand-name" x-text="c.name"></div>
                   <div class="cand-sub"
@@ -152,20 +150,36 @@
                       <div class="party-detail-meta"
                            x-text="formatNum(p.votes) + ' votes (' + p.pct + '%) · ' + p.seats_total + ' seats'">
                       </div>
-                      <template x-if="p.seats_by_storkreds.length > 0">
-                        <table class="data-table">
-                          <thead>
-                            <tr><th>Storkreds</th><th>Kredsmandater</th></tr>
-                          </thead>
-                          <tbody>
-                            <template x-for="sk in p.seats_by_storkreds" :key="sk.name">
-                              <tr>
-                                <td x-text="sk.name"></td>
-                                <td x-text="sk.seats"></td>
-                              </tr>
-                            </template>
-                          </tbody>
-                        </table>
+                      <!-- Candidate breakdown -->
+                      <template x-if="!p.has_votes && p.candidates.length > 0">
+                        <div>
+                          <div class="cand-breakdown-prelim-note">Foreløbig rækkefølge — stemmetal tilgængeligt efter fintælling</div>
+                          <template x-for="(c, i) in p.candidates" :key="c.id">
+                            <div class="cand-breakdown-row" :class="i < p.seats_total ? 'cand-in' : 'cand-out'">
+                              <span class="cand-breakdown-name" x-text="(i + 1) + '. ' + c.name"></span>
+                              <span class="cand-breakdown-kreds" x-text="c.opstillingskreds"></span>
+                            </div>
+                          </template>
+                        </div>
+                      </template>
+                      <template x-if="p.has_votes && p.candidates.length > 0">
+                        <div>
+                          <template x-for="(c, i) in p.candidates" :key="c.id">
+                            <div>
+                              <div x-show="i === p.seats_total" class="cand-cutoff"
+                                   x-text="p.cutoff_margin !== null ? 'Grænse · ' + formatNum(p.cutoff_margin) + ' stemmer' : 'Grænse'">
+                              </div>
+                              <div class="cand-breakdown-row" :class="i < p.seats_total ? 'cand-in' : 'cand-out'">
+                                <span class="cand-breakdown-name" x-text="c.name"></span>
+                                <span class="cand-breakdown-kreds" x-text="c.opstillingskreds"></span>
+                                <span class="cand-breakdown-votes" x-text="c.votes !== null ? formatNum(c.votes) : '—'"></span>
+                              </div>
+                            </div>
+                          </template>
+                        </div>
+                      </template>
+                      <template x-if="p.candidates.length === 0">
+                        <div class="detail-placeholder" style="padding:8px 0">Ingen kandidater</div>
                       </template>
                     </div>
                   </template>
@@ -345,34 +359,6 @@
 
     </div>
   </div>
-
-  <!-- SVG annotation arrows (shown with about modal) -->
-  <svg class="about-arrows" x-show="showAbout"
-       viewBox="0 0 100 100" preserveAspectRatio="none"
-       xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <marker id="arrowhead" markerWidth="6" markerHeight="6"
-              refX="3" refY="3" orient="auto">
-        <path d="M0,0 L0,6 L6,3 Z" fill="#58a6ff" opacity="0.55"/>
-      </marker>
-    </defs>
-    <!-- Datakilder → header sync status (top-right area) -->
-    <path d="M 35,28 C 35,15 70,8 82,5"
-          stroke="#58a6ff" stroke-width="0.5" stroke-dasharray="1.5,1"
-          fill="none" marker-end="url(#arrowhead)" opacity="0.45"/>
-    <!-- Mandatberegning → parties col (left side) -->
-    <path d="M 22,42 C 10,42 6,52 5,62"
-          stroke="#58a6ff" stroke-width="0.5" stroke-dasharray="1.5,1"
-          fill="none" marker-end="url(#arrowhead)" opacity="0.45"/>
-    <!-- Kandidatoversigt → candidates col (centre) -->
-    <path d="M 40,50 C 30,58 30,68 32,72"
-          stroke="#58a6ff" stroke-width="0.5" stroke-dasharray="1.5,1"
-          fill="none" marker-end="url(#arrowhead)" opacity="0.45"/>
-    <!-- D'Hondt / detaljer → detail col (right) -->
-    <path d="M 62,42 C 72,42 78,52 80,62"
-          stroke="#58a6ff" stroke-width="0.5" stroke-dasharray="1.5,1"
-          fill="none" marker-end="url(#arrowhead)" opacity="0.45"/>
-  </svg>
 
 </body>
 </html>

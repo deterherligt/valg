@@ -1,7 +1,6 @@
 document.addEventListener('alpine:init', () => {
   Alpine.data('dashboard', () => ({
     selectedPartyIds: [],
-    selectedCandidateIds: [],
     focusedCandidateId: null,
 
     parties: [],
@@ -195,14 +194,6 @@ document.addEventListener('alpine:init', () => {
         this.selectedPartyIds = [...this.selectedPartyIds, partyId]
       }
       Promise.all([this._fetchCandidates(), this._fetchPartyDetail()])
-    },
-
-    toggleCandidateCheck(candidateId) {
-      if (this.selectedCandidateIds.includes(candidateId)) {
-        this.selectedCandidateIds = this.selectedCandidateIds.filter(id => id !== candidateId)
-      } else {
-        this.selectedCandidateIds = [...this.selectedCandidateIds, candidateId]
-      }
     },
 
     focusCandidate(candidateId) {
