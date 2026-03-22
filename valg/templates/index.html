@@ -302,5 +302,49 @@
     </div>
   </div>
 
+  <!-- About modal -->
+  <div class="about-backdrop" x-show="showAbout" @click="showAbout = false"
+       @keydown.escape.window="showAbout = false"></div>
+
+  <div class="about-modal" x-show="showAbout">
+    <div class="about-modal-header">
+      <span class="about-modal-title">Om Valg Dashboard</span>
+      <button class="about-close" @click="showAbout = false">✕</button>
+    </div>
+    <div class="about-modal-body">
+
+      <div class="about-section">
+        <div class="about-section-heading">Hvad er dette?</div>
+        <p>Live valgresultater hentet og beregnet i realtid. Dashboardet viser partistemmer, mandatfordeling og kandidatresultater efterhånden som de indrapporteres valgnatten.</p>
+      </div>
+
+      <div class="about-section">
+        <div class="about-section-heading">Datakilder</div>
+        <p>Data stammer fra valg.dk's offentlige SFTP-server (<code>data.valg.dk</code>). Dashboardet synkroniserer ca. hvert 5. minut via GitHub.</p>
+      </div>
+
+      <div class="about-section">
+        <div class="about-section-heading">Mandatberegning</div>
+        <p>Kredsmandater (135) beregnes med D'Hondt-metoden per storkreds — præcis. Tillægsmandater (40) beregnes approksimativt via modificeret Saint-Laguë nationalt minus kredsmandater. Den eksakte beregning kræver data fra alle 8 storkredse og implementeres i v2.</p>
+      </div>
+
+      <div class="about-section">
+        <div class="about-section-heading">Disclaimer</div>
+        <p>Mandattal under valgnatten er estimater baseret på løbende optælling. Officielle resultater offentliggøres på <a href="https://valg.dk" target="_blank" rel="noopener">valg.dk</a>.</p>
+      </div>
+
+      <div class="about-section">
+        <div class="about-section-heading">Kildekode</div>
+        <p>Kildekoden er tilgængelig på GitHub: <a href="https://github.com/deterherligt/valg" target="_blank" rel="noopener">deterherligt/valg</a>.</p>
+      </div>
+
+      <div class="about-section">
+        <div class="about-section-heading">Licens</div>
+        <p>Udgivet under Beerware-licensen (Revision 42). Du må gøre hvad du vil med koden. Finder du den nyttig, er du velkommen til at købe mig en øl.</p>
+      </div>
+
+    </div>
+  </div>
+
 </body>
 </html>
