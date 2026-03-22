@@ -364,3 +364,30 @@ body {
   color: #c9d1d9;
 }
 
+/* ── Candidate breakdown in party detail ─────────────────────── */
+.cand-breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 3px 0;
+  font-size: 0.9em;
+}
+.cand-breakdown-row.cand-in  { color: #e6edf3; }
+.cand-breakdown-row.cand-out { color: #8b949e; }
+.cand-breakdown-name { flex: 1; }
+.cand-breakdown-kreds { color: #484f58; font-size: 0.85em; margin-right: 8px; }
+.cand-breakdown-votes { color: #3fb950; text-align: right; min-width: 60px; }
+.cand-breakdown-row.cand-out .cand-breakdown-votes { color: #8b949e; }
+.cand-cutoff {
+  border-top: 1px dashed #388bfd44;
+  margin: 4px 0;
+  padding-top: 4px;
+  font-size: 0.78em;
+  color: #484f58;
+}
+.cand-breakdown-prelim-note {
+  color: #8b949e;
+  font-size: 0.85em;
+  font-style: italic;
+  padding: 4px 0 8px;
+}

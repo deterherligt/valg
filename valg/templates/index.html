@@ -150,20 +150,36 @@
                       <div class="party-detail-meta"
                            x-text="formatNum(p.votes) + ' votes (' + p.pct + '%) · ' + p.seats_total + ' seats'">
                       </div>
-                      <template x-if="p.seats_by_storkreds.length > 0">
-                        <table class="data-table">
-                          <thead>
-                            <tr><th>Storkreds</th><th>Kredsmandater</th></tr>
-                          </thead>
-                          <tbody>
-                            <template x-for="sk in p.seats_by_storkreds" :key="sk.name">
-                              <tr>
-                                <td x-text="sk.name"></td>
-                                <td x-text="sk.seats"></td>
-                              </tr>
-                            </template>
-                          </tbody>
-                        </table>
+                      <!-- Candidate breakdown -->
+                      <template x-if="!p.has_votes && p.candidates.length > 0">
+                        <div>
+                          <div class="cand-breakdown-prelim-note">Foreløbig rækkefølge — stemmetal tilgængeligt efter fintælling</div>
+                          <template x-for="(c, i) in p.candidates" :key="c.id">
+                            <div class="cand-breakdown-row" :class="i < p.seats_total ? 'cand-in' : 'cand-out'">
+                              <span class="cand-breakdown-name" x-text="(i + 1) + '. ' + c.name"></span>
+                              <span class="cand-breakdown-kreds" x-text="c.opstillingskreds"></span>
+                            </div>
+                          </template>
+                        </div>
+                      </template>
+                      <template x-if="p.has_votes && p.candidates.length > 0">
+                        <div>
+                          <template x-for="(c, i) in p.candidates" :key="c.id">
+                            <div>
+                              <div x-show="i === p.seats_total" class="cand-cutoff"
+                                   x-text="p.cutoff_margin !== null ? 'Grænse · ' + formatNum(p.cutoff_margin) + ' stemmer' : 'Grænse'">
+                              </div>
+                              <div class="cand-breakdown-row" :class="i < p.seats_total ? 'cand-in' : 'cand-out'">
+                                <span class="cand-breakdown-name" x-text="c.name"></span>
+                                <span class="cand-breakdown-kreds" x-text="c.opstillingskreds"></span>
+                                <span class="cand-breakdown-votes" x-text="c.votes !== null ? formatNum(c.votes) : '—'"></span>
+                              </div>
+                            </div>
+                          </template>
+                        </div>
+                      </template>
+                      <template x-if="p.candidates.length === 0">
+                        <div class="detail-placeholder" style="padding:8px 0">Ingen kandidater</div>
                       </template>
                     </div>
                   </template>
