@@ -82,8 +82,6 @@ class DemoRunner:
 
     def set_scenario(self, name: str) -> None:
         with self._lock:
-            if self.state == "running":
-                raise RuntimeError("Cannot change scenario while running")
             get_scenario(name)  # raises KeyError if unknown
             self.scenario_name = name
 

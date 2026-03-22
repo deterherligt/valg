@@ -61,12 +61,11 @@ def test_runner_set_scenario_unknown():
         r.set_scenario("Nope")
 
 
-def test_runner_set_scenario_rejects_when_running():
+def test_runner_set_scenario_allowed_while_running():
     r = DemoRunner()
     r.state = "running"
-    import pytest
-    with pytest.raises(RuntimeError):
-        r.set_scenario("Election Night")
+    r.set_scenario("Election Night")  # must not raise — restart will pick up the new name
+    assert r.scenario_name == "Election Night"
 
 
 def test_runner_get_state_dict():
