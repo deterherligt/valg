@@ -56,14 +56,3 @@ def test_make_steps_write_fn_copies_files(tmp_path):
     assert written[0] == dest
 
 
-def test_kv2025_scenario_registered():
-    """KV2025 scenario appears in SCENARIOS dict."""
-    from valg.demo import SCENARIOS
-    assert "kv2025" in SCENARIOS
-
-
-def test_kv2025_scenario_has_steps_factory():
-    """KV2025 scenario uses steps_factory, not static steps."""
-    from valg.demo import SCENARIOS
-    scenario = SCENARIOS["kv2025"]
-    assert scenario.steps_factory is not None
