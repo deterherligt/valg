@@ -32,7 +32,27 @@ _DEFAULT_DATA = _APP_DIR / "data"
 
 _last_sync = "never"
 _just_synced = False
+_live_data_available = False
 _sync_lock = threading.Lock()
+
+
+def _maybe_switch_to_live(db_path: Path, session_manager) -> None:
+    """Switch all demo sessions to live data if preliminary results exist in the shared db.
+
+    Called from _sync_loop on every iteration. No-op once _live_data_available is True.
+    """
+    global _live_data_available
+    if session_manager is None or _live_data_available:
+        return
+    from valg.models import get_connection
+    conn = get_connection(db_path)
+    has_real = conn.execute(
+        "SELECT 1 FROM results WHERE count_type = 'preliminary' LIMIT 1"
+    ).fetchone() is not None
+    conn.close()
+    if has_real:
+        session_manager.switch_all_to_live()
+        _live_data_available = True
 
 
 # ── App factory ───────────────────────────────────────────────────────────────
@@ -52,7 +72,7 @@ def create_app(
         if session_manager is not None:
             sid = request.cookies.get("valg_session")
             session = session_manager.get(sid) if sid else None
-            conn_path = session.db_path if session is not None else db_path
+            conn_path = db_path if (session is None or session.live) else session.db_path
         else:
             conn_path = db_path
         conn = get_connection(conn_path)
@@ -225,7 +245,7 @@ def create_app(
         def demo_state():
             sid = request.cookies.get("valg_session")
             session = session_manager.get(sid) if sid else None
-            if session is None:
+            if session is None or session.live:
                 return jsonify({
                     "enabled": False, "state": "unavailable",
                     "scenarios": [], "speed": 1,
@@ -338,7 +358,7 @@ def create_app(
 
 # ── Background sync ───────────────────────────────────────────────────────────
 
-def _sync_loop(data_dir: Path, db_path: Path, interval: int = 60) -> None:
+def _sync_loop(data_dir: Path, db_path: Path, interval: int = 60, session_manager=None) -> None:
     global _last_sync, _just_synced
     import time
     while True:
@@ -358,6 +378,7 @@ def _sync_loop(data_dir: Path, db_path: Path, interval: int = 60) -> None:
             with _sync_lock:
                 _last_sync = datetime.now(timezone.utc).strftime("%H:%M:%S UTC")
                 _just_synced = count > 0
+            _maybe_switch_to_live(db_path, session_manager)
         except Exception as e:
             log.warning("Sync failed: %s", e)
 
@@ -404,7 +425,7 @@ def main() -> None:
     from valg.sessions import SessionManager
     session_manager = SessionManager(base_dir=_APP_DIR / "sessions")
 
-    t = threading.Thread(target=_sync_loop, args=(data_dir, db_path), daemon=True)
+    t = threading.Thread(target=_sync_loop, args=(data_dir, db_path), kwargs={"session_manager": session_manager}, daemon=True)
     t.start()
 
     app = create_app(
