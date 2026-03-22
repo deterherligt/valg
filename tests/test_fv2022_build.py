@@ -185,6 +185,109 @@ def test_parse_fv2022_personal_votes_skips_partiliste(tmp_path):
     assert party_a[normalize_name("Anders And")] == 42
 
 
+def test_write_fintaelling_wave_uses_real_votes(tmp_path):
+    """write_fintaelling_wave writes valgresultater with real personal votes."""
+    import sys
+    sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
+    from build_fv2022_scenario import write_fintaelling_wave, normalize_ok_name, normalize_ao_name
+    import json
+
+    hierarchy = {
+        "701001": {
+            "ao_name": "1. Skagen",
+            "ok_id": "100101",
+            "ok_name": "Frederikshavnkredsen",
+            "sk_id": "1",
+            "sk_name": "Nordjylland",
+            "eligible_voters": 500,
+        }
+    }
+    ok_norm = normalize_ok_name("Frederikshavnkredsen")
+    ao_norm = normalize_ao_name("1. Skagen")
+    fv2022_votes = {(ok_norm, ao_norm): {"A": 200, "V": 150}}
+    personal_votes = {
+        (ok_norm, ao_norm): {
+            "A": {"mette frederiksen": 80, "peter skaarup": 30},
+            "V": {"jakob ellemann-jensen": 55},
+        }
+    }
+    kandidatdata = {
+        "100101": {
+            "A": [
+                {"id": "cand-1", "name": "Mette Frederiksen", "ballot_position": 1},
+                {"id": "cand-2", "name": "Peter Skaarup", "ballot_position": 2},
+            ],
+            "V": [
+                {"id": "cand-3", "name": "Jakob Ellemann-Jensen", "ballot_position": 1},
+            ],
+        }
+    }
+
+    wave_dir = tmp_path / "wave_26"
+    write_fintaelling_wave(
+        wave_dir=wave_dir,
+        wave_index=26,
+        ao_ids_in_wave=["701001"],
+        hierarchy=hierarchy,
+        fv2022_votes=fv2022_votes,
+        kandidatdata=kandidatdata,
+        personal_votes=personal_votes,
+    )
+
+    vr_files = list((wave_dir / "valgresultater").glob("*.json"))
+    assert len(vr_files) == 1
+    vr = json.loads(vr_files[0].read_text())["Valgresultater"]
+    party_a = next(p for p in vr["IndenforParti"] if p["PartiId"] == "A")
+    assert party_a["Partistemmer"] == 200
+    cand_votes = {k["KandidatId"]: k["Stemmer"] for k in party_a["Kandidater"]}
+    assert cand_votes["cand-1"] == 80
+    assert cand_votes["cand-2"] == 30
+
+
+def test_write_fintaelling_wave_zero_for_unmatched_candidate(tmp_path):
+    """Candidates with no personal vote entry get Stemmer=0."""
+    import sys
+    sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
+    from build_fv2022_scenario import write_fintaelling_wave, normalize_ok_name, normalize_ao_name
+    import json
+
+    hierarchy = {
+        "701001": {
+            "ao_name": "Test AO",
+            "ok_id": "ok1",
+            "ok_name": "Test Kreds",
+            "sk_id": "1",
+            "sk_name": "Test SK",
+            "eligible_voters": 100,
+        }
+    }
+    ok_norm = normalize_ok_name("Test Kreds")
+    ao_norm = normalize_ao_name("Test AO")
+    fv2022_votes = {(ok_norm, ao_norm): {"A": 50}}
+    personal_votes = {}  # No personal votes at all
+    kandidatdata = {
+        "ok1": {
+            "A": [{"id": "cand-x", "name": "Unknown Candidate", "ballot_position": 1}]
+        }
+    }
+
+    wave_dir = tmp_path / "wave_26"
+    write_fintaelling_wave(
+        wave_dir=wave_dir,
+        wave_index=26,
+        ao_ids_in_wave=["701001"],
+        hierarchy=hierarchy,
+        fv2022_votes=fv2022_votes,
+        kandidatdata=kandidatdata,
+        personal_votes=personal_votes,
+    )
+
+    vr_files = list((wave_dir / "valgresultater").glob("*.json"))
+    vr = json.loads(vr_files[0].read_text())["Valgresultater"]
+    party_a = next(p for p in vr["IndenforParti"] if p["PartiId"] == "A")
+    assert party_a["Kandidater"][0]["Stemmer"] == 0
+
+
 def test_build_fv2022_kandidatdata_from_csv_creates_json(tmp_path):
     """build_fv2022_kandidatdata_from_csv writes kandidat-data JSON from CSV candidate rows."""
     import sys, json

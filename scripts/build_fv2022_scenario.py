@@ -700,8 +700,10 @@ def write_fintaelling_wave(
     hierarchy: dict[str, dict],
     fv2022_votes: dict[tuple[str, str], dict[str, int]],
     kandidatdata: dict[str, dict[str, list[dict]]],
+    personal_votes: dict[tuple[str, str], dict[str, dict[str, int]]],
+    unmatched: list[tuple] | None = None,
 ) -> None:
-    """Write one fintaelling wave: valgresultater with synthetic candidate votes."""
+    """Write one fintaelling wave: valgresultater with real personal votes."""
     wave_dir.mkdir(parents=True, exist_ok=True)
     t = WAVE_TIMES[wave_index]
 
@@ -723,13 +725,20 @@ def write_fintaelling_wave(
         ao_name = info["ao_name"]
         key = (normalize_ok_name(ok_name), normalize_ao_name(ao_name))
         ao_party_votes = fv2022_votes.get(key, {})
+        ao_personal = personal_votes.get(key, {})
 
         party_data: dict[str, dict] = {}
         for party_id, total in ao_party_votes.items():
-            party_data[party_id] = {
-                "total": total,
-                "kandidater": [],
-            }
+            candidates = kandidatdata.get(ok_id, {}).get(party_id, [])
+            party_personal = ao_personal.get(party_id, {})
+            kandidater = []
+            for c in candidates:
+                name_norm = normalize_name(c["name"])
+                votes = party_personal.get(name_norm, 0)
+                if name_norm not in party_personal and unmatched is not None:
+                    unmatched.append((ok_name, ao_name, party_id, c["name"]))
+                kandidater.append({"KandidatId": str(c["id"]), "Stemmer": votes})
+            party_data[party_id] = {"total": total, "kandidater": kandidater}
 
         vr = build_valgresultater(
             ao_id=str(ao_id),
