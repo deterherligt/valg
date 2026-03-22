@@ -287,3 +287,17 @@ body {
 ::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 2px; }
+
+/* ── About button ─────────────────────────────────────────────────── */
+.about-btn {
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  color: #c9d1d9;
+  font-family: monospace;
+  font-size: 0.85em;
+  padding: 2px 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.about-btn:hover { background: #30363d; }

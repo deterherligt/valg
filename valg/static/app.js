@@ -25,6 +25,7 @@ document.addEventListener('alpine:init', () => {
     districtsTotal: null,
     syncing: false,  // true during just_synced refresh — drives pulsing header
     demo: { enabled: false, state: 'idle', scenario: '', scenarios: [], speed: 1 },
+    showAbout: false,
 
     async init() {
       const savedH = localStorage.getItem('valg_feed_height')
