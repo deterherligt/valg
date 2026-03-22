@@ -288,19 +288,16 @@ def query_api_candidate(conn, candidate_id: str) -> dict | None:
     districts = conn.execute(
         """
         SELECT ao.name, r.votes
-        FROM afstemningsomraader ao
-        LEFT JOIN results r
-            ON r.afstemningsomraade_id = ao.id
-            AND r.candidate_id = ?
-            AND r.snapshot_at = ?
-        WHERE ao.opstillingskreds_id = ?
-        ORDER BY COALESCE(r.votes, -1) DESC
+        FROM results r
+        JOIN afstemningsomraader ao ON ao.id = r.afstemningsomraade_id
+        WHERE r.candidate_id = ?
+          AND r.snapshot_at = ?
+        ORDER BY COALESCE(r.votes, 0) DESC
         """,
-        (candidate_id, latest, row["opstillingskreds_id"]),
+        (candidate_id, latest),
     ).fetchall()
 
     by_district = [{"name": d["name"], "votes": d["votes"]} for d in districts]
-    reported = sum(1 for d in by_district if d["votes"] is not None)
     total_votes = sum(d["votes"] for d in by_district if d["votes"] is not None)
 
     return {
@@ -308,7 +305,7 @@ def query_api_candidate(conn, candidate_id: str) -> dict | None:
         "party_letter": row["party_letter"],
         "available": True,
         "total_votes": total_votes,
-        "polling_districts_reported": reported,
+        "polling_districts_reported": len(by_district),
         "polling_districts_total": len(by_district),
         "by_district": by_district,
     }
@@ -316,7 +313,7 @@ def query_api_candidate(conn, candidate_id: str) -> dict | None:
 
 def query_place_detail(conn, place_id: str) -> dict | None:
     ao = conn.execute(
-        "SELECT ao.id, ao.name, ok.name AS opstillingskreds "
+        "SELECT ao.id, ao.name, ao.opstillingskreds_id, ok.name AS opstillingskreds "
         "FROM afstemningsomraader ao "
         "JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id "
         "WHERE ao.id = ?",
@@ -333,13 +330,34 @@ def query_place_detail(conn, place_id: str) -> dict | None:
         (place_id,),
     ).fetchall()
     if not snaps:
+        # No AO-level results yet — show opstillingskreds-level party votes
+        ok_snaps = conn.execute(
+            "SELECT DISTINCT snapshot_at FROM party_votes "
+            "WHERE opstillingskreds_id = ? ORDER BY snapshot_at DESC LIMIT 1",
+            (ao["opstillingskreds_id"],),
+        ).fetchall()
+        ok_snap = ok_snaps[0]["snapshot_at"] if ok_snaps else None
+        parties = []
+        if ok_snap:
+            pv_rows = conn.execute(
+                "SELECT pv.party_id, pv.votes, p.letter, p.name "
+                "FROM party_votes pv JOIN parties p ON p.id = pv.party_id "
+                "WHERE pv.opstillingskreds_id = ? AND pv.snapshot_at = ? "
+                "ORDER BY pv.votes DESC",
+                (ao["opstillingskreds_id"], ok_snap),
+            ).fetchall()
+            parties = [
+                {"party_id": r["party_id"], "letter": r["letter"], "name": r["name"],
+                 "votes": r["votes"], "delta": None}
+                for r in pv_rows
+            ]
         return {
             "id": ao["id"],
             "name": ao["name"],
             "opstillingskreds": ao["opstillingskreds"],
             "count_type": "foreløbig",
-            "occurred_at": None,
-            "parties": [],
+            "occurred_at": ok_snap,
+            "parties": parties,
             "candidates": [],
         }
 
