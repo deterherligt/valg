@@ -88,3 +88,40 @@ def test_build_valgresultater_structure():
     assert party_a["Partistemmer"] == 100
     assert len(party_a["Kandidater"]) == 2
     assert sum(k["Stemmer"] for k in party_a["Kandidater"]) == 100
+
+
+def test_parse_fv2022_csv_extracts_party_votes(tmp_path):
+    """parse_fv2022_csv extracts Partiliste rows only, keyed by (ok_norm, ao_norm)."""
+    import sys
+    sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
+    from build_fv2022_scenario import parse_fv2022_csv, normalize_ok_name, normalize_ao_name
+
+    csv_file = tmp_path / "results.csv"
+    csv_file.write_text(
+        "Opstillingskreds;Afstemningsområde;Partibogstav;Partinavn;Navn;Stemmetal\n"
+        "Frederikshavnkredsen;1. Skagen;A;Socialdemokratiet;Partiliste;409\n"
+        "Frederikshavnkredsen;1. Skagen;A;Socialdemokratiet;Mette Frederiksen;926\n"
+        "Frederikshavnkredsen;1. Skagen;V;Venstre;Partiliste;281\n",
+        encoding="utf-8-sig"
+    )
+
+    result = parse_fv2022_csv(csv_file)
+    key = (normalize_ok_name("Frederikshavnkredsen"), normalize_ao_name("1. Skagen"))
+    assert key in result
+    assert result[key]["A"] == 409   # Only Partiliste row
+    assert result[key]["V"] == 281
+
+
+def test_build_id_mapping_joins_by_name(tmp_path):
+    """build_id_mapping returns {(ok_norm, ao_norm): ao_id} from geografi hierarchy."""
+    import sys
+    sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
+    from build_fv2022_scenario import build_id_mapping, normalize_ok_name, normalize_ao_name
+
+    hierarchy = {
+        "100101": {"ao_name": "1. Skagen", "ok_id": "1001", "ok_name": "Frederikshavnkredsen",
+                   "sk_id": "1", "eligible_voters": 500},
+    }
+    mapping = build_id_mapping(hierarchy)
+    key = (normalize_ok_name("Frederikshavnkredsen"), normalize_ao_name("1. Skagen"))
+    assert mapping[key] == "100101"

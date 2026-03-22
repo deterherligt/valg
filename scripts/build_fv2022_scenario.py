@@ -130,6 +130,30 @@ def normalize_name(s: str) -> str:
     return s
 
 
+def normalize_ok_name(s: str) -> str:
+    """Normalize an opstillingskreds name, stripping suffixes that differ between elections."""
+    n = normalize_name(s)
+    if n.endswith("kredsen"):
+        n = n[:-len("kredsen")]
+    # 'omegns' used in FV2022 vs 'omegn' in FV2026
+    if n.endswith("omegns"):
+        n = n[:-1]
+    return n.rstrip()
+
+
+def normalize_ao_name(s: str) -> str:
+    """Normalize an afstemningsomraade name, stripping leading number prefixes used in FV2022.
+
+    Handles formats like '1. Skagen', '31. 7. Brønshøj' (global + local numbering).
+    """
+    import re
+    n = normalize_name(s)
+    # Strip all leading '<digits>. ' prefixes (some AOs have two levels)
+    while re.match(r"^\d+\.\s+\S", n):
+        n = re.sub(r"^\d+\.\s+", "", n)
+    return n
+
+
 def distribute_candidate_votes(party_total: int, candidates: list[dict]) -> list[int]:
     """Distribute party_total votes across candidates using 35%/power-decay algorithm.
 
@@ -215,6 +239,135 @@ def build_valgresultater(
             "KandidaterUdenforParti": [],
         }
     }
+
+
+# ── Parse ─────────────────────────────────────────────────────────────────────
+
+def parse_geografi(geografi_dir: Path) -> dict[str, dict]:
+    """
+    Parse FV2026 geografi files into a hierarchy dict.
+
+    Returns {ao_id: {ao_name, ok_id, ok_name, sk_id, sk_name, eligible_voters}}
+    All IDs are strings. ao_id / ok_id are Dagi_id values; sk_id is Nummer.
+    """
+    # Storkreds: Nummer → Navn
+    sk_lookup: dict[str, str] = {}
+    # Opstillingskreds: Dagi_id → {name, sk_id}
+    ok_lookup: dict[str, dict] = {}
+
+    for f in geografi_dir.glob("*.json"):
+        if f.name.endswith(".hash"):
+            continue
+        data = json.loads(f.read_text())
+        if not isinstance(data, list) or not data:
+            continue
+        item_type = data[0].get("Type", "")
+        if item_type == "Storkreds":
+            for item in data:
+                sk_lookup[str(item["Nummer"])] = item.get("Navn", "")
+        elif item_type == "Opstillingskreds":
+            for item in data:
+                ok_lookup[str(item["Dagi_id"])] = {
+                    "name": item.get("Navn", ""),
+                    "sk_id": str(item.get("Storkredskode", "")),
+                    "ok_nummer": str(item.get("Nummer", "")),
+                }
+
+    ao_hierarchy: dict[str, dict] = {}
+    for f in geografi_dir.glob("*.json"):
+        if f.name.endswith(".hash"):
+            continue
+        data = json.loads(f.read_text())
+        if not isinstance(data, list) or not data:
+            continue
+        if data[0].get("Type") == "Afstemningsområde":
+            for item in data:
+                ok_id = str(item.get("Opstillingskreds_Dagi_id", ""))
+                ok_info = ok_lookup.get(ok_id, {})
+                sk_id = ok_info.get("sk_id", "")
+                ao_hierarchy[str(item["Dagi_id"])] = {
+                    "ao_name": item.get("Navn", ""),
+                    "ok_id": ok_id,
+                    "ok_name": ok_info.get("name", ""),
+                    "sk_id": sk_id,
+                    "sk_name": sk_lookup.get(sk_id, ""),
+                    "eligible_voters": item.get("AntalStemmeberettigede", 0) or 0,
+                }
+
+    return ao_hierarchy
+
+
+def parse_kandidatdata(kandidat_dir: Path) -> dict[str, dict[str, list[dict]]]:
+    """
+    Parse FV2026 kandidat-data files.
+
+    Returns {ok_id: {party_id: [{id, ballot_position}]}} sorted by ballot_position.
+    ok_id is OpstillingskredsDagiId (string). party_id is Partibogstav.
+    """
+    result: dict[str, dict[str, list[dict]]] = {}
+
+    for f in kandidat_dir.glob("*.json"):
+        if f.name.endswith(".hash"):
+            continue
+        data = json.loads(f.read_text())
+        for party in data.get("IndenforParti", []):
+            party_id = party.get("Partibogstav")
+            if not party_id:
+                continue
+            for k in party.get("Kandidater", []):
+                cand_id = str(k.get("Id", ""))
+                cand_name = k.get("Navn", "")
+                for opstilling in k.get("Opstillingskredse", []):
+                    if not opstilling.get("OpstilletIKreds"):
+                        continue
+                    ok_id = str(opstilling.get("OpstillingskredsDagiId", ""))
+                    if not ok_id:
+                        continue
+                    ballot_pos = opstilling.get("KandidatsPlacering", 99)
+                    result.setdefault(ok_id, {}).setdefault(party_id, []).append({
+                        "id": cand_id,
+                        "name": cand_name,
+                        "ballot_position": ballot_pos,
+                    })
+
+    for ok_id in result:
+        for party_id in result[ok_id]:
+            result[ok_id][party_id].sort(key=lambda c: c["ballot_position"])
+
+    return result
+
+
+def parse_fv2022_csv(csv_path: Path) -> dict[tuple[str, str], dict[str, int]]:
+    """
+    Parse FV2022 results CSV.
+
+    Returns {(ok_name_norm, ao_name_norm): {party_id: party_votes}}
+    Only 'Partiliste' rows are counted.
+    """
+    result: dict[tuple[str, str], dict[str, int]] = {}
+    with csv_path.open(encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f, delimiter=";")
+        for row in reader:
+            if row.get("Navn", "").strip() != "Partiliste":
+                continue
+            ok_norm = normalize_ok_name(row.get("Opstillingskreds", ""))
+            ao_norm = normalize_ao_name(row.get("Afstemningsområde", ""))
+            party_id = row.get("Partibogstav", "").strip()
+            try:
+                votes = int(row.get("Stemmetal", 0))
+            except (ValueError, TypeError):
+                continue
+            result.setdefault((ok_norm, ao_norm), {})[party_id] = votes
+    return result
+
+
+def build_id_mapping(hierarchy: dict[str, dict]) -> dict[tuple[str, str], str]:
+    """Build {(ok_name_norm, ao_name_norm): ao_id} from the geografi hierarchy."""
+    mapping: dict[tuple[str, str], str] = {}
+    for ao_id, info in hierarchy.items():
+        key = (normalize_ok_name(info["ok_name"]), normalize_ao_name(info["ao_name"]))
+        mapping[key] = ao_id
+    return mapping
 
 
 # ── Download ──────────────────────────────────────────────────────────────────
