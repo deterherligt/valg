@@ -28,6 +28,7 @@ CACHE_DIR = Path(__file__).parent / ".cache"
 OUTPUT_DIR = REPO_ROOT / "valg" / "scenarios" / "fv2022"
 
 FV2026_SFTP_PATH = "/data/folketingsvalg-135-24-03-2026"
+FV2022_SFTP_PATH = "/data/arkiv/FV2022"
 FV2022_CSV_URL = (
     "https://valg.dk/api/export-data/export-fv-data-csv"
     "?electionId=987875fe-0dae-42ac-be5b-62cf0bd5d65e"
@@ -458,6 +459,38 @@ def download_fv2026_kandidatdata(force: bool = False) -> None:
         transport.close()
 
 
+def _do_sftp_download_fv2022_kd(force: bool = False) -> None:
+    """Internal: SFTP download of FV2022 kandidat-data into cache."""
+    import paramiko
+    local_kd = CACHE_DIR / "fv2022" / "kandidat-data"
+    local_kd.mkdir(parents=True, exist_ok=True)
+
+    if not force and any(local_kd.glob("*.json")):
+        print(f"  using cached fv2022/kandidat-data/ ({len(list(local_kd.glob('*.json')))} files)")
+        return
+
+    print("  downloading fv2022/kandidat-data from SFTP …")
+    transport = paramiko.Transport(("data.valg.dk", 22))
+    transport.connect(username="Valg", password="Valg")
+    sftp = paramiko.SFTPClient.from_transport(transport)
+    try:
+        count = download_sftp_dir(sftp, f"{FV2022_SFTP_PATH}/kandidat-data", local_kd, force=force)
+        if count == 0 and not any(local_kd.glob("*.json")):
+            raise RuntimeError(
+                f"No kandidat-data files found at {FV2022_SFTP_PATH}/kandidat-data — "
+                "check FV2022_SFTP_PATH in the build script."
+            )
+        print(f"  downloaded {count} fv2022 kandidat-data files")
+    finally:
+        sftp.close()
+        transport.close()
+
+
+def download_fv2022_kandidatdata(force: bool = False) -> None:
+    """Download FV2022 kandidat-data from SFTP into cache."""
+    _do_sftp_download_fv2022_kd(force=force)
+
+
 def download_fv2022_csv(force: bool = False) -> None:
     """Download FV2022 results CSV from valg.dk API into cache."""
     import urllib.request
@@ -481,7 +514,7 @@ def download_all(force: bool = False) -> None:
     print("Phase 1: Downloading data …")
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     download_fv2026_geografi(force=force)
-    download_fv2026_kandidatdata(force=force)
+    download_fv2022_kandidatdata(force=force)
     download_fv2022_csv(force=force)
     print()
 

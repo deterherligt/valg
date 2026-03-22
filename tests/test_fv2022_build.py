@@ -157,3 +157,22 @@ def test_assign_waves_forces_islands_to_wave_01():
     }
     assignment = assign_preliminary_waves(aos, n_waves=5, island_ao_ids={"island1"})
     assert assignment["island1"] == 1
+
+
+def test_download_fv2022_kandidatdata_creates_cache_dir(tmp_path, monkeypatch):
+    """download_fv2022_kandidatdata creates target dir and calls sftp download."""
+    import sys
+    sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
+    from build_fv2022_scenario import download_fv2022_kandidatdata
+    import build_fv2022_scenario as script
+
+    calls = []
+    def fake_download(force=False):
+        calls.append(force)
+        (script.CACHE_DIR / "fv2022" / "kandidat-data").mkdir(parents=True, exist_ok=True)
+
+    monkeypatch.setattr(script, "CACHE_DIR", tmp_path / ".cache")
+    monkeypatch.setattr(script, "_do_sftp_download_fv2022_kd", fake_download)
+    download_fv2022_kandidatdata(force=False)
+    assert (tmp_path / ".cache" / "fv2022" / "kandidat-data").exists()
+    assert calls == [False]
