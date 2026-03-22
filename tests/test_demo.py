@@ -305,7 +305,16 @@ def test_kandidat_data_files_are_processed(tmp_path):
     runner.set_scenario("test")
 
     runner.start(db_path=db_path, data_repo=data_repo)
-    import time; time.sleep(0.5)
+
+    # Poll until runner is done or timeout
+    deadline = time.time() + 5.0
+    while time.time() < deadline:
+        if runner.step_index >= len(scenario.steps):
+            break
+        time.sleep(0.05)
+
+    runner._stop_event.set()
+    runner._thread.join(timeout=2.0)
 
     conn = get_connection(db_path)
     count = conn.execute("SELECT COUNT(*) FROM candidates").fetchone()[0]
