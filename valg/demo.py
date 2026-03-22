@@ -48,13 +48,6 @@ SCENARIOS: dict[str, Scenario] = {
     ),
 }
 
-# Register KV2025 scenario if wave data is available
-try:
-    from valg.scenarios.kv2025 import KV2025_SCENARIO
-    SCENARIOS["kv2025"] = KV2025_SCENARIO
-except Exception:
-    pass  # wave data not generated yet — scenario unavailable
-
 # Register FV2022 scenario if wave data is available
 try:
     from valg.scenarios.fv2022 import FV2022_SCENARIO
