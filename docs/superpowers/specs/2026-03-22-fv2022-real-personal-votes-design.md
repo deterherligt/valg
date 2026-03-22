@@ -72,8 +72,10 @@ For each AO in the wave:
 - Look up `personal_votes[(ok_norm, ao_norm)][party_id]` → `{name_norm: votes}`
 - For each candidate in FV2022 kandidat-data for this party+ok: look up by `normalize_name(candidate["name"])`
 - Candidate found → use real vote count
-- Candidate not found → 0 votes
+- Candidate not found → 0 votes (and record as unmatched)
 - `Partistemmer` is unchanged (party total from `fv2022_votes`, includes both list and personal votes)
+
+After writing all waves, print a summary of unmatched candidates (count + examples) so mismatches are visible during the build, not silent.
 
 ### 6. Update `run()`
 
