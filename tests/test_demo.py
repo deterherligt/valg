@@ -322,3 +322,70 @@ def test_kandidat_data_files_are_processed(tmp_path):
 
     demo_module.SCENARIOS.pop("test", None)
     assert count == 1, f"Expected 1 candidate in DB, got {count}"
+
+
+def test_restart_cleans_scenario_output_dir(tmp_path):
+    """restart() removes the scenario's output directory before re-running."""
+    from valg.demo import DemoRunner, Scenario, Step
+    from valg.models import get_connection, init_db
+    import valg.demo as demo_module
+    from pathlib import Path
+
+    db_path = tmp_path / "test.db"
+    data_repo = tmp_path / "data"
+    data_repo.mkdir()
+
+    # Pre-populate a scenario output dir
+    stale_dir = data_repo / "demo" / "fv2022"
+    stale_dir.mkdir(parents=True)
+    (stale_dir / "stale.json").write_text("{}")
+
+    def write_fn(dr):
+        out = dr / "demo" / "fv2022"
+        out.mkdir(parents=True, exist_ok=True)
+        return []
+
+    scenario = Scenario(
+        name="fv2022_test", description="test",
+        steps=[Step(name="step", wave=None, setup=False, process=False, commit=False,
+                    base_interval_s=0, write_fn=write_fn)],
+        output_dir=Path("demo") / "fv2022",
+    )
+    demo_module.SCENARIOS["fv2022_test"] = scenario
+
+    conn = get_connection(db_path)
+    init_db(conn)
+    conn.close()
+
+    runner = DemoRunner()
+    runner.set_scenario("fv2022_test")
+    runner.start(db_path=db_path, data_repo=data_repo)
+
+    # Wait for first run to complete
+    import time
+    deadline = time.time() + 5.0
+    while time.time() < deadline:
+        if runner.step_index >= len(scenario.steps):
+            break
+        time.sleep(0.05)
+
+    # Re-create the stale dir to simulate leftover data before restart
+    stale_dir.mkdir(parents=True, exist_ok=True)
+    (stale_dir / "stale.json").write_text("{}")
+
+    runner.restart(db_path=db_path, data_repo=data_repo)
+
+    # Wait for restart to clean and complete
+    deadline = time.time() + 5.0
+    while time.time() < deadline:
+        if runner.step_index >= len(scenario.steps):
+            break
+        time.sleep(0.05)
+
+    runner._stop_event.set()
+    runner._thread.join(timeout=2.0)
+
+    # Stale file should have been removed during restart
+    assert not (stale_dir / "stale.json").exists(), "stale.json should be cleaned by restart()"
+
+    demo_module.SCENARIOS.pop("fv2022_test", None)
