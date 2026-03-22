@@ -39,7 +39,7 @@ All text in Danish.
    Mandattal under valgnatten er estimater baseret på løbende optælling. Officielle resultater offentliggøres på [valg.dk](https://valg.dk).
 
 5. **Kildekode**
-   Kildekoden er tilgængelig på GitHub: [link til repo].
+   Kildekoden er tilgængelig på GitHub: [deterherligt/valg](https://github.com/deterherligt/valg).
 
 6. **Licens**
    Udgivet under Beerware-licensen (Revision 42). Du må gøre hvad du vil med koden. Finder du den nyttig, er du velkommen til at købe mig en øl.
