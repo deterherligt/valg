@@ -133,7 +133,7 @@ def test_api_party_detail_sk_rank_is_local(db_final):
             f"sk_ranks not contiguous in {sk_name}: {sorted(ranks)}"
 
 
-def test_api_party_detail_cross_storkreds_elected(tmp_path):
+def test_api_party_detail_cross_storkreds_elected():
     """Core scenario: candidate elected with fewer votes because they are in a smaller storkreds."""
     from valg.models import get_connection, init_db
     conn = get_connection(":memory:")
@@ -178,7 +178,7 @@ def test_api_party_detail_cross_storkreds_elected(tmp_path):
     assert by_id["cb1"]["sk_seats"] == 0
 
 
-def test_api_party_detail_zero_seat_storkreds(tmp_path):
+def test_api_party_detail_zero_seat_storkreds():
     """Candidates in a storkreds where party wins 0 seats have sk_seats=0 and elected=False."""
     from valg.models import get_connection, init_db
     conn = get_connection(":memory:")

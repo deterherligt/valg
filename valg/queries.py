@@ -3,6 +3,8 @@
 Pure query functions returning list[dict] for CSV export and web display.
 No Rich, no console output.
 """
+from collections import defaultdict
+
 from valg import calculator
 
 
@@ -320,7 +322,6 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
         # Annotate each candidate with per-storkreds rank and election status.
         # Candidates are already in national order (votes DESC or ballot_position ASC).
         # Ranks are computed within each storkreds independently.
-        from collections import defaultdict
         sk_groups: dict = defaultdict(list)
         for c in candidates:
             sk_groups[c["_sk_id"]].append(c)
