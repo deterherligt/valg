@@ -144,6 +144,9 @@ def process_raw_file(
         ao_id = rows[0].get("afstemningsomraade_id", "unknown")
         count_type = rows[0].get("count_type", "unknown")
         _emit_event(conn, snapshot_at, "district_reported", ao_id, f"{count_type} results")
+    elif plugin.TABLE == "turnout" and inserted > 0:
+        ao_id = rows[0].get("afstemningsomraade_id", "unknown")
+        _emit_event(conn, snapshot_at, "district_reported", ao_id, "preliminary results")
 
     return inserted
 
