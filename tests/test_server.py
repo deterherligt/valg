@@ -606,3 +606,137 @@ def test_feed_places_returns_all(client_with_events):
     resp = client_with_events.get("/api/feed/places")
     data = resp.get_json()
     assert len(data) == 3
+
+
+import uuid
+from valg.sessions import SessionManager
+
+
+@pytest.fixture
+def session_client(tmp_path):
+    mgr = SessionManager(base_dir=tmp_path / "sessions", max_sessions=5)
+    app = create_app(
+        db_path=tmp_path / "valg.db",
+        data_dir=tmp_path / "data",
+        session_manager=mgr,
+    )
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        yield c, mgr
+
+
+def test_index_sets_session_cookie(session_client):
+    c, _ = session_client
+    resp = c.get("/")
+    assert resp.status_code == 200
+    assert "valg_session" in resp.headers.get("Set-Cookie", "")
+
+
+def test_index_reuses_existing_cookie(session_client):
+    c, mgr = session_client
+    sid = str(uuid.uuid4())
+    mgr.get_or_create(sid)
+    c.set_cookie("valg_session", sid)
+    resp = c.get("/")
+    assert resp.status_code == 200
+    # No new session created — still just 1
+    assert len(mgr._sessions) == 1
+
+
+def test_api_parties_uses_session_db(session_client):
+    c, mgr = session_client
+    sid = str(uuid.uuid4())
+    session = mgr.get_or_create(sid)
+    # Write data into the session's DB
+    from valg.models import get_connection, init_db
+    from tests.synthetic.generator import generate_election, load_into_db
+    conn = get_connection(session.db_path)
+    init_db(conn)
+    e = generate_election(seed=42)
+    load_into_db(conn, e, phase="preliminary")
+    conn.close()
+    c.set_cookie("valg_session", sid)
+    resp = c.get("/api/parties")
+    assert resp.status_code == 200
+    parties = resp.get_json()
+    assert len(parties) > 0
+
+
+def test_demo_state_returns_unavailable_without_session(session_client):
+    c, _ = session_client
+    # No cookie set — no session
+    resp = c.get("/demo/state")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert data["enabled"] is False
+    assert data["state"] == "unavailable"
+
+
+def test_demo_state_returns_runner_state_with_session(session_client):
+    c, mgr = session_client
+    sid = str(uuid.uuid4())
+    mgr.get_or_create(sid)
+    c.set_cookie("valg_session", sid)
+    resp = c.get("/demo/state")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert data["enabled"] is True
+    assert data["state"] == "idle"
+
+
+def test_demo_control_dispatches_to_session_runner(session_client):
+    c, mgr = session_client
+    sid = str(uuid.uuid4())
+    mgr.get_or_create(sid)
+    c.set_cookie("valg_session", sid)
+    resp = c.post("/demo/control", json={"action": "set_speed", "speed": 5.0})
+    assert resp.status_code == 200
+    assert mgr.get(sid).runner.speed == 5.0
+
+
+def test_demo_control_returns_404_without_session(session_client):
+    c, _ = session_client
+    resp = c.post("/demo/control", json={"action": "set_speed", "speed": 2.0})
+    assert resp.status_code == 404
+
+
+def test_two_sessions_see_independent_data(tmp_path):
+    """Two sessions with different data in their DBs see only their own data."""
+    from valg.sessions import SessionManager
+    from valg.server import create_app
+    from valg.models import get_connection, init_db
+    from tests.synthetic.generator import generate_election, load_into_db
+
+    mgr = SessionManager(base_dir=tmp_path / "sessions", max_sessions=5)
+    app = create_app(
+        db_path=tmp_path / "valg.db",
+        data_dir=tmp_path / "data",
+        session_manager=mgr,
+    )
+    app.config["TESTING"] = True
+
+    sid_a = str(uuid.uuid4())
+    sid_b = str(uuid.uuid4())
+    session_a = mgr.get_or_create(sid_a)
+    session_b = mgr.get_or_create(sid_b)
+
+    # Load data into session A only
+    conn_a = get_connection(session_a.db_path)
+    init_db(conn_a)
+    e = generate_election(seed=1)
+    load_into_db(conn_a, e, phase="preliminary")
+    conn_a.close()
+
+    # Session B has empty DB (init_db only, no data)
+    with app.test_client() as c:
+        c.set_cookie("valg_session", sid_a)
+        resp_a = c.get("/api/parties")
+        parties_a = resp_a.get_json()
+
+    with app.test_client() as c:
+        c.set_cookie("valg_session", sid_b)
+        resp_b = c.get("/api/parties")
+        parties_b = resp_b.get_json()
+
+    assert len(parties_a) > 0, "Session A should see parties"
+    assert len(parties_b) == 0, "Session B should see no parties (empty DB)"
