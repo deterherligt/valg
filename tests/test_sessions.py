@@ -85,3 +85,32 @@ def test_get_rejects_path_traversal(mgr):
     assert mgr.get("../evil") is None
     assert mgr.get("../../etc/passwd") is None
     assert mgr.get("/absolute/path") is None
+
+
+def test_switch_all_to_live_sets_live_flag(mgr):
+    s1 = mgr.get_or_create(SID1)
+    s2 = mgr.get_or_create(SID2)
+    mgr.switch_all_to_live()
+    assert s1.live is True
+    assert s2.live is True
+
+
+def test_switch_all_to_live_signals_stop_event(mgr):
+    s1 = mgr.get_or_create(SID1)
+    mgr.switch_all_to_live()
+    assert s1.runner._stop_event.is_set()
+
+
+def test_switch_all_to_live_preserves_session_directories(mgr):
+    s1 = mgr.get_or_create(SID1)
+    session_dir = s1.db_path.parent
+    mgr.switch_all_to_live()
+    assert session_dir.exists()
+    assert s1.db_path.exists()
+
+
+def test_switch_all_to_live_is_idempotent(mgr):
+    s1 = mgr.get_or_create(SID1)
+    mgr.switch_all_to_live()
+    mgr.switch_all_to_live()  # second call must not raise
+    assert s1.live is True
