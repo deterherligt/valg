@@ -6,12 +6,13 @@ def MATCH(filename: str) -> bool:
 
 def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     rows = []
-    valg = data.get("Valg", {}) if isinstance(data, dict) else {}
-    ao_id = valg.get("AfstemningsomraadeId")
-    for entry in valg.get("Valgdeltagelse", []):
+    if not isinstance(data, dict):
+        return []
+    ao_id = data.get("AfstemningsomraadeDagiId")
+    for entry in data.get("Valgdeltagelse", []):
         rows.append({
             "afstemningsomraade_id": ao_id,
-            "eligible_voters": entry.get("StemmeberettigedeVaelgere"),
+            "eligible_voters": entry.get("AntalStemmeberettigede"),
             "votes_cast": entry.get("AfgivneStemmer"),
             "snapshot_at": snapshot_at,
         })

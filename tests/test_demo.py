@@ -270,15 +270,15 @@ def test_kandidat_data_files_are_processed(tmp_path):
 
     kandidat_file = tmp_path / "kandidat-data-Folketingsvalg-test.json"
     kandidat_file.write_text(json.dumps({
-        "Valg": {
-            "Id": "TEST",
-            "IndenforParti": [
-                {"Id": "A", "Kandidater": [
-                    {"Id": "cand-uuid-1", "Navn": "Test Kandidat", "Stemmeseddelplacering": 1}
+        "Storkreds": "Test",
+        "Storkredsnummer": "1",
+        "IndenforParti": [
+            {"PartiId": "some-uuid", "Partibogstav": "A", "Partinavn": "Socialdemokratiet", "PersonligeStemmer": True, "Kandidater": [
+                {"Id": "cand-uuid-1", "Navn": "Test Kandidat", "Opstillingskredse": [
+                    {"Opstillingskreds": "Test", "OpstillingskredsDagiId": "OK1", "OpstilletIKreds": True, "KandidatsPlacering": 1}
                 ]}
-            ],
-            "UdenforParti": {"Kandidater": []}
-        }
+            ]}
+        ]
     }))
 
     def write_fn(data_repo):
