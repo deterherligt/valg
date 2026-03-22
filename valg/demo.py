@@ -27,6 +27,7 @@ class Scenario:
     description: str
     steps: list[Step]
     steps_factory: Callable[[Path], list[Step]] | None = None
+    output_dir: Path | None = None   # relative path under data_repo to clean on restart
 
 
 SCENARIOS: dict[str, Scenario] = {
@@ -51,6 +52,13 @@ SCENARIOS: dict[str, Scenario] = {
 try:
     from valg.scenarios.kv2025 import KV2025_SCENARIO
     SCENARIOS["kv2025"] = KV2025_SCENARIO
+except Exception:
+    pass  # wave data not generated yet — scenario unavailable
+
+# Register FV2022 scenario if wave data is available
+try:
+    from valg.scenarios.fv2022 import FV2022_SCENARIO
+    SCENARIOS["fv2022"] = FV2022_SCENARIO
 except Exception:
     pass  # wave data not generated yet — scenario unavailable
 
@@ -88,6 +96,7 @@ class DemoRunner:
             self._db_path = Path(db_path)
             self._data_repo = Path(data_repo)
             scenario = get_scenario(self.scenario_name)
+            self._output_dir = scenario.output_dir  # may be None
             # Resolve steps — use factory if provided
             if scenario.steps_factory is not None:
                 self._resolved_steps = scenario.steps_factory(self._data_repo)
@@ -132,11 +141,18 @@ class DemoRunner:
         conn.execute("PRAGMA wal_checkpoint(RESTART)")
         conn.close()
 
-        # Delete demo folder and commit the deletion
+        # Delete demo folder(s) and commit the deletion
         import shutil
-        demo_dir = Path(data_repo) / "FV2024-demo"
-        if demo_dir.exists():
-            shutil.rmtree(demo_dir)
+        # FV2024-demo: legacy path from the synthetic election-night scenario
+        to_clean = [Path(data_repo) / "FV2024-demo"]
+        if getattr(self, "_output_dir", None) is not None:
+            to_clean.append(Path(data_repo) / self._output_dir)
+        cleaned = False
+        for d in to_clean:
+            if d.exists():
+                shutil.rmtree(d)
+                cleaned = True
+        if cleaned:
             from valg.fetcher import commit_data_repo
             commit_data_repo(Path(data_repo), message="demo: reset")
 
@@ -181,8 +197,7 @@ class DemoRunner:
             if step.process and written:
                 conn = get_connection(self._db_path)
                 snapshot_at = datetime.now(timezone.utc).isoformat()
-                to_process = [p for p in written if not p.name.startswith("kandidat-data")]
-                for p in to_process:
+                for p in written:
                     process_raw_file(conn, p, snapshot_at=snapshot_at)
 
             if step.commit:

@@ -57,4 +57,5 @@ KV2025_SCENARIO = Scenario(
     description="Rigtige stemmeresultater fra kommunalvalget 18. november 2025, afspillet som valgaften.",
     steps=[],
     steps_factory=lambda data_repo: make_steps(_WAVE_DIR, data_repo),
+    output_dir=Path("demo") / "kv2025",
 )

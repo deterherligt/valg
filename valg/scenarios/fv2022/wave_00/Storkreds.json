@@ -1,0 +1,62 @@
+[
+  {
+    "Kode": "7",
+    "Navn": "Sydjylland",
+    "AntalKredsmandater": 19,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "6",
+    "Navn": "Fyn",
+    "AntalKredsmandater": 12,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "8",
+    "Navn": "Østjylland",
+    "AntalKredsmandater": 16,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "2",
+    "Navn": "Københavns Omegn",
+    "AntalKredsmandater": 12,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "1",
+    "Navn": "København",
+    "AntalKredsmandater": 18,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "10",
+    "Navn": "Nordjylland",
+    "AntalKredsmandater": 13,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "9",
+    "Navn": "Vestjylland",
+    "AntalKredsmandater": 16,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "4",
+    "Navn": "Bornholm",
+    "AntalKredsmandater": 2,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "3",
+    "Navn": "Nordsjælland",
+    "AntalKredsmandater": 9,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "5",
+    "Navn": "Sjælland",
+    "AntalKredsmandater": 18,
+    "ValgId": "FV2022"
+  }
+]

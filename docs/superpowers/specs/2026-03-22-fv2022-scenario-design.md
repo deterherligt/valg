@@ -80,7 +80,7 @@ Parties K, Q, Æ are minor parties with negligible vote shares. They are include
 The FV2022 CSV uses names; the FV2026 SFTP uses integer IDs. The build script maps them by normalised name matching:
 
 1. Parse FV2026 `Afstemningsomraade-*.json` → dict `{(opstillingskreds_name_norm, ao_name_norm): ao_id}`
-2. For each FV2022 CSV row, normalise `Opstillingskreds` and `Afstemningsområde` (lowercase, strip accents, collapse whitespace)
+2. For each FV2022 CSV row, normalise `Opstillingskreds` and `Afstemningsområde` (lowercase, Danish romanisation: æ→ae, ø→oe, å→aa, then strip remaining diacritics, collapse whitespace)
 3. Look up FV2026 integer ID; skip with warning if no match
 4. Log unmatched names to stdout — expect <2% mismatch due to minor naming changes between elections
 

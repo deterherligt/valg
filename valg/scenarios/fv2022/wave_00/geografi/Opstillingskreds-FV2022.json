@@ -1,0 +1,554 @@
+[
+  {
+    "Kode": "403561",
+    "Navn": "Taastrup",
+    "StorkredskodeKode": "2",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403625",
+    "Navn": "Esbjerg By",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403593",
+    "Navn": "Thisted",
+    "StorkredskodeKode": "10",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403626",
+    "Navn": "Kolding Nord",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403614",
+    "Navn": "Nyborg",
+    "StorkredskodeKode": "6",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403572",
+    "Navn": "Hvidovre",
+    "StorkredskodeKode": "2",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403602",
+    "Navn": "Djurs",
+    "StorkredskodeKode": "8",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403623",
+    "Navn": "Vejen",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403629",
+    "Navn": "Roskilde",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403600",
+    "Navn": "Ikast",
+    "StorkredskodeKode": "9",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403630",
+    "Navn": "Slagelse",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403573",
+    "Navn": "Indre By",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403616",
+    "Navn": "Faaborg",
+    "StorkredskodeKode": "6",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403583",
+    "Navn": "Mariagerfjord",
+    "StorkredskodeKode": "10",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403640",
+    "Navn": "Vejle Syd",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403569",
+    "Navn": "Slots",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403571",
+    "Navn": "Gladsaxe",
+    "StorkredskodeKode": "2",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403570",
+    "Navn": "Falkoner",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403591",
+    "Navn": "Frederikshavn",
+    "StorkredskodeKode": "10",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403605",
+    "Navn": "Silkeborg Nord",
+    "StorkredskodeKode": "9",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403580",
+    "Navn": "Ringkøbing",
+    "StorkredskodeKode": "9",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403592",
+    "Navn": "Brønderslev",
+    "StorkredskodeKode": "10",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403637",
+    "Navn": "Faxe",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403599",
+    "Navn": "Aalborg Nord",
+    "StorkredskodeKode": "10",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403632",
+    "Navn": "Ringsted",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403587",
+    "Navn": "Aarhus Syd",
+    "StorkredskodeKode": "8",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403597",
+    "Navn": "Viborg Vest",
+    "StorkredskodeKode": "9",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403575",
+    "Navn": "Brønshøj",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403594",
+    "Navn": "Himmerland",
+    "StorkredskodeKode": "10",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403598",
+    "Navn": "Randers Syd",
+    "StorkredskodeKode": "8",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403618",
+    "Navn": "Sønderborg",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403620",
+    "Navn": "Varde",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403576",
+    "Navn": "Valby",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403636",
+    "Navn": "Vordingborg",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403641",
+    "Navn": "Vejle Nord",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403559",
+    "Navn": "Ballerup",
+    "StorkredskodeKode": "2",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403584",
+    "Navn": "Hjørring",
+    "StorkredskodeKode": "10",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403554",
+    "Navn": "Fredensborg",
+    "StorkredskodeKode": "3",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403574",
+    "Navn": "Vesterbro",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403627",
+    "Navn": "Kolding Syd",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403589",
+    "Navn": "Herning Nord",
+    "StorkredskodeKode": "9",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403558",
+    "Navn": "Gentofte",
+    "StorkredskodeKode": "2",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403565",
+    "Navn": "Sundbyvester",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403603",
+    "Navn": "Favrskov",
+    "StorkredskodeKode": "8",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403588",
+    "Navn": "Struer",
+    "StorkredskodeKode": "9",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403633",
+    "Navn": "Køge",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403624",
+    "Navn": "Esbjerg Omegn",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403562",
+    "Navn": "Rødovre",
+    "StorkredskodeKode": "2",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403615",
+    "Navn": "Svendborg",
+    "StorkredskodeKode": "6",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403555",
+    "Navn": "Hillerød",
+    "StorkredskodeKode": "3",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403567",
+    "Navn": "Nørrebro",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403607",
+    "Navn": "Aarhus Nord",
+    "StorkredskodeKode": "8",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403582",
+    "Navn": "Skive",
+    "StorkredskodeKode": "9",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403631",
+    "Navn": "Kalundborg",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403553",
+    "Navn": "Egedal",
+    "StorkredskodeKode": "3",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403586",
+    "Navn": "Randers Nord",
+    "StorkredskodeKode": "8",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403579",
+    "Navn": "Holstebro",
+    "StorkredskodeKode": "9",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403578",
+    "Navn": "Horsens",
+    "StorkredskodeKode": "8",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403604",
+    "Navn": "Aarhus Øst",
+    "StorkredskodeKode": "8",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403585",
+    "Navn": "Skanderborg",
+    "StorkredskodeKode": "8",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403606",
+    "Navn": "Silkeborg Syd",
+    "StorkredskodeKode": "9",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403601",
+    "Navn": "Viborg Øst",
+    "StorkredskodeKode": "9",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403610",
+    "Navn": "Odense Øst",
+    "StorkredskodeKode": "6",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403552",
+    "Navn": "Helsingør",
+    "StorkredskodeKode": "3",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403595",
+    "Navn": "Aalborg Vest",
+    "StorkredskodeKode": "10",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403628",
+    "Navn": "Holbæk",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403634",
+    "Navn": "Greve",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403577",
+    "Navn": "Rudersdal",
+    "StorkredskodeKode": "3",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403556",
+    "Navn": "Frederikssund",
+    "StorkredskodeKode": "3",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403638",
+    "Navn": "Guldborgsund",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403621",
+    "Navn": "Aabenraa",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403557",
+    "Navn": "Lyngby",
+    "StorkredskodeKode": "2",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403608",
+    "Navn": "Aarhus Vest",
+    "StorkredskodeKode": "8",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403581",
+    "Navn": "Hedensted",
+    "StorkredskodeKode": "8",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403635",
+    "Navn": "Næstved",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403613",
+    "Navn": "Middelfart",
+    "StorkredskodeKode": "6",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403568",
+    "Navn": "Bispebjerg",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403566",
+    "Navn": "Sundbyøster",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403619",
+    "Navn": "Tønder",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403560",
+    "Navn": "Brøndby",
+    "StorkredskodeKode": "2",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403590",
+    "Navn": "Herning Syd",
+    "StorkredskodeKode": "9",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403551",
+    "Navn": "Aakirkeby",
+    "StorkredskodeKode": "4",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403639",
+    "Navn": "Lolland",
+    "StorkredskodeKode": "5",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403622",
+    "Navn": "Fredericia",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403550",
+    "Navn": "Rønne",
+    "StorkredskodeKode": "4",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403611",
+    "Navn": "Odense Syd",
+    "StorkredskodeKode": "6",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403596",
+    "Navn": "Aalborg Øst",
+    "StorkredskodeKode": "10",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403564",
+    "Navn": "Østerbro",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403612",
+    "Navn": "Odense Vest",
+    "StorkredskodeKode": "6",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403617",
+    "Navn": "Haderslev",
+    "StorkredskodeKode": "7",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403609",
+    "Navn": "Assens",
+    "StorkredskodeKode": "6",
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "403563",
+    "Navn": "Tårnby",
+    "StorkredskodeKode": "1",
+    "ValgId": "FV2022"
+  }
+]
