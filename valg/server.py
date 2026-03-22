@@ -262,6 +262,8 @@ def create_app(
             if scenario not in SCENARIOS:
                 return jsonify({"error": f"unknown scenario: {scenario!r}"}), 400
             demo_runner.set_scenario(scenario)
+            if "speed" in body:
+                demo_runner.set_speed(float(body["speed"]))
             demo_runner.start(db_path=db_path, data_repo=data_repo or Path(os.environ.get("VALG_DATA_REPO", "../valg-data")))
             return jsonify({"status": "started", "scenario": scenario}), 200
 
