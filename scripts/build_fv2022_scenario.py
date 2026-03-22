@@ -436,27 +436,6 @@ def download_fv2026_geografi(force: bool = False) -> None:
         transport.close()
 
 
-def download_fv2026_kandidatdata(force: bool = False) -> None:
-    """Download FV2026 kandidat-data files from SFTP into cache."""
-    import paramiko
-    local_kd = CACHE_DIR / "fv2026" / "kandidat-data"
-    local_kd.mkdir(parents=True, exist_ok=True)
-
-    if not force and any(local_kd.glob("*.json")):
-        print(f"  using cached fv2026/kandidat-data/ ({len(list(local_kd.glob('*.json')))} files)")
-        return
-
-    print("  downloading fv2026/kandidat-data from SFTP …")
-    transport = paramiko.Transport(("data.valg.dk", 22))
-    transport.connect(username="Valg", password="Valg")
-    sftp = paramiko.SFTPClient.from_transport(transport)
-    try:
-        count = download_sftp_dir(sftp, f"{FV2026_SFTP_PATH}/kandidat-data", local_kd, force=force)
-        print(f"  downloaded {count} kandidat-data files")
-    finally:
-        sftp.close()
-        transport.close()
-
 
 def build_fv2022_kandidatdata_from_csv(
     csv_path: Path,
@@ -515,7 +494,7 @@ def build_fv2022_kandidatdata_from_csv(
 
     for party_id in sorted(candidates_by_party_ok):
         party_kandidater = []
-        for ok_norm, names in candidates_by_party_ok[party_id].items():
+        for ok_norm, names in sorted(candidates_by_party_ok[party_id].items()):
             ok_dagi_id = ok_name_to_id.get(ok_norm, "")
             if not ok_dagi_id:
                 continue
