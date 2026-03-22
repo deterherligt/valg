@@ -169,41 +169,6 @@ def normalize_ao_name(s: str) -> str:
     return n
 
 
-def distribute_candidate_votes(party_total: int, candidates: list[dict]) -> list[int]:
-    """Distribute party_total votes across candidates using 35%/power-decay algorithm.
-
-    Position 1 gets 35% of votes. Remaining 65% split with weight 1/pos^0.7.
-    Returns list of vote counts in same order as candidates.
-    Guarantees sum == party_total (remainder assigned to position 1).
-    """
-    if not candidates:
-        return []
-    if party_total == 0:
-        return [0] * len(candidates)
-
-    n = len(candidates)
-    result = [0] * n
-
-    if n == 1:
-        result[0] = party_total
-        return result
-
-    kredskandidat_votes = int(party_total * 0.35)
-    remainder = party_total - kredskandidat_votes
-
-    weights = [1.0 / (c["ballot_position"] ** 0.7) for c in candidates[1:]]
-    total_weight = sum(weights)
-
-    assigned = 0
-    for i, w in enumerate(weights):
-        votes = int(remainder * w / total_weight)
-        result[i + 1] = votes
-        assigned += votes
-
-    result[0] = kredskandidat_votes + (remainder - assigned)
-    return result
-
-
 def build_partistemmefordeling(ok_id: str, party_totals: dict[str, int]) -> dict:
     """Build a partistemmefordeling JSON structure for one opstillingskreds."""
     return {
@@ -221,31 +186,19 @@ def build_valgresultater(
     ao_id: str,
     optaellingstype: str,
     party_data: dict[str, dict],
-    ao_ok_id: str,
 ) -> dict:
     """Build a valgresultater JSON structure for one AO.
 
-    party_data: {party_id: {"total": int, "candidates_by_ok": {ok_id: [{"id", "ballot_position"}]}}}
-    ao_ok_id: the opstillingskreds this AO belongs to (for candidate lookup)
+    party_data: {party_id: {"total": int, "kandidater": [{"KandidatId": str, "Stemmer": int}]}}
     """
-    inden_for_parti = []
-
-    for party_id, pdata in party_data.items():
-        total = pdata["total"]
-        candidates = pdata["candidates_by_ok"].get(ao_ok_id, [])
-        vote_dist = distribute_candidate_votes(total, candidates)
-
-        kandidater = [
-            {"KandidatId": str(c["id"]), "Stemmer": vote_dist[i]}
-            for i, c in enumerate(candidates)
-        ]
-
-        inden_for_parti.append({
+    inden_for_parti = [
+        {
             "PartiId": party_id,
-            "Partistemmer": total,
-            "Kandidater": kandidater,
-        })
-
+            "Partistemmer": pdata["total"],
+            "Kandidater": pdata.get("kandidater", []),
+        }
+        for party_id, pdata in party_data.items()
+    ]
     return {
         "Valgresultater": {
             "AfstemningsomraadeId": str(ao_id),
@@ -773,17 +726,15 @@ def write_fintaelling_wave(
 
         party_data: dict[str, dict] = {}
         for party_id, total in ao_party_votes.items():
-            candidates = kandidatdata.get(ok_id, {}).get(party_id, [])
             party_data[party_id] = {
                 "total": total,
-                "candidates_by_ok": {ok_id: candidates},
+                "kandidater": [],
             }
 
         vr = build_valgresultater(
             ao_id=str(ao_id),
             optaellingstype="Fintaelling",
             party_data=party_data,
-            ao_ok_id=ok_id,
         )
         safe_ao_name = ao_name.replace("/", "-").replace(" ", "_")[:40]
         filename = f"valgresultater-Folketingsvalg-{safe_ao_name}-{ao_id}.json"

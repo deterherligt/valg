@@ -28,41 +28,6 @@ def test_normalize_name_strips_leading_numbers_dot():
     assert normalize_name("1. Skagen") == "1. skagen"
 
 
-def test_distribute_votes_sums_to_party_total():
-    from build_fv2022_scenario import distribute_candidate_votes
-    candidates = [{"id": f"c{i}", "ballot_position": i} for i in range(1, 6)]
-    result = distribute_candidate_votes(100, candidates)
-    assert sum(result) == 100
-
-
-def test_distribute_votes_position_one_gets_most():
-    from build_fv2022_scenario import distribute_candidate_votes
-    candidates = [{"id": f"c{i}", "ballot_position": i} for i in range(1, 6)]
-    result = distribute_candidate_votes(100, candidates)
-    assert result[0] >= result[1]
-    assert result[1] >= result[2]
-
-
-def test_distribute_votes_position_one_gets_35_percent():
-    from build_fv2022_scenario import distribute_candidate_votes
-    candidates = [{"id": f"c{i}", "ballot_position": i} for i in range(1, 6)]
-    result = distribute_candidate_votes(200, candidates)
-    # Position 1 gets 35% = 70, remainder assigned there
-    assert result[0] >= 70
-
-
-def test_distribute_votes_zero_party_total():
-    from build_fv2022_scenario import distribute_candidate_votes
-    candidates = [{"id": f"c{i}", "ballot_position": i} for i in range(1, 4)]
-    result = distribute_candidate_votes(0, candidates)
-    assert result == [0, 0, 0]
-
-
-def test_distribute_votes_empty_candidates():
-    from build_fv2022_scenario import distribute_candidate_votes
-    assert distribute_candidate_votes(100, []) == []
-
-
 def test_build_partistemmefordeling_structure():
     from build_fv2022_scenario import build_partistemmefordeling
     result = build_partistemmefordeling(ok_id="12345", party_totals={"A": 400, "V": 350})
@@ -74,20 +39,29 @@ def test_build_partistemmefordeling_structure():
 
 def test_build_valgresultater_structure():
     from build_fv2022_scenario import build_valgresultater
-    candidates = [{"id": "uuid-1", "ballot_position": 1}, {"id": "uuid-2", "ballot_position": 2}]
+    party_data = {
+        "A": {
+            "total": 100,
+            "kandidater": [
+                {"KandidatId": "uuid-1", "Stemmer": 40},
+                {"KandidatId": "uuid-2", "Stemmer": 15},
+            ],
+        }
+    }
     result = build_valgresultater(
         ao_id="706986",
         optaellingstype="Fintaelling",
-        party_data={"A": {"total": 100, "candidates_by_ok": {"ok-1": candidates}}},
-        ao_ok_id="ok-1",
+        party_data=party_data,
     )
     vr = result["Valgresultater"]
     assert vr["AfstemningsomraadeId"] == "706986"
     assert vr["Optaellingstype"] == "Fintaelling"
     party_a = next(p for p in vr["IndenforParti"] if p["PartiId"] == "A")
     assert party_a["Partistemmer"] == 100
-    assert len(party_a["Kandidater"]) == 2
-    assert sum(k["Stemmer"] for k in party_a["Kandidater"]) == 100
+    assert party_a["Kandidater"] == [
+        {"KandidatId": "uuid-1", "Stemmer": 40},
+        {"KandidatId": "uuid-2", "Stemmer": 15},
+    ]
 
 
 def test_parse_fv2022_csv_extracts_party_votes(tmp_path):
