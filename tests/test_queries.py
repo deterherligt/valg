@@ -101,3 +101,106 @@ def test_api_party_detail_candidates_final(db_final):
     if seats >= 1 and len(p["candidates"]) > seats:
         assert p["cutoff_margin"] is not None
         assert p["cutoff_margin"] >= 0
+
+
+def test_api_party_detail_storkreds_fields_present(db_night):
+    """All four storkreds fields are present on every candidate in preliminary."""
+    party_id = db_night.execute("SELECT id FROM parties LIMIT 1").fetchone()[0]
+    result = query_api_party_detail(db_night, [party_id])
+    p = result[0]
+    for c in p["candidates"]:
+        assert "storkreds" in c, f"missing storkreds on {c['name']}"
+        assert "sk_rank" in c, f"missing sk_rank on {c['name']}"
+        assert "sk_seats" in c, f"missing sk_seats on {c['name']}"
+        assert "elected" in c, f"missing elected on {c['name']}"
+    # Preliminary: elected is always False
+    assert all(c["elected"] is False for c in p["candidates"])
+
+
+def test_api_party_detail_sk_rank_is_local(db_final):
+    """sk_rank is 1-based and local to each storkreds, not global."""
+    party_id = db_final.execute("SELECT id FROM parties LIMIT 1").fetchone()[0]
+    result = query_api_party_detail(db_final, [party_id])
+    p = result[0]
+    # Group by storkreds, check ranks start at 1 and are contiguous
+    from collections import defaultdict
+    by_sk = defaultdict(list)
+    for c in p["candidates"]:
+        by_sk[c["storkreds"]].append(c["sk_rank"])
+    for sk_name, ranks in by_sk.items():
+        assert min(ranks) == 1, f"sk_rank does not start at 1 in {sk_name}"
+        assert sorted(ranks) == list(range(1, len(ranks) + 1)), \
+            f"sk_ranks not contiguous in {sk_name}: {sorted(ranks)}"
+
+
+def test_api_party_detail_cross_storkreds_elected():
+    """Core scenario: candidate elected with fewer votes because they are in a smaller storkreds."""
+    from valg.models import get_connection, init_db
+    conn = get_connection(":memory:")
+    init_db(conn)
+
+    # Two storkredse: SK_A gets 2 kredsmandater, SK_B gets 5
+    conn.execute("INSERT OR REPLACE INTO storkredse (id, name, n_kredsmandater) VALUES ('SK_A','Storkreds A',2)")
+    conn.execute("INSERT OR REPLACE INTO storkredse (id, name, n_kredsmandater) VALUES ('SK_B','Storkreds B',5)")
+    conn.execute("INSERT OR REPLACE INTO opstillingskredse (id, name, storkreds_id) VALUES ('OK_A','Kreds A','SK_A')")
+    conn.execute("INSERT OR REPLACE INTO opstillingskredse (id, name, storkreds_id) VALUES ('OK_B','Kreds B','SK_B')")
+    conn.execute("INSERT OR REPLACE INTO parties (id, letter, name) VALUES ('A','A','Parti A')")
+
+    # Candidates: two in SK_A, one in SK_B
+    conn.execute("INSERT OR REPLACE INTO candidates (id, name, party_id, opstillingskreds_id, ballot_position) VALUES ('ca1','A1','A','OK_A',1)")
+    conn.execute("INSERT OR REPLACE INTO candidates (id, name, party_id, opstillingskreds_id, ballot_position) VALUES ('ca2','A2','A','OK_A',2)")
+    conn.execute("INSERT OR REPLACE INTO candidates (id, name, party_id, opstillingskreds_id, ballot_position) VALUES ('cb1','B1','A','OK_B',1)")
+
+    snap = "2024-11-05T22:00:00"
+    # Party votes: 1000 in SK_A, 0 in SK_B → D'Hondt gives party 2 seats in SK_A, 0 in SK_B
+    conn.execute("INSERT INTO party_votes (opstillingskreds_id,party_id,votes,snapshot_at) VALUES ('OK_A','A',1000,?)", (snap,))
+
+    # Fintælling results — B1 has more votes than A2, but B1 is in SK_B (0 seats)
+    for cand_id, votes in [("ca1", 600), ("ca2", 300), ("cb1", 800)]:
+        conn.execute(
+            "INSERT INTO results (candidate_id,party_id,votes,count_type,snapshot_at) "
+            "VALUES (?,?,?,'final',?)",
+            (cand_id, "A", votes, snap),
+        )
+    conn.commit()
+
+    result = query_api_party_detail(conn, ["A"])
+    assert len(result) == 1
+    p = result[0]
+    by_id = {c["id"]: c for c in p["candidates"]}
+
+    # A2 has fewer votes than B1 but is elected (SK_A has 2 seats, A2 is ranked #2)
+    assert by_id["ca2"]["elected"] is True,  "A2 should be elected (SK_A seat #2)"
+    assert by_id["cb1"]["elected"] is False, "B1 should not be elected (SK_B has 0 seats for party)"
+    assert by_id["ca2"]["sk_rank"] == 2
+    assert by_id["ca2"]["sk_seats"] == 2
+    assert by_id["cb1"]["sk_rank"] == 1
+    assert by_id["cb1"]["sk_seats"] == 0
+
+
+def test_api_party_detail_zero_seat_storkreds():
+    """Candidates in a storkreds where party wins 0 seats have sk_seats=0 and elected=False."""
+    from valg.models import get_connection, init_db
+    conn = get_connection(":memory:")
+    init_db(conn)
+
+    conn.execute("INSERT OR REPLACE INTO storkredse (id, name, n_kredsmandater) VALUES ('SK_X','Storkreds X',3)")
+    conn.execute("INSERT OR REPLACE INTO opstillingskredse (id, name, storkreds_id) VALUES ('OK_X','Kreds X','SK_X')")
+    conn.execute("INSERT OR REPLACE INTO parties (id, letter, name) VALUES ('B','B','Parti B')")
+    conn.execute("INSERT OR REPLACE INTO parties (id, letter, name) VALUES ('C','C','Parti C')")
+    conn.execute("INSERT OR REPLACE INTO candidates (id, name, party_id, opstillingskreds_id, ballot_position) VALUES ('bx1','BX1','B','OK_X',1)")
+    snap = "2024-11-05T22:00:00"
+    # Party B has small votes; party C dominates — D'Hondt gives all 3 seats to C, 0 to B
+    conn.execute("INSERT INTO party_votes (opstillingskreds_id,party_id,votes,snapshot_at) VALUES ('OK_X','B',100,?)", (snap,))
+    conn.execute("INSERT INTO party_votes (opstillingskreds_id,party_id,votes,snapshot_at) VALUES ('OK_X','C',5000,?)", (snap,))
+    conn.execute(
+        "INSERT INTO results (candidate_id,party_id,votes,count_type,snapshot_at) "
+        "VALUES ('bx1','B',500,'final',?)", (snap,)
+    )
+    conn.commit()
+
+    result = query_api_party_detail(conn, ["B"])
+    assert len(result) == 1
+    c = result[0]["candidates"][0]
+    assert c["sk_seats"] == 0
+    assert c["elected"] is False

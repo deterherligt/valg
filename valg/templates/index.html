@@ -157,7 +157,7 @@
                           <template x-for="(c, i) in p.candidates" :key="c.id">
                             <div class="cand-breakdown-row" :class="i < p.seats_total ? 'cand-in' : 'cand-out'">
                               <span class="cand-breakdown-name" x-text="(i + 1) + '. ' + c.name"></span>
-                              <span class="cand-breakdown-kreds" x-text="c.opstillingskreds"></span>
+                              <span class="cand-breakdown-kreds" x-text="c.opstillingskreds + ' · ' + c.storkreds"></span>
                             </div>
                           </template>
                         </div>
@@ -169,9 +169,12 @@
                               <div x-show="i === p.seats_total" class="cand-cutoff"
                                    x-text="p.cutoff_margin !== null ? 'Grænse · ' + formatNum(p.cutoff_margin) + ' stemmer' : 'Grænse'">
                               </div>
-                              <div class="cand-breakdown-row" :class="i < p.seats_total ? 'cand-in' : 'cand-out'">
+                              <div class="cand-breakdown-row" :class="c.elected ? 'cand-in' : 'cand-out'">
                                 <span class="cand-breakdown-name" x-text="c.name"></span>
                                 <span class="cand-breakdown-kreds" x-text="c.opstillingskreds"></span>
+                                <span class="cand-breakdown-sk"
+                                      x-text="c.sk_seats > 0 ? '#' + c.sk_rank + ' i ' + c.storkreds + ' (' + c.sk_seats + ' mandater)' : '#' + c.sk_rank + ' i ' + c.storkreds">
+                                </span>
                                 <span class="cand-breakdown-votes" x-text="c.votes !== null ? formatNum(c.votes) : '—'"></span>
                               </div>
                             </div>

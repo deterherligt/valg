@@ -376,6 +376,12 @@ body {
 .cand-breakdown-row.cand-out { color: #8b949e; }
 .cand-breakdown-name { flex: 1; }
 .cand-breakdown-kreds { color: #484f58; font-size: 0.85em; margin-right: 8px; }
+.cand-breakdown-sk {
+  color: #60a5fa;
+  font-size: 0.78em;
+  opacity: 0.85;
+  white-space: nowrap;
+}
 .cand-breakdown-votes { color: #3fb950; text-align: right; min-width: 60px; }
 .cand-breakdown-row.cand-out .cand-breakdown-votes { color: #8b949e; }
 .cand-cutoff {
