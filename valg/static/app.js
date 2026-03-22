@@ -240,7 +240,9 @@ document.addEventListener('alpine:init', () => {
     async _fetchDemoState() {
       const resp = await fetch('/demo/state').catch(() => null)
       if (!resp || !resp.ok) return
+      const wasDemo = this.demo.enabled
       this.demo = await resp.json()
+      if (wasDemo && !this.demo.enabled) await this._fetchAll()
     },
 
     async demoControl(action, extra = {}) {
