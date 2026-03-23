@@ -5,7 +5,7 @@ Generates valg.dk-format JSON files from synthetic election data, wave by wave.
 Bypasses SFTP entirely — writes directly to a local data directory.
 
 Wave schedule:
-  0 — setup: Storkreds.json + kandidat-data (geography/candidates)
+  0 — setup: Storkreds-{ts}.json + kandidat-data (geography/candidates)
   1 — 25% districts preliminary
   2 — 50% districts preliminary
   3 — 100% districts preliminary
@@ -14,6 +14,7 @@ Wave schedule:
 """
 import json
 import random
+from datetime import datetime
 from pathlib import Path
 
 ELECTION_ID = "FV2024"
@@ -108,6 +109,11 @@ def _select_districts(all_districts: list, fraction: float, rng: random.Random) 
     return sorted(all_districts, key=lambda d: d["id"])[:n]
 
 
+def _timestamp() -> str:
+    """Generate a valg.dk-style timestamp suffix (DDMMYYYYHHmm)."""
+    return datetime.now().strftime("%d%m%Y%H%M")
+
+
 def _write(path: Path, data) -> Path:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2))
     return path
@@ -119,7 +125,7 @@ def _write_storkreds(data_dir: Path, election: dict) -> list[Path]:
          "AntalKredsmandater": sk["n_kredsmandater"], "ValgId": ELECTION_ID}
         for sk in election["storkredse"]
     ]
-    return [_write(data_dir / "Storkreds.json", data)]
+    return [_write(data_dir / f"Storkreds-{_timestamp()}.json", data)]
 
 
 def _write_kandidatdata(data_dir: Path, election: dict) -> list[Path]:
@@ -144,7 +150,7 @@ def _write_kandidatdata(data_dir: Path, election: dict) -> list[Path]:
             "UdenforParti": {"Kandidater": []},
         }
     }
-    filename = f"kandidat-data-Folketingsvalg-{ELECTION_ID}.json"
+    filename = f"kandidat-data-Folketingsvalg-{ELECTION_ID}-{_timestamp()}.json"
     return [_write(data_dir / filename, data)]
 
 
@@ -165,7 +171,7 @@ def _write_partistemmer(data_dir: Path, election: dict, districts: list, rng: ra
                 ],
             }
         }
-        written.append(_write(data_dir / f"partistemmefordeling-{ok_id}.json", data))
+        written.append(_write(data_dir / f"partistemmefordeling-{ok_id}-{_timestamp()}.json", data))
     return written
 
 
@@ -187,7 +193,7 @@ def _write_valgresultater_preliminary(data_dir: Path, election: dict, districts:
                 "KandidaterUdenforParti": [],
             }
         }
-        filename = f"valgresultater-Folketingsvalg-{ao['id']}.json"
+        filename = f"valgresultater-Folketingsvalg-{ao['id']}-{_timestamp()}.json"
         written.append(_write(data_dir / filename, data))
     return written
 
@@ -219,7 +225,7 @@ def _write_valgresultater_final(data_dir: Path, election: dict, districts: list,
                 "KandidaterUdenforParti": [],
             }
         }
-        filename = f"valgresultater-Folketingsvalg-{ao['id']}.json"
+        filename = f"valgresultater-Folketingsvalg-{ao['id']}-{_timestamp()}.json"
         written.append(_write(data_dir / filename, data))
     return written
 
@@ -240,5 +246,5 @@ def _write_valgdeltagelse(data_dir: Path, election: dict, districts: list, rng: 
                 ],
             }
         }
-        written.append(_write(data_dir / f"valgdeltagelse-{ao['id']}.json", data))
+        written.append(_write(data_dir / f"valgdeltagelse-{ao['id']}-{_timestamp()}.json", data))
     return written
