@@ -1,5 +1,7 @@
 import subprocess
 import logging
+from pathlib import Path
+from valg.plugins import load_plugins, find_plugin
 
 logger = logging.getLogger(__name__)
 
@@ -18,3 +20,18 @@ def check_authors(data_repo, allowed_emails, since_commit=None):
         if email not in allowed_emails:
             unauthorized.append({"sha": sha, "email": email})
     return unauthorized
+
+
+def check_inventory(data_repo):
+    """Check which JSON files match known plugins."""
+    load_plugins()
+    json_files = sorted(Path(data_repo).glob("*.json"))
+    unknown = []
+    matched = []
+    for f in json_files:
+        plugin = find_plugin(f.name)
+        if plugin:
+            matched.append(f.name)
+        else:
+            unknown.append(f.name)
+    return {"matched_files": matched, "unknown_files": unknown}

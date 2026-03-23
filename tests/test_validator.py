@@ -1,5 +1,5 @@
 import git
-from valg.validator import check_authors
+from valg.validator import check_authors, check_inventory
 
 
 def test_check_authors_passes_for_allowed_email(tmp_path):
@@ -21,3 +21,20 @@ def test_check_authors_flags_unauthorized_email(tmp_path):
     result = check_authors(tmp_path, allowed_emails=["mads@example.com"])
     assert len(result) == 1
     assert result[0]["email"] == "evil@bad.com"
+
+
+def test_check_inventory_all_matched(tmp_path):
+    """All files match a plugin → no unknown files."""
+    (tmp_path / "Region.json").write_text("{}")
+    (tmp_path / "partistemmefordeling-ok1.json").write_text("{}")
+    result = check_inventory(tmp_path)
+    assert result["unknown_files"] == []
+
+
+def test_check_inventory_flags_unknown_files(tmp_path):
+    """Files that no plugin matches → listed as unknown."""
+    (tmp_path / "Region.json").write_text("{}")
+    (tmp_path / "BrandNewFormat.json").write_text("{}")
+    result = check_inventory(tmp_path)
+    assert "BrandNewFormat.json" in result["unknown_files"]
+    assert "Region.json" not in result["unknown_files"]
