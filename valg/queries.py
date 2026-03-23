@@ -7,6 +7,7 @@ No Rich, no console output.
 from collections import defaultdict
 
 from valg import calculator
+from valg.calculator import TURNOUT_ESTIMATE
 
 
 def get_seat_data(conn):
@@ -644,3 +645,40 @@ def query_api_candidate_feed(conn, candidate_id: str, limit: int = 20) -> list[d
         {"occurred_at": r["occurred_at"], "district": r["district_name"], "delta": r["delta"]}
         for r in rows
     ]
+
+
+def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
+    rows = conn.execute("""
+        SELECT ok.storkreds_id,
+               SUM(pv.votes) as reported,
+               (SELECT SUM(ao.eligible_voters)
+                FROM afstemningsomraader ao
+                JOIN opstillingskredse ok2 ON ok2.id = ao.opstillingskreds_id
+                WHERE ok2.storkreds_id = ok.storkreds_id) as eligible
+        FROM party_votes pv
+        INNER JOIN (
+            SELECT opstillingskreds_id, party_id, MAX(snapshot_at) as latest
+            FROM party_votes
+            GROUP BY opstillingskreds_id, party_id
+        ) lat ON pv.opstillingskreds_id = lat.opstillingskreds_id
+              AND pv.party_id = lat.party_id
+              AND pv.snapshot_at = lat.latest
+        JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id
+        GROUP BY ok.storkreds_id
+    """).fetchall()
+
+    progress = {}
+    total_reported = 0
+    total_eligible = 0
+    for r in rows:
+        reported = r["reported"] or 0
+        eligible = r["eligible"] or 0
+        expected = eligible * TURNOUT_ESTIMATE
+        total_reported += reported
+        total_eligible += eligible
+        progress[str(r["storkreds_id"])] = min(1.0, reported / expected) if expected > 0 else 0.0
+
+    total_expected = total_eligible * TURNOUT_ESTIMATE
+    national_pct = min(1.0, total_reported / total_expected) if total_expected > 0 else 0.0
+
+    return progress, national_pct

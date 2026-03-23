@@ -14,6 +14,8 @@ from __future__ import annotations
 
 import heapq
 
+TURNOUT_ESTIMATE = 0.84
+
 TOTAL_SEATS = 175
 KREDSMANDAT_SEATS = 135
 TILLAEG_SEATS = 40
@@ -473,4 +475,20 @@ def allocate_tillaeg_to_storkredse(
                 result[party][sk] = result[party].get(sk, 0) + 1
                 given += 1
 
+    return result
+
+
+def project_storkreds_votes(
+    storkreds_votes: dict[str, dict[str, int]],
+    reporting_progress: dict[str, float],
+) -> dict[str, dict[str, int]]:
+    result = {}
+    for sk_id, party_votes in storkreds_votes.items():
+        progress = reporting_progress.get(sk_id, 0.0)
+        if progress <= 0:
+            result[sk_id] = {p: 0 for p in party_votes}
+        elif progress >= 1.0:
+            result[sk_id] = dict(party_votes)
+        else:
+            result[sk_id] = {p: int(v / progress) for p, v in party_votes.items()}
     return result

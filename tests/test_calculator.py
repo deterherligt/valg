@@ -408,3 +408,34 @@ def test_fv2022_structural_invariants():
     # K and Q should be below threshold (< 2% nationally, 0 kredsmandater)
     assert result.get("K", {}).get("total", 0) == 0
     assert result.get("Q", {}).get("total", 0) == 0
+
+
+# --- project_storkreds_votes ---
+
+from valg.calculator import project_storkreds_votes
+
+def test_projection_100pct_unchanged():
+    storkreds_votes = {"SK1": {"A": 1000, "B": 500}}
+    progress = {"SK1": 1.0}
+    result = project_storkreds_votes(storkreds_votes, progress)
+    assert result == storkreds_votes
+
+def test_projection_50pct_doubles():
+    storkreds_votes = {"SK1": {"A": 1000, "B": 500}}
+    progress = {"SK1": 0.5}
+    result = project_storkreds_votes(storkreds_votes, progress)
+    assert result["SK1"]["A"] == 2000
+    assert result["SK1"]["B"] == 1000
+
+def test_projection_0pct_returns_zero():
+    storkreds_votes = {"SK1": {"A": 1000, "B": 500}}
+    progress = {"SK1": 0.0}
+    result = project_storkreds_votes(storkreds_votes, progress)
+    assert result["SK1"]["A"] == 0
+    assert result["SK1"]["B"] == 0
+
+def test_projection_capped_at_1():
+    storkreds_votes = {"SK1": {"A": 1000}}
+    progress = {"SK1": 1.5}
+    result = project_storkreds_votes(storkreds_votes, progress)
+    assert result["SK1"]["A"] == 1000
