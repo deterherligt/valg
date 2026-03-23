@@ -170,7 +170,7 @@ def test_api_party_detail_cross_storkreds_elected():
     by_id = {c["id"]: c for c in p["candidates"]}
 
     # A2 has fewer votes than B1 but is elected (SK_A has 2 seats, A2 is ranked #2)
-    assert by_id["ca2"]["elected"] is True,  "A2 should be elected (SK_A seat #2)"
+    assert by_id["ca2"]["elected"] in ("kreds", "tillaeg"),  "A2 should be elected (SK_A seat #2)"
     assert by_id["cb1"]["elected"] is False, "B1 should not be elected (SK_B has 0 seats for party)"
     assert by_id["ca2"]["sk_rank"] == 2
     assert by_id["ca2"]["sk_seats"] == 2
