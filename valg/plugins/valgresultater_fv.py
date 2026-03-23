@@ -1,6 +1,8 @@
 # valg/plugins/valgresultater_fv.py
 TABLE = "results"
 
+_LETTER_MAP = {"Æ": "Ae", "Ø": "Oe", "Å": "Aa"}
+
 def MATCH(filename: str) -> bool:
     return filename.startswith("valgresultater-Folketingsvalg")
 
@@ -18,7 +20,8 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
         count_type = "preliminary"
 
     for party in (data.get("IndenforParti") or []):
-        party_id = party.get("Bogstavbetegnelse")
+        letter = party.get("Bogstavbetegnelse") or ""
+        party_id = _LETTER_MAP.get(letter, letter)
         party_votes = party.get("Stemmer")
         if party_votes is not None:
             rows.append({
