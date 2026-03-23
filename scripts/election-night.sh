@@ -256,8 +256,11 @@ Your job: the anomaly rate is too high — many files are failing to process. In
 }
 
 maintain_open_prs() {
-    # Find open auto-generated PRs with merge conflicts
-    local conflicted_prs=$(gh pr list --state open --json number,title,mergeable \
+    # Find open PRs authored by us with merge conflicts
+    # SECURITY: only touch our own PRs — never checkout/rebase branches from other authors
+    local my_login
+    my_login=$(gh api user --jq '.login' 2>/dev/null) || return
+    local conflicted_prs=$(gh pr list --state open --author "$my_login" --json number,title,mergeable \
         --jq '.[] | select(.title | startswith("Auto-")) | select(.mergeable == "CONFLICTING") | .number' 2>/dev/null)
 
     if [ -z "$conflicted_prs" ]; then
