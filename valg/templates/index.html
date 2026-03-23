@@ -88,8 +88,10 @@
     <div class="col col-candidates" :style="'width:' + colWidths.candidates + 'px; flex-shrink:0'">
       <div class="col-header">
         <span x-show="selectedPartyIds.length === 0">Candidates</span>
-        <span x-show="selectedPartyIds.length > 0"
+        <span x-show="selectedPartyIds.length > 0 && !activeStorkreds"
               x-text="'Candidates — ' + selectedPartyLetters"></span>
+        <span x-show="selectedPartyIds.length > 0 && activeStorkreds"
+              x-text="'Candidates — ' + selectedPartyLetters + ' · ' + (activeStorkreds ? activeStorkreds.name : '')"></span>
       </div>
       <div class="col-body">
         <template x-if="selectedPartyIds.length === 0">
@@ -97,18 +99,42 @@
             Select a party
           </div>
         </template>
-        <template x-for="group in candidatesByParty" :key="group.party_id">
+        <template x-if="selectedPartyIds.length > 0 && candidates.length === 0">
+          <div class="detail-placeholder" style="padding:16px 12px;color:#8b949e">
+            Loading…
+          </div>
+        </template>
+        <template x-if="selectedPartyIds.length > 0 && candidates.length > 0">
           <div>
-            <div class="party-group-label" x-text="group.letter"></div>
-            <template x-for="c in group.candidates" :key="c.id">
-              <div class="candidate-row"
-                   :class="{focused: focusedCandidateId === c.id}"
-                   @click="focusCandidate(c.id)">
-                <div>
-                  <div class="cand-name" x-text="c.name"></div>
-                  <div class="cand-sub"
-                       x-text="c.opstillingskreds + ' · #' + c.ballot_position"></div>
+            <template x-if="activeStorkreds && candidatesByStorkreds.filter(g => g.storkreds_id === activeStorkreds.id).length === 0">
+              <div class="detail-placeholder" style="padding:16px 12px;color:#8b949e">
+                Ingen kandidater i denne storkreds
+              </div>
+            </template>
+            <template x-for="group in candidatesByStorkreds" :key="group.storkreds_id">
+              <div>
+                <div class="sk-group-header"
+                     :class="{ 'sk-group-header--active': activeStorkreds && activeStorkreds.id === group.storkreds_id }"
+                     @click="selectStorkreds(group.storkreds_id, group.storkreds)">
+                  <span x-show="activeStorkreds && activeStorkreds.id === group.storkreds_id"
+                        class="sk-active-indicator">▸ </span>
+                  <span x-text="group.storkreds"></span>
                 </div>
+                <template x-if="!activeStorkreds || activeStorkreds.id === group.storkreds_id">
+                  <div>
+                    <template x-for="c in group.candidates" :key="c.id">
+                      <div class="candidate-row"
+                           :class="{focused: focusedCandidateId === c.id}"
+                           @click="focusCandidate(c.id)">
+                        <div>
+                          <div class="cand-name" x-text="c.name"></div>
+                          <div class="cand-sub"
+                               x-text="c.opstillingskreds + ' · #' + c.ballot_position"></div>
+                        </div>
+                      </div>
+                    </template>
+                  </div>
+                </template>
               </div>
             </template>
           </div>
@@ -149,7 +175,55 @@
               <template x-if="selectedPartyIds.length && !partyDetail">
                 <div class="detail-placeholder">Loading…</div>
               </template>
-              <template x-if="partyDetail">
+
+              <!-- Storkreds elected/bubble view (when a storkreds is active) -->
+              <template x-if="partyDetail && activeStorkreds">
+                <div>
+                  <div class="sk-detail-heading" x-text="activeStorkreds.name"></div>
+                  <template x-for="block in storkredsCandidateBlocks" :key="block.party_id">
+                    <div class="party-detail-block">
+                      <div class="party-detail-name"
+                           x-text="(block.letter || block.party_id) + ' — ' + block.name + ' — ' + block.sk_seats + ' mandater'">
+                      </div>
+                      <template x-if="block.empty">
+                        <div class="detail-placeholder" style="padding:8px 0">Ingen kandidater i denne storkreds</div>
+                      </template>
+                      <template x-if="!block.empty">
+                        <div>
+                          <template x-if="block.sk_seats > 0">
+                            <div class="sk-section-label">Valgte</div>
+                          </template>
+                          <template x-for="c in block.elected" :key="c.id">
+                            <div class="cand-breakdown-row cand-in">
+                              <span class="cand-breakdown-name" x-text="c.sk_rank + '. ' + c.name"></span>
+                              <span class="cand-breakdown-kreds" x-text="c.opstillingskreds"></span>
+                              <span class="cand-breakdown-votes"
+                                    x-text="c.votes !== null ? formatNum(c.votes) : ''"></span>
+                            </div>
+                          </template>
+                          <template x-if="block.bubble.length > 0">
+                            <div class="sk-section-label">Ikke valgt</div>
+                          </template>
+                          <template x-for="c in block.bubble" :key="c.id">
+                            <div class="cand-breakdown-row cand-out">
+                              <span class="cand-breakdown-name" x-text="c.sk_rank + '. ' + c.name"></span>
+                              <span class="cand-breakdown-kreds" x-text="c.opstillingskreds"></span>
+                              <span class="cand-breakdown-votes"
+                                    x-text="c.votes !== null ? formatNum(c.votes) : ''"></span>
+                              <span class="cand-breakdown-mangler"
+                                    x-show="block.has_votes && c.mangler !== null"
+                                    x-text="'mangler ' + formatNum(c.mangler)"></span>
+                            </div>
+                          </template>
+                        </div>
+                      </template>
+                    </div>
+                  </template>
+                </div>
+              </template>
+
+              <!-- National view (no active storkreds) -->
+              <template x-if="partyDetail && !activeStorkreds">
                 <div>
                   <template x-for="p in partyDetail" :key="p.id">
                     <div class="party-detail-block">
@@ -158,7 +232,6 @@
                       <div class="party-detail-meta"
                            x-text="formatNum(p.votes) + ' votes (' + p.pct + '%) · ' + p.seats_total + ' seats'">
                       </div>
-                      <!-- Candidate breakdown -->
                       <template x-if="!p.has_votes && p.candidates.length > 0">
                         <div>
                           <div class="cand-breakdown-prelim-note">Foreløbig rækkefølge — stemmetal tilgængeligt efter fintælling</div>
