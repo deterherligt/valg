@@ -7,6 +7,7 @@ from valg.fetcher import (
     walk_remote,
     download_file,
     sync_election_folder,
+    discover_election_folder,
     commit_data_repo,
 )
 
@@ -116,6 +117,31 @@ def test_sync_empty_folder_returns_zero(tmp_path, mock_sftp):
     mock_sftp.listdir_attr.return_value = []
     count = sync_election_folder(mock_sftp, "/EmptyFolder", tmp_path)
     assert count == 0
+
+
+# ── discover_election_folder ──────────────────────────────────────────────
+
+
+def test_discover_finds_folder_by_year(mock_sftp):
+    """discover_election_folder picks the latest folder matching the year."""
+    dir_attr = lambda name, mtime: type("A", (), {"filename": name, "st_mode": stat_module.S_IFDIR, "st_mtime": mtime})()
+    mock_sftp.listdir_attr.return_value = [
+        dir_attr("Folketingsvalg-1-2024", 1000),
+        dir_attr("Folketingsvalg-1-2026", 2000),
+        dir_attr("Kommunalvalg-2025", 1500),
+    ]
+    result = discover_election_folder(mock_sftp, "2026")
+    assert result == "/Folketingsvalg-1-2026"
+
+
+def test_discover_returns_none_when_no_match(mock_sftp):
+    """discover_election_folder returns None when no folder matches year."""
+    dir_attr = lambda name, mtime: type("A", (), {"filename": name, "st_mode": stat_module.S_IFDIR, "st_mtime": mtime})()
+    mock_sftp.listdir_attr.return_value = [
+        dir_attr("Folketingsvalg-1-2024", 1000),
+    ]
+    result = discover_election_folder(mock_sftp, "2026")
+    assert result is None
 
 
 # ── sync_election_folder ───────────────────────────────────────────────────

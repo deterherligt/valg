@@ -29,6 +29,26 @@ def get_sftp_client() -> tuple:
     return ssh, sftp
 
 
+def discover_election_folder(sftp, year: str) -> Optional[str]:
+    """Find the latest election folder on SFTP containing the given year."""
+    try:
+        attrs = sftp.listdir_attr("/")
+    except Exception as e:
+        log.warning("Cannot list SFTP root: %s", e)
+        return None
+    candidates = []
+    for attr in attrs:
+        if stat_module.S_ISDIR(attr.st_mode) and year in attr.filename:
+            candidates.append((attr.st_mtime or 0, "/" + attr.filename))
+    if not candidates:
+        log.info("No election folder found containing '%s'", year)
+        return None
+    candidates.sort(reverse=True)
+    winner = candidates[0][1]
+    log.info("Discovered election folder: %s", winner)
+    return winner
+
+
 def walk_remote(sftp, remote_path: str):
     """Yield (remote_path, size, mtime) for all .json files under remote_path."""
     try:

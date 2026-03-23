@@ -44,7 +44,8 @@ jobs:
       - name: Fetch from SFTP
         run: |
           python -m valg fetch \
-            --election-folder "${{ vars.ELECTION_FOLDER }}"
+            --election-folder "${{ vars.ELECTION_FOLDER }}" \
+            --discover-year "$(date +%Y)"
 
       - name: Validate data files
         id: validate

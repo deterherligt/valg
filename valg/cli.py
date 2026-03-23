@@ -230,17 +230,23 @@ def cmd_commentary(conn, args):
 
 
 def cmd_fetch(conn, args):
-    from valg.fetcher import get_sftp_client, sync_election_folder, commit_data_repo, push_data_repo
+    from valg.fetcher import get_sftp_client, sync_election_folder, commit_data_repo, push_data_repo, discover_election_folder
     import os
 
     data_repo = Path(os.getenv("VALG_DATA_REPO", "../valg-data"))
     election_folder = args.election_folder
 
-    console.print(f"Syncing {election_folder}...")
     ssh, sftp = get_sftp_client()
     try:
+        # Try configured folder first; if it yields nothing, discover by year
         downloaded = sync_election_folder(sftp, election_folder, data_repo)
-        console.print(f"Downloaded {downloaded} files")
+        if downloaded == 0 and getattr(args, "discover_year", None):
+            discovered = discover_election_folder(sftp, args.discover_year)
+            if discovered and discovered != election_folder:
+                console.print(f"[dim]Configured folder empty, discovered: {discovered}[/dim]")
+                election_folder = discovered
+                downloaded = sync_election_folder(sftp, election_folder, data_repo)
+        console.print(f"Downloaded {downloaded} files from {election_folder}")
     finally:
         sftp.close()
         ssh.close()
@@ -343,6 +349,8 @@ def build_parser() -> argparse.ArgumentParser:
     # fetch
     fetch_p = sub.add_parser("fetch", help="Fetch from SFTP, commit, and push data repo")
     fetch_p.add_argument("--election-folder", required=True)
+    fetch_p.add_argument("--discover-year", default=None,
+                         help="If configured folder is empty, discover latest folder containing this year (e.g. 2026)")
 
     # process
     process_p = sub.add_parser("process", help="Process downloaded data into DB")
