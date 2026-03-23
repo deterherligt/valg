@@ -126,7 +126,7 @@ class DemoRunner:
             self._stop_event.set()
         if hasattr(self, "_pause_event"):
             self._pause_event.set()  # unblock if paused
-        if hasattr(self, "_thread") and self._thread.is_alive():
+        if self._thread is not None and self._thread.is_alive():
             self._thread.join(timeout=5.0)
 
         # Reset DB
