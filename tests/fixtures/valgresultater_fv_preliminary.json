@@ -1,12 +1,9 @@
 {
-  "Valgresultater": {
-    "AfstemningsomraadeId": "AO1",
-    "Tidsstempel": "05-11-2024 21:00:00",
-    "Optaellingstype": "Foreloebig",
-    "IndenforParti": [
-      {"PartiId": "A", "Partistemmer": 1234,
-       "Kandidater": [{"KandidatId": "K1", "Stemmer": 456}]}
-    ],
-    "KandidaterUdenforParti": [{"KandidatId": "K99", "Stemmer": 12}]
-  }
+  "Valgart": "Folketingsvalg",
+  "AfstemningsområdeDagiId": "AO1",
+  "Resultatart": "Foreløbig",
+  "IndenforParti": [
+    {"Bogstavbetegnelse": "A", "Stemmer": 1234,
+     "Kandidater": [{"Id": "K1", "Stemmer": 456}]}
+  ]
 }

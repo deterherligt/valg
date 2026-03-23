@@ -8,11 +8,11 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     rows = []
     if not isinstance(data, dict):
         return []
-    ao_id = data.get("AfstemningsomraadeDagiId")
+    ao_id = str(data.get("AfstemningsområdeDagiId", ""))
     for entry in data.get("Valgdeltagelse", []):
         rows.append({
             "afstemningsomraade_id": ao_id,
-            "eligible_voters": entry.get("AntalStemmeberettigede"),
+            "eligible_voters": entry.get("AntalStemmeberretigedeVælgere") or entry.get("AntalStemmeberettigede"),
             "votes_cast": entry.get("AfgivneStemmer"),
             "snapshot_at": snapshot_at,
         })

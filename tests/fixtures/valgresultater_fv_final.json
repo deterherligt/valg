@@ -1,12 +1,9 @@
 {
-  "Valgresultater": {
-    "AfstemningsomraadeId": "AO1",
-    "Tidsstempel": "06-11-2024 10:00:00",
-    "Optaellingstype": "Fintaelling",
-    "IndenforParti": [
-      {"PartiId": "A", "Partistemmer": 1250,
-       "Kandidater": [{"KandidatId": "K1", "Stemmer": 470}]}
-    ],
-    "KandidaterUdenforParti": [{"KandidatId": "K99", "Stemmer": 12}]
-  }
+  "Valgart": "Folketingsvalg",
+  "AfstemningsområdeDagiId": "AO1",
+  "Resultatart": "Fintælling",
+  "IndenforParti": [
+    {"Bogstavbetegnelse": "A", "Stemmer": 1250,
+     "Kandidater": [{"Id": "K1", "Stemmer": 470}]}
+  ]
 }

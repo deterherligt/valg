@@ -1,4 +1,4 @@
 [
-  {"Kode": "SK1", "Navn": "Københavns Storkreds", "AntalKredsmandater": 15, "ValgId": "FV2024"},
-  {"Kode": "SK2", "Navn": "Østre Landsrets Storkreds", "AntalKredsmandater": 10, "ValgId": "FV2024"}
+  {"Nummer": 1, "Navn": "Københavns Storkreds"},
+  {"Nummer": 2, "Navn": "Østre Landsrets Storkreds"}
 ]

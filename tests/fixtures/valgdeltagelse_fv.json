@@ -1,8 +1,8 @@
 {
   "Valgart": "Folketingsvalg",
-  "AfstemningsomraadeDagiId": "AO1",
+  "AfstemningsområdeDagiId": "AO1",
   "Valgdeltagelse": [
-    {"AntalStemmeberettigede": 2000, "AfgivneStemmer": 1500,
+    {"AntalStemmeberretigedeVælgere": 2000, "AfgivneStemmer": 1500,
      "Tidspunkt": "20:00:00"}
   ]
 }

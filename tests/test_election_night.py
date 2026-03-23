@@ -14,17 +14,18 @@ def test_election_night_pipeline_happy_path(tmp_path):
     repo = git.Repo.init(data_repo)
 
     # Simulate fetched files — use valid data matching plugin expectations
-    # Region.json is a list (geografi plugin expects list)
-    (data_repo / "Region.json").write_text(json.dumps([
-        {"Kode": "1", "Navn": "Hovedstaden", "AntalKredsmandater": 39, "ValgId": "fv2024"}
+    # Storkreds file is a list (geografi plugin expects list)
+    (data_repo / "Storkreds-test.json").write_text(json.dumps([
+        {"Nummer": 1, "Navn": "Hovedstaden"}
     ]))
-    # partistemmefordeling expects {"Valg": {...}}
+    # partistemmefordeling expects flat dict with OpstillingskredsDagiId + IndenforParti
     (data_repo / "partistemmefordeling-ok1.json").write_text(json.dumps({
-        "Valg": {"OpstillingskredsId": "ok1", "Partier": [
-            {"PartiId": "A", "Stemmer": 1234}
-        ]}
+        "Valgart": "FV", "Valgdag": "2026-03-24", "Storkreds": "Test",
+        "OpstillingskredsDagiId": "ok1", "IndenforParti": [
+            {"Bogstavbetegnelse": "A", "Stemmer": 1234}
+        ]
     }))
-    repo.index.add(["Region.json", "partistemmefordeling-ok1.json"])
+    repo.index.add(["Storkreds-test.json", "partistemmefordeling-ok1.json"])
     repo.index.commit("sync", author=git.Actor("Mads", "mads@example.com"))
 
     # Validate

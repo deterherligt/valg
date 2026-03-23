@@ -1,0 +1,43 @@
+<h2>Hvad sker der med grænselinjen?</h2>
+<p class="subtitle">Med per-storkreds farve-kodning er kandidater ikke længere pænt sorteret valgt/ikke-valgt</p>
+
+<div class="split" style="gap:24px;align-items:flex-start">
+
+  <!-- Option X: Keep cutoff line -->
+  <div class="mockup" data-choice="keep" onclick="toggleSelect(this)" style="cursor:pointer;flex:1">
+    <div class="mockup-header">X — Behold grænselinjen (national)</div>
+    <div class="mockup-body" style="font-size:12px;font-family:monospace;line-height:1.8">
+      <div style="color:#4ade80">✓ Mette Frederiksen · 12.847 · <span style="color:#60a5fa">#1 i Kbh (9)</span></div>
+      <div style="color:#4ade80">✓ Kandidat X · 8.341 · <span style="color:#60a5fa">#1 i Sjælland (8)</span></div>
+      <div style="color:#4ade80">✓ Henrik Sass · 4.122 · <span style="color:#60a5fa">#2 i Kbh</span></div>
+      <div style="color:#4ade80">✓ Kandidat Y · 2.891 · <span style="color:#60a5fa">#1 i Nordjylland (5)</span></div>
+      <div style="color:#4ade80">✓ Bornholmer A · 1.203 · <span style="color:#60a5fa">#1 i Bornholm (2)</span></div>
+      <div style="color:#4ade80">✓ Bornholmer B · 891 · <span style="color:#60a5fa">#2 i Bornholm</span></div>
+      <div style="border-top:1px dashed #555;margin:4px 0;color:#777;font-size:11px;padding:3px 0">— 50 mandater i alt · 312 stemmer forskel</div>
+      <div style="color:#666">✗ Kandidat D · 3.888 · <span style="color:#f87171">#10 i Kbh (kun 9)</span></div>
+      <div style="color:#666">✗ Kandidat E · 2.103 · <span style="color:#f87171">#11 i Kbh</span></div>
+      <div style="color:#666">✗ Bornholmer C · 703 · <span style="color:#f87171">#3 i Bornholm (kun 2)</span></div>
+      <div style="margin-top:8px;color:#888;font-size:10px">⚠ Grænselinjen er national — Kandidat D (3.888) sidder UNDER Bornholmer B (891) pga. storkreds-sortering er umulig nationalt</div>
+    </div>
+  </div>
+
+  <!-- Option Y: Remove cutoff, color speaks for itself -->
+  <div class="mockup" data-choice="remove" onclick="toggleSelect(this)" style="cursor:pointer;flex:1">
+    <div class="mockup-header">Y — Ingen grænselinje, farve fortæller historien</div>
+    <div class="mockup-body" style="font-size:12px;font-family:monospace;line-height:1.8">
+      <div style="color:#4ade80">✓ Mette Frederiksen · 12.847 · <span style="color:#60a5fa">#1 i Kbh (9 mandater)</span></div>
+      <div style="color:#4ade80">✓ Kandidat X · 8.341 · <span style="color:#60a5fa">#1 i Sjælland (8 mandater)</span></div>
+      <div style="color:#4ade80">✓ Henrik Sass · 4.122 · <span style="color:#60a5fa">#2 i Kbh</span></div>
+      <div style="color:#666">✗ Kandidat D · 3.888 · <span style="color:#f87171">#10 i Kbh (kun 9 mandater)</span></div>
+      <div style="color:#4ade80">✓ Kandidat Y · 2.891 · <span style="color:#60a5fa">#1 i Nordjylland (5 mandater)</span></div>
+      <div style="color:#666">✗ Kandidat E · 2.103 · <span style="color:#f87171">#11 i Kbh</span></div>
+      <div style="color:#4ade80">✓ Bornholmer A · 1.203 · <span style="color:#60a5fa">#1 i Bornholm (2 mandater)</span></div>
+      <div style="color:#4ade80">✓ Bornholmer B · 891 · <span style="color:#60a5fa">#2 i Bornholm</span></div>
+      <div style="color:#666">✗ Bornholmer C · 703 · <span style="color:#f87171">#3 i Bornholm (kun 2 mandater)</span></div>
+      <div style="margin-top:8px;color:#888;font-size:10px">✓ Grøn = valgt i sin storkreds · Grå = ikke valgt · Ingen linje nødvendig</div>
+    </div>
+  </div>
+
+</div>
+
+<p style="text-align:center;margin-top:16px;color:#666;font-size:12px">Klik for at vælge — eller beskriv i terminalen</p>
