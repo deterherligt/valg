@@ -97,6 +97,27 @@ def test_download_file_calls_sftp_get(tmp_path):
     download_file(mock_sftp, "/remote/file.json", dest)
     mock_sftp.get.assert_called_once()
 
+# ── sync_election_folder empty-state regression ────────────────────────────
+
+@pytest.fixture
+def mock_sftp():
+    return MagicMock()
+
+
+def test_sync_missing_folder_returns_zero(tmp_path, mock_sftp):
+    """sync_election_folder returns 0 when walk_remote yields nothing (folder missing)."""
+    mock_sftp.listdir_attr.side_effect = IOError("No such folder")
+    count = sync_election_folder(mock_sftp, "/NoSuchFolder", tmp_path)
+    assert count == 0
+
+
+def test_sync_empty_folder_returns_zero(tmp_path, mock_sftp):
+    """sync_election_folder returns 0 when remote folder exists but is empty."""
+    mock_sftp.listdir_attr.return_value = []
+    count = sync_election_folder(mock_sftp, "/EmptyFolder", tmp_path)
+    assert count == 0
+
+
 # ── sync_election_folder ───────────────────────────────────────────────────
 
 def test_sync_downloads_new_files(tmp_path, monkeypatch):
