@@ -16,8 +16,8 @@ Three-layer GitHub Actions pipeline, triggered every 5 minutes on election night
 ```
 GitHub Actions workflow (cron: */5 * * * *)
 │
-├── Step 1: Sync (existing, hardened)
-│   └── SFTP fetch → valg-data commit/push
+├── Step 1: Fetch (refactored from sync)
+│   └── SFTP fetch → valg-data commit/push (no processing)
 │   └── Handles missing/empty election folders gracefully (exit 0)
 │
 ├── Step 2: Pre-process Validator (new, pure Python)
@@ -58,11 +58,12 @@ GitHub Actions workflow (cron: */5 * * * *)
 
 **New CLI commands:**
 
+- `python -m valg fetch --election-folder <name>` — SFTP fetch only (no processing). Downloads files, commits to valg-data, pushes. Extracted from the existing `cmd_sync`.
 - `python -m valg validate --data-repo <path>` — pre-process checks (author, inventory, schema). Writes `unknown_files` list to `$GITHUB_OUTPUT` when running in CI. Exits 0 always (issues created via GitHub API, never halts pipeline).
-- `python -m valg process --data-repo <path>` — runs `process_directory` on the data repo (extracted from the existing `cmd_sync` which bundles fetch + process).
+- `python -m valg process --data-repo <path>` — runs `process_directory` on the data repo. Extracted from the existing `cmd_sync`.
 - `python -m valg check-anomalies` — post-process anomaly rate check. Creates issue if threshold exceeded.
 
-These are new commands. The existing `sync` command continues to exist for local use (fetch + process in one step). The workflow uses the split commands for the gate logic.
+These are new commands. The existing `sync` command is refactored to call `fetch` then `process` internally (preserving local one-step usage). The workflow uses the split commands for the gate logic.
 
 ### Pre-process checks (in order)
 
@@ -191,8 +192,9 @@ jobs:
           git config user.name "Mads"
           git config user.email "<mads-email>"
 
-      - name: Sync from SFTP
-        run: python -m valg sync --election-folder ${{ vars.ELECTION_FOLDER }}
+      - name: Fetch from SFTP
+        run: python -m valg fetch --election-folder ${{ vars.ELECTION_FOLDER }}
+        # Fetches files, commits to valg-data, pushes
 
       - name: Validate (pre-process)
         id: validate
@@ -201,6 +203,7 @@ jobs:
 
       - name: Process
         run: python -m valg process --data-repo valg-data
+        # Processes JSON files into SQLite
 
       - name: Check anomaly rate (post-process)
         run: python -m valg check-anomalies
