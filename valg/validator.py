@@ -24,12 +24,13 @@ def check_authors(data_repo, allowed_emails, since_commit=None):
 
 
 SCHEMA_EXPECTATIONS = {
-    "partistemmer": {"expected_type": "dict", "required_keys": ["Valg"]},
+    "partistemmer": {"expected_type": "dict", "required_keys": ["Valgart"]},
     "geografi": {"expected_type": "list"},
     "geografi_ok": {"expected_type": "list"},
     "geografi_ao": {"expected_type": "list"},
-    "valgresultater_fv": {"expected_type": "dict", "required_keys": ["Valg"]},
-    "valgdeltagelse": {"expected_type": "dict", "required_keys": ["Valg"]},
+    "valgresultater_fv": {"expected_type": "dict", "required_keys": ["Valgart"]},
+    "valgdeltagelse": {"expected_type": "dict", "required_keys": ["Valgart"]},
+    "kandidatdata_fv": {"expected_type": "dict", "required_keys": ["Valgart"]},
 }
 
 
@@ -37,7 +38,9 @@ def check_schema(data_repo):
     """Spot-check known files for expected structure."""
     load_plugins()
     violations = []
-    for f in Path(data_repo).glob("*.json"):
+    for f in Path(data_repo).rglob("*.json"):
+        if f.suffix != ".json" or f.name.endswith(".schema.json"):
+            continue
         plugin = find_plugin(f.name)
         if not plugin:
             continue
@@ -46,7 +49,7 @@ def check_schema(data_repo):
         if not expectation:
             continue
         try:
-            data = json.loads(f.read_text())
+            data = json.loads(f.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             violations.append({"file": f.name, "issue": "invalid JSON"})
             continue
@@ -66,7 +69,7 @@ def check_schema(data_repo):
 def check_inventory(data_repo):
     """Check which JSON files match known plugins."""
     load_plugins()
-    json_files = sorted(Path(data_repo).glob("*.json"))
+    json_files = sorted(f for f in Path(data_repo).rglob("*.json") if not f.name.endswith(".schema.json"))
     unknown = []
     matched = []
     for f in json_files:
