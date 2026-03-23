@@ -10,3 +10,6 @@ valg-data/
 .coverage
 api-doc/
 .worktrees/
+logs/
+valg.db-shm
+valg.db-wal
