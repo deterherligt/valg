@@ -233,7 +233,7 @@
                       <div class="party-detail-name"
                            x-text="(p.letter || p.id) + ' — ' + p.name"></div>
                       <div class="party-detail-meta"
-                           x-text="formatNum(p.votes) + ' votes (' + p.pct + '%) · ' + p.seats_total + ' seats'">
+                           x-text="formatNum(p.votes) + ' stemmer (' + p.pct + '%) · ' + p.kreds_seats + ' kreds + ' + p.tillaeg_seats + ' tillæg = ' + p.seats_total + ' mandater'">
                       </div>
                       <template x-if="!p.has_votes && p.candidates.length > 0">
                         <div>
