@@ -19,6 +19,15 @@ KREDSMANDAT_SEATS = 135
 TILLAEG_SEATS = 40
 THRESHOLD_PCT = 0.02
 
+LANDSDEL_STORKREDSE = {
+    "Hovedstaden": ["1", "2", "3", "4"],
+    "Sjaelland-Syddanmark": ["5", "6", "7"],
+    "Midtjylland-Nordjylland": ["8", "9", "10"],
+}
+STORKREDS_TO_LANDSDEL = {
+    sk: ld for ld, sks in LANDSDEL_STORKREDSE.items() for sk in sks
+}
+
 
 def dhondt(party_votes: dict[str, int], n_seats: int) -> dict[str, int]:
     """
@@ -286,3 +295,50 @@ def hare_largest_remainder(party_votes: dict[str, int], n_seats: int) -> dict[st
         seats[ranked[i]] += 1
 
     return seats
+
+
+def allocate_tillaeg_to_landsdele(
+    party_landsdel_votes: dict[str, dict[str, int]],
+    tillaeg_per_party: dict[str, int],
+    kreds_per_party_per_landsdel: dict[str, dict[str, int]],
+) -> dict[str, dict[str, int]]:
+    total_tillaeg = sum(tillaeg_per_party.values())
+    if total_tillaeg <= 0:
+        return {p: {} for p in tillaeg_per_party}
+
+    # Build max-heap of Sainte-Lague quotients (1, 3, 5, 7...)
+    # Skip first k quotients where k = kredsmandater already won
+    heap = []
+    # Track how many seats each party has been given
+    party_given = {p: 0 for p in tillaeg_per_party}
+    # Result structure
+    result = {p: {} for p in tillaeg_per_party}
+
+    max_quotients = total_tillaeg + max(
+        sum(ld.values()) for ld in kreds_per_party_per_landsdel.values()
+    ) if kreds_per_party_per_landsdel else total_tillaeg
+
+    for party, ld_votes in party_landsdel_votes.items():
+        if tillaeg_per_party.get(party, 0) <= 0:
+            continue
+        for ld, votes in ld_votes.items():
+            if votes <= 0:
+                continue
+            k = kreds_per_party_per_landsdel.get(party, {}).get(ld, 0)
+            # Generate enough quotients: skip first k, need up to tillaeg_per_party[party] more
+            for n in range(k, k + tillaeg_per_party[party]):
+                divisor = 2 * n + 1
+                quotient = votes / divisor
+                # max-heap via negation
+                heapq.heappush(heap, (-quotient, party, ld))
+
+    seats_given = 0
+    while seats_given < total_tillaeg and heap:
+        neg_q, party, ld = heapq.heappop(heap)
+        if party_given[party] >= tillaeg_per_party[party]:
+            continue
+        party_given[party] += 1
+        result[party][ld] = result[party].get(ld, 0) + 1
+        seats_given += 1
+
+    return result

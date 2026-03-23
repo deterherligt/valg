@@ -228,3 +228,37 @@ def test_kredsmandater_detail_matches_existing_totals():
         for party, s in sk_seats.items():
             new_totals[party] = new_totals.get(party, 0) + s
     assert new_totals == old_totals
+
+
+# --- landsdel mapping + allocate_tillaeg_to_landsdele ---
+
+from valg.calculator import allocate_tillaeg_to_landsdele, LANDSDEL_STORKREDSE
+
+def test_landsdel_mapping_covers_all_10_storkredse():
+    all_sk = set()
+    for sks in LANDSDEL_STORKREDSE.values():
+        all_sk.update(sks)
+    assert len(all_sk) == 10
+    assert len(LANDSDEL_STORKREDSE) == 3
+
+def test_tillaeg_landsdele_basic():
+    party_landsdel_votes = {"A": {"LD1": 1000}, "B": {"LD1": 800}}
+    tillaeg_per_party = {"A": 1, "B": 2}
+    kreds_per_party_per_landsdel = {"A": {"LD1": 2}, "B": {"LD1": 0}}
+    result = allocate_tillaeg_to_landsdele(party_landsdel_votes, tillaeg_per_party, kreds_per_party_per_landsdel)
+    assert sum(result["A"].values()) == 1
+    assert sum(result["B"].values()) == 2
+
+def test_tillaeg_landsdele_total():
+    party_landsdel_votes = {
+        "A": {"LD1": 50000, "LD2": 30000, "LD3": 20000},
+        "B": {"LD1": 20000, "LD2": 25000, "LD3": 15000},
+    }
+    tillaeg_per_party = {"A": 5, "B": 8}
+    kreds_per_party_per_landsdel = {
+        "A": {"LD1": 3, "LD2": 2, "LD3": 1},
+        "B": {"LD1": 1, "LD2": 1, "LD3": 0},
+    }
+    result = allocate_tillaeg_to_landsdele(party_landsdel_votes, tillaeg_per_party, kreds_per_party_per_landsdel)
+    total = sum(s for party_ld in result.values() for s in party_ld.values())
+    assert total == 13
