@@ -194,6 +194,49 @@ def project_storkreds_votes(
 - **Flip functions (`votes_to_gain_seat` / `votes_to_lose_seat`):** These use `allocate_seats_total` internally. After refactoring, they automatically use the proper math. The vote-addition strategy (distributing delta across storkredse) remains approximate but acceptable for signalling purposes.
 - **Turnout estimate:** Using a fixed 0.84 nationally. Per-storkreds historical turnout would improve early projections but adds complexity. Deferred.
 
+## 2026 Data Format Impact
+
+The valg.dk data format changed significantly for 2026. The following affects this spec directly (plugins were updated in PR #43):
+
+### 1. ID mismatch risk in party_votes FK join (critical)
+
+The `party_votes` table uses `opstillingskreds_id` to join with `opstillingskredse`. The pre-election test data from partistemmefordeling has `OpstillingskredsDagiId: 1` — a placeholder, not a real DagiId (real values look like `403561`). The real election night data will likely use proper DagiIds.
+
+**Action:** After the first real partistemmefordeling data arrives on election night, verify the FK join between `party_votes.opstillingskreds_id` and `opstillingskredse.id` produces results. If the IDs don't match, the partistemmer plugin needs to map between ID systems. The validator will flag this as anomalies (0 rows inserted despite files being processed).
+
+### 2. eligible_voters not in geography data (important)
+
+The 2026 AO geography files (`Afstemningsomraade-*.json`) do not include `eligible_voters`. This field comes from `valgdeltagelse` files (`AntalStemmeberretigedeVælgere`).
+
+**Action:** The projection layer's `get_reporting_progress` query must join through the `turnout` table for eligible voters, NOT the `afstemningsomraader` table. Change the spec's query from:
+
+> "sum `eligible_voters` from `afstemningsomraader` table (joined through `opstillingskredse`)"
+
+To: sum `eligible_voters` from the latest `turnout` snapshot per AO, joined through `opstillingskredse` to storkreds.
+
+### 3. Storkreds IDs are Nummer-based (minor)
+
+The 2026 geografi plugin stores storkreds IDs as `str(Nummer)` (e.g., `"7"` for Sydjylland). The `LANDSDEL_STORKREDSE` mapping must use these values:
+
+```python
+LANDSDEL_STORKREDSE = {
+    "Hovedstaden": ["1", "2", "3", "4"],       # Kbh, Kbh Omegn, Nordsjælland, Bornholm
+    "Sjælland-Syddanmark": ["5", "6", "7"],     # Sjælland, Fyn, Sydjylland
+    "Midtjylland-Nordjylland": ["8", "9", "10"],# Østjylland, Vestjylland, Nordjylland
+}
+```
+
+Verify the exact Nummer→name mapping against the Storkreds-*.json data before hardcoding.
+
+### 4. No separate Parti file (minor)
+
+There is no `Parti-*.json` in the 2026 data. Parties are embedded in partistemmefordeling (`IndenforParti` with `Bogstavbetegnelse` and `PartiNavn`) and kandidat-data. The `parties` table needs to be seeded from these sources. Options:
+
+- Extract parties as a side effect of processing partistemmefordeling (first file processed seeds the table)
+- Seed from kandidat-data during setup
+
+The calculator uses party letters (from `parties.letter`) as IDs. The updated partistemmer plugin uses `Bogstavbetegnelse` as `party_id`, which is the letter. This is consistent.
+
 ## Existing Plan
 
 The existing plan at `docs/plans/2026-03-09-tillaegsmandater-plan.md` covers parts of workstream 2 but uses incorrect algorithms (Saint-Lague 2k+1 baseline, D'Hondt for storkreds assignment). The implementation plan derived from this spec supersedes that plan.
