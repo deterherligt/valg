@@ -94,13 +94,14 @@ These are new commands. The existing `sync` command is refactored to call `fetch
 
 ```json
 {
-  "status": "pass | halt | repair_needed",
+  "status": "pass | repair_needed",
   "unauthorized_commits": [],
   "unknown_files": ["SomeNewFile.json"],
-  "schema_violations": [],
-  "anomaly_rate": 0.02
+  "schema_violations": []
 }
 ```
+
+Note: `anomaly_rate` is checked separately in the post-process step (`check-anomalies` command), not in this verdict. The pipeline never halts — SFTP is authoritative and overwrites any tampering, so `halt` is not a valid status.
 
 ### Remediation philosophy
 

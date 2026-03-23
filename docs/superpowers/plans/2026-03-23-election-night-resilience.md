@@ -278,7 +278,7 @@ from valg.plugins import load_plugins, find_plugin
 def check_inventory(data_repo):
     """Check which JSON files match known plugins."""
     load_plugins()
-    json_files = sorted(Path(data_repo).rglob("*.json"))
+    json_files = sorted(Path(data_repo).glob("*.json"))
     unknown = []
     matched = []
     for f in json_files:
@@ -364,7 +364,7 @@ def check_schema(data_repo):
     """Spot-check known files for expected structure."""
     load_plugins()
     violations = []
-    for f in Path(data_repo).rglob("*.json"):
+    for f in Path(data_repo).glob("*.json"):
         plugin = find_plugin(f.name)
         if not plugin:
             continue
