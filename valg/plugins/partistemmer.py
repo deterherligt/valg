@@ -9,7 +9,7 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     if not isinstance(data, dict):
         return []
     ok_id = str(data.get("OpstillingskredsDagiId", ""))
-    for party in data.get("IndenforParti", []):
+    for party in (data.get("IndenforParti") or []):
         rows.append({
             "opstillingskreds_id": ok_id,
             "party_id": party.get("Bogstavbetegnelse"),

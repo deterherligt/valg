@@ -17,7 +17,7 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     else:
         count_type = "preliminary"
 
-    for party in data.get("IndenforParti", []):
+    for party in (data.get("IndenforParti") or []):
         party_id = party.get("Bogstavbetegnelse")
         party_votes = party.get("Stemmer")
         if party_votes is not None:
@@ -29,7 +29,7 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
                 "count_type": count_type,
                 "snapshot_at": snapshot_at,
             })
-        for k in party.get("Kandidater", []):
+        for k in (party.get("Kandidater") or []):
             rows.append({
                 "afstemningsomraade_id": ao_id,
                 "party_id": party_id,

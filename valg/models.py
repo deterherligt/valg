@@ -11,6 +11,21 @@ CREATE TABLE IF NOT EXISTS elections (
     election_date TEXT,
     synced_at TEXT
 );
+CREATE TABLE IF NOT EXISTS valglandsdele (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS regioner (
+    id TEXT PRIMARY KEY,
+    code INTEGER,
+    name TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS kommuner (
+    id TEXT PRIMARY KEY,
+    code INTEGER,
+    name TEXT NOT NULL,
+    region_id TEXT REFERENCES regioner(id)
+);
 CREATE TABLE IF NOT EXISTS storkredse (
     id TEXT PRIMARY KEY,
     name TEXT NOT NULL,
@@ -110,7 +125,7 @@ def init_db(conn: sqlite3.Connection) -> None:
 _TRUNCATE_ORDER = [
     "anomalies", "events", "turnout", "results", "party_votes",
     "candidates", "parties", "afstemningsomraader", "opstillingskredse",
-    "storkredse", "elections",
+    "storkredse", "kommuner", "regioner", "valglandsdele", "elections",
 ]
 
 
