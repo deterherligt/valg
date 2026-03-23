@@ -5,9 +5,9 @@ Build FV2022 demo scenario wave data.
 Usage:
     python scripts/build_fv2022_scenario.py [--force]
 
-Downloads FV2026 geography + candidates from SFTP and FV2022 vote results
-from the valg.dk API, then writes pre-baked wave directories to
-valg/scenarios/fv2022/.
+Downloads FV2026 geography from SFTP and FV2022 vote results from the
+valg.dk API, derives FV2022 kandidat-data from the CSV, then writes
+pre-baked wave directories to valg/scenarios/fv2022/.
 
 Options:
     --force   Re-download even if cache files exist
@@ -169,41 +169,6 @@ def normalize_ao_name(s: str) -> str:
     return n
 
 
-def distribute_candidate_votes(party_total: int, candidates: list[dict]) -> list[int]:
-    """Distribute party_total votes across candidates using 35%/power-decay algorithm.
-
-    Position 1 gets 35% of votes. Remaining 65% split with weight 1/pos^0.7.
-    Returns list of vote counts in same order as candidates.
-    Guarantees sum == party_total (remainder assigned to position 1).
-    """
-    if not candidates:
-        return []
-    if party_total == 0:
-        return [0] * len(candidates)
-
-    n = len(candidates)
-    result = [0] * n
-
-    if n == 1:
-        result[0] = party_total
-        return result
-
-    kredskandidat_votes = int(party_total * 0.35)
-    remainder = party_total - kredskandidat_votes
-
-    weights = [1.0 / (c["ballot_position"] ** 0.7) for c in candidates[1:]]
-    total_weight = sum(weights)
-
-    assigned = 0
-    for i, w in enumerate(weights):
-        votes = int(remainder * w / total_weight)
-        result[i + 1] = votes
-        assigned += votes
-
-    result[0] = kredskandidat_votes + (remainder - assigned)
-    return result
-
-
 def build_partistemmefordeling(ok_id: str, party_totals: dict[str, int]) -> dict:
     """Build a partistemmefordeling JSON structure for one opstillingskreds."""
     return {
@@ -221,31 +186,19 @@ def build_valgresultater(
     ao_id: str,
     optaellingstype: str,
     party_data: dict[str, dict],
-    ao_ok_id: str,
 ) -> dict:
     """Build a valgresultater JSON structure for one AO.
 
-    party_data: {party_id: {"total": int, "candidates_by_ok": {ok_id: [{"id", "ballot_position"}]}}}
-    ao_ok_id: the opstillingskreds this AO belongs to (for candidate lookup)
+    party_data: {party_id: {"total": int, "kandidater": [{"KandidatId": str, "Stemmer": int}]}}
     """
-    inden_for_parti = []
-
-    for party_id, pdata in party_data.items():
-        total = pdata["total"]
-        candidates = pdata["candidates_by_ok"].get(ao_ok_id, [])
-        vote_dist = distribute_candidate_votes(total, candidates)
-
-        kandidater = [
-            {"KandidatId": str(c["id"]), "Stemmer": vote_dist[i]}
-            for i, c in enumerate(candidates)
-        ]
-
-        inden_for_parti.append({
+    inden_for_parti = [
+        {
             "PartiId": party_id,
-            "Partistemmer": total,
-            "Kandidater": kandidater,
-        })
-
+            "Partistemmer": pdata["total"],
+            "Kandidater": pdata.get("kandidater", []),
+        }
+        for party_id, pdata in party_data.items()
+    ]
     return {
         "Valgresultater": {
             "AfstemningsomraadeId": str(ao_id),
@@ -314,7 +267,7 @@ def parse_geografi(geografi_dir: Path) -> dict[str, dict]:
 
 def parse_kandidatdata(kandidat_dir: Path) -> dict[str, dict[str, list[dict]]]:
     """
-    Parse FV2026 kandidat-data files.
+    Parse kandidat-data files.
 
     Returns {ok_id: {party_id: [{id, ballot_position}]}} sorted by ballot_position.
     ok_id is OpstillingskredsDagiId (string). party_id is Partibogstav.
@@ -373,6 +326,36 @@ def parse_fv2022_csv(csv_path: Path) -> dict[tuple[str, str], dict[str, int]]:
             except (ValueError, TypeError):
                 continue
             result.setdefault((ok_norm, ao_norm), {})[party_id] = votes
+    return result
+
+
+def parse_fv2022_personal_votes(
+    csv_path: Path,
+) -> dict[tuple[str, str], dict[str, dict[str, int]]]:
+    """
+    Parse FV2022 personal vote rows from the CSV.
+
+    Returns {(ok_norm, ao_norm): {party_id: {name_norm: votes}}}
+    Skips Partiliste rows (those are party-list votes, not personal votes).
+    """
+    result: dict[tuple[str, str], dict[str, dict[str, int]]] = {}
+    with csv_path.open(encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f, delimiter=";")
+        for row in reader:
+            navn = row.get("Navn", "").strip()
+            if navn == "Partiliste":
+                continue
+            if not navn:
+                continue
+            ok_norm = normalize_ok_name(row.get("Opstillingskreds", ""))
+            ao_norm = normalize_ao_name(row.get("Afstemningsområde", ""))
+            party_id = row.get("Partibogstav", "").strip()
+            name_norm = normalize_name(navn)
+            try:
+                votes = int(row.get("Stemmetal", 0))
+            except (ValueError, TypeError):
+                continue
+            result.setdefault((ok_norm, ao_norm), {}).setdefault(party_id, {})[name_norm] = votes
     return result
 
 
@@ -436,26 +419,90 @@ def download_fv2026_geografi(force: bool = False) -> None:
         transport.close()
 
 
-def download_fv2026_kandidatdata(force: bool = False) -> None:
-    """Download FV2026 kandidat-data files from SFTP into cache."""
-    import paramiko
-    local_kd = CACHE_DIR / "fv2026" / "kandidat-data"
-    local_kd.mkdir(parents=True, exist_ok=True)
 
-    if not force and any(local_kd.glob("*.json")):
-        print(f"  using cached fv2026/kandidat-data/ ({len(list(local_kd.glob('*.json')))} files)")
+def build_fv2022_kandidatdata_from_csv(
+    csv_path: Path,
+    geo_dir: Path,
+    output_dir: Path,
+    force: bool = False,
+) -> None:
+    """Build FV2022 kandidat-data JSON from CSV personal vote rows + FV2026 geografi.
+
+    Reads candidate names from the CSV (non-Partiliste rows), maps opstillingskreds
+    names to Dagi IDs via the geografi files, assigns sequential integer IDs, and
+    writes a single kandidat-data JSON file to output_dir.
+
+    Skips if output_dir already contains JSON files (unless force=True).
+    """
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    if not force and any(output_dir.glob("*.json")):
+        print(f"  using cached fv2022/kandidat-data/ ({len(list(output_dir.glob('*.json')))} files)")
         return
 
-    print("  downloading fv2026/kandidat-data from SFTP …")
-    transport = paramiko.Transport(("data.valg.dk", 22))
-    transport.connect(username="Valg", password="Valg")
-    sftp = paramiko.SFTPClient.from_transport(transport)
-    try:
-        count = download_sftp_dir(sftp, f"{FV2026_SFTP_PATH}/kandidat-data", local_kd, force=force)
-        print(f"  downloaded {count} kandidat-data files")
-    finally:
-        sftp.close()
-        transport.close()
+    print("  building fv2022/kandidat-data from CSV …")
+
+    # Build ok_name_norm -> ok_dagi_id mapping from FV2026 geografi
+    ok_name_to_id: dict[str, str] = {}
+    for f in geo_dir.glob("*.json"):
+        if f.name.endswith(".hash"):
+            continue
+        data = json.loads(f.read_text())
+        if not isinstance(data, list) or not data:
+            continue
+        if data[0].get("Type") == "Opstillingskreds":
+            for item in data:
+                name_norm = normalize_ok_name(item.get("Navn", ""))
+                ok_name_to_id[name_norm] = str(item.get("Dagi_id", ""))
+
+    # Collect candidates: {party_id: {ok_name_norm: set of candidate names}}
+    candidates_by_party_ok: dict[str, dict[str, list[str]]] = {}
+    with csv_path.open(encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f, delimiter=";")
+        for row in reader:
+            if row.get("Navn", "").strip() == "Partiliste":
+                continue
+            party_id = row.get("Partibogstav", "").strip()
+            ok_norm = normalize_ok_name(row.get("Opstillingskreds", ""))
+            name = row.get("Navn", "").strip()
+            if not party_id or not name or not ok_norm:
+                continue
+            candidates_by_party_ok.setdefault(party_id, {}).setdefault(ok_norm, [])
+            if name not in candidates_by_party_ok[party_id][ok_norm]:
+                candidates_by_party_ok[party_id][ok_norm].append(name)
+
+    # Build the JSON structure
+    next_id = 1
+    inden_for_parti = []
+
+    for party_id in sorted(candidates_by_party_ok):
+        party_kandidater = []
+        for ok_norm, names in sorted(candidates_by_party_ok[party_id].items()):
+            ok_dagi_id = ok_name_to_id.get(ok_norm, "")
+            if not ok_dagi_id:
+                continue
+            for pos, name in enumerate(sorted(names), start=1):  # alphabetical: CSV has no ballot positions
+                party_kandidater.append({
+                    "Id": next_id,
+                    "Navn": name,
+                    "Opstillingskredse": [{
+                        "OpstillingskredsDagiId": ok_dagi_id,
+                        "OpstilletIKreds": True,
+                        "KandidatsPlacering": pos,
+                    }],
+                })
+                next_id += 1
+        inden_for_parti.append({
+            "Partibogstav": party_id,
+            "Kandidater": party_kandidater,
+        })
+
+    out = {"IndenforParti": inden_for_parti}
+    (output_dir / "kandidat-data-fv2022.json").write_text(
+        json.dumps(out, ensure_ascii=False, indent=2)
+    )
+    n = sum(len(p["Kandidater"]) for p in inden_for_parti)
+    print(f"  built kandidat-data-fv2022.json ({n} candidates)")
 
 
 def download_fv2022_csv(force: bool = False) -> None:
@@ -481,8 +528,13 @@ def download_all(force: bool = False) -> None:
     print("Phase 1: Downloading data …")
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     download_fv2026_geografi(force=force)
-    download_fv2026_kandidatdata(force=force)
     download_fv2022_csv(force=force)
+    build_fv2022_kandidatdata_from_csv(
+        csv_path=CACHE_DIR / "fv2022_results.csv",
+        geo_dir=CACHE_DIR / "fv2026" / "geografi",
+        output_dir=CACHE_DIR / "fv2022" / "kandidat-data",
+        force=force,
+    )
     print()
 
 
@@ -648,8 +700,10 @@ def write_fintaelling_wave(
     hierarchy: dict[str, dict],
     fv2022_votes: dict[tuple[str, str], dict[str, int]],
     kandidatdata: dict[str, dict[str, list[dict]]],
+    personal_votes: dict[tuple[str, str], dict[str, dict[str, int]]],
+    unmatched: list[tuple] | None = None,
 ) -> None:
-    """Write one fintaelling wave: valgresultater with synthetic candidate votes."""
+    """Write one fintaelling wave: valgresultater with real personal votes."""
     wave_dir.mkdir(parents=True, exist_ok=True)
     t = WAVE_TIMES[wave_index]
 
@@ -671,20 +725,25 @@ def write_fintaelling_wave(
         ao_name = info["ao_name"]
         key = (normalize_ok_name(ok_name), normalize_ao_name(ao_name))
         ao_party_votes = fv2022_votes.get(key, {})
+        ao_personal = personal_votes.get(key, {})
 
         party_data: dict[str, dict] = {}
         for party_id, total in ao_party_votes.items():
             candidates = kandidatdata.get(ok_id, {}).get(party_id, [])
-            party_data[party_id] = {
-                "total": total,
-                "candidates_by_ok": {ok_id: candidates},
-            }
+            party_personal = ao_personal.get(party_id, {})
+            kandidater = []
+            for c in candidates:
+                name_norm = normalize_name(c["name"])
+                votes = party_personal.get(name_norm, 0)
+                if name_norm not in party_personal and unmatched is not None:
+                    unmatched.append((ok_name, ao_name, party_id, c["name"]))
+                kandidater.append({"KandidatId": str(c["id"]), "Stemmer": votes})
+            party_data[party_id] = {"total": total, "kandidater": kandidater}
 
         vr = build_valgresultater(
             ao_id=str(ao_id),
             optaellingstype="Fintaelling",
             party_data=party_data,
-            ao_ok_id=ok_id,
         )
         safe_ao_name = ao_name.replace("/", "-").replace(" ", "_")[:40]
         filename = f"valgresultater-Folketingsvalg-{safe_ao_name}-{ao_id}.json"
@@ -788,20 +847,21 @@ def run(force: bool = False) -> None:
     # Phase 2: Parse
     print("Phase 2: Parsing ...")
     geo_dir = CACHE_DIR / "fv2026" / "geografi"
-    kd_dir = CACHE_DIR / "fv2026" / "kandidat-data"
+    kd_dir = CACHE_DIR / "fv2022" / "kandidat-data"
     csv_path = CACHE_DIR / "fv2022_results.csv"
 
     hierarchy = parse_geografi(geo_dir)
     kandidatdata = parse_kandidatdata(kd_dir)
     fv2022_votes = parse_fv2022_csv(csv_path)
+    personal_votes = parse_fv2022_personal_votes(csv_path)
     id_mapping = build_id_mapping(hierarchy)
 
     matched_ao_ids = {id_mapping[k]: hierarchy[id_mapping[k]] for k in fv2022_votes if k in id_mapping}
-    unmatched = [k for k in fv2022_votes if k not in id_mapping]
+    unmatched_aos = [k for k in fv2022_votes if k not in id_mapping]
     print(f"  Matched {len(matched_ao_ids)}/{len(fv2022_votes)} AOs "
           f"({100*len(matched_ao_ids)//max(1,len(fv2022_votes))}%)")
-    if unmatched:
-        print(f"  Unmatched ({len(unmatched)}): {unmatched[:5]} ...")
+    if unmatched_aos:
+        print(f"  Unmatched ({len(unmatched_aos)}): {unmatched_aos[:5]} ...")
     print()
 
     # Phase 3: Wave assignment
@@ -846,13 +906,26 @@ def run(force: bool = False) -> None:
         write_preliminary_wave(wave_dir, wave_num, ao_ids, matched_ao_ids, cumulative_ok_votes, fv2022_votes)
         print(f"  wave_{wave_num:02d}: {len(ao_ids)} AOs")
 
+    unmatched: list[tuple] = []
     for wave_num in range(N_PRELIM_WAVES + 1, 33):
         ao_ids = final_by_wave.get(wave_num, [])
         if not ao_ids:
             continue
         wave_dir = OUTPUT_DIR / f"wave_{wave_num:02d}"
-        write_fintaelling_wave(wave_dir, wave_num, ao_ids, matched_ao_ids, fv2022_votes, kandidatdata)
+        write_fintaelling_wave(
+            wave_dir, wave_num, ao_ids, matched_ao_ids,
+            fv2022_votes, kandidatdata, personal_votes, unmatched,
+        )
         print(f"  wave_{wave_num:02d}: fintaelling {len(ao_ids)} AOs")
+
+    if unmatched:
+        print(f"\nUnmatched candidates: {len(unmatched)} total")
+        for ok, ao, party, name in unmatched[:10]:
+            print(f"  {party} | {ok} / {ao} | {name}")
+        if len(unmatched) > 10:
+            print(f"  ... and {len(unmatched) - 10} more")
+    else:
+        print("\nAll candidates matched to personal votes.")
 
     print(f"\nDone. {len(list(OUTPUT_DIR.glob('wave_*')))} waves written to {OUTPUT_DIR}")
 
