@@ -289,3 +289,46 @@ def test_tillaeg_storkredse_favours_underrepresented():
         kreds_per_party_per_storkreds, landsdel_storkredse,
     )
     assert result["A"].get("SK2", 0) == 1
+
+
+# --- allocate_seats_detail ---
+
+from valg.calculator import allocate_seats_detail
+
+def test_seats_detail_returns_structure():
+    national = {"A": 50000, "B": 30000, "C": 20000}
+    storkreds = {"1": {"A": 50000, "B": 30000, "C": 20000}}
+    kreds = {"1": 135}
+    result = allocate_seats_detail(national, storkreds, kreds)
+    assert "A" in result
+    for key in ("kreds", "tillaeg", "total", "kreds_by_storkreds", "tillaeg_by_storkreds"):
+        assert key in result["A"]
+
+def test_seats_detail_total_consistency():
+    national = {"A": 50000, "B": 30000, "C": 20000}
+    storkreds = {"1": {"A": 50000, "B": 30000, "C": 20000}}
+    kreds = {"1": 135}
+    result = allocate_seats_detail(national, storkreds, kreds)
+    for party, data in result.items():
+        assert data["kreds"] + data["tillaeg"] == data["total"]
+
+def test_seats_detail_overhang_triggers_recalc():
+    national = {"A": 100, "B": 80, "C": 70}
+    storkreds = {
+        "1": {"A": 100, "B": 20, "C": 10},
+        "5": {"A": 0, "B": 60, "C": 60},
+    }
+    kreds = {"1": 5, "5": 5}
+    result = allocate_seats_detail(national, storkreds, kreds)
+    assert result["A"]["tillaeg"] >= 0
+    for party, d in result.items():
+        assert d["kreds"] + d["tillaeg"] == d["total"]
+
+def test_seats_detail_no_overhang_when_kreds_equals_hare():
+    national = {"A": 500, "B": 300, "C": 200}
+    storkreds = {"1": {"A": 500, "B": 300, "C": 200}}
+    kreds = {"1": 10}
+    result = allocate_seats_detail(national, storkreds, kreds)
+    for party, d in result.items():
+        assert d["tillaeg"] >= 0
+        assert d["kreds"] + d["tillaeg"] == d["total"]

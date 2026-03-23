@@ -132,35 +132,127 @@ def _apply_threshold(
     return qualifying
 
 
+def allocate_seats_detail(
+    national_votes: dict[str, int],
+    storkreds_votes: dict[str, dict[str, int]],
+    kredsmandater: dict[str, int],
+) -> dict[str, dict]:
+    all_parties = set(national_votes.keys())
+
+    # Step 1 (§76): kredsmandater per storkreds via D'Hondt
+    kreds_detail = allocate_kredsmandater_detail(storkreds_votes, kredsmandater)
+
+    # Sum kreds per party
+    kreds_per_party: dict[str, int] = {}
+    kreds_by_storkreds: dict[str, dict[str, int]] = {}
+    for sk, sk_seats in kreds_detail.items():
+        for party, s in sk_seats.items():
+            kreds_per_party[party] = kreds_per_party.get(party, 0) + s
+            kreds_by_storkreds.setdefault(party, {})[sk] = \
+                kreds_by_storkreds.get(party, {}).get(sk, 0) + s
+
+    # Qualifying (§76 threshold)
+    qualifying = _apply_threshold(national_votes, kreds_per_party)
+
+    # Step 2 (§77): Hare largest remainder for TOTAL_SEATS
+    # Overhang loop (§77 stk. 4-5)
+    overhang_parties: set[str] = set()
+    remaining_seats = TOTAL_SEATS
+    while True:
+        eligible = {p: v for p, v in national_votes.items()
+                    if p in qualifying and p not in overhang_parties}
+        hare_seats = hare_largest_remainder(eligible, remaining_seats)
+
+        new_overhang = False
+        for party, seats in hare_seats.items():
+            kreds = kreds_per_party.get(party, 0)
+            if kreds > seats:  # strict >
+                overhang_parties.add(party)
+                remaining_seats -= kreds
+                new_overhang = True
+
+        if not new_overhang:
+            break
+
+    # Tillaeg per party
+    tillaeg_per_party: dict[str, int] = {}
+    for party in qualifying:
+        if party in overhang_parties:
+            tillaeg_per_party[party] = 0
+        else:
+            tillaeg_per_party[party] = max(0, hare_seats.get(party, 0) - kreds_per_party.get(party, 0))
+
+    # Step 3 (§78): landsdel tillaeg allocation
+    # Build landsdel votes by summing storkreds votes
+    party_landsdel_votes: dict[str, dict[str, int]] = {}
+    kreds_per_party_per_landsdel: dict[str, dict[str, int]] = {}
+    kreds_per_party_per_storkreds: dict[str, dict[str, int]] = {}
+    for sk, sk_votes in storkreds_votes.items():
+        ld = STORKREDS_TO_LANDSDEL.get(sk)
+        if ld is None:
+            continue
+        for party, votes in sk_votes.items():
+            party_landsdel_votes.setdefault(party, {})
+            party_landsdel_votes[party][ld] = party_landsdel_votes[party].get(ld, 0) + votes
+
+    for sk, sk_seats in kreds_detail.items():
+        ld = STORKREDS_TO_LANDSDEL.get(sk)
+        for party, s in sk_seats.items():
+            kreds_per_party_per_landsdel.setdefault(party, {})
+            kreds_per_party_per_landsdel[party][ld] = \
+                kreds_per_party_per_landsdel[party].get(ld, 0) + s
+            kreds_per_party_per_storkreds.setdefault(party, {})
+            kreds_per_party_per_storkreds[party][sk] = \
+                kreds_per_party_per_storkreds[party].get(sk, 0) + s
+
+    # Only pass qualifying parties with tillaeg > 0
+    tillaeg_qualifying = {p: t for p, t in tillaeg_per_party.items() if t > 0}
+    ld_votes_qualifying = {p: v for p, v in party_landsdel_votes.items() if p in tillaeg_qualifying}
+    kreds_ld_qualifying = {p: v for p, v in kreds_per_party_per_landsdel.items() if p in tillaeg_qualifying}
+
+    tillaeg_by_landsdel = allocate_tillaeg_to_landsdele(
+        ld_votes_qualifying, tillaeg_qualifying, kreds_ld_qualifying,
+    )
+
+    # Step 4 (§79): storkreds tillaeg allocation
+    sk_votes_qualifying = {p: {sk: v for sk, v in storkreds_votes_for_party(storkreds_votes, p).items()}
+                           for p in tillaeg_qualifying}
+    kreds_sk_qualifying = {p: v for p, v in kreds_per_party_per_storkreds.items() if p in tillaeg_qualifying}
+
+    tillaeg_by_storkreds_result = allocate_tillaeg_to_storkredse(
+        sk_votes_qualifying, tillaeg_by_landsdel,
+        kreds_sk_qualifying, LANDSDEL_STORKREDSE,
+    )
+
+    # Assemble result
+    result: dict[str, dict] = {}
+    for party in all_parties:
+        kreds = kreds_per_party.get(party, 0)
+        tillaeg = tillaeg_per_party.get(party, 0)
+        result[party] = {
+            "kreds": kreds,
+            "tillaeg": tillaeg,
+            "total": kreds + tillaeg,
+            "kreds_by_storkreds": kreds_by_storkreds.get(party, {}),
+            "tillaeg_by_storkreds": tillaeg_by_storkreds_result.get(party, {}),
+        }
+
+    return result
+
+
+def storkreds_votes_for_party(
+    storkreds_votes: dict[str, dict[str, int]], party: str,
+) -> dict[str, int]:
+    return {sk: votes.get(party, 0) for sk, votes in storkreds_votes.items()}
+
+
 def allocate_seats_total(
     national_votes: dict[str, int],
     storkreds_votes: dict[str, dict[str, int]],
     kredsmandater: dict[str, int],
 ) -> dict[str, int]:
-    """
-    Full seat allocation: kredsmandater (D'Hondt) + approx tillægsmandater (Saint-Laguë).
-
-    Args:
-        national_votes: {party_id: total_votes_nationally}
-        storkreds_votes: {storkreds_id: {party_id: votes}}
-        kredsmandater: {storkreds_id: n_seats}
-
-    Returns:
-        {party_id: total_projected_seats} for all parties (0 if below threshold)
-    """
-    kreds_won = allocate_kredsmandater(storkreds_votes, kredsmandater)
-    qualifying = _apply_threshold(national_votes, kreds_won)
-    qualifying_votes = {p: v for p, v in national_votes.items() if p in qualifying}
-    national_seats = modified_saint_lague(qualifying_votes, TOTAL_SEATS)
-
-    result = {p: 0 for p in national_votes}
-    for party in qualifying:
-        national = national_seats.get(party, 0)
-        kreds = kreds_won.get(party, 0)
-        tillaeg = max(0, national - kreds)
-        result[party] = kreds + tillaeg
-
-    return result
+    detail = allocate_seats_detail(national_votes, storkreds_votes, kredsmandater)
+    return {party: d["total"] for party, d in detail.items()}
 
 
 def votes_to_gain_seat(
