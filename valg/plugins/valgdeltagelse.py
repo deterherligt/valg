@@ -9,7 +9,7 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     if not isinstance(data, dict):
         return []
     ao_id = str(data.get("AfstemningsområdeDagiId", ""))
-    for entry in data.get("Valgdeltagelse", []):
+    for entry in (data.get("Valgdeltagelse") or []):
         rows.append({
             "afstemningsomraade_id": ao_id,
             "eligible_voters": entry.get("AntalStemmeberretigedeVælgere") or entry.get("AntalStemmeberettigede"),

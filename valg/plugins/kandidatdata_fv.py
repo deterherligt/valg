@@ -8,14 +8,14 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     rows = []
     if not isinstance(data, dict):
         return []
-    for party in data.get("IndenforParti", []):
+    for party in (data.get("IndenforParti") or []):
         party_letter = party.get("Partibogstav") or party.get("Bogstavbetegnelse")
-        for k in party.get("Kandidater", []):
+        for k in (party.get("Kandidater") or []):
             cand_id = k.get("Id")
             cand_name = k.get("Stemmeseddelnavn") or k.get("Navn")
             if not cand_id or not cand_name:
                 continue
-            for ok in k.get("Opstillingskredse", []):
+            for ok in (k.get("Opstillingskredse") or []):
                 if not ok.get("OpstilletIKreds"):
                     continue
                 rows.append({

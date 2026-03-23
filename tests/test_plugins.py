@@ -250,3 +250,115 @@ def test_geografi_ok_parse_skips_missing_id():
 def test_geografi_ok_parse_non_list_returns_empty():
     plugin = find_plugin("Opstillingskreds-KV2025.json")
     assert plugin.parse({}, "2025-11-18T21:00:00") == []
+
+
+# --- MATCH: Valglandsdel, Region, Kommune ---
+
+def test_valglandsdel_matches():
+    assert find_plugin("Valglandsdel-190320261917.json") is not None
+
+def test_region_matches():
+    assert find_plugin("Region-190320261917.json") is not None
+
+def test_kommune_matches():
+    assert find_plugin("Kommune-190320261917.json") is not None
+
+
+# --- parse: Valglandsdel ---
+
+def test_valglandsdel_parse_returns_rows():
+    plugin = find_plugin("Valglandsdel-190320261917.json")
+    data = [
+        {"Bogstav": "A", "Navn": "Hovedstaden", "Type": "Landsdel"},
+        {"Bogstav": "B", "Navn": "Sjælland-Syddanmark", "Type": "Landsdel"},
+    ]
+    rows = plugin.parse(data, "2026-03-19T19:17:00")
+    assert len(rows) == 2
+    assert rows[0] == {"id": "A", "name": "Hovedstaden"}
+    assert rows[1] == {"id": "B", "name": "Sjælland-Syddanmark"}
+
+def test_valglandsdel_parse_non_list_returns_empty():
+    plugin = find_plugin("Valglandsdel-190320261917.json")
+    assert plugin.parse({}, "2026-03-19T19:17:00") == []
+
+def test_valglandsdel_parse_skips_missing_bogstav():
+    plugin = find_plugin("Valglandsdel-190320261917.json")
+    data = [{"Navn": "Hovedstaden"}, {"Bogstav": "B", "Navn": "Sjælland-Syddanmark"}]
+    rows = plugin.parse(data, "2026-03-19T19:17:00")
+    assert len(rows) == 1
+
+
+# --- parse: Region ---
+
+def test_region_parse_returns_rows():
+    plugin = find_plugin("Region-190320261917.json")
+    data = [
+        {"Dagi_id": "389098", "Kode": 1081, "Navn": "Region Nordjylland"},
+        {"Dagi_id": "389102", "Kode": 1083, "Navn": "Region Syddanmark"},
+    ]
+    rows = plugin.parse(data, "2026-03-19T19:17:00")
+    assert len(rows) == 2
+    assert rows[0]["id"] == "389098"
+    assert rows[0]["code"] == 1081
+    assert rows[0]["name"] == "Region Nordjylland"
+
+def test_region_parse_non_list_returns_empty():
+    plugin = find_plugin("Region-190320261917.json")
+    assert plugin.parse({}, "2026-03-19T19:17:00") == []
+
+def test_region_parse_skips_missing_id():
+    plugin = find_plugin("Region-190320261917.json")
+    data = [{"Kode": 1081, "Navn": "No ID"}, {"Dagi_id": "389102", "Kode": 1083, "Navn": "OK"}]
+    rows = plugin.parse(data, "2026-03-19T19:17:00")
+    assert len(rows) == 1
+
+
+# --- parse: Kommune ---
+
+def test_kommune_parse_returns_rows():
+    plugin = find_plugin("Kommune-190320261917.json")
+    data = [
+        {"Dagi_id": "389204", "Kode": 840, "Navn": "Rebild", "Regionskode": 1081},
+    ]
+    rows = plugin.parse(data, "2026-03-19T19:17:00")
+    assert len(rows) == 1
+    assert rows[0]["id"] == "389204"
+    assert rows[0]["code"] == 840
+    assert rows[0]["name"] == "Rebild"
+    assert rows[0]["region_id"] == "1081"
+
+def test_kommune_parse_non_list_returns_empty():
+    plugin = find_plugin("Kommune-190320261917.json")
+    assert plugin.parse({}, "2026-03-19T19:17:00") == []
+
+def test_kommune_parse_skips_missing_id():
+    plugin = find_plugin("Kommune-190320261917.json")
+    data = [{"Kode": 840, "Navn": "No ID"}, {"Dagi_id": "389204", "Kode": 840, "Navn": "Rebild", "Regionskode": 1081}]
+    rows = plugin.parse(data, "2026-03-19T19:17:00")
+    assert len(rows) == 1
+
+
+# --- valgresultater edge cases ---
+
+def test_valgresultater_parse_null_kandidater():
+    plugin = find_plugin("valgresultater-Folketingsvalg-Kbh-1__-260220261823.json")
+    data = {
+        "AfstemningsområdeDagiId": "707732",
+        "Resultatart": "ForeløbigOptælling",
+        "IndenforParti": [
+            {"Bogstavbetegnelse": "A", "Stemmer": 1548, "Kandidater": None},
+        ],
+    }
+    rows = plugin.parse(data, "2026-02-26T17:23:14")
+    assert len(rows) == 1
+    assert rows[0]["votes"] == 1548
+
+def test_valgresultater_parse_no_indenforparti():
+    plugin = find_plugin("valgresultater-Folketingsvalg-Kbh-3__Nordvest-260220261823.json")
+    data = {
+        "AfstemningsområdeDagiId": "706166",
+        "Resultatart": "IngenResultater",
+        "AfgivneStemmer": 0,
+    }
+    rows = plugin.parse(data, "2026-02-26T17:23:16")
+    assert rows == []
