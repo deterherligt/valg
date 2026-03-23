@@ -454,6 +454,20 @@
             "Stemmer": 6
           }
         ]
+      },
+      {
+        "PartiId": "(Uden for parti)",
+        "Partistemmer": 0,
+        "Kandidater": [
+          {
+            "KandidatId": "34",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "35",
+            "Stemmer": 2
+          }
+        ]
       }
     ],
     "KandidaterUdenforParti": []

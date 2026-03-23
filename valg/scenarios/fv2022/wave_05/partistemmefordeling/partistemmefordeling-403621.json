@@ -4,59 +4,63 @@
     "Partier": [
       {
         "PartiId": "A",
-        "Stemmer": 2077
+        "Stemmer": 5666
       },
       {
         "PartiId": "B",
-        "Stemmer": 111
+        "Stemmer": 347
       },
       {
         "PartiId": "C",
-        "Stemmer": 296
+        "Stemmer": 981
       },
       {
         "PartiId": "D",
-        "Stemmer": 342
+        "Stemmer": 1911
       },
       {
         "PartiId": "F",
-        "Stemmer": 315
+        "Stemmer": 764
       },
       {
         "PartiId": "I",
-        "Stemmer": 723
+        "Stemmer": 1405
       },
       {
         "PartiId": "K",
-        "Stemmer": 54
+        "Stemmer": 159
       },
       {
         "PartiId": "M",
-        "Stemmer": 752
+        "Stemmer": 1654
       },
       {
         "PartiId": "O",
-        "Stemmer": 201
+        "Stemmer": 760
       },
       {
         "PartiId": "Q",
-        "Stemmer": 15
+        "Stemmer": 23
       },
       {
         "PartiId": "V",
-        "Stemmer": 899
+        "Stemmer": 3537
       },
       {
         "PartiId": "Æ",
-        "Stemmer": 1698
+        "Stemmer": 3374
       },
       {
         "PartiId": "Ø",
-        "Stemmer": 134
+        "Stemmer": 296
       },
       {
         "PartiId": "Å",
-        "Stemmer": 87
+        "Stemmer": 187
+      },
+      {
+        "PartiId": "(Uden for parti)",
+        "Stemmer": 20
       }
     ]
   }

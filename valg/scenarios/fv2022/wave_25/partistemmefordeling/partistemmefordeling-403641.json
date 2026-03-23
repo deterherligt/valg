@@ -1,0 +1,67 @@
+{
+  "Valg": {
+    "OpstillingskredsId": "403641",
+    "Partier": [
+      {
+        "PartiId": "A",
+        "Stemmer": 8248
+      },
+      {
+        "PartiId": "B",
+        "Stemmer": 1153
+      },
+      {
+        "PartiId": "C",
+        "Stemmer": 2003
+      },
+      {
+        "PartiId": "D",
+        "Stemmer": 1566
+      },
+      {
+        "PartiId": "F",
+        "Stemmer": 2326
+      },
+      {
+        "PartiId": "I",
+        "Stemmer": 2869
+      },
+      {
+        "PartiId": "K",
+        "Stemmer": 315
+      },
+      {
+        "PartiId": "M",
+        "Stemmer": 3665
+      },
+      {
+        "PartiId": "O",
+        "Stemmer": 690
+      },
+      {
+        "PartiId": "Q",
+        "Stemmer": 280
+      },
+      {
+        "PartiId": "V",
+        "Stemmer": 6430
+      },
+      {
+        "PartiId": "Æ",
+        "Stemmer": 3634
+      },
+      {
+        "PartiId": "Ø",
+        "Stemmer": 823
+      },
+      {
+        "PartiId": "Å",
+        "Stemmer": 659
+      },
+      {
+        "PartiId": "(Uden for parti)",
+        "Stemmer": 24
+      }
+    ]
+  }
+}

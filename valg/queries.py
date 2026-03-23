@@ -7,6 +7,7 @@ No Rich, no console output.
 from collections import defaultdict
 
 from valg import calculator
+from valg.calculator import TURNOUT_ESTIMATE
 
 
 def get_seat_data(conn):
@@ -72,7 +73,14 @@ def query_status(conn) -> list[dict]:
     if not national:
         return []
 
-    seats = calculator.allocate_seats_total(national, storkreds, kredsmandater)
+    progress, national_pct = get_reporting_progress(conn)
+    projected = calculator.project_storkreds_votes(storkreds, progress)
+    projected_national = {}
+    for sk_votes in projected.values():
+        for party, votes in sk_votes.items():
+            projected_national[party] = projected_national.get(party, 0) + votes
+
+    detail = calculator.allocate_seats_detail(projected_national, projected, kredsmandater)
     total_votes = sum(national.values()) or 1
 
     return [
@@ -80,7 +88,10 @@ def query_status(conn) -> list[dict]:
             "party": party,
             "votes": votes,
             "pct": round(votes / total_votes * 100, 1),
-            "seats": seats.get(party, 0),
+            "seats": detail.get(party, {}).get("total", 0),
+            "kreds_seats": detail.get(party, {}).get("kreds", 0),
+            "tillaeg_seats": detail.get(party, {}).get("tillaeg", 0),
+            "reporting_pct": round(national_pct * 100, 1),
             "districts_prelim": prelim_ao,
             "districts_final": final_ao,
             "districts_total": total_ao,
@@ -180,7 +191,14 @@ def query_api_parties(conn) -> list[dict]:
     if not national:
         return []
 
-    seats = calculator.allocate_seats_total(national, storkreds, kredsmandater)
+    progress, national_pct = get_reporting_progress(conn)
+    projected = calculator.project_storkreds_votes(storkreds, progress)
+    projected_national = {}
+    for sk_votes in projected.values():
+        for party, votes in sk_votes.items():
+            projected_national[party] = projected_national.get(party, 0) + votes
+
+    detail = calculator.allocate_seats_detail(projected_national, projected, kredsmandater)
     total_votes = sum(national.values()) or 1
 
     party_rows = {
@@ -191,7 +209,8 @@ def query_api_parties(conn) -> list[dict]:
     result = []
     for party_id, votes in sorted(national.items(), key=lambda x: -x[1]):
         info = party_rows.get(party_id, {"id": party_id, "letter": None, "name": party_id})
-        seat_count = seats.get(party_id, 0)
+        d = detail.get(party_id, {})
+        seat_count = d.get("total", 0)
         gain = calculator.votes_to_gain_seat(party_id, national, storkreds, kredsmandater)
         lose = calculator.votes_to_lose_seat(party_id, national, storkreds, kredsmandater)
         result.append({
@@ -200,6 +219,9 @@ def query_api_parties(conn) -> list[dict]:
             "name": info["name"],
             "votes": votes,
             "seats": seat_count,
+            "kreds_seats": d.get("kreds", 0),
+            "tillaeg_seats": d.get("tillaeg", 0),
+            "reporting_pct": round(national_pct * 100, 1),
             "pct": round(votes / total_votes * 100, 1),
             "gain": gain,
             "lose": lose,
@@ -243,7 +265,14 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
     if not national:
         return []
 
-    seats_alloc = calculator.allocate_seats_total(national, storkreds_votes, kredsmandater)
+    progress, national_pct = get_reporting_progress(conn)
+    projected = calculator.project_storkreds_votes(storkreds_votes, progress)
+    projected_national = {}
+    for sk_votes in projected.values():
+        for party, votes in sk_votes.items():
+            projected_national[party] = projected_national.get(party, 0) + votes
+
+    seats_detail = calculator.allocate_seats_detail(projected_national, projected, kredsmandater)
     total_votes = sum(national.values()) or 1
 
     storkreds_names = {
@@ -272,20 +301,22 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
         if party_id not in national:
             continue
 
-        # Kredsmandater breakdown per storkreds (D'Hondt per storkreds)
-        sk_seats_for_party: dict[str, int] = {}  # sk_id → kredsmandat seats for this party
+        # Seat breakdown from allocate_seats_detail
+        party_detail = seats_detail.get(party_id, {})
+        kreds_by_sk = party_detail.get("kreds_by_storkreds", {})
+        tillaeg_by_sk = party_detail.get("tillaeg_by_storkreds", {})
+        sk_seats_for_party: dict[str, int] = {}
         seats_breakdown = []
-        for sk_id, sk_votes in storkreds_votes.items():
-            n = kredsmandater.get(sk_id, 0)
-            if n <= 0:
-                continue
-            sk_seats_map = calculator.dhondt(sk_votes, n)
-            s = sk_seats_map.get(party_id, 0)
-            sk_seats_for_party[sk_id] = s
-            if s > 0:
+        all_sk_ids = set(kreds_by_sk.keys()) | set(tillaeg_by_sk.keys())
+        for sk_id in all_sk_ids:
+            kreds_s = kreds_by_sk.get(sk_id, 0)
+            tillaeg_s = tillaeg_by_sk.get(sk_id, 0)
+            sk_seats_for_party[sk_id] = kreds_s
+            if kreds_s > 0 or tillaeg_s > 0:
                 seats_breakdown.append({
                     "name": storkreds_names.get(sk_id, sk_id),
-                    "seats": s,
+                    "seats": kreds_s,
+                    "tillaeg": tillaeg_s,
                 })
 
         # Candidate breakdown
@@ -381,7 +412,7 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
             del c["_sk_id"]
 
         # Cutoff margin: difference between last candidate in and first candidate out
-        party_seats = seats_alloc.get(party_id, 0)
+        party_seats = party_detail.get("total", 0)
         cutoff_margin = None
         if has_votes and party_seats >= 1 and len(candidates) > party_seats:
             last_in = candidates[party_seats - 1]["votes"]
@@ -397,6 +428,8 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
             "votes": national[party_id],
             "pct": round(national[party_id] / total_votes * 100, 1),
             "seats_total": party_seats,
+            "kreds_seats": party_detail.get("kreds", 0),
+            "tillaeg_seats": party_detail.get("tillaeg", 0),
             "seats_by_storkreds": seats_breakdown,
             "candidates": candidates,
             "has_votes": has_votes,
@@ -644,3 +677,40 @@ def query_api_candidate_feed(conn, candidate_id: str, limit: int = 20) -> list[d
         {"occurred_at": r["occurred_at"], "district": r["district_name"], "delta": r["delta"]}
         for r in rows
     ]
+
+
+def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
+    rows = conn.execute("""
+        SELECT ok.storkreds_id,
+               SUM(pv.votes) as reported,
+               (SELECT SUM(ao.eligible_voters)
+                FROM afstemningsomraader ao
+                JOIN opstillingskredse ok2 ON ok2.id = ao.opstillingskreds_id
+                WHERE ok2.storkreds_id = ok.storkreds_id) as eligible
+        FROM party_votes pv
+        INNER JOIN (
+            SELECT opstillingskreds_id, party_id, MAX(snapshot_at) as latest
+            FROM party_votes
+            GROUP BY opstillingskreds_id, party_id
+        ) lat ON pv.opstillingskreds_id = lat.opstillingskreds_id
+              AND pv.party_id = lat.party_id
+              AND pv.snapshot_at = lat.latest
+        JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id
+        GROUP BY ok.storkreds_id
+    """).fetchall()
+
+    progress = {}
+    total_reported = 0
+    total_eligible = 0
+    for r in rows:
+        reported = r["reported"] or 0
+        eligible = r["eligible"] or 0
+        expected = eligible * TURNOUT_ESTIMATE
+        total_reported += reported
+        total_eligible += eligible
+        progress[str(r["storkreds_id"])] = min(1.0, reported / expected) if expected > 0 else (1.0 if reported > 0 else 0.0)
+
+    total_expected = total_eligible * TURNOUT_ESTIMATE
+    national_pct = min(1.0, total_reported / total_expected) if total_expected > 0 else (1.0 if total_reported > 0 else 0.0)
+
+    return progress, national_pct

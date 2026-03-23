@@ -70,7 +70,7 @@
             <div>
               <div class="party-name" x-text="(p.letter || p.id) + ' — ' + p.name"></div>
               <div class="party-sub">
-                <span x-text="formatNum(p.votes) + ' votes · ' + p.seats + ' seats'"></span>
+                <span x-text="formatNum(p.votes) + ' votes · ' + p.kreds_seats + ' kreds + ' + p.tillaeg_seats + (p.reporting_pct < 100 ? ' tillaeg [' + p.reporting_pct + '% ind]' : ' tillaeg') + ' = ' + (p.kreds_seats + p.tillaeg_seats) + ' seats'"></span>
               </div>
               <div class="party-sub">
                 <span class="flip-gain" x-text="'+' + formatNum(p.gain) + ' to gain'"></span>
@@ -423,7 +423,7 @@
 
       <div class="about-section">
         <div class="about-section-heading">Mandatberegning</div>
-        <p>Kredsmandater (135) beregnes med D'Hondt-metoden per storkreds — præcis. Tillægsmandater (40) beregnes approksimativt via modificeret Saint-Laguë nationalt minus kredsmandater. Den eksakte beregning kræver data fra alle 8 storkredse og implementeres i v2.</p>
+        <p>Kredsmandater (135) beregnes med D'Hondt per storkreds (§76). National fordeling (175) via Hare-kvoten (§77). Tillægsmandater fordeles til landsdele via Sainte-Laguë (§78) og til storkredse via dansk metode 1-4-7-10 (§79). Før alle kredse er optalt, projiceres stemmer baseret på indberetningsgrad.</p>
       </div>
 
       <div class="about-section">

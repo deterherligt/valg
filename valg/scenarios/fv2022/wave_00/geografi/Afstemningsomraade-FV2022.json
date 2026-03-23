@@ -1057,27 +1057,6 @@
     "ValgId": "FV2022"
   },
   {
-    "Kode": "704384",
-    "Navn": "Hjørring - Nord",
-    "OpstillingskredsKode": "403584",
-    "AntalStemmeberettigede": 0,
-    "ValgId": "FV2022"
-  },
-  {
-    "Kode": "702842",
-    "Navn": "Hjørring - Syd",
-    "OpstillingskredsKode": "403584",
-    "AntalStemmeberettigede": 0,
-    "ValgId": "FV2022"
-  },
-  {
-    "Kode": "702836",
-    "Navn": "Hjørring - Vest",
-    "OpstillingskredsKode": "403584",
-    "AntalStemmeberettigede": 0,
-    "ValgId": "FV2022"
-  },
-  {
     "Kode": "702854",
     "Navn": "Vrå",
     "OpstillingskredsKode": "403584",
@@ -2947,8 +2926,8 @@
     "ValgId": "FV2022"
   },
   {
-    "Kode": "703592",
-    "Navn": "Lille Næstved Skole - Karrebæk",
+    "Kode": "701870",
+    "Navn": "Lille Næstved Skole - Digtervej",
     "OpstillingskredsKode": "403635",
     "AntalStemmeberettigede": 0,
     "ValgId": "FV2022"
@@ -2968,13 +2947,6 @@
     "ValgId": "FV2022"
   },
   {
-    "Kode": "711136",
-    "Navn": "Herlufsholmhallen",
-    "OpstillingskredsKode": "403635",
-    "AntalStemmeberettigede": 0,
-    "ValgId": "FV2022"
-  },
-  {
     "Kode": "711142",
     "Navn": "Kobberbakkeskolen - Sydby",
     "OpstillingskredsKode": "403635",
@@ -2982,8 +2954,8 @@
     "ValgId": "FV2022"
   },
   {
-    "Kode": "706418",
-    "Navn": "Kobberbakkeskolen - Rønnebæk",
+    "Kode": "711136",
+    "Navn": "Herlufsholmhallen",
     "OpstillingskredsKode": "403635",
     "AntalStemmeberettigede": 0,
     "ValgId": "FV2022"
@@ -5936,6 +5908,27 @@
     "ValgId": "FV2022"
   },
   {
+    "Kode": "706992",
+    "Navn": "Måløv Ny Hal - Måløvhøj Skole - Måløv",
+    "OpstillingskredsKode": "403559",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710152",
+    "Navn": "Egebjerghallen - Skovvejens Skole Øst",
+    "OpstillingskredsKode": "403559",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710164",
+    "Navn": "Østerhøjhallen - Måløvhøj Skole - Østerhøj",
+    "OpstillingskredsKode": "403559",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
     "Kode": "712100",
     "Navn": "Hadsten Nord",
     "OpstillingskredsKode": "403603",
@@ -8256,6 +8249,90 @@
     "Kode": "712312",
     "Navn": "Chr.Feld/Stepping/Taps/Hejls",
     "OpstillingskredsKode": "403627",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705710",
+    "Navn": "Dalmose - Dalmosehallen",
+    "OpstillingskredsKode": "403630",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748430",
+    "Navn": "Slots Bjergby - Hashøjskolen",
+    "OpstillingskredsKode": "403630",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "704408",
+    "Navn": "Sørbymagle - Sørbymagle forsamlingshus",
+    "OpstillingskredsKode": "403630",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748854",
+    "Navn": "Tårnborg - Taarnborg Forsamlingshus",
+    "OpstillingskredsKode": "403630",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "711606",
+    "Navn": "Vemmelev - Vemmelevhallen",
+    "OpstillingskredsKode": "403630",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "702758",
+    "Navn": "Rude - Kirkeskovskolen",
+    "OpstillingskredsKode": "403630",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "720074",
+    "Navn": "Skælskør - Skælskør Badmintoncenter",
+    "OpstillingskredsKode": "403630",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701108",
+    "Navn": "Agersø - Agersøhallen",
+    "OpstillingskredsKode": "403630",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "701098",
+    "Navn": "Boeslunde - Boeslunde Hallen",
+    "OpstillingskredsKode": "403630",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "705790",
+    "Navn": "Omø - Omø Forsamlingshus",
+    "OpstillingskredsKode": "403630",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "710288",
+    "Navn": "Vestermose - Hallelev Forsamlingshus",
+    "OpstillingskredsKode": "403630",
+    "AntalStemmeberettigede": 0,
+    "ValgId": "FV2022"
+  },
+  {
+    "Kode": "748852",
+    "Navn": "Stillinge - Stillingehallen",
+    "OpstillingskredsKode": "403630",
     "AntalStemmeberettigede": 0,
     "ValgId": "FV2022"
   },

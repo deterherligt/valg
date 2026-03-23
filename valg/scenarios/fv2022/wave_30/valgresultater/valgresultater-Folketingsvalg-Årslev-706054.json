@@ -1,0 +1,467 @@
+{
+  "Valgresultater": {
+    "AfstemningsomraadeId": "706054",
+    "Optaellingstype": "Fintaelling",
+    "IndenforParti": [
+      {
+        "PartiId": "A",
+        "Partistemmer": 732,
+        "Kandidater": [
+          {
+            "KandidatId": "804",
+            "Stemmer": 52
+          },
+          {
+            "KandidatId": "805",
+            "Stemmer": 63
+          },
+          {
+            "KandidatId": "806",
+            "Stemmer": 124
+          },
+          {
+            "KandidatId": "807",
+            "Stemmer": 13
+          },
+          {
+            "KandidatId": "808",
+            "Stemmer": 7
+          },
+          {
+            "KandidatId": "809",
+            "Stemmer": 63
+          },
+          {
+            "KandidatId": "810",
+            "Stemmer": 22
+          },
+          {
+            "KandidatId": "811",
+            "Stemmer": 80
+          }
+        ]
+      },
+      {
+        "PartiId": "B",
+        "Partistemmer": 34,
+        "Kandidater": [
+          {
+            "KandidatId": "1606",
+            "Stemmer": 14
+          },
+          {
+            "KandidatId": "1607",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "1608",
+            "Stemmer": 11
+          },
+          {
+            "KandidatId": "1609",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "1610",
+            "Stemmer": 18
+          }
+        ]
+      },
+      {
+        "PartiId": "C",
+        "Partistemmer": 66,
+        "Kandidater": [
+          {
+            "KandidatId": "2513",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "2514",
+            "Stemmer": 6
+          },
+          {
+            "KandidatId": "2515",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "2516",
+            "Stemmer": 12
+          },
+          {
+            "KandidatId": "2517",
+            "Stemmer": 3
+          },
+          {
+            "KandidatId": "2518",
+            "Stemmer": 12
+          },
+          {
+            "KandidatId": "2519",
+            "Stemmer": 37
+          },
+          {
+            "KandidatId": "2520",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "2521",
+            "Stemmer": 1
+          }
+        ]
+      },
+      {
+        "PartiId": "D",
+        "Partistemmer": 68,
+        "Kandidater": [
+          {
+            "KandidatId": "3237",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "3238",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "3239",
+            "Stemmer": 3
+          },
+          {
+            "KandidatId": "3240",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "3241",
+            "Stemmer": 3
+          },
+          {
+            "KandidatId": "3242",
+            "Stemmer": 5
+          },
+          {
+            "KandidatId": "3243",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "3244",
+            "Stemmer": 4
+          }
+        ]
+      },
+      {
+        "PartiId": "F",
+        "Partistemmer": 138,
+        "Kandidater": [
+          {
+            "KandidatId": "3972",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "3973",
+            "Stemmer": 39
+          },
+          {
+            "KandidatId": "3974",
+            "Stemmer": 9
+          },
+          {
+            "KandidatId": "3975",
+            "Stemmer": 47
+          },
+          {
+            "KandidatId": "3976",
+            "Stemmer": 2
+          }
+        ]
+      },
+      {
+        "PartiId": "I",
+        "Partistemmer": 134,
+        "Kandidater": [
+          {
+            "KandidatId": "4819",
+            "Stemmer": 3
+          },
+          {
+            "KandidatId": "4820",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "4821",
+            "Stemmer": 27
+          },
+          {
+            "KandidatId": "4822",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "4823",
+            "Stemmer": 0
+          }
+        ]
+      },
+      {
+        "PartiId": "K",
+        "Partistemmer": 7,
+        "Kandidater": [
+          {
+            "KandidatId": "5467",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "5468",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "5469",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "5470",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "5471",
+            "Stemmer": 3
+          },
+          {
+            "KandidatId": "5472",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "5473",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "5474",
+            "Stemmer": 0
+          }
+        ]
+      },
+      {
+        "PartiId": "M",
+        "Partistemmer": 268,
+        "Kandidater": [
+          {
+            "KandidatId": "5982",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "5983",
+            "Stemmer": 7
+          },
+          {
+            "KandidatId": "5984",
+            "Stemmer": 16
+          },
+          {
+            "KandidatId": "5985",
+            "Stemmer": 74
+          }
+        ]
+      },
+      {
+        "PartiId": "O",
+        "Partistemmer": 51,
+        "Kandidater": [
+          {
+            "KandidatId": "6589",
+            "Stemmer": 8
+          },
+          {
+            "KandidatId": "6590",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "6591",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "6592",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "6593",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "6594",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "6595",
+            "Stemmer": 1
+          }
+        ]
+      },
+      {
+        "PartiId": "Q",
+        "Partistemmer": 1,
+        "Kandidater": [
+          {
+            "KandidatId": "7016",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "7017",
+            "Stemmer": 2
+          }
+        ]
+      },
+      {
+        "PartiId": "V",
+        "Partistemmer": 177,
+        "Kandidater": [
+          {
+            "KandidatId": "7768",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "7769",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "7770",
+            "Stemmer": 77
+          },
+          {
+            "KandidatId": "7771",
+            "Stemmer": 34
+          },
+          {
+            "KandidatId": "7772",
+            "Stemmer": 32
+          },
+          {
+            "KandidatId": "7773",
+            "Stemmer": 14
+          },
+          {
+            "KandidatId": "7774",
+            "Stemmer": 7
+          },
+          {
+            "KandidatId": "7775",
+            "Stemmer": 2
+          }
+        ]
+      },
+      {
+        "PartiId": "Æ",
+        "Partistemmer": 207,
+        "Kandidater": [
+          {
+            "KandidatId": "9249",
+            "Stemmer": 7
+          },
+          {
+            "KandidatId": "9250",
+            "Stemmer": 13
+          },
+          {
+            "KandidatId": "9251",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "9252",
+            "Stemmer": 10
+          },
+          {
+            "KandidatId": "9253",
+            "Stemmer": 4
+          }
+        ]
+      },
+      {
+        "PartiId": "Ø",
+        "Partistemmer": 54,
+        "Kandidater": [
+          {
+            "KandidatId": "9941",
+            "Stemmer": 4
+          },
+          {
+            "KandidatId": "9942",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "9943",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "9944",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "9945",
+            "Stemmer": 8
+          },
+          {
+            "KandidatId": "9946",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "9947",
+            "Stemmer": 25
+          }
+        ]
+      },
+      {
+        "PartiId": "Å",
+        "Partistemmer": 60,
+        "Kandidater": [
+          {
+            "KandidatId": "8720",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "8721",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "8722",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "8723",
+            "Stemmer": 0
+          },
+          {
+            "KandidatId": "8724",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "8725",
+            "Stemmer": 2
+          },
+          {
+            "KandidatId": "8726",
+            "Stemmer": 3
+          },
+          {
+            "KandidatId": "8727",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "8728",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "8729",
+            "Stemmer": 0
+          }
+        ]
+      },
+      {
+        "PartiId": "(Uden for parti)",
+        "Partistemmer": 0,
+        "Kandidater": [
+          {
+            "KandidatId": "110",
+            "Stemmer": 2
+          }
+        ]
+      }
+    ],
+    "KandidaterUdenforParti": []
+  }
+}

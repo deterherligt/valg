@@ -29,6 +29,7 @@ from rich.table import Table
 load_dotenv()
 
 from valg.queries import get_seat_data as _get_seat_data
+from valg.queries import get_reporting_progress as _get_reporting_progress
 
 console = Console()
 
@@ -68,16 +69,35 @@ def cmd_status(conn, args):
         return
 
     from valg import calculator
-    seats = calculator.allocate_seats_total(national, storkreds, kredsmandater)
+    progress, national_pct = _get_reporting_progress(conn)
+    projected = calculator.project_storkreds_votes(storkreds, progress)
+    projected_national = {}
+    for sk_votes in projected.values():
+        for party, votes in sk_votes.items():
+            projected_national[party] = projected_national.get(party, 0) + votes
+
+    detail = calculator.allocate_seats_detail(projected_national, projected, kredsmandater)
+
+    reporting_int = round(national_pct * 100)
+    tillaeg_header = "Tillaeg" if reporting_int >= 100 else f"Tillaeg [{reporting_int}% ind]"
 
     t = Table(title="National results")
     t.add_column("Party")
     t.add_column("Votes", justify="right")
-    t.add_column("Seats", justify="right")
+    t.add_column("Kreds", justify="right")
+    t.add_column(tillaeg_header, justify="right")
+    t.add_column("Total", justify="right")
     total_votes = sum(national.values()) or 1
     for party, votes in sorted(national.items(), key=lambda x: -x[1]):
         pct = votes / total_votes * 100
-        t.add_row(party, f"{votes:,} ({pct:.1f}%)", str(seats.get(party, 0)))
+        d = detail.get(party, {})
+        t.add_row(
+            party,
+            f"{votes:,} ({pct:.1f}%)",
+            str(d.get("kreds", 0)),
+            str(d.get("tillaeg", 0)),
+            str(d.get("total", 0)),
+        )
     console.print(t)
 
 
@@ -121,10 +141,41 @@ def cmd_party(conn, args):
 
     national, storkreds, kredsmandater = _get_seat_data(conn)
     votes = national.get(row["id"], 0)
-    seats = calculator.allocate_seats_total(national, storkreds, kredsmandater)
+
+    progress, national_pct = _get_reporting_progress(conn)
+    projected = calculator.project_storkreds_votes(storkreds, progress)
+    projected_national = {}
+    for sk_votes in projected.values():
+        for party, v in sk_votes.items():
+            projected_national[party] = projected_national.get(party, 0) + v
+
+    detail = calculator.allocate_seats_detail(projected_national, projected, kredsmandater)
+    d = detail.get(row["id"], {})
+
     console.print(f"[bold]{row['name']}[/bold] ({letter})")
     console.print(f"  Votes: {votes:,}")
-    console.print(f"  Projected seats: {seats.get(row['id'], 0)}")
+    console.print(f"  Seats: {d.get('total', 0)} (kreds: {d.get('kreds', 0)}, tillaeg: {d.get('tillaeg', 0)})")
+
+    # Per-storkreds breakdown
+    storkreds_names = {
+        r["id"]: r["name"]
+        for r in conn.execute("SELECT id, name FROM storkredse").fetchall()
+    }
+    kreds_by_sk = d.get("kreds_by_storkreds", {})
+    tillaeg_by_sk = d.get("tillaeg_by_storkreds", {})
+    all_sk = set(kreds_by_sk.keys()) | set(tillaeg_by_sk.keys())
+    if all_sk:
+        t = Table(title="Per-storkreds breakdown")
+        t.add_column("Storkreds")
+        t.add_column("Kreds", justify="right")
+        t.add_column("Tillaeg", justify="right")
+        for sk_id in sorted(all_sk):
+            k = kreds_by_sk.get(sk_id, 0)
+            tl = tillaeg_by_sk.get(sk_id, 0)
+            if k > 0 or tl > 0:
+                t.add_row(storkreds_names.get(sk_id, sk_id), str(k), str(tl))
+        console.print(t)
+
     gain = calculator.votes_to_gain_seat(row["id"], national, storkreds, kredsmandater)
     lose = calculator.votes_to_lose_seat(row["id"], national, storkreds, kredsmandater)
     console.print(f"  To gain seat: +{gain:,}")
