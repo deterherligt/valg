@@ -1,3 +1,4 @@
+from __future__ import annotations
 # valg/plugins/valgdeltagelse.py
 TABLE = "turnout"
 

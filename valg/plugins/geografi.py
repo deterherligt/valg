@@ -1,3 +1,4 @@
+from __future__ import annotations
 # valg/plugins/geografi.py
 TABLE = "storkredse"
 
