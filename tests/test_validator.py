@@ -45,7 +45,7 @@ def test_check_inventory_flags_unknown_files(tmp_path):
 
 def test_check_schema_passes_valid_partistemmer(tmp_path):
     """Valid partistemmefordeling file passes schema check."""
-    data = {"Valg": {"OpstillingskredsId": "ok1", "Partier": [{"PartiId": "A", "Stemmer": 1234}]}}
+    data = {"Valgart": "FV", "Valgdag": "2026-03-24", "Storkreds": "Test", "Partier": []}
     (tmp_path / "partistemmefordeling-ok1.json").write_text(json.dumps(data))
     violations = check_schema(tmp_path)
     assert violations == []
@@ -57,7 +57,7 @@ def test_check_schema_flags_missing_key(tmp_path):
     (tmp_path / "partistemmefordeling-ok1.json").write_text(json.dumps(data))
     violations = check_schema(tmp_path)
     assert len(violations) == 1
-    assert "Valg" in violations[0]["issue"]
+    assert "Valgart" in violations[0]["issue"]
 
 
 def test_run_validation_returns_verdict(tmp_path):

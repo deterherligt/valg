@@ -157,14 +157,14 @@ def process_directory(
     snapshot_at: str | None = None,
 ) -> int:
     """
-    Process all .json files in a directory (non-recursive).
+    Process all .json files in a directory (recursive).
     Returns total rows inserted.
     """
     if snapshot_at is None:
         snapshot_at = datetime.now(timezone.utc).isoformat()
 
     total = 0
-    for f in sorted(directory.glob("*.json")):
+    for f in sorted(f for f in directory.rglob("*.json") if not f.name.endswith(".schema.json")):
         total += process_raw_file(conn, f, snapshot_at=snapshot_at)
     log.info("Processed directory %s: %d rows inserted", directory, total)
     return total
