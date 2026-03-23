@@ -6,6 +6,7 @@ No SFTP, no git, no credentials required.
 import json
 import logging
 import os
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -38,7 +39,7 @@ def fetch_tree(repo: str = REPO, branch: str = BRANCH) -> list[dict]:
 
 def download_file(path: str, dest: Path, repo: str = REPO, branch: str = BRANCH) -> None:
     """Download a single file from GitHub raw."""
-    url = f"https://raw.githubusercontent.com/{repo}/{branch}/{path}"
+    url = f"https://raw.githubusercontent.com/{repo}/{branch}/{urllib.parse.quote(path)}"
     dest.parent.mkdir(parents=True, exist_ok=True)
     with urllib.request.urlopen(_make_request(url), timeout=10) as resp:
         dest.write_bytes(resp.read())
