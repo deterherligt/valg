@@ -5,6 +5,7 @@ from valg.calculator import (
     modified_saint_lague,
     allocate_kredsmandater,
     allocate_seats_total,
+    allocate_seats_detail,
     votes_to_gain_seat,
     votes_to_lose_seat,
     constituency_flip_feasibility,
@@ -332,3 +333,78 @@ def test_seats_detail_no_overhang_when_kreds_equals_hare():
     for party, d in result.items():
         assert d["tillaeg"] >= 0
         assert d["kreds"] + d["tillaeg"] == d["total"]
+
+
+@pytest.mark.xfail(
+    reason="FV2022 scenario data is incomplete (~88% of votes, missing AOs). "
+    "Tasks 1-2 will fix the data; then remove xfail.",
+    strict=False,
+)
+def test_fv2022_exact_match():
+    """Validate allocate_seats_detail against official DST FV2022 results."""
+    from tests.helpers import load_fv2022_final_votes
+
+    try:
+        national, storkreds_votes, kredsmandater_per_sk = load_fv2022_final_votes()
+    except FileNotFoundError:
+        pytest.skip("FV2022 scenario data not available")
+
+    result = allocate_seats_detail(national, storkreds_votes, kredsmandater_per_sk)
+
+    # Official DST FV2022 seat allocation
+    expected = {
+        "A":  {"kreds": 50, "tillaeg": 0},
+        "V":  {"kreds": 21, "tillaeg": 2},
+        "M":  {"kreds": 13, "tillaeg": 3},
+        "F":  {"kreds": 12, "tillaeg": 3},
+        "AE": {"kreds": 11, "tillaeg": 3},
+        "I":  {"kreds": 10, "tillaeg": 4},
+        "C":  {"kreds": 7,  "tillaeg": 3},
+        "OE": {"kreds": 4,  "tillaeg": 5},
+        "B":  {"kreds": 2,  "tillaeg": 5},
+        "D":  {"kreds": 2,  "tillaeg": 4},
+        "AA": {"kreds": 2,  "tillaeg": 4},
+        "O":  {"kreds": 5,  "tillaeg": 0},
+        "K":  {"kreds": 0,  "tillaeg": 0},
+        "Q":  {"kreds": 0,  "tillaeg": 0},
+    }
+
+    for party, exp in expected.items():
+        actual = result.get(party, {"kreds": 0, "tillaeg": 0})
+        assert actual["kreds"] == exp["kreds"], (
+            f"{party}: expected {exp['kreds']} kreds, got {actual['kreds']}"
+        )
+        assert actual["tillaeg"] == exp["tillaeg"], (
+            f"{party}: expected {exp['tillaeg']} tillaeg, got {actual['tillaeg']}"
+        )
+
+
+def test_fv2022_structural_invariants():
+    """Verify structural properties hold even with incomplete data."""
+    from tests.helpers import load_fv2022_final_votes
+
+    try:
+        national, storkreds_votes, kredsmandater_per_sk = load_fv2022_final_votes()
+    except FileNotFoundError:
+        pytest.skip("FV2022 scenario data not available")
+
+    result = allocate_seats_detail(national, storkreds_votes, kredsmandater_per_sk)
+
+    total_kreds = sum(d["kreds"] for d in result.values())
+    total_tillaeg = sum(d["tillaeg"] for d in result.values())
+    total_seats = sum(d["total"] for d in result.values())
+
+    assert total_kreds == 135, f"Expected 135 kredsmandater, got {total_kreds}"
+    assert total_tillaeg == 40, f"Expected 40 tillaegsmandater, got {total_tillaeg}"
+    assert total_seats == 175, f"Expected 175 total seats, got {total_seats}"
+
+    for party, d in result.items():
+        assert d["kreds"] + d["tillaeg"] == d["total"], (
+            f"{party}: kreds ({d['kreds']}) + tillaeg ({d['tillaeg']}) != total ({d['total']})"
+        )
+        assert d["kreds"] >= 0
+        assert d["tillaeg"] >= 0
+
+    # K and Q should be below threshold (< 2% nationally, 0 kredsmandater)
+    assert result.get("K", {}).get("total", 0) == 0
+    assert result.get("Q", {}).get("total", 0) == 0
