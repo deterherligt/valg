@@ -365,11 +365,12 @@ def create_app(
 
 # ── Background sync ───────────────────────────────────────────────────────────
 
-def _sync_loop(data_dir: Path, db_path: Path, interval: int = 60, session_manager=None) -> None:
+def _sync_loop(data_dir: Path, db_path: Path, interval: int = 60, session_manager=None, run_immediately: bool = False) -> None:
     global _last_sync, _just_synced
     import time
-    while True:
+    if not run_immediately:
         time.sleep(interval)
+    while True:
         try:
             from valg.http_fetcher import sync_from_github
             from valg.processor import process_directory
@@ -388,6 +389,7 @@ def _sync_loop(data_dir: Path, db_path: Path, interval: int = 60, session_manage
             _maybe_switch_to_live(db_path, session_manager)
         except Exception as e:
             log.warning("Sync failed: %s", e)
+        time.sleep(interval)
 
 
 # ── Entry point ───────────────────────────────────────────────────────────────
@@ -417,22 +419,18 @@ def main() -> None:
         _sp.run(["git", "config", "user.email", "valg@localhost"], cwd=str(data_repo), check=True)
         _sp.run(["git", "config", "user.name", "valg"], cwd=str(data_repo), check=True)
 
-    log.info("Running initial sync from GitHub...")
-    from valg.http_fetcher import sync_from_github
     from valg.models import get_connection, init_db
-    from valg.processor import process_directory
 
-    sync_from_github(data_dir)
+    # Initialize DB schema before starting (fast, no network)
     _init_conn = get_connection(db_path)
     init_db(_init_conn)
-    process_directory(_init_conn, data_dir)
     _init_conn.close()
-    log.info("Initial sync complete.")
 
     from valg.sessions import SessionManager
     session_manager = SessionManager(base_dir=_APP_DIR / "sessions")
 
-    t = threading.Thread(target=_sync_loop, args=(data_dir, db_path), kwargs={"session_manager": session_manager}, daemon=True)
+    # Initial sync + ongoing sync both happen in background — app boots immediately
+    t = threading.Thread(target=_sync_loop, args=(data_dir, db_path), kwargs={"session_manager": session_manager, "run_immediately": True}, daemon=True)
     t.start()
 
     app = create_app(
