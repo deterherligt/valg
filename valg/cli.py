@@ -18,6 +18,7 @@ Commands:
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -261,6 +262,21 @@ def cmd_process(conn, args):
     console.print(f"Processed {total} rows")
 
 
+def cmd_validate(conn, args):
+    import json
+    import os
+    from valg.validator import run_validation
+
+    allowed_emails = [e.strip() for e in args.allowed_emails.split(",") if e.strip()]
+    verdict = run_validation(args.data_repo, allowed_emails=allowed_emails)
+    print(json.dumps(verdict, indent=2))
+
+    github_output = os.environ.get("GITHUB_OUTPUT")
+    if github_output:
+        with open(github_output, "a") as fh:
+            fh.write(f"unknown_files={json.dumps(verdict['unknown_files'])}\n")
+
+
 def cmd_sync(conn, args):
     from valg.processor import process_directory
     from valg.plugins import load_plugins
@@ -354,6 +370,15 @@ def build_parser() -> argparse.ArgumentParser:
     # commentary
     sub.add_parser("commentary", help="AI commentary on current state")
 
+    # validate
+    validate_p = sub.add_parser("validate", help="Validate data repo integrity")
+    validate_p.add_argument("--data-repo", required=True)
+    validate_p.add_argument(
+        "--allowed-emails",
+        default=os.environ.get("VALG_ALLOWED_EMAILS", ""),
+        help="Comma-separated list of allowed commit author emails",
+    )
+
     return parser
 
 
@@ -378,6 +403,7 @@ def main():
         "sync": cmd_sync,
         "fetch": cmd_fetch,
         "process": cmd_process,
+        "validate": cmd_validate,
     }
 
     if args.command is None:

@@ -1,6 +1,7 @@
+import argparse
 import json
 import git
-from valg.validator import check_authors, check_inventory, check_schema
+from valg.validator import check_authors, check_inventory, check_schema, run_validation
 
 
 def test_check_authors_passes_for_allowed_email(tmp_path):
@@ -56,3 +57,40 @@ def test_check_schema_flags_missing_key(tmp_path):
     violations = check_schema(tmp_path)
     assert len(violations) == 1
     assert "Valg" in violations[0]["issue"]
+
+
+def test_run_validation_returns_verdict(tmp_path):
+    """run_validation returns structured verdict."""
+    repo = git.Repo.init(tmp_path)
+    (tmp_path / "Region.json").write_text('[{"Kode": "1", "Navn": "Test"}]')
+    repo.index.add(["Region.json"])
+    repo.index.commit("sync", author=git.Actor("Mads", "mads@example.com"))
+
+    verdict = run_validation(tmp_path, allowed_emails=["mads@example.com"])
+    assert verdict["status"] in ("pass", "repair_needed")
+    assert isinstance(verdict["unauthorized_commits"], list)
+    assert isinstance(verdict["unknown_files"], list)
+    assert isinstance(verdict["schema_violations"], list)
+
+
+def test_cmd_validate_writes_github_output(tmp_path, monkeypatch):
+    """In CI, validate writes unknown_files to $GITHUB_OUTPUT."""
+    output_file = tmp_path / "github_output.txt"
+    monkeypatch.setenv("GITHUB_OUTPUT", str(output_file))
+
+    data_repo = tmp_path / "data"
+    data_repo.mkdir()
+    repo = git.Repo.init(data_repo)
+    (data_repo / "Unknown.json").write_text("{}")
+    repo.index.add(["Unknown.json"])
+    repo.index.commit("sync", author=git.Actor("Mads", "mads@example.com"))
+
+    from valg.cli import cmd_validate
+    args = argparse.Namespace(
+        data_repo=str(data_repo),
+        allowed_emails="mads@example.com",
+        db=str(tmp_path / "test.db"),
+    )
+    cmd_validate(None, args)
+    content = output_file.read_text()
+    assert "unknown_files=" in content

@@ -76,3 +76,24 @@ def check_inventory(data_repo):
         else:
             unknown.append(f.name)
     return {"matched_files": matched, "unknown_files": unknown}
+
+
+def run_validation(data_repo, allowed_emails, since_commit=None):
+    """Run all pre-process validation checks. Returns verdict dict."""
+    unauthorized = check_authors(data_repo, allowed_emails, since_commit)
+    inventory = check_inventory(data_repo)
+    violations = check_schema(data_repo)
+
+    if unauthorized:
+        logger.warning("Unauthorized commits detected: %s", unauthorized)
+
+    status = "pass"
+    if inventory["unknown_files"]:
+        status = "repair_needed"
+
+    return {
+        "status": status,
+        "unauthorized_commits": unauthorized,
+        "unknown_files": inventory["unknown_files"],
+        "schema_violations": violations,
+    }
