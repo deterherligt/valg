@@ -18,6 +18,18 @@ if [ ! -x "$PYTHON" ]; then
     exit 1
 fi
 
+# Log to file + stdout
+LOG_FILE="logs/election-night-$(date +%Y%m%d).log"
+mkdir -p logs
+exec > >(tee -a "$LOG_FILE") 2>&1
+
+# Clean up lock file on exit
+trap 'rm -f "$REPAIR_LOCK"; log "Runner stopped"' EXIT
+
+# Ensure we're on master and clean
+git checkout master 2>/dev/null
+git pull --ff-only 2>/dev/null || true
+
 INTERVAL=300
 ONCE=false
 ELECTION_FOLDER="/data/folketingsvalg-135-24-03-2026"
