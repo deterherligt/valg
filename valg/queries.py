@@ -212,15 +212,26 @@ def query_api_candidates(conn, party_ids: list[str]) -> list[dict]:
     placeholders = ",".join("?" * len(party_ids))
     rows = conn.execute(
         f"SELECT c.id, c.name, c.party_id, p.letter as party_letter, "
-        f"ok.name as opstillingskreds, c.ballot_position "
+        f"ok.name as opstillingskreds, c.ballot_position, "
+        f"sk.name as storkreds, sk.id as storkreds_id "
         f"FROM candidates c "
         f"JOIN parties p ON c.party_id = p.id "
         f"JOIN opstillingskredse ok ON c.opstillingskreds_id = ok.id "
+        f"JOIN storkredse sk ON sk.id = ok.storkreds_id "
         f"WHERE c.party_id IN ({placeholders}) "
-        f"ORDER BY c.party_id, c.ballot_position",
+        f"ORDER BY sk.name, c.party_id, c.ballot_position",
         party_ids,
     ).fetchall()
-    return [dict(r) for r in rows]
+    # Deduplicate: same person can have one candidacy per opstillingskreds.
+    # Rows are already ordered by ballot_position ASC, so first occurrence = best position.
+    seen: set[tuple] = set()
+    result = []
+    for r in rows:
+        key = (r["name"], r["party_id"])
+        if key not in seen:
+            seen.add(key)
+            result.append(dict(r))
+    return result
 
 
 def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
