@@ -172,3 +172,29 @@ def test_seat_momentum_negative_when_losing_votes():
 def test_seat_momentum_zero_when_unchanged():
     result = seat_momentum("A", votes_before=1000, votes_after=1000)
     assert result == 0
+
+
+# --- hare_largest_remainder ---
+
+from valg.calculator import hare_largest_remainder
+
+def test_hare_basic_proportional():
+    result = hare_largest_remainder({"A": 60, "B": 40}, 10)
+    assert result == {"A": 6, "B": 4}
+
+def test_hare_remainder_allocation():
+    result = hare_largest_remainder({"A": 50, "B": 30, "C": 20}, 3)
+    assert result == {"A": 1, "B": 1, "C": 1}
+
+def test_hare_total_seats():
+    result = hare_largest_remainder({"A": 971995, "B": 470546, "C": 327699}, 175)
+    assert sum(result.values()) == 175
+
+def test_hare_zero_votes():
+    result = hare_largest_remainder({"A": 1000, "B": 0}, 5)
+    assert result["B"] == 0
+    assert result["A"] == 5
+
+def test_hare_empty():
+    result = hare_largest_remainder({}, 10)
+    assert result == {}

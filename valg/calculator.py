@@ -247,3 +247,28 @@ def constituency_flip_feasibility(
 def seat_momentum(party: str, votes_before: int, votes_after: int) -> int:
     """Return vote delta (positive = gaining, negative = losing)."""
     return votes_after - votes_before
+
+
+def hare_largest_remainder(party_votes: dict[str, int], n_seats: int) -> dict[str, int]:
+    if not party_votes or n_seats <= 0:
+        return {p: 0 for p in party_votes}
+
+    total = sum(party_votes.values())
+    if total == 0:
+        return {p: 0 for p in party_votes}
+
+    quota = total / n_seats
+    seats = {}
+    remainders = {}
+    for party, votes in party_votes.items():
+        full = int(votes // quota) if votes > 0 else 0
+        seats[party] = full
+        remainders[party] = (votes / quota) - full if votes > 0 else 0.0
+
+    allocated = sum(seats.values())
+    remaining = n_seats - allocated
+    ranked = sorted(remainders, key=lambda p: -remainders[p])
+    for i in range(remaining):
+        seats[ranked[i]] += 1
+
+    return seats
