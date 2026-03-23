@@ -5,9 +5,9 @@ Build FV2022 demo scenario wave data.
 Usage:
     python scripts/build_fv2022_scenario.py [--force]
 
-Downloads FV2026 geography + candidates from SFTP and FV2022 vote results
-from the valg.dk API, then writes pre-baked wave directories to
-valg/scenarios/fv2022/.
+Downloads FV2026 geography from SFTP and FV2022 vote results from the
+valg.dk API, derives FV2022 kandidat-data from the CSV, then writes
+pre-baked wave directories to valg/scenarios/fv2022/.
 
 Options:
     --force   Re-download even if cache files exist
@@ -481,7 +481,7 @@ def build_fv2022_kandidatdata_from_csv(
             ok_dagi_id = ok_name_to_id.get(ok_norm, "")
             if not ok_dagi_id:
                 continue
-            for pos, name in enumerate(sorted(names), start=1):
+            for pos, name in enumerate(sorted(names), start=1):  # alphabetical: CSV has no ballot positions
                 party_kandidater.append({
                     "Id": next_id,
                     "Navn": name,
@@ -857,11 +857,11 @@ def run(force: bool = False) -> None:
     id_mapping = build_id_mapping(hierarchy)
 
     matched_ao_ids = {id_mapping[k]: hierarchy[id_mapping[k]] for k in fv2022_votes if k in id_mapping}
-    unmatched = [k for k in fv2022_votes if k not in id_mapping]
+    unmatched_aos = [k for k in fv2022_votes if k not in id_mapping]
     print(f"  Matched {len(matched_ao_ids)}/{len(fv2022_votes)} AOs "
           f"({100*len(matched_ao_ids)//max(1,len(fv2022_votes))}%)")
-    if unmatched:
-        print(f"  Unmatched ({len(unmatched)}): {unmatched[:5]} ...")
+    if unmatched_aos:
+        print(f"  Unmatched ({len(unmatched_aos)}): {unmatched_aos[:5]} ...")
     print()
 
     # Phase 3: Wave assignment
