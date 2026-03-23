@@ -5,9 +5,11 @@ Pure-function seat calculator for Danish Folketing elections.
 All functions take plain dicts as input and return plain dicts or scalars.
 No I/O, no database access.
 
-Seat allocation:
-  - kredsmandater (135): D'Hondt per storkreds
-  - tillægsmandater (40): approximated via national modified Saint-Laguë minus kredsmandater
+Seat allocation per Folketingsvalglov §76-§79:
+  - kredsmandater (135): D'Hondt per storkreds (§76)
+  - National allocation (175): Hare quota + largest remainder (§77)
+  - tillægsmandater to landsdele: Sainte-Laguë with exclusions (§78)
+  - tillægsmandater to storkredse: Danish method 1-4-7-10 (§79)
   - Threshold: party needs >= 2% nationally, OR >= 1 kredsmandat
 """
 from __future__ import annotations
