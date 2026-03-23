@@ -240,6 +240,7 @@ document.addEventListener('alpine:init', () => {
           .filter(c => c.storkreds === this.activeStorkreds.name)
           .sort((a, b) => a.sk_rank - b.sk_rank)
         const skSeats = cands.length > 0 ? cands[0].sk_seats : 0
+        const skKredsSeats = cands.length > 0 ? (cands[0].sk_kreds_seats || 0) : 0
         const elected = cands.filter(c => c.elected && c.elected !== false)
         const bubble = cands.filter(c => !c.elected || c.elected === false)
         const lastElectedVotes = elected.length > 0 ? elected[elected.length - 1].votes : null
@@ -248,6 +249,7 @@ document.addEventListener('alpine:init', () => {
           letter: p.letter,
           name: p.name,
           sk_seats: skSeats,
+          sk_kreds_seats: skKredsSeats,
           has_votes: p.has_votes,
           elected,
           bubble: bubble.map(c => ({
