@@ -262,3 +262,30 @@ def test_tillaeg_landsdele_total():
     result = allocate_tillaeg_to_landsdele(party_landsdel_votes, tillaeg_per_party, kreds_per_party_per_landsdel)
     total = sum(s for party_ld in result.values() for s in party_ld.values())
     assert total == 13
+
+
+# --- allocate_tillaeg_to_storkredse ---
+
+from valg.calculator import allocate_tillaeg_to_storkredse
+
+def test_tillaeg_storkredse_basic():
+    party_storkreds_votes = {"A": {"SK1": 5000, "SK2": 3000}}
+    tillaeg_per_party_per_landsdel = {"A": {"LD1": 2}}
+    kreds_per_party_per_storkreds = {"A": {"SK1": 3, "SK2": 1}}
+    landsdel_storkredse = {"LD1": ["SK1", "SK2"]}
+    result = allocate_tillaeg_to_storkredse(
+        party_storkreds_votes, tillaeg_per_party_per_landsdel,
+        kreds_per_party_per_storkreds, landsdel_storkredse,
+    )
+    assert sum(result["A"].values()) == 2
+
+def test_tillaeg_storkredse_favours_underrepresented():
+    party_storkreds_votes = {"A": {"SK1": 5000, "SK2": 5000}}
+    tillaeg_per_party_per_landsdel = {"A": {"LD1": 1}}
+    kreds_per_party_per_storkreds = {"A": {"SK1": 3, "SK2": 0}}
+    landsdel_storkredse = {"LD1": ["SK1", "SK2"]}
+    result = allocate_tillaeg_to_storkredse(
+        party_storkreds_votes, tillaeg_per_party_per_landsdel,
+        kreds_per_party_per_storkreds, landsdel_storkredse,
+    )
+    assert result["A"].get("SK2", 0) == 1

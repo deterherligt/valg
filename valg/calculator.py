@@ -342,3 +342,43 @@ def allocate_tillaeg_to_landsdele(
         seats_given += 1
 
     return result
+
+
+def allocate_tillaeg_to_storkredse(
+    party_storkreds_votes: dict[str, dict[str, int]],
+    tillaeg_per_party_per_landsdel: dict[str, dict[str, int]],
+    kreds_per_party_per_storkreds: dict[str, dict[str, int]],
+    landsdel_storkredse: dict[str, list[str]],
+) -> dict[str, dict[str, int]]:
+    result = {p: {} for p in party_storkreds_votes}
+
+    for party, ld_seats in tillaeg_per_party_per_landsdel.items():
+        party_votes = party_storkreds_votes.get(party, {})
+        party_kreds = kreds_per_party_per_storkreds.get(party, {})
+
+        for ld, n_tillaeg in ld_seats.items():
+            if n_tillaeg <= 0:
+                continue
+            storkredse = landsdel_storkredse.get(ld, [])
+            if not storkredse:
+                continue
+
+            # Danish method divisors: 1, 4, 7, 10... (1 + 3*n)
+            # Skip first k quotients per storkreds (kredsmandater already won)
+            heap = []
+            for sk in storkredse:
+                votes = party_votes.get(sk, 0)
+                if votes <= 0:
+                    continue
+                k = party_kreds.get(sk, 0)
+                for n in range(k, k + n_tillaeg):
+                    divisor = 1 + 3 * n
+                    heapq.heappush(heap, (-votes / divisor, sk))
+
+            given = 0
+            while given < n_tillaeg and heap:
+                _, sk = heapq.heappop(heap)
+                result[party][sk] = result[party].get(sk, 0) + 1
+                given += 1
+
+    return result
