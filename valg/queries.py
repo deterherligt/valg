@@ -1,3 +1,4 @@
+from __future__ import annotations
 # valg/queries.py
 """
 Pure query functions returning list[dict] for CSV export and web display.
