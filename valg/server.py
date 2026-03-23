@@ -41,18 +41,20 @@ def _maybe_switch_to_live(db_path: Path, session_manager) -> None:
 
     Called from _sync_loop on every iteration. No-op once _live_data_available is True.
 
-    Detection: look for preliminary results with a recent snapshot_at (within 24h).
-    Pre-election test data has old snapshots; real election night data will have fresh ones.
+    Detection: look for preliminary results with votes > 0 that were snapshotted
+    on or after election day. Pre-election test data has pre-election-day snapshots.
     """
     global _live_data_available
     if session_manager is None or _live_data_available:
         return
     from valg.models import get_connection
     conn = get_connection(db_path)
+    # Only trigger on results from election day (2026-03-24) onward
     has_real = conn.execute(
         "SELECT 1 FROM results "
         "WHERE count_type = 'preliminary' "
-        "AND snapshot_at > datetime('now', '-24 hours') "
+        "AND votes > 0 "
+        "AND REPLACE(snapshot_at, 'T', ' ') >= '2026-03-24' "
         "LIMIT 1"
     ).fetchone() is not None
     conn.close()
