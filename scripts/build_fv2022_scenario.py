@@ -158,14 +158,18 @@ def normalize_ok_name(s: str) -> str:
 
 
 def normalize_ao_name(s: str) -> str:
-    """Normalize an afstemningsomraade name, stripping leading number prefixes used in FV2022.
+    """Normalize an afstemningsomraade name, stripping leading number prefixes and venue suffixes.
 
     Handles formats like '1. Skagen', '31. 7. Brønshøj' (global + local numbering).
+    Also strips venue suffixes: 'Agersoe - Agersoehallen' -> 'Agersoe'.
     """
     n = normalize_name(s)
     # Strip all leading '<digits>. ' prefixes (some AOs have two levels)
     while re.match(r"^\d+\.\s+\S", n):
         n = re.sub(r"^\d+\.\s+", "", n)
+    # Strip venue suffix: "agersoe - agersoehallen" -> "agersoe"
+    if " - " in n:
+        n = n.split(" - ")[0].rstrip()
     return n
 
 
@@ -309,23 +313,25 @@ def parse_fv2022_csv(csv_path: Path) -> dict[tuple[str, str], dict[str, int]]:
     """
     Parse FV2022 results CSV.
 
-    Returns {(ok_name_norm, ao_name_norm): {party_id: party_votes}}
-    Only 'Partiliste' rows are counted.
+    Returns {(ok_name_norm, ao_name_norm): {party_id: total_votes}}
+    Sums Partiliste + personal votes per party per AO.
     """
     result: dict[tuple[str, str], dict[str, int]] = {}
     with csv_path.open(encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f, delimiter=";")
         for row in reader:
-            if row.get("Navn", "").strip() != "Partiliste":
+            party_id = row.get("Partibogstav", "").strip()
+            if not party_id:
                 continue
             ok_norm = normalize_ok_name(row.get("Opstillingskreds", ""))
             ao_norm = normalize_ao_name(row.get("Afstemningsområde", ""))
-            party_id = row.get("Partibogstav", "").strip()
             try:
                 votes = int(row.get("Stemmetal", 0))
             except (ValueError, TypeError):
                 continue
-            result.setdefault((ok_norm, ao_norm), {})[party_id] = votes
+            key = (ok_norm, ao_norm)
+            result.setdefault(key, {})
+            result[key][party_id] = result[key].get(party_id, 0) + votes
     return result
 
 
@@ -738,7 +744,8 @@ def write_fintaelling_wave(
                 if name_norm not in party_personal and unmatched is not None:
                     unmatched.append((ok_name, ao_name, party_id, c["name"]))
                 kandidater.append({"KandidatId": str(c["id"]), "Stemmer": votes})
-            party_data[party_id] = {"total": total, "kandidater": kandidater}
+            personal_total = sum(c["Stemmer"] for c in kandidater)
+            party_data[party_id] = {"total": total - personal_total, "kandidater": kandidater}
 
         vr = build_valgresultater(
             ao_id=str(ao_id),
@@ -906,6 +913,33 @@ def run(force: bool = False) -> None:
         write_preliminary_wave(wave_dir, wave_num, ao_ids, matched_ao_ids, cumulative_ok_votes, fv2022_votes)
         print(f"  wave_{wave_num:02d}: {len(ao_ids)} AOs")
 
+    # Add unmatched AO votes to cumulative OK totals so partistemmefordeling
+    # includes all votes, even from AOs that couldn't be mapped to FV2026 geography.
+    if unmatched_aos:
+        ok_norm_to_id = {}
+        for ao_id, info in hierarchy.items():
+            ok_norm_to_id[normalize_ok_name(info["ok_name"])] = info["ok_id"]
+        unmatched_vote_total = 0
+        for (ok_norm, ao_norm) in unmatched_aos:
+            ok_id = ok_norm_to_id.get(ok_norm)
+            if not ok_id:
+                continue
+            ao_party_votes = fv2022_votes.get((ok_norm, ao_norm), {})
+            ok_votes = cumulative_ok_votes.setdefault(ok_id, {})
+            for party_id, votes in ao_party_votes.items():
+                ok_votes[party_id] = ok_votes.get(party_id, 0) + votes
+                unmatched_vote_total += votes
+        # Rewrite partistemmefordeling in the last preliminary wave
+        last_wave_dir = OUTPUT_DIR / f"wave_{N_PRELIM_WAVES:02d}"
+        pf_dir = last_wave_dir / "partistemmefordeling"
+        pf_dir.mkdir(exist_ok=True)
+        for ok_id in cumulative_ok_votes:
+            pf = build_partistemmefordeling(ok_id, cumulative_ok_votes[ok_id])
+            (pf_dir / f"partistemmefordeling-{ok_id}.json").write_text(
+                json.dumps(pf, ensure_ascii=False, indent=2)
+            )
+        print(f"  Added {unmatched_vote_total:,} votes from {len(unmatched_aos)} unmatched AOs to OK totals")
+
     unmatched: list[tuple] = []
     for wave_num in range(N_PRELIM_WAVES + 1, 33):
         ao_ids = final_by_wave.get(wave_num, [])
@@ -932,6 +966,22 @@ def run(force: bool = False) -> None:
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 
+def check_totals() -> None:
+    """Parse the CSV with fixes applied and print vote totals + OK count."""
+    csv_path = CACHE_DIR / "fv2022_results.csv"
+    if not csv_path.exists():
+        print(f"CSV not found at {csv_path}. Run without --check-totals first to download.")
+        sys.exit(1)
+    fv2022_votes = parse_fv2022_csv(csv_path)
+    total_votes = sum(sum(pv.values()) for pv in fv2022_votes.values())
+    ok_names = {k[0] for k in fv2022_votes}
+    print(f"Total votes: {total_votes}")
+    print(f"{len(ok_names)} opstillingskredse")
+
+
 if __name__ == "__main__":
     force = "--force" in sys.argv
-    run(force=force)
+    if "--check-totals" in sys.argv:
+        check_totals()
+    else:
+        run(force=force)

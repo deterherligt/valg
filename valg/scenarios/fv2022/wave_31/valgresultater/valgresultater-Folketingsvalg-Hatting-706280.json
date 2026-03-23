@@ -558,6 +558,20 @@
             "Stemmer": 1
           }
         ]
+      },
+      {
+        "PartiId": "(Uden for parti)",
+        "Partistemmer": 0,
+        "Kandidater": [
+          {
+            "KandidatId": "134",
+            "Stemmer": 1
+          },
+          {
+            "KandidatId": "135",
+            "Stemmer": 1
+          }
+        ]
       }
     ],
     "KandidaterUdenforParti": []

@@ -17,6 +17,9 @@ def _norm_party(pid: str) -> str:
 def load_fv2022_final_votes():
     """Load final FV2022 vote data from scenario waves.
 
+    Uses partistemmefordeling (OK-level cumulative totals) from the last wave,
+    which includes votes from AOs that couldn't be matched to FV2026 geography.
+
     Returns (national_votes, storkreds_votes, kredsmandater) matching
     the signature of ``allocate_seats_detail``.
 
@@ -26,41 +29,33 @@ def load_fv2022_final_votes():
     if not geo_dir.exists():
         raise FileNotFoundError(f"FV2022 geography not found at {geo_dir}")
 
-    # Build AO → storkreds mapping
+    # Build OK → storkreds mapping
     oks = json.loads((geo_dir / "Opstillingskreds-FV2022.json").read_text())
     ok_to_sk = {ok["Kode"]: ok["StorkredskodeKode"] for ok in oks}
 
-    aos = json.loads((geo_dir / "Afstemningsomraade-FV2022.json").read_text())
-    ao_to_sk = {}
-    for ao in aos:
-        ok_id = ao["OpstillingskredsKode"]
-        ao_to_sk[ao["Kode"]] = ok_to_sk.get(ok_id, "")
-
-    # Collect latest valgresultater per AO (later waves overwrite earlier)
-    ao_votes: dict[str, dict[str, int]] = {}
+    # Find the latest partistemmefordeling per OK (last wave wins)
+    ok_votes: dict[str, dict[str, int]] = {}
     for wave_dir in sorted(_SCENARIO_DIR.glob("wave_*")):
-        vr_dir = wave_dir / "valgresultater"
-        if not vr_dir.exists():
+        pf_dir = wave_dir / "partistemmefordeling"
+        if not pf_dir.exists():
             continue
-        for f in vr_dir.glob("*.json"):
+        for f in pf_dir.glob("*.json"):
             data = json.loads(f.read_text())
-            vr = data.get("Valgresultater", {})
-            ao_id = vr.get("AfstemningsomraadeId", "")
-            if not ao_id:
+            valg = data.get("Valg", {})
+            ok_id = valg.get("OpstillingskredsId", "")
+            if not ok_id:
                 continue
             parties: dict[str, int] = {}
-            for p in vr.get("IndenforParti", []):
+            for p in valg.get("Partier", []):
                 pid = _norm_party(p["PartiId"])
-                party_list = p.get("Partistemmer", 0)
-                personal = sum(c.get("Stemmer", 0) for c in p.get("Kandidater", []))
-                parties[pid] = party_list + personal
-            ao_votes[ao_id] = parties
+                parties[pid] = p.get("Stemmer", 0)
+            ok_votes[ok_id] = parties
 
     # Aggregate by storkreds
     storkreds_votes: dict[str, dict[str, int]] = {}
     national_votes: dict[str, int] = {}
-    for ao_id, parties in ao_votes.items():
-        sk = ao_to_sk.get(ao_id, "")
+    for ok_id, parties in ok_votes.items():
+        sk = ok_to_sk.get(ok_id, "")
         if not sk:
             continue
         sk_dict = storkreds_votes.setdefault(sk, {})

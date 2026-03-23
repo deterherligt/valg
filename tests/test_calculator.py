@@ -336,8 +336,8 @@ def test_seats_detail_no_overhang_when_kreds_equals_hare():
 
 
 @pytest.mark.xfail(
-    reason="FV2022 scenario data is incomplete (~88% of votes, missing AOs). "
-    "Tasks 1-2 will fix the data; then remove xfail.",
+    reason="FV2022 votes are correct (3.5M) but FV2026 storkreds boundaries differ "
+    "from FV2022, causing 5 parties' kredsmandater to be off by 1-4 seats.",
     strict=False,
 )
 def test_fv2022_exact_match():

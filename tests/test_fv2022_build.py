@@ -65,7 +65,7 @@ def test_build_valgresultater_structure():
 
 
 def test_parse_fv2022_csv_extracts_party_votes(tmp_path):
-    """parse_fv2022_csv extracts Partiliste rows only, keyed by (ok_norm, ao_norm)."""
+    """parse_fv2022_csv sums all rows (Partiliste + personal) per party per AO."""
     import sys
     sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
     from build_fv2022_scenario import parse_fv2022_csv, normalize_ok_name, normalize_ao_name
@@ -82,7 +82,7 @@ def test_parse_fv2022_csv_extracts_party_votes(tmp_path):
     result = parse_fv2022_csv(csv_file)
     key = (normalize_ok_name("Frederikshavnkredsen"), normalize_ao_name("1. Skagen"))
     assert key in result
-    assert result[key]["A"] == 409   # Only Partiliste row
+    assert result[key]["A"] == 409 + 926  # Partiliste + personal
     assert result[key]["V"] == 281
 
 
@@ -238,7 +238,7 @@ def test_write_fintaelling_wave_uses_real_votes(tmp_path):
     assert len(vr_files) == 1
     vr = json.loads(vr_files[0].read_text())["Valgresultater"]
     party_a = next(p for p in vr["IndenforParti"] if p["PartiId"] == "A")
-    assert party_a["Partistemmer"] == 200
+    assert party_a["Partistemmer"] == 200 - (80 + 30)  # total minus personal votes
     cand_votes = {k["KandidatId"]: k["Stemmer"] for k in party_a["Kandidater"]}
     assert cand_votes["cand-1"] == 80
     assert cand_votes["cand-2"] == 30
