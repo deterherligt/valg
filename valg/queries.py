@@ -306,12 +306,14 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
         kreds_by_sk = party_detail.get("kreds_by_storkreds", {})
         tillaeg_by_sk = party_detail.get("tillaeg_by_storkreds", {})
         sk_seats_for_party: dict[str, int] = {}
+        sk_kreds_for_party: dict[str, int] = {}
         seats_breakdown = []
         all_sk_ids = set(kreds_by_sk.keys()) | set(tillaeg_by_sk.keys())
         for sk_id in all_sk_ids:
             kreds_s = kreds_by_sk.get(sk_id, 0)
             tillaeg_s = tillaeg_by_sk.get(sk_id, 0)
             sk_seats_for_party[sk_id] = kreds_s + tillaeg_s
+            sk_kreds_for_party[sk_id] = kreds_s
             if kreds_s > 0 or tillaeg_s > 0:
                 seats_breakdown.append({
                     "name": storkreds_names.get(sk_id, sk_id),
@@ -399,6 +401,7 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
 
         for sk_id, group in sk_groups.items():
             sk_party_seats = sk_seats_for_party.get(sk_id, 0)
+            sk_kreds = sk_kreds_for_party.get(sk_id, 0)
             if has_votes:
                 ranked = sorted(group, key=lambda c: (c["votes"] or 0), reverse=True)
             else:
@@ -406,7 +409,11 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
             for rank, c in enumerate(ranked, 1):
                 c["sk_rank"] = rank
                 c["sk_seats"] = sk_party_seats
-                c["elected"] = has_votes and rank <= sk_party_seats
+                c["sk_kreds_seats"] = sk_kreds
+                if has_votes and rank <= sk_party_seats:
+                    c["elected"] = "kreds" if rank <= sk_kreds else "tillaeg"
+                else:
+                    c["elected"] = False
 
         for c in candidates:
             del c["_sk_id"]

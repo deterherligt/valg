@@ -197,6 +197,9 @@
                             <div class="cand-breakdown-row cand-in">
                               <span class="cand-breakdown-name" x-text="c.sk_rank + '. ' + c.name"></span>
                               <span class="cand-breakdown-kreds" x-text="c.opstillingskreds"></span>
+                              <span class="cand-mandate-type"
+                                    :style="c.elected === 'tillaeg' ? 'color:#d29922' : 'color:#3fb950'"
+                                    x-text="c.elected === 'tillaeg' ? 'tillaeg' : 'kreds'"></span>
                               <span class="cand-breakdown-votes"
                                     x-text="c.votes !== null ? formatNum(c.votes) : ''"></span>
                             </div>
@@ -256,6 +259,9 @@
                                 <span class="cand-breakdown-sk"
                                       x-text="c.sk_seats > 0 ? '#' + c.sk_rank + ' i ' + c.storkreds + ' (' + c.sk_seats + ' mandater)' : '#' + c.sk_rank + ' i ' + c.storkreds">
                                 </span>
+                                <span class="cand-mandate-type" x-show="c.elected && c.elected !== false"
+                                      :style="c.elected === 'tillaeg' ? 'color:#d29922' : 'color:#3fb950'"
+                                      x-text="c.elected === 'tillaeg' ? 'tillaeg' : 'kreds'"></span>
                                 <span class="cand-breakdown-votes" x-text="c.votes !== null ? formatNum(c.votes) : '—'"></span>
                               </div>
                             </div>
