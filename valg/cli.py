@@ -288,24 +288,12 @@ def cmd_sync(conn, args):
         console.print(f"Processed {total} rows (wave {args.wave})")
         return
 
-    from valg.fetcher import get_sftp_client, sync_election_folder, commit_data_repo
     import os
 
+    cmd_fetch(conn, args)
     data_repo = Path(os.getenv("VALG_DATA_REPO", "../valg-data"))
-    election_folder = args.election_folder
-
-    console.print(f"Syncing {election_folder}...")
-    ssh, sftp = get_sftp_client()
-    try:
-        downloaded = sync_election_folder(sftp, election_folder, data_repo)
-        console.print(f"Downloaded {downloaded} files")
-    finally:
-        sftp.close()
-        ssh.close()
-
-    total = process_directory(conn, data_repo, snapshot_at=snapshot_at)
-    console.print(f"Processed {total} rows")
-    commit_data_repo(data_repo)
+    args_process = argparse.Namespace(data_repo=str(data_repo), db=args.db)
+    cmd_process(conn, args_process)
 
 
 # ── Argument parser ──────────────────────────────────────────────────────────
