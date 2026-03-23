@@ -38,14 +38,16 @@ def test_setup_db_populates_parties(election, db):
 
 def test_write_wave0_produces_storkreds_json(election, tmp_path):
     write_wave(tmp_path, election, wave=0)
-    assert (tmp_path / "Storkreds.json").exists()
+    files = list(tmp_path.glob("Storkreds-*.json"))
+    assert len(files) == 1
 
 
 def test_write_wave0_storkreds_parseable_by_plugin(election, tmp_path):
     write_wave(tmp_path, election, wave=0)
     load_plugins()
-    data = json.loads((tmp_path / "Storkreds.json").read_text())
-    plugin = find_plugin("Storkreds.json")
+    storkreds_file = list(tmp_path.glob("Storkreds-*.json"))[0]
+    data = json.loads(storkreds_file.read_text())
+    plugin = find_plugin(storkreds_file.name)
     rows = plugin.parse(data, "2024-11-05T21:00:00")
     assert len(rows) == len(election["storkredse"])
 

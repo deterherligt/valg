@@ -246,7 +246,8 @@ def cmd_fetch(conn, args):
         # Try configured folder first; if it yields nothing, discover by year
         downloaded = sync_election_folder(sftp, election_folder, data_repo)
         if downloaded == 0 and getattr(args, "discover_year", None):
-            discovered = discover_election_folder(sftp, args.discover_year)
+            search_dir = str(Path(election_folder).parent)
+            discovered = discover_election_folder(sftp, args.discover_year, search_dir)
             if discovered and discovered != election_folder:
                 console.print(f"[dim]Configured folder empty, discovered: {discovered}[/dim]")
                 election_folder = discovered

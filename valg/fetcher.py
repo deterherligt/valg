@@ -29,19 +29,20 @@ def get_sftp_client() -> tuple:
     return ssh, sftp
 
 
-def discover_election_folder(sftp, year: str) -> Optional[str]:
+def discover_election_folder(sftp, year: str, search_dir: str = "/") -> Optional[str]:
     """Find the latest election folder on SFTP containing the given year."""
     try:
-        attrs = sftp.listdir_attr("/")
+        attrs = sftp.listdir_attr(search_dir)
     except Exception as e:
-        log.warning("Cannot list SFTP root: %s", e)
+        log.warning("Cannot list %s: %s", search_dir, e)
         return None
     candidates = []
     for attr in attrs:
         if stat_module.S_ISDIR(attr.st_mode) and year in attr.filename:
-            candidates.append((attr.st_mtime or 0, "/" + attr.filename))
+            path = f"{search_dir}/{attr.filename}".replace("//", "/")
+            candidates.append((attr.st_mtime or 0, path))
     if not candidates:
-        log.info("No election folder found containing '%s'", year)
+        log.info("No election folder found containing '%s' in %s", year, search_dir)
         return None
     candidates.sort(reverse=True)
     winner = candidates[0][1]

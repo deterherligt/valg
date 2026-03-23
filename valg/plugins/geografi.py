@@ -2,7 +2,7 @@
 TABLE = "storkredse"
 
 def MATCH(filename: str) -> bool:
-    return filename in ("Region.json", "Storkreds.json")
+    return filename.startswith("Region") or filename.startswith("Storkreds")
 
 def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     if not isinstance(data, list):
