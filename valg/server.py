@@ -37,9 +37,12 @@ _sync_lock = threading.Lock()
 
 
 def _maybe_switch_to_live(db_path: Path, session_manager) -> None:
-    """Switch all demo sessions to live data if preliminary results exist in the shared db.
+    """Switch all demo sessions to live data if real election night results exist.
 
     Called from _sync_loop on every iteration. No-op once _live_data_available is True.
+
+    Detection: look for preliminary results with a recent snapshot_at (within 24h).
+    Pre-election test data has old snapshots; real election night data will have fresh ones.
     """
     global _live_data_available
     if session_manager is None or _live_data_available:
@@ -47,10 +50,14 @@ def _maybe_switch_to_live(db_path: Path, session_manager) -> None:
     from valg.models import get_connection
     conn = get_connection(db_path)
     has_real = conn.execute(
-        "SELECT 1 FROM results WHERE count_type = 'preliminary' LIMIT 1"
+        "SELECT 1 FROM results "
+        "WHERE count_type = 'preliminary' "
+        "AND snapshot_at > datetime('now', '-24 hours') "
+        "LIMIT 1"
     ).fetchone() is not None
     conn.close()
     if has_real:
+        log.info("Live election data detected — switching all sessions to live")
         session_manager.switch_all_to_live()
         _live_data_available = True
 
