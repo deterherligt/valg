@@ -306,7 +306,7 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
                 (party_id,),
             ).fetchall()
 
-        candidates = [
+        raw_candidates = [
             {
                 "id": r["id"],
                 "name": r["name"],
@@ -318,6 +318,34 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
             }
             for r in cand_rows
         ]
+
+        # Merge multi-kreds candidacies: the same person can appear on the ballot
+        # in multiple opstillingskredse within a storkreds (each gets a unique ID
+        # in the source data). Deduplicate by (name, storkreds), summing votes and
+        # keeping the opstillingskreds/ballot_position of their best-performing entry.
+        merged: dict[tuple, dict] = {}
+        for c in raw_candidates:
+            key = (c["name"], c["_sk_id"])
+            if key not in merged:
+                merged[key] = c.copy()
+            else:
+                existing = merged[key]
+                c_votes = c["votes"] or 0
+                ex_votes = existing["votes"] or 0
+                if has_votes:
+                    existing["votes"] = ex_votes + c_votes
+                    if c_votes > ex_votes:
+                        existing["opstillingskreds"] = c["opstillingskreds"]
+                        existing["ballot_position"] = c["ballot_position"]
+                else:
+                    if c["ballot_position"] < existing["ballot_position"]:
+                        existing["opstillingskreds"] = c["opstillingskreds"]
+                        existing["ballot_position"] = c["ballot_position"]
+        candidates = sorted(
+            merged.values(),
+            key=lambda c: (c["votes"] or 0) if has_votes else c["ballot_position"],
+            reverse=has_votes,
+        )
 
         # Annotate each candidate with per-storkreds rank and election status.
         # Candidates are already in national order (votes DESC or ballot_position ASC).
