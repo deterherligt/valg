@@ -2,7 +2,7 @@
 TABLE = "candidates"
 
 def MATCH(filename: str) -> bool:
-    return filename.startswith("kandidat-data-Folketingsvalg")
+    return filename.startswith("kandidat-data-Folketingsvalg") or filename.startswith("kandidat-data-fv")
 
 def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     rows = []
