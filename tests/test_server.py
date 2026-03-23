@@ -740,3 +740,103 @@ def test_two_sessions_see_independent_data(tmp_path):
 
     assert len(parties_a) > 0, "Session A should see parties"
     assert len(parties_b) == 0, "Session B should see no parties (empty DB)"
+
+
+def test_get_conn_uses_shared_db_when_session_live(tmp_path):
+    """When session.live=True, _get_conn routes to the shared db, not the session db."""
+    from valg.sessions import SessionManager
+    from valg.models import get_connection, init_db
+    from tests.synthetic.generator import generate_election, load_into_db
+
+    shared_db = tmp_path / "shared.db"
+    conn = get_connection(str(shared_db))
+    init_db(conn)
+    e = generate_election(seed=42)
+    load_into_db(conn, e, phase="preliminary")
+    conn.close()
+
+    sid = "aa000000-0000-0000-0000-000000000001"
+    mgr = SessionManager(base_dir=tmp_path / "sessions", max_sessions=5)
+    app = create_app(db_path=shared_db, data_dir=tmp_path / "data", session_manager=mgr)
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        c.set_cookie("valg_session", sid)
+        c.get("/")
+        # Session db is empty; shared db has parties
+        session = mgr.get(sid)
+        assert session is not None
+        resp_before = c.get("/api/parties")
+        assert resp_before.get_json() == []  # session db is empty
+
+        session.live = True  # switch to live
+        resp_after = c.get("/api/parties")
+        assert len(resp_after.get_json()) > 0  # now reads from shared db
+
+
+def test_demo_state_returns_disabled_when_session_live(tmp_path):
+    """/demo/state returns enabled=false when session.live=True."""
+    from valg.sessions import SessionManager
+
+    sid = "aa000000-0000-0000-0000-000000000002"
+    mgr = SessionManager(base_dir=tmp_path / "sessions", max_sessions=5)
+    app = create_app(
+        db_path=tmp_path / "v.db",
+        data_dir=tmp_path / "data",
+        session_manager=mgr,
+    )
+    app.config["TESTING"] = True
+    with app.test_client() as c:
+        c.set_cookie("valg_session", sid)
+        c.get("/")
+        session = mgr.get(sid)
+        assert session is not None
+        # Before live switch: enabled=True
+        resp = c.get("/demo/state")
+        assert resp.get_json()["enabled"] is True
+
+        session.live = True
+        resp = c.get("/demo/state")
+        assert resp.get_json()["enabled"] is False
+
+
+def test_maybe_switch_to_live_triggers_once_on_real_results(tmp_path, monkeypatch):
+    """switch_all_to_live is called exactly once even if _maybe_switch_to_live runs twice."""
+    from unittest.mock import MagicMock
+    import valg.server as srv
+    from valg.server import _maybe_switch_to_live
+    from valg.models import get_connection, init_db
+
+    db = tmp_path / "test.db"
+    conn = get_connection(str(db))
+    init_db(conn)
+    conn.execute("PRAGMA foreign_keys=OFF")
+    conn.execute(
+        "INSERT INTO results (party_id, votes, count_type, snapshot_at) "
+        "VALUES ('A', 100, 'preliminary', '2024-11-05T21:00:00')"
+    )
+    conn.commit()
+    conn.close()
+
+    monkeypatch.setattr(srv, "_live_data_available", False)
+    mock_sm = MagicMock()
+    _maybe_switch_to_live(db, mock_sm)
+    _maybe_switch_to_live(db, mock_sm)  # second call must be a no-op
+    mock_sm.switch_all_to_live.assert_called_once()
+
+
+def test_maybe_switch_to_live_no_op_without_real_results(tmp_path, monkeypatch):
+    """switch_all_to_live is NOT called when the shared db has no preliminary results."""
+    from unittest.mock import MagicMock
+    import valg.server as srv
+    from valg.server import _maybe_switch_to_live
+    from valg.models import get_connection, init_db
+
+    db = tmp_path / "test.db"
+    conn = get_connection(str(db))
+    init_db(conn)
+    conn.close()
+
+    monkeypatch.setattr(srv, "_live_data_available", False)
+    mock_sm = MagicMock()
+    _maybe_switch_to_live(db, mock_sm)
+    mock_sm.switch_all_to_live.assert_not_called()

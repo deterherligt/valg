@@ -14,11 +14,19 @@
   <header class="header">
     <h1>valg</h1>
     <span class="meta" :class="{'pulsing': syncing}">
-      <span x-text="lastSynced ? 'Synced ' + lastSynced : 'Waiting for sync…'"></span>
-      <span x-show="districtsTotal > 0">
-        &bull;
-        <span x-text="(districtsReported || 0) + '/' + (districtsTotal || 0) + ' districts'"></span>
-      </span>
+      <template x-if="demo.enabled">
+        <span style="display:inline-flex;align-items:center;gap:6px">
+          <span class="badge badge--demo">DEMO</span>
+          <span>Simulerede data · live ikke tilgængeligt endnu</span>
+        </span>
+      </template>
+      <template x-if="!demo.enabled">
+        <span style="display:inline-flex;align-items:center;gap:6px">
+          <span class="badge badge--live"><span class="badge-dot"></span>LIVE</span>
+          <span x-text="lastSynced ? 'Opdateret ' + lastSynced : 'Venter på sync…'"></span>
+          <span x-show="districtsTotal > 0">&bull; <span x-text="(districtsReported || 0) + '/' + (districtsTotal || 0) + ' kredse'"></span></span>
+        </span>
+      </template>
     </span>
     <button class="about-btn" @click="showAbout = true">Om</button>
   </header>
