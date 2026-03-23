@@ -1,0 +1,65 @@
+<h2>Kandidater per storkreds — to tilgange</h2>
+<p class="subtitle">Begge viser at en kandidat kan blive valgt med færre stemmer i en anden storkreds</p>
+
+<div class="split" style="gap:24px;align-items:flex-start">
+
+  <!-- Option A -->
+  <div class="mockup" data-choice="a" onclick="toggleSelect(this)" style="cursor:pointer;flex:1">
+    <div class="mockup-header">A — Grupperet per storkreds</div>
+    <div class="mockup-body" style="font-size:13px;font-family:monospace;line-height:1.6">
+
+      <div style="font-weight:bold;margin-bottom:8px">Socialdemokratiet · 27,5% · 50 mandater</div>
+
+      <div style="background:#1a1a2e;border-radius:6px;padding:10px;margin-bottom:10px">
+        <div style="color:#888;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Københavns Storkreds · 9 mandater</div>
+        <div style="color:#4ade80">✓ Mette Frederiksen · Hvidovre · 12.847</div>
+        <div style="color:#4ade80">✓ Henrik Sass Larsen · Brøndby · 4.122</div>
+        <div style="color:#4ade80">✓ [7 mere valgt]</div>
+        <div style="border-top:1px dashed #444;margin:5px 0;padding-top:5px;color:#666;font-size:11px">— grænse · 234 stemmer</div>
+        <div style="color:#666">✗ Kandidat D · Rødovre · 3.888</div>
+        <div style="color:#666">✗ Kandidat E · Valby · 2.103</div>
+      </div>
+
+      <div style="background:#1a1a2e;border-radius:6px;padding:10px;margin-bottom:10px">
+        <div style="color:#888;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Bornholms Storkreds · 2 mandater</div>
+        <div style="color:#4ade80">✓ Bornholmer A · Nexø · 1.203</div>
+        <div style="color:#4ade80">✓ Bornholmer B · Rønne · 891</div>
+        <div style="border-top:1px dashed #444;margin:5px 0;padding-top:5px;color:#666;font-size:11px">— grænse · 188 stemmer</div>
+        <div style="color:#666">✗ Bornholmer C · Allinge · 703</div>
+      </div>
+
+      <div style="background:#1a1a2e;border-radius:6px;padding:10px">
+        <div style="color:#888;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Sjællands Storkreds · 8 mandater</div>
+        <div style="color:#4ade80">✓ Kandidat X · Roskilde · 8.341</div>
+        <div style="color:#666">… og 7 andre storkredse</div>
+      </div>
+
+      <div style="margin-top:10px;color:#888;font-size:11px">Bornholmer B (891 stemmer) valgt — Kandidat D (3.888 stemmer) ikke valgt</div>
+    </div>
+  </div>
+
+  <!-- Option B -->
+  <div class="mockup" data-choice="b" onclick="toggleSelect(this)" style="cursor:pointer;flex:1">
+    <div class="mockup-header">B — National liste med storkreds-kontekst</div>
+    <div class="mockup-body" style="font-size:13px;font-family:monospace;line-height:1.6">
+
+      <div style="font-weight:bold;margin-bottom:8px">Socialdemokratiet · 27,5% · 50 mandater</div>
+      <div style="color:#888;font-size:11px;margin-bottom:8px">Sorteret nationalt efter stemmer — valgt/ikke-valgt per storkreds</div>
+
+      <div style="color:#4ade80">✓ Mette Frederiksen · Kbh · 12.847 · <span style="color:#60a5fa">#1 i Kbh (9 mandater)</span></div>
+      <div style="color:#4ade80">✓ Henrik Sass Larsen · Kbh · 4.122 · <span style="color:#60a5fa">#2 i Kbh</span></div>
+      <div style="color:#4ade80">✓ Kandidat X · Sjælland · 8.341 · <span style="color:#60a5fa">#1 i Sjælland (8 mandater)</span></div>
+      <div style="color:#4ade80">✓ Bornholmer A · Born · 1.203 · <span style="color:#60a5fa">#1 i Born (2 mandater)</span></div>
+      <div style="color:#4ade80">✓ Bornholmer B · Born · 891 · <span style="color:#60a5fa">#2 i Born</span></div>
+      <div style="border-top:1px dashed #444;margin:6px 0;padding-top:5px;color:#888;font-size:11px">— national gennemsnitsgrænse</div>
+      <div style="color:#666">✗ Kandidat D · Kbh · 3.888 · <span style="color:#f87171">#10 i Kbh (kun 9 mandater)</span></div>
+      <div style="color:#666">✗ Kandidat E · Kbh · 2.103 · <span style="color:#f87171">#11 i Kbh</span></div>
+      <div style="color:#666">✗ Bornholmer C · Born · 703 · <span style="color:#f87171">#3 i Born (kun 2 mandater)</span></div>
+
+      <div style="margin-top:10px;color:#888;font-size:11px">Bornholmer B valgt trods færre stemmer end Kandidat D (forskellig storkreds)</div>
+    </div>
+  </div>
+
+</div>
+
+<p style="text-align:center;margin-top:16px;color:#666;font-size:12px">Klik på et layout for at vælge — eller beskriv hvad du foretrækker i terminalen</p>

@@ -1,0 +1,110 @@
+<h2>Demo/live-indikator i headeren</h2>
+<p class="subtitle">Samme sted viser om det er demo eller live — to tilgange</p>
+
+<div class="split" style="gap:24px;align-items:flex-start">
+
+  <!-- Option A: status i .meta-feltet -->
+  <div class="mockup" data-choice="a" onclick="toggleSelect(this)" style="cursor:pointer;flex:1">
+    <div class="mockup-header">A — Status i header-linjen (erstatter sync-tekst under demo)</div>
+    <div class="mockup-body" style="padding:0">
+
+      <!-- Demo state -->
+      <div style="padding:10px 14px;border-bottom:1px solid #2a2a3a">
+        <div style="font-size:10px;color:#666;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Demo-tilstand</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;background:#111;border-radius:6px;padding:10px 14px">
+          <span style="font-size:18px;font-weight:700;color:#e2e8f0">valg</span>
+          <span style="display:flex;align-items:center;gap:8px">
+            <span style="background:#92400e;color:#fcd34d;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;letter-spacing:.05em">DEMO</span>
+            <span style="color:#9ca3af;font-size:12px">Simulerede data · live ikke tilgængeligt endnu</span>
+          </span>
+          <span style="color:#6b7280;font-size:13px">Om</span>
+        </div>
+        <div style="margin-top:6px;background:#1a1a2e;border-radius:4px;padding:6px 14px;font-size:11px;color:#888;display:flex;gap:12px">
+          <span>fv2022 ·</span>
+          <span>▶ Kører</span>
+          <span>Hastighed: 10×</span>
+          <span>⏸ Pause</span>
+          <span>↺ Genstart</span>
+        </div>
+      </div>
+
+      <!-- Live state -->
+      <div style="padding:10px 14px">
+        <div style="font-size:10px;color:#666;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Live-tilstand</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;background:#111;border-radius:6px;padding:10px 14px">
+          <span style="font-size:18px;font-weight:700;color:#e2e8f0">valg</span>
+          <span style="display:flex;align-items:center;gap:8px">
+            <span style="display:inline-flex;align-items:center;gap:5px;background:#14532d;color:#4ade80;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px">
+              <span style="width:6px;height:6px;background:#4ade80;border-radius:50%;display:inline-block;animation:pulse 2s infinite"></span>
+              LIVE
+            </span>
+            <span style="color:#9ca3af;font-size:12px">Opdateret 22:14 · 5/9 kredse</span>
+          </span>
+          <span style="color:#6b7280;font-size:13px">Om</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Option B: subtitle under h1 -->
+  <div class="mockup" data-choice="b" onclick="toggleSelect(this)" style="cursor:pointer;flex:1">
+    <div class="mockup-header">B — Statuslinje under titlen</div>
+    <div class="mockup-body" style="padding:0">
+
+      <!-- Demo state -->
+      <div style="padding:10px 14px;border-bottom:1px solid #2a2a3a">
+        <div style="font-size:10px;color:#666;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Demo-tilstand</div>
+        <div style="background:#111;border-radius:6px;padding:10px 14px">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div>
+              <span style="font-size:18px;font-weight:700;color:#e2e8f0">valg</span>
+              <div style="margin-top:3px;font-size:11px;display:flex;align-items:center;gap:6px">
+                <span style="background:#92400e;color:#fcd34d;font-size:10px;font-weight:600;padding:1px 6px;border-radius:99px">DEMO</span>
+                <span style="color:#6b7280">Simulerede data — skifter automatisk til live</span>
+              </div>
+            </div>
+            <span style="color:#6b7280;font-size:13px">Om</span>
+          </div>
+        </div>
+        <div style="margin-top:6px;background:#1a1a2e;border-radius:4px;padding:6px 14px;font-size:11px;color:#888;display:flex;gap:12px">
+          <span>fv2022 ·</span>
+          <span>▶ Kører</span>
+          <span>Hastighed: 10×</span>
+          <span>⏸ Pause</span>
+          <span>↺ Genstart</span>
+        </div>
+      </div>
+
+      <!-- Live state -->
+      <div style="padding:10px 14px">
+        <div style="font-size:10px;color:#666;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Live-tilstand</div>
+        <div style="background:#111;border-radius:6px;padding:10px 14px">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div>
+              <span style="font-size:18px;font-weight:700;color:#e2e8f0">valg</span>
+              <div style="margin-top:3px;font-size:11px;display:flex;align-items:center;gap:6px">
+                <span style="display:inline-flex;align-items:center;gap:4px;background:#14532d;color:#4ade80;font-size:10px;font-weight:600;padding:1px 6px;border-radius:99px">
+                  <span style="width:5px;height:5px;background:#4ade80;border-radius:50%;display:inline-block"></span>LIVE
+                </span>
+                <span style="color:#6b7280">Opdateret 22:14 · 5/9 kredse</span>
+              </div>
+            </div>
+            <span style="color:#6b7280;font-size:13px">Om</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<p style="text-align:center;margin-top:16px;color:#666;font-size:12px">Klik for at vælge — eller sig hvad du foretrækker i terminalen</p>
+
+<style>
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+</style>
