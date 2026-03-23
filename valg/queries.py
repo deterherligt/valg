@@ -311,7 +311,7 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
         for sk_id in all_sk_ids:
             kreds_s = kreds_by_sk.get(sk_id, 0)
             tillaeg_s = tillaeg_by_sk.get(sk_id, 0)
-            sk_seats_for_party[sk_id] = kreds_s
+            sk_seats_for_party[sk_id] = kreds_s + tillaeg_s
             if kreds_s > 0 or tillaeg_s > 0:
                 seats_breakdown.append({
                     "name": storkreds_names.get(sk_id, sk_id),
