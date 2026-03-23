@@ -70,12 +70,12 @@
             <div>
               <div class="party-name" x-text="(p.letter || p.id) + ' — ' + p.name"></div>
               <div class="party-sub">
-                <span x-text="formatNum(p.votes) + ' votes · ' + p.kreds_seats + ' kreds + ' + p.tillaeg_seats + (p.reporting_pct < 100 ? ' tillaeg [' + p.reporting_pct + '% ind]' : ' tillaeg') + ' = ' + (p.kreds_seats + p.tillaeg_seats) + ' seats'"></span>
+                <span x-text="formatNum(p.votes) + ' stemmer (' + p.pct + '%) · ' + p.kreds_seats + ' kreds + ' + p.tillaeg_seats + ' tillæg' + (p.reporting_pct < 100 ? ' [' + p.reporting_pct + '% ind]' : '') + ' = ' + (p.kreds_seats + p.tillaeg_seats) + ' mandater'"></span>
               </div>
               <div class="party-sub">
-                <span class="flip-gain" x-text="'+' + formatNum(p.gain) + ' to gain'"></span>
+                <span class="flip-gain" x-text="'+' + formatNum(p.gain) + ' for ekstra mandat'"></span>
                 <span style="color:#8b949e"> · </span>
-                <span class="flip-lose" x-text="'−' + formatNum(p.lose) + ' to lose'"></span>
+                <span class="flip-lose" x-text="'−' + formatNum(p.lose) + ' til at miste'"></span>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@
                   <template x-for="block in storkredsCandidateBlocks" :key="block.party_id">
                     <div class="party-detail-block">
                       <div class="party-detail-name"
-                           x-text="(block.letter || block.party_id) + ' — ' + block.name + ' — ' + block.sk_seats + ' mandater'">
+                           x-text="(block.letter || block.party_id) + ' — ' + block.name + (block.sk_seats > 0 ? ' — ' + block.sk_kreds_seats + ' kreds + ' + (block.sk_seats - block.sk_kreds_seats) + ' tillæg = ' + block.sk_seats + ' mandater' : '')">
                       </div>
                       <template x-if="block.empty">
                         <div class="detail-placeholder" style="padding:8px 0">Ingen kandidater i denne storkreds</div>
@@ -233,7 +233,7 @@
                       <div class="party-detail-name"
                            x-text="(p.letter || p.id) + ' — ' + p.name"></div>
                       <div class="party-detail-meta"
-                           x-text="formatNum(p.votes) + ' votes (' + p.pct + '%) · ' + p.seats_total + ' seats'">
+                           x-text="formatNum(p.votes) + ' stemmer (' + p.pct + '%) · ' + p.kreds_seats + ' kreds + ' + p.tillaeg_seats + ' tillæg = ' + p.seats_total + ' mandater'">
                       </div>
                       <template x-if="!p.has_votes && p.candidates.length > 0">
                         <div>
@@ -257,7 +257,7 @@
                                 <span class="cand-breakdown-name" x-text="c.name"></span>
                                 <span class="cand-breakdown-kreds" x-text="c.opstillingskreds"></span>
                                 <span class="cand-breakdown-sk"
-                                      x-text="c.sk_seats > 0 ? '#' + c.sk_rank + ' i ' + c.storkreds + ' (' + c.sk_seats + ' mandater)' : '#' + c.sk_rank + ' i ' + c.storkreds">
+                                      x-text="'#' + c.sk_rank + ' i ' + c.storkreds + (c.sk_seats > 0 ? ' (' + c.sk_kreds_seats + ' kreds + ' + (c.sk_seats - c.sk_kreds_seats) + ' tillæg)' : '')">
                                 </span>
                                 <span class="cand-mandate-type" x-show="c.elected && c.elected !== false"
                                       :style="c.elected === 'tillaeg' ? 'color:#d29922' : 'color:#3fb950'"
