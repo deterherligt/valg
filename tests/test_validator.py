@@ -1,5 +1,6 @@
+import json
 import git
-from valg.validator import check_authors, check_inventory
+from valg.validator import check_authors, check_inventory, check_schema
 
 
 def test_check_authors_passes_for_allowed_email(tmp_path):
@@ -38,3 +39,20 @@ def test_check_inventory_flags_unknown_files(tmp_path):
     result = check_inventory(tmp_path)
     assert "BrandNewFormat.json" in result["unknown_files"]
     assert "Region.json" not in result["unknown_files"]
+
+
+def test_check_schema_passes_valid_partistemmer(tmp_path):
+    """Valid partistemmefordeling file passes schema check."""
+    data = {"Valg": {"OpstillingskredsId": "ok1", "Partier": [{"PartiId": "A", "Stemmer": 1234}]}}
+    (tmp_path / "partistemmefordeling-ok1.json").write_text(json.dumps(data))
+    violations = check_schema(tmp_path)
+    assert violations == []
+
+
+def test_check_schema_flags_missing_key(tmp_path):
+    """File missing expected key → violation reported."""
+    data = {"WrongKey": {}}
+    (tmp_path / "partistemmefordeling-ok1.json").write_text(json.dumps(data))
+    violations = check_schema(tmp_path)
+    assert len(violations) == 1
+    assert "Valg" in violations[0]["issue"]

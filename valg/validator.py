@@ -1,3 +1,4 @@
+import json
 import subprocess
 import logging
 from pathlib import Path
@@ -20,6 +21,40 @@ def check_authors(data_repo, allowed_emails, since_commit=None):
         if email not in allowed_emails:
             unauthorized.append({"sha": sha, "email": email})
     return unauthorized
+
+
+SCHEMA_EXPECTATIONS = {
+    "partistemmer": {"required_keys": ["Valg"], "nested": {"Valg": ["OpstillingskredsId", "Partier"]}},
+    "geografi": {"required_keys": ["Storkredse"]},
+    "valgresultater_fv": {"required_keys": ["Valg"]},
+    "valgdeltagelse": {"required_keys": ["Valg"]},
+}
+
+
+def check_schema(data_repo):
+    """Spot-check known files for expected structure."""
+    load_plugins()
+    violations = []
+    for f in Path(data_repo).glob("*.json"):
+        plugin = find_plugin(f.name)
+        if not plugin:
+            continue
+        plugin_name = plugin.__name__.rsplit(".", 1)[-1]
+        expectation = SCHEMA_EXPECTATIONS.get(plugin_name)
+        if not expectation:
+            continue
+        try:
+            data = json.loads(f.read_text())
+        except json.JSONDecodeError:
+            violations.append({"file": f.name, "issue": "invalid JSON"})
+            continue
+        if not isinstance(data, dict):
+            violations.append({"file": f.name, "issue": "expected dict, got " + type(data).__name__})
+            continue
+        for key in expectation.get("required_keys", []):
+            if key not in data:
+                violations.append({"file": f.name, "issue": f"missing required key: {key}"})
+    return violations
 
 
 def check_inventory(data_repo):
