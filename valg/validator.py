@@ -78,6 +78,19 @@ def check_inventory(data_repo):
     return {"matched_files": matched, "unknown_files": unknown}
 
 
+def check_anomaly_rate(conn, total_files, threshold=0.2):
+    """Check if anomaly rate exceeds threshold for this cycle."""
+    row = conn.execute(
+        "SELECT COUNT(*) FROM anomalies WHERE detected_at > datetime('now', '-2 minutes')"
+    ).fetchone()
+    anomaly_count = row[0]
+    rate = anomaly_count / max(total_files, 1)
+    passed = rate <= threshold
+    if not passed:
+        logger.warning("Anomaly rate %.1f%% exceeds threshold %.1f%%", rate * 100, threshold * 100)
+    return {"passed": passed, "anomaly_count": anomaly_count, "rate": rate}
+
+
 def run_validation(data_repo, allowed_emails, since_commit=None):
     """Run all pre-process validation checks. Returns verdict dict."""
     unauthorized = check_authors(data_repo, allowed_emails, since_commit)

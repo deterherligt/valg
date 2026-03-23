@@ -277,6 +277,23 @@ def cmd_validate(conn, args):
             fh.write(f"unknown_files={json.dumps(verdict['unknown_files'])}\n")
 
 
+def cmd_check_anomalies(conn, args):
+    import subprocess
+    from valg.validator import check_anomaly_rate
+
+    threshold = float(os.environ.get("VALG_ANOMALY_THRESHOLD", "0.2"))
+    total_files = conn.execute("SELECT COUNT(*) FROM anomalies").fetchone()[0] or 1
+    result = check_anomaly_rate(conn, total_files=total_files, threshold=threshold)
+    console.print(f"Anomaly rate: {result['rate']*100:.1f}% ({result['anomaly_count']} anomalies) — {'PASS' if result['passed'] else 'FAIL'}")
+
+    if not result["passed"] and os.environ.get("GITHUB_ACTIONS"):
+        subprocess.run([
+            "gh", "issue", "create",
+            "--title", f"High anomaly rate: {result['rate']*100:.1f}%",
+            "--body", f"Anomaly count: {result['anomaly_count']}, rate: {result['rate']*100:.1f}% exceeds threshold {threshold*100:.1f}%",
+        ])
+
+
 def cmd_sync(conn, args):
     from valg.processor import process_directory
     from valg.plugins import load_plugins
@@ -379,6 +396,9 @@ def build_parser() -> argparse.ArgumentParser:
         help="Comma-separated list of allowed commit author emails",
     )
 
+    # check-anomalies
+    sub.add_parser("check-anomalies", help="Check anomaly rate for current sync cycle")
+
     return parser
 
 
@@ -404,6 +424,7 @@ def main():
         "fetch": cmd_fetch,
         "process": cmd_process,
         "validate": cmd_validate,
+        "check-anomalies": cmd_check_anomalies,
     }
 
     if args.command is None:

@@ -1,7 +1,8 @@
 import argparse
 import json
 import git
-from valg.validator import check_authors, check_inventory, check_schema, run_validation
+from valg.validator import check_authors, check_inventory, check_schema, run_validation, check_anomaly_rate
+from valg.models import get_connection, init_db
 
 
 def test_check_authors_passes_for_allowed_email(tmp_path):
@@ -71,6 +72,27 @@ def test_run_validation_returns_verdict(tmp_path):
     assert isinstance(verdict["unauthorized_commits"], list)
     assert isinstance(verdict["unknown_files"], list)
     assert isinstance(verdict["schema_violations"], list)
+
+
+def test_check_anomaly_rate_passes_under_threshold(tmp_path):
+    """Anomaly rate below threshold → passes."""
+    conn = get_connection(str(tmp_path / "test.db"))
+    init_db(conn)
+    conn.execute("INSERT INTO anomalies (detected_at, filename, anomaly_type, detail) VALUES (datetime('now'), 'f.json', 'unknown_field', 'x')")
+    conn.commit()
+    result = check_anomaly_rate(conn, total_files=10, threshold=0.2)
+    assert result["passed"] is True
+
+
+def test_check_anomaly_rate_fails_above_threshold(tmp_path):
+    """Anomaly rate above threshold → fails."""
+    conn = get_connection(str(tmp_path / "test.db"))
+    init_db(conn)
+    for i in range(5):
+        conn.execute("INSERT INTO anomalies (detected_at, filename, anomaly_type, detail) VALUES (datetime('now'), ?, 'parse_failure', 'x')", (f"f{i}.json",))
+    conn.commit()
+    result = check_anomaly_rate(conn, total_files=10, threshold=0.2)
+    assert result["passed"] is False
 
 
 def test_cmd_validate_writes_github_output(tmp_path, monkeypatch):
