@@ -261,7 +261,7 @@ maintain_open_prs() {
     local my_login
     my_login=$(gh api user --jq '.login' 2>/dev/null) || return
     local conflicted_prs=$(gh pr list --state open --author "$my_login" --json number,title,mergeable \
-        --jq '.[] | select(.title | startswith("Auto-")) | select(.mergeable == "CONFLICTING") | .number' 2>/dev/null)
+        --jq '.[] | select(.mergeable == "CONFLICTING") | .number' 2>/dev/null)
 
     if [ -z "$conflicted_prs" ]; then
         return
