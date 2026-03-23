@@ -83,8 +83,9 @@ def check_inventory(data_repo):
 
 def check_anomaly_rate(conn, total_files, threshold=0.2):
     """Check if anomaly rate exceeds threshold for this cycle."""
+    # Replace T with space for comparison — detected_at may use either ISO (T) or SQLite (space) format
     row = conn.execute(
-        "SELECT COUNT(*) FROM anomalies WHERE detected_at > datetime('now', '-2 minutes')"
+        "SELECT COUNT(*) FROM anomalies WHERE REPLACE(detected_at, 'T', ' ') > datetime('now', '-5 minutes')"
     ).fetchone()
     anomaly_count = row[0]
     rate = anomaly_count / max(total_files, 1)
