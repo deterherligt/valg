@@ -28,7 +28,7 @@ def test_check_authors_flags_unauthorized_email(tmp_path):
 
 def test_check_inventory_all_matched(tmp_path):
     """All files match a plugin → no unknown files."""
-    (tmp_path / "Region.json").write_text("{}")
+    (tmp_path / "Storkreds-test.json").write_text("{}")
     (tmp_path / "partistemmefordeling-ok1.json").write_text("{}")
     result = check_inventory(tmp_path)
     assert result["unknown_files"] == []
@@ -36,11 +36,11 @@ def test_check_inventory_all_matched(tmp_path):
 
 def test_check_inventory_flags_unknown_files(tmp_path):
     """Files that no plugin matches → listed as unknown."""
-    (tmp_path / "Region.json").write_text("{}")
+    (tmp_path / "Storkreds-test.json").write_text("{}")
     (tmp_path / "BrandNewFormat.json").write_text("{}")
     result = check_inventory(tmp_path)
     assert "BrandNewFormat.json" in result["unknown_files"]
-    assert "Region.json" not in result["unknown_files"]
+    assert "Storkreds-test.json" not in result["unknown_files"]
 
 
 def test_check_schema_passes_valid_partistemmer(tmp_path):

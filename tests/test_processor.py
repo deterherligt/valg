@@ -18,8 +18,8 @@ def db():
     init_db(conn)
     return conn
 
-def test_process_region_file_inserts_storkredse_rows(db, tmp_path):
-    f = tmp_path / "Region.json"
+def test_process_storkreds_file_inserts_storkredse_rows(db, tmp_path):
+    f = tmp_path / "Storkreds-test.json"
     f.write_text((FIXTURES / "geografi_region.json").read_text())
     process_raw_file(db, f)
     count = db.execute("SELECT COUNT(*) FROM storkredse").fetchone()[0]
@@ -50,7 +50,7 @@ def test_process_file_records_snapshot_at(db, tmp_path):
     assert row["snapshot_at"] == "2024-11-05T21:00:00"
 
 def test_process_directory_of_files(db, tmp_path):
-    (tmp_path / "Region.json").write_text(
+    (tmp_path / "Storkreds-test.json").write_text(
         (FIXTURES / "geografi_region.json").read_text())
     (tmp_path / "valgresultater-Folketingsvalg-Lyngby-Arenaskolen-190820220938.json").write_text(
         (FIXTURES / "valgresultater_fv_preliminary.json").read_text())
@@ -73,7 +73,7 @@ def test_process_malformed_json_logs_anomaly(db, tmp_path):
     assert count == 1
 
 def test_process_directory_processes_all_json_files(db, tmp_path):
-    (tmp_path / "Region.json").write_text((FIXTURES / "geografi_region.json").read_text())
+    (tmp_path / "Storkreds-test.json").write_text((FIXTURES / "geografi_region.json").read_text())
     (tmp_path / "partistemmefordeling-Kobenhavn-2024.json").write_text(
         (FIXTURES / "partistemmer_fv.json").read_text())
     # also insert a prerequisite opstillingskreds for party_votes FK
@@ -82,10 +82,10 @@ def test_process_directory_processes_all_json_files(db, tmp_path):
     db.execute("INSERT INTO opstillingskredse (id, name, storkreds_id) VALUES ('OK1', 'OK1', 'SK1')")
     db.commit()
     process_directory(db, tmp_path)
-    assert db.execute("SELECT COUNT(*) FROM storkredse").fetchone()[0] >= 2  # from Region.json
+    assert db.execute("SELECT COUNT(*) FROM storkredse").fetchone()[0] >= 2  # from Storkreds-test.json
 
 def test_process_idempotent_upsert_does_not_duplicate(db, tmp_path):
-    f = tmp_path / "Region.json"
+    f = tmp_path / "Storkreds-test.json"
     f.write_text((FIXTURES / "geografi_region.json").read_text())
     process_raw_file(db, f)
     process_raw_file(db, f)  # process same file twice

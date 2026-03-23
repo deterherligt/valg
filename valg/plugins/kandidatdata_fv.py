@@ -9,10 +9,10 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     if not isinstance(data, dict):
         return []
     for party in data.get("IndenforParti", []):
-        party_id = party.get("Partibogstav")
+        party_letter = party.get("Partibogstav") or party.get("Bogstavbetegnelse")
         for k in party.get("Kandidater", []):
             cand_id = k.get("Id")
-            cand_name = k.get("Navn")
+            cand_name = k.get("Stemmeseddelnavn") or k.get("Navn")
             if not cand_id or not cand_name:
                 continue
             for ok in k.get("Opstillingskredse", []):
@@ -21,8 +21,8 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
                 rows.append({
                     "id": cand_id,
                     "name": cand_name,
-                    "party_id": party_id,
-                    "opstillingskreds_id": ok.get("OpstillingskredsDagiId"),
+                    "party_id": party_letter,
+                    "opstillingskreds_id": str(ok.get("OpstillingskredsDagiId")),
                     "ballot_position": ok.get("KandidatsPlacering"),
                 })
     return rows

@@ -13,8 +13,8 @@ def plugins():
 
 # --- MATCH functions ---
 
-def test_geografi_matches_region():
-    assert find_plugin("Region.json") is not None
+def test_geografi_matches_storkreds_prefix():
+    assert find_plugin("Storkreds-test.json") is not None
 
 def test_geografi_matches_storkreds():
     assert find_plugin("Storkreds.json") is not None
@@ -38,18 +38,18 @@ def test_unknown_file_returns_none():
 # --- parse functions: geografi ---
 
 def test_geografi_parse_returns_storkredse_rows():
-    plugin = find_plugin("Region.json")
+    plugin = find_plugin("Storkreds-test.json")
     data = json.loads((FIXTURES / "geografi_region.json").read_text())
     rows = plugin.parse(data, "2024-11-05T21:00:00")
     assert len(rows) == 2
     assert all("id" in r and "name" in r for r in rows)
 
-def test_geografi_parse_includes_n_kredsmandater():
-    plugin = find_plugin("Region.json")
+def test_geografi_parse_id_is_str_of_nummer():
+    plugin = find_plugin("Storkreds-test.json")
     data = json.loads((FIXTURES / "geografi_region.json").read_text())
     rows = plugin.parse(data, "2024-11-05T21:00:00")
-    assert all("n_kredsmandater" in r for r in rows)
-    assert rows[0]["n_kredsmandater"] == 15
+    assert rows[0]["id"] == "1"
+    assert rows[1]["id"] == "2"
 
 def test_geografi_storkreds_parse():
     plugin = find_plugin("Storkreds.json")
@@ -120,7 +120,7 @@ def test_kandidatdata_parse_returns_candidate_rows():
     assert any(r.get("name") == "Mette Frederiksen" for r in rows)
 
 def test_geografi_parse_includes_election_id():
-    plugin = find_plugin("Region.json")
+    plugin = find_plugin("Storkreds-test.json")
     data = json.loads((FIXTURES / "geografi_region.json").read_text())
     rows = plugin.parse(data, "2024-11-05T21:00:00")
     assert all("election_id" in r for r in rows)
@@ -199,21 +199,20 @@ def test_parti_parse_non_list_returns_empty():
 def test_geografi_ao_parse_returns_rows():
     plugin = find_plugin("Afstemningsomraade-KV2025.json")
     data = [
-        {"Kode": "AO001", "Navn": "Valsted Skole", "OpstillingskredsKode": "OK1", "AntalStemmeberettigede": 1200},
-        {"Kode": "AO002", "Navn": "Biblioteket", "OpstillingskredsKode": "OK1", "AntalStemmeberettigede": 900},
+        {"Dagi_id": "AO001", "Navn": "Valsted Skole", "Opstillingskreds_Dagi_id": "OK1"},
+        {"Dagi_id": "AO002", "Navn": "Biblioteket", "Opstillingskreds_Dagi_id": "OK1"},
     ]
     rows = plugin.parse(data, "2025-11-18T21:00:00")
     assert len(rows) == 2
     assert rows[0]["id"] == "AO001"
     assert rows[0]["name"] == "Valsted Skole"
     assert rows[0]["opstillingskreds_id"] == "OK1"
-    assert rows[0]["eligible_voters"] == 1200
 
 def test_geografi_ao_parse_skips_missing_id():
     plugin = find_plugin("Afstemningsomraade-KV2025.json")
     data = [
-        {"Navn": "Skole uden kode", "OpstillingskredsKode": "OK1"},
-        {"Kode": "AO002", "Navn": "OK skole", "OpstillingskredsKode": "OK1"},
+        {"Navn": "Skole uden kode", "Opstillingskreds_Dagi_id": "OK1"},
+        {"Dagi_id": "AO002", "Navn": "OK skole", "Opstillingskreds_Dagi_id": "OK1"},
     ]
     rows = plugin.parse(data, "2025-11-18T21:00:00")
     assert len(rows) == 1
@@ -229,8 +228,8 @@ def test_geografi_ao_parse_non_list_returns_empty():
 def test_geografi_ok_parse_returns_rows():
     plugin = find_plugin("Opstillingskreds-KV2025.json")
     data = [
-        {"Kode": "OK1", "Navn": "Kobenhavn", "StorkredskodeKode": "SK1"},
-        {"Kode": "OK2", "Navn": "Frederiksberg", "StorkredskodeKode": "SK1"},
+        {"Dagi_id": "OK1", "Navn": "Kobenhavn", "Storkredskode": "SK1"},
+        {"Dagi_id": "OK2", "Navn": "Frederiksberg", "Storkredskode": "SK1"},
     ]
     rows = plugin.parse(data, "2025-11-18T21:00:00")
     assert len(rows) == 2
@@ -241,8 +240,8 @@ def test_geografi_ok_parse_returns_rows():
 def test_geografi_ok_parse_skips_missing_id():
     plugin = find_plugin("Opstillingskreds-KV2025.json")
     data = [
-        {"Navn": "Ingen kode", "StorkredskodeKode": "SK1"},
-        {"Kode": "OK2", "Navn": "Frederiksberg", "StorkredskodeKode": "SK1"},
+        {"Navn": "Ingen kode", "Storkredskode": "SK1"},
+        {"Dagi_id": "OK2", "Navn": "Frederiksberg", "Storkredskode": "SK1"},
     ]
     rows = plugin.parse(data, "2025-11-18T21:00:00")
     assert len(rows) == 1

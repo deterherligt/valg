@@ -9,10 +9,13 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
         return []
     rows = []
     for item in data:
+        dagi_id = item.get("Dagi_id")
+        if not dagi_id:
+            continue
         row = {
-            "id": item.get("Kode"),
+            "id": str(dagi_id),
             "name": item.get("Navn"),
-            "storkreds_id": item.get("StorkredskodeKode"),
+            "storkreds_id": str(item.get("Storkredskode", "")),
         }
         if row["id"] and row["name"]:
             rows.append(row)

@@ -2,7 +2,7 @@
 TABLE = "storkredse"
 
 def MATCH(filename: str) -> bool:
-    return filename.startswith("Region") or filename.startswith("Storkreds")
+    return filename.startswith("Storkreds")
 
 def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     if not isinstance(data, list):
@@ -10,10 +10,9 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
     rows = []
     for item in data:
         row = {
-            "id": item.get("Kode"),
+            "id": str(item.get("Nummer")),
             "name": item.get("Navn"),
-            "n_kredsmandater": item.get("AntalKredsmandater"),
-            "election_id": item.get("ValgId"),
+            "election_id": "fv2026",
         }
         if row["id"] and row["name"]:
             rows.append(row)
