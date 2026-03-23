@@ -135,6 +135,55 @@ def test_kreds_shows_output(final_db):
     assert r.returncode == 0
 
 
+# --- cmd_fetch ---
+
+def test_cmd_fetch_calls_sftp_and_push(tmp_path, monkeypatch):
+    from unittest.mock import MagicMock, patch, call
+    import argparse
+    from valg.cli import cmd_fetch
+
+    mock_ssh = MagicMock()
+    mock_sftp = MagicMock()
+
+    with patch("valg.fetcher.get_sftp_client", return_value=(mock_ssh, mock_sftp)) as mock_get_sftp, \
+         patch("valg.fetcher.sync_election_folder", return_value=3) as mock_sync, \
+         patch("valg.fetcher.commit_data_repo") as mock_commit, \
+         patch("valg.fetcher.push_data_repo") as mock_push, \
+         patch.dict("os.environ", {"VALG_DATA_REPO": str(tmp_path)}):
+
+        args = argparse.Namespace(election_folder="/Folketingsvalg-1-2024")
+        cmd_fetch(None, args)
+
+        mock_get_sftp.assert_called_once()
+        mock_sync.assert_called_once_with(mock_sftp, "/Folketingsvalg-1-2024", tmp_path)
+        mock_sftp.close.assert_called_once()
+        mock_ssh.close.assert_called_once()
+        mock_commit.assert_called_once_with(tmp_path)
+        mock_push.assert_called_once_with(tmp_path)
+
+
+# --- cmd_process ---
+
+def test_cmd_process_calls_load_plugins_and_process_directory(tmp_path, monkeypatch):
+    from unittest.mock import patch
+    import argparse
+    from valg.cli import cmd_process
+
+    with patch("valg.plugins.load_plugins") as mock_load, \
+         patch("valg.processor.process_directory", return_value=5) as mock_proc:
+
+        from unittest.mock import MagicMock
+        args = argparse.Namespace(data_repo=str(tmp_path))
+        conn = MagicMock()
+        cmd_process(conn, args)
+
+        mock_load.assert_called_once()
+        mock_proc.assert_called_once()
+        call_args = mock_proc.call_args
+        assert call_args[0][0] is conn
+        assert call_args[0][1] == tmp_path
+
+
 # --- sync --fake ---
 
 def test_sync_fake_wave0_populates_storkredse(tmp_path):

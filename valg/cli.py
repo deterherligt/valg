@@ -18,6 +18,7 @@ Commands:
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -228,6 +229,77 @@ def cmd_commentary(conn, args):
         console.print(commentary)
 
 
+def cmd_fetch(conn, args):
+    from valg.fetcher import get_sftp_client, sync_election_folder, commit_data_repo, push_data_repo, discover_election_folder
+    import os
+
+    data_repo = Path(os.getenv("VALG_DATA_REPO", "../valg-data"))
+    election_folder = args.election_folder
+
+    ssh, sftp = get_sftp_client()
+    try:
+        # Try configured folder first; if it yields nothing, discover by year
+        downloaded = sync_election_folder(sftp, election_folder, data_repo)
+        if downloaded == 0 and getattr(args, "discover_year", None):
+            discovered = discover_election_folder(sftp, args.discover_year)
+            if discovered and discovered != election_folder:
+                console.print(f"[dim]Configured folder empty, discovered: {discovered}[/dim]")
+                election_folder = discovered
+                downloaded = sync_election_folder(sftp, election_folder, data_repo)
+        console.print(f"Downloaded {downloaded} files from {election_folder}")
+    finally:
+        sftp.close()
+        ssh.close()
+
+    commit_data_repo(data_repo)
+    push_data_repo(data_repo)
+
+
+def cmd_process(conn, args):
+    from valg.processor import process_directory
+    from valg.plugins import load_plugins
+    from datetime import datetime, timezone
+
+    load_plugins()
+    snapshot_at = datetime.now(timezone.utc).isoformat()
+    data_repo = Path(args.data_repo)
+
+    total = process_directory(conn, data_repo, snapshot_at=snapshot_at)
+    console.print(f"Processed {total} rows")
+
+
+def cmd_validate(conn, args):
+    import json
+    import os
+    from valg.validator import run_validation
+
+    allowed_emails = [e.strip() for e in args.allowed_emails.split(",") if e.strip()]
+    verdict = run_validation(args.data_repo, allowed_emails=allowed_emails)
+    print(json.dumps(verdict, indent=2))
+
+    github_output = os.environ.get("GITHUB_OUTPUT")
+    if github_output:
+        with open(github_output, "a") as fh:
+            fh.write(f"unknown_files={json.dumps(verdict['unknown_files'])}\n")
+
+
+def cmd_check_anomalies(conn, args):
+    import subprocess
+    from valg.validator import check_anomaly_rate
+
+    threshold = float(os.environ.get("VALG_ANOMALY_THRESHOLD", "0.2"))
+    total_files = conn.execute("SELECT COUNT(*) FROM anomalies").fetchone()[0] or 1
+    result = check_anomaly_rate(conn, total_files=total_files, threshold=threshold)
+    console.print(f"Anomaly rate: {result['rate']*100:.1f}% ({result['anomaly_count']} anomalies) — {'PASS' if result['passed'] else 'FAIL'}")
+
+    if not result["passed"] and os.environ.get("GITHUB_ACTIONS"):
+        subprocess.run([
+            "gh", "issue", "create",
+            "--title", f"High anomaly rate: {result['rate']*100:.1f}%",
+            "--body", f"Anomaly count: {result['anomaly_count']}, rate: {result['rate']*100:.1f}% exceeds threshold {threshold*100:.1f}%",
+        ])
+
+
 def cmd_sync(conn, args):
     from valg.processor import process_directory
     from valg.plugins import load_plugins
@@ -255,24 +327,12 @@ def cmd_sync(conn, args):
         console.print(f"Processed {total} rows (wave {args.wave})")
         return
 
-    from valg.fetcher import get_sftp_client, sync_election_folder, commit_data_repo
     import os
 
+    cmd_fetch(conn, args)
     data_repo = Path(os.getenv("VALG_DATA_REPO", "../valg-data"))
-    election_folder = args.election_folder
-
-    console.print(f"Syncing {election_folder}...")
-    ssh, sftp = get_sftp_client()
-    try:
-        downloaded = sync_election_folder(sftp, election_folder, data_repo)
-        console.print(f"Downloaded {downloaded} files")
-    finally:
-        sftp.close()
-        ssh.close()
-
-    total = process_directory(conn, data_repo, snapshot_at=snapshot_at)
-    console.print(f"Processed {total} rows")
-    commit_data_repo(data_repo)
+    args_process = argparse.Namespace(data_repo=str(data_repo), db=args.db)
+    cmd_process(conn, args_process)
 
 
 # ── Argument parser ──────────────────────────────────────────────────────────
@@ -285,6 +345,16 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--db", type=Path, default=None, help="Path to valg.db")
 
     sub = parser.add_subparsers(dest="command")
+
+    # fetch
+    fetch_p = sub.add_parser("fetch", help="Fetch from SFTP, commit, and push data repo")
+    fetch_p.add_argument("--election-folder", required=True)
+    fetch_p.add_argument("--discover-year", default=None,
+                         help="If configured folder is empty, discover latest folder containing this year (e.g. 2026)")
+
+    # process
+    process_p = sub.add_parser("process", help="Process downloaded data into DB")
+    process_p.add_argument("--data-repo", required=True)
 
     # sync
     sync_p = sub.add_parser("sync", help="Fetch from SFTP and process data")
@@ -325,6 +395,18 @@ def build_parser() -> argparse.ArgumentParser:
     # commentary
     sub.add_parser("commentary", help="AI commentary on current state")
 
+    # validate
+    validate_p = sub.add_parser("validate", help="Validate data repo integrity")
+    validate_p.add_argument("--data-repo", required=True)
+    validate_p.add_argument(
+        "--allowed-emails",
+        default=os.environ.get("VALG_ALLOWED_EMAILS", ""),
+        help="Comma-separated list of allowed commit author emails",
+    )
+
+    # check-anomalies
+    sub.add_parser("check-anomalies", help="Check anomaly rate for current sync cycle")
+
     return parser
 
 
@@ -347,6 +429,10 @@ def main():
         "feed": cmd_feed,
         "commentary": cmd_commentary,
         "sync": cmd_sync,
+        "fetch": cmd_fetch,
+        "process": cmd_process,
+        "validate": cmd_validate,
+        "check-anomalies": cmd_check_anomalies,
     }
 
     if args.command is None:
