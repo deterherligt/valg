@@ -198,3 +198,33 @@ def test_hare_zero_votes():
 def test_hare_empty():
     result = hare_largest_remainder({}, 10)
     assert result == {}
+
+
+# --- allocate_kredsmandater_detail ---
+
+from valg.calculator import allocate_kredsmandater_detail
+
+def test_kredsmandater_detail_returns_per_storkreds():
+    storkreds_votes = {
+        "SK1": {"A": 3000, "B": 1000},
+        "SK2": {"A": 800, "B": 700},
+    }
+    kredsmandater = {"SK1": 4, "SK2": 3}
+    result = allocate_kredsmandater_detail(storkreds_votes, kredsmandater)
+    assert "SK1" in result and "SK2" in result
+    assert sum(result["SK1"].values()) == 4
+    assert sum(result["SK2"].values()) == 3
+
+def test_kredsmandater_detail_matches_existing_totals():
+    storkreds_votes = {
+        "SK1": {"A": 3000, "B": 1000, "C": 500},
+        "SK2": {"A": 800, "B": 700, "C": 600},
+    }
+    kredsmandater = {"SK1": 5, "SK2": 4}
+    detail = allocate_kredsmandater_detail(storkreds_votes, kredsmandater)
+    old_totals = allocate_kredsmandater(storkreds_votes, kredsmandater)
+    new_totals = {}
+    for sk_seats in detail.values():
+        for party, s in sk_seats.items():
+            new_totals[party] = new_totals.get(party, 0) + s
+    assert new_totals == old_totals

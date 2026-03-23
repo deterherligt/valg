@@ -249,6 +249,20 @@ def seat_momentum(party: str, votes_before: int, votes_after: int) -> int:
     return votes_after - votes_before
 
 
+def allocate_kredsmandater_detail(
+    storkreds_votes: dict[str, dict[str, int]],
+    kredsmandater: dict[str, int],
+) -> dict[str, dict[str, int]]:
+    result = {}
+    for sk_id, votes in storkreds_votes.items():
+        n = kredsmandater.get(sk_id, 0)
+        if n <= 0:
+            result[sk_id] = {p: 0 for p in votes}
+            continue
+        result[sk_id] = dhondt(votes, n)
+    return result
+
+
 def hare_largest_remainder(party_votes: dict[str, int], n_seats: int) -> dict[str, int]:
     if not party_votes or n_seats <= 0:
         return {p: 0 for p in party_votes}
