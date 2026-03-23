@@ -178,6 +178,19 @@ def test_api_party_detail_cross_storkreds_elected():
     assert by_id["cb1"]["sk_seats"] == 0
 
 
+def test_api_candidates_storkreds_fields(db_night):
+    """query_api_candidates returns storkreds and storkreds_id on every candidate."""
+    party_id = db_night.execute("SELECT id FROM parties LIMIT 1").fetchone()[0]
+    from valg.queries import query_api_candidates
+    rows = query_api_candidates(db_night, [party_id])
+    assert len(rows) > 0
+    for r in rows:
+        assert "storkreds" in r, f"missing storkreds on {r['name']}"
+        assert "storkreds_id" in r, f"missing storkreds_id on {r['name']}"
+        assert isinstance(r["storkreds"], str)
+        assert isinstance(r["storkreds_id"], str)
+
+
 def test_api_party_detail_zero_seat_storkreds():
     """Candidates in a storkreds where party wins 0 seats have sk_seats=0 and elected=False."""
     from valg.models import get_connection, init_db

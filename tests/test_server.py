@@ -159,13 +159,13 @@ def test_api_candidates_shape(client_with_data):
     assert all(r["party_id"] == party_id for r in data)
 
 
-def test_api_candidates_grouped_by_party(client_with_data):
+def test_api_candidates_grouped_by_storkreds(client_with_data):
     parties = client_with_data.get("/api/parties").get_json()
     ids = ",".join(p["id"] for p in parties[:2])
     data = client_with_data.get(f"/api/candidates?party_ids={ids}").get_json()
-    party_ids_seen = [r["party_id"] for r in data]
-    # Rows should be grouped (all of party 1 before all of party 2)
-    assert party_ids_seen == sorted(party_ids_seen)
+    storkreds_seen = [r["storkreds"] for r in data]
+    # Rows should be grouped by storkreds name
+    assert storkreds_seen == sorted(storkreds_seen)
 
 
 def test_api_party_detail_empty_ids_returns_empty(client):
@@ -822,6 +822,22 @@ def test_maybe_switch_to_live_triggers_once_on_real_results(tmp_path, monkeypatc
     _maybe_switch_to_live(db, mock_sm)
     _maybe_switch_to_live(db, mock_sm)  # second call must be a no-op
     mock_sm.switch_all_to_live.assert_called_once()
+
+
+def test_api_candidates_includes_storkreds_fields(client_with_data):
+    """GET /api/candidates returns storkreds and storkreds_id fields."""
+    import json
+    resp = client_with_data.get("/api/parties")
+    parties = json.loads(resp.data)
+    assert len(parties) > 0
+    party_id = parties[0]["id"]
+
+    resp = client_with_data.get(f"/api/candidates?party_ids={party_id}")
+    assert resp.status_code == 200
+    rows = json.loads(resp.data)
+    assert len(rows) > 0
+    assert "storkreds" in rows[0]
+    assert "storkreds_id" in rows[0]
 
 
 def test_maybe_switch_to_live_no_op_without_real_results(tmp_path, monkeypatch):

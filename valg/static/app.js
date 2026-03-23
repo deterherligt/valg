@@ -1,6 +1,7 @@
 document.addEventListener('alpine:init', () => {
   Alpine.data('dashboard', () => ({
     selectedPartyIds: [],
+    activeStorkreds: null,  // { id: string, name: string } | null
     focusedCandidateId: null,
 
     parties: [],
@@ -181,6 +182,9 @@ document.addEventListener('alpine:init', () => {
     toggleParty(partyId) {
       if (this.selectedPartyIds.includes(partyId)) {
         this.selectedPartyIds = this.selectedPartyIds.filter(id => id !== partyId)
+        if (this.selectedPartyIds.length === 0) {
+          this.activeStorkreds = null
+        }
         // Clear focused candidate if their party was deselected
         if (this.focusedCandidateId) {
           const fc = this.candidates.find(c => c.id === this.focusedCandidateId)
@@ -196,6 +200,14 @@ document.addEventListener('alpine:init', () => {
       Promise.all([this._fetchCandidates(), this._fetchPartyDetail()])
     },
 
+    selectStorkreds(storkreds_id, storkreds_name) {
+      if (this.activeStorkreds && this.activeStorkreds.id === storkreds_id) {
+        this.activeStorkreds = null
+      } else {
+        this.activeStorkreds = { id: storkreds_id, name: storkreds_name }
+      }
+    },
+
     focusCandidate(candidateId) {
       if (this.focusedCandidateId === candidateId) {
         this.focusedCandidateId = null
@@ -207,15 +219,46 @@ document.addEventListener('alpine:init', () => {
       }
     },
 
-    get candidatesByParty() {
-      const groups = {}
+    get candidatesByStorkreds() {
+      const groups = []
+      const seen = {}
       for (const c of this.candidates) {
-        if (!groups[c.party_id]) {
-          groups[c.party_id] = { party_id: c.party_id, letter: c.party_letter, candidates: [] }
+        const key = c.storkreds_id
+        if (!seen[key]) {
+          seen[key] = { storkreds_id: c.storkreds_id, storkreds: c.storkreds, candidates: [] }
+          groups.push(seen[key])
         }
-        groups[c.party_id].candidates.push(c)
+        seen[key].candidates.push(c)
       }
-      return Object.values(groups)
+      return groups
+    },
+
+    get storkredsCandidateBlocks() {
+      if (!this.activeStorkreds || !this.partyDetail) return []
+      return this.partyDetail.map(p => {
+        const cands = p.candidates
+          .filter(c => c.storkreds === this.activeStorkreds.name)
+          .sort((a, b) => a.sk_rank - b.sk_rank)
+        const skSeats = cands.length > 0 ? cands[0].sk_seats : 0
+        const elected = cands.filter(c => c.sk_rank <= skSeats)
+        const bubble = cands.filter(c => c.sk_rank > skSeats)
+        const lastElectedVotes = elected.length > 0 ? elected[elected.length - 1].votes : null
+        return {
+          party_id: p.id,
+          letter: p.letter,
+          name: p.name,
+          sk_seats: skSeats,
+          has_votes: p.has_votes,
+          elected,
+          bubble: bubble.map(c => ({
+            ...c,
+            mangler: (skSeats > 0 && lastElectedVotes !== null && c.votes !== null)
+              ? lastElectedVotes - c.votes + 1
+              : null,
+          })),
+          empty: cands.length === 0,
+        }
+      })
     },
 
     get selectedPartyLetters() {
