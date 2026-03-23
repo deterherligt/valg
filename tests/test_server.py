@@ -812,7 +812,7 @@ def test_maybe_switch_to_live_triggers_once_on_real_results(tmp_path, monkeypatc
     conn.execute("PRAGMA foreign_keys=OFF")
     conn.execute(
         "INSERT INTO results (party_id, votes, count_type, snapshot_at) "
-        "VALUES ('A', 100, 'preliminary', '2024-11-05T21:00:00')"
+        "VALUES ('A', 100, 'preliminary', datetime('now'))"
     )
     conn.commit()
     conn.close()

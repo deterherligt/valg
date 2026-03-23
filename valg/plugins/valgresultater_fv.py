@@ -13,6 +13,8 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
         return []
     ao_id = str(data.get("AfstemningsområdeDagiId", ""))
     raw_type = (data.get("Resultatart") or "").lower()
+    if "ingenresultater" in raw_type or "ingen" in raw_type:
+        return []  # placeholder file, no actual results
     if "endelig" in raw_type or "final" in raw_type or "fintaelling" in raw_type or "fintælling" in raw_type:
         count_type = "final"
     elif "foreløbig" in raw_type or "prelim" in raw_type:
