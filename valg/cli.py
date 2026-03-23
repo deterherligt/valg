@@ -228,6 +228,39 @@ def cmd_commentary(conn, args):
         console.print(commentary)
 
 
+def cmd_fetch(conn, args):
+    from valg.fetcher import get_sftp_client, sync_election_folder, commit_data_repo, push_data_repo
+    import os
+
+    data_repo = Path(os.getenv("VALG_DATA_REPO", "../valg-data"))
+    election_folder = args.election_folder
+
+    console.print(f"Syncing {election_folder}...")
+    ssh, sftp = get_sftp_client()
+    try:
+        downloaded = sync_election_folder(sftp, election_folder, data_repo)
+        console.print(f"Downloaded {downloaded} files")
+    finally:
+        sftp.close()
+        ssh.close()
+
+    commit_data_repo(data_repo)
+    push_data_repo(data_repo)
+
+
+def cmd_process(conn, args):
+    from valg.processor import process_directory
+    from valg.plugins import load_plugins
+    from datetime import datetime, timezone
+
+    load_plugins()
+    snapshot_at = datetime.now(timezone.utc).isoformat()
+    data_repo = Path(args.data_repo)
+
+    total = process_directory(conn, data_repo, snapshot_at=snapshot_at)
+    console.print(f"Processed {total} rows")
+
+
 def cmd_sync(conn, args):
     from valg.processor import process_directory
     from valg.plugins import load_plugins
@@ -285,6 +318,14 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--db", type=Path, default=None, help="Path to valg.db")
 
     sub = parser.add_subparsers(dest="command")
+
+    # fetch
+    fetch_p = sub.add_parser("fetch", help="Fetch from SFTP, commit, and push data repo")
+    fetch_p.add_argument("--election-folder", required=True)
+
+    # process
+    process_p = sub.add_parser("process", help="Process downloaded data into DB")
+    process_p.add_argument("--data-repo", required=True)
 
     # sync
     sync_p = sub.add_parser("sync", help="Fetch from SFTP and process data")
@@ -347,6 +388,8 @@ def main():
         "feed": cmd_feed,
         "commentary": cmd_commentary,
         "sync": cmd_sync,
+        "fetch": cmd_fetch,
+        "process": cmd_process,
     }
 
     if args.command is None:
