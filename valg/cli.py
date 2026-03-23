@@ -236,7 +236,12 @@ def cmd_fetch(conn, args):
     data_repo = Path(os.getenv("VALG_DATA_REPO", "../valg-data"))
     election_folder = args.election_folder
 
-    ssh, sftp = get_sftp_client()
+    try:
+        ssh, sftp = get_sftp_client()
+    except Exception as e:
+        console.print(f"[yellow]SFTP unavailable: {e} — skipping fetch[/yellow]")
+        return
+
     try:
         # Try configured folder first; if it yields nothing, discover by year
         downloaded = sync_election_folder(sftp, election_folder, data_repo)
