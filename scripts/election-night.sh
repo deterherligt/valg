@@ -128,6 +128,9 @@ for line in sys.stdin:
         fi
     fi
 
+    # 8. Maintain open PRs — rebase any with merge conflicts
+    maintain_open_prs
+
     log "=== Cycle complete ==="
 }
 
@@ -250,6 +253,56 @@ Your job: the anomaly rate is too high — many files are failing to process. In
         log "Anomaly diagnostic made no commits"
     fi
     git checkout master 2>/dev/null
+}
+
+maintain_open_prs() {
+    # Find open PRs authored by us with merge conflicts
+    # SECURITY: only touch our own PRs — never checkout/rebase branches from other authors
+    local my_login
+    my_login=$(gh api user --jq '.login' 2>/dev/null) || return
+    local conflicted_prs=$(gh pr list --state open --author "$my_login" --json number,title,mergeable \
+        --jq '.[] | select(.title | startswith("Auto-")) | select(.mergeable == "CONFLICTING") | .number' 2>/dev/null)
+
+    if [ -z "$conflicted_prs" ]; then
+        return
+    fi
+
+    for pr_num in $conflicted_prs; do
+        log "PR #$pr_num has merge conflicts — rebasing"
+
+        local branch=$(gh pr view "$pr_num" --json headRefName --jq '.headRefName' 2>/dev/null)
+        if [ -z "$branch" ]; then
+            log "  Could not get branch for PR #$pr_num — skipping"
+            continue
+        fi
+
+        git fetch origin "$branch" 2>/dev/null
+        git checkout "$branch" 2>/dev/null
+
+        if git rebase origin/master 2>/dev/null; then
+            git push --force-with-lease 2>/dev/null
+            log "  PR #$pr_num rebased successfully"
+        else
+            # Rebase failed — let Claude Code resolve it
+            git rebase --abort 2>/dev/null
+            log "  Auto-rebase failed — launching Claude Code to resolve"
+
+            git merge origin/master 2>/dev/null || true
+
+            claude --print \
+                --systemPrompt "You are resolving merge conflicts in a Danish election data pipeline. Fix all conflicts, keeping the intent of both sides. Run pytest and commit." \
+                "This branch ($branch) has merge conflicts with master. Resolve all conflicts in the working tree, run pytest to verify, and commit the merge." \
+                2>&1 | while read -r line; do log "  conflict-fix: $line"; done
+
+            if git push --force-with-lease 2>/dev/null; then
+                log "  PR #$pr_num conflicts resolved and pushed"
+            else
+                log "  PR #$pr_num push failed — will retry next cycle"
+            fi
+        fi
+
+        git checkout master 2>/dev/null
+    done
 }
 
 # Main loop
