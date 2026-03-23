@@ -24,10 +24,12 @@ def check_authors(data_repo, allowed_emails, since_commit=None):
 
 
 SCHEMA_EXPECTATIONS = {
-    "partistemmer": {"required_keys": ["Valg"], "nested": {"Valg": ["OpstillingskredsId", "Partier"]}},
-    "geografi": {"required_keys": ["Storkredse"]},
-    "valgresultater_fv": {"required_keys": ["Valg"]},
-    "valgdeltagelse": {"required_keys": ["Valg"]},
+    "partistemmer": {"expected_type": "dict", "required_keys": ["Valg"]},
+    "geografi": {"expected_type": "list"},
+    "geografi_ok": {"expected_type": "list"},
+    "geografi_ao": {"expected_type": "list"},
+    "valgresultater_fv": {"expected_type": "dict", "required_keys": ["Valg"]},
+    "valgdeltagelse": {"expected_type": "dict", "required_keys": ["Valg"]},
 }
 
 
@@ -48,11 +50,15 @@ def check_schema(data_repo):
         except json.JSONDecodeError:
             violations.append({"file": f.name, "issue": "invalid JSON"})
             continue
-        if not isinstance(data, dict):
+        expected_type = expectation.get("expected_type", "dict")
+        if expected_type == "dict" and not isinstance(data, dict):
             violations.append({"file": f.name, "issue": "expected dict, got " + type(data).__name__})
             continue
+        if expected_type == "list" and not isinstance(data, list):
+            violations.append({"file": f.name, "issue": "expected list, got " + type(data).__name__})
+            continue
         for key in expectation.get("required_keys", []):
-            if key not in data:
+            if isinstance(data, dict) and key not in data:
                 violations.append({"file": f.name, "issue": f"missing required key: {key}"})
     return violations
 
