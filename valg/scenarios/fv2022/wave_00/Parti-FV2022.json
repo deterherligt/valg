@@ -1,72 +1,72 @@
 [
-    {
-        "Id": "A",
-        "Bogstav": "A",
-        "Navn": "Socialdemokratiet"
-    },
-    {
-        "Id": "B",
-        "Bogstav": "B",
-        "Navn": "Radikale Venstre"
-    },
-    {
-        "Id": "C",
-        "Bogstav": "C",
-        "Navn": "Det Konservative Folkeparti"
-    },
-    {
-        "Id": "D",
-        "Bogstav": "D",
-        "Navn": "Nye Borgerlige"
-    },
-    {
-        "Id": "F",
-        "Bogstav": "F",
-        "Navn": "SF — Socialistisk Folkeparti"
-    },
-    {
-        "Id": "I",
-        "Bogstav": "I",
-        "Navn": "Liberal Alliance"
-    },
-    {
-        "Id": "K",
-        "Bogstav": "K",
-        "Navn": "Kristendemokraterne"
-    },
-    {
-        "Id": "M",
-        "Bogstav": "M",
-        "Navn": "Moderaterne"
-    },
-    {
-        "Id": "O",
-        "Bogstav": "O",
-        "Navn": "Dansk Folkeparti"
-    },
-    {
-        "Id": "Q",
-        "Bogstav": "Q",
-        "Navn": "Frie Gronne"
-    },
-    {
-        "Id": "V",
-        "Bogstav": "V",
-        "Navn": "Venstre"
-    },
-    {
-        "Id": "Å",
-        "Bogstav": "Å",
-        "Navn": "Alternativet"
-    },
-    {
-        "Id": "Æ",
-        "Bogstav": "Æ",
-        "Navn": "Danmarksdemokraterne"
-    },
-    {
-        "Id": "Ø",
-        "Bogstav": "Ø",
-        "Navn": "Enhedslisten"
-    }
+  {
+    "Id": "A",
+    "Bogstav": "A",
+    "Navn": "Socialdemokratiet"
+  },
+  {
+    "Id": "B",
+    "Bogstav": "B",
+    "Navn": "Radikale Venstre"
+  },
+  {
+    "Id": "C",
+    "Bogstav": "C",
+    "Navn": "Det Konservative Folkeparti"
+  },
+  {
+    "Id": "D",
+    "Bogstav": "D",
+    "Navn": "Nye Borgerlige"
+  },
+  {
+    "Id": "F",
+    "Bogstav": "F",
+    "Navn": "SF — Socialistisk Folkeparti"
+  },
+  {
+    "Id": "I",
+    "Bogstav": "I",
+    "Navn": "Liberal Alliance"
+  },
+  {
+    "Id": "K",
+    "Bogstav": "K",
+    "Navn": "Kristendemokraterne"
+  },
+  {
+    "Id": "M",
+    "Bogstav": "M",
+    "Navn": "Moderaterne"
+  },
+  {
+    "Id": "O",
+    "Bogstav": "O",
+    "Navn": "Dansk Folkeparti"
+  },
+  {
+    "Id": "Q",
+    "Bogstav": "Q",
+    "Navn": "Frie Gronne"
+  },
+  {
+    "Id": "V",
+    "Bogstav": "V",
+    "Navn": "Venstre"
+  },
+  {
+    "Id": "Aa",
+    "Bogstav": "Aa",
+    "Navn": "Alternativet"
+  },
+  {
+    "Id": "Ae",
+    "Bogstav": "Ae",
+    "Navn": "Danmarksdemokraterne"
+  },
+  {
+    "Id": "Oe",
+    "Bogstav": "Oe",
+    "Navn": "Enhedslisten"
+  }
 ]

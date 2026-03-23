@@ -267,7 +267,7 @@ def parse_geografi(geografi_dir: Path) -> dict[str, dict]:
 
 def parse_kandidatdata(kandidat_dir: Path) -> dict[str, dict[str, list[dict]]]:
     """
-    Parse FV2026 kandidat-data files.
+    Parse kandidat-data files.
 
     Returns {ok_id: {party_id: [{id, ballot_position}]}} sorted by ballot_position.
     ok_id is OpstillingskredsDagiId (string). party_id is Partibogstav.
@@ -847,12 +847,13 @@ def run(force: bool = False) -> None:
     # Phase 2: Parse
     print("Phase 2: Parsing ...")
     geo_dir = CACHE_DIR / "fv2026" / "geografi"
-    kd_dir = CACHE_DIR / "fv2026" / "kandidat-data"
+    kd_dir = CACHE_DIR / "fv2022" / "kandidat-data"
     csv_path = CACHE_DIR / "fv2022_results.csv"
 
     hierarchy = parse_geografi(geo_dir)
     kandidatdata = parse_kandidatdata(kd_dir)
     fv2022_votes = parse_fv2022_csv(csv_path)
+    personal_votes = parse_fv2022_personal_votes(csv_path)
     id_mapping = build_id_mapping(hierarchy)
 
     matched_ao_ids = {id_mapping[k]: hierarchy[id_mapping[k]] for k in fv2022_votes if k in id_mapping}
@@ -905,13 +906,26 @@ def run(force: bool = False) -> None:
         write_preliminary_wave(wave_dir, wave_num, ao_ids, matched_ao_ids, cumulative_ok_votes, fv2022_votes)
         print(f"  wave_{wave_num:02d}: {len(ao_ids)} AOs")
 
+    unmatched: list[tuple] = []
     for wave_num in range(N_PRELIM_WAVES + 1, 33):
         ao_ids = final_by_wave.get(wave_num, [])
         if not ao_ids:
             continue
         wave_dir = OUTPUT_DIR / f"wave_{wave_num:02d}"
-        write_fintaelling_wave(wave_dir, wave_num, ao_ids, matched_ao_ids, fv2022_votes, kandidatdata)
+        write_fintaelling_wave(
+            wave_dir, wave_num, ao_ids, matched_ao_ids,
+            fv2022_votes, kandidatdata, personal_votes, unmatched,
+        )
         print(f"  wave_{wave_num:02d}: fintaelling {len(ao_ids)} AOs")
+
+    if unmatched:
+        print(f"\nUnmatched candidates: {len(unmatched)} total")
+        for ok, ao, party, name in unmatched[:10]:
+            print(f"  {party} | {ok} / {ao} | {name}")
+        if len(unmatched) > 10:
+            print(f"  ... and {len(unmatched) - 10} more")
+    else:
+        print("\nAll candidates matched to personal votes.")
 
     print(f"\nDone. {len(list(OUTPUT_DIR.glob('wave_*')))} waves written to {OUTPUT_DIR}")
 
