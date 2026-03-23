@@ -131,8 +131,10 @@ for line in sys.stdin:
     # 8. Maintain open PRs — rebase any with merge conflicts
     maintain_open_prs
 
-    # 9. Pick up GitHub issues labeled 'claude-fix' (if enabled)
-    if [ "${VALG_CLAUDE_ISSUES:-false}" = "true" ]; then
+    # 9. Pick up GitHub issues labeled 'claude-fix' (if enabled via GitHub variable)
+    local claude_issues_enabled
+    claude_issues_enabled=$(gh variable get VALG_CLAUDE_ISSUES 2>/dev/null || echo "false")
+    if [ "$claude_issues_enabled" = "true" ]; then
         process_claude_issues
     fi
 
