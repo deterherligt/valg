@@ -12,6 +12,9 @@ log = logging.getLogger(__name__)
 # Geography/reference tables use INSERT OR REPLACE (natural key upsert).
 # Snapshot tables use INSERT OR IGNORE (immutable snapshots).
 _UPSERT_KEYS: dict[str, list[str]] = {
+    "valglandsdele":       ["id"],
+    "regioner":            ["id"],
+    "kommuner":            ["id"],
     "storkredse":          ["id"],
     "opstillingskredse":   ["id"],
     "afstemningsomraader": ["id"],
@@ -23,7 +26,7 @@ _UPSERT_KEYS: dict[str, list[str]] = {
 }
 
 # Reference tables that use INSERT OR REPLACE (idempotent upsert by natural key).
-_REPLACE_TABLES = {"storkredse", "opstillingskredse", "afstemningsomraader", "parties", "candidates"}
+_REPLACE_TABLES = {"valglandsdele", "regioner", "kommuner", "storkredse", "opstillingskredse", "afstemningsomraader", "parties", "candidates"}
 
 
 def _emit_event(conn, occurred_at: str, event_type: str, subject: str, description: str) -> None:
