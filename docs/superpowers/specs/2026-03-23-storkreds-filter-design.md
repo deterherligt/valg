@@ -9,59 +9,79 @@ Add storkreds-based filtering to the candidates column and restructure the party
 
 ## Candidates Column
 
-Candidates are always rendered in storkreds groups. Each group has a clickable header showing `Storkreds navn (N kredsmandater)`.
+Candidates are always rendered in storkreds groups (replacing the current party-grouped layout in both the active-storkreds and no-storkreds cases). Each storkreds group has a clickable header row showing `Storkreds navn`. Within each storkreds group, candidates from different parties appear as a flat list (no party sub-headers in the candidates column).
 
-- Clicking a header sets it as the active storkreds filter (`activeStorkreds` in Alpine state)
-- Other groups collapse, leaving only that storkreds's candidates visible
-- Clicking the active header again clears the filter (shows all groups)
-- A `▸` indicator on the active header makes the filter state visible
+- When no storkreds is active: all groups are expanded
+- Clicking a header sets `activeStorkreds = { id: candidate.storkreds_id, name: candidate.storkreds }` — other groups collapse (header row remains visible, content hidden), active group expands
+- Clicking the active header again clears `activeStorkreds = null` (all groups expand)
+- A `▸` indicator on the active header; collapsed inactive headers show no indicator
+- Inactive group headers are always visible so the user can switch storkreds without first clearing the filter
+
+**Empty state (candidates column):** shown when all selected parties have no candidates in the active storkreds — "Ingen kandidater i denne storkreds".
+
+**Pre-fintælling:** each candidate row shows name + opstillingskreds + ballot position — no vote counts.
 
 ### Backend change
 
 `/api/candidates` response gains two new fields per candidate:
 - `storkreds` — storkreds name (string)
-- `storkreds_id` — storkreds id (string)
+- `storkreds_id` — storkreds TEXT id (SQLite schema: `storkredse.id TEXT` — string equality is safe)
 
-These come from the existing JOIN chain `candidates → opstillingskredse → storkredse` in `query_api_candidates`.
+These come from adding `JOIN storkredse sk ON sk.id = ok.storkreds_id` to `query_api_candidates`.
 
 ### Frontend change
 
-`candidatesByParty` computed getter is replaced (or supplemented) by `candidatesByStorkreds` which groups first by storkreds, then by party within each storkreds group. When `activeStorkreds` is set, only that group is rendered.
+`candidatesByParty` computed getter is **replaced** by `candidatesByStorkreds`, which groups candidates by storkreds. The storkreds groups are always used — no fallback to party grouping.
 
 ## Party Detail Panel
 
-When `activeStorkreds` is set, the detail panel switches from the national candidate list to a per-storkreds elected/bubble layout. When no storkreds is active, the panel is unchanged.
+The party detail data (`/api/party-detail`) is fetched for all storkredse as before. When `activeStorkreds` is set, the frontend filters the already-fetched candidate list client-side to only include candidates where `candidate.storkreds === activeStorkreds.name`, then renders the elected/bubble layout. When `activeStorkreds` is null, the panel is unchanged (national candidate list).
 
-### Layout (per party per storkreds)
+### Layout
+
+One storkreds heading at the top (`Storkreds navn`); each selected party gets its own sub-block.
 
 ```
-Storkreds København — 2 mandater
-─── Valgte ───────────────────────
-1. Anders Nielsen    A    12.341
-2. Mette Olsen       A     9.872
-─── Ikke valgt ───────────────────
-3. Lars Pedersen     A     7.100   mangler 2.773
-4. Sara Jensen       A     4.200   mangler 5.673
+Storkreds København
+────────────────────────────────────────
+A — Socialdemokratiet — 2 mandater
+─── Valgte ──────────────────────────
+1. Anders Nielsen         12.341
+2. Mette Olsen             9.872
+─── Ikke valgt ──────────────────────
+3. Lars Pedersen           7.100   mangler 2.773
+4. Sara Jensen             4.200   mangler 5.673
 ```
 
-- **Separator** sits between `sk_rank === sk_seats` and `sk_rank === sk_seats + 1`
-- **Mangler X** = `last_elected_votes - candidate_votes + 1`, computed frontend-side
-- **Pre-fintælling**: bubble section shows ballot position order with no vote/margin numbers (consistent with existing pre-fintælling behaviour — `has_votes` flag already on each party detail response)
-- **Multiple parties selected**: each party renders its own storkreds block, stacked as now
+**Separator** sits between `sk_rank === sk_seats` and `sk_rank === sk_seats + 1`. "Mangler X" is only shown for non-elected (bubble) candidates — not for elected candidates.
 
-### Data
+**`sk_seats` invariant:** all candidates in a given party × storkreds group share the same `sk_seats` value (it reflects D'Hondt-allocated seats for that party in that storkreds). Use the value from the first candidate in the group for the sub-block header.
 
-No new API endpoint or query change needed. `query_api_party_detail` already returns `storkreds`, `sk_rank`, `sk_seats`, `elected`, and `votes` per candidate. Vote margin is a pure frontend calculation.
+**`sk_seats === 0`:** no separator; all candidates appear under "Ikke valgt" with no margin numbers (party has no seats in this storkreds).
+
+**Mangler X** (bubble section only) = `last_elected_votes - candidate_votes + 1`, where `last_elected_votes` = votes of candidate at `sk_rank === sk_seats`. A tied candidate shows "mangler 1" — intentional (needs strictly more votes to overtake).
+
+**Ordering:** `sk_rank` ascending in both elected and bubble sections.
+
+**Pre-fintælling (`has_votes === false`):**
+- `sk_seats` is still valid (computed from preliminary party votes via D'Hondt)
+- `sk_rank` is by ballot position order (backend computes this consistently)
+- Separator is shown as a projection: "Valgte" = top N by ballot position; "Ikke valgt" = rest
+- No vote numbers, no margin numbers
+
+**Empty state per party:** if a selected party has no candidates in the active storkreds, show "Ingen kandidater i denne storkreds" for that party's sub-block.
 
 ## State
 
-One new Alpine state variable:
-
 ```js
-activeStorkreds: null,  // { id, name } | null
+activeStorkreds: null,  // { id: string, name: string } | null
 ```
 
-Set by clicking a storkreds header in the candidates column. Cleared by clicking again or by deselecting all parties.
+- Set by clicking a storkreds header (constructs `{ id: storkreds_id, name: storkreds }` from candidate data)
+- Cleared by clicking the active header again
+- Cleared when **all** parties are deselected
+- Persists on partial deselect (removing one of multiple selected parties)
+- After full deselect clears `activeStorkreds`, re-selecting a party starts with `activeStorkreds === null`; user must click a storkreds header again to re-activate filtering
 
 ## Out of Scope
 
