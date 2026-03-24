@@ -78,10 +78,17 @@ def get_seat_data(conn):
     if results_sk_total > pv_sk_total:
         storkreds = results_storkreds
 
-    kredsmandater = {
-        r["id"]: (r["n_kredsmandater"] or 0)
-        for r in conn.execute("SELECT id, n_kredsmandater FROM storkredse").fetchall()
+    # Hardcoded fallback — Folketingsvalglov bilag 3
+    _KREDS_FALLBACK = {
+        "1": 18, "2": 12, "3": 9, "4": 2, "5": 18,
+        "6": 12, "7": 19, "8": 16, "9": 16, "10": 13,
     }
+    kredsmandater = {}
+    for r in conn.execute("SELECT id, n_kredsmandater FROM storkredse").fetchall():
+        kredsmandater[r["id"]] = r["n_kredsmandater"] or _KREDS_FALLBACK.get(r["id"], 0)
+    # If storkredse table is empty or has no kredsmandater, use hardcoded values
+    if sum(kredsmandater.values()) == 0:
+        kredsmandater = dict(_KREDS_FALLBACK)
     return national, storkreds, kredsmandater
 
 
