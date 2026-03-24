@@ -13,22 +13,29 @@ _LETTER_MAP = {"Æ": "Ae", "Ø": "Oe", "Å": "Aa"}
 
 
 def _extract_parties(conn, data: dict) -> None:
-    """Extract party names from partistemmefordeling data and upsert into parties table."""
-    # 2026 format: IndenforParti with Bogstavbetegnelse + PartiNavn
+    """Extract party names from partistemmefordeling or kandidat-data into parties table."""
     for party in (data.get("IndenforParti") or []):
-        letter = party.get("Bogstavbetegnelse") or ""
-        name = party.get("PartiNavn") or ""
-        if not letter or not name:
+        letter = party.get("Bogstavbetegnelse") or party.get("Partibogstav") or ""
+        name = party.get("PartiNavn") or party.get("Partinavn") or ""
+        if not letter:
             continue
         normalized = _LETTER_MAP.get(letter, letter)
-        try:
-            conn.execute(
-                "INSERT OR REPLACE INTO parties (id, letter, name, election_id) VALUES (?, ?, ?, ?)",
-                (normalized, normalized, name, "fv2026"),
-            )
-        except Exception:
-            pass  # table might not exist yet
-    # Old format: Valg.Partier with PartiId
+        if name and name != letter:
+            try:
+                conn.execute(
+                    "INSERT OR REPLACE INTO parties (id, letter, name, election_id) VALUES (?, ?, ?, ?)",
+                    (normalized, normalized, name, "fv2026"),
+                )
+            except Exception:
+                pass
+        else:
+            try:
+                conn.execute(
+                    "INSERT OR IGNORE INTO parties (id, letter, name, election_id) VALUES (?, ?, ?, ?)",
+                    (normalized, normalized, normalized, "fv2026"),
+                )
+            except Exception:
+                pass
     valg = data.get("Valg")
     if valg and isinstance(valg, dict):
         for party in (valg.get("Partier") or []):
@@ -187,8 +194,8 @@ def process_raw_file(
 
     inserted = _insert_rows(conn, plugin.TABLE, rows)
 
-    # Extract parties from partistemmefordeling (2026 format has party names inline)
-    if plugin.TABLE == "party_votes" and isinstance(data, dict):
+    # Extract parties from partistemmefordeling or kandidat-data
+    if plugin.TABLE in ("party_votes", "candidates") and isinstance(data, dict):
         _extract_parties(conn, data)
 
     if plugin.TABLE == "results" and inserted > 0:
