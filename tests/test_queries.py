@@ -217,3 +217,32 @@ def test_api_party_detail_zero_seat_storkreds():
     c = result[0]["candidates"][0]
     assert c["sk_seats"] == 0
     assert c["elected"] is False
+
+
+def test_party_votes_joined_by_nummer_when_dagi_id_differs():
+    """party_votes using Nummer as ok_id still joins correctly via opstillingskredse.nummer."""
+    from valg.models import get_connection, init_db
+    from valg.queries import get_seat_data, get_reporting_progress
+    conn = get_connection(":memory:")
+    init_db(conn)
+
+    conn.execute("INSERT OR REPLACE INTO storkredse (id, name, n_kredsmandater) VALUES ('1','København',18)")
+    # Dagi_id is 403564 but Nummer is 1
+    conn.execute("INSERT OR REPLACE INTO opstillingskredse (id, name, storkreds_id, nummer) VALUES ('403564','Østerbro','1',1)")
+    conn.execute("INSERT OR REPLACE INTO afstemningsomraader (id, name, opstillingskreds_id, eligible_voters) VALUES ('ao1','AO1','403564',10000)")
+    conn.execute("INSERT OR REPLACE INTO parties (id, letter, name) VALUES ('A','A','Parti A')")
+
+    snap = "2026-03-24T21:00:00"
+    # party_votes references Nummer ("1"), NOT Dagi_id ("403564")
+    conn.commit()
+    conn.execute("PRAGMA foreign_keys=OFF")
+    conn.execute("INSERT INTO party_votes (opstillingskreds_id, party_id, votes, snapshot_at) VALUES ('1','A',5000,?)", (snap,))
+    conn.commit()
+
+    national, storkreds, kredsmandater = get_seat_data(conn)
+    assert national.get("A", 0) == 5000, "national votes must come from party_votes"
+    assert storkreds, "storkreds votes must not be empty (JOIN via nummer fallback)"
+    assert storkreds.get("1", {}).get("A", 0) == 5000
+
+    progress, national_pct = get_reporting_progress(conn)
+    assert national_pct > 0, "reporting progress must not be zero"

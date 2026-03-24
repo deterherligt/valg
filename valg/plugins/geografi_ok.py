@@ -17,6 +17,7 @@ def parse(data: dict | list, snapshot_at: str) -> list[dict]:
             "id": str(item_id),
             "name": item.get("Navn"),
             "storkreds_id": str(item.get("Storkredskode") or item.get("StorkredskodeKode") or ""),
+            "nummer": item.get("Nummer"),
         }
         if row["id"] and row["name"]:
             rows.append(row)
