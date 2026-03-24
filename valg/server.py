@@ -49,14 +49,21 @@ def _maybe_switch_to_live(db_path: Path, session_manager) -> None:
         return
     from valg.models import get_connection
     conn = get_connection(db_path)
-    # Only trigger on results from election day (2026-03-24) onward
+    # Trigger on any data from election day onward (results OR party_votes)
     has_real = conn.execute(
-        "SELECT 1 FROM results "
-        "WHERE count_type = 'preliminary' "
-        "AND votes > 0 "
+        "SELECT 1 FROM party_votes "
+        "WHERE votes > 0 "
         "AND REPLACE(snapshot_at, 'T', ' ') >= '2026-03-24' "
         "LIMIT 1"
     ).fetchone() is not None
+    if not has_real:
+        has_real = conn.execute(
+            "SELECT 1 FROM results "
+            "WHERE count_type = 'preliminary' "
+            "AND votes > 0 "
+            "AND REPLACE(snapshot_at, 'T', ' ') >= '2026-03-24' "
+            "LIMIT 1"
+        ).fetchone() is not None
     conn.close()
     if has_real:
         log.info("Live election data detected — switching all sessions to live")
