@@ -119,9 +119,20 @@ def process_raw_file(
     if snapshot_at is None:
         snapshot_at = datetime.now(timezone.utc).isoformat()
 
+    # Skip empty files — incomplete SFTP downloads, not real anomalies
+    try:
+        raw = file_path.read_text(encoding="utf-8").strip()
+    except Exception as e:
+        log.warning("Read failure: %s — %s", filename, e)
+        _log_anomaly(conn, filename, "parse_failure", str(e))
+        return 0
+    if not raw:
+        log.debug("Skipping empty file: %s", filename)
+        return 0
+
     # Parse JSON
     try:
-        data = json.loads(file_path.read_text(encoding="utf-8"))
+        data = json.loads(raw)
     except Exception as e:
         log.warning("JSON parse failure: %s — %s", filename, e)
         _log_anomaly(conn, filename, "parse_failure", str(e))
