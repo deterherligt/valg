@@ -27,42 +27,30 @@ def get_seat_data(conn):
             GROUP BY pv.party_id
         """).fetchall()
     }
-    # Also get national + storkreds from results table
-    results_national = {
-        r["party_id"]: r["v"]
-        for r in conn.execute("""
-            SELECT r.party_id, SUM(r.votes) as v
-            FROM results r
-            INNER JOIN (
-                SELECT afstemningsomraade_id, party_id, MAX(snapshot_at) as latest
-                FROM results
-                WHERE candidate_id IS NULL
-                GROUP BY afstemningsomraade_id, party_id
-            ) lat ON r.afstemningsomraade_id = lat.afstemningsomraade_id
-                  AND r.party_id = lat.party_id
-                  AND r.snapshot_at = lat.latest
-            WHERE r.candidate_id IS NULL AND r.votes > 0
-            GROUP BY r.party_id
-        """).fetchall()
-    }
+    # Also get national + storkreds from results table (latest snapshot only)
+    latest_snap = conn.execute(
+        "SELECT MAX(snapshot_at) FROM results WHERE candidate_id IS NULL"
+    ).fetchone()[0]
+    results_national = {}
     results_storkreds: dict = {}
-    for r in conn.execute("""
-        SELECT r.party_id, ok.storkreds_id, SUM(r.votes) as v
-        FROM results r
-        INNER JOIN (
-            SELECT afstemningsomraade_id, party_id, MAX(snapshot_at) as latest
-            FROM results
-            WHERE candidate_id IS NULL
-            GROUP BY afstemningsomraade_id, party_id
-        ) lat ON r.afstemningsomraade_id = lat.afstemningsomraade_id
-              AND r.party_id = lat.party_id
-              AND r.snapshot_at = lat.latest
-        JOIN afstemningsomraader ao ON ao.id = r.afstemningsomraade_id
-        JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
-        WHERE r.candidate_id IS NULL AND r.votes > 0
-        GROUP BY r.party_id, ok.storkreds_id
-    """).fetchall():
-        results_storkreds.setdefault(r["storkreds_id"], {})[r["party_id"]] = r["v"]
+    if latest_snap:
+        results_national = {
+            r["party_id"]: r["v"]
+            for r in conn.execute(
+                "SELECT party_id, SUM(votes) as v FROM results "
+                "WHERE candidate_id IS NULL AND votes > 0 AND snapshot_at = ? "
+                "GROUP BY party_id", (latest_snap,)
+            ).fetchall()
+        }
+        for r in conn.execute("""
+            SELECT r.party_id, ok.storkreds_id, SUM(r.votes) as v
+            FROM results r
+            JOIN afstemningsomraader ao ON ao.id = r.afstemningsomraade_id
+            JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
+            WHERE r.candidate_id IS NULL AND r.votes > 0 AND r.snapshot_at = ?
+            GROUP BY r.party_id, ok.storkreds_id
+        """, (latest_snap,)).fetchall():
+            results_storkreds.setdefault(r["storkreds_id"], {})[r["party_id"]] = r["v"]
 
     # Use whichever source has more total votes (results wins on election night)
     pv_total = sum(national.values())
