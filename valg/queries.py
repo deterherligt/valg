@@ -30,15 +30,33 @@ def get_seat_data(conn):
     # Also get national + storkreds from results table
     results_national = {
         r["party_id"]: r["v"]
-        for r in conn.execute(
-            "SELECT party_id, SUM(votes) as v FROM results "
-            "WHERE candidate_id IS NULL AND votes > 0 GROUP BY party_id"
-        ).fetchall()
+        for r in conn.execute("""
+            SELECT r.party_id, SUM(r.votes) as v
+            FROM results r
+            INNER JOIN (
+                SELECT afstemningsomraade_id, party_id, MAX(snapshot_at) as latest
+                FROM results
+                WHERE candidate_id IS NULL
+                GROUP BY afstemningsomraade_id, party_id
+            ) lat ON r.afstemningsomraade_id = lat.afstemningsomraade_id
+                  AND r.party_id = lat.party_id
+                  AND r.snapshot_at = lat.latest
+            WHERE r.candidate_id IS NULL AND r.votes > 0
+            GROUP BY r.party_id
+        """).fetchall()
     }
     results_storkreds: dict = {}
     for r in conn.execute("""
         SELECT r.party_id, ok.storkreds_id, SUM(r.votes) as v
         FROM results r
+        INNER JOIN (
+            SELECT afstemningsomraade_id, party_id, MAX(snapshot_at) as latest
+            FROM results
+            WHERE candidate_id IS NULL
+            GROUP BY afstemningsomraade_id, party_id
+        ) lat ON r.afstemningsomraade_id = lat.afstemningsomraade_id
+              AND r.party_id = lat.party_id
+              AND r.snapshot_at = lat.latest
         JOIN afstemningsomraader ao ON ao.id = r.afstemningsomraade_id
         JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
         WHERE r.candidate_id IS NULL AND r.votes > 0
@@ -735,6 +753,14 @@ def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
         rows = conn.execute("""
             SELECT ok.storkreds_id, SUM(r.votes) as reported
             FROM results r
+            INNER JOIN (
+                SELECT afstemningsomraade_id, party_id, MAX(snapshot_at) as latest
+                FROM results
+                WHERE candidate_id IS NULL
+                GROUP BY afstemningsomraade_id, party_id
+            ) lat ON r.afstemningsomraade_id = lat.afstemningsomraade_id
+                  AND r.party_id = lat.party_id
+                  AND r.snapshot_at = lat.latest
             JOIN afstemningsomraader ao ON ao.id = r.afstemningsomraade_id
             JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
             WHERE r.candidate_id IS NULL AND r.votes > 0
