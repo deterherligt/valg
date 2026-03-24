@@ -42,6 +42,13 @@ def test_process_malformed_json_does_not_crash(db, tmp_path):
     f.write_text("NOT VALID JSON {{{")
     process_raw_file(db, f)  # must not raise
 
+def test_process_empty_file_skips_without_anomaly(db, tmp_path):
+    f = tmp_path / "valgdeltagelse-empty.json"
+    f.write_text("")
+    process_raw_file(db, f)
+    count = db.execute("SELECT COUNT(*) FROM anomalies").fetchone()[0]
+    assert count == 0
+
 def test_process_file_records_snapshot_at(db, tmp_path):
     f = tmp_path / "valgresultater-Folketingsvalg-Lyngby-Arenaskolen-190820220938.json"
     f.write_text((FIXTURES / "valgresultater_fv_preliminary.json").read_text())

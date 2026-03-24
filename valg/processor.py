@@ -119,9 +119,15 @@ def process_raw_file(
     if snapshot_at is None:
         snapshot_at = datetime.now(timezone.utc).isoformat()
 
+    # Skip empty files (truncated downloads)
+    raw = file_path.read_text(encoding="utf-8").strip()
+    if not raw:
+        log.debug("Empty file, skipping: %s", filename)
+        return 0
+
     # Parse JSON
     try:
-        data = json.loads(file_path.read_text(encoding="utf-8"))
+        data = json.loads(raw)
     except Exception as e:
         log.warning("JSON parse failure: %s — %s", filename, e)
         _log_anomaly(conn, filename, "parse_failure", str(e))
