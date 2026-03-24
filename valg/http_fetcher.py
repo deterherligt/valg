@@ -33,7 +33,12 @@ def fetch_tree(repo: str = REPO, branch: str = BRANCH) -> list[dict]:
         data = json.loads(resp.read())
     return [
         f for f in data.get("tree", [])
-        if f.get("type") == "blob" and f["path"].endswith(".json")
+        if f.get("type") == "blob"
+        and f["path"].endswith(".json")
+        and not f["path"].endswith(".hash")
+        and not f["path"].endswith(".schema.json")
+        and "/Snitfladebeskrivelser/" not in f["path"]
+        and "/verifikation/" not in f["path"]
     ]
 
 
