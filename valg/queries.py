@@ -47,6 +47,7 @@ def get_seat_data(conn):
               AND pv.party_id = lat.party_id
               AND pv.snapshot_at = lat.latest
         JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id
+            OR CAST(ok.nummer AS TEXT) = pv.opstillingskreds_id
         GROUP BY pv.party_id, ok.storkreds_id
     """).fetchall()
     storkreds: dict = {}
@@ -703,6 +704,7 @@ def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
               AND pv.party_id = lat.party_id
               AND pv.snapshot_at = lat.latest
         JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id
+            OR CAST(ok.nummer AS TEXT) = pv.opstillingskreds_id
         GROUP BY ok.storkreds_id
     """).fetchall()
 
