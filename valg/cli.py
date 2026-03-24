@@ -345,7 +345,17 @@ def cmd_check_anomalies(conn, args):
     from valg.validator import check_anomaly_rate
 
     threshold = float(os.environ.get("VALG_ANOMALY_THRESHOLD", "0.2"))
-    total_files = conn.execute("SELECT COUNT(*) FROM anomalies").fetchone()[0] or 1
+    # Count distinct files processed: snapshot tables + anomalies give a reasonable total
+    processed = sum(
+        conn.execute(f"SELECT COUNT(DISTINCT {col}) FROM {table}").fetchone()[0]
+        for table, col in [
+            ("turnout", "afstemningsomraade_id"),
+            ("party_votes", "opstillingskreds_id"),
+            ("results", "afstemningsomraade_id"),
+        ]
+    )
+    anomaly_files = conn.execute("SELECT COUNT(DISTINCT filename) FROM anomalies").fetchone()[0]
+    total_files = max(processed + anomaly_files, 1)
     result = check_anomaly_rate(conn, total_files=total_files, threshold=threshold)
     console.print(f"Anomaly rate: {result['rate']*100:.1f}% ({result['anomaly_count']} anomalies) — {'PASS' if result['passed'] else 'FAIL'}")
 
