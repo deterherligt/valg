@@ -56,6 +56,19 @@ def get_seat_data(conn):
     for r in sk_rows:
         storkreds.setdefault(r["storkreds_id"], {})[r["party_id"]] = r["v"]
 
+    # Fallback: aggregate from results table if party_votes didn't produce storkreds data
+    if not storkreds:
+        sk_rows = conn.execute("""
+            SELECT r.party_id, ok.storkreds_id, SUM(r.votes) as v
+            FROM results r
+            JOIN afstemningsomraader ao ON ao.id = r.afstemningsomraade_id
+            JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
+            WHERE r.candidate_id IS NULL AND r.votes > 0
+            GROUP BY r.party_id, ok.storkreds_id
+        """).fetchall()
+        for r in sk_rows:
+            storkreds.setdefault(r["storkreds_id"], {})[r["party_id"]] = r["v"]
+
     kredsmandater = {
         r["id"]: (r["n_kredsmandater"] or 0)
         for r in conn.execute("SELECT id, n_kredsmandater FROM storkredse").fetchall()
