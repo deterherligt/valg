@@ -716,13 +716,9 @@ def query_api_candidate_feed(conn, candidate_id: str, limit: int = 20) -> list[d
 
 
 def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
+    # Try party_votes first, fall back to results
     rows = conn.execute("""
-        SELECT ok.storkreds_id,
-               SUM(pv.votes) as reported,
-               (SELECT SUM(ao.eligible_voters)
-                FROM afstemningsomraader ao
-                JOIN opstillingskredse ok2 ON ok2.id = ao.opstillingskreds_id
-                WHERE ok2.storkreds_id = ok.storkreds_id) as eligible
+        SELECT ok.storkreds_id, SUM(pv.votes) as reported
         FROM party_votes pv
         INNER JOIN (
             SELECT opstillingskreds_id, party_id, MAX(snapshot_at) as latest
@@ -735,16 +731,42 @@ def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
         GROUP BY ok.storkreds_id
     """).fetchall()
 
+    if not rows or sum(r["reported"] or 0 for r in rows) == 0:
+        rows = conn.execute("""
+            SELECT ok.storkreds_id, SUM(r.votes) as reported
+            FROM results r
+            JOIN afstemningsomraader ao ON ao.id = r.afstemningsomraade_id
+            JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
+            WHERE r.candidate_id IS NULL AND r.votes > 0
+            GROUP BY ok.storkreds_id
+        """).fetchall()
+
+    # Get eligible voters from turnout table (2026 data doesn't have it in geography)
+    eligible_by_sk = {}
+    for r in conn.execute("""
+        SELECT ok.storkreds_id, SUM(t.eligible_voters) as eligible
+        FROM turnout t
+        JOIN afstemningsomraader ao ON ao.id = t.afstemningsomraade_id
+        JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
+        GROUP BY ok.storkreds_id
+    """).fetchall():
+        eligible_by_sk[str(r["storkreds_id"])] = r["eligible"] or 0
+
     progress = {}
     total_reported = 0
     total_eligible = 0
     for r in rows:
+        sk_id = str(r["storkreds_id"])
         reported = r["reported"] or 0
-        eligible = r["eligible"] or 0
-        expected = eligible * TURNOUT_ESTIMATE
+        eligible = eligible_by_sk.get(sk_id, 0)
+        expected = eligible * TURNOUT_ESTIMATE if eligible > 0 else 0
         total_reported += reported
         total_eligible += eligible
-        progress[str(r["storkreds_id"])] = min(1.0, reported / expected) if expected > 0 else (1.0 if reported > 0 else 0.0)
+        # If no eligible data, assume 100% reporting when votes exist
+        if expected > 0:
+            progress[sk_id] = min(1.0, reported / expected)
+        else:
+            progress[sk_id] = 1.0 if reported > 0 else 0.0
 
     total_expected = total_eligible * TURNOUT_ESTIMATE
     national_pct = min(1.0, total_reported / total_expected) if total_expected > 0 else (1.0 if total_reported > 0 else 0.0)
