@@ -27,14 +27,30 @@ def get_seat_data(conn):
             GROUP BY pv.party_id
         """).fetchall()
     }
-    if not national:
-        national = {
-            r["party_id"]: r["v"]
-            for r in conn.execute(
-                "SELECT party_id, SUM(votes) as v FROM results "
-                "WHERE candidate_id IS NULL GROUP BY party_id"
-            ).fetchall()
-        }
+    # Also get national + storkreds from results table
+    results_national = {
+        r["party_id"]: r["v"]
+        for r in conn.execute(
+            "SELECT party_id, SUM(votes) as v FROM results "
+            "WHERE candidate_id IS NULL AND votes > 0 GROUP BY party_id"
+        ).fetchall()
+    }
+    results_storkreds: dict = {}
+    for r in conn.execute("""
+        SELECT r.party_id, ok.storkreds_id, SUM(r.votes) as v
+        FROM results r
+        JOIN afstemningsomraader ao ON ao.id = r.afstemningsomraade_id
+        JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
+        WHERE r.candidate_id IS NULL AND r.votes > 0
+        GROUP BY r.party_id, ok.storkreds_id
+    """).fetchall():
+        results_storkreds.setdefault(r["storkreds_id"], {})[r["party_id"]] = r["v"]
+
+    # Use whichever source has more total votes (results wins on election night)
+    pv_total = sum(national.values())
+    results_total = sum(results_national.values())
+    if results_total > pv_total:
+        national = results_national
 
     sk_rows = conn.execute("""
         SELECT pv.party_id, ok.storkreds_id, SUM(pv.votes) as v
@@ -56,18 +72,11 @@ def get_seat_data(conn):
     for r in sk_rows:
         storkreds.setdefault(r["storkreds_id"], {})[r["party_id"]] = r["v"]
 
-    # Fallback: aggregate from results table if party_votes didn't produce storkreds data
-    if not storkreds:
-        sk_rows = conn.execute("""
-            SELECT r.party_id, ok.storkreds_id, SUM(r.votes) as v
-            FROM results r
-            JOIN afstemningsomraader ao ON ao.id = r.afstemningsomraade_id
-            JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
-            WHERE r.candidate_id IS NULL AND r.votes > 0
-            GROUP BY r.party_id, ok.storkreds_id
-        """).fetchall()
-        for r in sk_rows:
-            storkreds.setdefault(r["storkreds_id"], {})[r["party_id"]] = r["v"]
+    # Use results storkreds if it has more data
+    pv_sk_total = sum(v for sk in storkreds.values() for v in sk.values())
+    results_sk_total = sum(v for sk in results_storkreds.values() for v in sk.values())
+    if results_sk_total > pv_sk_total:
+        storkreds = results_storkreds
 
     kredsmandater = {
         r["id"]: (r["n_kredsmandater"] or 0)
