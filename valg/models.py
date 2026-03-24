@@ -35,7 +35,8 @@ CREATE TABLE IF NOT EXISTS storkredse (
 CREATE TABLE IF NOT EXISTS opstillingskredse (
     id TEXT PRIMARY KEY,
     name TEXT NOT NULL,
-    storkreds_id TEXT REFERENCES storkredse(id)
+    storkreds_id TEXT REFERENCES storkredse(id),
+    nummer INTEGER
 );
 CREATE TABLE IF NOT EXISTS afstemningsomraader (
     id TEXT PRIMARY KEY,
