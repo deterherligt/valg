@@ -72,6 +72,22 @@ def test_process_malformed_json_logs_anomaly(db, tmp_path):
     count = db.execute("SELECT COUNT(*) FROM anomalies WHERE anomaly_type = 'parse_failure'").fetchone()[0]
     assert count == 1
 
+def test_process_empty_file_skips_silently(db, tmp_path):
+    f = tmp_path / "valgdeltagelse-Folketingsvalg-Skive-240320261710.json"
+    f.write_text("")
+    result = process_raw_file(db, f)
+    assert result == 0
+    count = db.execute("SELECT COUNT(*) FROM anomalies").fetchone()[0]
+    assert count == 0  # empty files are transient SFTP artifacts, not anomalies
+
+def test_process_whitespace_only_file_skips_silently(db, tmp_path):
+    f = tmp_path / "valgdeltagelse-Folketingsvalg-Skive-240320261710.json"
+    f.write_text("  \n  ")
+    result = process_raw_file(db, f)
+    assert result == 0
+    count = db.execute("SELECT COUNT(*) FROM anomalies").fetchone()[0]
+    assert count == 0
+
 def test_process_directory_processes_all_json_files(db, tmp_path):
     (tmp_path / "Storkreds-test.json").write_text((FIXTURES / "geografi_region.json").read_text())
     (tmp_path / "partistemmefordeling-Kobenhavn-2024.json").write_text(
