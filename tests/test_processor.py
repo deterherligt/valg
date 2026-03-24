@@ -37,6 +37,14 @@ def test_process_unknown_file_does_not_crash(db, tmp_path):
     f.write_text('{"noget": "andet"}')
     process_raw_file(db, f)  # must not raise
 
+def test_process_empty_file_skips_silently(db, tmp_path):
+    f = tmp_path / "valgdeltagelse-Empty-240320261710.json"
+    f.write_text("")
+    result = process_raw_file(db, f)
+    assert result == 0
+    count = db.execute("SELECT COUNT(*) FROM anomalies").fetchone()[0]
+    assert count == 0  # no anomaly logged for empty files
+
 def test_process_malformed_json_does_not_crash(db, tmp_path):
     f = tmp_path / "Region.json"
     f.write_text("NOT VALID JSON {{{")

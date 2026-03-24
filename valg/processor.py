@@ -119,6 +119,11 @@ def process_raw_file(
     if snapshot_at is None:
         snapshot_at = datetime.now(timezone.utc).isoformat()
 
+    # Skip empty files (transient SFTP uploads)
+    if file_path.stat().st_size == 0:
+        log.debug("Skipping empty file: %s", filename)
+        return 0
+
     # Parse JSON
     try:
         data = json.loads(file_path.read_text(encoding="utf-8"))
