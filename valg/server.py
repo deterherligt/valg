@@ -154,22 +154,6 @@ def create_app(
             _just_synced = False
         return jsonify({"last_sync": _last_sync, "just_synced": just})
 
-    @app.get("/api/debug-seats")
-    def debug_seats():
-        from valg.queries import get_seat_data
-        conn = _get_conn()
-        try:
-            national, storkreds, kredsmandater = get_seat_data(conn)
-            return jsonify({
-                "national_parties": len(national),
-                "national_total_votes": sum(national.values()),
-                "storkredse_count": len(storkreds),
-                "storkreds_sample": {k: sum(v.values()) for k, v in list(storkreds.items())[:3]},
-                "kredsmandater": kredsmandater,
-                "kredsmandater_total": sum(kredsmandater.values()),
-            })
-        except Exception as e:
-            return jsonify({"error": str(e)})
 
     @app.get("/api/status")
     def api_status():
