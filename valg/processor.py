@@ -9,6 +9,43 @@ from valg.plugins import find_plugin
 
 log = logging.getLogger(__name__)
 
+_LETTER_MAP = {"Æ": "Ae", "Ø": "Oe", "Å": "Aa"}
+
+
+def _extract_parties(conn, data: dict) -> None:
+    """Extract party names from partistemmefordeling data and upsert into parties table."""
+    # 2026 format: IndenforParti with Bogstavbetegnelse + PartiNavn
+    for party in (data.get("IndenforParti") or []):
+        letter = party.get("Bogstavbetegnelse") or ""
+        name = party.get("PartiNavn") or ""
+        if not letter or not name:
+            continue
+        normalized = _LETTER_MAP.get(letter, letter)
+        try:
+            conn.execute(
+                "INSERT OR REPLACE INTO parties (id, letter, name, election_id) VALUES (?, ?, ?, ?)",
+                (normalized, normalized, name, "fv2026"),
+            )
+        except Exception:
+            pass  # table might not exist yet
+    # Old format: Valg.Partier with PartiId
+    valg = data.get("Valg")
+    if valg and isinstance(valg, dict):
+        for party in (valg.get("Partier") or []):
+            party_id = party.get("PartiId") or ""
+            if not party_id:
+                continue
+            normalized = _LETTER_MAP.get(party_id, party_id)
+            try:
+                conn.execute(
+                    "INSERT OR IGNORE INTO parties (id, letter, name, election_id) VALUES (?, ?, ?, ?)",
+                    (normalized, normalized, normalized, "fv2022"),
+                )
+            except Exception:
+                pass
+    conn.commit()
+
+
 # Map plugin TABLE names to the columns that constitute a unique row.
 # Geography/reference tables use INSERT OR REPLACE (natural key upsert).
 # Snapshot tables use INSERT OR IGNORE (immutable snapshots).
@@ -149,6 +186,10 @@ def process_raw_file(
         return 0
 
     inserted = _insert_rows(conn, plugin.TABLE, rows)
+
+    # Extract parties from partistemmefordeling (2026 format has party names inline)
+    if plugin.TABLE == "party_votes" and isinstance(data, dict):
+        _extract_parties(conn, data)
 
     if plugin.TABLE == "results" and inserted > 0:
         ao_id = rows[0].get("afstemningsomraade_id", "unknown")
