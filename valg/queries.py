@@ -46,8 +46,10 @@ def get_seat_data(conn):
         ) lat ON pv.opstillingskreds_id = lat.opstillingskreds_id
               AND pv.party_id = lat.party_id
               AND pv.snapshot_at = lat.latest
-        JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id
-            OR CAST(ok.nummer AS TEXT) = pv.opstillingskreds_id
+        JOIN opstillingskredse ok ON ok.id = COALESCE(
+            (SELECT id FROM opstillingskredse WHERE id = pv.opstillingskreds_id),
+            (SELECT id FROM opstillingskredse WHERE CAST(nummer AS TEXT) = pv.opstillingskreds_id)
+        )
         GROUP BY pv.party_id, ok.storkreds_id
     """).fetchall()
     storkreds: dict = {}
@@ -703,8 +705,10 @@ def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
         ) lat ON pv.opstillingskreds_id = lat.opstillingskreds_id
               AND pv.party_id = lat.party_id
               AND pv.snapshot_at = lat.latest
-        JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id
-            OR CAST(ok.nummer AS TEXT) = pv.opstillingskreds_id
+        JOIN opstillingskredse ok ON ok.id = COALESCE(
+            (SELECT id FROM opstillingskredse WHERE id = pv.opstillingskreds_id),
+            (SELECT id FROM opstillingskredse WHERE CAST(nummer AS TEXT) = pv.opstillingskreds_id)
+        )
         GROUP BY ok.storkreds_id
     """).fetchall()
 
