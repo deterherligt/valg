@@ -35,6 +35,26 @@ _just_synced = False
 _live_data_available = False
 _sync_lock = threading.Lock()
 
+# ── Response cache (invalidated on each sync) ────────────────────────────────
+
+_cache: dict[str, tuple] = {}  # key -> (response_json, timestamp)
+_cache_lock = threading.Lock()
+
+
+def _cache_get(key: str):
+    with _cache_lock:
+        return _cache.get(key)
+
+
+def _cache_set(key: str, value):
+    with _cache_lock:
+        _cache[key] = value
+
+
+def _cache_clear():
+    with _cache_lock:
+        _cache.clear()
+
 
 def _maybe_switch_to_live(db_path: Path, session_manager) -> None:
     """Switch all demo sessions to live data if real election night results exist.
@@ -82,6 +102,18 @@ def create_app(
 ) -> Flask:
     app = Flask(__name__)
     db_path = Path(db_path)
+
+    @app.after_request
+    def compress(response):
+        if (not app.config.get("TESTING")
+                and response.content_length and response.content_length > 500
+                and "gzip" in request.headers.get("Accept-Encoding", "")
+                and response.content_type.startswith(("application/json", "text/"))):
+            import gzip
+            response.data = gzip.compress(response.data)
+            response.headers["Content-Encoding"] = "gzip"
+            response.headers["Content-Length"] = len(response.data)
+        return response
 
     def _get_conn():
         from valg.models import get_connection, init_db
@@ -161,8 +193,13 @@ def create_app(
         with _sync_lock:
             just = _just_synced
             _just_synced = False
-        from valg.queries import query_api_status
-        meta = query_api_status(_get_conn())
+        cached = _cache_get("status") if not app.config.get("TESTING") else None
+        if cached and not just:
+            meta = cached
+        else:
+            from valg.queries import query_api_status
+            meta = query_api_status(_get_conn())
+            _cache_set("status", meta)
         return jsonify({
             "last_sync": _last_sync,
             "just_synced": just,
@@ -171,8 +208,13 @@ def create_app(
 
     @app.get("/api/parties")
     def api_parties():
+        cached = _cache_get("parties") if not app.config.get("TESTING") else None
+        if cached:
+            return jsonify(cached)
         from valg.queries import query_api_parties
-        return jsonify(query_api_parties(_get_conn()))
+        result = query_api_parties(_get_conn())
+        _cache_set("parties", result)
+        return jsonify(result)
 
     @app.get("/api/candidates")
     def api_candidates():
@@ -185,8 +227,14 @@ def create_app(
     def api_party_detail():
         raw = request.args.get("party_ids", "")
         party_ids = [p.strip() for p in raw.split(",") if p.strip()]
+        cache_key = f"party-detail:{','.join(sorted(party_ids))}"
+        cached = _cache_get(cache_key) if not app.config.get("TESTING") else None
+        if cached:
+            return jsonify(cached)
         from valg.queries import query_api_party_detail
-        return jsonify(query_api_party_detail(_get_conn(), party_ids))
+        result = query_api_party_detail(_get_conn(), party_ids)
+        _cache_set(cache_key, result)
+        return jsonify(result)
 
     @app.get("/api/candidate/<candidate_id>")
     def api_candidate(candidate_id):
@@ -198,8 +246,13 @@ def create_app(
 
     @app.get("/api/feed/places")
     def api_feed_places():
+        cached = _cache_get("feed_places") if not app.config.get("TESTING") else None
+        if cached:
+            return jsonify(cached)
         from valg.queries import query_feed_places
-        return jsonify(query_feed_places(_get_conn()))
+        result = query_feed_places(_get_conn())
+        _cache_set("feed_places", result)
+        return jsonify(result)
 
     @app.get("/api/place/<place_id>")
     def api_place(place_id):
@@ -396,6 +449,8 @@ def _sync_loop(data_dir: Path, db_path: Path, interval: int = 60, session_manage
             with _sync_lock:
                 _last_sync = datetime.now(timezone.utc).strftime("%H:%M:%S UTC")
                 _just_synced = count > 0
+            if count > 0:
+                _cache_clear()
             _maybe_switch_to_live(db_path, session_manager)
         except Exception as e:
             log.warning("Sync failed: %s", e)
