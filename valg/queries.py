@@ -666,10 +666,15 @@ def query_feed_places(conn) -> list[dict]:
         SELECT e.id AS event_id, e.subject, ao.name, e.occurred_at, e.description,
                sk.name AS storkreds
         FROM events e
+        INNER JOIN (
+            SELECT subject, MAX(id) AS latest_id
+            FROM events
+            WHERE event_type = 'district_reported'
+            GROUP BY subject
+        ) lat ON e.id = lat.latest_id
         JOIN afstemningsomraader ao ON ao.id = e.subject
         JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
         JOIN storkredse sk ON sk.id = ok.storkreds_id
-        WHERE e.event_type = 'district_reported'
         ORDER BY e.id DESC
         """,
         [],
