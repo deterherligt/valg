@@ -194,8 +194,7 @@ def query_kreds(conn, name: str) -> list[dict]:
     rows = conn.execute(
         "SELECT c.name, c.party_id, SUM(r.votes) as total "
         "FROM results r JOIN candidates c ON c.id = r.candidate_id "
-        "WHERE c.opstillingskreds_id = ? AND r.count_type = 'final' "
-        "AND r.snapshot_at = ? "
+        "WHERE c.opstillingskreds_id = ? AND r.snapshot_at = ? "
         "GROUP BY c.id ORDER BY total DESC LIMIT 20",
         (ok["id"], latest_cand),
     ).fetchall()
@@ -320,12 +319,19 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
         ).fetchall()
     }
 
-    # Check if fintælling candidate data exists (global for this election)
-    has_votes = bool(
+    # Check if candidate vote data exists (prefer final, fall back to preliminary)
+    has_final = bool(
         conn.execute(
             "SELECT 1 FROM results WHERE candidate_id IS NOT NULL AND count_type = 'final' LIMIT 1"
         ).fetchone()
     )
+    has_prelim = bool(
+        conn.execute(
+            "SELECT 1 FROM results WHERE candidate_id IS NOT NULL AND count_type = 'preliminary' LIMIT 1"
+        ).fetchone()
+    )
+    has_votes = has_final or has_prelim
+    cand_count_type = 'final' if has_final else 'preliminary'
 
     result = []
     for party_id in party_ids:
@@ -365,12 +371,12 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
                 JOIN opstillingskredse ok ON ok.id = c.opstillingskreds_id
                 JOIN storkredse sk ON sk.id = ok.storkreds_id
                 JOIN results r ON r.candidate_id = c.id
-                WHERE c.party_id = ? AND r.count_type = 'final'
+                WHERE c.party_id = ? AND r.count_type = ?
                   AND r.snapshot_at = ?
                 GROUP BY c.id
                 ORDER BY votes DESC
                 """,
-                (party_id, latest_cand_snap),
+                (party_id, cand_count_type, latest_cand_snap),
             ).fetchall()
         else:
             cand_rows = conn.execute(
