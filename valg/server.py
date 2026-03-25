@@ -106,9 +106,10 @@ def create_app(
     @app.after_request
     def compress(response):
         if (not app.config.get("TESTING")
+                and not response.direct_passthrough
                 and response.content_length and response.content_length > 500
                 and "gzip" in request.headers.get("Accept-Encoding", "")
-                and response.content_type.startswith(("application/json", "text/"))):
+                and response.content_type.startswith("application/json")):
             import gzip
             response.data = gzip.compress(response.data)
             response.headers["Content-Encoding"] = "gzip"
