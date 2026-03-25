@@ -12,21 +12,18 @@ from valg.calculator import TURNOUT_ESTIMATE
 
 def get_seat_data(conn):
     """Return (national_votes, storkreds_votes, kredsmandater) for the calculator."""
+    pv_latest = conn.execute(
+        "SELECT MAX(snapshot_at) FROM party_votes"
+    ).fetchone()[0]
     national = {
         r["party_id"]: r["v"]
         for r in conn.execute("""
-            SELECT pv.party_id, SUM(pv.votes) as v
-            FROM party_votes pv
-            INNER JOIN (
-                SELECT opstillingskreds_id, party_id, MAX(snapshot_at) as latest
-                FROM party_votes
-                GROUP BY opstillingskreds_id, party_id
-            ) lat ON pv.opstillingskreds_id = lat.opstillingskreds_id
-                  AND pv.party_id = lat.party_id
-                  AND pv.snapshot_at = lat.latest
-            GROUP BY pv.party_id
-        """).fetchall()
-    }
+            SELECT party_id, SUM(votes) as v
+            FROM party_votes
+            WHERE snapshot_at = ?
+            GROUP BY party_id
+        """, (pv_latest,)).fetchall()
+    } if pv_latest else {}
     # Also get national + storkreds from results table (latest snapshot only)
     latest_snap = conn.execute(
         "SELECT MAX(snapshot_at) FROM results WHERE candidate_id IS NULL"
@@ -61,16 +58,10 @@ def get_seat_data(conn):
     sk_rows = conn.execute("""
         SELECT pv.party_id, ok.storkreds_id, SUM(pv.votes) as v
         FROM party_votes pv
-        INNER JOIN (
-            SELECT opstillingskreds_id, party_id, MAX(snapshot_at) as latest
-            FROM party_votes
-            GROUP BY opstillingskreds_id, party_id
-        ) lat ON pv.opstillingskreds_id = lat.opstillingskreds_id
-              AND pv.party_id = lat.party_id
-              AND pv.snapshot_at = lat.latest
         JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id
+        WHERE pv.snapshot_at = ?
         GROUP BY pv.party_id, ok.storkreds_id
-    """).fetchall()
+    """, (pv_latest,)).fetchall() if pv_latest else []
     storkreds: dict = {}
     for r in sk_rows:
         storkreds.setdefault(r["storkreds_id"], {})[r["party_id"]] = r["v"]
@@ -186,12 +177,18 @@ def query_kreds(conn, name: str) -> list[dict]:
     if not ok:
         return []
 
+    latest_cand = conn.execute(
+        "SELECT MAX(snapshot_at) FROM results WHERE candidate_id IS NOT NULL"
+    ).fetchone()[0]
+    if not latest_cand:
+        return []
     rows = conn.execute(
         "SELECT c.name, c.party_id, SUM(r.votes) as total "
         "FROM results r JOIN candidates c ON c.id = r.candidate_id "
         "WHERE c.opstillingskreds_id = ? AND r.count_type = 'final' "
+        "AND r.snapshot_at = ? "
         "GROUP BY c.id ORDER BY total DESC LIMIT 20",
-        (ok["id"],),
+        (ok["id"], latest_cand),
     ).fetchall()
     return [{"candidate": r["name"], "party": r["party_id"], "votes": r["total"]} for r in rows]
 
@@ -358,6 +355,9 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
 
         # Candidate breakdown
         if has_votes:
+            latest_cand_snap = conn.execute(
+                "SELECT MAX(snapshot_at) FROM results WHERE candidate_id IS NOT NULL"
+            ).fetchone()[0]
             cand_rows = conn.execute(
                 """
                 SELECT c.id, c.name, ok.name AS opstillingskreds, c.ballot_position,
@@ -367,10 +367,11 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
                 JOIN storkredse sk ON sk.id = ok.storkreds_id
                 JOIN results r ON r.candidate_id = c.id
                 WHERE c.party_id = ? AND r.count_type = 'final'
+                  AND r.snapshot_at = ?
                 GROUP BY c.id
                 ORDER BY votes DESC
                 """,
-                (party_id,),
+                (party_id, latest_cand_snap),
             ).fetchall()
         else:
             cand_rows = conn.execute(
@@ -671,6 +672,7 @@ def query_feed_places(conn) -> list[dict]:
         JOIN storkredse sk ON sk.id = ok.storkreds_id
         WHERE e.event_type = 'district_reported'
         ORDER BY e.id DESC
+        LIMIT 200
         """,
         [],
     ).fetchall()
@@ -723,37 +725,29 @@ def query_api_candidate_feed(conn, candidate_id: str, limit: int = 20) -> list[d
 
 def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
     # Try party_votes first, fall back to results
+    pv_latest = conn.execute(
+        "SELECT MAX(snapshot_at) FROM party_votes"
+    ).fetchone()[0]
     rows = conn.execute("""
         SELECT ok.storkreds_id, SUM(pv.votes) as reported
         FROM party_votes pv
-        INNER JOIN (
-            SELECT opstillingskreds_id, party_id, MAX(snapshot_at) as latest
-            FROM party_votes
-            GROUP BY opstillingskreds_id, party_id
-        ) lat ON pv.opstillingskreds_id = lat.opstillingskreds_id
-              AND pv.party_id = lat.party_id
-              AND pv.snapshot_at = lat.latest
         JOIN opstillingskredse ok ON ok.id = pv.opstillingskreds_id
+        WHERE pv.snapshot_at = ?
         GROUP BY ok.storkreds_id
-    """).fetchall()
+    """, (pv_latest,)).fetchall() if pv_latest else []
 
     if not rows or sum(r["reported"] or 0 for r in rows) == 0:
+        res_latest = conn.execute(
+            "SELECT MAX(snapshot_at) FROM results WHERE candidate_id IS NULL"
+        ).fetchone()[0]
         rows = conn.execute("""
             SELECT ok.storkreds_id, SUM(r.votes) as reported
             FROM results r
-            INNER JOIN (
-                SELECT afstemningsomraade_id, party_id, MAX(snapshot_at) as latest
-                FROM results
-                WHERE candidate_id IS NULL
-                GROUP BY afstemningsomraade_id, party_id
-            ) lat ON r.afstemningsomraade_id = lat.afstemningsomraade_id
-                  AND r.party_id = lat.party_id
-                  AND r.snapshot_at = lat.latest
             JOIN afstemningsomraader ao ON ao.id = r.afstemningsomraade_id
             JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
-            WHERE r.candidate_id IS NULL AND r.votes > 0
+            WHERE r.candidate_id IS NULL AND r.votes > 0 AND r.snapshot_at = ?
             GROUP BY ok.storkreds_id
-        """).fetchall()
+        """, (res_latest,)).fetchall() if res_latest else []
 
     # Get eligible voters from turnout table (2026 data doesn't have it in geography)
     eligible_by_sk = {}
