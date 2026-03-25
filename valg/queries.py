@@ -763,6 +763,7 @@ def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
     progress = {}
     total_reported = 0
     total_eligible = 0
+    sk_with_eligible = 0
     for r in rows:
         sk_id = str(r["storkreds_id"])
         reported = r["reported"] or 0
@@ -770,13 +771,18 @@ def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
         expected = eligible * TURNOUT_ESTIMATE if eligible > 0 else 0
         total_reported += reported
         total_eligible += eligible
-        # If no eligible data, assume 100% reporting when votes exist
-        if expected > 0:
+        if eligible > 0:
+            sk_with_eligible += 1
             progress[sk_id] = min(1.0, reported / expected)
         else:
             progress[sk_id] = 1.0 if reported > 0 else 0.0
 
-    total_expected = total_eligible * TURNOUT_ESTIMATE
-    national_pct = min(1.0, total_reported / total_expected) if total_expected > 0 else (1.0 if total_reported > 0 else 0.0)
+    # If we have eligible voter data for most storkredse, use it for national %
+    # Otherwise assume 100% — we don't have enough data for a meaningful projection
+    if sk_with_eligible >= len(rows) // 2 and total_eligible > 0:
+        total_expected = total_eligible * TURNOUT_ESTIMATE
+        national_pct = min(1.0, total_reported / total_expected)
+    else:
+        national_pct = 1.0 if total_reported > 0 else 0.0
 
     return progress, national_pct
