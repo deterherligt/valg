@@ -749,20 +749,24 @@ def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
             GROUP BY ok.storkreds_id
         """, (res_latest,)).fetchall() if res_latest else []
 
-    # Get eligible voters from turnout table (2026 data doesn't have it in geography)
+    # Get eligible voters from turnout table (latest snapshot only)
     eligible_by_sk = {}
-    for r in conn.execute("""
-        SELECT ok.storkreds_id, SUM(t.eligible_voters) as eligible
-        FROM turnout t
-        JOIN afstemningsomraader ao ON ao.id = t.afstemningsomraade_id
-        JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
-        GROUP BY ok.storkreds_id
-    """).fetchall():
-        eligible_by_sk[str(r["storkreds_id"])] = r["eligible"] or 0
+    t_latest = conn.execute("SELECT MAX(snapshot_at) FROM turnout").fetchone()[0]
+    if t_latest:
+        for r in conn.execute("""
+            SELECT ok.storkreds_id, SUM(t.eligible_voters) as eligible
+            FROM turnout t
+            JOIN afstemningsomraader ao ON ao.id = t.afstemningsomraade_id
+            JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
+            WHERE t.snapshot_at = ?
+            GROUP BY ok.storkreds_id
+        """, (t_latest,)).fetchall():
+            eligible_by_sk[str(r["storkreds_id"])] = r["eligible"] or 0
 
     progress = {}
     total_reported = 0
     total_eligible = 0
+    sk_with_eligible = 0
     for r in rows:
         sk_id = str(r["storkreds_id"])
         reported = r["reported"] or 0
@@ -770,13 +774,18 @@ def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
         expected = eligible * TURNOUT_ESTIMATE if eligible > 0 else 0
         total_reported += reported
         total_eligible += eligible
-        # If no eligible data, assume 100% reporting when votes exist
-        if expected > 0:
+        if eligible > 0:
+            sk_with_eligible += 1
             progress[sk_id] = min(1.0, reported / expected)
         else:
             progress[sk_id] = 1.0 if reported > 0 else 0.0
 
-    total_expected = total_eligible * TURNOUT_ESTIMATE
-    national_pct = min(1.0, total_reported / total_expected) if total_expected > 0 else (1.0 if total_reported > 0 else 0.0)
+    # If we have eligible voter data for most storkredse, use it for national %
+    # Otherwise assume 100% — we don't have enough data for a meaningful projection
+    if sk_with_eligible >= len(rows) // 2 and total_eligible > 0:
+        total_expected = total_eligible * TURNOUT_ESTIMATE
+        national_pct = min(1.0, total_reported / total_expected)
+    else:
+        national_pct = 1.0 if total_reported > 0 else 0.0
 
     return progress, national_pct
