@@ -10,6 +10,20 @@ from valg import calculator
 from valg.calculator import TURNOUT_ESTIMATE
 
 
+def _maybe_project(national, storkreds, conn):
+    """Project votes if reporting is partial, or use raw votes if complete/unreliable."""
+    progress, national_pct = get_reporting_progress(conn)
+    # Skip projection if reporting data is unreliable or election is complete
+    if national_pct > 0.9 or national_pct < 0.05:
+        return national, storkreds, national_pct
+    projected = calculator.project_storkreds_votes(storkreds, progress)
+    projected_national = {}
+    for sk_votes in projected.values():
+        for party, votes in sk_votes.items():
+            projected_national[party] = projected_national.get(party, 0) + votes
+    return projected_national, projected, national_pct
+
+
 def get_seat_data(conn):
     """Return (national_votes, storkreds_votes, kredsmandater) for the calculator."""
     pv_latest = conn.execute(
@@ -99,14 +113,9 @@ def query_status(conn) -> list[dict]:
     if not national:
         return []
 
-    progress, national_pct = get_reporting_progress(conn)
-    projected = calculator.project_storkreds_votes(storkreds, progress)
-    projected_national = {}
-    for sk_votes in projected.values():
-        for party, votes in sk_votes.items():
-            projected_national[party] = projected_national.get(party, 0) + votes
+    proj_national, proj_storkreds, national_pct = _maybe_project(national, storkreds, conn)
 
-    detail = calculator.allocate_seats_detail(projected_national, projected, kredsmandater)
+    detail = calculator.allocate_seats_detail(proj_national, proj_storkreds, kredsmandater)
     total_votes = sum(national.values()) or 1
 
     return [
@@ -223,14 +232,9 @@ def query_api_parties(conn) -> list[dict]:
     if not national:
         return []
 
-    progress, national_pct = get_reporting_progress(conn)
-    projected = calculator.project_storkreds_votes(storkreds, progress)
-    projected_national = {}
-    for sk_votes in projected.values():
-        for party, votes in sk_votes.items():
-            projected_national[party] = projected_national.get(party, 0) + votes
+    proj_national, proj_storkreds, national_pct = _maybe_project(national, storkreds, conn)
 
-    detail = calculator.allocate_seats_detail(projected_national, projected, kredsmandater)
+    detail = calculator.allocate_seats_detail(proj_national, proj_storkreds, kredsmandater)
     total_votes = sum(national.values()) or 1
 
     party_rows = {
@@ -297,14 +301,9 @@ def query_api_party_detail(conn, party_ids: list[str]) -> list[dict]:
     if not national:
         return []
 
-    progress, national_pct = get_reporting_progress(conn)
-    projected = calculator.project_storkreds_votes(storkreds_votes, progress)
-    projected_national = {}
-    for sk_votes in projected.values():
-        for party, votes in sk_votes.items():
-            projected_national[party] = projected_national.get(party, 0) + votes
+    proj_national, proj_storkreds, national_pct = _maybe_project(national, storkreds_votes, conn)
 
-    seats_detail = calculator.allocate_seats_detail(projected_national, projected, kredsmandater)
+    seats_detail = calculator.allocate_seats_detail(proj_national, proj_storkreds, kredsmandater)
     total_votes = sum(national.values()) or 1
 
     storkreds_names = {
