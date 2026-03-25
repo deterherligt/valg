@@ -749,16 +749,19 @@ def get_reporting_progress(conn) -> tuple[dict[str, float], float]:
             GROUP BY ok.storkreds_id
         """, (res_latest,)).fetchall() if res_latest else []
 
-    # Get eligible voters from turnout table (2026 data doesn't have it in geography)
+    # Get eligible voters from turnout table (latest snapshot only)
     eligible_by_sk = {}
-    for r in conn.execute("""
-        SELECT ok.storkreds_id, SUM(t.eligible_voters) as eligible
-        FROM turnout t
-        JOIN afstemningsomraader ao ON ao.id = t.afstemningsomraade_id
-        JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
-        GROUP BY ok.storkreds_id
-    """).fetchall():
-        eligible_by_sk[str(r["storkreds_id"])] = r["eligible"] or 0
+    t_latest = conn.execute("SELECT MAX(snapshot_at) FROM turnout").fetchone()[0]
+    if t_latest:
+        for r in conn.execute("""
+            SELECT ok.storkreds_id, SUM(t.eligible_voters) as eligible
+            FROM turnout t
+            JOIN afstemningsomraader ao ON ao.id = t.afstemningsomraade_id
+            JOIN opstillingskredse ok ON ok.id = ao.opstillingskreds_id
+            WHERE t.snapshot_at = ?
+            GROUP BY ok.storkreds_id
+        """, (t_latest,)).fetchall():
+            eligible_by_sk[str(r["storkreds_id"])] = r["eligible"] or 0
 
     progress = {}
     total_reported = 0
