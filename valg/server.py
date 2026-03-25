@@ -423,6 +423,7 @@ def create_app(
 def _sync_loop(data_dir: Path, db_path: Path, interval: int = 60, session_manager=None, run_immediately: bool = False) -> None:
     global _last_sync, _just_synced
     import time
+    first_run = True
     if not run_immediately:
         time.sleep(interval)
     while True:
@@ -434,15 +435,17 @@ def _sync_loop(data_dir: Path, db_path: Path, interval: int = 60, session_manage
 
             load_plugins()
             count = sync_from_github(data_dir)
-            if count > 0:
+            # Always process on first run (DB may be empty after restart even if no new files)
+            need_process = count > 0 or first_run
+            if need_process:
                 conn = get_connection(db_path)
                 init_db(conn)
                 process_directory(conn, data_dir)
+                _cache_clear()
+                first_run = False
             with _sync_lock:
                 _last_sync = datetime.now(timezone.utc).strftime("%H:%M:%S UTC")
-                _just_synced = count > 0
-            if count > 0:
-                _cache_clear()
+                _just_synced = need_process
             _maybe_switch_to_live(db_path, session_manager)
         except Exception as e:
             log.warning("Sync failed: %s", e)
